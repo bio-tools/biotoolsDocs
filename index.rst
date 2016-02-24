@@ -6,7 +6,8 @@
 Welcome to bio.tools documentation!
 =====================================
 
-This is the documentation for bio.tools.
+This is the documentation for `bio.tools <https://bio.tools>`_. 
+
 
 Contents:
 
