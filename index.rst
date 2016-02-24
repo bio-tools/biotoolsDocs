@@ -16,3 +16,4 @@ Contents:
    API quickstart <api_quickstart>
    API reference <api_endpoints>
    Changelog <changelog>
+   Documentors Guide <documentors_guide>
