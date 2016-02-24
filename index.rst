@@ -14,6 +14,6 @@ Contents:
    :maxdepth: 2
 
    API quickstart <api_quickstart>
-   API reference <api_endpoints>
+   API reference <api_reference>
    Changelog <changelog>
    Documentors Guide <documentors_guide>
