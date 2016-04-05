@@ -19,13 +19,14 @@ Agenda
 2. Format (fixed agenda items, 
 3. Quorum 
 
-   - formal or informal ?
+   - *formal or informal ?*
 4. Fixed agenda items
 
    - discussion of bio.tools status report
    - forthcoming deadlines
    - forthcoming events
-   - what else ?
+   - *what else ?*
 
 Minutes
 ^^^^^^^
+
