@@ -12,3 +12,5 @@ reStructuredText links
 `Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
  
 `Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
+
+`Online editor <http://rst.ninjs.org/>`_
