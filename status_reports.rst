@@ -1,8 +1,8 @@
 Status reports
-========
+==============
 
 2016 March 11AM CET
----------------------- 
+------------------- 
 
 Actions (March)
 ^^^^^^^^^^^^^^^
@@ -25,7 +25,3 @@ Complete technical specification documents including:
 - `Mock-up for improved Tool Annotator ("EDAM uber widget") <https://biotools.sifterapp.com/issues/46>`_
 - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
 - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on `improving load time <https://biotools.sifterapp.com/issues/53>_` and more `robust validation <https://biotools.sifterapp.com/issues/117>`_ of incoming tool descriptions
-
-
-
-
