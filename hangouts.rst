@@ -27,6 +27,5 @@ Agenda
    - forthcoming events
    - what else ?
 
-
 Minutes
 ^^^^^^^

@@ -1,7 +1,7 @@
 Changelog
 =========
 
-A summary of technical developments of the registry software to date.
+A summary of technical developments of bio.tools software to date.
 
 December 2015
 -------------

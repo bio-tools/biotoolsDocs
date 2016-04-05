@@ -6,7 +6,10 @@ Status reports
 
 Actions (March)
 ^^^^^^^^^^^^^^^
-- Outreach events incl. ELIXIR All-hands (7-10), Norwegian Tools Hackathon (17-18), French Tools Hackathon (24-25).  See https://bio.tools/events. 
+- Outreach events (see https://bio.tools/events)
+  - ELIXIR All-hands (7-10) 
+  - Norwegian Tools Hackathon (17-18)
+  - French Tools Hackathon (24-25)
 - Setup and configuration of project management software (sifterapp): https://biotools.sifterapp.com/
 - Setup and configuration of software issue management software (JIRA)
 - Setup bio.tools documentation framework: https://biotools.readthedocs.org

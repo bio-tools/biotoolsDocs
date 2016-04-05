@@ -47,7 +47,6 @@ ELIXIR-DK hangouts
 ELIXIR-DK has a call on the **last Fri of each month @ 11AM CET**.  Technical representatives of ELIXIR-DK institutes routinely attend.  Guests are very welcome: if you'd like to join mail `Henriette Husum Bak-Jensen <mailto:hhu@bio.ku.dk>`_.  
 
 The hangouts have an open agenda and respond to current critical needs. See the `meeting minutes <http://biotools.readthedocs.org/en/latest/hangouts.html>`_.
-
  
 Status reports
 --------------
