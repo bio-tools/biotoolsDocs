@@ -16,7 +16,11 @@ Attendeees
 Agenda
 ^^^^^^
 1. Scope & purpose of these hangouts
-2. Format (fixed agenda items, 
+2. Format
+
+   - *Google hangout ?*
+   - *skype ?*
+
 3. Quorum 
 
    - *formal or informal ?*
