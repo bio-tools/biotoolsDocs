@@ -24,6 +24,7 @@ Plans (April)
   - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`_ and `ECCB 2016 <https://biotools.sifterapp.com/issues/154>`_ 
   - `Activate ELIXIR-DK partners <https://biotools.sifterapp.com/issues/161>`_, esp. ensure everyone has ELIXIR-relevant tasks
 - Technical specification documents:
+
   - `Settle bio.tools entry ID / URL format (API) <https://biotools.sifterapp.com/issues/36>`_
   - `Fully featured API (planning) <https://biotools.sifterapp.com/issues/112>`_
 - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
