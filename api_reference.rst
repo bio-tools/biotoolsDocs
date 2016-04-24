@@ -21,15 +21,18 @@ Used to list and search through out all the available resources. Can sort, filte
 
 Endpoint Parameters
 """""""""""""""""""
-=========  ========  ====================================================                        ===================                 ==========================================================
-Parameter  Required  Type                                                                        Default                             Description        
-=========  ========  ====================================================                        ===================                 ==========================================================
-page       No        Integer                                                                     1                                   Result page number 
-format     No        String(json, xml, api)                                                      json                                Response media type
-q          No        String                                                                      0                                   Query term, used for searching, matches all attributes
-sort       No        String(lastUpdate, additionDate, name, affiliation)                         lastUpdate                          Sorts the results by choosen value
-ord        No        String(desc, asc)                                                           desc                                Orders the results by either Ascending or Descending order
-=========  ========  ====================================================                        ===================                 ==========================================================
+=========  ========  ====================================================  ===================                 ==========================================================
+Parameter  Required  Type                                                  Default                             Description        
+=========  ========  ====================================================  ===================                 ==========================================================
+page       No        Integer                                               1                                   Result page number 
+format     No        String(json, xml, api)                                json                                Response media type
+q          No        String                                                0                                   Query term, used for searching, 
+                                                                                                               matches all attributes
+sort       No        String(lastUpdate,                                    lastUpdate                          Sorts the results by choosen value
+                     additionDate, name, affiliation)                   
+ord        No        String(desc, asc)                                     desc                                Orders the results by either 
+                                                                                                               Ascending or Descending order
+=========  ========  ====================================================  ===================                 ==========================================================
 
 Filtering
 """""""""
@@ -44,7 +47,22 @@ These are attributes supported by bio.tools
 
 .. code-block:: js
 
-  name, version, description, function, functionDescription, functionHandle, functionName, input, output, dataType, dataFormat, dataHandle, dataDescription, topic, homepage, contact, contactName, contactEmail, contactURL, contactTel, contactRole, resourceType, interface, interfaceType, interfaceDocs, interfaceSpecURL, interfaceSpecFormat, accesibility, publications, publicationsPrimaryID, publicationsOtherID, affiliation, collection, mirror, uses, usesName, usesHomepage, usesVersion, tag, uri, term, sourceRegistry, canonicalID, cost, elixirInfo, elixirStatus, elixirNode, docs, docsHome, docsTermsOfUse, docsDownload, docsCitationInstructions, docsDownloadSource, docsDownloadBinaries, docsGithub, maturity, platform, language, license, credits, creditsDeveloper, creditsContributor, creditsInstitution, creditsInfrastructure, creditsFunding, id
+  name, version, description, function, functionDescription, 
+  functionHandle, functionName, input, output, dataType, 
+  dataFormat, dataHandle, dataDescription, topic, homepage, 
+  contact, contactName, contactEmail, contactURL, contactTel, 
+  contactRole, resourceType, interface, interfaceType, 
+  interfaceDocs, interfaceSpecURL, interfaceSpecFormat, 
+  accesibility, publications, publicationsPrimaryID, 
+  publicationsOtherID, affiliation, collection, mirror, uses, 
+  usesName, usesHomepage, usesVersion, tag, uri, term, 
+  sourceRegistry, canonicalID, cost, elixirInfo, elixirStatus, 
+  elixirNode, docs, docsHome, docsTermsOfUse, docsDownload, 
+  docsCitationInstructions, docsDownloadSource, 
+  docsDownloadBinaries, docsGithub, maturity, platform, 
+  language, license, credits, creditsDeveloper, 
+  creditsContributor, creditsInstitution, 
+  creditsInfrastructure, creditsFunding, id
 
 
 Example
@@ -62,7 +80,8 @@ Key Name           Description                                                  
 count              The total resource count results for your query                            2313
 previous           Link to the previous page                                                  ?page=4
 next               Link to the next page                                                      ?page=6
-list               An array which will hold multiple resources and their relative information ARRAY
+list               An array which will hold multiple                                          ARRAY
+                   resources and their relative information 
 ================== ========================================================================== =========================
 
 Resource detail
@@ -98,7 +117,8 @@ Response data
 ================== ========================================================================== ======================================================================================================
 Response           Description                                                                Example
 ================== ========================================================================== ======================================================================================================
-<resource>         The description of the requested resource                                  `See an example <resource> <https://bio.tools/api/tool/CBS/SignalP/4.1?format=json>`_. TODO: fix link
+<resource>         Description of the                                                         `See an example <resource> <https://bio.tools/api/tool/CBS/SignalP/4.1?format=json>`_. TODO: fix link
+                   requested resource                                  
 ================== ========================================================================== ======================================================================================================
 
 
@@ -119,8 +139,10 @@ Headers
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
-Content-Type   Yes       String(application/json, application/xml)  Resource media type 
-Authorization  Yes       String(Token <authorization token>)        Authorization header. `Learn how to obtain a token <http://sphinx.pocoo.org>`_. TODO: fix link
+Content-Type   Yes       String(application/json,                   Resource media type
+                         application/xml)   
+Authorization  Yes       String(Token <authorization token>)        Authorization header.
+                                                                    `Learn how to obtain a token <http://sphinx.pocoo.org>`_. TODO: fix link
 =============  ========  =========================================  ==============================================================================================
 
 Example
