@@ -75,6 +75,8 @@ Actions (April)
 
   - Mock-up of `Improved tool annotator <https://biotools.sifterapp.com/issues/46>`_ : a `first draft <https://docs.google.com/document/d/1IJLMu_5WSJmFa6ePmL034ju7mPG8GBYMYxLixmiRDMI/edit#>`_ is available.
 
+- Created bio.tools `stats page <https://bio.tools/stats>`_ .
+
 - bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_ . Features done but not yet in production:
 
   - **back-end** development
@@ -101,7 +103,7 @@ Plans (May)
   - Technical developments
 
     - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on more robust validation of content and supporting new URL sheme
-    - Curation admin interface (content edition)
+    - Curation admin interface (content edition) (beta)
     - General admin interface (account management, password change, reset etc)
 
 - Tasks **not** completed in April
