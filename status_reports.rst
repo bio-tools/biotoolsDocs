@@ -82,13 +82,29 @@ Priority was given to preparing the tool annotator mock-up.  The following tasks
   - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`
   - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
 
+- bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_ . Features done but not yet in production:
+  - **back-end** development
+    - improved load time 
+    - added Elasticsearch support for improved search
+    - user authentication support for password change, reset, etc
+
+  - **front-end** development
+    - support for the new fast backend, user authentication, validation endpoints
+    - new improved and simplified search and filtering interface (UniProt), aligned with Elasticsearch
+
 Plans (May)
 ^^^^^^^^^^^
   - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`
   - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
   - Technical Hackathon 3 : Tools, Workflows and Workbenches (see `bio.tools/events <https://bio.tools/events>`_ )
-  - Consult and consolidate technical documents
+
+  - Technical documents (consult and consolidate) 
     - mock-up of `Improved tool annotator <https://docs.google.com/document/d/1IJLMu_5WSJmFa6ePmL034ju7mPG8GBYMYxLixmiRDMI/edit#>`_ 
     - `bio.tools entry ID / URL format (API) <https://docs.google.com/document/d/1vDxejS7MWluSm8EXK3y7jCd39trEmtMhq8cGNodYQeA/edit#>`_
     - `Fully featured API <https://docs.google.com/document/d/1vDxejS7MWluSm8EXK3y7jCd39trEmtMhq8cGNodYQeA/edit#>`_ 
+    - API documentation 
 
+  - Tehnical developments
+    - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on more robust validation of content and supporting new URL sheme
+    - Curation admin interface (content edition)
+    - General admin interface (account management, password change, reset etc)
