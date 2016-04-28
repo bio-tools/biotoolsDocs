@@ -43,4 +43,5 @@ Agenda
 
 Minutes
 ^^^^^^^
+Henriette will compile the action minutes of the meeting
 
