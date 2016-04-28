@@ -9,7 +9,7 @@ Task management
 
 - https://biotools.sifterapp.com
  
-.. note:: sifterapp is the primary means for technical coordination: collaborators are encouraged to browse tasks, review priorities, make comments and add new tasks.  Bear in mind sifterapp is for *high level* tasks not fine-grained details!..
+.. note:: sifterapp is the primary means for technical coordination: collaborators are encouraged to browse tasks, review priorities, make comments and add new tasks.  Bear in mind sifterapp is for *high level* tasks not fine-grained details!
 
 
 bio.tools community site
