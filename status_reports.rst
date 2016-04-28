@@ -78,6 +78,7 @@ Actions (April)
 - bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_ . Features done but not yet in production:
 
   - **back-end** development
+
     - improved load time 
     - added Elasticsearch support for improved search
     - user authentication support for password change, reset, etc
@@ -87,18 +88,9 @@ Actions (April)
     - support for the new fast backend, user authentication, validation endpoints
     - new improved and simplified search and filtering interface (UniProt), aligned with Elasticsearch
 
-- Tasks **not** completed
-
-    - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`
-    - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
-
-
 Plans (May)
 ^^^^^^^^^^^
-  - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`_
-  - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
   - Technical Hackathon 3 : Tools, Workflows and Workbenches (see `bio.tools/events <https://bio.tools/events>`_ )
-
   - Technical documents (consult and consolidate) 
 
     - mock-up of `Improved tool annotator <https://docs.google.com/document/d/1IJLMu_5WSJmFa6ePmL034ju7mPG8GBYMYxLixmiRDMI/edit#>`_ 
@@ -111,3 +103,8 @@ Plans (May)
     - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on more robust validation of content and supporting new URL sheme
     - Curation admin interface (content edition)
     - General admin interface (account management, password change, reset etc)
+
+- Tasks **not** completed in April
+
+    - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`_
+    - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
