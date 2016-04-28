@@ -36,6 +36,7 @@ Agenda
    - forthcoming deadlines
    
    - forthcoming events
+
      - ECCB2016 3-7 Sept 2016
      - ELIXIR-DK technical get-together and bio.tools workshop in one event 24. August 2016
    
