@@ -28,16 +28,16 @@ Agenda
 
    - discussion of bio.tools status report (Emil and Jon will publish, on the last Thu of each month)
    including status on key performance indicators:
-   --#User accounts
-   --#Entries
-   --#Content changes/edits
-   --#Publications on technical progress
+    - #User accounts
+    - #Entries
+    - #Content changes/edits
+    - #Publications on technical progress
    
    - forthcoming deadlines
    
    - forthcoming events
-   --ECCB2016 3-7 Sept 2016
-   --ELIXIR-DK technical get-together and bio.tools workshop in one event 24. August 2016
+     - ECCB2016 3-7 Sept 2016
+     - ELIXIR-DK technical get-together and bio.tools workshop in one event 24. August 2016
    
    - *what else ?*
 
