@@ -98,7 +98,7 @@ Plans (May)
     - `Fully featured API <https://docs.google.com/document/d/1vDxejS7MWluSm8EXK3y7jCd39trEmtMhq8cGNodYQeA/edit#>`_ 
     - API documentation 
 
-  - Tehnical developments
+  - Technical developments
 
     - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on more robust validation of content and supporting new URL sheme
     - Curation admin interface (content edition)
