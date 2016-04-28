@@ -1,6 +1,7 @@
 Hangouts
 ========
 
+If you'd like to attend a hangout, please mail Jon Ison (jison@cbs.dtu.dk) cc Henriette Husum Bak-Jensen (hhu@bio.ku.dk) your gmail and skype addresses.
 
 
 2016 April 29 11AM CET
