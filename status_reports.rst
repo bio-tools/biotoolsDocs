@@ -75,11 +75,6 @@ Actions (April)
 
   - Mock-up of `Improved tool annotator <https://biotools.sifterapp.com/issues/46>`_ : a `first draft <https://docs.google.com/document/d/1IJLMu_5WSJmFa6ePmL034ju7mPG8GBYMYxLixmiRDMI/edit#>`_ is available.
 
-- Tasks **not** completed
-
-    - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`
-    - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
-
 - bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_ . Features done but not yet in production:
 
   - **back-end** development
@@ -91,6 +86,12 @@ Actions (April)
 
     - support for the new fast backend, user authentication, validation endpoints
     - new improved and simplified search and filtering interface (UniProt), aligned with Elasticsearch
+
+- Tasks **not** completed
+
+    - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`
+    - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
+
 
 Plans (May)
 ^^^^^^^^^^^
