@@ -45,8 +45,7 @@ Agenda
 
 Minutes
 ^^^^^^^
-Ad 1) 
-These hangouts should have a practical focus (defined by fixed agenda items) but in-depth technical discussions should be taken elsewhere. We agreed on a set of fixed agenda items, see under 4.
+Ad 1) These hangouts should have a practical focus (defined by fixed agenda items) but in-depth technical discussions should be taken elsewhere. We agreed on a set of fixed agenda items, see under 4.
 
 Ad 2) Google hangout worked well today, and we will use this going forward.
 
@@ -55,12 +54,12 @@ Ad 3) All DK partners are expected to provide a representative to these meetings
 
 Ad 4) 
 The fixed agenda items were agreed to be the following:
-TASKS : round-robin catch-up, people say what sifterapp they're working on, asking for help on tasks, reassignment of tasks, etc.
-FOCUS : one person leads a presentation and discussions on a specific point.
-STATUS : people are asked to review the Status Report before the meeting and bring any points for discussion here, including points from partner institutions.
-PRIORITIES : people are asked to review current priorities on sifterapp, for discussion here.
-EVENTS & DEADLINES: people are asked to bring up items to be actioned -> sifter 
-KPI's: Track status of key performance indicators from https://bio.tools/stats 
+*TASKS* : round-robin catch-up, people say what sifterapp they're working on, asking for help on tasks, reassignment of tasks, etc.
+*FOCUS* : one person leads a presentation and discussions on a specific point.
+*STATUS* : people are asked to review the Status Report before the meeting and bring any points for discussion here, including points from partner institutions.
+*PRIORITIES* : people are asked to review current priorities on sifterapp, for discussion here.
+*EVENTS & DEADLINES* : people are asked to bring up items to be actioned -> sifter 
+*KPI's* : Track status of key performance indicators from https://bio.tools/stats 
 
 The fixed agenda items will enable the hangouts to serve three overall purposes
 1) To surface if Elixir-DK activities are progressing as planned, and if not, what changes/resources are needed? 
