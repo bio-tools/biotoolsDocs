@@ -45,5 +45,43 @@ Agenda
 
 Minutes
 ^^^^^^^
-Henriette will compile the action minutes of the meeting
+Ad 1) 
+These hangouts should have a practical focus (defined by fixed agenda items) but in-depth technical discussions should be taken elsewhere. We agreed on a set of fixed agenda items, see under 4.
+
+Ad 2) Google hangout worked well today, and we will use this going forward.
+
+Ad 3) All DK partners are expected to provide a representative to these meetings. Currently, we don't expect representatives from industry partners.
+
+
+Ad 4) 
+The fixed agenda items were agreed to be the following:
+TASKS : round-robin catch-up, people say what sifterapp they're working on, asking for help on tasks, reassignment of tasks, etc.
+FOCUS : one person leads a presentation and discussions on a specific point.
+STATUS : people are asked to review the Status Report before the meeting and bring any points for discussion here, including points from partner institutions.
+PRIORITIES : people are asked to review current priorities on sifterapp, for discussion here.
+EVENTS & DEADLINES: people are asked to bring up items to be actioned -> sifter 
+KPI's: Track status of key performance indicators from https://bio.tools/stats 
+
+The fixed agenda items will enable the hangouts to serve three overall purposes
+1) To surface if Elixir-DK activities are progressing as planned, and if not, what changes/resources are needed? 
+2) To surface information/results (from Elixir-HUB, -events, -meetings) that need to go to the DK-partners or to the HUB. 
+3) The meetings serve as a feeder for Elixir-DK Steering group meetings, and similarly, activities/decisions from the Elixir-DK Steering group can be channeled to the agenda of the hangout meetings
+
+Today's actions were:
+*Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (ad 3)
+*Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on (ad 4)
+
+Today's KPI records were:
+#User accounts (affiliations) = 262
+#Recurrent users = not sure (not recorded?)
+#Entries = 2403
+#Content changes/edits = not sure (not recorded?)
+#Publications : bio.tools technical progress - ideas for future publications  - what's in progress (sifterapp)
+
+
+
+
+
+
+
 
