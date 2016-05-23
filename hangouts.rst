@@ -30,7 +30,7 @@ Agenda
 7) *Update on agreed actions* :
 *Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (ad 3)
 *Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on (ad 4)
-
+8) *What else?*
 
 
 Archive - Past meetings
