@@ -21,8 +21,8 @@ Agenda
 3) *STATUS* : people are asked to review the Status Report before the meeting and bring any points for discussion here, including points from partner institutions.
 4) *PRIORITIES* : people are asked to review current priorities on sifterapp, for discussion here.
 5) *EVENTS & DEADLINES* : people are asked to bring up items to be actioned in sifter 
-6) *KPI's* : Track status of key performance indicators from https://bio.tools/stats 
-#User accounts (affiliations) =
+6) *KPIs* : Track status of key performance indicators from https://bio.tools/stats 
+*User accounts* (affiliations) =
 #Recurrent users = (recorded?)
 #Entries =
 #Content changes/edits = (recorded?)
