@@ -23,9 +23,11 @@ Agenda
 5) *EVENTS & DEADLINES* : people are asked to bring up items to be actioned in sifter 
 6) *KPIs* : Track status of key performance indicators from https://bio.tools/stats 
 *User accounts* (affiliations); *Recurrent users* (recorded?); *Entries*; *Content changes/edits* (recorded?); *Publications* (bio.tools technical progress - ideas for future publications  - what's in progress (sifterapp)
+
 7) *Update on agreed actions* :
 *Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (ad 3)
 *Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on (ad 4)
+
 8) *What else?*
 
 
