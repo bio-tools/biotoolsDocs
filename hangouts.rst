@@ -18,7 +18,7 @@ Agenda
 ^^^^^^
 1) *TASKS* : round-robin catch-up, people say what sifterapp they're working on, asking for help on tasks, reassignment of tasks, etc.
 2) *FOCUS* : one person leads a presentation and discussions on a specific point.
-3) *STATUS* : people are asked to review the Status Report before the meeting and bring any points for discussion here, including points from partner institutions.
+3) *STATUS* : people are asked to review the Status Report http://biotools.readthedocs.io/en/latest/status_reports.html before the meeting and bring any points for discussion here, including points from partner institutions.
 4) *PRIORITIES* : people are asked to review current priorities on sifterapp, for discussion here.
 5) *EVENTS & DEADLINES* : people are asked to bring up items to be actioned in sifter 
 6) *KPIs* : Track status of key performance indicators from https://bio.tools/stats 
