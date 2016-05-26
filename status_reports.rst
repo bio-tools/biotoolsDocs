@@ -120,7 +120,7 @@ Actions (May)
 - Outreach actions (see https://bio.tools/events)
 
   - At ISMB, ELIXIR-DK will have a booth a give a technology track presentation
-  - The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was attended by 42 people.  See `tinyurl.com/registryhackathon8 <tinyurl.com/registryhackathon8>`_ and the summary (below).
+  - The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was attended by over 40 people.  See `tinyurl.com/registryhackathon8 <tinyurl.com/registryhackathon8>`_ and the summary (below).
 
 - Development of the improved tool annotator is being led by Hans-Ioan Ienasescu, based on the `mockup <https://docs.google.com/document/d/1IJLMu_5WSJmFa6ePmL034ju7mPG8GBYMYxLixmiRDMI/edit#>`_
 
@@ -174,4 +174,4 @@ Plans (June)
 Notes
 ^^^^^^^^^^^
 
-  The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was co-organized by the French and Danish ELIXIR nodes.  The event brought together 42 representatives from 21 academic institutions and companies, with projects including Galaxy, bio.tools, Common Workflow Language, biotoolsXSD, EDAM, Debian Med, BioShadock and more.  The delegates enjoyed a series of talks, lively discussions and breakout hacking sessions including bio.tools entry relationships, Galaxy to bio.tools publishing, CWL specification, workflow specification interoperability, and training workflows.  In addition to concrete outcomes including various technical documents, new CWL bindings and enabling support for EDAM annotations in Galaxy, the hackathon provided a boost to various ongoing collaborations between the projects and institutes.  We look forward to a re-run soon!
+  The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was co-organized by the French and Danish ELIXIR nodes.  The event brought together over 40 representatives from 21 academic institutions and companies, with projects including Galaxy, bio.tools, Common Workflow Language, biotoolsXSD, EDAM, Debian Med, BioShadock and more.  The delegates enjoyed a series of talks, lively discussions and breakout hacking sessions including bio.tools entry relationships, Galaxy to bio.tools publishing, CWL specification, workflow specification interoperability, and training workflows.  In addition to concrete outcomes including various technical documents, new CWL bindings and enabling support for EDAM annotations in Galaxy, the hackathon provided a boost to various ongoing collaborations between the projects and institutes.  We look forward to a re-run soon!
