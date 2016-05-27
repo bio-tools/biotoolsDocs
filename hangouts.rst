@@ -13,6 +13,7 @@ Hangouts - Jon initiates
 
 Attendeees
 ^^^^^^^^^^
+Veit S, Anne W, José Maria F, Emil R, Maria Maddalena S, Myhanh N, Jon I, Hans I, Henriette H,
 apologies from Anders Dannesboe
 
 Agenda
@@ -26,10 +27,24 @@ Agenda
 *User accounts* (affiliations); *Recurrent users* (recorded?); *Entries*; *Content changes/edits* (recorded?); *Publications* (bio.tools technical progress - ideas for future publications  - what's in progress (sifterapp)
 
 7) *Update on agreed actions* :
-*Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (ad 3)
-*Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on (ad 4)
+*Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (DONE, see Ad 1 below)
+*Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on. DONE.
 
 8) *What else?*
+
+Minutes
+^^^^^^
+Ad 1) 
+Outreach to TESS (sifter 140, Henriette): Henriette is helping organise a workshop (Fall, 2016) between Bio.tools and TeSS on how to enable cross-links between the two ressources. 
+MBG partner involvement (sifter 178, Henriette): Bernt Guldbrandsen will shortly assign a technical member to help the bio.tools expansion (wild stock and plant breeding) and to participate in our meetings.
+Training platform (sifter 141, Henriette): It will be valuable to understand which E-learning ressources (online files, videos, slide decks etc) are available from the satellites. Henriette will ask this information from everyone. Hans I is willing to help make a video tutorial on 'how to load tools into Bio.tools' or 'how to get started, using COMPUTEROME'.
+Anne Wenzel is in the process of loading 400 RNA-bioinformatics tools onto Bio.tools, and to adjust EDAM ontology accordingly.
+Ad 2) No volunteer today. But great opportunity if needing input/bounce off idea
+Ad 3) Credits to Emil for expanding the bio.tools statistics to comprise more parameters. The report could perhaps be made to contain the 'priority' dimension (Henriette and Jon to liase before the meeting, about this)
+ad 4) Not done. We really should.
+ad 5) Not covered, due to time pressure.
+ad 6) Henriette will contact Emil about KPIs and tracking these
+
 
 
 Archive - Past meetings
