@@ -36,9 +36,17 @@ Minutes
 ^^^^^^
 Ad 1) 
 Outreach to TESS (sifter 140, Henriette): Henriette is helping organise a workshop (Fall, 2016) between Bio.tools and TeSS on how to enable cross-links between the two ressources. 
+
 MBG partner involvement (sifter 178, Henriette): Bernt Guldbrandsen will shortly assign a technical member to help the bio.tools expansion (wild stock and plant breeding) and to participate in our meetings.
+
 Training platform (sifter 141, Henriette): It will be valuable to understand which E-learning ressources (online files, videos, slide decks etc) are available from the satellites. Henriette will ask this information from everyone. Hans I is willing to help make a video tutorial on 'how to load tools into Bio.tools' or 'how to get started, using COMPUTEROME'.
+
 Anne Wenzel is in the process of loading 400 RNA-bioinformatics tools onto Bio.tools, and to adjust EDAM ontology accordingly.
+
+Text mining tool (sifter 99, name edamMap, Veit and Jon): This project uses text mining of software descriptions/abstracts/full texts to extract associated EDAM terms. Among other applications, the results can be used for automatic tool annotation.
+
+Workflow generation (sifter 119, Veit and Jon): EDAM provides powerful information to create pipelines for e.g. data analysis involving multiple tools. The study shows how to find applicable pipelines and presents several use cases for the analysis of mass spectrometry data. The work will be presented at ASMS 2016 (mass spectrometry conference) and a paper draft is being prepared.
+
 Ad 2) No volunteer today. But great opportunity if needing input/bounce off idea
 Ad 3) Credits to Emil for expanding the bio.tools statistics to comprise more parameters. The report could perhaps be made to contain the 'priority' dimension (Henriette and Jon to liase before the meeting, about this)
 ad 4) Not done. We really should.
