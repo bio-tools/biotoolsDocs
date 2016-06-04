@@ -33,10 +33,11 @@ Mailing list
 ------------
 Please use the appropriate `mailing list <http://elixirmail.cbs.dtu.dk/mailman/listinfo>`_:
 
-- **registry** or **edam** for general discussions, questions and help
+- **registry** for general discussions on bio.tools
+- **registry-support** for questions and help on bio.tools
+- **edam** for general discusion and help on EDAM
 - **registry-announce** or **edam-announce** for low-traffic announcements
 - **registry-core** and **edam-core** for technical discussion amongst the core developers 
-- **elixirdk-staff** solely for matters exclusively the concern of ELIXIR-DK.  
 
 See also the general `ELIXIR mailing lists <https://lists.elixir-europe.org/mailman/listinfo>`_.
 
