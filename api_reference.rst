@@ -8,7 +8,7 @@ An API (Application programming interface) is a protocol intended to be used as 
 
 If you find any bug, or have any questions, or any suggestions please get in touch with us. TODO: add link
 
-Resource List
+List resources
 ------------------
 List and search through out all the available resources. Can sort, filter, and search the results.
 
@@ -104,7 +104,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Resource Resource you wish to register.
-                              `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+                              `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 
@@ -148,7 +148,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Resource Resource you wish to validate.
-                              `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+                              `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 
@@ -207,7 +207,7 @@ Response data
 ================== ========================================================================== ======================================================================================================
 Response           Description                                                                Example
 ================== ========================================================================== ======================================================================================================
-Resource           Description of the                                                         `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+Resource           Description of the                                                         `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
                    requested resource                                  
 ================== ========================================================================== ======================================================================================================
 
@@ -216,6 +216,8 @@ Resource           Description of the                                           
 Update resource
 ------------------
 Update a resource description.
+
+.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
 
 *HTTP PUT*
 
@@ -230,7 +232,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Resource Description with which you wish to update the resource
-                              `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+                              `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 Headers
@@ -259,6 +261,8 @@ Validate updating a resource
 -----------------------------
 Test updating a resource without it actually being saved into the database.
 
+.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
+
 *HTTP PUT*
 
 .. code-block:: text
@@ -272,7 +276,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Resource Description with which you wish to update the resource for validation
-                              `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+                              `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 Headers
@@ -299,6 +303,8 @@ Example
 Delete resource
 ------------------
 Delete a resource.
+
+.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
 
 *HTTP DELETE*
 
@@ -495,6 +501,8 @@ key                Authentication token
 Log user out
 ------------------
 
+.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
+
 *HTTP POST*
 
 .. code-block:: text
@@ -594,7 +602,7 @@ Example
 .. code-block:: bash
 
    curl -X POST -H "Content-Type: application/json" \
-   -d '{"uid":"example@example.org", "token":"4ct-67e90a1ab4f22fbb9b9f"}' \
+   -d '{"uid":"MQ", "token":"4ct-67e90a1ab4f22fbb9b9f"}' \
    -d '{"password1":"new_password", "password2":"new_password"}' \
    "https://dev.bio.tools/api/rest-auth/password/reset/confirm/"
 
