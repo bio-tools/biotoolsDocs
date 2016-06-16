@@ -1,8 +1,6 @@
 API endpoints
 =============
 
-.. warning:: This document is a work in progress
-
 This is a lightweight web service, (REST interface), which provides an easy way to access the bio.tools database. 
 An API (Application programming interface) is a protocol intended to be used as an interface by software components to communicate with each other. 
 
