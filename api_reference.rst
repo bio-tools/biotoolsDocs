@@ -662,6 +662,6 @@ Example
 .. code-block:: bash
 
    curl -X POST -H "Content-Type: application/json" \
-   -d '{"uid":"MQ", "token":"4ct-67e90a1ab4f22fbb9b9f"}' \
-   -d '{"password1":"new_password", "password2":"new_password"}' \
+   -d '{"uid":"MQ", "token":"4ct-67e90a1ab4f22fbb9b9f", \
+   "password1":"new_password", "password2":"new_password"}' \
    "https://dev.bio.tools/api/rest-auth/password/reset/confirm/"
