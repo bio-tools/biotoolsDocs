@@ -1,14 +1,14 @@
 API endpoints
 =============
 
-This is a lightweight web service, (REST interface), which provides an easy way to access the bio.tools database. 
+This is a lightweight web service with a REST interface, which provides an easy way to access the bio.tools database. 
 An API (Application programming interface) is a protocol intended to be used as an interface by software components to communicate with each other. 
 
-If you find any bug, or have any questions, or any suggestions please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+If you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
 
 List resources
 ------------------
-List and search through out all the available resources. Can sort, filter, and search the results.
+List and search through all the available resources. Can sort, filter, and search the results.
 
 *HTTP GET*
 
@@ -19,20 +19,20 @@ List and search through out all the available resources. Can sort, filter, and s
 
 Endpoint Parameters
 """""""""""""""""""
-===========    ========  ====================================================  ===================                 ==========================================================
-Parameter      Required  Type                                                  Default                             Description        
-===========    ========  ====================================================  ===================                 ==========================================================
-page           No        Integer                                               1                                   Result page number 
-format         No        String(json, xml, api)                                json                                Response media type
-q              No        String                                                                                    Query term, used for searching, 
-                                                                                                                   matches all attributes
-sort           No        String(lastUpdate,                                    lastUpdate                          Sorts the results by choosen value
-                         additionDate, name, affiliation, score)                                                   (score only available when there is a query)
-ord            No        String(desc, asc)                                     desc                                Orders the results by either 
-                                                                                                                   Ascending or Descending order
-<attribute>    No        String                                                                                    Filter by <attribute>. 
-                                                                                                                   List of supported attributes below.
-===========    ========  ====================================================  ===================                 ==========================================================
+===========    ========  =======================================  ==========  ============================================
+Parameter      Required  Type                                     Default     Description        
+===========    ========  =======================================  ==========  ============================================
+page           No        Integer                                  1           Result page number 
+format         No        String(json, xml, api)                   json        Response media type
+q              No        String                                               Query term, used for searching, 
+                                                                              matches all attributes
+sort           No        String(lastUpdate,                       lastUpdate  Sorts the results by choosen value
+                         additionDate, name, affiliation, score)              (score only available when there is a query)
+ord            No        String(desc, asc)                        desc        Orders the results by either 
+                                                                              Ascending or Descending order
+<attribute>    No        String                                               Filter by <attribute>. 
+                                                                              List of supported attributes below.
+===========    ========  =======================================  ==========  ============================================
 
 Filtering
 """""""""
@@ -98,12 +98,12 @@ Obtain information about a single resource.
 
 Endpoint Parameters
 """""""""""""""""""
-=========  ========  ====================================================                        ===================                 ==========================================================
-Parameter  Required  Type                                                                        Default                             Description        
-=========  ========  ====================================================                        ===================                 ==========================================================
-id         Yes       String                                                                                                          Resource unique ID 
-format     No        String(json, xml, api)                                                      json                                Response media type
-=========  ========  ====================================================                        ===================                 ==========================================================
+=========  ========  ======================  =======  ===================
+Parameter  Required  Type                    Default  Description        
+=========  ========  ======================  =======  ===================
+id         Yes       String                           Resource unique ID 
+format     No        String(json, xml, api)  json     Response media type
+=========  ========  ======================  =======  ===================
 
 
 Example
