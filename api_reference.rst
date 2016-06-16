@@ -391,14 +391,14 @@ Creates a user account and emails a verification email.
 
 POST data
 """""""""""""""""""
-==================  ======  ========================================================================== =========================
-Key Name            Type    Description                                                                Example
-==================  ======  ========================================================================== =========================
-username            String  Account username                                                           username
-password1           String  Password                                                                   password
-password2           String  Repeated password                                                          password
-email               String  Account email. The verification email will be sent to this address         example@example.org
-==================  ======  ========================================================================== =========================
+==================  ========  ======  ========================================================================== =========================
+Key Name            Required  Type    Description                                                                Example
+==================  ========  ======  ========================================================================== =========================
+username            Yes       String  Account username                                                           username
+password1           Yes       String  Password                                                                   password
+password2           Yes       String  Repeated password                                                          password
+email               Yes       String  Account email. The verification email will be sent to this address         example@example.org
+==================  ========  ======  ========================================================================== =========================
 
 Headers
 """"""""""
@@ -434,11 +434,11 @@ Verifies a user account based on the emailed verification key.
 
 POST data
 """""""""""""""""""
-==================  ======  ========================================================================== ================================================================
-Key Name            Type    Description                                                                Example
-==================  ======  ========================================================================== ================================================================
-key                 String  Verification key from account creation email                               ndwowtbpmlk5zxdxfrwgu2822xynjidhizhwosycve7hro1of156hjwdsf1f6gbn
-==================  ======  ========================================================================== ================================================================
+==================  ========  ======  ========================================================================== ================================================================
+Key Name            Required  Type    Description                                                                Example
+==================  ========  ======  ========================================================================== ================================================================
+key                 Yes       String  Verification key from account creation email                               ndwowtbpmlk5zxdxfrwgu2822xynjidhizhwosycve7hro1of156hjwdsf1f6gbn
+==================  ========  ======  ========================================================================== ================================================================
 
 Headers
 """"""""""
@@ -474,12 +474,12 @@ Logs the user in and returns an authentication token.
 
 POST data
 """""""""""""""""""
-==================  ======  ========================================================================== =========================
-Key Name            Type    Description                                                                Example
-==================  ======  ========================================================================== =========================
-username            String  Account username                                                           username
-password            String  Password                                                                   password
-==================  ======  ========================================================================== =========================
+==================  ========  ======  ========================================================================== =========================
+Key Name            Required  Type    Description                                                                Example
+==================  ========  ======  ========================================================================== =========================
+username            Yes       String  Account username                                                           username
+password            Yes       String  Password                                                                   password
+==================  ========  ======  ========================================================================== =========================
 
 Headers
 """"""""""
@@ -506,6 +506,56 @@ Key Name           Description
 ================== ====================
 key                Authentication token
 ================== ====================
+
+Get user information
+--------------------------------
+
+Returns information about the logged in user account, including a list of registered resource (name, id, version, additionDate, lastUpdate)
+
+.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+
+*HTTP GET*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/rest-auth/user/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ==============================================================  =======  ==========================================================
+Parameter  Required  Type                                                            Default  Description        
+=========  ========  ==============================================================  =======  ==========================================================
+format     No        String(json, xml, api)                                          json     Response media type
+=========  ========  ==============================================================  =======  ==========================================================
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X GET \
+   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+   "https://dev.bio.tools/api/rest-auth/user/?format=json"
+
+Response data
+"""""""""""""""""""
+================== ========================================================
+Key Name           Description         
+================== ========================================================
+username           Account username
+email              Account email
+resources          List of registered resources 
+                   (limited to name, id, version, additionDate, lastUpdate)
+================== ========================================================
 
 
 Log out
@@ -551,11 +601,11 @@ Sends a password reset email.
 
 POST data
 """""""""""""""""""
-==================  ======  ========================================================================== =========================
-Key Name            Type    Description                                                                Example
-==================  ======  ========================================================================== =========================
-email               String  Account email                                                              example@example.org
-==================  ======  ========================================================================== =========================
+==================  ========  ======  ========================================================================== =========================
+Key Name            Required  Type    Description                                                                Example
+==================  ========  ======  ========================================================================== =========================
+email               Yes       String  Account email                                                              example@example.org
+==================  ========  ======  ========================================================================== =========================
 
 Headers
 """"""""""
@@ -588,14 +638,14 @@ Confirms a password reset using uid and token from a password reset email.
 
 POST data
 """""""""""""""""""
-==================  ======  ========================================================================== =========================
-Key Name            Type    Description                                                                Example
-==================  ======  ========================================================================== =========================
-uid                 String  UID from password reset email                                              MQ
-token               String  Token from password reset email                                            4ct-67e90a1ab4f22fbb9b9f
-password1           String  New password                                                               new_password
-password2           String  New password repeated                                                      new_password
-==================  ======  ========================================================================== =========================
+==================  ========  ======  ========================================================================== =========================
+Key Name            Required  Type    Description                                                                Example
+==================  ========  ======  ========================================================================== =========================
+uid                 Yes       String  UID from password reset email                                              MQ
+token               Yes       String  Token from password reset email                                            4ct-67e90a1ab4f22fbb9b9f
+password1           Yes       String  New password                                                               new_password
+password2           Yes       String  New password repeated                                                      new_password
+==================  ========  ======  ========================================================================== =========================
 
 Headers
 """"""""""
@@ -615,5 +665,3 @@ Example
    -d '{"uid":"MQ", "token":"4ct-67e90a1ab4f22fbb9b9f"}' \
    -d '{"password1":"new_password", "password2":"new_password"}' \
    "https://dev.bio.tools/api/rest-auth/password/reset/confirm/"
-
-
