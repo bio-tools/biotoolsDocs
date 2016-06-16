@@ -6,7 +6,7 @@ API endpoints
 This is a lightweight web service, (REST interface), which provides an easy way to access the bio.tools database. 
 An API (Application programming interface) is a protocol intended to be used as an interface by software components to communicate with each other. 
 
-If you find any bug, or have any questions, or any suggestions please get in touch with us. TODO: add link
+If you find any bug, or have any questions, or any suggestions please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
 
 List resources
 ------------------
@@ -300,9 +300,10 @@ Example
    -d '<resource>' "https://dev.bio.tools/api/tool/SignalP/validate/"
 
 
-Delete resource
+Delete a resource
 ------------------
-Delete a resource.
+
+Removes a resource from the registry.
 
 .. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
@@ -451,7 +452,7 @@ Example
 
 .. _Token:
 
-Authenticate user / obtain token
+Log in / obtain token
 --------------------------------
 
 Logs the user in and returns an authentication token.
@@ -498,7 +499,7 @@ key                Authentication token
 ================== ====================
 
 
-Log user out
+Log out
 ------------------
 
 .. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
