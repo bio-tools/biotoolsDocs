@@ -82,96 +82,9 @@ Key Name           Description                                                  
 count              The total resource count results for your query                            2313
 previous           Link to the previous page                                                  ?page=4
 next               Link to the next page                                                      ?page=6
-list               An array which will hold multiple                                          ARRAY
-                   resources and their relative information 
+list               An array with multiple resources                                           ARRAY
+                   and their relative information 
 ================== ========================================================================== =========================
-
-Register a resource
--------------------
-
-.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
-
-*HTTP POST*
-
-.. code-block:: text
-
-    https://dev.bio.tools/api/tool/
-    https://dev.bio.tools/api/t/
-
-Endpoint Parameters
-"""""""""""""""""""
-=========  ========  ======== ====================================================================================================================================
-Parameter  Required  Type     Description        
-=========  ========  ======== ====================================================================================================================================
-data       Yes       Resource Resource you wish to register.
-                              `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
-=========  ========  ======== ====================================================================================================================================
-
-
-Headers
-""""""""""
-=============  ========  =========================================  ==============================================================================================
-Parameter      Required  Allowed values                             Description        
-=============  ========  =========================================  ==============================================================================================
-Content-Type   Yes       String(application/json,                   Resource media type
-                         application/xml)   
-Authorization  Yes       String('Token <authorization token>')      Authorization header.
-                                                                    Learn how to obtain a token :ref:`Token`.
-=============  ========  =========================================  ==============================================================================================
-
-Example
-"""""""""""""""""""
-
-.. code-block:: bash
-
-   curl -X POST -H "Content-Type: application/json" \
-   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/"
-
-Validate registering a resource
--------------------------------
-
-Test registering a resource without it actually being saved into the database.
-
-.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
-
-*HTTP POST*
-
-.. code-block:: text
-
-    https://dev.bio.tools/api/tool/validate/
-    https://dev.bio.tools/api/t/validate/
-
-Endpoint Parameters
-"""""""""""""""""""
-=========  ========  ======== ====================================================================================================================================
-Parameter  Required  Type     Description        
-=========  ========  ======== ====================================================================================================================================
-data       Yes       Resource Resource you wish to validate.
-                              `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
-=========  ========  ======== ====================================================================================================================================
-
-
-Headers
-""""""""""
-=============  ========  =========================================  ==============================================================================================
-Parameter      Required  Allowed values                             Description        
-=============  ========  =========================================  ==============================================================================================
-Content-Type   Yes       String(application/json,                   Resource media type
-                         application/xml)   
-Authorization  Yes       String('Token <authorization token>')      Authorization header.
-                                                                    Learn how to obtain a token :ref:`Token`.
-=============  ========  =========================================  ==============================================================================================
-
-Example
-"""""""""""""""""""
-
-.. code-block:: bash
-
-   curl -X POST -H "Content-Type: application/json" \
-   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/validate/"
-
 
 
 Resource detail
@@ -207,17 +120,104 @@ Response data
 ================== ========================================================================== ======================================================================================================
 Response           Description                                                                Example
 ================== ========================================================================== ======================================================================================================
-Resource           Description of the                                                         `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+Resource           Description of the                                                         See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
                    requested resource                                  
 ================== ========================================================================== ======================================================================================================
 
 
 
-Update resource
+Register a resource
+-------------------
+
+.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/tool/
+    https://dev.bio.tools/api/t/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======== ====================================================================================================================================
+Parameter  Required  Type     Description        
+=========  ========  ======== ====================================================================================================================================
+data       Yes       Resource Resource you wish to register.
+                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+=========  ========  ======== ====================================================================================================================================
+
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   Resource media type
+                         application/xml)   
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X POST -H "Content-Type: application/json" \
+   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+   -d '<resource>' "https://dev.bio.tools/api/tool/"
+
+Validate registering a resource
+-------------------------------
+
+Test registering a resource without it actually being saved into the database.
+
+.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/tool/validate/
+    https://dev.bio.tools/api/t/validate/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======== ====================================================================================================================================
+Parameter  Required  Type     Description        
+=========  ========  ======== ====================================================================================================================================
+data       Yes       Resource Resource you wish to validate.
+                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+=========  ========  ======== ====================================================================================================================================
+
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   Resource media type
+                         application/xml)   
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X POST -H "Content-Type: application/json" \
+   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+   -d '<resource>' "https://dev.bio.tools/api/tool/validate/"
+
+
+Update a resource
 ------------------
 Update a resource description.
 
-.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
+.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP PUT*
 
@@ -232,7 +232,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Resource Description with which you wish to update the resource
-                              `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 Headers
@@ -243,7 +243,7 @@ Parameter      Required  Allowed values                             Description
 Content-Type   Yes       String(application/json,                   Resource media type
                          application/xml)   
 Authorization  Yes       String('Token <authorization token>')      Authorization header.
-                                                                    Learn how to obtain a token :ref:`Token`.
+                                                                    Learn how to :ref:`Token`.
 =============  ========  =========================================  ==============================================================================================
 
 Example
@@ -261,7 +261,7 @@ Validate updating a resource
 -----------------------------
 Test updating a resource without it actually being saved into the database.
 
-.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
+.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP PUT*
 
@@ -276,7 +276,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Resource Description with which you wish to update the resource for validation
-                              `See an example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 Headers
@@ -287,7 +287,7 @@ Parameter      Required  Allowed values                             Description
 Content-Type   Yes       String(application/json,                   Resource media type
                          application/xml)   
 Authorization  Yes       String('Token <authorization token>')      Authorization header.
-                                                                    Learn how to obtain a token :ref:`Token`.
+                                                                    Learn how to :ref:`Token`.
 =============  ========  =========================================  ==============================================================================================
 
 Example
@@ -304,7 +304,7 @@ Delete resource
 ------------------
 Delete a resource.
 
-.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
+.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP DELETE*
 
@@ -319,7 +319,7 @@ Headers
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
 Authorization  Yes       String('Token <authorization token>')      Authorization header.
-                                                                    Learn how to obtain a token :ref:`Token`.
+                                                                    Learn how to :ref:`Token`.
 =============  ========  =========================================  ==============================================================================================
 
 Example
@@ -501,7 +501,7 @@ key                Authentication token
 Log user out
 ------------------
 
-.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
+.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP POST*
 
@@ -515,7 +515,7 @@ Headers
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
 Authorization  Yes       String('Token <authorization token>')      Authorization header.
-                                                                    Learn how to obtain a token :ref:`Token`.
+                                                                    Learn how to :ref:`Token`.
 =============  ========  =========================================  ==============================================================================================
 
 Example
