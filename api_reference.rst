@@ -455,7 +455,7 @@ Example
 .. code-block:: bash
 
    curl -X POST -H "Content-Type: application/json" \
-   -d '{"key":"ndwowtbpmlk5zxdxfrwgu2822xynjidhizhwosycve7hro1of156hjwdsf1f6gbn"} \
+   -d '{"key":"ndwowtbpmlk5zxdxfrwgu2822xynjidhizhwosycve7hro1of156hjwdsf1f6gbn"}' \
    "https://dev.bio.tools/api/rest-auth/registration/verify-email/"
 
 
