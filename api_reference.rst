@@ -8,31 +8,33 @@ An API (Application programming interface) is a protocol intended to be used as 
 
 If you find any bug, or have any questions, or any suggestions please get in touch with us. TODO: add link
 
-List resources
+Resource List
 ------------------
-Used to list and search through out all the available resources. Can sort, filter, and search the results.
+List and search through out all the available resources. Can sort, filter, and search the results.
 
 *HTTP GET*
 
 .. code-block:: text
 
-    https://bio.tools/api/tool/
-    https://bio.tools/api/t/
+    https://dev.bio.tools/api/tool/
+    https://dev.bio.tools/api/t/
 
 Endpoint Parameters
 """""""""""""""""""
-=========  ========  ====================================================  ===================                 ==========================================================
-Parameter  Required  Type                                                  Default                             Description        
-=========  ========  ====================================================  ===================                 ==========================================================
-page       No        Integer                                               1                                   Result page number 
-format     No        String(json, xml, api)                                json                                Response media type
-q          No        String                                                0                                   Query term, used for searching, 
-                                                                                                               matches all attributes
-sort       No        String(lastUpdate,                                    lastUpdate                          Sorts the results by choosen value
-                     additionDate, name, affiliation)                   
-ord        No        String(desc, asc)                                     desc                                Orders the results by either 
-                                                                                                               Ascending or Descending order
-=========  ========  ====================================================  ===================                 ==========================================================
+===========    ========  ====================================================  ===================                 ==========================================================
+Parameter      Required  Type                                                  Default                             Description        
+===========    ========  ====================================================  ===================                 ==========================================================
+page           No        Integer                                               1                                   Result page number 
+format         No        String(json, xml, api)                                json                                Response media type
+q              No        String                                                                                    Query term, used for searching, 
+                                                                                                                   matches all attributes
+sort           No        String(lastUpdate,                                    lastUpdate                          Sorts the results by choosen value
+                         additionDate, name, affiliation, score)                                                   (score only available when there is a query)
+ord            No        String(desc, asc)                                     desc                                Orders the results by either 
+                                                                                                                   Ascending or Descending order
+<attribute>    No        String                                                                                    Filter by <attribute>. 
+                                                                                                                   List of supported attributes below.
+===========    ========  ====================================================  ===================                 ==========================================================
 
 Filtering
 """""""""
@@ -43,7 +45,7 @@ To filter the results by attribute name, the attribute name has to be added as a
 Attributes
 ~~~~~~~~~~~~~~~~
 
-These are attributes supported by bio.tools
+These are attributes supported by dev.bio.tools
 
 .. code-block:: js
 
@@ -70,7 +72,7 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://bio.tools/api/tool/?page=5&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
+   curl -X GET "https://dev.bio.tools/api/tool/?page=1&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
 
 Response data
 """""""""""""""""""
@@ -84,16 +86,104 @@ list               An array which will hold multiple                            
                    resources and their relative information 
 ================== ========================================================================== =========================
 
+Register a resource
+-------------------
+
+.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/tool/
+    https://dev.bio.tools/api/t/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======== ====================================================================================================================================
+Parameter  Required  Type     Description        
+=========  ========  ======== ====================================================================================================================================
+data       Yes       Resource Resource you wish to register.
+                              `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+=========  ========  ======== ====================================================================================================================================
+
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   Resource media type
+                         application/xml)   
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to obtain a token :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X POST -H "Content-Type: application/json" \
+   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+   -d '<resource>' "https://dev.bio.tools/api/tool/"
+
+Validate registering a resource
+-------------------------------
+
+Test registering a resource without it actually being saved into the database.
+
+.. note:: This method requires the user to be authenticated. Learn how to obtain a token :ref:`Token`.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/tool/validate/
+    https://dev.bio.tools/api/t/validate/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======== ====================================================================================================================================
+Parameter  Required  Type     Description        
+=========  ========  ======== ====================================================================================================================================
+data       Yes       Resource Resource you wish to validate.
+                              `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+=========  ========  ======== ====================================================================================================================================
+
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   Resource media type
+                         application/xml)   
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to obtain a token :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X POST -H "Content-Type: application/json" \
+   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+   -d '<resource>' "https://dev.bio.tools/api/tool/validate/"
+
+
+
 Resource detail
 ------------------
-Used to obtain information about a single resource by using it's ID.
+Obtain information about a single resource.
 
 *HTTP GET*
 
 .. code-block:: text
 
-    https://bio.tools/api/tool/:id/
-    https://bio.tools/api/t/:id/
+    https://dev.bio.tools/api/tool/:id/
+    https://dev.bio.tools/api/t/:id/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -110,29 +200,38 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://bio.tools/api/tool/signalp/?format=json"
+   curl -X GET "https://dev.bio.tools/api/tool/signalp/?format=json"
 
 Response data
 """""""""""""""""""
 ================== ========================================================================== ======================================================================================================
 Response           Description                                                                Example
 ================== ========================================================================== ======================================================================================================
-<resource>         Description of the                                                         `See an example <resource> <https://bio.tools/api/tool/CBS/SignalP/4.1?format=json>`_. TODO: fix link
+Resource           Description of the                                                         `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
                    requested resource                                  
 ================== ========================================================================== ======================================================================================================
 
 
-Register a resource
--------------------
 
-.. note:: This method requires the user to be authenticated. `Learn how to obtain a token <http://sphinx.pocoo.org>`_. TODO: fix link
+Update resource
+------------------
+Update a resource description.
 
-*HTTP POST*
+*HTTP PUT*
 
 .. code-block:: text
 
-    https://bio.tools/api/tool/
-    https://bio.tools/api/t/
+    https://dev.bio.tools/api/tool/:id/
+    https://dev.bio.tools/api/t/:id/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======== ====================================================================================================================================
+Parameter  Required  Type     Description        
+=========  ========  ======== ====================================================================================================================================
+data       Yes       Resource Description with which you wish to update the resource
+                              `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+=========  ========  ======== ====================================================================================================================================
 
 Headers
 """"""""""
@@ -141,8 +240,157 @@ Parameter      Required  Allowed values                             Description
 =============  ========  =========================================  ==============================================================================================
 Content-Type   Yes       String(application/json,                   Resource media type
                          application/xml)   
-Authorization  Yes       String(Token <authorization token>)        Authorization header.
-                                                                    `Learn how to obtain a token <http://sphinx.pocoo.org>`_. TODO: fix link
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to obtain a token :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X PUT -H "Content-Type: application/json" \
+   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+   -d '<resource>' "https://dev.bio.tools/api/tool/SignalP"
+
+
+
+Validate updating a resource
+-----------------------------
+Test updating a resource without it actually being saved into the database.
+
+*HTTP PUT*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/tool/:id/validate/
+    https://dev.bio.tools/api/t/:id/validate/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======== ====================================================================================================================================
+Parameter  Required  Type     Description        
+=========  ========  ======== ====================================================================================================================================
+data       Yes       Resource Description with which you wish to update the resource for validation
+                              `See an example resource <https://dev.dev.bio.tools/api/tool/SignalP?format=json>`_
+=========  ========  ======== ====================================================================================================================================
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   Resource media type
+                         application/xml)   
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to obtain a token :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X PUT -H "Content-Type: application/json" \
+   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+   -d '<resource>' "https://dev.bio.tools/api/tool/SignalP/validate/"
+
+
+Delete resource
+------------------
+Delete a resource.
+
+*HTTP DELETE*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/tool/:id/
+    https://dev.bio.tools/api/t/:id/
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to obtain a token :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X DELETE \
+   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+   "https://dev.bio.tools/api/tool/SignalP"
+
+
+List used terms
+------------------
+Obtain a list of terms registered with tools for some attributes, e.g. a list of names of all tools.
+
+*HTTP GET*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/used-terms/:attribute
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ==============================================================  =======  ==========================================================
+Parameter  Required  Type                                                            Default  Description        
+=========  ========  ==============================================================  =======  ==========================================================
+attribute  Yes       String(name, topic, functionName, input, output, credits, all)           Attribute for which a list of used terms will be returned
+format     No        String(json, xml, api)                                          json     Response media type
+=========  ========  ==============================================================  =======  ==========================================================
+
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X GET "https://dev.bio.tools/api/used-terms/name/?format=json"
+
+Response data
+"""""""""""""""""""
+================== ====================
+Key Name           Description         
+================== ====================
+data               A list of used terms
+================== ====================
+
+
+Create a user account
+---------------------
+
+Creates a user account and emails a verification email.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/rest-auth/registration/
+
+POST data
+"""""""""""""""""""
+==================  ======  ========================================================================== =========================
+Key Name            Type    Description                                                                Example
+==================  ======  ========================================================================== =========================
+username            String  Account username                                                           username
+password1           String  Password                                                                   password
+password2           String  Repeated password                                                          password
+email               String  Account email. The verification email will be sent to this address         example@example.org
+==================  ======  ========================================================================== =========================
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   POST data media type
+                         application/xml)   
 =============  ========  =========================================  ==============================================================================================
 
 Example
@@ -151,7 +399,203 @@ Example
 .. code-block:: bash
 
    curl -X POST -H "Content-Type: application/json" \
-   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://bio.tools/api/tool/"
+   -d '{"username":"username", "password1":"password", \
+   "password2":"password", "email":"example@example.org"}' \
+   "https://dev.bio.tools/api/rest-auth/registration/"
 
-.. note:: `See an example <resource> <https://bio.tools/api/tool/CBS/SignalP/4.1?format=json>`_. TODO: fix link
+
+
+Verify a user account
+---------------------
+
+Verifies a user account based on the emailed verification key.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/rest-auth/registration/verify-email/
+
+POST data
+"""""""""""""""""""
+==================  ======  ========================================================================== ================================================================
+Key Name            Type    Description                                                                Example
+==================  ======  ========================================================================== ================================================================
+key                 String  Verification key from account creation email                               ndwowtbpmlk5zxdxfrwgu2822xynjidhizhwosycve7hro1of156hjwdsf1f6gbn
+==================  ======  ========================================================================== ================================================================
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   POST data media type
+                         application/xml)   
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X POST -H "Content-Type: application/json" \
+   -d '{"key":"ndwowtbpmlk5zxdxfrwgu2822xynjidhizhwosycve7hro1of156hjwdsf1f6gbn"} \
+   "https://dev.bio.tools/api/rest-auth/registration/verify-email/"
+
+
+.. _Token:
+
+Authenticate user / obtain token
+--------------------------------
+
+Logs the user in and returns an authentication token.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/rest-auth/login/
+
+POST data
+"""""""""""""""""""
+==================  ======  ========================================================================== =========================
+Key Name            Type    Description                                                                Example
+==================  ======  ========================================================================== =========================
+username            String  Account username                                                           username
+password            String  Password                                                                   password
+==================  ======  ========================================================================== =========================
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   POST data media type
+                         application/xml)   
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X POST -H "Content-Type: application/json" \
+   -d '{"username":"username","password":"password"}' \
+   "https://dev.bio.tools/api/rest-auth/login/"
+
+Response data
+"""""""""""""""""""
+================== ====================
+Key Name           Description         
+================== ====================
+key                Authentication token
+================== ====================
+
+
+Log user out
+------------------
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/rest-auth/logout/
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Authorization  Yes       String('Token <authorization token>')      Authorization header.
+                                                                    Learn how to obtain a token :ref:`Token`.
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+  curl -X POST 
+  -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
+  "https://dev.bio.tools/api/rest-auth/logout/"
+
+
+Reset user password
+--------------------------------
+
+Sends a password reset email.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/rest-auth/password/reset/
+
+POST data
+"""""""""""""""""""
+==================  ======  ========================================================================== =========================
+Key Name            Type    Description                                                                Example
+==================  ======  ========================================================================== =========================
+email               String  Account email                                                              example@example.org
+==================  ======  ========================================================================== =========================
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   POST data media type
+                         application/xml)   
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X POST -H "Content-Type: application/json" \
+   -d '{"email":"example@example.org"}' \
+   "https://dev.bio.tools/api/rest-auth/password/reset/"
+
+Confirm password reset
+--------------------------------
+
+Confirms a password reset using uid and token from a password reset email.
+
+*HTTP POST*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/rest-auth/password/reset/confirm/
+
+POST data
+"""""""""""""""""""
+==================  ======  ========================================================================== =========================
+Key Name            Type    Description                                                                Example
+==================  ======  ========================================================================== =========================
+uid                 String  UID from password reset email                                              MQ
+token               String  Token from password reset email                                            4ct-67e90a1ab4f22fbb9b9f
+password1           String  New password                                                               new_password
+password2           String  New password repeated                                                      new_password
+==================  ======  ========================================================================== =========================
+
+Headers
+""""""""""
+=============  ========  =========================================  ==============================================================================================
+Parameter      Required  Allowed values                             Description        
+=============  ========  =========================================  ==============================================================================================
+Content-Type   Yes       String(application/json,                   POST data media type
+                         application/xml)   
+=============  ========  =========================================  ==============================================================================================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X POST -H "Content-Type: application/json" \
+   -d '{"uid":"example@example.org", "token":"4ct-67e90a1ab4f22fbb9b9f"}' \
+   -d '{"password1":"new_password", "password2":"new_password"}' \
+   "https://dev.bio.tools/api/rest-auth/password/reset/confirm/"
+
+
