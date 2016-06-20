@@ -47,6 +47,10 @@ Text mining tool (sifter 99, name edamMap, Veit and Jon): This project uses text
 
 Workflow generation (sifter 119, Veit and Jon): EDAM provides powerful information to create pipelines for e.g. data analysis involving multiple tools. The study shows how to find applicable pipelines and presents several use cases for the analysis of mass spectrometry data. The work will be presented at ASMS 2016 (mass spectrometry conference) and a paper draft is being prepared.
 
+EDAM Tool Annotator (sifter 46): Improved annotation of tools using EDAM terms. The tool aims to peform a "smart" term search and picking on EDAM in the effort to provide the best exisiting tool annotations; alternatively term suggestions will also be available
+
+Tools used by ELIXIR trainers (sifter 60): finish curration for high-value tools to trainers.
+
 Ad 2) No volunteer today. But great opportunity if needing input/bounce off idea
 Ad 3) Credits to Emil for expanding the bio.tools statistics to comprise more parameters. The report could perhaps be made to contain the 'priority' dimension (Henriette and Jon to liase before the meeting, about this)
 ad 4) Not done. We really should.
