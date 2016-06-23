@@ -5,7 +5,7 @@ If you'd like to attend a hangout, please mail Jon Ison (jison@cbs.dtu.dk) cc He
 To understand how we organise tasks and projects, read here http://biotools.readthedocs.io/en/latest/project_management.html 
 
 =======================
-2016 June 24 11AM CET
+2016 July 1 11AM CET
 ---------------------- 
 Call details
 ^^^^^^^^^^^^
@@ -29,9 +29,8 @@ Agenda
 
 7) *Update on agreed actions* :
 *Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (DONE, see Ad 1 below)
-*Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on. DONE.
-
 8) *What else?*
+-Program for DKBC pre-meeting/hackathon in Odense (Jon)
 
 Minutes
 ^^^^^^
