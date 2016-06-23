@@ -4,6 +4,44 @@ Hangouts
 If you'd like to attend a hangout, please mail Jon Ison (jison@cbs.dtu.dk) cc Henriette Husum Bak-Jensen (hhu@bio.ku.dk) your gmail and skype addresses.
 To understand how we organise tasks and projects, read here http://biotools.readthedocs.io/en/latest/project_management.html 
 
+=======================
+2016 June 24 11AM CET
+---------------------- 
+Call details
+^^^^^^^^^^^^
+Hangouts - Jon initiates
+
+Attendeees
+^^^^^^^^^^
+Agenda
+^^^^^^
+1) *TASKS* : round-robin catch-up, people say what sifterapp they're working on, asking for help on tasks, reassignment of tasks, etc.
+2) *FOCUS* : one person leads a presentation and discussions on a specific point.
+3) *STATUS* : people are asked to review the Status Report http://biotools.readthedocs.io/en/latest/status_reports.html before the meeting and bring any points for discussion here, including points from partner institutions.
+4) *PRIORITIES* : people are asked to review current priorities on sifterapp, for discussion here.
+5) *EVENTS & DEADLINES* : people are asked to bring up items to be actioned in sifter 
+6) *KPIs* (Emil): Track status of key performance indicators from https://bio.tools/stats 
+*User accounts* (affiliations); 
+*Recurrent users* (recorded?); 
+*Entries*; 
+*Content changes/edits* (recorded?); 
+*Publications* (bio.tools technical progress - ideas for future publications  - what's in progress (sifterapp)
+
+7) *Update on agreed actions* :
+*Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (DONE, see Ad 1 below)
+*Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on. DONE.
+
+8) *What else?*
+
+Minutes
+^^^^^^
+
+
+
+
+
+Archive - Past meetings
+=======================
 2016 May 27 11AM CET
 ---------------------- 
 
@@ -58,10 +96,7 @@ ad 5) Not covered, due to time pressure.
 ad 6) Henriette will contact Emil about KPIs and tracking these
 
 
-
-Archive - Past meetings
-=======================
-
+----------------------
 2016 April 29 11AM CET
 ---------------------- 
 
