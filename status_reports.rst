@@ -175,3 +175,65 @@ Notes
 ^^^^^^^^^^^
 
   The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was co-organized by the French and Danish ELIXIR nodes.  The event brought together over 40 representatives from 21 academic institutions and companies, with projects including Galaxy, bio.tools, Common Workflow Language, biotoolsXSD, EDAM, Debian Med, BioShadock and more.  The delegates enjoyed a series of talks, lively discussions and breakout hacking sessions including bio.tools entry relationships, Galaxy to bio.tools publishing, CWL specification, workflow specification interoperability, and training workflows.  In addition to concrete outcomes including various technical documents, new CWL bindings and enabling support for EDAM annotations in Galaxy, the hackathon provided a boost to various ongoing collaborations between the projects and institutes.  We look forward to a re-run soon!
+
+
+2016 June
+---------- 
+
+Actions (June)
+^^^^^^^^^^^^^^^
+  - Content
+     - Mapping of OLS tags : EDAM (proposal), hopefully OLS will adopt EDAM.  See https://biotools.sifterapp.com/issues/186.
+
+  - Outreach actions
+
+    - ASMS/IMSC conference
+      - Magnus Palmblad (LUMC, NL) et al - member of registry-core - submitted a poster on workflow composition using EDAM / bio.tools annotations.
+
+    - ISMB
+      - Prepare 5 posters (ELIXIR & ELIXIR-DK, ELIXIR EXCELERATE WP1, bio.tools, EDAM, biotoolsXSD, computerome)
+      - Booth preparations (freebies, dressing etc.) & logistics
+
+    - Meeting with representatives of `The Open Microscopy Environment <https://www.openmicroscopy.org/>`_ and `Euro-BioImaging <www.eurobioimaging.eu/>`_  (including Gloabl-BioImaging) scope technical for collaboration with bio.tools.  See https://biotools.sifterapp.com/issues/166.
+
+
+  - Technical specification documents
+
+    - "Tool types and relations" (1st draft) to inform biotoolsXSD 2.0 development and support re-use of tool descriptions, and reduce duplications and inconsistencies in bio.tools.
+
+  - Technical developments
+
+    -          ~750 automated unit tests
+    -          new and improved grid view
+    -          ‘my profile’ page, with account information and list of tools registered by this account
+    -          admin / curation interface (work ongoing)
+
+    - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on user interfaces and unit tests
+    - Curation admin interface (content edition) (beta)
+    - General admin interface (account management, password change, reset etc)
+
+- Tasks **not** completed
+
+  - Prepare new slide deck for Tech Track including software demo
+
+
+Plans (July)
+^^^^^^^^^^^^^^^^
+
+  - Technical developments
+     - migrating and consolidating the content from the production database to the new system
+     - testing improvements to the search (so that it returns more relevant results)
+     - quality of life improvements to the registration interface (error handling)
+     - work towards release new system for testing by registry-core 
+
+  - Outreach actions
+     - ISMB
+
+  - Technical specification documents
+     - Settle these in prep for EXCELERATE WP1 D1.1
+       - API specs
+       - Tool types and relations
+       - Content ownership model
+       - Improved tool annotator mock-up 
+
+
