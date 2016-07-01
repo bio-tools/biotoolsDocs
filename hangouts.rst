@@ -5,8 +5,7 @@ If you'd like to attend a hangout, please mail Jon Ison (jison@cbs.dtu.dk) cc He
 To understand how we organise tasks and projects, read here http://biotools.readthedocs.io/en/latest/project_management.html 
 
 ----------------------
-
-2016 July 1 11AM CET
+2016 July 1 11 AM CET
 
 ---------------------- 
 Call details
@@ -36,8 +35,10 @@ Agenda
 
 Minutes
 ^^^^^^
+Ad 1) JI has made posters on ELIXIR, ELIXIR-DK, Computerome, Bio.tools to be presented at ISMB, ECCB, DK-BiC and more. Action: JI to please share the posters with the ELIXIR-DK partners and this forum. HH suggests ELIXIR-DK to define national strategy, including sub-strategy for Training and Outreach (Bio.tools-centered strategy for 1) Training Developers, 2) Training strategic segments of end-users in select tools and databases 3) Web-site communication of Danish training events and opportunities. Action: HH to raise issue at next Steering Group meeting (Sept 20th-2016) and to first get input from this forum at the 24 August technical meeting, Odense.
 
-
+Ad 8) The Elixir Bio.tools OPEN DAY meeting will take place on August 24, the day before the DKBiC meeting. The agenda is found here https://docs.google.com/document/d/1srFDJF43yPGphP8j11DgseiTkaxs7pHeAcj2WyfzH34/edit#  and JI will advertise the meeting broadly, with a reminder to register themselves on a doodle.
+Ad 8) Next two hangouts (end July and August) are cancelled due to holidays and the Open Day meeting, so we will have the next hangout meeting on Friday September 30th. 
 
 
 
