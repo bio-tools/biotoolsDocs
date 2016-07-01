@@ -5,7 +5,9 @@ If you'd like to attend a hangout, please mail Jon Ison (jison@cbs.dtu.dk) cc He
 To understand how we organise tasks and projects, read here http://biotools.readthedocs.io/en/latest/project_management.html 
 
 =======================
+
 2016 July 1 11AM CET
+
 ---------------------- 
 Call details
 ^^^^^^^^^^^^
