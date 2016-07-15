@@ -4,16 +4,56 @@ Hangouts
 If you'd like to attend a hangout, please mail Jon Ison (jison@cbs.dtu.dk) cc Henriette Husum Bak-Jensen (hhu@bio.ku.dk) your gmail and skype addresses.
 To understand how we organise tasks and projects, read here http://biotools.readthedocs.io/en/latest/project_management.html 
 
+
+---------------------------
+2016 September 29 11 AM CET
+---------------------------
+
+Call details
+^^^^^^^^^^^^
+
+Google Hangouts (ensure Jon & Henriette have your gmail address)
+
+Attendeees
+^^^^^^^^^^
+all welcome
+
+Agenda
+^^^^^^
+1) **ACTIONS FROM LAST MEETING** 
+2) **TASKS** - round-robin catch-up, 
+
+   - what `sifterapp <https://biotools.sifterapp.com/>`_ tasks have been worked on 
+   - ask for help on tasks, reassign tasks, etc.
+3) **STATUS** : discussion on the Status Report http://biotools.readthedocs.io/en/latest/status_reports.html : please read it before the meeting 
+4) **PRIORITIES** : discussion on the current priority assignments in `sifterapp <https://biotools.sifterapp.com/>`_  
+5) **EVENTS & DEADLINES** - bring up items to be actioned in sifter 
+6) **KPIs** : Track status of key performance indicators from https://bio.tools/stats.
+  
+   - # user accounts 
+   - # entries
+   - publications 
+7) **FOCUS** - one person leads a presentation and discussions on a specific point
+8) **AOB**
+
+Minutes
+^^^^^^^
+
+
+
 ----------------------
 2016 July 1 11 AM CET
+----------------------
 
----------------------- 
 Call details
 ^^^^^^^^^^^^
 Hangouts - Jon initiates
 
 Attendeees
 ^^^^^^^^^^
+
+Jon, Henriette, Veit, Anders
+
 Agenda
 ^^^^^^
 1) *TASKS* : round-robin catch-up, people say what sifterapp they're working on, asking for help on tasks, reassignment of tasks, etc.
@@ -21,20 +61,12 @@ Agenda
 3) *STATUS* : people are asked to review the Status Report http://biotools.readthedocs.io/en/latest/status_reports.html before the meeting and bring any points for discussion here, including points from partner institutions.
 4) *PRIORITIES* : people are asked to review current priorities on sifterapp, for discussion here.
 5) *EVENTS & DEADLINES* : people are asked to bring up items to be actioned in sifter 
-6) *KPIs* (Emil): Track status of key performance indicators from https://bio.tools/stats 
-*User accounts* (affiliations); 
-*Recurrent users* (recorded?); 
-*Entries*; 
-*Content changes/edits* (recorded?); 
-*Publications* (bio.tools technical progress - ideas for future publications  - what's in progress (sifterapp)
-
-7) *Update on agreed actions* :
-*Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (DONE, see Ad 1 below)
-8) *What else?*
--Program for DKBC pre-meeting/hackathon in Odense (Jon)
+6) *KPIs* (Emil): Track status of key performance indicators from https://bio.tools/stats. *User accounts* (affiliations); *Recurrent users* (recorded?); *Entries*; *Content changes/edits* (recorded?); *Publications* (bio.tools technical progress - ideas for future publications  - what's in progress (sifterapp)
+7) *Update on agreed actions* :*Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (DONE, see Ad 1 below)
+8) *What else?* -Program for DKBC pre-meeting/hackathon in Odense (Jon)
 
 Minutes
-^^^^^^
+^^^^^^^
 Ad 1) JI has made posters on ELIXIR, ELIXIR-DK, Computerome, Bio.tools to be presented at ISMB, ECCB, DK-BiC and more. Action: JI to please share the posters with the ELIXIR-DK partners and this forum. HH suggests ELIXIR-DK to define national strategy, including sub-strategy for Training and Outreach (Bio.tools-centered strategy for 1) Training Developers, 2) Training strategic segments of end-users in select tools and databases 3) Web-site communication of Danish training events and opportunities. Action: HH to raise issue at next Steering Group meeting (Sept 20th-2016) and to first get input from this forum at the 24 August technical meeting, Odense.
 
 Ad 8) The Elixir Bio.tools OPEN DAY meeting will take place on August 24, the day before the DKBiC meeting. The agenda is found here https://docs.google.com/document/d/1srFDJF43yPGphP8j11DgseiTkaxs7pHeAcj2WyfzH34/edit#  and JI will advertise the meeting broadly, with a reminder to register themselves on a doodle.
@@ -44,8 +76,11 @@ Ad 8) Next two hangouts (end July and August) are cancelled due to holidays and 
 
 Archive - Past meetings
 =======================
+
+
+-------------------- 
 2016 May 27 11AM CET
----------------------- 
+-------------------- 
 
 Call details
 ^^^^^^^^^^^^
@@ -63,17 +98,12 @@ Agenda
 3) *STATUS* : people are asked to review the Status Report http://biotools.readthedocs.io/en/latest/status_reports.html before the meeting and bring any points for discussion here, including points from partner institutions.
 4) *PRIORITIES* : people are asked to review current priorities on sifterapp, for discussion here.
 5) *EVENTS & DEADLINES* : people are asked to bring up items to be actioned in sifter 
-6) *KPIs* : Track status of key performance indicators from https://bio.tools/stats 
-*User accounts* (affiliations); *Recurrent users* (recorded?); *Entries*; *Content changes/edits* (recorded?); *Publications* (bio.tools technical progress - ideas for future publications  - what's in progress (sifterapp)
-
-7) *Update on agreed actions* :
-*Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (DONE, see Ad 1 below)
-*Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on. DONE.
-
+6) *KPIs* : Track status of key performance indicators from https://bio.tools/stats  *User accounts* (affiliations); *Recurrent users* (recorded?); *Entries*; *Content changes/edits* (recorded?); *Publications* (bio.tools technical progress - ideas for future publications  - what's in progress (sifterapp)
+7) *Update on agreed actions* : *Action* Henriette will contact Bernt Guldbrandsen for a representative from AU, QCG for the next meeting (DONE, see Ad 1 below) *Action* Maria Maddalena should please send the deadlines + events weekly alert to this quorum from now on. DONE.
 8) *What else?*
 
 Minutes
-^^^^^^
+^^^^^^^
 Ad 1) 
 Outreach to TESS (sifter 140, Henriette): Henriette is helping organise a workshop (Fall, 2016) between Bio.tools and TeSS on how to enable cross-links between the two ressources. 
 
@@ -122,8 +152,8 @@ Agenda
    - *formal or informal ?*
 4. Fixed agenda items
 
-   - discussion of bio.tools status report (Emil and Jon will publish, on the last Thu of each month)
-   including status on key performance indicators:
+   - discussion of bio.tools status report (Emil and Jon will publish, on the last Thu of each month) including status on key performance indicators:
+
     - #User accounts
     - #Entries
     - #Content changes/edits
