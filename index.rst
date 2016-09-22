@@ -21,4 +21,5 @@ Contents:
    Changelog and roadmap <changelog_roadmap>
    Governance <governance>
    Contributors <contributors>
+   GitHub projects <github_projects>
    Documentors Guide <documentors_guide>
