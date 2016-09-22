@@ -14,10 +14,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   API quickstart <api_quickstart>
    API reference <api_reference>
-   Documentors Guide <documentors_guide>
-   Project management <project_management>
+   Contributors Guide <contributors_guide>
    Hangouts <hangouts>
    Status reports <status_reports>
    Changelog & roadmap <changelog_roadmap>
+   Governance <governance>
+   Documentors Guide <documentors_guide>
