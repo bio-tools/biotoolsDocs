@@ -51,4 +51,4 @@ Status reports
 --------------
 A short summary of bio.tools activities, including last months actions and next months plans, is released on the last Thu of each month, to be discussed at the monthly hangout (above).  Read the `status reports <http://biotools.readthedocs.org/en/latest/status_reports.html>`_.  
 
-See also `https://bio.tools/stats <https://bio.tools/stats>`_ and the `ChangeLog <http://biotools.readthedocs.org/en/latest/changelog.html>`_.
+See also `https://bio.tools/stats <https://bio.tools/stats>`_ and the `ChangeLog <http://biotools.readthedocs.org/en/latest/changelog_roadmap.html>`_.

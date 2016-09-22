@@ -1,9 +1,13 @@
 Hangouts
 ========
 
+------------
+Next hangout
+------------
+
 If you'd like to attend a hangout, please mail Henriette Husum Bak-Jensen (hhu@bio.ku.dk) cc Jon Ison (jison@cbs.dtu.dk), including your gmail and skype addresses.  To understand how we organise tasks and projects, read the `Contributors Guide <http://biotools.readthedocs.io/en/latest/project_management.html>`_.
 
----------------------------
+
 2016 September 29 11 AM CET
 ---------------------------
 
@@ -37,11 +41,11 @@ Agenda
 Minutes
 ^^^^^^^
 
+-------
+Archive
+-------
 
-Archive - Past meetings
------------------------
 
-----------------------
 2016 July 1 11 AM CET
 ----------------------
 
@@ -75,7 +79,6 @@ Ad 8) Next two hangouts (end July and August) are cancelled due to holidays and 
 
 
 
--------------------- 
 2016 May 27 11AM CET
 -------------------- 
 
@@ -125,7 +128,6 @@ ad 5) Not covered, due to time pressure.
 ad 6) Henriette will contact Emil about KPIs and tracking these
 
 
-----------------------
 2016 April 29 11AM CET
 ---------------------- 
 
