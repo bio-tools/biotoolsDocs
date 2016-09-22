@@ -16,8 +16,8 @@ Contents:
 
    API quickstart <api_quickstart>
    API reference <api_reference>
-   Changelog <changelog>
    Documentors Guide <documentors_guide>
    Project management <project_management>
    Hangouts <hangouts>
    Status reports <status_reports>
+   Changelog & roadmap <changelog_roadmap>
