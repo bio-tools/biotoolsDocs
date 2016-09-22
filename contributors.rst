@@ -1,0 +1,117 @@
+Contributors
+============
+
+Registry Core
+-------------
+- Jon Ison (DTU, DK) - **content leader**, technical coordination (high-level)
+- Emil Rydza (DTU, DK) - **software leader**, technical coordination (low-level) 
+- Anders Dannesboe (BIRC, DK) - virtualization / container services 
+- Anne Wenzel (RTH, DK) - curation
+- Bren Vaughan (EMBL-EBI, EU) - EBI integration
+- Dan Bolser (EMBL-EBI, EU) - WIKI integration
+- Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
+- Dmitry Repchevsky (BSC, ES) - Web services
+- Erik Jaaniso (UT, EE) - text mining
+- Hans-Ioan Lenasescu (KU, DK) - tbd
+- Hervé Ménager (Institut Pasteur, FR) - workbench integration, user engagement, schema, EDAM
+- Jacques van Helden (Aix-Marseille University, FR) - advisor
+- José María Fernández (CNIO, ES) - benchmarking
+- Juergen Haas (University of Basel, CH) - benchmarking
+- Karel Berka (Palacky University, CZ) - advisor / tbd
+- Kristian Davidsen (DTU, DK) - data integration
+- Kristoffer Rapacki (DTU, DK) - advisor / tbd
+- Magnus Palmblad (LUMC, NL) - msutil.org integration
+- Matúš Kalaš (University of Bergen, NO) - user engagement, schema, EDAM
+- Peter Juvan (University of Ljubljana, SI) - curation
+- Piotr Chmura (DTU, DK) - bio.tools database
+- Rabie SAIDI (EMBL-EBI, EU) - text mining
+- Rune Møllegaard Friborg (BIRC, DK) - virtualization / container services
+- Sebastien Moretti (SIB, CH) - curation
+- Severine Duvaud (SIB, CH) - SIB / ExPASy integration
+- Tomáš Raček (Masaryk University, CZ) - advisor / tbd
+- Tunca Dogan (EMBL-EBI, EU) - text mining
+- Veit Schwämmle (SDU-BMB, DK) - data integration, EDAM
+- Wojtek Dabrowski (RKI, DE) - benchmarking
+
+Registry Core (tentative)
+-------------------------
+- Anthony Bretaudeau (INRA - GenOuest/BIPAA)
+- Christian Anthon (University of Copenhagen)
+- Laura Emery (EMBL-EBI)
+- Olivier Collin (CNRS - GenOuest)
+- Peter Rice (Imperial College London)
+- Priit Adler (University of Tartu)
+- Salvador Capella (INB)
+- Steffen Möller (University of Rostock, DE)
+
+Registry Contributors
+---------------------
+Thanks to the many people who have contributed - if you're not listed below, please let us know!
+
+- Aleksandra Nenadic (University of Manchester)
+- Alban Gaignard (CNRS, France)
+- Anthony Bretaudeau (INRA - GenOuest/BIPAA)
+- Bjoern Gruening (Uni-Freiburg)
+- Bren Vaughan (EMBL-EBI)
+- Carole Goble (ELIXIR-UK)
+- Chris Morris (STFC)
+- Christian Anthon (University of Copenhagen)
+- Christophe Blanchet (ELIXIR FR)
+- Dan Bolser (EMBL-EBI, UK)
+- Daniel Faria (FCG)
+- Daniel Kahn (INRA, Lyon 1 University & PRABI)
+- Federico Zambelli (CNR-IBBE)
+- Frederik Coppens (VIB, BE)
+- Gert Vriend (CMBI, NL)
+- Gianluca Della Vedova (Univ. Milano-Bicocca, IT)
+- Gianni Cesereni (University of Rome "Tor Vergata")
+- Gonçalo Antunes (INESC-ID)
+- Guy Yachdav (TUM, DE)
+- Hedi Peterson (University of Tartu)
+- Heinz Stockinger (SIB Swiss Institute of Bioinformatics)
+- Helen Parkinson (EMBL-EBI, UK)
+- Henriette Husum Bak-Jensen (UCPH - Dept of Biology)
+- Hervé Ménager (Institut Pasteur)
+- Inge Jonassen (ELIXIR NO)
+- Ivan Mičetić (University of Padova)
+- Jan Brezovsky (International Clinical Research Center and Masaryk university)
+- Jiří Vondrášek (ELIXIR-CZ)
+- José María Fernández (CNIO)
+- Karel Berka (UPOL, CZ)
+- Kaur Alasoo (University of Tartu)
+- Kristian Davidsen (DTU, DK)
+- Laura Emery (EMBL-EBI)
+- Luana Licata (University of Rome "Tor Vergata")
+- Ludek Matyska (Masaryk University)
+- Manuela Helmer-Citterich (University Tor Vergata, Rome)
+- Maria Maddalena Sperotto (DTU, ELIXIR-DK)
+- Marie Grosjean (IFB, FR)
+- Marie-Paule Lefranc (IMGT, IGH, CNRS, Université de Montpellier)
+- Matúš Kalaš (University of Bergen)
+- Michael Crusoe (University of California)
+- Niall Beard (University of Manchester)
+- Niclas Jareborg (ELIXIR SE)
+- Olivier Collin (CNRS - GenOuest)
+- Paola Roncaglia (EMBL-EBI)
+- Paolo Romano (IRCCS AOU San Martino IST)
+- Peter Juvan (University of Ljubljana)
+- Peter Rice (Imperial College London)
+- Priit Adler (University of Tartu)
+- Rabie Saidi (EMBL-EBI, UK)
+- Radka Svobodova (MU, CZ)
+- Rafael Jimenez (ELIXIR HUB)
+- Rodrigo Lopez (EMBL-EBI)
+- Rune Friborg (Birc, au)
+- Sebastien Moretti (SIB Swiss Institute of Bioinformatics)
+- Severine Duvaud (SIB Swiss Institute of Bioinformatics)
+- Silvio Tosatto (University of Padua)
+- Sofia Kossida (IMGT, IGH CNRS, University of Montpellier)
+- Steven Newhouse (ELIXIR EMBL-EBI)
+- Tatyana Goldberg (TUM, DE)
+- Timothy Karl (TUM, DE) (2remove: another important contact @rostlab)
+- Tunca Dogan (EMBL-EBI, UK)
+- Vegard Nygaard (ELIXIR NO)
+- Veit Schwämmle (SDU-BMB, DK)
+- Victor de la Torre (INB)
+- Karel Berka (Palacky U, CZ)
+

@@ -1,6 +1,7 @@
 Roadmap
 =======
-A summary of planned technical developments of the bio.tools software.
+A summary of planned technical development of bio.tools software.  Developments are informed by the ELIXIR EXCELERATE application (granted in April 2015).  The roadmap is updated in light of community input (see `Contributors Guide <http://biotools.readthedocs.org/en/latest/hangouts.html>`_) and on-going developments.  As a rule we aim for quarterly registry feature releases with supporting EDAM releases.
+
 
 2016 Q4
 -------

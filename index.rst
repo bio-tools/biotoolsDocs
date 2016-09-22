@@ -20,4 +20,5 @@ Contents:
    Status reports <status_reports>
    Changelog and roadmap <changelog_roadmap>
    Governance <governance>
+   Contributors <contributors>
    Documentors Guide <documentors_guide>
