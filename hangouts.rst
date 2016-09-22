@@ -23,7 +23,7 @@ Agenda
 
    - what `sifterapp <https://biotools.sifterapp.com/>`_ tasks have been worked on 
    - ask for help on tasks, reassign tasks, etc.
-3) **STATUS** : discussion on the Status Report http://biotools.readthedocs.io/en/latest/status_reports.html : please read it before the meeting 
+3) **STATUS** : discussion on the `Status Report <http://biotools.readthedocs.io/en/latest/status_reports.html>`_ : please read it before the meeting 
 4) **PRIORITIES** : discussion on the current priority assignments in `sifterapp <https://biotools.sifterapp.com/>`_  
 5) **EVENTS & DEADLINES** - bring up items to be actioned in sifter 
 6) **KPIs** : Track status of key performance indicators from https://bio.tools/stats.
