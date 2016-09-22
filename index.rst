@@ -18,6 +18,6 @@ Contents:
    Contributors Guide <contributors_guide>
    Hangouts <hangouts>
    Status reports <status_reports>
-   Changelog & roadmap <changelog_roadmap>
+   Changelog and roadmap <changelog_roadmap>
    Governance <governance>
    Documentors Guide <documentors_guide>
