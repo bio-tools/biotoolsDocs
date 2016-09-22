@@ -5,6 +5,10 @@ If you'd like to attend a hangout, please mail Jon Ison (jison@cbs.dtu.dk) cc He
 To understand how we organise tasks and projects, read here http://biotools.readthedocs.io/en/latest/project_management.html 
 
 
+
+Archive - Past meetings
+-----------------------
+
 ---------------------------
 2016 September 29 11 AM CET
 ---------------------------
@@ -73,9 +77,6 @@ Ad 8) The Elixir Bio.tools OPEN DAY meeting will take place on August 24, the da
 Ad 8) Next two hangouts (end July and August) are cancelled due to holidays and the Open Day meeting, so we will have the next hangout meeting on Friday September 30th. 
 
 
-
-Archive - Past meetings
-=======================
 
 
 -------------------- 
