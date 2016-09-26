@@ -38,7 +38,7 @@ THe list includes (at least) :
    - ECCB/ISMB (July 2017)
    - DKBC (Aug 2017)
    - Other events?
-HH will manage the list and bridge to DK-ELIXIR to ensure proper outreach/advertisement + budgetting + ELIXIR 'booth'-ware logistics.
+HH can manage the list and bridge to DK-ELIXIR to ensure proper outreach/advertisement + budgetting + ELIXIR 'booth'-ware logistics with HUB.
 
 6) **KPIs** : Track status of key performance indicators from https://bio.tools/stats.
   
