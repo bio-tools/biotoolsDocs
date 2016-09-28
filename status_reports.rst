@@ -14,7 +14,8 @@ Actions (September)
      - Presentation of work at ISMB, ECCB and DKBC
      - improved & extended `bio.tools docs <http://biotools.readthedocs.io/en/latest/>`_
      - detailed `roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ for registry software developments 
-   
+     - paper submitted   "ReGaTE, Registration of Galaxy Tools in Elixir" Olivia Doppelt-Azeroual, Ph.D.; Fabien Mareuil, Ph.D.; Eric Deveaud; Matus Kalas, Ph.D.; Nicola Soranzo; Marius van den Beek, Ph.D.; Björn Grüning; Jon Ison; Hervé Ménager
+
 Plans (October)
 ^^^^^^^^^^^^^^^
 
