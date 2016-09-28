@@ -11,7 +11,6 @@ October 2016
 
 - content ownership / sharing of edit rights (Google docs style)
 - stable tool ID / URL scheme including tool version number
-- release of bio.tools source code under open license
 - improved bio.tools auto-mailer (using admin email address)
 
 December 2016
