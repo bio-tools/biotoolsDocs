@@ -2,10 +2,38 @@ Roadmap
 =======
 A summary of planned technical development of bio.tools software.  Developments are informed by the ELIXIR EXCELERATE application (granted in April 2015).  The roadmap is updated in light of community input (see `Contributors Guide <http://biotools.readthedocs.org/en/latest/hangouts.html>`_) and on-going developments.  As a rule we aim for quarterly registry feature releases with supporting EDAM releases.
 
+October 2016
+------------
+- moving dev.bio.tools into production (consolidation of dev.bio.tools & bio.tools content)
+- QC checks 
+
+  - auto-checks for redundancy in content (tool name, homepage URL)
+  - link checking
+
+- stable tool ID / URL scheme including tool version number
+- content ownership / sharing of edit rights (Google docs style)
+- improved bio.tools auto-mailer (using admin email address)
+- release of bio.tools source code under open license
+
+December 2016
+-------------
+- support for candidate stable schema (Stage 1 / 3) in backend & user interfaces, with support for XML & documentation
+- content migration to stable schema
+- graphs of content growth
+- Google indexing of bio.tools
+- enhanced content reporting
+- subdomains
+
+2017 Q1
+-------
+- "sandbox" area for intermediate registrations
+- â€œmoderation interfaceâ€ for mass content import
+- improved QA/QC process
+
 
 2016 Q4
 -------
-- improved content ownership / permissions model
+* improved content ownership / permissions model
 - support for candidate stable schema
 
 2017 Q1
@@ -86,7 +114,7 @@ October 2015
 ------------
 - Rework of all interfaces to make website mobile friendly
 - Improved error handling, messages and display when registering a resource
-- Made JSON interactively editable in the ¡®Resource registration¡¯ interface
+- Made JSON interactively editable in the Â¡Â®Resource registrationÂ¡Â¯ interface
 - Continuous debugging and improvements
 
 September 2015
@@ -95,7 +123,7 @@ September 2015
 - New advanced filtering widget and mechanism
 - Improvements to the EDAM widget
 - Tooltips redone
-- Updated the contact tab in ¡®Resource registration¡¯ to make it obvious that either email or URL is required instead of both
+- Updated the contact tab in Â¡Â®Resource registrationÂ¡Â¯ to make it obvious that either email or URL is required instead of both
 - Continuous debugging and improvements
 
 August 2015
@@ -103,10 +131,10 @@ August 2015
 - Major release with focus on improved interface usability:
   - Removed splashscreen
   - Refactored menus
-  - New browsing interface: added new ¡®pill¡¯ view, new sorting capabilities, storing search state in the URL etc.
+  - New browsing interface: added new Â¡Â®pillÂ¡Â¯ view, new sorting capabilities, storing search state in the URL etc.
   - New registration interface: new ontology browsing widget, restructured to improve look and feel
   - New editing interface (for existing resources)
-  - Added ¡®compact view¡¯ to query interface
+  - Added Â¡Â®compact viewÂ¡Â¯ to query interface
   - Improved search bar with search suggestions
 - Finalizing search API intended to prepare for growth in content and usage of the registry (scalability)
 - New transferable search URL - same syntax for filtering both via GUI and API
@@ -153,8 +181,8 @@ April 2015
 - Various schema updates, e.g.
   - Improved dataType, dataFormat element docs
   - Extended URL with support for FTP 
-  - Enforced ¡®description' length limit
-  - Enforced other 'description' fields¡¯ length limits
+  - Enforced Â¡Â®description' length limit
+  - Enforced other 'description' fieldsÂ¡Â¯ length limits
   - Made publication ID mandatory
   - Updated sample JSON with "null" value of "uri"
 - Continuous debugging
