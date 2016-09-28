@@ -4,16 +4,15 @@ A summary of planned technical development of bio.tools software.  Developments 
 
 October 2016
 ------------
-- moving dev.bio.tools into production (consolidation of dev.bio.tools & bio.tools content)
-- QC checks 
+- moving dev.bio.tools into production (consolidation of dev.bio.tools & bio.tools content) with QC checks 
 
   - auto-checks for redundancy in content (tool name, homepage URL)
   - link checking
 
-- stable tool ID / URL scheme including tool version number
 - content ownership / sharing of edit rights (Google docs style)
-- improved bio.tools auto-mailer (using admin email address)
+- stable tool ID / URL scheme including tool version number
 - release of bio.tools source code under open license
+- improved bio.tools auto-mailer (using admin email address)
 
 December 2016
 -------------
@@ -27,7 +26,7 @@ December 2016
 2017 Q1
 -------
 - "sandbox" area for intermediate registrations
-- “moderation interface” for mass content import
+- "moderation interface" for mass content import
 - improved QA/QC process
 
 2017 Q2
