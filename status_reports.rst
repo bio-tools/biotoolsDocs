@@ -1,38 +1,153 @@
 Status reports
 ==============
 
-2016 March
+2016 September
+--------------
+
+Actions (September)
+^^^^^^^^^^^^^^^^^^^
+ 
+  - Major recent work highlights
+     - finished rewrite of registry software (see https://dev.bio.tools) 
+     - major revision of underlying data model (biotoolsXSD) producing candidate stable schema (https://github.com/bio-tools/biotoolsxsd/)
+     - Deliverable D1.1 submitted on time
+     - Presentation of work at ISMB, ECCB and DKBC
+     - improved & extended `bio.tools docs <http://biotools.readthedocs.io/en/latest/>`_
+     - detailed `roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ for registry software developments 
+   
+Plans (October)
+^^^^^^^^^^^^^^^
+
+     - moving dev.bio.tools into production, see  `roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ for registry software developments 
+     - `top-down plan for content expansion <https://biotools.sifterapp.com/issues/241>`_
+
+
+2016 June
 ---------- 
 
-Actions (March)
+Actions (June)
 ^^^^^^^^^^^^^^^
-- Outreach events (see https://bio.tools/events)
+  - Content
+     - Mapping of OLS tags : EDAM (proposal), hopefully OLS will adopt EDAM.  See https://biotools.sifterapp.com/issues/186.
 
-  - ELIXIR All-hands (7-10) 
-  - Norwegian Tools Hackathon (17-18)
-  - French Tools Hackathon (24-25)
-- Setup and configuration of project management software (sifterapp): https://biotools.sifterapp.com/
-- Setup and configuration of software issue management software (JIRA)
-- Setup bio.tools documentation framework: https://biotools.readthedocs.org
-- Setup bio.tools basic content reporting: https://bio.tools/stats
-- Rewrite bio.tools software to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_ (on-going)
+  - Outreach actions
 
-Plans (April)
-^^^^^^^^^^^^^
-- Outreach & collaborations
+    - ASMS/IMSC conference
+      - Magnus Palmblad (LUMC, NL) et al - member of registry-core - submitted a poster on workflow composition using EDAM / bio.tools annotations.
 
-  - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`_ and `ECCB 2016 <https://biotools.sifterapp.com/issues/154>`_ 
-  - `Activate ELIXIR-DK partners <https://biotools.sifterapp.com/issues/161>`_, esp. ensure everyone has ELIXIR-relevant tasks
-- Technical specification documents:
+    - ISMB
+      - Prepare 5 posters (ELIXIR & ELIXIR-DK, ELIXIR EXCELERATE WP1, bio.tools, EDAM, biotoolsXSD, computerome)
+      - Booth preparations (freebies, dressing etc.) & logistics
 
-  - `Settle bio.tools entry ID / URL format (API) <https://biotools.sifterapp.com/issues/36>`_
-  - `Fully featured API (planning) <https://biotools.sifterapp.com/issues/112>`_
-- Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
-- Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on `improving load time <https://biotools.sifterapp.com/issues/53>`_ and more `robust validation <https://biotools.sifterapp.com/issues/117>`_ of incoming tool descriptions
+    - Meeting with representatives of `The Open Microscopy Environment <https://www.openmicroscopy.org/>`_ and `Euro-BioImaging <www.eurobioimaging.eu/>`_  (including Gloabl-BioImaging) scope technical for collaboration with bio.tools.  See https://biotools.sifterapp.com/issues/166.
 
 
+  - Technical specification documents
+
+    - "Tool types and relations" (1st draft) to inform biotoolsXSD 2.0 development and support re-use of tool descriptions, and reduce duplications and inconsistencies in bio.tools.
+
+  - Technical developments
+
+    -          ~750 automated unit tests
+    -          new and improved grid view
+    -          ‘my profile’ page, with account information and list of tools registered by this account
+    -          admin / curation interface (work ongoing)
+
+    - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on user interfaces and unit tests
+    - Curation admin interface (content edition) (beta)
+    - General admin interface (account management, password change, reset etc)
+
+- Tasks **not** completed
+
+  - Prepare new slide deck for Tech Track including software demo
+
+Plans (July)
+^^^^^^^^^^^^^^^^
+
+  - Technical developments
+     - migrating and consolidating the content from the production database to the new system
+     - testing improvements to the search (so that it returns more relevant results)
+     - quality of life improvements to the registration interface (error handling)
+     - work towards release new system for testing by registry-core 
+
+  - Outreach actions
+     - ISMB
+
+  - Technical specification documents
+     - Settle these in prep for EXCELERATE WP1 D1.1
+       - API specs
+       - Tool types and relations
+       - Content ownership model
+       - Improved tool annotator mock-up 
 
 
+
+Notes
+^^^^^^^^^^^
+
+  The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was co-organized by the French and Danish ELIXIR nodes.  The event brought together over 40 representatives from 21 academic institutions and companies, with projects including Galaxy, bio.tools, Common Workflow Language, biotoolsXSD, EDAM, Debian Med, BioShadock and more.  The delegates enjoyed a series of talks, lively discussions and breakout hacking sessions including bio.tools entry relationships, Galaxy to bio.tools publishing, CWL specification, workflow specification interoperability, and training workflows.  In addition to concrete outcomes including various technical documents, new CWL bindings and enabling support for EDAM annotations in Galaxy, the hackathon provided a boost to various ongoing collaborations between the projects and institutes.  We look forward to a re-run soon!
+
+
+
+
+2016 May
+---------- 
+
+Actions (May)
+^^^^^^^^^^^^^^^
+- Outreach actions (see https://bio.tools/events)
+
+  - At ISMB, ELIXIR-DK will have a booth a give a technology track presentation
+  - The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was attended by over 40 people.  See `tinyurl.com/registryhackathon8 <tinyurl.com/registryhackathon8>`_ and the summary (below).
+
+- Development of the improved tool annotator is being led by Hans-Ioan Ienasescu, based on the `mockup <https://docs.google.com/document/d/1IJLMu_5WSJmFa6ePmL034ju7mPG8GBYMYxLixmiRDMI/edit#>`_
+
+- Content
+
+    - EDAM 1.15 is out
+        It includes new community-requested concepts and terms, including for metagenomics and biodiversity, structural improvements and fixes (synonyms clean-ups etc.), format updates, and implification of some concepts.  See the `Change log <https://github.com/edamontology/edamontology/blob/master/changelog.md>`_. Browse EDAM on `BioPortal <http://bioportal.bioontology.org/ontologies/EDAM?p=classes>`_ and in the new `OLS <http://www.ebi.ac.uk/ols/ontologies/edam>`_.
+
+- bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_ . Features done but not yet in production:
+
+  - **back-end** development
+
+    - robust validation of incoming tool descriptions
+    - new URL / persistent ID scheme
+    - unit tests for EDAM topics, operations, data types and formats
+
+  - **front-end** development
+
+    - ongoing work on the admin / curator interface
+    - ongoing work on the improved grid view
+
+
+Plans (June)
+^^^^^^^^^^^^^^^^
+
+  - Outreach actions
+
+    - ISMB
+      - Prepare 5 posters (computerome, ELIXIR-DK, bio.tools, EDAM, biotoolsXSD)
+      - Prepare new slide deck for Tech Track
+      - Booth preparations (freebies, dressing etc.)
+      - Plan logistics
+
+    - Meeting with representatives of `The Open Microscopy Environment <https://www.openmicroscopy.org/>`_ and `Euro-BioImaging <www.eurobioimaging.eu/>`_ to scope out technical collaboration with bio.tools.
+
+
+  - Technical specification documents
+
+    - "Tool types and relations" (1st draft) to inform biotoolsXSD 2.0 development and support re-use of tool descriptions, and reduce duplications and inconsistencies in bio.tools.
+
+  - Technical developments
+
+    - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on user interfaces and unit tests
+    - Curation admin interface (content edition) (beta)
+    - General admin interface (account management, password change, reset etc)
+
+- Tasks **not** completed in May
+
+  - General admin interface (account management, password change, reset etc) - postponed for now
 
 
 
@@ -112,128 +227,34 @@ Plans (May)
     - Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
 
 
-2016 May
+2016 March
 ---------- 
 
-Actions (May)
+Actions (March)
 ^^^^^^^^^^^^^^^
-- Outreach actions (see https://bio.tools/events)
+- Outreach events (see https://bio.tools/events)
 
-  - At ISMB, ELIXIR-DK will have a booth a give a technology track presentation
-  - The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was attended by over 40 people.  See `tinyurl.com/registryhackathon8 <tinyurl.com/registryhackathon8>`_ and the summary (below).
+  - ELIXIR All-hands (7-10) 
+  - Norwegian Tools Hackathon (17-18)
+  - French Tools Hackathon (24-25)
+- Setup and configuration of project management software (sifterapp): https://biotools.sifterapp.com/
+- Setup and configuration of software issue management software (JIRA)
+- Setup bio.tools documentation framework: https://biotools.readthedocs.org
+- Setup bio.tools basic content reporting: https://bio.tools/stats
+- Rewrite bio.tools software to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_ (on-going)
 
-- Development of the improved tool annotator is being led by Hans-Ioan Ienasescu, based on the `mockup <https://docs.google.com/document/d/1IJLMu_5WSJmFa6ePmL034ju7mPG8GBYMYxLixmiRDMI/edit#>`_
+Plans (April)
+^^^^^^^^^^^^^
+- Outreach & collaborations
 
-- Content
+  - Preparations for `ISMB 2016 <https://biotools.sifterapp.com/issues/160>`_ and `ECCB 2016 <https://biotools.sifterapp.com/issues/154>`_ 
+  - `Activate ELIXIR-DK partners <https://biotools.sifterapp.com/issues/161>`_, esp. ensure everyone has ELIXIR-relevant tasks
+- Technical specification documents:
 
-    - EDAM 1.15 is out
-        It includes new community-requested concepts and terms, including for metagenomics and biodiversity, structural improvements and fixes (synonyms clean-ups etc.), format updates, and implification of some concepts.  See the `Change log <https://github.com/edamontology/edamontology/blob/master/changelog.md>`_. Browse EDAM on `BioPortal <http://bioportal.bioontology.org/ontologies/EDAM?p=classes>`_ and in the new `OLS <http://www.ebi.ac.uk/ols/ontologies/edam>`_.
+  - `Settle bio.tools entry ID / URL format (API) <https://biotools.sifterapp.com/issues/36>`_
+  - `Fully featured API (planning) <https://biotools.sifterapp.com/issues/112>`_
+- Release of EDAM 1.15 addressing multiple requests logged on `GitHub <https://github.com/edamontology/edamontology/issues>`_
+- Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on `improving load time <https://biotools.sifterapp.com/issues/53>`_ and more `robust validation <https://biotools.sifterapp.com/issues/117>`_ of incoming tool descriptions
 
-- bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_ . Features done but not yet in production:
-
-  - **back-end** development
-
-    - robust validation of incoming tool descriptions
-    - new URL / persistent ID scheme
-    - unit tests for EDAM topics, operations, data types and formats
-
-  - **front-end** development
-
-    - ongoing work on the admin / curator interface
-    - ongoing work on the improved grid view
-
-Plans (June)
-^^^^^^^^^^^^^^^^
-
-  - Outreach actions
-
-    - ISMB
-      - Prepare 5 posters (computerome, ELIXIR-DK, bio.tools, EDAM, biotoolsXSD)
-      - Prepare new slide deck for Tech Track
-      - Booth preparations (freebies, dressing etc.)
-      - Plan logistics
-
-    - Meeting with representatives of `The Open Microscopy Environment <https://www.openmicroscopy.org/>`_ and `Euro-BioImaging <www.eurobioimaging.eu/>`_ to scope out technical collaboration with bio.tools.
-
-
-  - Technical specification documents
-
-    - "Tool types and relations" (1st draft) to inform biotoolsXSD 2.0 development and support re-use of tool descriptions, and reduce duplications and inconsistencies in bio.tools.
-
-  - Technical developments
-
-    - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on user interfaces and unit tests
-    - Curation admin interface (content edition) (beta)
-    - General admin interface (account management, password change, reset etc)
-
-- Tasks **not** completed in May
-
-  - General admin interface (account management, password change, reset etc) - postponed for now
-
-
-Notes
-^^^^^^^^^^^
-
-  The “Tools, Workflows and Workbenches” hackathon (Institut Pasteur, May 18-20) was co-organized by the French and Danish ELIXIR nodes.  The event brought together over 40 representatives from 21 academic institutions and companies, with projects including Galaxy, bio.tools, Common Workflow Language, biotoolsXSD, EDAM, Debian Med, BioShadock and more.  The delegates enjoyed a series of talks, lively discussions and breakout hacking sessions including bio.tools entry relationships, Galaxy to bio.tools publishing, CWL specification, workflow specification interoperability, and training workflows.  In addition to concrete outcomes including various technical documents, new CWL bindings and enabling support for EDAM annotations in Galaxy, the hackathon provided a boost to various ongoing collaborations between the projects and institutes.  We look forward to a re-run soon!
-
-
-2016 June
----------- 
-
-Actions (June)
-^^^^^^^^^^^^^^^
-  - Content
-     - Mapping of OLS tags : EDAM (proposal), hopefully OLS will adopt EDAM.  See https://biotools.sifterapp.com/issues/186.
-
-  - Outreach actions
-
-    - ASMS/IMSC conference
-      - Magnus Palmblad (LUMC, NL) et al - member of registry-core - submitted a poster on workflow composition using EDAM / bio.tools annotations.
-
-    - ISMB
-      - Prepare 5 posters (ELIXIR & ELIXIR-DK, ELIXIR EXCELERATE WP1, bio.tools, EDAM, biotoolsXSD, computerome)
-      - Booth preparations (freebies, dressing etc.) & logistics
-
-    - Meeting with representatives of `The Open Microscopy Environment <https://www.openmicroscopy.org/>`_ and `Euro-BioImaging <www.eurobioimaging.eu/>`_  (including Gloabl-BioImaging) scope technical for collaboration with bio.tools.  See https://biotools.sifterapp.com/issues/166.
-
-
-  - Technical specification documents
-
-    - "Tool types and relations" (1st draft) to inform biotoolsXSD 2.0 development and support re-use of tool descriptions, and reduce duplications and inconsistencies in bio.tools.
-
-  - Technical developments
-
-    -          ~750 automated unit tests
-    -          new and improved grid view
-    -          ‘my profile’ page, with account information and list of tools registered by this account
-    -          admin / curation interface (work ongoing)
-
-    - Continue bio.tools rewrite to `pay off technical debt <https://biotools.sifterapp.com/issues/94>`_, with a focus on user interfaces and unit tests
-    - Curation admin interface (content edition) (beta)
-    - General admin interface (account management, password change, reset etc)
-
-- Tasks **not** completed
-
-  - Prepare new slide deck for Tech Track including software demo
-
-
-Plans (July)
-^^^^^^^^^^^^^^^^
-
-  - Technical developments
-     - migrating and consolidating the content from the production database to the new system
-     - testing improvements to the search (so that it returns more relevant results)
-     - quality of life improvements to the registration interface (error handling)
-     - work towards release new system for testing by registry-core 
-
-  - Outreach actions
-     - ISMB
-
-  - Technical specification documents
-     - Settle these in prep for EXCELERATE WP1 D1.1
-       - API specs
-       - Tool types and relations
-       - Content ownership model
-       - Improved tool annotator mock-up 
 
 
