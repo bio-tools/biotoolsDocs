@@ -30,18 +30,6 @@ December 2016
 - “moderation interface” for mass content import
 - improved QA/QC process
 
-
-2016 Q4
--------
-* improved content ownership / permissions model
-- support for candidate stable schema
-
-2017 Q1
--------
-- subdomains
-- "sandbox" function for intermediate registrations
-- improved QA/QC process
-
 2017 Q2
 -------
 - automated support for new EDAM releases
