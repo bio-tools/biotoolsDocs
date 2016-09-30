@@ -54,6 +54,22 @@ HH can manage the list and bridge to DK-ELIXIR to ensure proper outreach/adverti
 
 Minutes
 ^^^^^^^
+This meeting was attended by Anders Dannesboe; Christian Anthon; Lukasz Berger; Emil Rydza; Jon Ison, Henriette Husum
+
+We deviated from the agenda and focused on the main issue raised by Jon : 
+Bio.tools content growth must happen faster. More tools and databases need to be loaded to Bio.tools and this must be a critical focus until 1) we are on track with a 2) valid content growth plan that has been endorsed by the steering group.
+
+To this end - we will consider the following actions:
+-assign milestones (i.e. month-year completion needs) to all sifter tasks
+-gear sifterapp (a vital, buttom-up project management tool) with genuine leadership
+-map bio.tools upload targets for WP1 partners
+-map bio.tools upload targets for Danish Elixir DK satellite partners
+-clarify purpose of planned 'events' and how these each relate to KPI growth
+-get the 'sandbox' fully operational
+-get the DK technical group and WP1 group together for a 'content growth tactics' sign-off meeting early December 2016 (big release).
+
+Henriette and Jon will continue the discussion off-line and come back by email.
+Our next meeting is 28 October 2016 from 11:00 DK-time.
 
 -------
 Archive
