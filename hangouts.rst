@@ -82,7 +82,7 @@ Our next meeting is 28 October 2016 from 11:00 DK-time.
 
 
 2016 July 1 11 AM CET
-----------------------
+---------------------
 
 Call details
 ^^^^^^^^^^^^
