@@ -3,7 +3,7 @@ Hangouts
 
 If you'd like to attend a hangout, please mail Henriette Husum Bak-Jensen (hhu@bio.ku.dk) cc Jon Ison (jison@cbs.dtu.dk), including your gmail and skype addresses.  To understand how we organise tasks and projects, read the `Contributors Guide <http://biotools.readthedocs.io/en/latest/project_management.html>`_.
 
----------------------------
+
 2016 September 30 11 AM CET
 ---------------------------
 
