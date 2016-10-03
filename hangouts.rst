@@ -77,6 +77,7 @@ We deviated from the agenda and focused on the main issue raised by Jon : bio.to
 - organise a f2f meeting for the DK technical group and WP1 partners : 'content growth tactics' sign-off meeting early December 2016, coinciding with the big release (Jon & Henriette)
 
 Henriette and Jon will continue the discussion off-line and come back by email.
+
 Our next meeting is 28 October 2016 from 11:00 DK-time.
 
 
