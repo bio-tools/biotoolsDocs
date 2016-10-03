@@ -75,6 +75,27 @@ Our next meeting is 28 October 2016 from 11:00 DK-time.
 Archive
 -------
 
+2016 Sep 30 11 AM CET
+----------------------
+
+Attendeees
+^^^^^^^^^^
+Anders Dannesboe; Christian Anthon; Lukasz Berger; Emil Rydza; Jon Ison, Henriette Husum
+
+Agenda
+^^^^^^
+We deviated from the agenda and focused on the main issue raised by Jon : bio.tools content growth must happen faster. More tools and databases need to be loaded to bio.tools and this must be a critical focus until 1) we are on track with it and 2) practical content growth plan that has been endorsed by the Steering Group. To this end - we will consider the following actions to gear sifterapp:
+
+- complete "top down" anaylsis of curation requirements + ELIXIR EXCELERATE WP1 deliverables and milestones due in 2017 (Jon)
+- firm-up practical KPIs, metrics for assesment and propose sensible targets.  Map upload targets for WP1 partners & Danish Elixir DK satellite partners (Jon & Henriette)
+- map requirements (curation and for milestone & deliverables) to available resources in DK + WP1 partners (Jon in 1st instance) 
+- assign milestones (i.e. month-year completion needs) to all sifter tasks in "bio.tools content" tracker, this should reflect upload targets for WP1 partners & Danish Elixir DK satellite partners (Jon in 1st instance)
+- clarify purpose of planned 'events' and how these each relate to KPI growth (Jon & Henriette)
+- prioritise tooling that is essential for content growth, notably the 'moderation interface' (for mass content imports), 'sandbox' functionality (for intermediate registrations) and tool annotator
+- organise a f2f meeting for the DK technical group and WP1 partners : 'content growth tactics' sign-off meeting early December 2016, coinciding with the big release (Jon & Henriette)
+
+Jon & Henriette will take a private call to advance these points.
+
 
 2016 July 1 11 AM CET
 ----------------------
