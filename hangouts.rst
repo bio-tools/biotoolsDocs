@@ -8,8 +8,8 @@ If you'd like to attend a hangout, please mail Henriette Husum Bak-Jensen (hhu@b
 Next meeting
 ------------
 
-2016 September 30 11 AM CET
----------------------------
+2016 Oct 28, 11 AM CET
+-----------------------
 
 Call details
 ^^^^^^^^^^^^
@@ -27,21 +27,19 @@ Agenda
 
    - what `sifterapp <https://biotools.sifterapp.com/>`_ tasks have been worked on 
    - ask for help on tasks, reassign tasks, etc.
+
 3) **STATUS** : discussion on the `Status Report <http://biotools.readthedocs.io/en/latest/status_reports.html>`_ : please read it before the meeting 
 4) **PRIORITIES** : discussion on the current priority assignments in `sifterapp <https://biotools.sifterapp.com/>`_  
-   - # 138 Leveraging the training community (Henriette)
-   - # 211 Implementation of tool annotator (Hans)
-    
-   
-
 5) **EVENTS & DEADLINES** - bring up items to be actioned in sifter 
-We need a list of events which promote Bio.tools, and for which we expect / want DK-ELIXIR to give funding/support.
-THe list includes (at least) :
+We need a list of events which promote bio.tools, and for which we expect / want DK-ELIXIR to give funding/support.
+The list includes (at least) :
+
    - EuBIC conference (Jan 2017) 
    - ELIXIR All-hands (Mar 2017)
    - ECCB/ISMB (July 2017)
    - DKBC (Aug 2017)
    - Other events?
+
 HH can manage the list and bridge to DK-ELIXIR to ensure proper outreach/advertisement + budgetting + ELIXIR 'booth'-ware logistics with HUB.
 
 6) **KPIs** : Track status of key performance indicators from https://bio.tools/stats.
@@ -49,12 +47,14 @@ HH can manage the list and bridge to DK-ELIXIR to ensure proper outreach/adverti
    - # user accounts 
    - # entries
    - publications 
+
 7) **FOCUS** - one person leads a presentation and discussions on a specific point
+
 - # 178 Live Stock and Crops tools hackathon Nov 2016: presentation of proposal for date in 2016 and program and need for help (Vivi)
-- 
+ 
 8) **AOB**
 
-9) **NEXT MEETING IS 28 OCTOBER, 2016**
+9) **TIME OF NEXT MEETING**
 
 
 -------
