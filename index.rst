@@ -23,3 +23,4 @@ Contents:
    Contributors <contributors>
    GitHub projects <github_projects>
    Documentors Guide <documentors_guide>
+   License <license>
