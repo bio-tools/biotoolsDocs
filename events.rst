@@ -1,6 +1,6 @@
 Events
 ======
-If you want to attend an event or have an idea for an event, please mail `registry@elixir-dk.org <mailto:registry@elixir-dk.org>`_.  As a rule we try to avoid events in July & August.  All attendees should please read our `code of conduct <http://biotools.readthedocs.org/en/latest/events.html#codeofconduct>`_.
+We organise many events as well as attend events organised by others.  If you want to attend an event or have an idea for an event, please mail `registry@elixir-dk.org <mailto:registry@elixir-dk.org>`_.  As a rule we try to avoid events in July & August.  All attendees should please read our `code of conduct <http://biotools.readthedocs.org/en/latest/events.html#codeofconduct>`_.
 
 - **Curation Hackathons** (¡°curatathons¡±) gather providers from across the board to curate their resources, critique the Registry interfaces, and provide a forum for knowledge exchange and collaboration. 
 - **Thematic Hackathons** engage experts in a specific scientific area to help improve the relevant branches of EDAM, consolidate the existing registry annotations, as well as register new resources within the theme.
@@ -10,13 +10,13 @@ If you want to attend an event or have an idea for an event, please mail `regist
 Forthcoming events
 ------------------
 
-**Workshop : Common Language for Translation Research (October 19-20 2016, EMBL-EBI, UK)**
+**Workshop : Common Language for Translation Research (Oct 19-20 2016, EMBL-EBI, UK)**
 
 An event hosted by the EMBL-EBI Industry Forum to bridge gaps in the utility of public Bioinformatics resources for Translational Research.  More details will be added soon.
 
 ------
 
-**Workshop : bio.tools @ NETTAB : (October 24 2016, Italian National Research Council, Rome, IT)**
+**Workshop : bio.tools @ NETTAB : (Oct 24 2016, Italian National Research Council, Rome, IT)**
 
 http://www.igst.it/nettab/2016/programme/hackathon/ 
 
@@ -26,14 +26,14 @@ A one day bioinformatics hackathon organized by ELIXIR held in occasion of the N
 
 ------
 
-**Technical Hackathon : Towards a comprehensive catalogue of data formats (November 2016 tbd, Amsterdam, NL)**
+**Technical Hackathon : Towards a comprehensive catalogue of data formats (Nov 2016 tbd, Amsterdam, NL)**
 *tentative*
 
 A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  More details will be added soon.
 
 ------
 
-**Thematic Hackathon : Computational Proteomics Resources (January 10-13, 2017, Semmering, AT)**
+**Thematic Hackathon : Computational Proteomics Resources (Jan 10-13, 2017, Semmering, AT)**
 *tentative* 
 
 http://tinyurl.com/registryhackathon11
@@ -84,7 +84,7 @@ An informal day of presentations, discussion and hacking, combining two events i
 
 ------
 
-**Technical Hackathon 3 : Tools, Workflows and Workbenches (May 18-20, 2016, Institut Pasteur, Paris, FR)**
+**Technical Hackathon : Tools, Workflows and Workbenches (May 18-20, 2016, Institut Pasteur, Paris, FR)**
 
 http://tinyurl.com/registryhackathon8
 
@@ -92,19 +92,19 @@ A hackathon bringing together developers from key technical projects from ELIXIR
 
 ------
 
-**Resource Hackathon 5 : ELIXIR-SI  Tools & Data Services (Apr 8, 2016, University of Ljubljana, SI)**
+**Resource Hackathon : ELIXIR-SI  Tools & Data Services (Apr 8, 2016, University of Ljubljana, SI)**
 
 ELIXIR-SI Registry Hackathon will take place on Apr 8, 2016 12-18h at the Faculty of Computer and Information Science (room PR05). The aim of the hackathon is to register Slovenian Bioinformatics Resources and create a national catalogue of Bioinformatics Tools and Data Services. 
 
 ------
 
-**Thematic Hackathon 3 : Metagenomics Training Resources (April 7-8, 2016, EMBL-EBI, UK)**
+**Thematic Hackathon : Metagenomics Training Resources (Apr 7-8, 2016, EMBL-EBI, UK)**
 
 Organised in collaboration with the GOBLET and the ELIXIR Training Platform.
 
 ------
 
-**Resource Hackathon 3 : French Tools & Data Services (March 24-25, 2016, IFB, Gif-sur-Yvette, FR)**
+**Resource Hackathon : French Tools & Data Services (Mar 24-25, 2016, IFB, Gif-sur-Yvette, FR)**
 
 http://tinyurl.com/registryhackathon6
 
@@ -112,13 +112,13 @@ A hackathon bringing together representatives of French bioinformatics communiti
 
 ------
 
-**Resource Hackathon 4 : Norwegian Tools & Data Services (Mar 16-18, 2016, NTNU Trondheim, NO)**
+**Resource Hackathon : Norwegian Tools & Data Services (Mar 16-18, 2016, NTNU Trondheim, NO)**
 
 A hackathon bringing together representatives of Norwegian bioinformatics communities with the ELIXIR Tools & Data Services Registry, dedicated to the description and cataloguing of Norway tools and services, to boost their discovery and utility.
 
 ------
 
-**Resource Hackathon 2 : bio.tools @ Debian Med Sprint (Feb 4-7 2016, Lyngby, DK)**
+**Resource Hackathon : bio.tools @ Debian Med Sprint (Feb 4-7 2016, Lyngby, DK)**
 
 https://wiki.debian.org/Sprints/2016/DebianMed2016
 
@@ -126,7 +126,7 @@ Co-located with the Debian Med sprint: a resource hackathon focussed on curation
 
 ------
 
-**Resource Hackathon 1 : de.NBI EDAM Codefest (Jan 19-20 2016, Freiburg Uni., DE)**
+**Resource Hackathon : de.NBI EDAM Codefest (Jan 19-20 2016, Freiburg Uni., DE)**
 
 http://tinyurl.com/registryhackathon7
 
@@ -134,7 +134,7 @@ This hackathon, organised by University of Freiburg, will focus on 1) annotation
 
 ------
 
-**Technical Hackathon 2 : EDAM development heuristics (Dec 1-4 2015, Amsterdam, NL)**
+**Technical Hackathon : EDAM development heuristics (Dec 1-4 2015, Amsterdam, NL)**
 
 http://tinyurl.com/registryhackathon5
 
@@ -142,7 +142,7 @@ This hackathon aimed at preparing EDAM for scaling with registry growth.  The fo
 
 ------
 
-**Curatathon 2 : bio.tools curation (Nov 4-6 2015, Brno, Czech Republic)**
+**Curatathon : bio.tools curation (Nov 4-6 2015, Brno, Czech Republic)**
 
 http://tinyurl.com/registryhackathon3
 
@@ -150,13 +150,13 @@ The second in the series, will aim for representation in the registry of all ELI
 
 ------
 
-**Thematic Hackathon 2 : RNA analysis (Sep 23-25 2015, Copenhagen, DK).**
+**Thematic Hackathon : RNA analysis (Sep 23-25 2015, Copenhagen, DK).**
 
 A thematic hackathon focussed on RNA analysis and seeking to establish an ELIXIR RNA Tools Consortium that the Registry can draw upon in the future.
 
 ------
 
-**Thematic Hackathon 1 : defining good practice for resource annotation and registry curation (Aug 23-25 2015, Tallin, EE).**
+**Thematic Hackathon : defining good practice for resource annotation and registry curation (Aug 23-25 2015, Tallin, EE).**
 
 http://tinyurl.com/registryhackathon4
 
@@ -164,7 +164,7 @@ A three day workshop organised and financed by ELIXIR-EE aiming to identify rele
 
 ------
 
-**Technical Hackathon 1 - EDAM Development & Governance (Mar 2015, Lyngby, DK)**
+**Technical Hackathon - EDAM Development & Governance (Mar 2015, Lyngby, DK)**
 
 http://tinyurl.com/registryhackathon2
 
@@ -172,7 +172,7 @@ Focused on EDAM technical maintenance and usability, and produced a mock-up of t
 
 ------
 
-**Curatathon 1 - Registration of Tool & Data Services (Nov 19-21 2014, Lyngby, DK)**
+**Curatathon - Registration of Tool & Data Services (Nov 19-21 2014, Lyngby, DK)**
 
 http://tinyurl.com/registryhackathon
 
