@@ -12,14 +12,14 @@ Registry Core
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
 - Dmitry Repchevsky (BSC, ES) - Web services
 - Erik Jaaniso (UT, EE) - text mining
-- Hans-Ioan Lenasescu (KU, DK) - tbd
+- Hans-Ioan Lenasescu (KU, DK) - Web development, curator
 - Hervé Ménager (Institut Pasteur, FR) - workbench integration, user engagement, schema, EDAM
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
 - José María Fernández (CNIO, ES) - benchmarking
 - Juergen Haas (University of Basel, CH) - benchmarking
-- Karel Berka (Palacky University, CZ) - advisor / tbd
+- Karel Berka (Palacky University, CZ) - advisor 
 - Kristian Davidsen (DTU, DK) - data integration
-- Kristoffer Rapacki (DTU, DK) - advisor / tbd
+- Kristoffer Rapacki (DTU, DK) - advisor
 - Magnus Palmblad (LUMC, NL) - msutil.org integration
 - Matúš Kalaš (University of Bergen, NO) - user engagement, schema, EDAM
 - Peter Juvan (University of Ljubljana, SI) - curation
@@ -28,7 +28,7 @@ Registry Core
 - Rune Møllegaard Friborg (BIRC, DK) - virtualization / container services
 - Sebastien Moretti (SIB, CH) - curation
 - Severine Duvaud (SIB, CH) - SIB / ExPASy integration
-- Tomáš Raček (Masaryk University, CZ) - advisor / tbd
+- Tomáš Raček (Masaryk University, CZ) - curator
 - Tunca Dogan (EMBL-EBI, EU) - text mining
 - Veit Schwämmle (SDU-BMB, DK) - data integration, EDAM
 - Wojtek Dabrowski (RKI, DE) - benchmarking
