@@ -10,11 +10,11 @@ If you want to attend an event or have an idea for an event, please mail `regist
 Forthcoming events
 ------------------
 
-  .. container::
+**Workshop : Common Language for Translation Research (October 19-20 2016, EMBL-EBI, UK)**
 
-     **Workshop : Common Language for Translation Research (October 19-20 2016, EMBL-EBI, UK)**
+An event hosted by the EMBL-EBI Industry Forum to bridge gaps in the utility of public Bioinformatics resources for Translational Research.  More details will be added soon.
 
-     An event hosted by the EMBL-EBI Industry Forum to bridge gaps in the utility of public Bioinformatics resources for Translational Research.  More details will be added soon.
+------
 
 **Workshop : bio.tools @ NETTAB : (October 24 2016, Italian National Research Council, Rome, IT)**
 
@@ -24,7 +24,7 @@ http://tinyurl.com/registryhackathon10
 
 A one day bioinformatics hackathon organized by ELIXIR held in occasion of the NETTAB 2016 Workshop.  The hackathon will include the following two main strands: 1) Biosoftware description using bio.tools and schema.org.  2) Deployment of bioinformatics tools and services through Docker.
 
-
+------
 
 **Technical Hackathon : Towards a comprehensive catalogue of data formats (November 2016 tbd, Amsterdam, NL)**
 *tentative*
