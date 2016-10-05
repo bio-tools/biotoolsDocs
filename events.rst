@@ -210,11 +210,11 @@ http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-l
 
 ------
 
-**AllBio / EMBRACE Continuity Workshop (Mar 18-20 2013, Amsterdam, 10 attendees)**
+**AllBio / EMBRACE Continuity Workshop (Mar 18-20 2013, Amsterdam)**
 
 ------
 
-**BioMedBridges AGM Registry Workshop (Mar 11-12 2013, Dusseldorf, 14 attendees)**
+**BioMedBridges AGM Registry Workshop (Mar 11-12 2013, Dusseldorf)**
 
 ------
 
