@@ -22,5 +22,7 @@ Contents:
    Governance <governance>
    Contributors <contributors>
    GitHub projects <github_projects>
+   Events <events>
    Documentors Guide <documentors_guide>
    License <license>
+
