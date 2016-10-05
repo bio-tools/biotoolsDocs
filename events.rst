@@ -227,7 +227,7 @@ http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-l
 
 
 Code of Conduct
-===============
+---------------
 We respectfully ask all attendees at meetings to conduct themselves in a way that maintains focus, respect, order - and enjoyment!  Suggestions include:
 
 - Bear in mind that you are as responsible for the success of the meeting as anyone else.
