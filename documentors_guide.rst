@@ -13,4 +13,6 @@ reStructuredText links
  
 `Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
 
+`Full documentation <http://docutils.sourceforge.net/rst.html>`_
+
 `Online editor <http://rst.ninjs.org/>`_
