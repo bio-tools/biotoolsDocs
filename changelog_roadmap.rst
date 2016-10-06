@@ -27,6 +27,7 @@ December 2016
 - "sandbox" area for intermediate registrations
 - "moderation interface" for mass content import
 - improved QA/QC process
+- improved admin interface for content management
 
 2017 Q2
 -------
