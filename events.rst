@@ -5,7 +5,7 @@ We organise many events as well as attend events organised by others.  If you wa
 - **Curation Hackathons** (¡°curatathons¡±) gather providers from across the board to curate their resources, critique the Registry interfaces, and provide a forum for knowledge exchange and collaboration. 
 - **Thematic Hackathons** engage experts in a specific scientific area to help improve the relevant branches of EDAM, consolidate the existing registry annotations, as well as register new resources within the theme.
 - **Resource Hackathons** collaborate with experts from a specific collection of tools and services, typically some other registry, community project or Web portal, to bring the collection up to the ELIXIR annotation standard and expose it in the Registry.   
-- **Technical Hackathons** focus on ontology, software or other technical developments in support of curation of the Registry, it¡¯s technical development, applications and integration with other systems.
+- **Technical Hackathons** focus on ontology, software or other technical developments in support of curation of the Registry, its technical development, applications and integration with other systems.
 
 Forthcoming events
 ------------------
@@ -16,7 +16,7 @@ An event hosted by the EMBL-EBI Industry Forum to bridge gaps in the utility of 
 
 ------
 
-**Workshop : bio.tools @ NETTAB : (Oct 24 2016, Italian National Research Council, Rome, IT)**
+**Technical Hackathon : bio.tools @ NETTAB : (Oct 24 2016, Italian National Research Council, Rome, IT)**
 
 http://www.igst.it/nettab/2016/programme/hackathon/ 
 
