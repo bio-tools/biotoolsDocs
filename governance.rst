@@ -9,7 +9,7 @@ Registry Core
 -------------
 Registry Core includes the technical and scientific experts at the heart of the development and curation of bio.tools.  Priorities are set in a quasi-democratic way with the **content leader** (currently Jon Ison) or **software leader** (currently Emil Rydza) having the final say where necessary (in so far as this is meaningful).  Registry Core members must either be funded, or have the intent and some bandwidth, to support the registry in the long-term.  The content and software leader ensures the Registry Core group and all Contributors are listened to and informed.
 
-Members of Registry Core are responsible for agreeing aims and general good practice.  They are expected to advocate bio.tools and (as bandwidth allows) collaborate with one another to help develop the registry software, related technical projects and registry content, *e.g.*:
+`Members of Registry Core <http://biotools.readthedocs.io/en/latest/contributors.html#registry-core>`_ are responsible for agreeing aims and general good practice.  They are expected to advocate bio.tools and (as bandwidth allows) collaborate with one another to help develop the registry software, related technical projects and registry content, *e.g.*:
 
 - add new and improve existing content through collaboration with EDAM Core Developers
 - routine content maintenance including quality control
