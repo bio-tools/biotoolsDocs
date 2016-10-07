@@ -26,7 +26,7 @@ Answers to FAQ
 - you cannot participate both as a mentor and a student
 - only an individual may work on a project; groups cannot submit proposals
 - when writing a proposal, please read the existing `proposals <http://biotools.readthedocs.io/en/latest/studentships.html#proposals>`_ below and follow the general structure and style
-- for futher information, mail `Jon Ison <mailto:jison@cbs.dtu.dk>`_ cc `Peter Løngreen <peterl@cbs.dtu.dk>`_.
+- for futher information, mail `Jon Ison <mailto:jison@cbs.dtu.dk>`_ cc `Peter Longreen <peterl@cbs.dtu.dk>`_.
 
 
 ---------
@@ -39,7 +39,7 @@ Finalised proposals are uploaded to https://github.com/bio-tools/Studentships/.
 
 Mining the Scientific Literature for and Annotating Proteomics Software using the EDAM ontology and biotoolsXSD
 
-Read the `proposal <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_.
+STATUS: `Proposal <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_ is finalised.
 
 
 
