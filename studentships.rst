@@ -45,6 +45,13 @@ Mining the Scientific Literature for and Annotating Proteomics Software using th
 STATUS: `Proposal <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_ is finalised.
 
 
+-----
+
+Harvesting service descriptions for bio.tools using OpenAPI standards
+
+STATUS: `Proposal <https://github.com/bio-tools/Studentships/blob/master/openAPI.pdf>`_ is finalised.
+
+
 
 
 
