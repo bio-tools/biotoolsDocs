@@ -37,6 +37,11 @@ Please use the appropriate `mailing list <http://elixirmail.cbs.dtu.dk/mailman/l
 - **registry-announce** or **edam-announce** for low-traffic announcements
 - **registry-core** and **edam-core** for technical discussion amongst the core developers 
 
+To send mail:
+- registry@elixir-dk.org
+- registry-support@elixir-dk.org
+- edam@elixir-dk.org
+  
 See also the general `ELIXIR mailing lists <https://lists.elixir-europe.org/mailman/listinfo>`_.
 
 - **Tools** is a low-traffic, broad readership list for the ELIXIR Tools Platform.
