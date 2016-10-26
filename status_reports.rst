@@ -1,6 +1,34 @@
 Status reports
 ==============
 
+2016 October
+------------
+
+Actions (October)
+^^^^^^^^^^^^^^^^^
+  - Technical developments
+
+     - `dev.bio.tools <https://dev.bio.tools>`_ has been moved into production on https://bio.tools.  Including new content ownership model whereby edit rights on entries can be shared amongst bio.tools users.
+     - candidate stable schema `biotoolsSchema 2.0-beta02 <https://github.com/bio-tools/biotoolsSchema/tree/master/biotools-2.0-beta-02>`_ released.
+     - prototype EDAM extension for bioimaging analysis concepts released : `EDAM-Bioimaging_alpha01 <http://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING?p=classes>`_. 
+
+  - Outreach actions
+
+     - Bioschema specification for schema.org mark-up for tools on the Semantic Web, worked on during `NETTAB hackathon <http://tinyurl.com/registryhackathon10>`_.  Such mark-up will be added to bio.tools Tool Cards in due course.
+
+  - Content
+
+     - consolidation of content from dev.bio.tools and bio.tools : 2885 entries, 376 contributors (registered users)
+     - top-down plan for content expansion now `available <https://docs.google.com/document/d/1AM0iLimpT4ClybEKYYdWu52RzJ9GKqUpW2DZflS6_4c/edit>`_ for comment.  See `sifterapp issue <https://biotools.sifterapp.com/issues/241>`_. 
+
+
+Plans (November)
+^^^^^^^^^^^^^^^^
+  - Technical work towards the Dec release, see  `roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ of registry software developments 
+  - import of SEQwiki (see `sifterapp issue <https://biotools.sifterapp.com/issues/27>`_.)
+  - EDAM 1.16 including requests via GitHub and addition of data format concepts
+
+
 2016 September
 --------------
 
