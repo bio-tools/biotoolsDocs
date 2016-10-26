@@ -15,6 +15,9 @@ Actions (October)
   - Outreach actions
 
      - Bioschema specification for schema.org mark-up for tools on the Semantic Web, worked on during `NETTAB hackathon <http://tinyurl.com/registryhackathon10>`_.  Such mark-up will be added to bio.tools Tool Cards in due course.
+     - revision / extension of `bio.tools documentation <biotools.readthedocs.io/en/latest/>`_
+     - new `EDAM documentation <http://edamontologydocs.readthedocs.io/en/latest/>`_ and revamp of https://edamontology.org.
+     - bio.tools `studenstship scheme <http://biotools.readthedocs.io/en/latest/studentships.html>`_ now available
 
   - Content
 
