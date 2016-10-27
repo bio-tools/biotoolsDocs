@@ -43,14 +43,14 @@ Finalised proposals are uploaded to https://github.com/bio-tools/Studentships/.
 
 Mining the Scientific Literature for and Annotating Proteomics Software using the EDAM ontology and biotoolsXSD
 
-STATUS: `Proposal <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_ is finalised.
+STATUS: `Proposal <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_ is finalised.  Open for `comments <https://docs.google.com/document/d/1aO-qWhHKGrG8lMoX-CbuaQYaOWG8InU3K_9uGIIV6Ms/edit#heading=h.7jh0ods4imnp>`_.  Student pending.
 
 
 -----
 
 Harvesting service descriptions for bio.tools using OpenAPI standards
 
-STATUS: `Proposal <https://github.com/bio-tools/Studentships/blob/master/openAPI.pdf>`_ is finalised.
+STATUS: `Proposal <https://github.com/bio-tools/Studentships/blob/master/openAPI.pdf>`_ is finalised.  Open for `comments <https://docs.google.com/document/d/1KucPt6mqPo6sRp28uwovJfFqANDYtKnuJVEONKmi6vw/edit#heading=h.zhf6r243jzl8>`_.  Student pending.
 
 
 
