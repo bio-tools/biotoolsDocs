@@ -29,7 +29,7 @@ Answers to FAQ
 - you cannot participate both as a mentor and a student
 - only an individual may work on a project; groups cannot submit proposals
 - when writing a proposal, please refer to the existing `proposals <http://biotools.readthedocs.io/en/latest/studentships.html#proposals>`_ below and follow the general structure and style
-- projects must have clear and quantifiable impact on bio.tools content, but you are free to propose anything to these ends: you will need to inspect https://dev.bio.tools (latest dev server) to assess current status
+- projects must have clear and quantifiable impact on bio.tools content, but you are free to propose anything to these ends: you will need to inspect https://bio.tools and https://dev.bio.tools (latest dev server) to assess current status
 - for futher information, mail `Jon Ison <mailto:jison@cbs.dtu.dk>`_ cc `Peter Longreen <peterl@cbs.dtu.dk>`_.
 
 
