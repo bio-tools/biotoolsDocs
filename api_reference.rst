@@ -193,7 +193,7 @@ data       Yes       Resource Resource you wish to register.
                               See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
-.. note:: It is possible to specify editing permissions for resources. Learn how to manage editing permissions :ref:`Editing_permissions`.
+.. note:: It is possible to specify editing permissions for resources. Learn how to manage :ref:`Editing_permissions`.
 
 Headers
 """"""""""
@@ -330,7 +330,7 @@ data       Yes       Resource Description with which you wish to update the reso
                               See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
-.. note:: It is possible to specify editing permissions for resources. Learn how to manage editing permissions :ref:`Editing_permissions`.
+.. note:: It is possible to specify editing permissions for resources. Learn how to manage :ref:`Editing_permissions`.
 
 Headers
 """"""""""
