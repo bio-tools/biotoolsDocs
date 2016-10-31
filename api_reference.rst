@@ -14,8 +14,8 @@ List and search through all the available resources. Can sort, filter, and searc
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/
-    https://dev.bio.tools/api/t/
+    https://bio.tools/api/tool/
+    https://bio.tools/api/t/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -43,7 +43,7 @@ To filter the results by attribute name, the attribute name has to be added as a
 Attributes
 ~~~~~~~~~~~~~~~~
 
-These are attributes supported by dev.bio.tools
+These are attributes supported by bio.tools
 
 .. code-block:: js
 
@@ -70,7 +70,7 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://dev.bio.tools/api/tool/?page=1&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
+   curl -X GET "https://bio.tools/api/tool/?page=1&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
 
 Response data
 """""""""""""""""""
@@ -93,8 +93,8 @@ Obtain information about a single resource.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/
-    https://dev.bio.tools/api/t/:id/
+    https://bio.tools/api/tool/:id/
+    https://bio.tools/api/t/:id/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -111,13 +111,35 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://dev.bio.tools/api/tool/signalp/?format=json"
+   curl -X GET "https://bio.tools/api/tool/signalp/?format=json"
 
 
 List resource versions
 ----------------------
-Obtain information about a single resource.
+Obtain information about avaliable versions of a single resource.
 
+*HTTP GET*
+
+.. code-block:: text
+
+    https://bio.tools/api/tool/:id/version/
+    https://bio.tools/api/t/:id/version/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======================  =======  ===================
+Parameter  Required  Type                    Default  Description        
+=========  ========  ======================  =======  ===================
+id         Yes       String                           Resource unique ID 
+format     No        String(json, xml, api)  json     Response media type
+=========  ========  ======================  =======  ===================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X GET "https://bio.tools/api/t/signalp/version/"
 
 Resource version detail
 -----------------------
@@ -127,8 +149,8 @@ Obtain information about a specified version of a single resource.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/version/:version_id
-    https://dev.bio.tools/api/t/:id/version/:version_id
+    https://bio.tools/api/tool/:id/version/:version_id
+    https://bio.tools/api/t/:id/version/:version_id
 
 Endpoint Parameters
 """""""""""""""""""
@@ -145,7 +167,7 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://dev.bio.tools/api/tool/signalp/version/4.1?format=json"
+   curl -X GET "https://bio.tools/api/tool/signalp/version/4.1?format=json"
 
 
 Register a resource
@@ -157,8 +179,8 @@ Register a resource
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/
-    https://dev.bio.tools/api/t/
+    https://bio.tools/api/tool/
+    https://bio.tools/api/t/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -166,7 +188,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Resource Resource you wish to register.
-                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 
@@ -188,7 +210,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/"
+   -d '<resource>' "https://bio.tools/api/tool/"
 
 Validate registering a resource
 -------------------------------
@@ -201,8 +223,8 @@ Test registering a resource without it actually being saved into the database.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/validate/
-    https://dev.bio.tools/api/t/validate/
+    https://bio.tools/api/tool/validate/
+    https://bio.tools/api/t/validate/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -210,7 +232,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Resource Resource you wish to validate.
-                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 
@@ -232,7 +254,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/validate/"
+   -d '<resource>' "https://bio.tools/api/tool/validate/"
 
 
 Update a resource
@@ -245,8 +267,8 @@ Update a resource description.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/
-    https://dev.bio.tools/api/t/:id/
+    https://bio.tools/api/tool/:id/
+    https://bio.tools/api/t/:id/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -255,7 +277,7 @@ Parameter  Required  Type     Description
 =========  ========  ======== ====================================================================================================================================
 id         Yes       String   Resource unique ID 
 data       Yes       Resource Description with which you wish to update the resource
-                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 Headers
@@ -276,7 +298,7 @@ Example
 
    curl -X PUT -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/SignalP"
+   -d '<resource>' "https://bio.tools/api/tool/SignalP"
 
 
 
@@ -290,8 +312,8 @@ Test updating a resource without it actually being saved into the database.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/validate/
-    https://dev.bio.tools/api/t/:id/validate/
+    https://bio.tools/api/tool/:id/validate/
+    https://bio.tools/api/t/:id/validate/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -300,7 +322,7 @@ Parameter  Required  Type     Description
 =========  ========  ======== ====================================================================================================================================
 id         Yes       String   Resource unique ID 
 data       Yes       Resource Description with which you wish to update the resource for validation
-                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 Headers
@@ -321,7 +343,7 @@ Example
 
    curl -X PUT -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/SignalP/validate/"
+   -d '<resource>' "https://bio.tools/api/tool/SignalP/validate/"
 
 
 Delete a resource
@@ -335,8 +357,8 @@ Removes a resource from the registry.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/
-    https://dev.bio.tools/api/t/:id/
+    https://bio.tools/api/tool/:id/
+    https://bio.tools/api/t/:id/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -363,7 +385,7 @@ Example
 
    curl -X DELETE \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   "https://dev.bio.tools/api/tool/SignalP"
+   "https://bio.tools/api/tool/SignalP"
 
 
 List used terms
@@ -374,7 +396,7 @@ Obtain a list of terms registered with tools for some attributes, e.g. a list of
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/used-terms/:attribute
+    https://bio.tools/api/used-terms/:attribute
 
 Endpoint Parameters
 """""""""""""""""""
@@ -391,7 +413,7 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://dev.bio.tools/api/used-terms/name/?format=json"
+   curl -X GET "https://bio.tools/api/used-terms/name/?format=json"
 
 Response data
 """""""""""""""""""
@@ -411,7 +433,7 @@ Creates a user account and emails a verification email.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/registration/
+    https://bio.tools/api/rest-auth/registration/
 
 POST data
 """""""""""""""""""
@@ -441,7 +463,7 @@ Example
    curl -X POST -H "Content-Type: application/json" \
    -d '{"username":"username", "password1":"password", \
    "password2":"password", "email":"example@example.org"}' \
-   "https://dev.bio.tools/api/rest-auth/registration/"
+   "https://bio.tools/api/rest-auth/registration/"
 
 
 
@@ -454,7 +476,7 @@ Verifies a user account based on the emailed verification key.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/registration/verify-email/
+    https://bio.tools/api/rest-auth/registration/verify-email/
 
 POST data
 """""""""""""""""""
@@ -480,7 +502,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -d '{"key":"ndwowtbpmlk5zxdxfrwgu2822xynjidhizhwosycve7hro1of156hjwdsf1f6gbn"}' \
-   "https://dev.bio.tools/api/rest-auth/registration/verify-email/"
+   "https://bio.tools/api/rest-auth/registration/verify-email/"
 
 
 .. _Token:
@@ -494,7 +516,7 @@ Logs the user in and returns an authentication token.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/login/
+    https://bio.tools/api/rest-auth/login/
 
 POST data
 """""""""""""""""""
@@ -521,7 +543,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -d '{"username":"username","password":"password"}' \
-   "https://dev.bio.tools/api/rest-auth/login/"
+   "https://bio.tools/api/rest-auth/login/"
 
 Response data
 """""""""""""""""""
@@ -542,7 +564,7 @@ Returns information about the logged in user account, including a list of regist
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/user/
+    https://bio.tools/api/rest-auth/user/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -568,7 +590,7 @@ Example
 
    curl -X GET \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   "https://dev.bio.tools/api/rest-auth/user/?format=json"
+   "https://bio.tools/api/rest-auth/user/?format=json"
 
 Response data
 """""""""""""""""""
@@ -591,7 +613,7 @@ Log out
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/logout/
+    https://bio.tools/api/rest-auth/logout/
 
 Headers
 """"""""""
@@ -609,7 +631,7 @@ Example
 
   curl -X POST 
   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-  "https://dev.bio.tools/api/rest-auth/logout/"
+  "https://bio.tools/api/rest-auth/logout/"
 
 
 Reset user password
@@ -621,7 +643,7 @@ Sends a password reset email.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/password/reset/
+    https://bio.tools/api/rest-auth/password/reset/
 
 POST data
 """""""""""""""""""
@@ -647,7 +669,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -d '{"email":"example@example.org"}' \
-   "https://dev.bio.tools/api/rest-auth/password/reset/"
+   "https://bio.tools/api/rest-auth/password/reset/"
 
 Confirm password reset
 --------------------------------
@@ -658,7 +680,7 @@ Confirms a password reset using uid and token from a password reset email.
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/password/reset/confirm/
+    https://bio.tools/api/rest-auth/password/reset/confirm/
 
 POST data
 """""""""""""""""""
@@ -688,4 +710,4 @@ Example
    curl -X POST -H "Content-Type: application/json" \
    -d '{"uid":"MQ", "token":"4ct-67e90a1ab4f22fbb9b9f", \
    "password1":"new_password", "password2":"new_password"}' \
-   "https://dev.bio.tools/api/rest-auth/password/reset/confirm/"
+   "https://bio.tools/api/rest-auth/password/reset/confirm/"
