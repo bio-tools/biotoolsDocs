@@ -34,6 +34,8 @@ ord            No        String(desc, asc)                        desc        Or
                                                                               List of supported attributes below.
 ===========    ========  =======================================  ==========  ============================================
 
+
+
 Filtering
 """""""""
 To filter the results by attribute name, the attribute name has to be added as a parameter to the URL, with the value being the desired search term, e.g. ``?name=signalp``
@@ -191,6 +193,7 @@ data       Yes       Resource Resource you wish to register.
                               See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
+.. note:: It is possible to specify editing permissions for resources. Learn how to :ref:`Editing_permissions`.
 
 Headers
 """"""""""
@@ -211,6 +214,53 @@ Example
    curl -X POST -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
    -d '<resource>' "https://bio.tools/api/tool/"
+
+
+.. _Editing_permissions:
+
+Editing permissions
+-------------------
+It is possible to manage editing permissions for the registered resources. There are currently three types of editing permissions supported by the system:
+
+.. _Private:
+
+Private
+"""""""
+A private resource can only be edited by the creator of the resource. This is the default option. In order to set this kind of permission, add the following info to the resource data:
+
+.. code-block:: text
+
+    "editPermission": {
+        "type": "private"
+    }
+
+.. _Public:
+
+Public
+""""""
+Public resource can be modified by any user registered in the system. In order to set this kind of permission, add the following info to the resource data:
+
+.. code-block:: text
+
+    "editPermission": {
+        "type": "public"
+    }
+
+.. _Group:
+
+Group
+"""""
+Specify a list of users in the system that can edit the resource. In order to set this kind of permission, add the following info to the resource data:
+
+.. code-block:: text
+
+    "editPermission": {
+        "type": "private",
+        "authors": [
+            "registered_user_1", "registered_user_2"
+        ]
+    }
+
 
 Validate registering a resource
 -------------------------------
@@ -279,6 +329,8 @@ id         Yes       String   Resource unique ID
 data       Yes       Resource Description with which you wish to update the resource
                               See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
+
+.. note:: It is possible to specify editing permissions for resources. Learn how to :ref:`Editing_permissions`.
 
 Headers
 """"""""""
