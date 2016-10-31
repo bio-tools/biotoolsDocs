@@ -143,6 +143,8 @@ Example
 
    curl -X GET "https://bio.tools/api/t/signalp/version/"
 
+.. _Resource_version_detail:
+
 Resource version detail
 -----------------------
 Obtain information about a specified version of a single resource.
@@ -195,6 +197,8 @@ data       Yes       Resource Resource you wish to register.
 
 .. note:: It is possible to specify editing permissions for resources. Learn how to manage :ref:`Editing_permissions`.
 
+.. note:: It is possible to create multiple versions of the same resource. Learn how to use :ref:`Resource_versioning`.
+
 Headers
 """"""""""
 =============  ========  =========================================  ==============================================================================================
@@ -214,52 +218,6 @@ Example
    curl -X POST -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
    -d '<resource>' "https://bio.tools/api/tool/"
-
-
-.. _Editing_permissions:
-
-Editing permissions
--------------------
-It is possible to manage editing permissions for the registered resources. There are currently three types of editing permissions supported by the system:
-
-.. _Private:
-
-Private
-"""""""
-A private resource can only be edited by the creator of the resource. This is the default option. In order to set this kind of permission, add the following info into the resource data:
-
-.. code-block:: text
-
-    "editPermission": {
-        "type": "private"
-    }
-
-.. _Public:
-
-Public
-""""""
-Public resource can be modified by any user registered in the system. In order to set this kind of permission, add the following info into the resource data:
-
-.. code-block:: text
-
-    "editPermission": {
-        "type": "public"
-    }
-
-.. _Group:
-
-Group
-"""""
-Specify a list of users in the system that can edit the resource. In order to set this kind of permission, add the following info into the resource data:
-
-.. code-block:: text
-
-    "editPermission": {
-        "type": "private",
-        "authors": [
-            "registered_user_1", "registered_user_2"
-        ]
-    }
 
 
 Validate registering a resource
@@ -332,6 +290,8 @@ data       Yes       Resource Description with which you wish to update the reso
 
 .. note:: It is possible to specify editing permissions for resources. Learn how to manage :ref:`Editing_permissions`.
 
+.. note:: It is possible to create multiple versions of the same resource. Learn how to use :ref:`Resource_versioning`.
+
 Headers
 """"""""""
 =============  ========  =========================================  ==============================================================================================
@@ -396,6 +356,64 @@ Example
    curl -X PUT -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
    -d '<resource>' "https://bio.tools/api/tool/SignalP/validate/"
+
+.. _Resource_versioning:
+
+Resource versioning
+-------------------
+All resources can have a specified version assigned to them. This allows for example new versions of resources to be registered while keeping an older version of the resource intact. In order to create a new version of a given resource, the following parameters need to be added to the resource data: 
+
+===========  =================  =======================================================================
+Parameter    Type               Description        
+===========  =================  =======================================================================
+versionId    String             ID of a new resource version to be created. Once created, the version id becomes permanent and is used to uniquely identify a specific version. See :ref:`Resource_version_detail` for more information.
+latest       1 or 0             Specify if the created resource version is the latest. All previous resources marked as 'latest' will no longer be considered that after a new version gets marked as 'latest'.  
+===========  =================  =======================================================================
+
+.. _Editing_permissions:
+
+Editing permissions
+-------------------
+It is possible to manage editing permissions for the registered resources. There are currently three types of editing permissions supported by the system:
+
+.. _Private:
+
+Private
+"""""""
+A private resource can only be edited by the creator of the resource. This is the default option. In order to set this kind of permission, add the following info into the resource data:
+
+.. code-block:: text
+
+    "editPermission": {
+        "type": "private"
+    }
+
+.. _Public:
+
+Public
+""""""
+Public resource can be modified by any user registered in the system. In order to set this kind of permission, add the following info into the resource data:
+
+.. code-block:: text
+
+    "editPermission": {
+        "type": "public"
+    }
+
+.. _Group:
+
+Group
+"""""
+Specify a list of users in the system that can edit the resource. In order to set this kind of permission, add the following info into the resource data:
+
+.. code-block:: text
+
+    "editPermission": {
+        "type": "private",
+        "authors": [
+            "registered_user_1", "registered_user_2"
+        ]
+    }
 
 
 Delete a resource
