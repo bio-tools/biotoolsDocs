@@ -113,15 +113,39 @@ Example
 
    curl -X GET "https://dev.bio.tools/api/tool/signalp/?format=json"
 
-Response data
-"""""""""""""""""""
-================== ========================================================================== ======================================================================================================
-Response           Description                                                                Example
-================== ========================================================================== ======================================================================================================
-Resource           Description of the                                                         See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
-                   requested resource                                  
-================== ========================================================================== ======================================================================================================
 
+List resource versions
+----------------------
+Obtain information about a single resource.
+
+
+Resource version detail
+-----------------------
+Obtain information about a specified version of a single resource.
+
+*HTTP GET*
+
+.. code-block:: text
+
+    https://dev.bio.tools/api/tool/:id/version/:version_id
+    https://dev.bio.tools/api/t/:id/version/:version_id
+
+Endpoint Parameters
+"""""""""""""""""""
+==========  ========  ======================  =======  ==========================
+Parameter   Required  Type                    Default  Description        
+==========  ========  ======================  =======  ==========================
+id          Yes       String                           Resource unique ID 
+format      No        String(json, xml, api)  json     Response media type
+version_id  Yes       String                           Resource version unique ID
+==========  ========  ======================  =======  ==========================
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X GET "https://dev.bio.tools/api/tool/signalp/version/4.1?format=json"
 
 
 Register a resource
