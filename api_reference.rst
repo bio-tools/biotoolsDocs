@@ -763,3 +763,20 @@ Example
    -d '{"uid":"MQ", "token":"4ct-67e90a1ab4f22fbb9b9f", \
    "password1":"new_password", "password2":"new_password"}' \
    "https://bio.tools/api/rest-auth/password/reset/confirm/"
+
+Stats
+-----
+Compile stats about a the registry.
+
+*HTTP GET*
+
+.. code-block:: text
+
+    https://bio.tools/api/stats
+
+Example
+"""""""""""""""""""
+
+.. code-block:: bash
+
+   curl -X GET "https://bio.tools/api/stats/?format=json"
