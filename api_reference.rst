@@ -193,7 +193,7 @@ data       Yes       Resource Resource you wish to register.
                               See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
-.. note:: It is possible to specify editing permissions for resources. Learn how to :ref:`Editing_permissions`.
+.. note:: It is possible to specify editing permissions for resources. Learn how to manage editing permissions :ref:`Editing_permissions`.
 
 Headers
 """"""""""
@@ -226,7 +226,7 @@ It is possible to manage editing permissions for the registered resources. There
 
 Private
 """""""
-A private resource can only be edited by the creator of the resource. This is the default option. In order to set this kind of permission, add the following info to the resource data:
+A private resource can only be edited by the creator of the resource. This is the default option. In order to set this kind of permission, add the following info into the resource data:
 
 .. code-block:: text
 
@@ -238,7 +238,7 @@ A private resource can only be edited by the creator of the resource. This is th
 
 Public
 """"""
-Public resource can be modified by any user registered in the system. In order to set this kind of permission, add the following info to the resource data:
+Public resource can be modified by any user registered in the system. In order to set this kind of permission, add the following info into the resource data:
 
 .. code-block:: text
 
@@ -250,7 +250,7 @@ Public resource can be modified by any user registered in the system. In order t
 
 Group
 """""
-Specify a list of users in the system that can edit the resource. In order to set this kind of permission, add the following info to the resource data:
+Specify a list of users in the system that can edit the resource. In order to set this kind of permission, add the following info into the resource data:
 
 .. code-block:: text
 
@@ -330,7 +330,7 @@ data       Yes       Resource Description with which you wish to update the reso
                               See an `example resource <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
-.. note:: It is possible to specify editing permissions for resources. Learn how to :ref:`Editing_permissions`.
+.. note:: It is possible to specify editing permissions for resources. Learn how to manage editing permissions :ref:`Editing_permissions`.
 
 Headers
 """"""""""
