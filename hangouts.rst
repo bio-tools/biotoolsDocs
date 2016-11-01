@@ -3,12 +3,14 @@ Hangouts
 
 If you'd like to attend a hangout, please mail Henriette Husum Bak-Jensen (hhu@bio.ku.dk) cc Jon Ison (jison@cbs.dtu.dk), including your gmail and skype addresses.  To understand how we organise tasks and projects, read the `Contributors Guide <http://biotools.readthedocs.io/en/latest/project_management.html>`_.
 
+Before each meeting, always it's helpful to read the `bio.tools status report <http://biotools.readthedocs.io/en/latest/status_reports.html>`_. 
+
 
 ------------
 Next meeting
 ------------
 
-2016 Oct 28, 11 AM CET
+2016 Nov 25, 11 AM CET
 -----------------------
 
 Call details
@@ -22,44 +24,101 @@ all welcome
 
 Agenda
 ^^^^^^
-1) **ACTIONS FROM LAST MEETING** 
-2) **TASKS** - round-robin catch-up, 
-
-   - what `sifterapp <https://biotools.sifterapp.com/>`_ tasks have been worked on 
-   - ask for help on tasks, reassign tasks, etc.
-
-3) **STATUS** : discussion on the `Status Report <http://biotools.readthedocs.io/en/latest/status_reports.html>`_ : please read it before the meeting 
-4) **PRIORITIES** : discussion on the current priority assignments in `sifterapp <https://biotools.sifterapp.com/>`_  
-5) **EVENTS & DEADLINES** - bring up items to be actioned in sifter 
-We need a list of events which promote bio.tools, and for which we expect / want DK-ELIXIR to give funding/support.
-The list includes (at least) :
-
-   - EuBIC conference (Jan 2017) 
-   - ELIXIR All-hands (Mar 2017)
-   - ECCB/ISMB (July 2017)
-   - DKBC (Aug 2017)
-   - Other events?
-
-HH can manage the list and bridge to DK-ELIXIR to ensure proper outreach/advertisement + budgetting + ELIXIR 'booth'-ware logistics with HUB.
-
-6) **KPIs** : Track status of key performance indicators from https://bio.tools/stats.
-  
-   - # user accounts 
-   - # entries
-   - publications 
-
-7) **FOCUS** - one person leads a presentation and discussions on a specific point
-
-- # 178 Live Stock and Crops tools hackathon Nov 2016: presentation of proposal for date in 2016 and program and need for help (Vivi)
- 
-8) **AOB**
-
-9) **TIME OF NEXT MEETING**
+to be announced..
 
 
 -------
 Archive
 -------
+
+2016, 28 Oct 11 AM CET
+----------------------
+^^^^^^^^^
+Attendees
+^^^^^^^^^
+Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Veit S,Vivi Gregersen, Henriette Husum
+
+^^^^^^^^^
+Apologies
+^^^^^^^^^
+Anders Dannesboe, Christian Anthon, Lukasz Berger, Piotr Chmura
+
+Agenda / Minutes:
+=================
+
+
+**Ad 1) Plan for bio.tools content expansion (Jon Ison)**
+
+We currently have ~3000 entries in bio.tools and we are on track with the registry growth targets in the `top down plan <https://docs.google.com/document/d/1AM0iLimpT4ClybEKYYdWu52RzJ9GKqUpW2DZflS6_4c/edit>`_
+which are:
+
+- 2016 Q4 5000 entries
+- 2017 Q1 6250 entries
+- 2017 Q2 7500 entries
+- 2017 Q3 8750 entries
+- 2017 Q4 10000 entries
+
+In the current phase, the primary focus is content, the secondary focus being quality of the content. With this in mind, we decided on two tasks:
+
+**Task 1: Mass-import (assigned to Emil to complete by Q1-2017):**
+
+a) to define the minimum information required for a bio.tools mass-import that would result in a ‘beta-version’ entry in bio.tools.
+
+b) to device a technical solution to implement this task.
+
+c) Immediate action: Emil and Jon to track this task in sifter.
+
+
+**Criteria for mass-import task solution:**
+
+- Minimum information includes at least Name; website; short description; EDAM descriptors
+
+- The author/owner of the mass-imported tool must be notified by e-mail upon mass-import with quidance to qualify the content to alpha-version.
+
+
+
+**Task 2: Student helper – minimal annotation (assigned to Veit to complete with Jon by Q4-2016):**
+
+a) to revisit the idea of minimal annotation of bio.tools content and define the minimum information required for a beta-version entry to upgrade to alpha-version.
+
+b) to write an instruction for student helpers (and for authors/owners see mass-import task) to perform the required annotation.
+
+c) to present a plan for distributing the annotation task by student helpers across the Danish partners.
+
+d) immediate action: Veit and Jon to track this task in sifter
+
+
+**Ad 2) Sifter app tasks: Are milestones set - questions in this regard (All)**
+
+
+Milestones for all sifter app tasks (except IDEAS) should be assigned and agreed on Jon Ison. Please keep an eye on your milestones and report at hangout meetings, if you want to change the assigned milestone.
+
+**Ad 3) MBG proposal for bio.tools hackathon on crop and wild-stock tools and databases (Vivi)**
+
+MBG wishes to host an international hackathon in w5 or w 11, 2017, which is great. We will discuss the concrete plans at the next hangout meeting on Nov 25. For that, Vivi will reach out to relevant others and
+
+- define the conceptual workflows for research in the field, which will help to form work-groups at the hackathon, to develop EDAM ontology, as well as expand the list of tools/databases for import, which currently counts ~250 entries. Practically, up to 50 people can attend the event. -
+
+- settle the date for the event by doodle to the registry core list, EDAM core list and this forum.
+
+- settle the location for the event (which could be co-located to other relevant scientific event)
+
+- draft a budget outline for the event
+
+
+**Ad 4) RNA tools upload progress and emerged EDAM ontology issues (Anne)**
+
+The plan to upload ~400 RNA tools in 2016 is on track. EDAM ontology challenges have emerged, as pointed out by Jan and Anne by email/progress report. 
+Jon mentioned the opportunity to use synonyms for semantic enrichment of the EDAM ontology, and that some keywords can go to ‘operations’. Anne should send the ontology suggestions to Jon I, who will help making the EDAM vocabulary match the need from RNA tools field.
+
+**Ad 5) AOB**
+no issues were discussed.
+
+
+
+
+
+
 
 2016 Sep 30 11 AM CET
 ---------------------
