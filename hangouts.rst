@@ -116,10 +116,6 @@ no issues were discussed.
 
 
 
-
-
-
-
 2016 Sep 30 11 AM CET
 ---------------------
 
