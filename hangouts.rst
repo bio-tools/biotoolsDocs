@@ -31,6 +31,7 @@ to be announced..
 Archive
 -------
 
+
 2016, 28 Oct 11 AM CET
 ----------------------
 ^^^^^^^^^
@@ -117,8 +118,9 @@ no issues were discussed.
 
 
 
+
 2016 Sep 30 11 AM CET
-=====================
+---------------------
 
 Attendeees
 ^^^^^^^^^^
