@@ -34,18 +34,17 @@ Archive
 
 2016, 28 Oct 11 AM CET
 ----------------------
-^^^^^^^^^
+
 Attendees
 ^^^^^^^^^
 Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Veit S,Vivi Gregersen, Henriette Husum
 
-^^^^^^^^^
 Apologies
 ^^^^^^^^^
 Anders Dannesboe, Christian Anthon, Lukasz Berger, Piotr Chmura
 
 Agenda / Minutes:
-=================
+^^^^^^^^^^^^^^^^^
 
 
 **Ad 1) Plan for bio.tools content expansion (Jon Ison)**
