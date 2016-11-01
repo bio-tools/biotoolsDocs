@@ -49,7 +49,7 @@ Agenda / Minutes:
 
 **Ad 1) Plan for bio.tools content expansion (Jon Ison)**
 
-We currently have ~3000 entries in bio.tools and we are on track with the registry growth targets in the `top down plan <https://docs.google.com/document/d/1AM0iLimpT4ClybEKYYdWu52RzJ9GKqUpW2DZflS6_4c/edit>`_
+We currently have ~2700 entries in bio.tools and - assuming additions in 2016 Q4 occur as scheduled - are about on track with the registry growth targets in the `top down plan <https://docs.google.com/document/d/1AM0iLimpT4ClybEKYYdWu52RzJ9GKqUpW2DZflS6_4c/edit>`_
 which are:
 
 - 2016 Q4 5000 entries
@@ -60,32 +60,39 @@ which are:
 
 In the current phase, the primary focus is content, the secondary focus being quality of the content. With this in mind, we decided on two tasks:
 
-**Task 1: Mass-import (assigned to Emil to complete by Q1-2017):**
+**Task 1: Mass-import - software support (assigned to Emil to complete by Q1-2017):**
 
 a) to define the minimum information required for a bio.tools mass-import that would result in a ‘beta-version’ entry in bio.tools.
-
+   
 b) to device a technical solution to implement this task.
 
 c) Immediate action: Emil and Jon to track this task in sifter.
 
+Jon Ison note (1/11/2016)
+https://biotools.sifterapp.com/issues/107
+https://biotools.sifterapp.com/issues/107
 
 **Criteria for mass-import task solution:**
 
 - Minimum information includes at least Name; website; short description; EDAM descriptors
 
-- The author/owner of the mass-imported tool must be notified by e-mail upon mass-import with quidance to qualify the content to alpha-version.
+- The author/owner of the mass-imported tool must be notified by e-mail upon mass-import with guidance to qualify the content to production version.
 
 
 
 **Task 2: Student helper – minimal annotation (assigned to Veit to complete with Jon by Q4-2016):**
 
-a) to revisit the idea of minimal annotation of bio.tools content and define the minimum information required for a beta-version entry to upgrade to alpha-version.
+a) to revisit the idea of minimal annotation of bio.tools content and define the minimum information required for a beta-version entry to upgrade to production version.
 
 b) to write an instruction for student helpers (and for authors/owners see mass-import task) to perform the required annotation.
 
 c) to present a plan for distributing the annotation task by student helpers across the Danish partners.
 
 d) immediate action: Veit and Jon to track this task in sifter
+
+
+Jon Ison note (1/11/2016)
+https://biotools.sifterapp.com/issues/294
 
 
 **Ad 2) Sifter app tasks: Are milestones set - questions in this regard (All)**
