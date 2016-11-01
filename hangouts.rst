@@ -66,12 +66,16 @@ a) to define the minimum information required for a bio.tools mass-import that w
    
 b) to device a technical solution to implement this task.
 
-c) Immediate action: Emil and Jon to track this task in sifter.
+c) to identify candidate collections suitable for import en masse
+
+d) Immediate action: Emil and Jon to track this task in sifter.
 
 Jon Ison note (1/11/2016)
-https://biotools.sifterapp.com/issues/107
-https://biotools.sifterapp.com/issues/107
 
+- https://biotools.sifterapp.com/issues/107
+- https://biotools.sifterapp.com/issues/107
+- https://biotools.sifterapp.com/issues/295
+  
 **Criteria for mass-import task solution:**
 
 - Minimum information includes at least Name; website; short description; EDAM descriptors
