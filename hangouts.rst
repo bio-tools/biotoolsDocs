@@ -60,7 +60,7 @@ which are:
 
 In the current phase, the primary focus is content, the secondary focus being quality of the content. With this in mind, we decided on two tasks:
 
-**Task 1: Mass-import - software support (assigned to Emil to complete by Q1-2017):**
+**Task 1: Mass-import - (assigned to Emil & Jon to complete by Q1-2017):**
 
 a) to define the minimum information required for a bio.tools mass-import that would result in a ‘beta-version’ entry in bio.tools.
    
@@ -96,7 +96,8 @@ d) immediate action: Veit and Jon to track this task in sifter
 
 
 Jon Ison note (1/11/2016)
-https://biotools.sifterapp.com/issues/294
+
+- https://biotools.sifterapp.com/issues/294
 
 
 **Ad 2) Sifter app tasks: Are milestones set - questions in this regard (All)**
