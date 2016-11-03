@@ -17,9 +17,8 @@ December 2016
 -------------
 - support for candidate stable schema (Stage 1 / 3) in backend & user interfaces, with support for XML & documentation
 - content migration to stable schema
-- graphs of content growth
 - Google indexing of bio.tools
-- enhanced content reporting
+- enhanced content reporting (graphs of content growth etc.)
 - subdomains
 
 2017 Q1
