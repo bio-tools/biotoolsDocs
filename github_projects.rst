@@ -28,7 +28,7 @@ Content import from Mobyle instances.
 
 biotoolsConnect
 ---------------
-https://https://github.com/bio-tools/biotoolsConnect/
+https://github.com/bio-tools/biotoolsConnect/
 
 Adaptors for content exchange with community projects (SeqWIKI, BioConductor, BioJS, ExPASy, ms-utils.org).
 
