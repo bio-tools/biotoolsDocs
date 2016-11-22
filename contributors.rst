@@ -18,6 +18,7 @@ Registry Core
 - José María Fernández (CNIO, ES) - benchmarking
 - Juergen Haas (University of Basel, CH) - benchmarking
 - Karel Berka (Palacky University, CZ) - advisor 
+- Kenzo Hillion (Institut Pasteur, FR) - workbench integration
 - Kristian Davidsen (DTU, DK) - data integration
 - Kristoffer Rapacki (DTU, DK) - advisor
 - Magnus Palmblad (LUMC, NL) - msutil.org integration
