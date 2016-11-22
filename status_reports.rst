@@ -3,7 +3,26 @@ Status reports
 
 2016 October
 ------------
+Actions (November)
+^^^^^^^^^^^^^^^^^^
+  - Technical developments
 
+     - stable schema `biotoolsSchema 2.0.0 <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ released.  It will define the scope and potential functionality of bio.tools for years to come.   Future versions will follow the MAJOR.MINOR.PATCH pattern (http://semver.org), with major changes that could break bio.tools API dependencies restricted to once/year.  
+     - EDAM_1.16 released and available on `BioPortal <http://bioportal.bioontology.org/ontologies/EDAM?p=classes>`_ and `OLS <https://www.ebi.ac.uk/ols/ontologies/edam>`_.
+       
+  - Documentation
+    
+     - new schema docs on http://biotoolsschemadocs.readthedocs.io/en/latest/
+     - information requirement for "beta" and "standard" bio.tools entries `defined here <https://github.com/bio-tools/biotoolsSchema#information-requirements>`_.
+    
+     
+Plans (December)
+^^^^^^^^^^^^^^^^
+
+  - Technical work towards the Dec release, see  `roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ of registry software developments
+  - Various content additions listed on `sifterapp <https://biotools.sifterapp.com/projects/39503/issues?srt=priority>`  
+  - WP 1 / ELIXIR-DK partners telcon 10AM UK, Fri Dec 2
+ 
 Actions (October)
 ^^^^^^^^^^^^^^^^^
   - Technical developments
