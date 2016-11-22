@@ -20,7 +20,7 @@ Plans (December)
 ^^^^^^^^^^^^^^^^
 
   - Technical work towards the Dec release, see  `roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ of registry software developments
-  - Various content additions listed on `sifterapp <https://biotools.sifterapp.com/projects/39503/issues?srt=priority>`  
+  - Various content additions listed on `sifterapp <https://biotools.sifterapp.com/projects/39503/issues?srt=priority>`_  
   - WP 1 / ELIXIR-DK partners telcon 10AM UK, Fri Dec 2
  
 Actions (October)
