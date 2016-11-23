@@ -12,7 +12,7 @@ Actions (November)
        
   - Documentation
     
-     - new schema docs on http://biotoolsschemadocs.readthedocs.io/en/latest/
+     - new schema docs on http://biotoolsschema.readthedocs.io/en/latest/
      - information requirement for "beta" and "standard" bio.tools entries `defined here <https://github.com/bio-tools/biotoolsSchema#information-requirements>`_.
     
      
