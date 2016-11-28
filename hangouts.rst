@@ -10,7 +10,7 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 Next meeting
 ------------
 
-2016 Nov 25, 11 AM CET
+2017 Jan 30, 11 AM CET
 -----------------------
 
 Call details
@@ -31,8 +31,87 @@ to be announced..
 Archive
 -------
 
+2016, Nov 25 11 AM CET
+----------------------
 
-2016, 28 Oct 11 AM CET
+Attendees
+^^^^^^^^^
+Anne Wenzel, Emil Rydza, Vivi Gregersen, Henriette Husum, Josep, Emil Rydza, Hervé Manager, Hans Ienasescu, Kenzo Hillion, Josep Gelpi, Vivi Gregersen, Henriette Husum
+
+
+Apologies
+^^^^^^^^^
+Anders Dannesboe, Lukasz Berger, Jon Ison, Veit Schwämmle, Piotr Chmura, Christian Anthon
+
+
+Our current primary focus is content, the secondary focus being quality of the content in bio.tools 
+Current #entries 2664 
+# affiliations 145. 
+2016-Q4 target is 5000 entries.
+
+
+Agenda / Minutes:
+^^^^^^^^^^^^^^^^^
+**Ad 1) Welcome everyone - especially to Hervé, Kenzo and Josep - brief sharing of plans regarding content expansion and more**
+Kenzo joined Hervé’s team recently and will be focusing on the workbench integration enabler component for e.g. galaxy. 
+Content-wise, Kenzo will be loading ~30 highly curated entries authored by Institute Pasteur on to Bio.tools and sponsor community engagement. 
+Kenzo wishes to contribute to software development and is invited to do so by e-mail to registry-support@elixir-dk.org (John Ison, Emil Rydza, Lukasz Berger, Peter Løngren) in the first instance, with an option to set up a more formal structure if necessary.
+
+
+**Ad 2) KPI monitoring: entry growth curve and contributors growth curve #72 (Emil Rydza, 2016-Q4)**
+
+Good progress: The two curves have been constructed and will be made visible in November, here https://bio.tools/stats 
+
+We will consider posting other statistics e.g. growth in number of users and number of views, when we launch the registry to enable community engagement.
+
+**Ad 3) Settle on 'minimum information for content import to staging area #293' - any further input? (Henriette)**
+
+We confirmed the following as the minimum information:
+
+- Name
+- Homepage
+- Description
+- EDAM Topic/descriptors
+
+Additional information will be welcome but given default values i.e. not necessary/possible to fill in:
+
+- Publications
+- Type of service
+
+Anders Dannesboe is assuming a new position on Dec 1 and is nearly done with a script to transfer spreadsheets including tools for mass-import to XML - Anders will handover this task to be finalised/implemented by Jon and Hans for task #107. 
+
+Jon should please close task 293 and release full steam on task #107 
+
+**Ad 4) Status and plans concerning implementation of the staging area for mass-import and 'easy' community-driven content expansion #107 (Emil Rydza, 2017-Q1)** 
+
+Not discussed in absence of John. It’s not clear if John or Emil is leading this critical task – please clarify between you.
+
+**Ad 5) RNA tools upload progress #62 and  (Anne, Q4-2016)**
+
+On track. 380 tools expected to be loaded onto bio.tools. Anne will discuss the RNA ontology list with Josep.
+
+**Ad 6) MBG proposal for Bio.tools hackathon on crop and wild-stock tools and databases #178 (Vivi, milestone not assigned)**
+
+The date for this hackathon has been settled for 2.-3. February 2017 and will take place in Aarhus, Denmark. Henriette will look for budget coverage. Vivi and colleagues will continue to work to specify the conceptual workflows involved. 
+
+**Ad 7) Issues on settled milestones - needs for revision ? (all)**
+
+None
+
+**Ad 8). Carry forward input concerning upcoming WP1/ELIXIR-DK partners TC on Dec 2nd at 10 a.m. UK / 11 a.m. DK**
+
+None
+
+**Ad 9) AOB**
+
+None
+
+
+**Next meeting will take place on January 27, 2017 (as December 30 is cancelled)** 
+
+
+
+2016, Oct 26 11 AM CET
 ----------------------
 
 Attendees
