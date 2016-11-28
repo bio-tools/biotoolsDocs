@@ -78,6 +78,27 @@ Additional information will be welcome but given default values i.e. not necessa
 - Publications
 - Type of service
 
+**ADDENDUM Jon Ison 28/11/16**
+
+Concerning the minimum information requirement for "beta" entries, see https://github.com/bio-tools/biotoolsSchema#information-requirements:
+
+- name 
+- toolID
+- homepage
+- description
+- tool type
+- topic
+- function
+
+topic and function can be assigned semi-automatically using `edamMap <https://github.com/edamontology/edammap>`_ and could default to "Topic" and "Operation" if necessary (undesirable).
+
+All entries labelled as "beta" initially until manually inspected.  
+
+ACTION: Jon & Emil to firm up validation / inforrmation requirement for labelling ("beta", "standard", "validated" etc.)
+
+# end of addendnum
+
+  
 Anders Dannesboe is assuming a new position on Dec 1 and is nearly done with a script to transfer spreadsheets including tools for mass-import to XML - Anders will handover this task to be finalised/implemented by Jon and Hans for task #107. 
 
 Jon should please close task 293 and release full steam on task #107 
