@@ -5,6 +5,22 @@ If you'd like to attend a hangout, please mail Henriette Husum Bak-Jensen (hhu@b
 
 Before each meeting, always it's helpful to read the `bio.tools status report <http://biotools.readthedocs.io/en/latest/status_reports.html>`_. 
 
+-------------
+2017 Meetings
+-------------
+
+Thu Jan 26, 11 AM CET
+Thu Feb 23, 11 AM CET
+Thu Mar 30, 11 AM CET
+Thu Apr 27, 11 AM CET
+Thu May 25, 11 AM CET
+Thu June 29, 11 AM CET
+Thu July 27, 11 AM CET
+No meeting in Aug
+Thu Sep 28, 11 AM CET
+Thu Oct 26, 11 AM CET
+Thu Nov 30, 11 AM CET
+No meeting in Dec 
 
 ------------
 Next meeting
