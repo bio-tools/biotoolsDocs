@@ -14,6 +14,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   User Guide <user_guide>
    API reference <api_reference>
    Contributors Guide <contributors_guide>
    Hangouts <hangouts>
