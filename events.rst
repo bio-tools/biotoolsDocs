@@ -14,13 +14,11 @@ Forthcoming events
 
 http://tinyurl.com/registryhackathon11
 
-A thematic hackathon aimed at curating tools for computational proteomics, co-located with the Computational Proteomics Conference.  More details will be added soon.
+A thematic hackathon aimed at curating tools for computational proteomics, co-located with the Computational Proteomics Conference.  
 
 ------
 
 **Curatathon : Genomics tools in crop & animal breeding (Feb 2-3, 2017, Denmark)**
-
-http://tinyurl.com/registryhackathon11
 
 A curation hackathon aimed at curating software tools used for crop and animal breeding research.  More details will be added soon.
 
