@@ -24,10 +24,10 @@ A curation hackathon aimed at curating software tools used for crop and animal b
 
 ------
 
-**Workshop : bio.tools @ Debian Med Sprint (Feb 2-5 2017, near Marseilla or Constanta tbd)**
+**Workshop : bio.tools @ Debian Med Sprint (Jan 12-16 2017, Romania)**
 *tentative* 
 
-https://wiki.debian.org/Sprints/2016/DebianMed2016
+https://wiki.debian.org/Sprints/2017/DebianMed2017
 
 Co-located with the Debian Med sprint: a resource hackathon focussed on curation and software development towards annotation and registration of tool packages from Debian Med.
 
