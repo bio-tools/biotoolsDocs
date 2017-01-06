@@ -10,9 +10,42 @@ We organise many events as well as attend events organised by others.  If you wa
 Forthcoming events
 ------------------
 
-**Workshop : Common Language for Translation Research (Oct 19-20 2016, EMBL-EBI, UK)**
+**Thematic Hackathon : Computational Proteomics Resources (Jan 10-13, 2017, Semmering, AT)**
 
-An event hosted by the EMBL-EBI Industry Forum to bridge gaps in the utility of public Bioinformatics resources for Translational Research.  More details will be added soon.
+http://tinyurl.com/registryhackathon11
+
+A thematic hackathon aimed at curating tools for computational proteomics, co-located with the Computational Proteomics Conference.  More details will be added soon.
+
+------
+
+**Curatathon : Genomics tools in crop & animal breeding (Feb 2-3, 2017, Denmark)**
+
+http://tinyurl.com/registryhackathon11
+
+A curation hackathon aimed at curating software tools used for crop and animal breeding research.  More details will be added soon.
+
+------
+
+**Workshop : bio.tools @ Debian Med Sprint (Feb 2-5 2017, near Marseilla or Constanta tbd)**
+*tentative* 
+
+https://wiki.debian.org/Sprints/2016/DebianMed2016
+
+Co-located with the Debian Med sprint: a resource hackathon focussed on curation and software development towards annotation and registration of tool packages from Debian Med.
+
+------
+
+**Technical Hackathon : Towards a comprehensive catalogue of data formats (Spring 2016 tbd, Amsterdam, NL)**
+*tentative*
+
+A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  More details will be added soon.
+
+
+
+
+Past events
+-----------
+
 
 ------
 
@@ -24,33 +57,6 @@ http://tinyurl.com/registryhackathon10
 
 A one day bioinformatics hackathon organized by ELIXIR held in occasion of the NETTAB 2016 Workshop.  The hackathon will include the following two main strands: 1) Biosoftware description using bio.tools and schema.org.  2) Deployment of bioinformatics tools and services through Docker.
 
-------
-
-**Technical Hackathon : Towards a comprehensive catalogue of data formats (Nov 2016 tbd, Amsterdam, NL)**
-*tentative*
-
-A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  More details will be added soon.
-
-------
-
-**Thematic Hackathon : Computational Proteomics Resources (Jan 10-13, 2017, Semmering, AT)**
-*tentative* 
-
-http://tinyurl.com/registryhackathon11
-
-A thematic hackathon aimed at curating tools for computational proteomics, co-located with the Computational Proteomics Conference.  More details will be added soon.
-
-------
-
-**Workshop : bio.tools @ Debian Med Sprint (Feb 2-5 2017, near Marseilla or Constanta tbd)**
-*tentative* 
-
-https://wiki.debian.org/Sprints/2016/DebianMed2016
-
-Co-located with the Debian Med sprint: a resource hackathon focussed on curation and software development towards annotation and registration of tool packages from Debian Med.
-
-Past events
------------
 
 **Workshop: bio.tools & EDAM @ NEUBIAS taggathon (Sep 14-16 2016, Barcelona, ES)**
 
