@@ -2,7 +2,7 @@ Events
 ======
 We organise many events as well as attend events organised by others.  If you want to attend an event or have an idea for an event, please mail `registry@elixir-dk.org <mailto:registry@elixir-dk.org>`_.  As a rule we try to avoid events in July & August.  All attendees should please read our `code of conduct <http://biotools.readthedocs.org/en/latest/events.html#codeofconduct>`_.
 
-- **Curation Hackathons** (¡°curatathons¡±) gather providers from across the board to curate their resources, critique the Registry interfaces, and provide a forum for knowledge exchange and collaboration. 
+- **Curation Hackathons** (Â¡Â°curatathonsÂ¡Â±) gather providers from across the board to curate their resources, critique the Registry interfaces, and provide a forum for knowledge exchange and collaboration. 
 - **Thematic Hackathons** engage experts in a specific scientific area to help improve the relevant branches of EDAM, consolidate the existing registry annotations, as well as register new resources within the theme.
 - **Resource Hackathons** collaborate with experts from a specific collection of tools and services, typically some other registry, community project or Web portal, to bring the collection up to the ELIXIR annotation standard and expose it in the Registry.   
 - **Technical Hackathons** focus on ontology, software or other technical developments in support of curation of the Registry, its technical development, applications and integration with other systems.
@@ -10,11 +10,11 @@ We organise many events as well as attend events organised by others.  If you wa
 Forthcoming events
 ------------------
 
-**Thematic Hackathon : Computational Proteomics Resources (Jan 10-13, 2017, Semmering, AT)**
+**Workshop : bio.tools @ Debian Med Sprint (Jan 12-16 2017, Romania)**
 
-http://tinyurl.com/registryhackathon11
+https://wiki.debian.org/Sprints/2017/DebianMed2017
 
-A thematic hackathon aimed at curating tools for computational proteomics, co-located with the Computational Proteomics Conference.  
+bio.tools folk join the Debian Med folk for co-hacking and co-learning. 
 
 ------
 
@@ -26,12 +26,11 @@ A curation hackathon aimed at curating software tools used for crop and animal b
 
 ------
 
-**Workshop : bio.tools @ Debian Med Sprint (Jan 12-16 2017, Romania)**
-*tentative* 
+**Technical Hackathon : Visual Workflows in bio.tools (Mar 1-3 2017, Tallin)**
 
-https://wiki.debian.org/Sprints/2017/DebianMed2017
+http://tinyurl.com/registryhackathon13
 
-Co-located with the Debian Med sprint: a resource hackathon focussed on curation and software development towards annotation and registration of tool packages from Debian Med.
+A three day workshop organised by ELIXIR-EE and partners aiming to implement a proof-of-principle for "visual worfklows" in bio.tools : navigation of bio.tools content with cross-links to TeSS via diagrams for common analytical workflows.
 
 ------
 
@@ -46,6 +45,11 @@ A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  
 Past events
 -----------
 
+**Thematic Hackathon : Computational Proteomics Resources (Jan 10-13, 2017, Semmering, AT)**
+
+http://tinyurl.com/registryhackathon11
+
+A thematic hackathon aimed at curating tools for computational proteomics, co-located with the Computational Proteomics Conference.  
 
 ------
 
@@ -228,7 +232,7 @@ http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-l
 
 ------
 
-**AllBio workshop - ¡°Web services for improved interoperability in bioinformatics¡± (Oct 2-5 2012, Munich)**
+**AllBio workshop - Â¡Â°Web services for improved interoperability in bioinformaticsÂ¡Â± (Oct 2-5 2012, Munich)**
 
 
 
@@ -243,7 +247,7 @@ We respectfully ask all attendees at meetings to conduct themselves in a way tha
 - Use an analytic, facts-based approach to problem solving whenever possible.
 - Manage meeting time wisely.
 - Brainstorm when fresh ideas are in short supply or complex problems present challenges.
-- Allow for the expression of every person¡¯s ideas, and give all ideas a serious hearing.
+- Allow for the expression of every personÂ¡Â¯s ideas, and give all ideas a serious hearing.
 - Listen carefully to each other, and be courteous.
 - Accommodate disagreements and criticisms without hostility.
 - Refrain from all personal attacks.
