@@ -20,6 +20,8 @@ A thematic hackathon aimed at curating tools for computational proteomics, co-lo
 
 **Curatathon : Genomics tools in crop & animal breeding (Feb 2-3, 2017, Denmark)**
 
+http://tinyurl.com/registryhackathon12
+
 A curation hackathon aimed at curating software tools used for crop and animal breeding research.  More details will be added soon.
 
 ------
