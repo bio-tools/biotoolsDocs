@@ -24,6 +24,7 @@ A summary of planned technical development of bio.tools software.  Developments 
   - M1.7.1 Implementation of novel highly usable interfaces from analysis of user experience and usability requirements
     
 - finalised mass content imports
+  
   - Tools used by EBI Training team (https://biotools.sifterapp.com/issues/70)
   - Tools used by ELIXIR trainers (https://biotools.sifterapp.com/issues/60)
   - BioConductor (https://biotools.sifterapp.com/issues/31)
