@@ -7,8 +7,34 @@ A summary of planned technical development of bio.tools software.  Developments 
 - support for biotoolsSchema 2.0.0 XML format I/O
 - extra enhancements to content reporting 
 - subdomains
+- labelling of entries following QC - beta, standard
+- drive by curation
+- request edit rights
+- request ownership
+- similar tool suggestions
+- QC built into my profile page
+- ELIXIR EXCELERATE deliverables
 
-
+  - D1.2 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis
+  - D1.5 Incorporation of monitoring statistics and benchmarking results in registry releases
+  - D1.6 Workbench integration enabler: implementation & evaluation of impact
+  - M1.1.2 EDAM release with coverage of different resource categories and RIs. [2] Implementation of tooling for sustainable community development
+  - M1.2 Implementation & evaluation of impact of Resource Pages on resource discoverability
+  - M1.3 Implementation of registry-literature integration
+  - M1.4 Implementation of support for “close to source” resource annotation in key documentation generators, and software development frameworks
+  - M1.7.1 Implementation of novel highly usable interfaces from analysis of user experience and usability requirements
+    
+- finalised mass content imports
+  - Tools used by EBI Training team (https://biotools.sifterapp.com/issues/70)
+  - Tools used by ELIXIR trainers (https://biotools.sifterapp.com/issues/60)
+  - BioConductor (https://biotools.sifterapp.com/issues/31)
+  - msutils.org (https://biotools.sifterapp.com/issues/28) 
+  - SEQwiki (https://biotools.sifterapp.com/issues/27) 
+  - Ontologies from OBO Foundry  (https://biotools.sifterapp.com/issues/300)
+  - Ontology metadata from OLS (https://biotools.sifterapp.com/issues/298)
+  - Clean-up default EDAM Topic & Operation annotations (https://biotools.sifterapp.com/issues/156) 
+  - GO tools (https://biotools.sifterapp.com/issues/58) 
+    
 2017 Q1
 -------
 - "sandbox" area for intermediate registrations
@@ -149,7 +175,7 @@ October 2015
 ------------
 - Rework of all interfaces to make website mobile friendly
 - Improved error handling, messages and display when registering a resource
-- Made JSON interactively editable in the ¡®Resource registration¡¯ interface
+- Made JSON interactively editable in the Â¡Â®Resource registrationÂ¡Â¯ interface
 - Continuous debugging and improvements
 
 September 2015
@@ -158,7 +184,7 @@ September 2015
 - New advanced filtering widget and mechanism
 - Improvements to the EDAM widget
 - Tooltips redone
-- Updated the contact tab in ¡®Resource registration¡¯ to make it obvious that either email or URL is required instead of both
+- Updated the contact tab in Â¡Â®Resource registrationÂ¡Â¯ to make it obvious that either email or URL is required instead of both
 - Continuous debugging and improvements
 
 August 2015
@@ -166,10 +192,10 @@ August 2015
 - Major release with focus on improved interface usability:
   - Removed splashscreen
   - Refactored menus
-  - New browsing interface: added new ¡®pill¡¯ view, new sorting capabilities, storing search state in the URL etc.
+  - New browsing interface: added new Â¡Â®pillÂ¡Â¯ view, new sorting capabilities, storing search state in the URL etc.
   - New registration interface: new ontology browsing widget, restructured to improve look and feel
   - New editing interface (for existing resources)
-  - Added ¡®compact view¡¯ to query interface
+  - Added Â¡Â®compact viewÂ¡Â¯ to query interface
   - Improved search bar with search suggestions
 - Finalizing search API intended to prepare for growth in content and usage of the registry (scalability)
 - New transferable search URL - same syntax for filtering both via GUI and API
@@ -216,8 +242,8 @@ April 2015
 - Various schema updates, e.g.
   - Improved dataType, dataFormat element docs
   - Extended URL with support for FTP 
-  - Enforced ¡®description' length limit
-  - Enforced other 'description' fields¡¯ length limits
+  - Enforced Â¡Â®description' length limit
+  - Enforced other 'description' fieldsÂ¡Â¯ length limits
   - Made publication ID mandatory
   - Updated sample JSON with "null" value of "uri"
 - Continuous debugging
