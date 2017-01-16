@@ -2,24 +2,12 @@ Roadmap
 =======
 A summary of planned technical development of bio.tools software.  Developments are informed by the ELIXIR EXCELERATE application (granted in April 2015).  The roadmap is updated in light of community input (see `Contributors Guide <http://biotools.readthedocs.org/en/latest/hangouts.html>`_) and on-going developments.  As a rule we aim for quarterly registry feature releases with supporting EDAM releases.
 
-October 2016
-------------
-- moving dev.bio.tools into production (consolidation of dev.bio.tools & bio.tools content) with QC checks 
-
-  - auto-checks for redundancy in content (tool name, homepage URL)
-  - link checking
-
-- content ownership / sharing of edit rights (Google docs style)
-- stable tool ID / URL scheme including tool version number
-- improved bio.tools auto-mailer (using admin email address)
-
-December 2016
--------------
-- support for candidate stable schema (Stage 1 / 3) in backend & user interfaces, with support for XML & documentation
-- content migration to stable schema
-- Google indexing of bio.tools
-- enhanced content reporting (graphs of content growth etc.)
+- QC checks and reporting
+- enhanced content ownership / sharing features
+- support for biotoolsSchema 2.0.0 XML format I/O
+- extra enhancements to content reporting 
 - subdomains
+
 
 2017 Q1
 -------
@@ -46,6 +34,64 @@ Changelog
 
 A summary of technical developments of bio.tools software to date.
 
+December 2016
+-------------
+- stable data model, biotoolSchema 2.0.0 released (https://github.com/bio-tools/biotoolsSchema/tree/master/versions)
+
+  - defines the stable bio.tools API
+  - many major changes (new credit mechanism, cleaner aggregation of links, links (including for docs and downloads) can be typed 
+  - breaking changes reserved to once/year from now on
+  - incorporates very many community requests (tracked on https://github.com/bio-tools/biotoolsSchema/issues)
+  - new schema docs (https://biotoolsschema.readthedocs.io/en/latest/)
+
+- support for candidate stable schema (Stage 1/3) in backend & user interfaces, revised documentation
+
+- content migration to stable schema
+
+  - created system for semi-automated migration of content (future proofing)
+  - migrated existing content (Stage 1/3), see https://docs.google.com/document/d/1tqw7FELV4F_qzrTA9KpVYoORAeFPyY1ZOjaGTPN2H1E/edit)
+
+- labelling of all entries as "beta"
+  - beta entries will require QC / user verification before being indexed
+
+- Google indexing of bio.tools
+
+  - new indexing system (keywords and metadata representation), no longer uses prerender, Google can now index single-page applications (Javascript)
+  - main site is indexed, individual Tool Cards will be indexed as we migrate from "beta" entries
+
+- new look Tool Cards
+
+- bio.tools updated for EDAM_16
+
+- support for EDAM synonyms for registration via API
+  
+November 2016
+-------------
+
+- revised https://bio.tools/stats pages with new graphs, cleaner look and feel etc.
+- revised search mechanism, now performs exact and fuzzy searches
+- misc. bug fixes  
+- revised Registration Interface, now provides inline error reporting
+- feature to send verification (for account creation) and password reset emails
+- features to share resources put on "my profile" page
+- scheduling system for housekeeping, e.g. gathering stats for bio.tools/stats
+
+October 2016
+------------
+- moved dev.bio.tools into production (consolidation of dev.bio.tools & bio.tools content) with QC check for redundant tool names 
+
+- content ownership / sharing of edit rights (Google docs style)
+  - ownership is not based on affiliation anymore, 1 owner / tool, edit rights can be shared with selected account holder, or with all account holders
+
+- stable tool ID / URL scheme including tool version number
+  - moved away from affiliation-name-version triplet for identifying entries, tools now identified by toolID, specific versions of a tool identified by versionID.  IDs have syntax constraints (defined in https://github.com/bio-tools/biotoolsSchema/).
+  - IDs and therefore Tool Card URLs will be user-verifiable (implementation tbd)
+
+- improved bio.tools auto-mailer (using admin email address)
+
+- added historical stats to bio.tools/stats
+
+  
 July 2016
 ---------
 - rewrite bio.tools software to pay off technical debt (completed)
