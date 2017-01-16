@@ -2,17 +2,16 @@ Roadmap
 =======
 A summary of planned technical development of bio.tools software.  Developments are informed by the ELIXIR EXCELERATE application (granted in April 2015).  The roadmap is updated in light of community input (see `Contributors Guide <http://biotools.readthedocs.org/en/latest/hangouts.html>`_) and on-going developments.  As a rule we aim for quarterly registry feature releases with supporting EDAM releases.
 
-- QC checks and reporting
+- QC checks and reporting, built into my profile page
 - enhanced content ownership / sharing features
 - support for biotoolsSchema 2.0.0 XML format I/O
 - extra enhancements to content reporting 
 - subdomains
 - labelling of entries following QC - beta, standard
-- drive by curation
+- drive-by curation
 - request edit rights
 - request ownership
 - similar tool suggestions
-- QC built into my profile page
 - ELIXIR EXCELERATE deliverables
 
   - D1.2 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis
