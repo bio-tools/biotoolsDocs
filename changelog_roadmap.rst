@@ -17,15 +17,6 @@ A summary of planned technical development of bio.tools software.  Developments 
 - improved search and filtering
 - automated support for new EDAM releases
 - improved content monitoring and reporting
-
-  - D1.2 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis
-  - D1.5 Incorporation of monitoring statistics and benchmarking results in registry releases
-  - D1.6 Workbench integration enabler: implementation & evaluation of impact
-  - M1.1.2 EDAM release with coverage of different resource categories and RIs. [2] Implementation of tooling for sustainable community development
-  - M1.2 Implementation & evaluation of impact of Resource Pages on resource discoverability
-  - M1.3 Implementation of registry-literature integration
-  - M1.4 Implementation of support for “close to source” resource annotation in key documentation generators, and software development frameworks
-  - M1.7.1 Implementation of novel highly usable interfaces from analysis of user experience and usability requirements
     
 - finalised mass content imports
   
@@ -42,7 +33,7 @@ A summary of planned technical development of bio.tools software.  Developments 
 2017 Q1
 -------
 
-- Things in roadmap that will *not* be done
+- Things in roadmap that will **not** be done
 
   - "sandbox" area for intermediate registrations.  The information requirement is now lower for beta entries, "sandbox" (staging area) is not needed
   - "moderation interface" for mass content import.  Instead there will be enhanced QC and new features for improving entries, including moderating content imports en masse
@@ -52,15 +43,67 @@ A summary of planned technical development of bio.tools software.  Developments 
 2017 Q2
 -------
 
+  - D1.5 Incorporation of monitoring statistics and benchmarking results in registry releases
 
+    - proof of principle
+    - handshake to ELIXIR EXCELERATE WP2 datastore
+    - expose whatever data is available at the time
+
+  - D1.6 Workbench integration enabler: implementation & evaluation of impact
+
+    - generate Galaxy tool wrapper, CWL file
+    - proof-of-principle
+
+  - M1.2 Implementation & evaluation of impact of Resource Pages on resource discoverability
+
+    - indexing of non-beta entries
+    - discoverability of tools via Google
+    - enhanced presentation of search results
+    - BioSchema Tool Specification (support for)
+    - tool metadata as a service
+
+   - M1.4 Implementation of support for “close to source” resource annotation in key documentation generators, and software development frameworks
+
+     - notion of read-only bio.tools entries
+     - periodic pull of data, similar to what readthedocs does (add hook, such that whenever the file in repo changes, bio.tools is updated)
+     - biotoosSchema-compatible YAML format in GitHub
+     - same mechanism for exports from ExPAsy and EBI
+
+  - M1.7.1 Implementation of novel highly usable interfaces from analysis of user experience and usability requirements       
+
+    - "tools similar to these" feature (using EDAM annotations) OR
+    - workflow-based navigation of bio.tools content, with links to TeSS
+
+    
+    
 2017 Q3
 -------
 
+  - M1.3 Implementation of registry-literature integration
+
+    - adding publications to entries
+    - pulling in information from literature analysis, e.g. #citations of papers
+    - other ideas tbd
 
 2017 Q4
 -------
 
+  - D1.2 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis
 
+    - new content
+    - stable import mechanims e.g. from EBI, ExPAsy
+    - major collections (SEQwiki, msutils, BioConductor etc.)
+    - new model (biotoolsSchema 2.0.0), revisions to content for it
+    - summary of new registry features
+
+  - M1.1.2 EDAM release with coverage of different resource categories and RIs. [2] Implementation of tooling for sustainable community development
+
+    - new EDAM releases
+    - Tool Annotator
+    - RainBio browser
+    - CI testing
+    - EDAM Bioimaging extensions
+      
 Changelog
 =========
 
