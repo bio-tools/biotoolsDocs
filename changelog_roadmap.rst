@@ -52,6 +52,7 @@ December 2016
   - migrated existing content (Stage 1/3), see https://docs.google.com/document/d/1tqw7FELV4F_qzrTA9KpVYoORAeFPyY1ZOjaGTPN2H1E/edit)
 
 - labelling of all entries as "beta"
+
   - beta entries will require QC / user verification before being indexed
 
 - Google indexing of bio.tools
@@ -81,9 +82,11 @@ October 2016
 - moved dev.bio.tools into production (consolidation of dev.bio.tools & bio.tools content) with QC check for redundant tool names 
 
 - content ownership / sharing of edit rights (Google docs style)
+
   - ownership is not based on affiliation anymore, 1 owner / tool, edit rights can be shared with selected account holder, or with all account holders
 
 - stable tool ID / URL scheme including tool version number
+
   - moved away from affiliation-name-version triplet for identifying entries, tools now identified by toolID, specific versions of a tool identified by versionID.  IDs have syntax constraints (defined in https://github.com/bio-tools/biotoolsSchema/).
   - IDs and therefore Tool Card URLs will be user-verifiable (implementation tbd)
 
