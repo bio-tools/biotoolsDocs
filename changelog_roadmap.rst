@@ -39,7 +39,7 @@ December 2016
 - stable data model, biotoolSchema 2.0.0 released (https://github.com/bio-tools/biotoolsSchema/tree/master/versions)
 
   - defines the stable bio.tools API
-  - many major changes (new credit mechanism, cleaner aggregation of links, links (including for docs and downloads) can be typed 
+  - many major changes (new credit mechanism, cleaner aggregation of links, links (including for docs and downloads) can be typed etc.
   - breaking changes reserved to once/year from now on
   - incorporates very many community requests (tracked on https://github.com/bio-tools/biotoolsSchema/issues)
   - new schema docs (https://biotoolsschema.readthedocs.io/en/latest/)
@@ -71,11 +71,11 @@ November 2016
 
 - revised https://bio.tools/stats pages with new graphs, cleaner look and feel etc.
 - revised search mechanism, now performs exact and fuzzy searches
-- misc. bug fixes  
 - revised Registration Interface, now provides inline error reporting
 - feature to send verification (for account creation) and password reset emails
-- features to share resources put on "my profile" page
-- scheduling system for housekeeping, e.g. gathering stats for bio.tools/stats
+- features to share resources moved to "my profile" page
+- scheduling system for housekeeping, e.g. gathering stats for https://bio.tools/stats
+- misc. bug fixes  
 
 October 2016
 ------------
