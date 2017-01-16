@@ -2,7 +2,7 @@ Roadmap
 =======
 A summary of planned technical development of bio.tools software.  Developments are informed by the ELIXIR EXCELERATE application (granted in April 2015).  The roadmap is updated in light of community input (see `Contributors Guide <http://biotools.readthedocs.org/en/latest/hangouts.html>`_) and on-going developments.  As a rule we aim for quarterly registry feature releases with supporting EDAM releases.
 
-- QC checks and reporting, built into my profile page
+- improved QA/QC process, with reporting, built into my profile page
 - enhanced content ownership / sharing features
 - support for biotoolsSchema 2.0.0 XML format I/O
 - extra enhancements to content reporting 
@@ -13,6 +13,10 @@ A summary of planned technical development of bio.tools software.  Developments 
 - request ownership
 - similar tool suggestions
 - ELIXIR EXCELERATE deliverables
+- cutator tooling, to allow an admin to edit any entry via the UI, also programmatically via Python notebooks
+- improved search and filtering
+- automated support for new EDAM releases
+- improved content monitoring and reporting
 
   - D1.2 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis
   - D1.5 Incorporation of monitoring statistics and benchmarking results in registry releases
@@ -37,19 +41,21 @@ A summary of planned technical development of bio.tools software.  Developments 
     
 2017 Q1
 -------
-- "sandbox" area for intermediate registrations
-- "moderation interface" for mass content import
-- improved QA/QC process
-- improved admin interface for content management
+
+- Things in roadmap that will *not* be done
+
+  - "sandbox" area for intermediate registrations.  The information requirement is now lower for beta entries, "sandbox" (staging area) is not needed
+  - "moderation interface" for mass content import.  Instead there will be enhanced QC and new features for improving entries, including moderating content imports en masse
+  - improved admin interface for content management.  Instead there an admin will be able to edit any entry via the UI, also programmatically via Python notebooks
+  
 
 2017 Q2
 -------
-- automated support for new EDAM releases
-- improved content monitoring and reporting
+
 
 2017 Q3
 -------
-- improved search and filtering
+
 
 2017 Q4
 -------
