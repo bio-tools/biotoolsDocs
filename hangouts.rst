@@ -9,17 +9,17 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 2017 Meetings
 -------------
 
-- Thu Jan 26, 11 AM CET
-- Thu Feb 23, 11 AM CET
-- Thu Mar 30, 11 AM CET
-- Thu Apr 27, 11 AM CET
-- Thu May 25, 11 AM CET
-- Thu June 29, 11 AM CET
-- Thu July 27, 11 AM CET
+- Fri Jan 27, 11 AM CET
+- Fri Feb 24, 11 AM CET
+- Fri Mar 31, 11 AM CET
+- Fri Apr 28, 11 AM CET
+- Fri May 26, 11 AM CET
+- Fri June 30, 11 AM CET
+- Fri July 28, 11 AM CET
 - No meeting in Aug
-- Thu Sep 28, 11 AM CET
-- Thu Oct 26, 11 AM CET
-- Thu Nov 30, 11 AM CET
+- Fri Sep 29, 11 AM CET
+- Fri Oct 27, 11 AM CET
+- Fri Nov 24, 11 AM CET
 - No meeting in Dec 
 
 ------------
