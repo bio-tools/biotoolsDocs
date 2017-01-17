@@ -8,8 +8,8 @@ NOTE
 - Things mentioned previously that will **not** be done
 
   - "sandbox" area for intermediate registrations.  The information requirement is now lower for `beta entries <https://github.com/bio-tools/biotoolsSchema#information-requirements>`_ , "sandbox" (staging area) is not needed
-  - "moderation interface" for mass content import.  Instead there will be enhanced QC and new features for improving entries
-  - improved admin interface for content management.  Instead an admin will be able to edit any entry via the UI, also programmatically via Python notebooks
+  - "moderation interface" for mass content import.  Instead there will be enhanced QA/QC with features for improving entries (see below)
+  - improved admin interface for content management.  Instead an admin will be able to edit any entry via the UI, also programmatically via Python notebooks (see below)
   
 
     
@@ -21,8 +21,8 @@ NOTE
 
 - enhanced content ownership / sharing features
 
-  - request edit rights button
-  - request ownership button
+  - "request edit rights" button
+  - "request ownership" button
   - admin editing via UI
 
 - improved QA/QC process (content monitoring & reporting)
@@ -53,7 +53,7 @@ NOTE
 
 - curator tooling
 
-  - updates of deprecated EDAM annotations (from QC / in My Profile page)
+  - features to ease fixing of entries (e.g. updates of deprecated EDAM annotations (from QC / in My Profile page)
   - new `Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
     
 - extra enhancements to content reporting (tbd)
@@ -63,7 +63,6 @@ NOTE
   - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
   - `Ontology metadata from OLS <https://biotools.sifterapp.com/issues/298>`_
   - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
-  - `NAR databases edition <https://biotools.sifterapp.com/issues/246>`_
     
 - D1.5 Incorporate monitoring statistics & benchmarking results
 
@@ -77,11 +76,10 @@ NOTE
 
 - M1.2 Enhance & evaluate Tool Cards
 
-  - user-verification of entries (removing "beta" status)
-  - indexing of non-beta entries
+  - user-verification of entries (removing "beta" status), indexing of non-beta entries
   - assess tool discoverability (tool cards, tool homepage URLs) via Google
-  - assess enhanced presentation of search results,
   - add BioSchema Tool Specification mark-up, provide metadata as service (tbd)
+  - assess enhanced presentation of search results,
     
 - M1.4 Suppport “close to source” resource annotation
 
@@ -96,7 +94,9 @@ NOTE
 
 - mass content imports
 
-  - DebianMed (https://biotools.sifterapp.com/issues/32)
+  - `NAR databases edition <https://biotools.sifterapp.com/issues/246>`_
+  - `DebianMed <https://biotools.sifterapp.com/issues/32>`_
+  - others (tbd)
 	  
 - M1.7.1 Novel highly usable interfaces (report)
 
