@@ -5,7 +5,7 @@ A summary of planned technical development of bio.tools software.  Developments 
 NOTE
 ----
 
-- Things in roadmap that will **not** be done
+- Things from roadmap that will **not** be done
 
   - "sandbox" area for intermediate registrations.  The information requirement is now lower for beta entries, "sandbox" (staging area) is not needed
   - "moderation interface" for mass content import.  Instead there will be enhanced QC and new features for improving entries, including moderating content imports en masse
@@ -47,49 +47,49 @@ NOTE
 
 2017 Q2
 -------
-  - enhanced content ownership / sharing features    
+- enhanced content ownership / sharing features    
 
-    - "drive-by curation" (suggestions from non-account holders)
-    - admin editing programmatically via Python notebooks
+  - "drive-by curation" (suggestions from non-account holders)
+  - admin editing programmatically via Python notebooks
 
-  - curator tooling
+- curator tooling
 
-    - updates of deprecated EDAM annotations (from QC / in My Profile page)
-    - new 'Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
+  - updates of deprecated EDAM annotations (from QC / in My Profile page)
+  - new 'Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
     
-  - extra enhancements to content reporting (tbd)
+- extra enhancements to content reporting (tbd)
 
-  - mass content imports
+- mass content imports
 
-    - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
-    - `Ontology metadata from OLS <https://biotools.sifterapp.com/issues/298>`_
-    - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
-    - `NAR databases edition <https://biotools.sifterapp.com/issues/246>`_
+  - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
+  - `Ontology metadata from OLS <https://biotools.sifterapp.com/issues/298>`_
+  - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
+  - `NAR databases edition <https://biotools.sifterapp.com/issues/246>`_
     
-  - D1.5 Incorporate monitoring statistics & benchmarking results
+- D1.5 Incorporate monitoring statistics & benchmarking results
 
-    - connect to ELIXIR EXCELERATE WP2 metrics datastore, expose available data
-    - proof of principle
+  - connect to ELIXIR EXCELERATE WP2 metrics datastore, expose available data
+  - proof of principle
 
-  - D1.6 Workbench integration enabler: implement & evaluate
+- D1.6 Workbench integration enabler: implement & evaluate
 
-    - generate Galaxy tool wrapper & CWL file from registry entry
-    - proof-of-principle
+  - generate Galaxy tool wrapper & CWL file from registry entry
+  - proof-of-principle
 
-  - M1.2 Enhance & evaluate Tool Cards
+- M1.2 Enhance & evaluate Tool Cards
 
-    - user-verification of entries (removing "beta" status)
-    - indexing of non-beta entries
-    - assess tool discoverability (tool cards, tool homepage URLs) via Google
-    - add BioSchema Tool Specification mark-up
-    - assess enhanced presentation of search results
-    - provide metadata as service (tbd)
+  - user-verification of entries (removing "beta" status)
+  - indexing of non-beta entries
+  - assess tool discoverability (tool cards, tool homepage URLs) via Google
+  - add BioSchema Tool Specification mark-up
+  - assess enhanced presentation of search results
+  - provide metadata as service (tbd)
     
-  - M1.4 Suppport “close to source” resource annotation
+- M1.4 Suppport “close to source” resource annotation
 
-    - biotoosSchema-compatible YAML format (tbd) for tool descriptions in GitHub
-    - periodic pull of data, with hook (whenever metadata file in repo changes, bio.tools is updated)
-    - requires notion of read-only bio.tools entries (also to be used e.g. by EBI tools ExPAsy, tbd)
+  - biotoosSchema-compatible YAML format (tbd) for tool descriptions in GitHub
+  - periodic pull of data, with hook (whenever metadata file in repo changes, bio.tools is updated)
+  - requires notion of read-only bio.tools entries (also to be used e.g. by EBI tools ExPAsy, tbd)
 
     
 2017 Q3
@@ -98,37 +98,26 @@ NOTE
 
   - mass content imports
 
-    - DebianMed (https://biotools.sifterapp.com/issues/32)
+  - DebianMed (https://biotools.sifterapp.com/issues/32)
 	  
-    - M1.7.1 Novel highly usable interfaces 
+- M1.7.1 Novel highly usable interfaces (report)
 
-    - "tools similar to these" feature (using EDAM annotations) OR (tbd)
-    - workflow-based navigation of bio.tools content, with links to TeSS
+  - "tools similar to these" feature (using EDAM annotations) OR (tbd)
+  - workflow-based navigation of bio.tools content, with links to TeSS
 
-  - M1.3 Registry-literature integration
+- M1.3 Registry-literature integration (report)
 
-    - systematic annotation of tool publications
-    - pull in information from literature analysis, e.g. #citations of papers
-    - other ideas tbd
+  - systematic annotation of tool publications
+  - pull in information from literature analysis, e.g. #citations of papers
+  - other ideas tbd
 
 2017 Q4
 -------
 
-  - D1.2 Registry release 
+- D1.2 Registry release (report)
 
-    - new content
-    - stable import mechanims e.g. from EBI, ExPAsy
-    - major collections (SEQwiki, msutils, BioConductor etc.)
-    - new model (biotoolsSchema 2.0.0), revisions to content for it
-    - summary of new registry features
+- M1.1.2 EDAM release & tooling (report)
 
-  - M1.1.2 EDAM release & tooling
-
-    - new EDAM releases
-    - Tool Annotator
-    - RainBio browser
-    - CI testing
-    - EDAM Bioimaging extensions
       
 Changelog
 =========
