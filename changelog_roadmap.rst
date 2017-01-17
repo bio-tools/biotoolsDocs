@@ -5,11 +5,11 @@ A summary of planned technical development of bio.tools software.  Developments 
 NOTE
 ----
 
-- Things from roadmap that will **not** be done
+- Things mentioned previously that will **not** be done
 
-  - "sandbox" area for intermediate registrations.  The information requirement is now lower for beta entries, "sandbox" (staging area) is not needed
-  - "moderation interface" for mass content import.  Instead there will be enhanced QC and new features for improving entries, including moderating content imports en masse
-  - improved admin interface for content management.  Instead there an admin will be able to edit any entry via the UI, also programmatically via Python notebooks
+  - "sandbox" area for intermediate registrations.  The information requirement is now lower for `beta entries <https://github.com/bio-tools/biotoolsSchema#information-requirements>`_ , "sandbox" (staging area) is not needed
+  - "moderation interface" for mass content import.  Instead there will be enhanced QC and new features for improving entries
+  - improved admin interface for content management.  Instead an admin will be able to edit any entry via the UI, also programmatically via Python notebooks
   
 
     
@@ -19,8 +19,6 @@ NOTE
 
 - support for biotoolsSchema 2.0.0 XML format I/O
 
-- automated support for new EDAM releases
-  
 - enhanced content ownership / sharing features
 
   - request edit rights button
@@ -33,7 +31,8 @@ NOTE
   - reporting to My Profile page
   - labelling of entries with "has issues"
 
-    
+- automated support for new EDAM releases
+  
 - mass content imports
   
   - `Tools used by EBI Training team <https://biotools.sifterapp.com/issues/70>`_
@@ -55,7 +54,7 @@ NOTE
 - curator tooling
 
   - updates of deprecated EDAM annotations (from QC / in My Profile page)
-  - new 'Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
+  - new `Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
     
 - extra enhancements to content reporting (tbd)
 
@@ -69,21 +68,20 @@ NOTE
 - D1.5 Incorporate monitoring statistics & benchmarking results
 
   - connect to ELIXIR EXCELERATE WP2 metrics datastore, expose available data
-  - proof of principle
+  - proof of principle!
 
 - D1.6 Workbench integration enabler: implement & evaluate
 
   - generate Galaxy tool wrapper & CWL file from registry entry
-  - proof-of-principle
+  - proof-of-principle!
 
 - M1.2 Enhance & evaluate Tool Cards
 
   - user-verification of entries (removing "beta" status)
   - indexing of non-beta entries
   - assess tool discoverability (tool cards, tool homepage URLs) via Google
-  - add BioSchema Tool Specification mark-up
-  - assess enhanced presentation of search results
-  - provide metadata as service (tbd)
+  - assess enhanced presentation of search results,
+  - add BioSchema Tool Specification mark-up, provide metadata as service (tbd)
     
 - M1.4 Suppport “close to source” resource annotation
 
@@ -96,7 +94,7 @@ NOTE
 -------
 - improved search and filtering
 
-  - mass content imports
+- mass content imports
 
   - DebianMed (https://biotools.sifterapp.com/issues/32)
 	  
