@@ -2,36 +2,8 @@ Roadmap
 =======
 A summary of planned technical development of bio.tools software.  Developments are informed by the ELIXIR EXCELERATE application (granted in April 2015).  The roadmap is updated in light of community input (see `Contributors Guide <http://biotools.readthedocs.org/en/latest/hangouts.html>`_) and on-going developments.  As a rule we aim for quarterly registry feature releases with supporting EDAM releases.
 
-- improved QA/QC process, with reporting, built into my profile page
-- enhanced content ownership / sharing features
-- support for biotoolsSchema 2.0.0 XML format I/O
-- extra enhancements to content reporting 
-- subdomains
-- labelling of entries following QC - beta, standard
-- drive-by curation
-- request edit rights
-- request ownership
-- similar tool suggestions
-- ELIXIR EXCELERATE deliverables
-- cutator tooling, to allow an admin to edit any entry via the UI, also programmatically via Python notebooks
-- improved search and filtering
-- automated support for new EDAM releases
-- improved content monitoring and reporting
-    
-- finalised mass content imports
-  
-  - Tools used by EBI Training team (https://biotools.sifterapp.com/issues/70)
-  - Tools used by ELIXIR trainers (https://biotools.sifterapp.com/issues/60)
-  - BioConductor (https://biotools.sifterapp.com/issues/31)
-  - msutils.org (https://biotools.sifterapp.com/issues/28) 
-  - SEQwiki (https://biotools.sifterapp.com/issues/27) 
-  - Ontologies from OBO Foundry  (https://biotools.sifterapp.com/issues/300)
-  - Ontology metadata from OLS (https://biotools.sifterapp.com/issues/298)
-  - Clean-up default EDAM Topic & Operation annotations (https://biotools.sifterapp.com/issues/156) 
-  - GO tools (https://biotools.sifterapp.com/issues/58) 
-    
-2017 Q1
--------
+NOTE
+----
 
 - Things in roadmap that will **not** be done
 
@@ -40,55 +12,109 @@ A summary of planned technical development of bio.tools software.  Developments 
   - improved admin interface for content management.  Instead there an admin will be able to edit any entry via the UI, also programmatically via Python notebooks
   
 
-2017 Q2
+    
+2017 Q1
 -------
+- subdomains
 
-  - D1.5 Incorporation of monitoring statistics and benchmarking results in registry releases
+- support for biotoolsSchema 2.0.0 XML format I/O
 
-    - proof of principle
-    - handshake to ELIXIR EXCELERATE WP2 datastore
-    - expose whatever data is available at the time
+- automated support for new EDAM releases
+  
+- enhanced content ownership / sharing features
 
-  - D1.6 Workbench integration enabler: implementation & evaluation of impact
+  - request edit rights button
+  - request ownership button
+  - admin editing via UI
 
-    - generate Galaxy tool wrapper, CWL file
-    - proof-of-principle
+- improved QA/QC process (content monitoring & reporting)
 
-  - M1.2 Implementation & evaluation of impact of Resource Pages on resource discoverability
-
-    - indexing of non-beta entries
-    - discoverability of tools via Google
-    - enhanced presentation of search results
-    - BioSchema Tool Specification (support for)
-    - tool metadata as a service
-
-   - M1.4 Implementation of support for “close to source” resource annotation in key documentation generators, and software development frameworks
-
-     - notion of read-only bio.tools entries
-     - periodic pull of data, similar to what readthedocs does (add hook, such that whenever the file in repo changes, bio.tools is updated)
-     - biotoosSchema-compatible YAML format in GitHub
-     - same mechanism for exports from ExPAsy and EBI
-
-  - M1.7.1 Implementation of novel highly usable interfaces from analysis of user experience and usability requirements       
-
-    - "tools similar to these" feature (using EDAM annotations) OR
-    - workflow-based navigation of bio.tools content, with links to TeSS
+  - comprehensive basic checks (see `technical proposal <https://docs.google.com/document/d/1ATj2zJOlbR3Edk6QyGvPX5HStZBknqfx1Fwqk4k0kqE/edit#heading=h.fffoc8urhpt8>`_)
+  - reporting to My Profile page
+  - labelling of entries with "has issues"
 
     
+- mass content imports
+  
+  - `Tools used by EBI Training team <https://biotools.sifterapp.com/issues/70>`_
+  - `Tools used by ELIXIR trainers <https://biotools.sifterapp.com/issues/60>`_
+  - `BioConductor <https://biotools.sifterapp.com/issues/31>`_
+  - `msutils.org <https://biotools.sifterapp.com/issues/28>`_
+  - `SEQwiki <https://biotools.sifterapp.com/issues/27>`_
+  - `Bioinformatics Links Directory - software <https://biotools.sifterapp.com/issues/242>`_
+  - `NAR Web servers <https://biotools.sifterapp.com/issues/245>`_
+    
+
+2017 Q2
+-------
+  - enhanced content ownership / sharing features    
+
+    - "drive-by curation" (suggestions from non-account holders)
+    - admin editing programmatically via Python notebooks
+
+  - curator tooling
+
+    - updates of deprecated EDAM annotations (from QC / in My Profile page)
+    - new 'Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
+    
+  - extra enhancements to content reporting (tbd)
+
+  - mass content imports
+
+    - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
+    - `Ontology metadata from OLS <https://biotools.sifterapp.com/issues/298>`_
+    - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
+    - `NAR databases edition <https://biotools.sifterapp.com/issues/246>`_
+    
+  - D1.5 Incorporate monitoring statistics & benchmarking results
+
+    - connect to ELIXIR EXCELERATE WP2 metrics datastore, expose available data
+    - proof of principle
+
+  - D1.6 Workbench integration enabler: implement & evaluate
+
+    - generate Galaxy tool wrapper & CWL file from registry entry
+    - proof-of-principle
+
+  - M1.2 Enhance & evaluate Tool Cards
+
+    - user-verification of entries (removing "beta" status)
+    - indexing of non-beta entries
+    - assess tool discoverability (tool cards, tool homepage URLs) via Google
+    - add BioSchema Tool Specification mark-up
+    - assess enhanced presentation of search results
+    - provide metadata as service (tbd)
+    
+  - M1.4 Suppport “close to source” resource annotation
+
+    - biotoosSchema-compatible YAML format (tbd) for tool descriptions in GitHub
+    - periodic pull of data, with hook (whenever metadata file in repo changes, bio.tools is updated)
+    - requires notion of read-only bio.tools entries (also to be used e.g. by EBI tools ExPAsy, tbd)
+
     
 2017 Q3
 -------
+- improved search and filtering
 
-  - M1.3 Implementation of registry-literature integration
+  - mass content imports
 
-    - adding publications to entries
-    - pulling in information from literature analysis, e.g. #citations of papers
+    - DebianMed (https://biotools.sifterapp.com/issues/32)
+	  
+    - M1.7.1 Novel highly usable interfaces 
+
+    - "tools similar to these" feature (using EDAM annotations) OR (tbd)
+    - workflow-based navigation of bio.tools content, with links to TeSS
+
+  - M1.3 Registry-literature integration
+
+    - systematic annotation of tool publications
+    - pull in information from literature analysis, e.g. #citations of papers
     - other ideas tbd
 
 2017 Q4
 -------
 
-  - D1.2 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis
+  - D1.2 Registry release 
 
     - new content
     - stable import mechanims e.g. from EBI, ExPAsy
@@ -96,7 +122,7 @@ A summary of planned technical development of bio.tools software.  Developments 
     - new model (biotoolsSchema 2.0.0), revisions to content for it
     - summary of new registry features
 
-  - M1.1.2 EDAM release with coverage of different resource categories and RIs. [2] Implementation of tooling for sustainable community development
+  - M1.1.2 EDAM release & tooling
 
     - new EDAM releases
     - Tool Annotator
@@ -111,20 +137,20 @@ A summary of technical developments of bio.tools software to date.
 
 December 2016
 -------------
-- stable data model, biotoolSchema 2.0.0 released (https://github.com/bio-tools/biotoolsSchema/tree/master/versions)
+- stable data model, `biotoolSchema 2.0.0  <https://github.com/bio-tools/biotoolsSchema/tree/master/versions>`_ released
 
   - defines the stable bio.tools API
   - many major changes (new credit mechanism, cleaner aggregation of links, links (including for docs and downloads) can be typed etc.
   - breaking changes reserved to once/year from now on
   - incorporates very many community requests (tracked on https://github.com/bio-tools/biotoolsSchema/issues)
-  - new schema docs (https://biotoolsschema.readthedocs.io/en/latest/)
+  - new `schema docs <https://biotoolsschema.readthedocs.io/en/latest/>`_
 
 - support for candidate stable schema (Stage 1/3) in backend & user interfaces, revised documentation
 
 - content migration to stable schema
 
   - created system for semi-automated migration of content (future proofing)
-  - migrated existing content (Stage 1/3), see https://docs.google.com/document/d/1tqw7FELV4F_qzrTA9KpVYoORAeFPyY1ZOjaGTPN2H1E/edit)
+  - migrated existing content (Stage 1/3), see `Data model docs <https://docs.google.com/document/d/1tqw7FELV4F_qzrTA9KpVYoORAeFPyY1ZOjaGTPN2H1E/edit>`_
 
 - labelling of all entries as "beta"
 
