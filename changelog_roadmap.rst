@@ -28,18 +28,18 @@ NOTE
   - "request ownership" button (Tool Card, My Profile)
   - "disown" button (My Profile)
     
-- improved QA/QC process (content monitoring & reporting)
-
-  - comprehensive basic checks (see `technical proposal <https://docs.google.com/document/d/1ATj2zJOlbR3Edk6QyGvPX5HStZBknqfx1Fwqk4k0kqE/edit#heading=h.fffoc8urhpt8>`_)
-  - labelling of entries with "has issues"
-  - reporting to Tool Cards, My Profile, admin page
-
 - Admin tooling
 
   - admin editing via UI
   - admin editing programmatically via Python notebooks
   - automated support for new EDAM releases
   
+- improved QA/QC process (content monitoring & reporting)
+
+  - comprehensive basic checks (see `technical proposal <https://docs.google.com/document/d/1ATj2zJOlbR3Edk6QyGvPX5HStZBknqfx1Fwqk4k0kqE/edit#heading=h.fffoc8urhpt8>`_)
+  - labelling of entries with "has issues"
+  - reporting to Tool Cards, My Profile, admin page
+
 - mass content imports
   
   - `Tools used by EBI Training team <https://biotools.sifterapp.com/issues/70>`_
