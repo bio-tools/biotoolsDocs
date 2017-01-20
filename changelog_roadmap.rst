@@ -76,15 +76,6 @@ NOTE
   - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
   - `Ontology metadata from OLS <https://biotools.sifterapp.com/issues/298>`_
   - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
-
-
-    
-- M1.2 Enhance & evaluate Tool Cards
-
-  - user-verification of entries (removing "beta" status), indexing of non-beta entries
-  - assess tool discoverability (tool cards, tool homepage URLs) via Google
-  - add BioSchema Tool Specification mark-up, provide metadata as service (tbd)
-  - assess enhanced presentation of search results,
     
 2017 Q3
 -------
@@ -130,6 +121,13 @@ NOTE
   - pull in information from literature analysis, e.g. #citations of papers
   - Publication Enabler Service? (tbd)
   - other ideas tbd
+
+- M1.2 Evaluate user impact
+
+  - user-verification of entries (removing "beta" status), indexing of non-beta entries
+  - assess tool discoverability (tool cards, tool homepage URLs) via Google
+  - add BioSchema Tool Specification mark-up, assess impact on presentation of search results
+  - provide metadata as service (tbd)  
 
 - D1.2 Registry release (report)
 
