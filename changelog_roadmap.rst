@@ -67,10 +67,6 @@ NOTE
 
 - "drive-by curation" (suggestions from non-account holders)
 
-- entry quality metrics
-
-  - LinkedIn0-style entry completion percentage
-
 - mass content imports
 
   - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
@@ -79,6 +75,10 @@ NOTE
     
 2017 Q3
 -------
+- entry quality metrics
+
+  - LinkedIn-style entry completion percentage
+
 - M1.4 Suppport “close to source” resource annotation
 
   - biotoosSchema-compatible YAML format (tbd) for tool descriptions in GitHub
@@ -99,8 +99,6 @@ NOTE
   - links to registry via EDAM annotations / bio.tools API
   - links to TeSS
     
-- "tools similar to these" feature (using EDAM annotations) OR (tbd)
-
 - extra enhancements to content reporting (tbd)
 
     
@@ -113,6 +111,8 @@ NOTE
     
 2017 Q4
 -------
+- "tools similar to these" feature (using EDAM annotations)
+
 - improved search and filtering
 
 - M1.3 Registry-literature integration
