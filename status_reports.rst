@@ -4,7 +4,13 @@ Status reports
 2017 January
 ------------
 
-See the `changelog and roadmp <http://biotoolsschema.readthedocs.io/en/latest/>`_
+See the `changelog and roadmap <http://biotoolsschema.readthedocs.io/en/latest/>`_
+
+  - ELIXIR Hackathon @ EuBIC Winter School, Jan 10 2017 (https://tinyurl.com/registryhackathon11)
+
+  - ELIXIR bio.tools Curation Workshop: Genomics Tools and Databases in Agricultural Science Feb 2-3 2017 (https://tinyurl.com/registryhackathon12)
+
+  - First draft of "registry pillar" of `ELIXIR Tools Platform roadmap <https://docs.google.com/document/d/1rWzWdxMJvSkDRWEfdyMSu8EMO0LfV_UXwsG86JZmIZ0/edit#heading=h.j77fai7pe4sc>`_  : *open for comments*
 
 
 2016 December
