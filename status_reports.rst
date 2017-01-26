@@ -1,8 +1,14 @@
 Status reports
 ==============
 
-2016 October
+2017 January
 ------------
+
+See the `changelog and roadmp <http://biotoolsschema.readthedocs.io/en/latest/>`_
+
+
+2016 December
+-------------
 Actions (November)
 ^^^^^^^^^^^^^^^^^^
   - Technical developments
@@ -22,7 +28,10 @@ Plans (December)
   - Technical work towards the Dec release, see  `roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ of registry software developments
   - Various content additions listed on `sifterapp <https://biotools.sifterapp.com/projects/39503/issues?srt=priority>`_  
   - WP 1 / ELIXIR-DK partners telcon 10AM UK, Fri Dec 2
- 
+
+2016 October
+------------
+
 Actions (October)
 ^^^^^^^^^^^^^^^^^
   - Technical developments
