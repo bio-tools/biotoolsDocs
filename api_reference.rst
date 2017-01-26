@@ -49,22 +49,13 @@ These are attributes supported by bio.tools
 
 .. code-block:: js
 
-  name, version, description, function, functionDescription, 
-  functionHandle, functionName, input, output, dataType, 
-  dataFormat, dataHandle, dataDescription, topic, homepage, 
-  contact, contactName, contactEmail, contactURL, contactTel, 
-  contactRole, resourceType, interface, interfaceType, 
-  interfaceDocs, interfaceSpecURL, interfaceSpecFormat, 
-  accesibility, publications, publicationsPrimaryID, 
-  publicationsOtherID, affiliation, collection, mirror, uses, 
-  usesName, usesHomepage, usesVersion, tag, uri, term, 
-  sourceRegistry, canonicalID, cost, elixirInfo, elixirStatus, 
-  elixirNode, docs, docsHome, docsTermsOfUse, docsDownload, 
-  docsCitationInstructions, docsDownloadSource, 
-  docsDownloadBinaries, docsGithub, maturity, platform, 
-  language, license, credits, creditsDeveloper, 
-  creditsContributor, creditsInstitution, 
-  creditsInfrastructure, creditsFunding, id
+  id, name, topic, function, operation, input, 
+  inputDataFormat, inputDataType, output, outputDataFormat, 
+  outputDataType, homepage, description, version, 
+  accessibility, toolType, collection, contact, 
+  elixirInfo, maturity, operatingSystem, language, 
+  cost, license, documentation, link, download, publication, 
+  credit, owner
 
 
 Example
