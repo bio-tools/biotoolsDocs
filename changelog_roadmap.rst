@@ -49,7 +49,10 @@ NOTE
   - `SEQwiki <https://biotools.sifterapp.com/issues/27>`_
   - `Bioinformatics Links Directory - software <https://biotools.sifterapp.com/issues/242>`_
   - `NAR Web servers <https://biotools.sifterapp.com/issues/245>`_
-    
+
+- improved search
+
+  - support "Collection" in search bar, with drop-down of suggestions
     
 2017 Q2
 -------
@@ -72,6 +75,17 @@ NOTE
   - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
   - `Ontology metadata from OLS <https://biotools.sifterapp.com/issues/298>`_
   - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
+
+- curation of select tool collections to “gold-standard” (Q2-Q3)
+
+  - *provisional on studentship funding*
+
+- systematic identification of rightful entry owners (Q2-Q4)
+
+  - mailshot / requesting adoption of entries
+  - requesting new tools
+
+- systematic improvement of entries following QC checks (Q2-Q4)
     
 2017 Q3
 -------
