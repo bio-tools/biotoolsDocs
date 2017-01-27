@@ -13,6 +13,7 @@ Registry Core
 - Dmitry Repchevsky (BSC, ES) - Web services
 - Erik Jaaniso (UT, EE) - text mining
 - Hans-Ioan Lenasescu (KU, DK) - Web development, curator
+- Henriette Husum Bak-Jensen (UCPH - Dept of Biology)
 - Hervé Ménager (Institut Pasteur, FR) - workbench integration, user engagement, schema, EDAM
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
 - José María Fernández (CNIO, ES) - benchmarking
@@ -71,7 +72,6 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Hedi Peterson (University of Tartu)
 - Heinz Stockinger (SIB Swiss Institute of Bioinformatics)
 - Helen Parkinson (EMBL-EBI, UK)
-- Henriette Husum Bak-Jensen (UCPH - Dept of Biology)
 - Hervé Ménager (Institut Pasteur)
 - Inge Jonassen (ELIXIR NO)
 - Ivan Mičetić (University of Padova)
