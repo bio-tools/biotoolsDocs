@@ -13,6 +13,16 @@ See the `changelog and roadmap <http://biotoolsschema.readthedocs.io/en/latest/>
   - First draft of "registry pillar" of `ELIXIR Tools Platform roadmap <https://docs.google.com/document/d/1rWzWdxMJvSkDRWEfdyMSu8EMO0LfV_UXwsG86JZmIZ0/edit#heading=h.j77fai7pe4sc>`_  : *open for comments*
 
 
+**ACTIONS**
+
+See `roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ :
+
+  - tweak search behaviour to address most critical issues from https://biotools.sifterapp.com/issues/274
+  - drop mandatory requirement for email or URL in credits (non-breaking change for 2.1.0)
+  - clarify what is meant by "beta", maybe change label to "This entry has not been manually verified"
+  - set up access to repo for Kenzo et al.
+    
+
 2016 December
 -------------
 Actions (November)

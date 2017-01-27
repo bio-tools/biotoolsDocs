@@ -53,6 +53,15 @@ NOTE
 - improved search
 
   - support "Collection" in search bar, with drop-down of suggestions
+  - tweak search behaviour to address most critical issues from https://biotools.sifterapp.com/issues/274
+
+- biotoolsSchema (and in UI)
+
+  - drop mandatory requirement for email or URL in credits (non-breaking change for 2.1.0)
+
+- other
+
+  - clarify what is meant by "beta", maybe change label to "This entry has not been manually verified"
     
 2017 Q2
 -------
