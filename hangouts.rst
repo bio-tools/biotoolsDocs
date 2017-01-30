@@ -85,13 +85,13 @@ The Tool Annotator is currently not integrated with bio.tools but it will be aft
 
 Approximately 30 people attended the workshop. These were both Ph.D. students, postdocs and senior researchers. The main outcome was outreach i.e. to introduce ELIXIR and the bio.tools registry to the proteomics community. Another outcome was to define workflows in proteomics analysis, which is useful not only to the registry but also to the ELIXIR training platform, who attended as well (Niall Beard). The event could not have taken place without the ELIXIR-DK financial support, which was a little hard to come by. ELIXIR DK would benefit from an operational strategy that lowers the bar on resource decisions and executing these (Action Henriette).
 
-**Ad 5) Highlights from ‘User feedback from the UI tests’ see here  (Kenzo Hugo) 10 min**
+**Ad 5) Highlights from ‘User feedback from the UI tests’ see here  (Kenzo Hugo Hillion) 10 min**
 
 Several constructive points of critique were raised by the report. Salva also raised important points at this meeting. Jon and Emil are grateful for this helpful critique and kindly request these be noted in the sifter task here https://biotools.sifterapp.com/issues/317 where they will action them (i.e. link them with the roadmap) and solve them as soon as possible/feasible. Again – everyone is welcome (and needed) to help solve these issues – please coordinate with Jon, Emil. 
 
 **Ad 6) Access to the code repository (Hervé Menager) 10 min**
 
-HH was not online for this point. Please fill in the points that were made (Action Hervé)
+As a solution to some of the remaining software-level issues of bio.tools, HM and KHH have requested an access to the code repository for bio.tools. That would potentially enable to provide quickly corrections to some of the interface bugs for instance. JI would also like to get this access, in order to contribute to tasks such as QC. ER will provide this ASAP (week of jan. 30th). 
 
 **Ad 7) New curator in DK (yea!) – roles and tasks, inspirational 5 min**
 
