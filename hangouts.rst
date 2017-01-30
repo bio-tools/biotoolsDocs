@@ -51,7 +51,7 @@ Archive
 Attendees
 ^^^^^^^^^
 
-Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Veit Schwämmle, Vivi Raundahl Gregersen, Hervé Menager, Kenzo Hugo, Salva Gutiérrez, Anders Halager, Henriette Husum Bak-Jensen
+Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Veit Schwämmle, Vivi Raundahl Gregersen, Hervé Ménager, Kenzo Hugo, Salva Gutiérrez, Anders Halager, Henriette Husum Bak-Jensen
 
 
 
@@ -89,7 +89,7 @@ Approximately 30 people attended the workshop. These were both Ph.D. students, p
 
 Several constructive points of critique were raised by the report. Salva also raised important points at this meeting. Jon and Emil are grateful for this helpful critique and kindly request these be noted in the sifter task here https://biotools.sifterapp.com/issues/317 where they will action them (i.e. link them with the roadmap) and solve them as soon as possible/feasible. Again – everyone is welcome (and needed) to help solve these issues – please coordinate with Jon, Emil. 
 
-**Ad 6) Access to the code repository (Hervé Menager) 10 min**
+**Ad 6) Access to the code repository (Hervé Ménager) 10 min**
 
 As a solution to some of the remaining software-level issues of bio.tools, HM and KHH have requested an access to the code repository for bio.tools. That would potentially enable to provide quickly corrections to some of the interface bugs for instance. JI would also like to get this access, in order to contribute to tasks such as QC. ER will provide this ASAP (week of jan. 30th). 
 
