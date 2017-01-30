@@ -45,6 +45,63 @@ to be announced..
 Archive
 -------
 
+2017, Jan 27 11 AM CET
+----------------------
+
+Attendees
+^^^^^^^^^
+
+Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Veit Schwämmle, Vivi Raundahl Gregersen, Hervé Menager, Kenzo Hugo, Salva Gutiérrez, Anders Halager, Henriette Husum Bak-Jensen
+
+
+
+Thanks to everyone who managed to join this technically challenged meeting ! It seems that hangouts aren’t suitable for meetings of 10 participants or more, and so the next TC (Feb 24, 11:00 CET) will take place in another way (Action Henriette),
+
+Please have a look at the revised (27/1 p.m.!) status report here `<http://biotools.readthedocs.io/en/latest/status_reports.html <http://>`_ 
+
+ 
+
+
+Agenda and Minutes
+^^^^^^^^^^^^^^^^^^
+
+**Ad 1) Hackathon at Aarhus University Feb 2-3 2017: Outstanding issues (Vivi Gregersen) 10 min**
+
+Currently 15 people have signed up to this hackathon, everyone is welcome to attend and can study the program AND register here https://docs.google.com/document/d/1tVemqzmus8BpQxfPZRmh5PGmIe64F9a72OKmPhfz1sk/edit#heading=h.p1b4r4t4pje3 
+Jon will share a spreadsheet template with Vivi, to help define conceptual workflows, relevant tools and annotation (Action Jon)
+Hans will demonstrate the Tool Annotator as requested – Jon should give directions to Hans as to timing and duration of this (Action Jon).
+
+**Ad 2) Status on RTH - RNA tools (Anne Wenzel) 5 min** 
+
+The upload of ~400 tools that were scheduled for end 2016 has been paused by RTH. This is due to concerns from RTH, as to how the ontology helps in finding the right tools, caused both by limitations in search function support and a non-implemented EDAM ontology extension that RTH plan to do. Anne, Emil and Jon will address these concerns off-line, update the list of critique points to address re: registry developments here https://biotools.sifterapp.com/issues/317 and identify a new plan for uploading the tools, involving Jan Gorodkin (Action Anne).
+
+
+**Ad 3) Tool Annotator – status (Hans Ienasescu) 10 min**
+
+The Tool Annotator is currently not integrated with bio.tools but it will be after user feed-back on the current version, at the hackathon in Aarhus Feb 2-3. Here the participants will compare and critique the difference in annotating using the Tool annotator, the bioportal and the current function in bio.tools and Hans will harvest the best modus and upgrade the Tool Annotator accordingly – and then settle on a plan, with Emil, Jon, to integrate it with bio.tools (Action Hans)
+
+
+**Ad 4) Experience from Proteomics workshop Bio.tools outreach  (Veit Schwämmle) 10 min** 
+
+Approximately 30 people attended the workshop. These were both Ph.D. students, postdocs and senior researchers. The main outcome was outreach i.e. to introduce ELIXIR and the bio.tools registry to the proteomics community. Another outcome was to define workflows in proteomics analysis, which is useful not only to the registry but also to the ELIXIR training platform, who attended as well (Niall Beard). The event could not have taken place without the ELIXIR-DK financial support, which was a little hard to come by. ELIXIR DK would benefit from an operational strategy that lowers the bar on resource decisions and executing these (Action Henriette).
+
+**Ad 5) Highlights from ‘User feedback from the UI tests’ see here  (Kenzo Hugo) 10 min**
+
+Several constructive points of critique were raised by the report. Salva also raised important points at this meeting. Jon and Emil are grateful for this helpful critique and kindly request these be noted in the sifter task here https://biotools.sifterapp.com/issues/317 where they will action them (i.e. link them with the roadmap) and solve them as soon as possible/feasible. Again – everyone is welcome (and needed) to help solve these issues – please coordinate with Jon, Emil. 
+
+**Ad 6) Access to the code repository (Hervé Menager) 10 min**
+
+HH was not online for this point. Please fill in the points that were made (Action Hervé)
+
+**Ad 7) New curator in DK (yea!) – roles and tasks, inspirational 5 min**
+
+Hans Ienasescu has been hired at UCPH, Bioinformatics Centre, for 1 year as of Feb 15, 2017 as a full-time registry curator. Due to time constraints, this point has been postponed for the next meeting.
+
+**Ad 8) AOB**
+None
+
+
+
 2016, Nov 25 11 AM CET
 ----------------------
 
