@@ -51,7 +51,7 @@ Archive
 Attendees
 ^^^^^^^^^
 
-Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Veit Schwämmle, Vivi Raundahl Gregersen, Hervé Ménager, Kenzo Hugo, Salva Gutiérrez, Anders Halager, Henriette Husum Bak-Jensen
+Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Veit Schwämmle, Vivi Raundahl Gregersen, Hervé Ménager, Kenzo Hugo, Anders Halager, Salvador Capella-Gutierrez, Henriette Husum Bak-Jensen, 
 
 
 
