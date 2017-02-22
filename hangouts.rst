@@ -24,7 +24,7 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 Next meeting
 ------------
 
-2017 Feb 24, 11 AM CET
+2017 Mar 31, 11 AM CET
 -----------------------
 
 Call details
@@ -38,7 +38,10 @@ all welcome
 
 Agenda
 ^^^^^^
+
 to be announced..
+
+bio.tools Open Day @ DKBC
 
 
 -------
