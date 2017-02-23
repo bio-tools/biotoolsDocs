@@ -24,6 +24,7 @@ Registry Core
 - Kristoffer Rapacki (DTU, DK) - advisor
 - Magnus Palmblad (LUMC, NL) - msutil.org integration
 - Matúš Kalaš (University of Bergen, NO) - user engagement, schema, EDAM
+- Michael Crusoe (University of California)
 - Peter Juvan (University of Ljubljana, SI) - curation
 - Piotr Chmura (DTU, DK) - bio.tools database
 - Rabie SAIDI (EMBL-EBI, EU) - text mining
@@ -89,7 +90,6 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Marie Grosjean (IFB, FR)
 - Marie-Paule Lefranc (IMGT, IGH, CNRS, Université de Montpellier)
 - Matúš Kalaš (University of Bergen)
-- Michael Crusoe (University of California)
 - Niall Beard (University of Manchester)
 - Niclas Jareborg (ELIXIR SE)
 - Olivier Collin (CNRS - GenOuest)
