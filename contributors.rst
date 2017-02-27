@@ -16,6 +16,7 @@ Registry Core
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology)
 - Hervé Ménager (Institut Pasteur, FR) - workbench integration, user engagement, schema, EDAM
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
+- Josep Gelpí (INB / BSC-CSN, ES) - benchmarking & tools interoperability
 - José María Fernández (CNIO, ES) - benchmarking
 - Juergen Haas (University of Basel, CH) - benchmarking
 - Karel Berka (Palacky University, CZ) - advisor 
@@ -24,11 +25,11 @@ Registry Core
 - Kristoffer Rapacki (DTU, DK) - advisor
 - Magnus Palmblad (LUMC, NL) - msutil.org integration
 - Matúš Kalaš (University of Bergen, NO) - user engagement, schema, EDAM
-- Michael Crusoe (University of California)
+- Michael Crusoe (University of California) - advisor, CWL integration
 - Peter Juvan (University of Ljubljana, SI) - curation
 - Piotr Chmura (DTU, DK) - bio.tools database
 - Rabie SAIDI (EMBL-EBI, EU) - text mining
-- Rune Møllegaard Friborg (BIRC, DK) - virtualization / container services
+- Salvador Capella (INB) - benchmarking
 - Sebastien Moretti (SIB, CH) - curation
 - Severine Duvaud (SIB, CH) - SIB / ExPASy integration
 - Tomáš Raček (Masaryk University, CZ) - curator
@@ -44,7 +45,6 @@ Registry Core (tentative)
 - Olivier Collin (CNRS - GenOuest)
 - Peter Rice (Imperial College London)
 - Priit Adler (University of Tartu)
-- Salvador Capella (INB)
 - Steffen Möller (University of Rostock, DE)
 
 Registry Contributors
@@ -103,6 +103,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Rafael Jimenez (ELIXIR HUB)
 - Rodrigo Lopez (EMBL-EBI)
 - Rune Friborg (Birc, au)
+- Rune Møllegaard Friborg (BIRC, DK) - virtualization / container services
 - Sebastien Moretti (SIB Swiss Institute of Bioinformatics)
 - Severine Duvaud (SIB Swiss Institute of Bioinformatics)
 - Silvio Tosatto (University of Padua)
