@@ -5,31 +5,27 @@ Registry Core
 -------------
 - Jon Ison (DTU, DK) - **content leader**, technical coordination (high-level)
 - Emil Rydza (DTU, DK) - **software leader**, technical coordination (low-level) 
-- Anders Dannesboe (BIRC, DK) - virtualization / container services 
-- Anne Wenzel (RTH, DK) - curation
-- Bren Vaughan (EMBL-EBI, EU) - EBI integration
+- Anne Wenzel (RTH, DK) - curation, RNA tools
 - Dan Bolser (EMBL-EBI, EU) - WIKI integration
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
-- Dmitry Repchevsky (BSC, ES) - Web services
+- Dmitry Repchevsky (BSC, ES) - Web services & monitoring
 - Erik Jaaniso (UT, EE) - text mining
-- Hans-Ioan Lenasescu (KU, DK) - Web development, curator
-- Henriette Husum Bak-Jensen (UCPH - Dept of Biology)
-- Hervé Ménager (Institut Pasteur, FR) - workbench integration, user engagement, schema, EDAM
+- Hans-Ioan Lenasescu (KU, DK) - curation, Web development
+- Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - project management, studentships
+- Hervé Ménager (Institut Pasteur, FR) - workbench integration, EDAM, user engagement, schema, EDAM
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
 - Josep Gelpí (INB / BSC-CSN, ES) - benchmarking & tools interoperability
 - José María Fernández (CNIO, ES) - benchmarking
 - Juergen Haas (University of Basel, CH) - benchmarking
 - Karel Berka (Palacky University, CZ) - advisor 
 - Kenzo Hillion (Institut Pasteur, FR) - workbench integration
-- Kristian Davidsen (DTU, DK) - data integration
-- Kristoffer Rapacki (DTU, DK) - advisor
 - Magnus Palmblad (LUMC, NL) - msutil.org integration
 - Matúš Kalaš (University of Bergen, NO) - user engagement, schema, EDAM
-- Michael Crusoe (University of California) - advisor, CWL integration
+- Michael Crusoe (Common Workflow Language project) - advisor, CWL integration
 - Peter Juvan (University of Ljubljana, SI) - curation
 - Piotr Chmura (DTU, DK) - bio.tools database
 - Rabie SAIDI (EMBL-EBI, EU) - text mining
-- Salvador Capella (INB) - benchmarking
+- Salvador Capella (INB, ES) - benchmarking
 - Sebastien Moretti (SIB, CH) - curation
 - Severine Duvaud (SIB, CH) - SIB / ExPASy integration
 - Tomáš Raček (Masaryk University, CZ) - curator
@@ -53,9 +49,10 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 
 - Aleksandra Nenadic (University of Manchester)
 - Alban Gaignard (CNRS, France)
+- Anders Dannesboe (BIRC, DK) - virtualization / container services 
 - Anthony Bretaudeau (INRA - GenOuest/BIPAA)
 - Bjoern Gruening (Uni-Freiburg)
-- Bren Vaughan (EMBL-EBI)
+- Bren Vaughan (EMBL-EBI, EU) - EBI integration
 - Carole Goble (ELIXIR-UK)
 - Chris Morris (STFC)
 - Christian Anthon (University of Copenhagen)
@@ -82,6 +79,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Karel Berka (UPOL, CZ)
 - Kaur Alasoo (University of Tartu)
 - Kristian Davidsen (DTU, DK)
+- Kristoffer Rapacki (DTU, DK) - advisor
 - Laura Emery (EMBL-EBI)
 - Luana Licata (University of Rome "Tor Vergata")
 - Ludek Matyska (Masaryk University)
