@@ -138,6 +138,10 @@ NOTE
 
 - improved search and filtering
 
+- planning of comprehensive coverage of scientific areas (thematic workshops, EDAM developments, tool lists, visual workflows)
+
+- assignment of thematic editors responsible for overseeing content coverage & quality
+  
 - M1.3 Registry-literature integration
 
   - systematic annotation of tool publications (studentship? tbd)
@@ -156,6 +160,7 @@ NOTE
 
 - M1.1.2 EDAM release & tooling (report)
 
+ 
       
 Changelog
 =========

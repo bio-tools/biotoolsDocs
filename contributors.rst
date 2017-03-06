@@ -43,6 +43,11 @@ Registry Core (tentative)
 - Priit Adler (University of Tartu)
 - Steffen Möller (University of Rostock, DE)
 
+Registry Editors
+----------------
+- Juergen Haas (University of Basel, CH) - protein structural biology 
+- Josep Gelpí (INB / BSC-CSN, ES) - structural biology 
+  
 Registry Contributors
 ---------------------
 Thanks to the many people who have contributed - if you're not listed below, please let us know!
