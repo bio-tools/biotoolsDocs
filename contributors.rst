@@ -3,15 +3,17 @@ Contributors
 
 Registry Core
 -------------
-- Jon Ison (DTU, DK) - **content leader**, technical coordination (high-level)
-- Emil Rydza (DTU, DK) - **software leader**, technical coordination (low-level) 
+- Jon Ison (DTU, DK) - **technical coordination**, content
+- Emil Rydza (DTU, DK) - **software leader**
+- Hans-Ioan Lenasescu (KU, DK) - **content leader**, Web development
+- Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
+
+  
 - Anne Wenzel (RTH, DK) - curation, RNA tools
 - Dan Bolser (EMBL-EBI, EU) - WIKI integration
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
 - Dmitry Repchevsky (BSC, ES) - Web services & monitoring
 - Erik Jaaniso (UT, EE) - text mining
-- Hans-Ioan Lenasescu (KU, DK) - curation, Web development
-- Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - project management, studentships
 - Hervé Ménager (Institut Pasteur, FR) - workbench integration, EDAM, user engagement, schema, EDAM
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
 - Josep Gelpí (INB / BSC-CSN, ES) - benchmarking & tools interoperability

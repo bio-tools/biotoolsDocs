@@ -138,7 +138,10 @@ NOTE
 
 - improved search and filtering
 
-- planning of comprehensive coverage of scientific areas (thematic workshops, EDAM developments, tool lists, visual workflows)
+- planning of comprehensive coverage & systematic improvment in scientific areas
+
+  - thematic workshops (EDAM developments, tool lists, visual workflows)
+  - *provisional on additional funding*    
 
 - assignment of thematic editors responsible for overseeing content coverage & quality
   
