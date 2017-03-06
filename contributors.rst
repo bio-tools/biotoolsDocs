@@ -3,7 +3,7 @@ Contributors
 
 Registry Core
 -------------
-- Jon Ison (DTU, DK) - **technical coordination**, content
+- Jon Ison (DTU, DK) - **technical coordination**
 - Emil Rydza (DTU, DK) - **software leader**
 - Hans-Ioan Lenasescu (KU, DK) - **content leader**, Web development
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
