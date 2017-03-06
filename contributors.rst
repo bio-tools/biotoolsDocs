@@ -5,10 +5,11 @@ Registry Core
 -------------
 - Jon Ison (DTU, DK) - **technical coordination**
 - Emil Rydza (DTU, DK) - **software leader**
-- Hans-Ioan Lenasescu (KU, DK) - **content leader**, Web development
+- Piotr Chmura (DTU, DK) - **software development** (back-end)
+- Lukasz Berger (DTU, DK) - **software development** (front-end)
+- Hans-Ioan Lenasescu (KU, DK) - **curation**, Web development
+- Veit Schwämmle (SDU-BMB, DK) - **curation**, EDAM
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
-
-  
 - Anne Wenzel (RTH, DK) - curation, RNA tools
 - Dan Bolser (EMBL-EBI, EU) - WIKI integration
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
@@ -25,14 +26,12 @@ Registry Core
 - Matúš Kalaš (University of Bergen, NO) - user engagement, schema, EDAM
 - Michael Crusoe (Common Workflow Language project) - advisor, CWL integration
 - Peter Juvan (University of Ljubljana, SI) - curation
-- Piotr Chmura (DTU, DK) - bio.tools database
 - Rabie SAIDI (EMBL-EBI, EU) - text mining
 - Salvador Capella (INB, ES) - benchmarking
 - Sebastien Moretti (SIB, CH) - curation
 - Severine Duvaud (SIB, CH) - SIB / ExPASy integration
 - Tomáš Raček (Masaryk University, CZ) - curator
 - Tunca Dogan (EMBL-EBI, EU) - text mining
-- Veit Schwämmle (SDU-BMB, DK) - data integration, EDAM
 - Wojtek Dabrowski (RKI, DE) - benchmarking
 
 Registry Core (tentative)
