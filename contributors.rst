@@ -4,8 +4,8 @@ Contributors
 Registry Core
 -------------
 - Jon Ison (DTU, DK) - **technical coordination**
-- Emil Rydza (DTU, DK) - **software leader**
-- Piotr Chmura (DTU, DK) - **software development** (back-end)
+- Emil Rydza (KU, DK) - **software leader**
+- Piotr Chmura (KU, DK) - **software development** (back-end)
 - Lukasz Berger (DTU, DK) - **software development** (front-end)
 - Hans-Ioan Lenasescu (KU, DK) - **curation**, Web development
 - Veit Schwämmle (SDU-BMB, DK) - **curation**, EDAM
