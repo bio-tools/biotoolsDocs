@@ -9,13 +9,15 @@ Registry Core
 - Lukasz Berger (DTU, DK) - **software development** (front-end)
 - Hans-Ioan Lenasescu (KU, DK) - **curation**, Web development
 - Veit Schwämmle (SDU-BMB, DK) - **curation**, EDAM
+- Tomáš Raček (Masaryk University, CZ) - **curation**
+- Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, schema, EDAM
+- Matúš Kalaš (University of Bergen, NO) - **user engagement**, schema, EDAM
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
 - Anne Wenzel (RTH, DK) - curation, RNA tools
 - Dan Bolser (EMBL-EBI, EU) - WIKI integration
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
 - Dmitry Repchevsky (BSC, ES) - Web services & monitoring
 - Erik Jaaniso (UT, EE) - text mining
-- Hervé Ménager (Institut Pasteur, FR) - workbench integration, EDAM, user engagement, schema, EDAM
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
 - Josep Gelpí (INB / BSC-CSN, ES) - benchmarking & tools interoperability
 - José María Fernández (CNIO, ES) - benchmarking
@@ -23,14 +25,12 @@ Registry Core
 - Karel Berka (Palacky University, CZ) - advisor 
 - Kenzo Hillion (Institut Pasteur, FR) - workbench integration
 - Magnus Palmblad (LUMC, NL) - msutil.org integration
-- Matúš Kalaš (University of Bergen, NO) - user engagement, schema, EDAM
 - Michael Crusoe (Common Workflow Language project) - advisor, CWL integration
 - Peter Juvan (University of Ljubljana, SI) - curation
 - Rabie SAIDI (EMBL-EBI, EU) - text mining
 - Salvador Capella (INB, ES) - benchmarking
 - Sebastien Moretti (SIB, CH) - curation
 - Severine Duvaud (SIB, CH) - SIB / ExPASy integration
-- Tomáš Raček (Masaryk University, CZ) - curator
 - Tunca Dogan (EMBL-EBI, EU) - text mining
 - Wojtek Dabrowski (RKI, DE) - benchmarking
 
