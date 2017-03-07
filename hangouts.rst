@@ -12,12 +12,12 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 - CANCELLED Fri Feb 24, 11 AM CET in view of WP1 call 2017 Q1 on Feb 21 10 AM CET
 - Fri Mar 31, 11 AM CET
 - Fri Apr 28, 11 AM CET
-- Fri May 26, 11 AM CET
+- Fri May 26, 11 AM CET **WP1-focus**
 - Fri June 23 (!), 11 AM CET
 - No meeting in July, Aug
-- Fri Sep 29, 11 AM CET
+- Fri Sep 29, 11 AM CET **WP1-focus**
 - Fri Oct 27, 11 AM CET
-- Fri Nov 24, 11 AM CET
+- Fri Nov 24, 11 AM CET **WP1-focus**
 - No meeting in Dec 
 
 ------------
