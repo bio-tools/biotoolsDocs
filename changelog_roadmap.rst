@@ -140,10 +140,12 @@ NOTE
 
 - planning of comprehensive coverage & systematic improvment in scientific areas
 
+  - assignment of thematic editors responsible for overseeing content coverage & quality
   - thematic workshops (EDAM developments, tool lists, visual workflows)
+  - refactoring existing content for consistency & other improvment
   - *provisional on additional funding*    
 
-- assignment of thematic editors responsible for overseeing content coverage & quality
+
   
 - M1.3 Registry-literature integration
 
