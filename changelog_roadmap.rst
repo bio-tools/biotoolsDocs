@@ -98,6 +98,8 @@ NOTE
     
 2017 Q3
 -------
+*"pivot to end-users" begins in earnest @ end 2017 Q3*
+  
 - entry quality metrics
 
   - LinkedIn-style entry completion percentage
