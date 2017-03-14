@@ -167,7 +167,19 @@ NOTE
 
 - M1.1.2 EDAM release & tooling (report)
 
- 
+
+Beyond 2017
+-----------
+- M1.1.3 EDAM release with coverage of different resource categories and RIs. Implementation of tooling for sustainable community development
+- M1.5 Good Practice Guidelines
+- M1.6 Implementation of resource metadata catalogue & evaluation of impact of Resource Synergy Meeting series
+- M1.7.2 Implementation of novel highly usable interfaces from analysis of user experience and usability requirements
+- D1.3 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis (Task 1)
+- D1.7 Description of the registry user helpdesk & impact on user support via community forums (Task 4)
+- D1.8 Matchmaking service: implementation & evaluation of impact
+- M1.1.4 EDAM release with coverage of different resource categories and RIs. Implementation of tooling for sustainable community development
+- D1.4 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis (Task 1)
+
       
 Changelog
 =========
