@@ -10,29 +10,6 @@ We organise many events as well as attend events organised by others.  If you wa
 Forthcoming events
 ------------------
 
-**Workshop : bio.tools @ Debian Med Sprint (Jan 12-16 2017, Romania)**
-
-https://wiki.debian.org/Sprints/2017/DebianMed2017
-
-bio.tools folk join the Debian Med folk for co-hacking and co-learning. 
-
-------
-
-**Curatathon : Genomics tools in crop & animal breeding (Feb 2-3, 2017, Denmark)**
-
-http://tinyurl.com/registryhackathon12
-
-A curation hackathon aimed at curating software tools used for crop and animal breeding research.  More details will be added soon.
-
-------
-
-**Technical Hackathon : Visual Workflows in bio.tools (Mar 1-3 2017, Tallin)**
-
-http://tinyurl.com/registryhackathon13
-
-A three day workshop organised by ELIXIR-EE and partners aiming to implement a proof-of-principle for "visual worfklows" in bio.tools : navigation of bio.tools content with cross-links to TeSS via diagrams for common analytical workflows.
-
-------
 
 **Technical Hackathon : Towards a comprehensive catalogue of data formats (Spring 2016 tbd, Amsterdam, NL)**
 *tentative*
@@ -44,6 +21,30 @@ A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  
 
 Past events
 -----------
+
+**Technical Hackathon : Visual Workflows in bio.tools (Mar 1-3 2017, Tallin)**
+
+http://tinyurl.com/registryhackathon13
+
+A three day workshop organised by ELIXIR-EE and partners aiming to implement a proof-of-principle for "visual worfklows" in bio.tools : navigation of bio.tools content with cross-links to TeSS via diagrams for common analytical workflows.
+
+------
+
+**Curatathon : Genomics tools in crop & animal breeding (Feb 2-3, 2017, Denmark)**
+
+http://tinyurl.com/registryhackathon12
+
+A curation hackathon aimed at curating software tools used for crop and animal breeding research.  More details will be added soon.
+
+------
+
+**Workshop : bio.tools @ Debian Med Sprint (Jan 12-16 2017, Romania)**
+
+https://wiki.debian.org/Sprints/2017/DebianMed2017
+
+bio.tools folk join the Debian Med folk for co-hacking and co-learning. 
+
+------
 
 **Thematic Hackathon : Computational Proteomics Resources (Jan 10-13, 2017, Semmering, AT)**
 
