@@ -7,8 +7,8 @@ Registry Core
 - Emil Rydza (KU, DK) - **software leader**
 - Piotr Chmura (KU, DK) - **software development** (back-end)
 - Lukasz Berger (DTU, DK) - **software development** (front-end)
-- Hans-Ioan Lenasescu (KU, DK) - **curation**, Web development
-- Veit Schwämmle (SDU-BMB, DK) - **curation**, EDAM
+- Hans-Ioan Lenasescu (KU, DK) - **curation leader**, Web development
+- Veit Schwämmle (SDU-BMB, DK) - **curation**, EDAM, applications
 - Tomáš Raček (Masaryk University, CZ) - **curation**
 - Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, schema, EDAM
 - Matúš Kalaš (University of Bergen, NO) - **user engagement**, schema, EDAM
@@ -19,9 +19,7 @@ Registry Core
 - Dmitry Repchevsky (BSC, ES) - Web services & monitoring
 - Erik Jaaniso (UT, EE) - text mining
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
-- Josep Gelpí (INB / BSC-CSN, ES) - benchmarking & tools interoperability
 - José María Fernández (CNIO, ES) - benchmarking
-- Juergen Haas (University of Basel, CH) - benchmarking
 - Karel Berka (Palacky University, CZ) - advisor 
 - Kenzo Hillion (Institut Pasteur, FR) - workbench integration
 - Magnus Palmblad (LUMC, NL) - msutil.org integration
@@ -34,6 +32,11 @@ Registry Core
 - Tunca Dogan (EMBL-EBI, EU) - text mining
 - Wojtek Dabrowski (RKI, DE) - benchmarking
 
+Registry Core (Registry Editors)
+----------------
+- Juergen Haas (University of Basel, CH) - **protein structural biology**, benchmarking
+- Josep Gelpí (INB / BSC-CSN, ES) - **structural biology**, benchmarking & tools interoperability
+  
 Registry Core (tentative)
 -------------------------
 - Anthony Bretaudeau (INRA - GenOuest/BIPAA)
@@ -44,11 +47,6 @@ Registry Core (tentative)
 - Priit Adler (University of Tartu)
 - Steffen Möller (University of Rostock, DE)
 
-Registry Editors
-----------------
-- Juergen Haas (University of Basel, CH) - protein structural biology 
-- Josep Gelpí (INB / BSC-CSN, ES) - structural biology 
-  
 Registry Contributors
 ---------------------
 Thanks to the many people who have contributed - if you're not listed below, please let us know!
