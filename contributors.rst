@@ -91,7 +91,6 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Maria Maddalena Sperotto (DTU, ELIXIR-DK)
 - Marie Grosjean (IFB, FR)
 - Marie-Paule Lefranc (IMGT, IGH, CNRS, Université de Montpellier)
-- Matúš Kalaš (University of Bergen)
 - Niall Beard (University of Manchester)
 - Niclas Jareborg (ELIXIR SE)
 - Olivier Collin (CNRS - GenOuest)
@@ -115,7 +114,6 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Timothy Karl (TUM, DE) (2remove: another important contact @rostlab)
 - Tunca Dogan (EMBL-EBI, UK)
 - Vegard Nygaard (ELIXIR NO)
-- Veit Schwämmle (SDU-BMB, DK)
 - Victor de la Torre (INB)
 - Karel Berka (Palacky U, CZ)
 
