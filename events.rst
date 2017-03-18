@@ -10,7 +10,6 @@ We organise many events as well as attend events organised by others.  If you wa
 Forthcoming events
 ------------------
 
-
 **Technical Hackathon : Towards a comprehensive catalogue of data formats (Spring 2016 tbd, Amsterdam, NL)**
 *tentative*
 
