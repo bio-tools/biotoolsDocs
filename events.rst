@@ -21,7 +21,7 @@ A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  
 Past events
 -----------
 
-**Technical Hackathon : Visual Workflows in bio.tools (Mar 1-3 2017, Tallin)**
+**Technical Hackathon : Visual Workflows in bio.tools (Mar 1-3 2017, Tallin, EE)**
 
 http://tinyurl.com/registryhackathon13
 
@@ -29,15 +29,15 @@ A three day workshop organised by ELIXIR-EE and partners aiming to implement a p
 
 ------
 
-**Curatathon : Genomics tools in crop & animal breeding (Feb 2-3, 2017, Denmark)**
+**Curatathon : Genomics tools in crop & animal breeding (Feb 2-3 2017, Aarhus, DK)**
 
 http://tinyurl.com/registryhackathon12
 
-A curation hackathon aimed at curating software tools used for crop and animal breeding research.  More details will be added soon.
+A curation hackathon aimed at curating software tools used for crop and animal breeding research.
 
 ------
 
-**Workshop : bio.tools @ Debian Med Sprint (Jan 12-16 2017, Romania)**
+**Workshop : bio.tools @ Debian Med Sprint (Jan 12-16 2017, Bucharest, RO)**
 
 https://wiki.debian.org/Sprints/2017/DebianMed2017
 
@@ -53,7 +53,7 @@ A thematic hackathon aimed at curating tools for computational proteomics, co-lo
 
 ------
 
-**Technical Hackathon : bio.tools @ NETTAB : (Oct 24 2016, Italian National Research Council, Rome, IT)**
+**Technical Hackathon : bio.tools @ NETTAB : (Oct 24 2016, Rome, IT)**
 
 http://www.igst.it/nettab/2016/programme/hackathon/ 
 
@@ -70,7 +70,7 @@ http://eubias.org/NEUBIAS/?page_id=228
 
 ------
 
-**Conference: ELIXIR-DK @ ECCB (Sep 3-7  2016, The Hague, NL)**
+**Conference: ELIXIR-DK @ ECCB (Sep 3-7 2016, The Hague, NL)**
 
 http://www.conferencemanager.dk/DKBiC-2016/home.html 
 
@@ -78,7 +78,7 @@ ELIXIR-DK will have a booth at ECCB and will showcase the work of the Danish ELI
 
 ------
 
-**Conference: ELIXIR-DK @ 2nd Annual Danish Bioinformatics Conference (Aug 25-26  2016, Odense, DK)**
+**Conference: ELIXIR-DK @ 2nd Annual Danish Bioinformatics Conference (Aug 25-26 2016, Odense, DK)**
 
 http://www.eccb2016.org/ 
 
@@ -114,7 +114,7 @@ Organised in collaboration with the GOBLET and the ELIXIR Training Platform.
 
 ------
 
-**Resource Hackathon : French Tools & Data Services (Mar 24-25, 2016, IFB, Gif-sur-Yvette, FR)**
+**Resource Hackathon : French Tools & Data Services (Mar 24-25, 2016, Gif-sur-Yvette, FR)**
 
 http://tinyurl.com/registryhackathon6
 
@@ -152,7 +152,7 @@ This hackathon aimed at preparing EDAM for scaling with registry growth.  The fo
 
 ------
 
-**Curatathon : bio.tools curation (Nov 4-6 2015, Brno, Czech Republic)**
+**Curatathon : bio.tools curation (Nov 4-6 2015, Brno, CZ)**
 
 http://tinyurl.com/registryhackathon3
 
@@ -174,7 +174,7 @@ A three day workshop organised and financed by ELIXIR-EE aiming to identify rele
 
 ------
 
-**Technical Hackathon - EDAM Development & Governance (Mar 2015, Lyngby, DK)**
+**Technical Hackathon - EDAM Development & Governance (Mar 11-13 2015, Lyngby, DK)**
 
 http://tinyurl.com/registryhackathon2
 
@@ -190,7 +190,7 @@ Gathered representatives of institutes and key projects within ELIXIR and beyond
 
 ------
 
-**Mobyle, EDAM and Service Registry hackathon (Jun 17-18 2014, Paris)**
+**Mobyle, EDAM and Service Registry hackathon (Jun 17-18 2014, Paris, FR)**
 
 ------
 
@@ -220,11 +220,11 @@ http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-l
 
 ------
 
-**AllBio / EMBRACE Continuity Workshop (Mar 18-20 2013, Amsterdam)**
+**AllBio / EMBRACE Continuity Workshop (Mar 18-20 2013, Amsterdam, NL)**
 
 ------
 
-**BioMedBridges AGM Registry Workshop (Mar 11-12 2013, Dusseldorf)**
+**BioMedBridges AGM Registry Workshop (Mar 11-12 2013, Dusseldorf, DE)**
 
 ------
 
@@ -232,7 +232,7 @@ http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-l
 
 ------
 
-**AllBio workshop - ¡°Web services for improved interoperability in bioinformatics¡± (Oct 2-5 2012, Munich)**
+**AllBio workshop - ¡°Web services for improved interoperability in bioinformatics¡± (Oct 2-5 2012, Munich, DE)**
 
 
 
