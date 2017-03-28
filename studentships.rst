@@ -40,7 +40,7 @@ Finalised proposals are uploaded to https://github.com/bio-tools/Studentships/.
 
 **Mining the Scientific Literature for and Annotating Proteomics Software using the EDAM ontology and biotoolsXSD**
 
-STATUS: Funded and about to start.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_.  Open for `comments <https://docs.google.com/document/d/1aO-qWhHKGrG8lMoX-CbuaQYaOWG8InU3K_9uGIIV6Ms/edit#heading=h.7jh0ods4imnp>`_.
+STATUS: Funded and ongoing.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent2>`_.
 
 -----
 
@@ -48,7 +48,19 @@ STATUS: Funded and about to start.  See `Proposal <https://github.com/bio-tools/
 
 STATUS: Funded and ongoing.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/openAPI.pdf>`_.  Open for `comments <https://docs.google.com/document/d/1KucPt6mqPo6sRp28uwovJfFqANDYtKnuJVEONKmi6vw/edit#heading=h.zhf6r243jzl8>`_.  Student pending.
 
-See `update on progress <http://chem-bla-ics.blogspot.it/2017/03/openapi-to-biotools-ensembl-example.html>`_
+See `update on progress <http://tinyurl.com/biotoolsstudent1>`_
+
+-----
+
+**Annotating software tools in a scientific context**
+
+STATUS: Proposal is open for `comments <http://tinyurl.com/biotoolsstudent3>`_. 
+
+-----
+
+**Annotation of software tools in domains of the Life Sciences**
+
+STATUS: Proposal is open for `comments <http://tinyurl.com/biotoolsstudent4>`_.
 
 
 
