@@ -2,7 +2,7 @@ Events
 ======
 We organise many events as well as attend events organised by others.  If you want to attend an event or have an idea for an event, please mail `registry@elixir-dk.org <mailto:registry@elixir-dk.org>`_.  As a rule we try to avoid events in July & August.  All attendees should please read our `code of conduct <http://biotools.readthedocs.org/en/latest/events.html#codeofconduct>`_.
 
-- **Curation Hackathons** (¡°curatathons¡±) gather providers from across the board to curate their resources, critique the Registry interfaces, and provide a forum for knowledge exchange and collaboration. 
+- **Curation Hackathons** ("curatathons") gather providers from across the board to curate their resources, critique the Registry interfaces, and provide a forum for knowledge exchange and collaboration. 
 - **Thematic Hackathons** engage experts in a specific scientific area to help improve the relevant branches of EDAM, consolidate the existing registry annotations, as well as register new resources within the theme.
 - **Resource Hackathons** collaborate with experts from a specific collection of tools and services, typically some other registry, community project or Web portal, to bring the collection up to the ELIXIR annotation standard and expose it in the Registry.   
 - **Technical Hackathons** focus on ontology, software or other technical developments in support of curation of the Registry, its technical development, applications and integration with other systems.
@@ -94,6 +94,14 @@ An informal day of presentations, discussion and hacking, combining two events i
 
 ------
 
+**Conference: ELIXIR-DK @ IMSB 2016 (Jul 8-12 2016, Orlando, USA)**
+
+https://www.iscb.org/ismb2016
+
+ELIXIR-DK will have a booth at IMSB 2016 and will showcase the work of the Danish ELIXIR node including the ELIXIR Tools & Data Services Registry (dev.bio.tools) and the EDAM ontology.
+
+------
+
 **Technical Hackathon : Tools, Workflows and Workbenches (May 18-20, 2016, Institut Pasteur, Paris, FR)**
 
 http://tinyurl.com/registryhackathon8
@@ -133,6 +141,12 @@ A hackathon bringing together representatives of Norwegian bioinformatics commun
 https://wiki.debian.org/Sprints/2016/DebianMed2016
 
 Co-located with the Debian Med sprint: a resource hackathon focussed on curation and software development towards annotation and registration of tool packages from Debian Med.
+
+------
+
+**Resource Hackathon : EMBL EBI tools (Jan 27-28 2016, EMBL EBI, UK)**
+
+A mini-hackathon aimed at curation of EMBL EBI software tools.
 
 ------
 
