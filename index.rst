@@ -28,4 +28,5 @@ Contents:
    Documentors Guide <documentors_guide>
    License <license>
    Publications <publications>
+   Support <support>
 
