@@ -61,7 +61,7 @@ A curation hackathon aimed at curating software tools used for crop and animal b
 
 https://wiki.debian.org/Sprints/2017/DebianMed2017
 
-bio.tools folk join the Debian Med folk for co-hacking and co-learning. 
+bio.tools folk join the Debian Med folk for co-hacking and co-learning. We improved EDAM annotations in Debian Med, and progressed towards importing high-quality software information from Debian (Med) to bio.tools.
 
 ------
 
