@@ -82,7 +82,7 @@ http://tinyurl.com/registryhackathon10
 A one day bioinformatics hackathon organized by ELIXIR held in occasion of the NETTAB 2016 Workshop.  The hackathon will include the following two main strands: 1) Biosoftware description using bio.tools and schema.org.  2) Deployment of bioinformatics tools and services through Docker.
 
 
-**Workshop: bio.tools & EDAM @ NEUBIAS taggathon (Sep 14-16 2016, Barcelona, ES)**
+**Workshop: bio.tools & EDAM @ 1st NEUBIAS taggathon (Sep 14-16 2016, Barcelona, ES)**
 
 The 1st NEUBIAS Taggathon  is hosted and supported by Universitat Pompeu Fabra. This taggathon is organized by the working group "Webtool" (WG4) of NEUBIAS, and will be in conjunction with the NEUBIAS training school . The aim of this taggathon is to bring-in pre-incubated ideas and elements of the webtool and to implement the tool on the fly. We also will merge previously collected data in http://biii.info.  The bio.tools and EDAM projects will be represented to ensure coordination with ELIXIR.
 
