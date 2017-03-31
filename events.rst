@@ -160,7 +160,7 @@ A hackathon bringing together representatives of Norwegian bioinformatics commun
 
 https://wiki.debian.org/Sprints/2016/DebianMed2016
 
-Co-located with the Debian Med sprint: a resource hackathon focussed on curation and software development towards annotation and registration of tool packages from Debian Med.
+A resource hackathon focussed on curation and software development towards annotation and registration of tool packages from Debian Med. Annotation of Debian Med packages with EDAM.
 
 ------
 
