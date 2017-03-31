@@ -29,7 +29,7 @@ A three day workshop organised by ELIXIR-EE and partners aiming to implement a p
 
 ------
 
-**The future of proteomics in ELIXIR (Workshop, March 1-2 2017, T�bingen, DE)**
+**The future of proteomics in ELIXIR (Workshop, March 1-2 2017, Tübingen, DE)**
 
 https://www.elixir-europe.org/events/strategic-workshop-future-proteomics-elixir
 
@@ -39,6 +39,13 @@ Focussed on creating a white paper to discuss the common infrastructures and ser
 
 **ELIXIR discovery portals (Workshop, ELIXIR Innovation and SME Forum: Genomics and Health - Global resources for local Innovation, Feb 27-28 2017, Helsinki, FI)**
 https://www.elixir-europe.org/events/elixir-innovation-and-sme-forum%3A-genomics-and-health-global-resources-local-innovation
+
+------
+**bio.tools & EDAM @ 2nd NEUBIAS taggathon (Workshop, Feb 13-15 2016, Oeiras near Lisbon, PT)**
+
+http://eubias.org/NEUBIAS/what-is-taggathon/taggathon-2-gulbenkian-oeiras/
+
+The 2nd NEUBIAS Taggathon hosted and supported by the Gulbenkian Institute of Science, organized by the working group “Webtool” (WG4) of NEUBIAS, and in conjunction with the NEUBIAS training school and the following NEUBIAS conference. We extended the bioimaging sub-domain of EDAM in team work with bioimaging experts, and coordinated the development of biii.info/BISE with bio.tools.
 
 ------
 
@@ -259,7 +266,7 @@ http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-l
 
 ------
 
-**AllBio workshop - ¡°Web services for improved interoperability in bioinformatics¡± (Oct 2-5 2012, Munich, DE)**
+**AllBio workshop - Â¡Â°Web services for improved interoperability in bioinformaticsÂ¡Â± (Oct 2-5 2012, Munich, DE)**
 
 
 
@@ -274,7 +281,7 @@ We respectfully ask all attendees at meetings to conduct themselves in a way tha
 - Use an analytic, facts-based approach to problem solving whenever possible.
 - Manage meeting time wisely.
 - Brainstorm when fresh ideas are in short supply or complex problems present challenges.
-- Allow for the expression of every person¡¯s ideas, and give all ideas a serious hearing.
+- Allow for the expression of every personÂ¡Â¯s ideas, and give all ideas a serious hearing.
 - Listen carefully to each other, and be courteous.
 - Accommodate disagreements and criticisms without hostility.
 - Refrain from all personal attacks.
