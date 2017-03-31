@@ -84,7 +84,7 @@ A one day bioinformatics hackathon organized by ELIXIR held in occasion of the N
 
 **Workshop: bio.tools & EDAM @ 1st NEUBIAS taggathon (Sep 14-16 2016, Barcelona, ES)**
 
-The 1st NEUBIAS Taggathon  is hosted and supported by Universitat Pompeu Fabra. This taggathon is organized by the working group "Webtool" (WG4) of NEUBIAS, and will be in conjunction with the NEUBIAS training school . The aim of this taggathon is to bring-in pre-incubated ideas and elements of the webtool and to implement the tool on the fly. We also will merge previously collected data in http://biii.info.  The bio.tools and EDAM projects will be represented to ensure coordination with ELIXIR.
+The 1st NEUBIAS Taggathon hosted and supported by Universitat Pompeu Fabra, organized by the working group “Webtool” (WG4) of NEUBIAS, and in conjunction with the NEUBIAS training school. The aim was to bring-in pre-incubated ideas and elements of the next biii.info/BISE webtool and to progress with its implementation. The presence of bio.tools and EDAM projects ensured coordination of NEUBIAS and EuroBioimaging registry and ontology developments with ELIXIR.
 
 http://eubias.org/NEUBIAS/?page_id=228  
 
