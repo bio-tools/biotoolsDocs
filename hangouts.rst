@@ -9,8 +9,6 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 2017 Meetings
 -------------
 
-- CANCELLED Fri Feb 24, 11 AM CET in view of WP1 call 2017 Q1 on Feb 21 10 AM CET
-- Fri Mar 31, 11 AM CET
 - Fri Apr 28, 11 AM CET
 - Fri May 26, 11 AM CET **WP1-focus**
 - Fri June 23 (!), 11 AM CET
@@ -24,13 +22,13 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 Next meeting
 ------------
 
-2017 Mar 31, 11 AM CET
+2017 Apr 28, 11 AM CET
 -----------------------
 
 Call details
 ^^^^^^^^^^^^
 
-Google Hangouts (ensure Jon & Henriette have your gmail address)
+TC by DeIC platform (ensure Jon & Henriette have your email address)
 
 Attendeees
 ^^^^^^^^^^
@@ -47,6 +45,59 @@ bio.tools Open Day @ DKBC
 -------
 Archive
 -------
+
+2017, Mar 31 11 AM CET
+----------------------
+
+Attendees
+^^^^^^^^^
+
+Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Veit Schwämmle, Vivi Raundahl Gregersen, Salvador Capella-Gutierrez, Henriette Husum Bak-Jensen, Anders Halager, Dan Søndergård,Jaroslaw Kalinowski, Matus Kalas, Mikkel Schierup
+
+Apologies 
+^^^^^^^^^
+
+Hervé Ménager, Vassilios Ioannidis
+
+Agenda and Minutes
+^^^^^^^^^^^^^^^^^^
+
+**Ad 1) EXCELERATE WP 1 mid-term report (JI, 5 min).**
+The 1st EXCELERATE WP1 periodic `report <http://tinyurl.com/WP1midterm2017>`_ was submitted on 31 march. It will be subject to scrutiny at the April mid-term ELIXIR review. The report is a reference document that compiles the work done so far on WP1. It is recommended reading for everyone involved on WP1, to get up to speed. 
+
+**Ad 2) Urgency of bug fixes in preparation for a) EXCELERATE mid-term review, b) indexing of Tool Cards, c) in 2017 Q3 the “pivot to end users” (JI, 10 min).**
+
+The DTU/KU team of Jon, Emil, Lukasz, and Piotr can handle the urgent tasks that needs doing before the mid-term review. We’re all encouraged to take a critical look at bio.tools and give feed-back via github on what we think is the most broken. Salva (ES) mentioned they will contribute a developer to this effort. On this note, please observe that github is the tracker for raising fine-grained issues/critique, while Sifter is used for high-level project management, while the `Roadmap <http://biotools.readthedocs.io/en/latest/changelog_roadmap.html>`_ addresses the question of ‘when’ planned bio.tools technical software development will happen.
+**Action for JI**: to priority-label comments made in github in accordance priority-labelling used in sifter app (i.e. critical, high, normal, low, trivial) to acknowledge the community effort of raising issues in github.
+Toolcards are about to be indexed in preparation for the coming ‘pivot to end-users’ task. 
+
+**Ad 3) Introducing WP1 team from Aarhus Univ + options for WP1-EXCELERATE Milestone assignments (Mikkel Schierup, 10 min).**
+A warm welcome to the WP1 team from AU, presented by Mikkel Schierup. The team is constituted by Anders Halager, Jaroslaw Kalinowski and Dan Søndergaard + three student programmers (10 hrs per week from April).
+
+**CONDA task proposal (Dan Søndergaard and Anders Dannesboe)**
+CONDA is ‘the standard’ open source software package manager. Bioconda is a ‘channel’ that already contains >3600 bioinformatics-related packages, that is maintained and expanded by a ‘serious’ open-source community (ContinuumIO). The AU-team proposes a task with the goal of making the maximum number of packages from bio.tools available as Conda packages, and distribute these via Bioconda. Furthermore, they propose to make Conda the official bio.tools approach for installing bio.tools curated software (i.e. bio.tools to inform/educate the end-user on how to install and update packages on different platforms via Conda/Bioconda). Several benefits could arise from such a collaboration including an improved search mechanism on bio.tools and improved understanding of end-users needs. Also, it would give bio.tools a competitive edge.
+**Conclusion:** The idea is great, and should be written up as one or more studentship-like proposals (see next point) that also addresses the aspect of whether to include packages of single tools and workflows and the boundaries we then would share with parallel ELIXIR activities in the Biotools roadmap. **Action for JI and Dan** to shape project(s) via dialogue in `sifter task #100: Support pull of data from content providers <https://biotools.sifterapp.com/issues/100>`_.
+
+**Sifter tasks proposals** The AU-WP1 team also proposed to contribute to sifter apps 240 (Expose bio.tools for indexing by Google), 106 (Enable sorting by citation rate matrics combined with recent citations somehow ) and 239 (field for content reviewed), which is warmly welcomed and much appreciated. 
+
+**Ad 4) WP1-Studentships. Frame and how to apply for these + studentship proposals already made (HH+JI, 10 min).**
+
+The Danish ELIXIR node has allocated funds for WP1-studentships. Only curation-focused mini-projects with a clear and quantifiable impact on bio.tools content will be considered for funding. In order to apply for a studentship, a one-page proposal must be written and submitted in accordance with the guidance found `here <https://github.com/bio-tools/Studentships>`_. Generally, a studentship is equivalent to maximum one month of full-time employment. Each project should target producing a mini publication and the project progress towards goals must be tracked in sifter. until now, two studentships have been granted with supervisors Veit Schwämmle (Proteomics tools annotation) and Hervé Menager (Utility to convert open-API configuration files to importable files), respectively. **Action point for Veit and Hervé:** please create sifter tracking for your studentships progress prior to next hangout.
+
+
+**Ad 5) Recent discovery by Hans of ‘MyBioSoftware portal’ of 11.152 tools timeline for import to bio.tools (Tomas Racek/Jon Ison 5 min).""
+Tomas Racek was invited with short notice, and could not join this call.** 
+The discovery and work this far is described here `sifter task 356 <https://biotools.sifterapp.com/issues/356>`_. 
+
+**Action for Jon and Tomas:** A timeline and work plan for importing the tools found in MyBioSoftware into bio.tools at standard annotation quality, is needed for the next hangout + the discovery of MyBioSoftware should be added to the monster list. **Action for HH:** The discovery calls for a revision of KPI targets.
+
+
+**The remaining points could not be covered in time, and were postponed for the next hangout on April 28**
+
+
+
+
+
 
 2017, Jan 27 11 AM CET
 ----------------------
