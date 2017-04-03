@@ -37,9 +37,17 @@ all welcome
 Agenda
 ^^^^^^
 
-to be announced..
+To be announced...
+** tentative agenda:**
 
-bio.tools Open Day @ DKBC
+
+**1) Bio.tools pre-meeting in Odense, August 23 2017 (JI, 10)**
+
+**2) Bio.tools presentation at Odense Danish Bioinformatics Conference (JI, 5 min)**
+
+**3) Update on bio.tools content #307: Bioinformatics Links Directory, 621 databases (Ahto Salumets, 5 min)**
+
+**4) ‘Regate’ as means to harvest tools from local Galaxy servers – an option? Probable number of tools found? Timeline? (Hervé Menager, 5 min)**
 
 
 -------
