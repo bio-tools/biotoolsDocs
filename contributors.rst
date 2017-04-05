@@ -13,6 +13,7 @@ Registry Core
 - Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, schema, EDAM
 - Matúš Kalaš (University of Bergen, NO) - **user engagement**, schema, EDAM
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
+- Ahto Salumets (UT, EE) - curation
 - Anne Wenzel (RTH, DK) - curation, RNA tools
 - Dan Bolser (EMBL-EBI, EU) - WIKI integration
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
