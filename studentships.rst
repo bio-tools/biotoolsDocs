@@ -5,7 +5,7 @@ bio.tools Studentships
 
 If you would like to propose a project, then please discuss your ideas first by mailiing `Jon Ison <mailto:jison@cbs.dtu.dk>`_ cc `Peter Longreen <mailto:peterl@cbs.dtu.dk>`_ and `Henriette Husum Bak-Jensen <mailto:hhu@bio.ku.dk>`_.  If following this discussion, we all agree there is basis for a project, then we'd require a 1-page project proposal, the text of which we can work on together and in collaboration with other memebers of the `registry-core <http://biotools.readthedocs.io/en/latest/governance.html#registry-core>`_ group.  Funding will be prioritised (by Jon, Peter and Henriette) for proposals having the biggest potential impact on bio.tools content and quality. 
 
-We anticipate most projects to be short duration (normally a month) however there is flexibility, especially where we find talented students who can clearly demonstrate that there work has made an impact.  In case of project continuation, progress would be reviewed, and funding for projects that did not perform would be terminated.
+We anticipate most projects to be short duration (normally the equivalent of a month full time work) however there is flexibility, especially where we find talented students who can clearly demonstrate that there work has made an impact.  In case of project continuation, progress would be reviewed, and funding for projects that did not perform would be terminated.
 
 ------------
 Requirements
