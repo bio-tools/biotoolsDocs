@@ -22,7 +22,9 @@ The content and software leaders are responsible for reporting software developm
 
 Registry Core will assemble virtually or in person as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations.  All Registry Core members are signed up to the the `registry core mailing list <http://biotools.readthedocs.io/en/latest/contributors_guide.html#mailing-list>`_. 
 
-Named **registry editors** are responsible for overseeing coverage and quality in specific thematic areas, e.g.
+Registry editors
+^^^^^^^^^^^^^^^^
+Named **registry editors** are registry-core members responsible for overseeing coverage and quality in specific thematic areas, e.g.
 
 - evaluating existing coverage (EDAM, tools)
 - driving coverage (EDAM, tools)

@@ -8,7 +8,6 @@ Registry Core
 - Piotr Chmura (KU, DK) - **software development** (back-end)
 - Lukasz Berger (DTU, DK) - **software development** (front-end)
 - Hans-Ioan Lenasescu (KU, DK) - **curation leader**, Web development
-- Veit Schwämmle (SDU-BMB, DK) - **curation**, EDAM, applications
 - Tomáš Raček (Masaryk University, CZ) - **curation**
 - Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, schema, EDAM
 - Matúš Kalaš (University of Bergen, NO) - **user engagement**, schema, EDAM
@@ -37,7 +36,9 @@ Registry Core (Registry Editors)
 ----------------
 - Juergen Haas (University of Basel, CH) - **protein structural biology**, benchmarking
 - Josep Gelpí (INB / BSC-CSN, ES) - **structural biology**, benchmarking & tools interoperability
-  
+- Veit Schwämmle (SDU-BMB, DK) - **proteomics**, EDAM, applications
+
+
 Registry Core (tentative)
 -------------------------
 - Anthony Bretaudeau (INRA - GenOuest/BIPAA)
