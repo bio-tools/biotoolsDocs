@@ -35,8 +35,8 @@ Registry Core
 Registry Core (Registry Editors)
 ----------------
 - Juergen Haas (University of Basel, CH) - **protein structural biology**, benchmarking
-- Josep Gelpí (INB / BSC-CSN, ES) - **structural biology**, benchmarking & tools interoperability
-- Veit Schwämmle (SDU-BMB, DK) - **proteomics**, EDAM, applications
+- Josep Gelpí (INB / BSC-CSN, ES) - **structural bioinformatics**, benchmarking & tools interoperability
+- Veit Schwämmle (SDU-BMB, DK) - **proteomics**, EDAM, bio.tools applications
 
 
 Registry Core (tentative)
