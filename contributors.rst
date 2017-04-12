@@ -38,6 +38,7 @@ Registry Core (Registry Editors)
 - Josep Gelpí (INB / BSC-CSN, ES) - **structural bioinformatics**, benchmarking & tools interoperability
 - Veit Schwämmle (SDU-BMB, DK) - **proteomics**, EDAM, bio.tools applications
 - Marta Villegas (BSC, ES) - **NLP** and **text mining** 
+- José Maria Carazo (CNB/CSIC, ES) - **electron microscopy**
 
 
 Registry Core (tentative)
