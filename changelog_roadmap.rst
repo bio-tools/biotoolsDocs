@@ -11,26 +11,29 @@ A summary of planned technical development of bio.tools software.  Developments 
   - import of tools from `NAR Web servers <https://biotools.sifterapp.com/issues/245>`_ (**roll-over from 2017 Q1**)
   - import of tools from `Bioinformatics Links Directory - software <https://biotools.sifterapp.com/issues/242>`_  (**roll-over from 2017 Q1**)
   - clean-up of `toold IDs <https://biotools.sifterapp.com/issues/401>`_ and consolidation of `duplicates <https://biotools.sifterapp.com/issues/297>`_
-  - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
+  - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_ coverage
   - curation of select tool collections to “gold-standard” for tools from msutils.org via `studentship <https://biotools.sifterapp.com/issues/177>`_ (Q2-Q3)
   - systematic improvement of entries following QC checks (Q2-Q4)
   - systematic identification of rightful entry owners:  email requesting adoption of entries, request new tools (Q2-Q4)
 
+
 - features / technical 
   
-  - drop mandatory requirement for email or URL in credits (non-breaking change in biotoolsSchema and UI for 2.1.0)  (**roll-over from 2017 Q1**)
+  - drop mandatory requirement for email or URL in credits (non-breaking change in biotoolsSchema 2.1.0 and UI)  (**roll-over from 2017 Q1**)
   - support for biotoolsSchema 2.0.0 XML format I/O (**roll-over from 2017 Q1**)
   - "disown" entry button (My Profile)  (**roll-over from 2017 Q1**)
   - indexing of whole site following clean-up of duplicates and tool IDs
   - "drive-by curation" (suggestions from non-account holders)
-  
+
+
 - M1.7.1 `novel users interfaces <https://biotools.sifterapp.com/issues/255>`_
 
    - new `Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
    - proof-of-principle of `interactive diagrams <https://biotools.sifterapp.com/issues/65>`_ of published workflows / tool-specific diagrams (https://bio.tools/worklows)
    - scoping the `Icon / topic-based view <https://biotools.sifterapp.com/issues/172>`_ for browsing bio.tools
 
-- M1.3 `Registry-literature integration <https://biotools.sifterapp.com/issues/253>`_ 
+
+- M1.3 `registry-literature integration <https://biotools.sifterapp.com/issues/253>`_ 
 
   - systematic annotation of tool publications, via  `studentship <https://biotools.sifterapp.com/issues/224>`_
   - expose #citations, altmetrics etc. with sorting
@@ -52,20 +55,25 @@ A summary of planned technical development of bio.tools software.  Developments 
 
   - entry quality metrics (LinkedIn-style entry completion percentage)
   - extra enhancements to content reporting (tbd)
-    
+
+
 - D1.2 Registry release (report)
-    
+
+
 - D1.5 Incorporate monitoring statistics & benchmarking results
 
   - connect to ELIXIR EXCELERATE WP2 metrics datastore, expose available data
   - proof of principle!
+
 
 - D1.6 Workbench integration enabler: implement & evaluate
 
   - generate Galaxy tool wrapper & CWL file from registry entry
   - proof-of-principle!
 
+
 - M1.1.2 EDAM release & tooling (report)
+
 
 - M1.4 Suppport “close to source” resource annotation 
 
