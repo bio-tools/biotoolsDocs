@@ -1,7 +1,7 @@
 Governance
 ==========
 bio.tools follows a simple `governance model <https://bio.tools/governance>`_ of three tiers under the leadership of the 
-`Danish ELIXIR node <http://elixir-denmark.org>`_ (Professor Søren Brunak, Head of Node).  Development on the ground is led by two Technical Coordinators: `Emil Rydza <mailto:ekry@dtu.dk>`_ is leading the software development and `Jon Ison <mailto:jison@cbs.dtu.dk>`_ is leading the collaborations and content, in close collaboration with the registry core developers (see below) and `EDAM core developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
+`Danish ELIXIR node <http://elixir-denmark.org>`_ (Professor Søren Brunak, Head of Node).  Development on the ground is led by two Technical Coordinators: `Emil Rydza <mailto:ekry@dtu.dk>`_ is leading the software development and `Jon Ison <mailto:jison@cbs.dtu.dk>`_ is leading the collaborations and content, in close collaboration with the registry core developers (see below) and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
 
 If you’d like to get involved with the project please mail registry-core@elixir-dk.org.
 
@@ -11,7 +11,7 @@ Registry Core includes the technical and scientific experts at the heart of the 
 
 `Members of Registry Core <http://biotools.readthedocs.io/en/latest/contributors.html#registry-core>`_ are responsible for agreeing aims and general good practice.  They are expected to advocate bio.tools and (as bandwidth allows) collaborate with one another to help develop the registry software, related technical projects and registry content, *e.g.*:
 
-- add new and improve existing content through collaboration with EDAM Core Developers
+- add new and improve existing content through collaboration with EDAM Developers
 - routine content maintenance including quality control
 - work collaboratively within the Curation Task Force (see below) and attend Hackathons
 - suggest or implement new features

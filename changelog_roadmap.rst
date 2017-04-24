@@ -7,7 +7,7 @@ A summary of planned technical development of bio.tools software.  Developments 
 -------
 
 - curation
-
+  
   - import of tools from `NAR Web servers <https://biotools.sifterapp.com/issues/245>`_ (**roll-over from 2017 Q1**)
   - import of tools from `Bioinformatics Links Directory - software <https://biotools.sifterapp.com/issues/242>`_  (**roll-over from 2017 Q1**)
   - clean-up of `toold IDs <https://biotools.sifterapp.com/issues/401>`_ and consolidation of `duplicates <https://biotools.sifterapp.com/issues/297>`_
@@ -27,14 +27,14 @@ A summary of planned technical development of bio.tools software.  Developments 
 
 
 - M1.7.1 `novel users interfaces <https://biotools.sifterapp.com/issues/255>`_
-
+   
    - new `Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
    - proof-of-principle of `interactive diagrams <https://biotools.sifterapp.com/issues/65>`_ of published workflows / tool-specific diagrams (https://bio.tools/worklows)
    - scoping the `Icon / topic-based view <https://biotools.sifterapp.com/issues/172>`_ for browsing bio.tools
 
 
 - M1.3 `registry-literature integration <https://biotools.sifterapp.com/issues/253>`_ 
-
+  
   - systematic annotation of tool publications, via  `studentship <https://biotools.sifterapp.com/issues/224>`_
   - expose #citations, altmetrics etc. with sorting
   - copy-pastable citation information etc.
