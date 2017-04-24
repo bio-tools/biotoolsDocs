@@ -73,23 +73,11 @@ A summary of planned technical development of bio.tools software.  Developments 
 
 - M1.1.2 EDAM release & tooling (report)
 
-- M1.2 Evaluate user impact
-
-  - assess tool discoverability (tool cards, tool homepage URLs) via Google
-  - add BioSchema Tool Specification mark-up, assess impact on presentation of search results
-  - provide metadata as service (tbd)  
-
 - M1.4 Suppport “close to source” resource annotation 
 
-  - biotoosSchema-compatible YAML format (tbd) for tool descriptions in GitHub
-  - periodic pull of YAML-format tool descriptions from GitHub
-  - hook (metadata file in repo changes, bio.tools updated)
-  - needs read-only bio.tools entries (also for e.g. EBI, SIB)
-
-- integrate with registries & repos 
-
-  - BioShadock, BioContainers etc. (containers) 
-  - IFB cloud etc. (VMs, workflows)
+  - biotoosSchema-compatible YAML format (tbd) for tool descriptions in GitHub 
+  - periodic pull of YAML-format tool descriptions, hook (metadata file in repo changes, bio.tools updated), needs read-only bio.tools entries (also for e.g. EBI, SIB)
+  - integration with BioShadock, BioContainers etc. (containers), IFB cloud (VMs, workflows)
   - tooling to support new entries, or annotations on existing entries (across the board)
   - needs some admin privilege for named fields
 
@@ -114,6 +102,12 @@ A summary of planned technical development of bio.tools software.  Developments 
   - thematic workshops (EDAM developments, tool lists, visual workflows)
   - refactoring existing content for consistency & other improvment
   - *provisional on additional funding*    
+
+- evaluate user impact
+
+  - assess tool discoverability (tool cards, tool homepage URLs) via Google
+  - add BioSchema Tool Specification mark-up, assess impact on presentation of search results
+  - provide metadata as service (tbd)  
 
 
 
