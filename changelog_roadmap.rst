@@ -2,71 +2,61 @@ Roadmap
 =======
 A summary of planned technical development of bio.tools software.  Developments are informed by the ELIXIR EXCELERATE application (granted in April 2015).  The roadmap is updated in light of community input (see `Contributors Guide <http://biotools.readthedocs.org/en/latest/hangouts.html>`_) and on-going developments.  As a rule we aim for quarterly registry feature releases with supporting EDAM releases.
 
-NOTE
-----
 
-- Things mentioned previously that will **not** be done
-
-  - "sandbox" area for intermediate registrations.  The information requirement is now lower for `beta entries <https://github.com/bio-tools/biotoolsSchema#information-requirements>`_ , "sandbox" (staging area) is not needed
-  - "moderation interface" for mass content import.  Instead there will be enhanced QA/QC with features for improving entries (see below)
-  - improved admin interface for content management.  Instead an admin will be able to edit any entry via the UI, also programmatically via Python notebooks (see below)
-  
-
-    
-2017 Q1
--------
-- subdomains
-
-  - pilot for de.NBI, others
-  - subdomain management in My Profile
-
-- support for biotoolsSchema 2.0.0 XML format I/O
-
-- enhanced content ownership / sharing features
-
-  - "request edit rights" button (Tool Card)
-  - "request ownership" button (Tool Card, My Profile)
-  - "disown" button (My Profile)
-    
-- Admin tooling
-
-  - admin editing via UI
-  - admin editing programmatically via Python notebooks
-  - automated support for new EDAM releases
-  
-- improved QA/QC process (content monitoring & reporting)
-
-  - comprehensive basic checks (see `technical proposal <https://docs.google.com/document/d/1ATj2zJOlbR3Edk6QyGvPX5HStZBknqfx1Fwqk4k0kqE/edit#heading=h.fffoc8urhpt8>`_)
-  - labelling of entries with "has issues"
-  - reporting to Tool Cards, My Profile, admin page
-
-- mass content imports
-  
-  - `Tools used by EBI Training team <https://biotools.sifterapp.com/issues/70>`_
-  - `Tools used by ELIXIR trainers <https://biotools.sifterapp.com/issues/60>`_
-  - `BioConductor <https://biotools.sifterapp.com/issues/31>`_
-  - `msutils.org <https://biotools.sifterapp.com/issues/28>`_
-  - `SEQwiki <https://biotools.sifterapp.com/issues/27>`_
-  - `Bioinformatics Links Directory - software <https://biotools.sifterapp.com/issues/242>`_
-  - `NAR Web servers <https://biotools.sifterapp.com/issues/245>`_
-
-- improved search
-
-  - support "Collection" in search bar, with drop-down of suggestions
-  - tweak search behaviour to address most critical issues from https://biotools.sifterapp.com/issues/274
-
-- biotoolsSchema (and in UI)
-
-  - drop mandatory requirement for email or URL in credits (non-breaking change for 2.1.0)
-
-- other
-
-  - clarify what is meant by "beta", maybe change label to "This entry has not been manually verified"
-    
 2017 Q2
 -------
-- new `Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
 
+- clean-up of `toold IDs <https://biotools.sifterapp.com/issues/401>`_ and consolidation of `duplicates <https://biotools.sifterapp.com/issues/297>`_
+
+- indexing of whole site following clean-up of duplicates and tool IDs
+      
+- M1.7.1 `novel users interfacs <https://biotools.sifterapp.com/issues/255>`_
+
+   - new `Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
+   - proof-of-principle of `interactive diagrams <https://biotools.sifterapp.com/issues/65>`_ of published workflows / tool-specific diagrams (https://bio.tools/worklows)
+   - scoping the `Icon / topic-based view <https://biotools.sifterapp.com/issues/172>`_ for browsing bio.tools
+
+- M1.3 `Registry-literature integration <https://biotools.sifterapp.com/issues/253>`_ 
+
+  - systematic annotation of tool publications, via  `studentship <https://biotools.sifterapp.com/issues/224>`_
+  - expose #citations, altmetrics etc. with sorting
+  - copy-pastable citation information etc.
+
+- "drive-by curation" (suggestions from non-account holders)
+
+- mass content imports
+
+  - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
+
+- curation of select tool collections to “gold-standard” (Q2-Q3)
+
+  - for tools from msutils.org via `studentship <https://biotools.sifterapp.com/issues/177>`_ 
+
+- systematic identification of rightful entry owners (Q2-Q4)
+
+  - mailshot / requesting adoption of entries
+  - requesting new tools
+
+- systematic improvement of entries following QC checks (Q2-Q4)
+
+- **rolled over from 2017 Q1**
+
+  - support for biotoolsSchema 2.0.0 XML format I/O
+  - "disown" entry button (My Profile)
+  - import of tools from `NAR Web servers <https://biotools.sifterapp.com/issues/245>`_
+  - import of tools from `Bioinformatics Links Directory - software <https://biotools.sifterapp.com/issues/242>`_
+  - drop mandatory requirement for email or URL in credits (non-breaking change in biotoolsSchema and UI for 2.1.0)
+
+
+  
+2017 Q3
+-------
+*"pivot to end-users" begins in earnest @ end 2017 Q3*
+
+- systematic `annotation of tool publication IDs <https://biotools.sifterapp.com/issues/224>`_
+
+- D1.2 Registry release (report)
+    
 - D1.5 Incorporate monitoring statistics & benchmarking results
 
   - connect to ELIXIR EXCELERATE WP2 metrics datastore, expose available data
@@ -77,55 +67,33 @@ NOTE
   - generate Galaxy tool wrapper & CWL file from registry entry
   - proof-of-principle!
 
-- "drive-by curation" (suggestions from non-account holders)
-
-- mass content imports
-
-  - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
-  - `Ontology metadata from OLS <https://biotools.sifterapp.com/issues/298>`_
-  - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_
-
-- curation of select tool collections to “gold-standard” (Q2-Q3)
-
-  - *provisional on studentship funding*
-
-- systematic identification of rightful entry owners (Q2-Q4)
-
-  - mailshot / requesting adoption of entries
-  - requesting new tools
-
-- systematic improvement of entries following QC checks (Q2-Q4)
-    
-2017 Q3
--------
-*"pivot to end-users" begins in earnest @ end 2017 Q3*
-  
 - entry quality metrics
 
   - LinkedIn-style entry completion percentage
 
-- M1.4 Suppport “close to source” resource annotation
+- M1.1.2 EDAM release & tooling (report)
+
+- M1.2 Evaluate user impact
+
+  - assess tool discoverability (tool cards, tool homepage URLs) via Google
+  - add BioSchema Tool Specification mark-up, assess impact on presentation of search results
+  - provide metadata as service (tbd)  
+
+- M1.4 Suppport “close to source” resource annotation 
 
   - biotoosSchema-compatible YAML format (tbd) for tool descriptions in GitHub
   - periodic pull of YAML-format tool descriptions from GitHub
   - hook (metadata file in repo changes, bio.tools updated)
   - needs read-only bio.tools entries (also for e.g. EBI, SIB)
 
-- integrate with registries & repos (with FR, DE)
+- integrate with registries & repos 
 
   - BioShadock, BioContainers etc. (containers) 
   - IFB cloud etc. (VMs, workflows)
   - tooling to support new entries, or annotations on existing entries (across the board)
   - needs some admin privilege for named fields
 
-- M1.7.1 Visual Workflows
-
-  - EDAM annotated image maps of published workflows 
-  - links to registry via EDAM annotations / bio.tools API
-  - links to TeSS
-    
 - extra enhancements to content reporting (tbd)
-
     
 - mass content imports
 
@@ -148,25 +116,6 @@ NOTE
   - *provisional on additional funding*    
 
 
-  
-- M1.3 Registry-literature integration
-
-  - systematic annotation of tool publications (studentship? tbd)
-  - pull in information from literature analysis, e.g. #citations of papers
-  - Publication Enabler Service? (tbd)
-  - other ideas tbd
-
-- M1.2 Evaluate user impact
-
-  - user-verification of entries (removing "beta" status), indexing of non-beta entries
-  - assess tool discoverability (tool cards, tool homepage URLs) via Google
-  - add BioSchema Tool Specification mark-up, assess impact on presentation of search results
-  - provide metadata as service (tbd)  
-
-- D1.2 Registry release (report)
-
-- M1.1.2 EDAM release & tooling (report)
-
 
 Beyond 2017
 -----------
@@ -180,11 +129,72 @@ Beyond 2017
 - M1.1.4 EDAM release with coverage of different resource categories and RIs. Implementation of tooling for sustainable community development
 - D1.4 Registry release with comprehensive coverage of ELIXIR Node resources, including resource data format curation and analysis (Task 1)
 
+
+NOTE
+----
+
+- Things mentioned previously that will **not** be done
+
+  - "sandbox" area for intermediate registrations.  The information requirement is now lower for `beta entries <https://github.com/bio-tools/biotoolsSchema#information-requirements>`_ , "sandbox" (staging area) is not needed
+  - "moderation interface" for mass content import.  Instead there will be enhanced QA/QC with features for improving entries (see below)
+  - improved admin interface for content management.  Instead an admin will be able to edit any entry via the UI, also programmatically via Python notebooks (see below)
+  
+
       
 Changelog
 =========
 
 A summary of technical developments of bio.tools software to date.
+
+April 2017
+----------
+
+
+March 2017
+----------
+- subdomains
+
+  - pilot for de.NBI, others
+  - subdomain management in My Profile
+
+February 2017
+-------------
+- enhanced content ownership / sharing features
+
+  - "request edit rights" button (Tool Card)
+  - "request ownership" button (Tool Card, My Profile)
+
+- improved search
+
+  - support "Collection" and "Credit" in search bar, with drop-down of suggestions
+  - tweak search behaviour to address most critical issues from https://biotools.sifterapp.com/issues/274
+
+
+    
+January 2017
+------------
+- Admin tooling
+
+  - admin editing via UI
+  - admin editing programmatically via Python notebooks
+  
+- improved QA/QC process (content monitoring & reporting)
+
+  - comprehensive basic checks (see `technical proposal <https://docs.google.com/document/d/1ATj2zJOlbR3Edk6QyGvPX5HStZBknqfx1Fwqk4k0kqE/edit#heading=h.fffoc8urhpt8>`_)
+  - labelling of entries with "has issues" **will not be done**  
+  - reporting to admin page.  Reporting to Tool Cards & My Profile **will not be done**
+
+- mass content imports  
+  
+  - `Tools used by EBI Training team <https://biotools.sifterapp.com/issues/70>`_
+  - `Tools used by ELIXIR trainers <https://biotools.sifterapp.com/issues/60>`_
+  - `BioConductor <https://biotools.sifterapp.com/issues/31>`_
+  - `msutils.org <https://biotools.sifterapp.com/issues/28>`_
+  - `SEQwiki <https://biotools.sifterapp.com/issues/27>`_
+  - `Ontologies from OBO Foundry  <https://biotools.sifterapp.com/issues/300>`_
+  - `Ontology metadata from OLS <https://biotools.sifterapp.com/issues/298>`_
+
+
 
 December 2016
 -------------
