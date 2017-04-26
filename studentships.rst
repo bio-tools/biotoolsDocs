@@ -46,7 +46,7 @@ STATUS: Funded and ongoing.  See `Proposal <https://github.com/bio-tools/Student
 
 **Harvesting service descriptions for bio.tools using OpenAPI standards**
 
-STATUS: Funded and ongoing.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/openAPI.pdf>`_.  Open for `comments <https://docs.google.com/document/d/1KucPt6mqPo6sRp28uwovJfFqANDYtKnuJVEONKmi6vw/edit#heading=h.zhf6r243jzl8>`_.  Student pending.
+STATUS: Funded and ongoing.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/openAPI.pdf>`_.  Open for `comments <https://docs.google.com/document/d/1KucPt6mqPo6sRp28uwovJfFqANDYtKnuJVEONKmi6vw/edit#heading=h.zhf6r243jzl8>`_.
 
 See `update on progress <http://tinyurl.com/biotoolsstudent1>`_
 
@@ -54,13 +54,13 @@ See `update on progress <http://tinyurl.com/biotoolsstudent1>`_
 
 **Annotating software tools in a scientific context**
 
-STATUS: Approved for funding.  Student needed.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/literature_integration.pdf>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent3>`_. 
+STATUS: Approved for funding.  Students needed.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/literature_integration.pdf>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent3>`_. 
 
 -----
 
-**Annotation of software tools in domains of the Life Sciences**
+**Annotating software tools in domains of the Life Sciences**
 
-STATUS: Approved for funding.  Student needed.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/thematic_editing.pdf>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent4>`_.
+STATUS: Approved for funding.  Students needed.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/thematic_editing.pdf>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent4>`_.
 
 
 
