@@ -29,6 +29,11 @@ Call details
 ^^^^^^^^^^^^
 
 TC by DeIC platform (ensure Jon & Henriette have your email address)
+Connect via Computer: http://v.deic.dk?ID=610026 (Windows / Mac)
+Write your name and meeting ID: 610026.  Click Participate Now. 
+Scopia Desktop client will be installed before entering the meeting room the first time. 
+Installation guides: https://www.deic.dk/via_computer_dk
+
 
 Attendeees
 ^^^^^^^^^^
@@ -37,18 +42,24 @@ all welcome
 Agenda
 ^^^^^^
 
-To be announced...
-** tentative agenda: **
+**1) Workplan for importing public domain information on 11.152 tools from MyBioSoftware to bio.tools (HH, 5)**
+https://biotools.sifterapp.com/issues/356
 
-**1) Workplan for importing information on 11.152 tools from MyBioSoftware to bio.tools by end of 2017 (Tomas Racek, 10)** 
-
-**2) Bio.tools pre-meeting in Odense, August 23 2017 (JI, 10)**
+**2) Agenda outline for Bio.tools pre-meeting in Odense, August 23 2017 (JI, 10)**
 
 **3) Bio.tools presentation at Odense Danish Bioinformatics Conference (JI, 5 min)**
 
 **4) Update on bio.tools content #307: Bioinformatics Links Directory, 621 databases (Ahto Salumets, 5 min)**
 
 **5) ‘Regate’ as means to harvest tools from local Galaxy servers – an option? Probable number of tools found? Timeline? (Hervé Menager, 5 min)**
+
+**6) CONDA task proposal https://biotools.sifterapp.com/issues/100 , next steps (Dan S, 5 min)**
+
+**7) WP-1 studentsships: new proposals (JI) and status of ongoing ones Proteomics tools annotation (Veit) and Utility to convert open-API configuration files to importable files (Herve) 10 min)**
+
+**8) AOB** 
+
+
 
 
 -------
