@@ -48,7 +48,7 @@ STATUS: Funded and ongoing.  See `Proposal <https://github.com/bio-tools/Student
 
 STATUS: Funded and ongoing.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/openAPI.pdf>`_.  Open for `comments <https://docs.google.com/document/d/1KucPt6mqPo6sRp28uwovJfFqANDYtKnuJVEONKmi6vw/edit#heading=h.zhf6r243jzl8>`_.
 
-See `update on progress <http://tinyurl.com/biotoolsstudent1>`_
+See `update on progress <http://chem-bla-ics.blogspot.nl/2017/03/openapi-to-biotools-ensembl-example.html>`_
 
 -----
 
