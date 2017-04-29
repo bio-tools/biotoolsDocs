@@ -72,9 +72,9 @@ This is an open-day meeting for the bio.tools community and all are welcome.
 
 **3) Bio.tools presentation at Odense Danish Bioinformatics Conference (JI, 5’)**
 
-Yes, there should be a bio.tools presentation at the conference. The presentation could start by a general update by SB/JI on bio.tools achievements and ambitions, leading on to a talk on bio.tools’ scientific purpose: For example Holmblad could present case of using EDAM as basis for guided workflow composition. 
+Yes, there should be a bio.tools presentation at the conference. The presentation could start by a general update by SB/JI on bio.tools achievements and ambitions, leading on to a talk on bio.tools’ scientific purpose: for example inviture Magnus Palmblad to present case of using EDAM as basis for guided workflow composition. 
 
-**Action:** JI to ensure time-slot on conference program and once speaker list/titles are confirmed, to mature content of presentation in dialogue with SB.
+**Action:** JI & Veit to ensure time-slot on conference program and once speaker list/titles are confirmed, to mature content of presentation in dialogue with SB.
 
 **4) Update on bio.tools content #307: Bioinformatics Links Directory, 621 databases (Ahto Salumets, 5’)**
 
@@ -88,13 +88,13 @@ This was not covered.
 
 Three student programmers have started.
 First task is to create map of existing bio.tools ID’s to conda ID’s and identify un-matched entries in conda. The manual work associated with establishing links between CONDA ID’s and stable bio.tools ID’s must however await the nearly completed cleaning of the bio.tools ID list
-The CONDA task fits nicely with the biocontainers project (`see sifterapp 100 <https://biotools.sifterapp.com/issues/100 >`_
+The CONDA task fits nicely with the biocontainers project (see `sifterapp 100 <https://biotools.sifterapp.com/issues/100 >`_
 ) a container package registry integration effort for container-ised tools found in e.g. dockr and CONDA. A studentship proposal describes in detail, what the CONDA task aims to achieve `here <https://docs.google.com/document/d/1w31T6w3j0JP7h2Ujp737RhiBcn-ywiBJ4VNGygdwAdY/edit#heading=h.ok40z7l1xy2h >`_
 
 **7) WP-1 studentsships: new proposals (JI) and status of ongoing ones Proteomics tools annotation (Veit) and Utility to convert open-API configuration files to importable files (Herve) 15’)**
 
 The work on the proteomics tools annotation is progressing well since it started 3 weeks ago.
-Hervé could not attend this meeting due to a conflicting ELIXIR mid-term review rehearsal.
+Hervé could not attend this meeting due to a conflicting meeting. 
 Hans I and HH are recruiting on 3 studentships to assign publications on entries without a tool-specific publication or citation or proxy paper. Entries without any of the former curation will be subject to decision if to keep or delete from registry.
 SB made the point that publications, alt-metrics, number of citations, de-duplications and consistent EDAM assignments, are key curation targets. In parallel, interface functionalities and search functions should be enabled on the development side, to make the most of this entry-information.
 
