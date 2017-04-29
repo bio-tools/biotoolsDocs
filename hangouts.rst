@@ -23,7 +23,7 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 Next meeting
 ------------
 
-2017 May 26, 11 AM CET
+2017 May 26, 11 AM CEST
 -----------------------
 
 Call details
