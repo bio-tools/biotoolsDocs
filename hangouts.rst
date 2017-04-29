@@ -1,6 +1,8 @@
 Hangouts
 ========
 
+Monthly informal hangouts to discuss all matters around bio.tools including ELIXIR EXCELERATE WP1 ("Tools Interoperability and Service Registry") tasks and activities of ELIXIR Denmark technical staff.
+
 If you'd like to attend a hangout, please mail Henriette Husum Bak-Jensen (hhu@bio.ku.dk) cc Jon Ison (jison@cbs.dtu.dk), including your gmail and skype addresses.  To understand how we organise tasks and projects, read the `Contributors Guide <http://biotools.readthedocs.io/en/latest/project_management.html>`_.
 
 Before each meeting, always it's helpful to read the `bio.tools status report <http://biotools.readthedocs.io/en/latest/status_reports.html>`_. 
