@@ -56,7 +56,7 @@ Archive
 Attendees
 ^^^^^^^^^
 
-Vivi Raundahl Gregersen, Anders Halager, Hans Ienasescu, Veit Schwämmle, Søren Brunak, Jon Ison, Frode Pedersen, Mathias Haudgaard, Arne Kratz, Henriette Husum Bak-Jensen
+Vivi Raundahl Gregersen, Anders Halager, Hans Ienasescu, Veit Schwämmle, Søren Brunak, Jon Ison, Frode Pedersen, Mathias Haudgaard, Arne Kratz, Anne Wenzel, Henriette Husum Bak-Jensen
 
 Agenda and Minutes
 ^^^^^^^^^^^^^^^^^^
