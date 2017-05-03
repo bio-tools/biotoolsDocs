@@ -13,7 +13,7 @@ A summary of planned technical development of bio.tools software.  Developments 
   - clean-up of `toold IDs <https://biotools.sifterapp.com/issues/401>`_ and consolidation of `duplicates <https://biotools.sifterapp.com/issues/297>`_
   - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_ coverage
   - curation of select tool collections to “gold-standard” for tools from msutils.org via `studentship <https://biotools.sifterapp.com/issues/177>`_ (Q2-Q3)
-  - systematic improvement of entries following QC checks (Q2-Q4)
+  - systematic improvement of entries following QC checks (Q2-Q4) - prioritising de-duplication of entries and consistent toolIDs (Q2)
   - systematic identification of rightful entry owners:  email requesting adoption of entries, request new tools (Q2-Q4)
 
 
@@ -53,8 +53,10 @@ A summary of planned technical development of bio.tools software.  Developments 
     
 - features / technical
 
-  - entry quality metrics (LinkedIn-style entry completion percentage)
-  - extra enhancements to content reporting (tbd)
+  - `entry quality metrics <https://biotools.sifterapp.com/issues/243>`_
+  - firmed-up notions of bio.tools `information standards <https://biotools.sifterapp.com/issues/243>`_
+  - LinkedIn-style entry completion percentage
+  - extra enhancements to content reporting, including quality metrics and information standards
 
 
 - D1.2 Registry release (report)
