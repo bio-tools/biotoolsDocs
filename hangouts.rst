@@ -11,8 +11,8 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 2017 Meetings
 -------------
 
-- Fri May 26, 11 AM CEST **WP1-focus**
-- Fri June 23 (!), 11 AM CEST
+- CANCELLED Fri May 26, 11 AM CEST **WP1-focus**
+- Fri June 16 (!), 11 AM CEST
 - No meeting in July, Aug
 - Fri Sep 29, 11 AM CEST **WP1-focus**
 - Fri Oct 27, 11 AM CET
