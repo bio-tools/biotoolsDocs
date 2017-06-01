@@ -35,7 +35,7 @@ Please use the appropriate `mailing list <http://elixirmail.cbs.dtu.dk/mailman/l
 - **registry-support** for questions and help on bio.tools
 - **edam** for general discusion and help on EDAM
 - **registry-announce** or **edam-announce** for low-traffic announcements
-- **registry-core** and **edam-core** for technical discussion amongst the core developers 
+- **registry-core** and **edam-dev** for technical discussion amongst the core developers 
 
 To send mail:
 - registry@elixir-dk.org
