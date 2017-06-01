@@ -14,9 +14,12 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   User Guide <user_guide>
-   API reference <api_reference>
    Contributors Guide <contributors_guide>
+   User Guide <user_guide>
+   Curators Guide <curators_guide>
+   Editors Guide <editors_guide>
+   Documentors Guide <documentors_guide>
+   API reference <api_reference>
    Hangouts <hangouts>
    Status reports <status_reports>
    Changelog and roadmap <changelog_roadmap>
@@ -25,8 +28,7 @@ Contents:
    Studentships <studentships>
    GitHub projects <github_projects>
    Events <events>
-   Documentors Guide <documentors_guide>
-   License <license>
    Publications <publications>
+   License <license>
    Support <support>
 
