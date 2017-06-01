@@ -24,4 +24,4 @@ This article is freely available (Open Access).
 
 Workbench integration
 ---------------------
-Ménager, H., Kalaš, M., Rapacki, K. and Ison, J. (2016).  `Using registries to integrate bioinformatics tools and services into workbench environments` <https://link.springer.com/article/10.1007/s10009-015-0392-z>`_  *Int J Softw Tools Technol Transfer*  18: 581. doi:`10.1007/s10009-015-0392-z <http://doi.org/10.1007/s10009-015-0392-z>`_
+Ménager, H., Kalaš, M., Rapacki, K. and Ison, J. (2016).  `Using registries to integrate bioinformatics tools and services into workbench environments <https://link.springer.com/article/10.1007/s10009-015-0392-z>`_  *Int J Softw Tools Technol Transfer*  18: 581. doi:`10.1007/s10009-015-0392-z <http://doi.org/10.1007/s10009-015-0392-z>`_
