@@ -21,7 +21,7 @@ Contents:
    Documentors Guide <documentors_guide>
    API reference <api_reference>
    Hangouts <hangouts>
-   Status reports <status_reports>
+..  Status reports <status_reports>
    Changelog and roadmap <changelog_roadmap>
    Governance <governance>
    Contributors <contributors>
