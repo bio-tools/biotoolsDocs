@@ -26,6 +26,12 @@ https://github.com/c3bi-pasteur-fr/ReMoTE
 
 Content import from Mobyle instances.
 
+ToolDog
+-------
+https://github.com/bio-tools/tooldog
+
+It aims to generate XML template for Galaxy or CWL from the description of tools from the registry.
+
 biotoolsConnect
 ---------------
 https://github.com/bio-tools/biotoolsConnect/
