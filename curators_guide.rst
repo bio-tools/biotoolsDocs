@@ -15,16 +15,21 @@ Name
 
 The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
 
-The name should:
-
-- be the name that is commonly used to refer to the software
+- use the name that is commonly used to refer to the software
 - preserve the canonical capitalisation, if any *e.g.* "ExPASy" 
-- be the short form of the name, if available *e.g.* use "ExPASy" not "ExPASy Bioinformatics Resource Portal"
-- for database portals, use common abbreviation if available, *e.g.*  the name for the Protein Databank is "PDB"
-- for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API".  Do not use "REST", "RESTful" *etc.*
-- for Web services (SOAP+WSDL), use the pattern ``name web service`` *e.g.* ``EMMA web service".  Do not use "SOAP", "SOAP service", "service" *etc.*
- 
+- use the short form of the name, if available *e.g.* use "ExPASy" not "ExPASy Bioinformatics Resource Portal"
+- do not include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc." unless these are part of the common name, with two exceptions
 
+  - for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API".  
+  - for Web services (SOAP+WSDL), use the pattern ``name web service`` *e.g.* ``EMMA web service".  
+
+- for database portals, use common abbreviation if available, *e.g.*  "PDB" not "The Protein Databank"
+- for software that essentially just wraps or provides an interface to some other tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection etc. *e.g.* cufflinks cloud IFB".  Do not misappropriate the original name!
+- in case of mulitple related entries which may all include a common tool in part of their name, be consistent
+
+
+
+  
 Description
 ^^^^^^^^^^^
 *Short and concise textual description of the software function*
