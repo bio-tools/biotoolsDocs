@@ -80,9 +80,15 @@ Unique ID
 ^^^^^^^^^
 **Unique ID of the tool that is assigned upon registration of the software in bio.tools**
 
+*e.g.* **signalp**
+
+
+
 Topic
 ^^^^^
 **General scientific domain the software serves or other general category, e.g. 'Proteomics'**
+
+See the general EDAM annotation guidelines (below).
 
 Scientific operations
 ^^^^^^^^^^^^^^^^^^^^^
@@ -125,7 +131,13 @@ License
 **Software or data usage license**
 
 
+EDAM annotation guidelines
+--------------------------
+
+.. important:: in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
+
 Guidelines per tool type
 ------------------------
+
 
 
