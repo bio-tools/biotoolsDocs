@@ -3,7 +3,7 @@ Curators Guide
 
 **UNDER CONSTRUCTION**: guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines, will appear here. 
 
-.. Note::
+.. note::
     For curation advice or to make suggestions about these guidelines please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
 
 Guidelines per attributes
@@ -88,7 +88,7 @@ Topic
 ^^^^^
 **General scientific domain the software serves or other general category, e.g. 'Proteomics'**
 
-See the general EDAM annotation guidelines (below).
+Please see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
 Scientific operations
 ^^^^^^^^^^^^^^^^^^^^^
