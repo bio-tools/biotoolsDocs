@@ -4,7 +4,7 @@ Curators Guide
 **UNDER CONSTRUCTION**: guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines, will appear here. 
 
 Guidelines per attributes
-=========================
+-------------------------
 
 Name
 ^^^^
@@ -109,6 +109,6 @@ License
 
 
 Guidelines per tool type
-========================
+------------------------
 
 
