@@ -1,17 +1,14 @@
 Curators Guide
 ==============
 
-Guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines, will appear here. 
+**UNDER CONSTRUCTION**: guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines, will appear here. 
 
-General advice 
-==============
-
-Attributes 
-==========
+Guidelines per attributes
+=========================
 
 Name
 ^^^^
-*Canonical software name assigned by the software developer or service provider*
+**Canonical software name assigned by the software developer or service provider**
 
 *e.g.* **"SignalP"**
 
@@ -30,12 +27,12 @@ Name
    - in case of mulitple related entries which may all include a common tool in part of their name, be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``
   
 .. attention::
-   - in general, **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
+   - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
   
   
 Description
 ^^^^^^^^^^^
-*Short and concise textual description of the software function*
+**Short and concise textual description of the software function**
 
 *e.g.* **"Detect and visualise single-nucleotide polymorphisms (SNPs)"**
 
@@ -56,62 +53,62 @@ Description
 
 Homepage
 ^^^^^^^^
-*Homepage of the software, or some URL that best serves this purpose*
+**Homepage of the software, or some URL that best serves this purpose**
 
 Software type
 ^^^^^^^^^^^^^
-*The type of application software: a discrete software entity can have more than one type*
+**The type of application software: a discrete software entity can have more than one type**
 
 Unique ID
 ^^^^^^^^^
-*Unique ID of the tool that is assigned upon registration of the software in bio.tools*
+**Unique ID of the tool that is assigned upon registration of the software in bio.tools**
 
 Topic
 ^^^^^
-*General scientific domain the software serves or other general category, e.g. 'Proteomics'*
+**General scientific domain the software serves or other general category, e.g. 'Proteomics'**
 
 Scientific operations
 ^^^^^^^^^^^^^^^^^^^^^
-*The basic operation(s) performed by the software, e.g. 'Multiple sequence alignment'*
+**The basic operation(s) performed by the software, e.g. 'Multiple sequence alignment'**
 
 Type of input and output data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-*Type of primary input / output data (if any), e.g. 'Protein sequences'*
+**Type of primary input / output data (if any), e.g. 'Protein sequences'**
 
 Supported data formats
 ^^^^^^^^^^^^^^^^^^^^^^
-*Allowed format(s) of primary inputs/outputs, e.g. 'FASTA'*
+**Allowed format(s) of primary inputs/outputs, e.g. 'FASTA'**
 
 Publications
 ^^^^^^^^^^^^
-*Publications about the software*
+**Publications about the software**
 
 Contact information
 ^^^^^^^^^^^^^^^^^^^
-*Primary contact, e.g. a person, helpdesk or mailing list*
+**Primary contact, e.g. a person, helpdesk or mailing list**
 
 Issue tracker
 ^^^^^^^^^^^^^
-*Link to tracker for software issues, bug reports, feature requests etc.*
+**Link to tracker for software issues, bug reports, feature requests etc.**
 
 Mailing list
 ^^^^^^^^^^^^
-*Link to mailing list for software announcements, discussions, support etc.*
+**Link to mailing list for software announcements, discussions, support etc.**
 
 Repository
 ^^^^^^^^^^
-*Link to repository where source code, data and other files may be downloaded*
+**Link to repository where source code, data and other files may be downloaded**
 
 Documentation
 ^^^^^^^^^^^^^
-*Link to documentation about the software e.g. manual, API specification or training material*
+**Link to documentation about the software e.g. manual, API specification or training material**
 
 License
 ^^^^^^^
-*Software or data usage license*
+**Software or data usage license**
 
 
-Tool types
-==========
+Guidelines per tool type
+========================
 
 
