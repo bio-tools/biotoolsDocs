@@ -39,6 +39,8 @@ Description
 
 *e.g.* **"Detect and visualise single-nucleotide polymorphisms (SNPs)"**
 
+.. note:: Description is minimum 10 and maximum 200 characters
+
 - use declarative sentences (ideally a single sentence!) in the present tense
 - provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
 
@@ -49,11 +51,6 @@ Description
    - details about the software provider *e.g.* institute or person name
    - URLs
    - statements about how good the software is (although mentions of applicability are OK)
-
-
-
-
-Do not include tool name. Minimum 10 and maximum 200 characters. See http://biotools.readthedocs.io/.
 
 
 
