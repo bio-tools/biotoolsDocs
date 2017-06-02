@@ -3,6 +3,9 @@ Curators Guide
 
 **UNDER CONSTRUCTION**: guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines, will appear here. 
 
+.. Note::
+    For curation advice or to make suggestions about these guidelines please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+
 Guidelines per attributes
 -------------------------
 
