@@ -12,35 +12,40 @@ Attributes
 Name
 ^^^^
 *Canonical software name assigned by the software developer or service provider*
-Exmaple: "SignalP"
+*e.g.* **SignalP**
 
-.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
+.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses
 
 - use the name that is commonly used to refer to the software
 - preserve the canonical capitalisation, if any *e.g.* ``ExPASy`` 
-- use the short form of the name, if available *e.g.* use ``ExPASy`` not ``ExPASy Bioinformatics Resource Portal``
+- use the short form of the name, if available *e.g.* use ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
 - for database portals, use common abbreviation if available, *e.g.*  ``PDB`` **not** ``The Protein Databank``
-- for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``.  
-- for Web services (SOAP+WSDL), use the pattern ``name web service`` *e.g.* ``EMMA web service``.  
+- for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
+- for Web services (SOAP+WSDL), use the pattern ``name web service`` *e.g.* ``EMMA web service``
 
 
 .. tip::
    - for software that essentially just wraps or provides an interface to some other tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
    - in case of mulitple related entries which may all include a common tool in part of their name, be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``
   
-.. attention:: in general, **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
+.. attention::
+   - in general, **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
   
   
 Description
 ^^^^^^^^^^^
 *Short and concise textual description of the software function*
-Example: "Detect and visualise single-nucleotide polymorphisms (SNPs)"
+*e.g.* **Detect and visualise single-nucleotide polymorphisms (SNPs)**
 
 - use a single declarative sentence in the present tense
 - provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
-- **do not** include tool name
-- **do not** include technical terms describing the type of software
-- **do not** include details about the software provider *e.g.* institute or person name
+
+.. attention:: **do not** include any of the following:
+   - tool name
+   - technical terms describing the type of software
+   - details about the software provider *e.g.* institute or person name
+   - URLs
+   - statements about how good the software is (although mentions of applicability are OK)
 
 
 
