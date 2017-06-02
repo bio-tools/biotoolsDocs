@@ -58,9 +58,23 @@ Homepage
 ^^^^^^^^
 **Homepage of the software, or some URL that best serves this purpose**
 
+*e.g.* **http://cbs.dtu.dk/services/SignalP/**
+
+- the URL should resolve to a web page of information specific to the software
+- in case a tool lacks it's own website, URL of it's code repository is OK
+
+.. attention:: **do not** specify a general URL such as an institutional homepage
+	       
 Software type
 ^^^^^^^^^^^^^
 **The type of application software: a discrete software entity can have more than one type**
+
+*e.g.* **Web application**, **Command-line tool**
+
+..note :: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.  Please refer to the `` description of tool types <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
+
+
+
 
 Unique ID
 ^^^^^^^^^
