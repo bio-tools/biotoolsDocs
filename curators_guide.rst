@@ -12,7 +12,8 @@ Attributes
 Name
 ^^^^
 *Canonical software name assigned by the software developer or service provider*
-*e.g.* **SignalP**
+
+*e.g.* **"SignalP"**
 
 .. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses
 
@@ -35,12 +36,14 @@ Name
 Description
 ^^^^^^^^^^^
 *Short and concise textual description of the software function*
-*e.g.* **Detect and visualise single-nucleotide polymorphisms (SNPs)**
 
-- use a single declarative sentence in the present tense
+*e.g.* **"Detect and visualise single-nucleotide polymorphisms (SNPs)"**
+
+- use declarative sentences (ideally a single sentence!) in the present tense
 - provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
 
 .. attention:: **do not** include any of the following:
+	       
    - tool name
    - technical terms describing the type of software
    - details about the software provider *e.g.* institute or person name
