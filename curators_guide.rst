@@ -49,6 +49,7 @@ Description
 
 .. attention::
    **do not** include any of the following:
+
    - tool name
    - technical terms describing the type of software
    - details about the software provider *e.g.* institute or person name
