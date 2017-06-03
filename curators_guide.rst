@@ -28,7 +28,7 @@ Name
 
 .. tip::
    - for software that essentially just wraps or provides an interface to some other tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
-   - in case of mulitple related entries which may all include a common tool in part of their name, be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``
+   - in case of mulitple related entries which may all include a common tool in part of their name, be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``, or ``Open PHACTS`` and ``Open PHACTS API``
   
 .. attention::
    - **do not** include version information **unless** this is used in the common name (*e.g.* as in the tool homepage and publication)
@@ -47,15 +47,15 @@ Description
 - provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
 - begin with a capital letter and end with a '.': 
 
-.. attention:: **do not** include any of the following:
-	       
-- tool name
-- technical terms describing the type of software
-- details about the software provider *e.g.* institute or person name
-- URLs
-- statements about how good the software is (although mentions of applicability are OK)
+.. attention::
+   **do not** include any of the following:
+   - tool name
+   - technical terms describing the type of software
+   - details about the software provider *e.g.* institute or person name
+   - URLs
+   - statements about how good the software is (although mentions of applicability are OK)
 
-**do not** truncate longer descriptions within words!
+   **do not** truncate longer descriptions within words!
   
 
 Homepage
@@ -75,9 +75,11 @@ Software type
 
 *e.g.* **Web application**, **Command-line tool**
 
-.. note :: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.  Please refer to the `description of tool types <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
+.. note:: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.  Please refer to the `description of tool types <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
 
+- assign all types that are applicable
 
+.. tip::  In cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable
 
 
 Unique ID
