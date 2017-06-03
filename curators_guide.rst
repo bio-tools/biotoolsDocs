@@ -104,19 +104,33 @@ Topic
 ^^^^^
 **General scientific domain the software serves or other general category, e.g. 'Proteomics'**
 
-Please see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
+.. note::
+   - an EDAM Topic concept URL and / or term are specified, e.g. "Proteomics", http://edamontology.org/topic_0121.
+   - see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
 Scientific operations
 ^^^^^^^^^^^^^^^^^^^^^
 **The basic operation(s) performed by the software, e.g. 'Multiple sequence alignment'**
 
+.. note::
+   - an EDAM Operation concept URL and / or term are specified, e.g. "Multiple sequence alignment", http://edamontology.org/operation_0492.
+   - see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
+
 Type of input and output data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Type of primary input / output data (if any), e.g. 'Protein sequences'**
 
+.. note::
+   - an EDAM Data concept URL and / or term are specified, e.g. "Protein sequences", http://edamontology.org/data_2976. 
+   - see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
+
 Supported data formats
 ^^^^^^^^^^^^^^^^^^^^^^
 **Allowed format(s) of primary inputs/outputs, e.g. 'FASTA'**
+
+.. note::
+   - an EDAM Format concept URL and / or term are specified, e.g. "FASTA", http://edamontology.org/format_1929.
+   - see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
 Publications
 ^^^^^^^^^^^^
@@ -149,6 +163,14 @@ License
 
 EDAM annotation guidelines
 --------------------------
+
+- if in any doubt as to meaning, refer to the concept definitions using:
+  - ``EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
+  - ``NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
+  
+- use the most specific concept(s) that apply
+- in case more than sibling concept is applicable (*i.e.* concepts under a common parent) than consider using parent concept instead
+- by default
 
 .. important:: in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
 
