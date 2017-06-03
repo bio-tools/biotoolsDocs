@@ -82,6 +82,11 @@ Unique ID
 
 *e.g.* **signalp**
 
+.. important:: The tool ID can only be set by bio.tools admin! 
+
+.. note::
+   - The ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces can be preserved as underscore ("_").
+   - The ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
 
 
 Topic
