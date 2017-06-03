@@ -101,7 +101,7 @@ Collection
 Function
 --------
 
-..note::
+.. note::
 - A tool can perform one or more basic functions (a mode of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s) (see Figure below).
 - See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
   
