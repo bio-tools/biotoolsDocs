@@ -19,7 +19,8 @@ Name
 
 - use the name that is commonly used to refer to the software
 - preserve the canonical capitalisation, if any *e.g.* ``ExPASy`` 
-- use the short form of the name, if available *e.g.* use ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
+- use the short form (*e.g.* acronym) of the name, if available *e.g.* use ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
+- if shortening the name is necessary, do no truncate within a word and ensure the name remains intuitive
 - for database portals, use common abbreviation if available, *e.g.*  ``PDB`` **not** ``The Protein Databank``
 - for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
 - for Web services (SOAP+WSDL), use the pattern ``name web service`` *e.g.* ``EMMA web service``
@@ -30,6 +31,7 @@ Name
    - in case of mulitple related entries which may all include a common tool in part of their name, be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``
   
 .. attention::
+   - **do not** include version information **unless** this is used in the common name (*e.g.* as in the tool homepage and publication)
    - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
   
   
@@ -43,16 +45,18 @@ Description
 
 - use declarative sentences (ideally a single sentence!) in the present tense
 - provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
+- begin with a capital letter and end with a '.': 
 
 .. attention:: **do not** include any of the following:
 	       
-   - tool name
-   - technical terms describing the type of software
-   - details about the software provider *e.g.* institute or person name
-   - URLs
-   - statements about how good the software is (although mentions of applicability are OK)
+- tool name
+- technical terms describing the type of software
+- details about the software provider *e.g.* institute or person name
+- URLs
+- statements about how good the software is (although mentions of applicability are OK)
 
-
+- **do not** truncate longer descriptions within words!
+  
 
 Homepage
 ^^^^^^^^
@@ -82,11 +86,15 @@ Unique ID
 
 *e.g.* **signalp**
 
-.. important:: The tool ID can only be set by bio.tools admin! 
-
+.. important:: The tool ID can only be set by bio.tools admin!
+	      
 .. note::
    - The ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces can be preserved as underscore ("_").
    - The ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
+
+- where possible, simply use the tool name
+- if (but only if) necessary, use '_' to delimit parts of names
+- **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
 
 
 Topic
