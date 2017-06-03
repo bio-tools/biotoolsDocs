@@ -55,7 +55,7 @@ Description
 - URLs
 - statements about how good the software is (although mentions of applicability are OK)
 
-- **do not** truncate longer descriptions within words!
+**do not** truncate longer descriptions within words!
   
 
 Homepage
