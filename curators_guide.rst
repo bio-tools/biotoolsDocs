@@ -48,13 +48,12 @@ ID
 **Unique ID of the tool that is assigned upon registration of the software in bio.tools**
 
 *e.g.* **signalp**
-
-.. important:: The tool ID by default is a URL-safe version of the tool name (see below) which can only be changed by bio.tools admin!
-	      
+     
 .. note::
-   - The ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
-   - The ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
-   - The 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+   - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
+   - once set, the ID can only be changed by bio.tools admin!
+   - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
+   - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
 - the ID should be clean and intuitive: where possible, simply use the default
 - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
