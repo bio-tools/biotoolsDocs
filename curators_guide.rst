@@ -23,8 +23,6 @@ Name
 
 *e.g.* **"SignalP"**
 
-.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses
-
 - use the name that is commonly used to refer to the software
 - preserve the canonical capitalisation, if any *e.g.* ``ExPASy`` 
 - use the short form (*e.g.* acronym) of the name, if available *e.g.* use ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
@@ -33,6 +31,7 @@ Name
 - for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
 - for Web services (SOAP+WSDL), use the pattern ``name WS`` *e.g.* ``EMMA WS``
 
+.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses
 
 .. tip::
    - for software that essentially just wraps or provides an interface to some other tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
@@ -49,16 +48,16 @@ ID
 
 *e.g.* **signalp**
      
+- the ID should be clean and intuitive: where possible, simply use the default
+- **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
+- if (but only if) necessary, use '_' to delimit parts of names
+   - for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <>`_ above, *e.g.* ``cufflinks-cloud IFB``.
+
 .. note::
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
    - once set, the ID can only be changed by bio.tools admin!
    - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
-
-- the ID should be clean and intuitive: where possible, simply use the default
-- **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
-- if (but only if) necessary, use '_' to delimit parts of names
-   - for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <>`_ above, *e.g.* ``cufflinks-cloud IFB``.
 
 
 Version
@@ -67,10 +66,10 @@ Version
 
 *e.g.* **4.1**
 
-.. note:: The version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
-
 - specify exactly the version label in use
 - for database portals and web applications, only specify a version if this is used in the public name
+
+.. note:: The version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
 
 .. attention::
    - **do not** include labels such as "v", "ver", "version", "rel", "release" *etc.*
@@ -84,11 +83,11 @@ Description
 
 *e.g.* **"Detect and visualise single-nucleotide polymorphisms (SNPs)"**
 
-.. note:: Description is minimum 10 and maximum 200 characters
-
 - use declarative sentences (ideally a single sentence!) in the present tense
 - provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
 - begin with a capital letter and end with a '.': 
+
+.. note:: Description is minimum 10 and maximum 200 characters
 
 .. attention::
    **do not** include any of the following:
@@ -116,7 +115,10 @@ Homepage
 Collection
 ^^^^^^^^^^
 **Unique ID of a collection that the software has been assigned to within bio.tools.**
+
 *e.g.* **de.NBI**
+
+- keep it short and intuitive
 
 .. note::
    - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
@@ -124,16 +126,14 @@ Collection
    - collections are used to group together entries which would otherwise be unrelated
    - collections may be created for some other registry, catalogue, WIKI *etc.* where this tool is described, or for any arbitrary purpose.
      
-- keep it short and intuitive
-
 
 
 Function
 --------
 
-.. note::
-   - bio.tools usee a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
-   - See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
+bio.tools usee a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+
+See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
   
 .. image:: tool_function.PNG
 
@@ -141,10 +141,11 @@ Operation
 ^^^^^^^^^
 **The basic operation(s) performed by the software, e.g. 'Multiple sequence alignment'**
 
+- specify the primary operations performed by this function of the tool
+
 .. note::
    - an EDAM Operation concept URL and / or term are specified, e.g. "Multiple sequence alignment", http://edamontology.org/operation_0492.
 
-- specify the primary operations performed by this function of the tool
      
 Data type (input and output data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -174,10 +175,10 @@ Tool type
 
 *e.g.* **Web application**, **Command-line tool**
 
-.. note:: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
-
 - read the `description of tool types <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
 - assign all types that are applicable
+
+.. note:: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
 
 .. tip::  In cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable
 
@@ -376,9 +377,8 @@ EDAM annotation guidelines
   
 - use the most specific concept(s) that apply
 - in case more than sibling concept is applicable (*i.e.* concepts under a common parent) than consider using parent concept instead
-- by default
 
-.. important:: in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
+.. attention:: in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
 
 Guidelines per tool type
 ------------------------
