@@ -26,7 +26,7 @@ Name
 - if shortening the name is necessary, do no truncate within a word and ensure the name remains intuitive
 - for database portals, use common abbreviation if available, *e.g.*  ``PDB`` **not** ``The Protein Databank``
 - for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
-- for Web services (SOAP+WSDL), use the pattern ``name web service`` *e.g.* ``EMMA web service``
+- for Web services (SOAP+WSDL), use the pattern ``name WS`` *e.g.* ``EMMA WS``
 
 
 .. tip::
@@ -44,20 +44,35 @@ ID
 
 *e.g.* **signalp**
 
-.. important:: The tool ID can only be set by bio.tools admin!
+.. important:: The tool ID by default is a URL-safe version of the tool name (see below) which can only be changed by bio.tools admin!
 	      
 .. note::
-   - The ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces can be preserved as underscore ("_").
+   - The ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
    - The ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
+   - The 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
-- where possible, simply use the tool name
-- if (but only if) necessary, use '_' to delimit parts of names
+- the ID should be clean and intuitive: where possible, simply use the default
 - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
+- if (but only if) necessary, use '_' to delimit parts of names
+   - for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <>`_ above, *e.g.* ``cufflinks-cloud IFB``.
 
 
 Version
 ^^^^^^^
+**Version (typically a version number) of the software assigned by the software developer or service provider.**
 
+*e.g.* **4.1**
+
+.. note:: The version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
+
+- specify exactly the version label in use
+- for database portals and web applications, only specify a version if this is used in the public name
+
+.. attention::
+   - **do not** include labels such as "v", "ver", "version", "rel", "release" *etc.*
+   - **do not** assume version "1" in case the version number is not readily findable
+
+  
   
 Description
 ^^^^^^^^^^^
@@ -96,14 +111,25 @@ Homepage
 
 Collection
 ^^^^^^^^^^
+**Unique ID of a collection that the software has been assigned to within bio.tools.**
+*e.g.* **de.NBI**
+
+.. note::
+   - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
+   - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+   - collections are used to group together entries which would otherwise be unrelated
+   - collections may be created for some other registry, catalogue, WIKI *etc.* where this tool is described, or for any arbitrary purpose.
+     
+- keep it short and intuitive
+
 
 
 Function
 --------
 
 .. note::
-- A tool can perform one or more basic functions (a mode of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s) (see Figure below).
-- See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
+   - bio.tools usee a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+   - See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
   
 .. image:: tool_function.PNG
 
@@ -114,6 +140,8 @@ Operation
 .. note::
    - an EDAM Operation concept URL and / or term are specified, e.g. "Multiple sequence alignment", http://edamontology.org/operation_0492.
 
+- specify the primary operations performed by this function of the tool
+     
 Data type (input and output data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Type of primary input / output data (if any), e.g. 'Protein sequences'**
@@ -130,6 +158,8 @@ Data format (input and output data)
 
 Comment
 ^^^^^^^
+****
+*e.g.* ****
      
 Labels
 ------
@@ -157,21 +187,33 @@ Topic
 
 Operating system
 ^^^^^^^^^^^^^^^^
+****
+*e.g.* ****
 
 Language
 ^^^^^^^^
+****
+*e.g.* ****
 
 Maturity
 ^^^^^^^^
+****
+*e.g.* ****
 
 License
 ^^^^^^^
+****
+*e.g.* ****
 
 Cost
 ^^^^
+****
+*e.g.* ****
 
 Accessibility
 ^^^^^^^^^^^^^
+****
+*e.g.* ****
 
 Contact
 -------
@@ -179,51 +221,77 @@ Contact
 
 Email
 ^^^^^
+****
+*e.g.* ****
 
 URL
 ^^^
+****
+*e.g.* ****
 
 Name
 ^^^^
+****
+*e.g.* ****
 
 Telephone number
 ^^^^^^^^^^^^^^^^
+****
+*e.g.* ****
 
 Links
 -----
 
 URL
 ^^^
+****
+*e.g.* ****
 
 Comment
 ^^^^^^^
+****
+*e.g.* ****
 
 Link type
 ^^^^^^^^^
+****
+*e.g.* ****
 
 Download
 --------
 
 URL
 ^^^
+****
+*e.g.* ****
 
 Comment
 ^^^^^^^
+****
+*e.g.* ****
 
 Download type
 ^^^^^^^^^^^^^
+****
+*e.g.* ****
 
 Documentation
 -------------
 
 URL
 ^^^
+****
+*e.g.* ****
 
 Comment
 ^^^^^^^
+****
+*e.g.* ****
 
 Documentation type
 ^^^^^^^^^^^^^^^^^^
+****
+*e.g.* ****
 
 
 Publications
@@ -232,42 +300,66 @@ Publications
 
 PubMed Central ID
 ^^^^^^^^^^^^^^^^^
+****
+*e.g.* ****
 
 PubMed ID
 ^^^^^^^^^
+****
+*e.g.* ****
 
 Digital Object ID
 ^^^^^^^^^^^^^^^^^
+****
+*e.g.* ****
 
 Publication type
 ^^^^^^^^^^^^^^^^
+****
+*e.g.* ****
 
 Credits
 -------
 
 GRID ID
 ^^^^^^^
+****
+*e.g.* ****
 
 ORCID ID
 ^^^^^^^^
+****
+*e.g.* ****
 
 Name
 ^^^^
+****
+*e.g.* ****
 
 Email
 ^^^^^
+****
+*e.g.* ****
 
 URL
 ^^^
+****
+*e.g.* ****
 
 Entity type
 ^^^^^^^^^^^
+****
+*e.g.* ****
 
 Role
 ^^^^
+****
+*e.g.* ****
 
 Comment
 ^^^^^^^
+****
+*e.g.* ****
 
 
 
