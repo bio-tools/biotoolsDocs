@@ -139,27 +139,27 @@ See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/l
 
 Operation
 ^^^^^^^^^
-**The basic operation(s) performed by the software, e.g. 'Multiple sequence alignment'**
+**The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment'**
 
 - specify the primary operations performed by this function of the tool
 
 .. note::
-   - an EDAM Operation concept URL and / or term are specified, e.g. "Multiple sequence alignment", http://edamontology.org/operation_0492.
+   - an EDAM Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
 
      
 Data type (input and output data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Type of primary input / output data (if any), e.g. 'Protein sequences'**
+**Type of primary input / output data (if any), *e.g.* 'Protein sequences'**
 
 .. note::
-   - an EDAM Data concept URL and / or term are specified, e.g. "Protein sequences", http://edamontology.org/data_2976. 
+   - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
 
 Data format (input and output data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Allowed format(s) of primary inputs/outputs, e.g. 'FASTA'**
+**Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA'**
 
 .. note::
-   - an EDAM Format concept URL and / or term are specified, e.g. "FASTA", http://edamontology.org/format_1929.
+   - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
 
 Comment
 ^^^^^^^
@@ -187,7 +187,7 @@ Topic
 **General scientific domain the software serves or other general category, e.g. 'Proteomics'**
 
 .. note::
-   - an EDAM Topic concept URL and / or term are specified, e.g. "Proteomics", http://edamontology.org/topic_0121.
+   - an EDAM Topic concept URL and / or term are specified, *e.g.* "Proteomics", http://edamontology.org/topic_0121.
    - see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
 Operating system
