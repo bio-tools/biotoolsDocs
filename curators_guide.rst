@@ -283,6 +283,10 @@ Accessibility
 
 - apply the tag (see below) that is applicable
 
+.. csv-table::
+   :header: "Accessibility", "Description"
+   :widths: 25, 100
+
 "Open access", "An online service which is available for use to all, but possibly requiring user accounts / authentication."
 "Restricted access", "An online service which is available for use to a restricted audience, e.g. members of a specific institute."
 "Proprietary", "Software for which the software's publisher or another person retains intellectual property rights Å\ usually copyright of the source code, but sometimes patent rights."
@@ -292,25 +296,33 @@ Contact
 -------
 **Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.**
 
-Email
-^^^^^
-****
-*e.g.* ****
-
-URL
-^^^
-****
-*e.g.* ****
+- 'Name' must be specified along with one or both of 'Email' and 'URL' (see below)
 
 Name
 ^^^^
-****
-*e.g.* ****
+**Name of the primary contact.**
+*e.g.* **Joe Bloggs**
+
+- this is the name of the thing for which an email and/or URL is specified, *e.g.* the name of person, or "Mailing list", "Helpdesk" *etc.* as appropriate
+
+Email
+^^^^^
+**Email address of the primary contact.**
+*e.g.* **joebloggst@elixir-dk.org**
+
+URL
+^^^
+**URL of the primary contact.**
+*e.g.* **https://joebloggs.com**
+
+- this is typically the URL of a page of contact information
 
 Telephone number
 ^^^^^^^^^^^^^^^^
-****
-*e.g.* ****
+**Telephone number of primary contact.**
+*e.g.* **+49-89-636-48018**
+
+- only give a telephone number if this is already publicly available
 
 Links
 -----
