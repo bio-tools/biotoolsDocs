@@ -179,7 +179,7 @@ Tool type
 
 .. csv-table::
    :header: "Type", "Description"
-   :widths: 25, 100
+   :widths: 25, 50
 	    
    "Command-line tool", "A tool with a text-based (command-line) interface."
    "Database portal", "A Web application, suite or workbench providing a portal to a biological database."
