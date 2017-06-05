@@ -212,22 +212,23 @@ Topic
 Operating system
 ^^^^^^^^^^^^^^^^
 **The operating system supported by a downloadable software package.**
+
 *e.g.* **Linux**
 
-- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_
-- assign all that apply
+- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
 
 Language
 ^^^^^^^^
 **Name of programming language the software source code was written in.**
+
 *e.g.* **Python**
 
-- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_
-- assign all that apply
+- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
   
 Maturity
 ^^^^^^^^
 **How mature the software product is.**
+
 *e.g.* **Mature**
 
 - assign the tag (see below) that is most applicable; if you are not sure, then do not complete this field
@@ -244,17 +245,20 @@ Maturity
 License
 ^^^^^^^
 **Software or data usage license.**
+
 *e.g.* **Apache-2.0**
 
-- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_
-- assign the license that is applicable
-
+- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign the one that applies
+- use 'Proprietary' in case where some license (not defined in biotoolsSchema) exists and must be obtained from the provider before the software can be downloaded, used, owned *etc.*
+- use 'Other' in all other cases where a license exists but is not defined in biotoolsSchema (and consider requesting it's addition via `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/>`_)
+  
 .. note::
-   The permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") will be attached to the bio.tools entry.
+   The permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") will be attached to the bio.tools entry (see table below)
 
-   .. csv-table::
+.. csv-table::  Labelling based on license (future work)
    :header: "License", "Description"
    :widths: 25, 100
+
    "Open-source", "Software is made available under a license approved by the Open Source Initiative (OSI). The software is distributed in a way that satisfies the 10 criteria of the Open Source Definition maintained by OSI (see https://opensource.org/docs/osd). The source code is available to others."
    "Free software", "Free as in 'freedom' not necessarily free of charge.  Software is made available under a license approved by the Free Software Foundation (FSF). The software satisfies the criteria of the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html). The source code is available to others."
    "Free and open source", "Software is made available under a license approved by both the Open Source Initiative (OSI) and the Free Software Foundation (FSF), and satisfies the criteria of the OSI Open Source Definition maintained (https://opensource.org/docs/osd) and the FSF Free Software Definition (http://www.gnu.org/philosophy/free-sw.html).  Such software ensures users have the freedom to run, copy, distribute, study, change and improve the software.  The source code is available to others."
@@ -264,6 +268,7 @@ License
 Cost
 ^^^^
 **Monetary cost of acquiring the software.**
+
 *e.g.* **Free of charge**
 
 - apply the tag (see below) that is applicable
@@ -296,7 +301,9 @@ Contact
 -------
 **Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.**
 
+- this is the first port-of-call when seeking help with the software
 - 'Name' must be specified along with one or both of 'Email' and 'URL' (see below)
+- in general, a URL is preferable to an email
 
 Name
 ^^^^
@@ -308,18 +315,22 @@ Name
 Email
 ^^^^^
 **Email address of the primary contact.**
+
 *e.g.* **joebloggst@elixir-dk.org**
 
+- only give an email if it already publicly advertised as a contact point for the software, e.g. on a webpage or in a publication
+  
 URL
 ^^^
 **URL of the primary contact.**
 *e.g.* **https://joebloggs.com**
 
-- this is typically the URL of a page of contact information
+- the URL must resolve to a page of contact information
 
 Telephone number
 ^^^^^^^^^^^^^^^^
 **Telephone number of primary contact.**
+
 *e.g.* **+49-89-636-48018**
 
 - only give a telephone number if this is already publicly available
