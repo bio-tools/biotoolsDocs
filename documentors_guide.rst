@@ -19,4 +19,6 @@ reStructuredText links
 
 `readthedocs FAQ <http://docs.readthedocs.io/en/latest/faq.html>`_
 
+`readthedocs : getting started <https://github.com/rtfd/readthedocs.org/blob/master/docs/getting_started.rst>`_
+
 `readthedocs build process <http://docs.readthedocs.io/en/latest/builds.html>`_
