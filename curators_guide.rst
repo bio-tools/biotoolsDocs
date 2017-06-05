@@ -175,9 +175,28 @@ Tool type
 
 *e.g.* **Web application**, **Command-line tool**
 
-- read the `description of tool types <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
-- assign all types that are applicable
+- assign all types (see below) that are applicable
 
+.. csv-table::
+   :header: "Type", "Description"
+   :widths: 25, 100
+	    
+   "Command-line tool", "A tool with a text-based (command-line) interface."
+   "Database portal", "A Web application, suite or workbench providing a portal to a biological database."
+   "Desktop application", "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
+   "Library", "A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries."
+   "Ontology", "A collection of information about concepts, including terms, synonyms, descriptions etc."
+   "Plug-in", "A software component encapsulating a set of related functions, which are not standalone, *i.e.* depend upon other software for its use, *e.g.* a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool."
+   "Script", "A tool written for some run-time environment (*e.g.* other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (*e.g.* Perl, Python) or some domain-specific languages (*e.g.* sed)."
+   "SPARQL endpoint", "A service that provides queries over an RDF knowledge base via the SPARQL query language and protocol, and returns results via HTTP."
+   "Suite", "A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal."
+   "Web application", "A tool with a graphical user interface that runs in your Web browser."
+   "Web API", "An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP.  Includes everything from simple data-access URLs to RESTful APIs."
+   "Web service", "An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP."
+   "Workbench", "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
+   "Workflow", "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
+
+  
 .. note:: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
 
 .. tip::  In cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable
@@ -192,37 +211,87 @@ Topic
 
 Operating system
 ^^^^^^^^^^^^^^^^
-****
-*e.g.* ****
+**The operating system supported by a downloadable software package.**
+*e.g.* **Linux**
+
+- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_
+- assign all that apply
 
 Language
 ^^^^^^^^
-****
-*e.g.* ****
+**Name of programming language the software source code was written in.**
+*e.g.* **Python**
 
+- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_
+- assign all that apply
+  
 Maturity
 ^^^^^^^^
-****
-*e.g.* ****
+**How mature the software product is.**
+*e.g.* **Mature**
 
+- assign the tag (see below) that is most applicable; if you are not sure, then do not complete this field
+
+.. csv-table::
+   :header: "Maturity", "Description"
+   :widths: 25, 100
+
+   "Emerging", "Nascent or early release software that may not yet be fully featured or stable."
+   "Mature", "Software that is generally considered to fulfill several of the following: secure, reliable, actively maintained, fully featured, proven in production environments, has an active community, and is described or cited in the scientific literature."
+   "Legacy", "Software which is no longer in common use, deprecated by the provider, superseded by other software, replaced by a newer version, is obsolete etc."
+   
+  
 License
 ^^^^^^^
-****
-*e.g.* ****
+**Software or data usage license.**
+*e.g.* **Apache-2.0**
 
+- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_
+- assign the license that is applicable
+
+.. note::
+   The permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") will be attached to the bio.tools entry.
+
+   .. csv-table::
+   :header: "License", "Description"
+   :widths: 25, 100
+
+   "Open-source", "Software is made available under a license approved by the Open Source Initiative (OSI). The software is distributed in a way that satisfies the 10 criteria of the Open Source Definition maintained by OSI (see https://opensource.org/docs/osd). The source code is available to others."
+   "Free software", "Free as in 'freedom' not necessarily free of charge.  Software is made available under a license approved by the Free Software Foundation (FSF). The software satisfies the criteria of the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html). The source code is available to others."
+   "Free and open source", "Software is made available under a license approved by both the Open Source Initiative (OSI) and the Free Software Foundation (FSF), and satisfies the criteria of the OSI Open Source Definition maintained (https://opensource.org/docs/osd) and the FSF Free Software Definition (http://www.gnu.org/philosophy/free-sw.html).  Such software ensures users have the freedom to run, copy, distribute, study, change and improve the software.  The source code is available to others."
+   "Copyleft", "Software is made available under a license designated as 'copyleft' by the Free Software Foundation (FSF).  The license ensures such software is free and that all modified and extended versions of the program are free as well. Free as in 'freedom' not necessarily free of charge, as per the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html)."
+
+   
 Cost
 ^^^^
-****
-*e.g.* ****
+**Monetary cost of acquiring the software.**
+*e.g.* **Free of charge**
 
+- apply the tag (see below) that is applicable
+
+.. csv-table::
+   :header: "Cost", "Description"
+   :widths: 25, 100
+
+   "Free of charge", "Software which available for use by all, with full functionality, at no monetary cost to the user."
+   "Free of charge (with restrictions)", "Software which is available for use at no monetary cost to the user, but possibly with limited functionality, usage restrictions, or other limitations."
+   "Commercial", "Software which you have to pay to access."
+  
 Accessibility
 ^^^^^^^^^^^^^
-****
-*e.g.* ****
+**Whether the software is freely available for use.**
+*e.g.* **Open access**
+
+- apply the tag (see below) that is applicable
+
+"Open access", "An online service which is available for use to all, but possibly requiring user accounts / authentication."
+"Restricted access", "An online service which is available for use to a restricted audience, e.g. members of a specific institute."
+"Proprietary", "Software for which the software's publisher or another person retains intellectual property rights Å\ usually copyright of the source code, but sometimes patent rights."
+"Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
 Contact
 -------
-**Primary contact, e.g. a person, helpdesk or mailing list**
+**Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.**
 
 Email
 ^^^^^
