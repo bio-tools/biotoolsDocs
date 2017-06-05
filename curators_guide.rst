@@ -51,7 +51,7 @@ ID
 - the ID should be clean and intuitive: where possible, simply use the default
 - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
 - if (but only if) necessary, use '_' to delimit parts of names
-   - for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <>`_ above, *e.g.* ``cufflinks-cloud IFB``.
+   - for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``cufflinks-cloud IFB``.
 
 .. note::
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
@@ -292,10 +292,10 @@ Accessibility
    :header: "Accessibility", "Description"
    :widths: 25, 100
 
-"Open access", "An online service which is available for use to all, but possibly requiring user accounts / authentication."
-"Restricted access", "An online service which is available for use to a restricted audience, e.g. members of a specific institute."
-"Proprietary", "Software for which the software's publisher or another person retains intellectual property rights Å\ usually copyright of the source code, but sometimes patent rights."
-"Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
+   "Open access", "An online service which is available for use to all, but possibly requiring user accounts / authentication."
+   "Restricted access", "An online service which is available for use to a restricted audience, e.g. members of a specific institute."
+   "Proprietary", "Software for which the software's publisher or another person retains intellectual property rights Å\ usually copyright of the source code, but sometimes patent rights."
+   "Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
 Contact
 -------
