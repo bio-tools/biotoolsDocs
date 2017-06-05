@@ -16,3 +16,7 @@ reStructuredText links
 `Full documentation <http://docutils.sourceforge.net/rst.html>`_
 
 `Online editor <http://rst.ninjs.org/>`_
+
+`readthedocs FAQ <http://docs.readthedocs.io/en/latest/faq.html>`_
+
+`readthedocs build process <http://docs.readthedocs.io/en/latest/builds.html>`_
