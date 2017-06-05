@@ -179,7 +179,8 @@ Tool type
 
 .. csv-table::
    :header: "Type", "Description"
-	    
+   :widths: 25, 100
+      
    "Command-line tool", "A tool with a text-based (command-line) interface."
    "Database portal", "A Web application, suite or workbench providing a portal to a biological database."
    "Desktop application", "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
@@ -254,7 +255,6 @@ License
    .. csv-table::
    :header: "License", "Description"
    :widths: 25, 100
-
    "Open-source", "Software is made available under a license approved by the Open Source Initiative (OSI). The software is distributed in a way that satisfies the 10 criteria of the Open Source Definition maintained by OSI (see https://opensource.org/docs/osd). The source code is available to others."
    "Free software", "Free as in 'freedom' not necessarily free of charge.  Software is made available under a license approved by the Free Software Foundation (FSF). The software satisfies the criteria of the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html). The source code is available to others."
    "Free and open source", "Software is made available under a license approved by both the Open Source Initiative (OSI) and the Free Software Foundation (FSF), and satisfies the criteria of the OSI Open Source Definition maintained (https://opensource.org/docs/osd) and the FSF Free Software Definition (http://www.gnu.org/philosophy/free-sw.html).  Such software ensures users have the freedom to run, copy, distribute, study, change and improve the software.  The source code is available to others."
