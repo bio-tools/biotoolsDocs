@@ -22,3 +22,5 @@ reStructuredText links
 `readthedocs : getting started <https://github.com/rtfd/readthedocs.org/blob/master/docs/getting_started.rst>`_
 
 `readthedocs build process <http://docs.readthedocs.io/en/latest/builds.html>`_
+
+`thread on wide table handling <https://github.com/rtfd/sphinx_rtd_theme/issues/117>`_

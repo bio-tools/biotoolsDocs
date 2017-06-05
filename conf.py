@@ -5,8 +5,3 @@ html_context = {
         '_static/theme_overrides.css',  # override wide tables in RTD theme
         ],
      }
-
-
-def setup(app):
-    app.add_stylesheet('my_theme.css')
-
