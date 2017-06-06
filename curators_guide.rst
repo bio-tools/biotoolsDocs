@@ -284,6 +284,7 @@ Cost
 Accessibility
 ^^^^^^^^^^^^^
 **Whether the software is freely available for use.**
+
 *e.g.* **Open access**
 
 - apply the tag (see below) that is applicable
@@ -308,9 +309,11 @@ Contact
 Name
 ^^^^
 **Name of the primary contact.**
+
 *e.g.* **Joe Bloggs**
 
-- this is the name of the thing for which an email and/or URL is specified, *e.g.* the name of person, or "Mailing list", "Helpdesk" *etc.* as appropriate
+- this is the name of the thing for which an email and/or URL is specified
+- specify a name of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
 
 Email
 ^^^^^
@@ -318,11 +321,12 @@ Email
 
 *e.g.* **joebloggst@elixir-dk.org**
 
-- only give an email if it already publicly advertised as a contact point for the software, e.g. on a webpage or in a publication
+- only give an email if it already publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
   
 URL
 ^^^
 **URL of the primary contact.**
+
 *e.g.* **https://joebloggs.com**
 
 - the URL must resolve to a page of contact information
