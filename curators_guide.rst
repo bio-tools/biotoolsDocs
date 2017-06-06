@@ -458,7 +458,7 @@ Documentation type
 *e.g.* ****
 
 .. csv-table::
-   :header: "Download type", "Description"
+   :header: "Documentation type", "Description"
    :widths: 25, 100
 		
    "API documentation", "Human-readable API documentation."
@@ -510,45 +510,81 @@ Publication type
 		
 Credits
 -------
+**An individual or organisation that should be credited for the software.**
 
 GRID ID
 ^^^^^^^
-****
-*e.g.* ****
+**Unique identifier (GRID ID) of an organisation that is credited.**
+
+*e.g.* **grid.5170.3**
+
+.. note:: Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.
 
 ORCID ID
 ^^^^^^^^
-****
-*e.g.* ****
+**Unique identifier (ORCID iD) of a person that is credited.**
+
+*e.g.* **http://orcid.org/0000-0002-1825-0097**
+
+.. note:: Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
 
 Name
 ^^^^
-****
+**Name of the entity that is credited.**
+
 *e.g.* ****
 
 Email
 ^^^^^
-****
+**Email address of the entity that is credited.**
+
 *e.g.* ****
 
 URL
 ^^^
-****
+**URL for the entity that is credited, e.g. homepage of an institute.**
+
 *e.g.* ****
 
 Entity type
 ^^^^^^^^^^^
-****
+**Type of entity that is credited.**
+
 *e.g.* ****
 
+.. csv-table::
+   :header: "Entity type", "Description"
+   :widths: 25, 100
+
+   "Person", "Credit of an individual."
+   "Project", "Credit of a community software project not formally associated with any single institute."
+   "Division", "Credit of or a formal part of an institutional organisation, e.g. a department, research group, team, etc"
+   "Institute", "Credit of an organisation such as a university, hospital, research institute, service center, unit etc."
+   "Consortium", "Credit of an association of two or more institutes or other legal entities which have joined forces for some common purpose.  Includes Research Infrastructures (RIs) such as ELIXIR, parts of an RI such as an ELIXIR node etc. "
+   "Funding agency", "Credit of a legal entity providing funding for development of the software or provision of an online service."
+
+	    
 Role
 ^^^^
-****
+**Role performed by entity that is credited.**
+
 *e.g.* ****
+
+.. csv-table::
+   :header: "Role", "Description"
+   :widths: 25, 100
+	    
+   "Developer", "Author of the original software source code."
+   "Maintainer", "Maintainer of a mature software providing packaging, patching, distribution etc."
+   "Provider", "Institutional provider of an online service."
+   "Documentor", "Author of software documentation including making edits to a bio.tools entry."
+   "Contributor", "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
+   "Support", "Provider of support in using the software."
 
 Comment
 ^^^^^^^
-****
+**A comment about the credit.**
+
 *e.g.* ****
 
 
