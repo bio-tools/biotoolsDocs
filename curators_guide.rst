@@ -6,6 +6,7 @@ Curators Guide
 bio.tools includes all types of *bioinformatics tools* - application software with well-defined data processing functions (inputs, outputs and operations).  bio.tools includes simple tools with one or a few closely related functions, and complex, multimodal tools with many functions.  Tools may be available for immediate use as online services, or in a form which a user can download, install, configure and run themselves.  Each bio.tools entry describes a discrete, but possibly complex software entity.  The `types of tools <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ define the technical scope of the registry, *i.e.* the types of software that may be included.
 
 The guidelines below are organised as follows:
+
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ on specific attributes defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ and organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id19>`_ for EDAM annotations in general
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
@@ -568,7 +569,7 @@ Role
 ^^^^
 **Role performed by entity that is credited.**
 
-*e.g.* ****
+*e.g.* **Developer**
 
 .. csv-table::
    :header: "Role", "Description"
@@ -581,20 +582,27 @@ Role
    "Contributor", "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
    "Support", "Provider of support in using the software."
 
+- specify all the roles that are applicable
+
+.. note:: The current version of biotoolsSchema and bio.tools only supports one "role" assignation per credit; this will be changed to support multiple asignations (see https://github.com/bio-tools/biotoolsSchema/issues/80)
 Comment
 ^^^^^^^
 **A comment about the credit.**
 
-*e.g.* ****
+*e.g.* **Wrote the user manual.**
 
+- use this to elaborate on the contribution of the credited entity.
 
+.. attention:: **do not** merely duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
 
+  
 EDAM annotation guidelines
 --------------------------
 
 - if in any doubt as to meaning, refer to the concept definitions using:
-  - ``EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
-  - ``NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
+
+  - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
+  - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
   
 - use the most specific concept(s) that apply
 - in case more than sibling concept is applicable (*i.e.* concepts under a common parent) than consider using parent concept instead
