@@ -81,7 +81,7 @@ Description
 ^^^^^^^^^^^
 **Short and concise textual description of the software function**
 
-*e.g.* **"Detect and visualise single-nucleotide polymorphisms (SNPs)"**
+*e.g.* **"Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms."**
 
 - use declarative sentences (ideally a single sentence!) in the present tense
 - provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
@@ -116,7 +116,7 @@ Collection
 ^^^^^^^^^^
 **Unique ID of a collection that the software has been assigned to within bio.tools.**
 
-*e.g.* **de.NBI**
+*e.g.* **CBS**
 
 - keep it short and intuitive
 
@@ -139,7 +139,9 @@ See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/l
 
 Operation
 ^^^^^^^^^
-**The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment'**
+**The basic operation(s) performed by the software**
+
+*e.g.* 'Protein signal peptide detection' (http://edamontology.org/operation_0418)**
 
 - specify the primary operations performed by this function of the tool
 
@@ -149,14 +151,18 @@ Operation
      
 Data type (input and output data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Type of primary input / output data (if any), *e.g.* 'Protein sequences'**
+**Type of primary input / output data (if any)**
+
+*e.g.* 'Sequence' (http://edamontology.org/data_2044)**
 
 .. note::
    - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
 
 Data format (input and output data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA'**
+**Allowed format(s) of primary inputs/outputs**
+
+*e.g.* 'FASTA' (http://edamontology.org/format_1929)**
 
 .. note::
    - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
@@ -173,7 +179,7 @@ Tool type
 ^^^^^^^^^
 **The type of application software: a discrete software entity can have more than one type**
 
-*e.g.* **Web application**, **Command-line tool**
+*e.g.* **Command-line tool**, **Web application**, 
 
 - assign all types (see below) that are applicable
 
@@ -203,7 +209,9 @@ Tool type
 
 Topic
 ^^^^^
-**General scientific domain the software serves or other general category, e.g. 'Proteomics'**
+**General scientific domain the software serves or other general category**
+
+*e.g.* 'Protein sites, features and motifs' (http://edamontology.org/topic_3510)
 
 .. note::
    - an EDAM Topic concept URL and / or term are specified, *e.g.* "Proteomics", http://edamontology.org/topic_0121.
@@ -221,7 +229,7 @@ Language
 ^^^^^^^^
 **Name of programming language the software source code was written in.**
 
-*e.g.* **Python**
+*e.g.* ****
 
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
   
@@ -246,14 +254,14 @@ License
 ^^^^^^^
 **Software or data usage license.**
 
-*e.g.* **Apache-2.0**
+*e.g.* **CBS License**
 
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign the one that applies
 - use 'Proprietary' in case where some license (not defined in biotoolsSchema) exists and must be obtained from the provider before the software can be downloaded, used, owned *etc.*
 - use 'Other' in all other cases where a license exists but is not defined in biotoolsSchema (and consider requesting it's addition via `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/>`_)
   
 .. note::
-   The permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") will be attached to the bio.tools entry (see table below)
+   Most permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") may be attached to the bio.tools entry (see table below)
 
 .. csv-table::  Labelling based on license (future work)
    :header: "License", "Description"
@@ -269,7 +277,7 @@ Cost
 ^^^^
 **Monetary cost of acquiring the software.**
 
-*e.g.* **Free of charge**
+*e.g.* **Free of charge (with retritions)**
 
 - apply the tag (see below) that is applicable
 
@@ -310,7 +318,7 @@ Name
 ^^^^
 **Name of the primary contact.**
 
-*e.g.* **Joe Bloggs**
+*e.g.* **Henrik Nielsen**
 
 - this is the name of the thing for which an email and/or URL is specified
 - specify a name of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
@@ -319,15 +327,18 @@ Email
 ^^^^^
 **Email address of the primary contact.**
 
-*e.g.* **joebloggst@elixir-dk.org**
+*e.g.* **hnielsen@cbs.dtu.dk**
 
 - only give an email if it already publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
+
+.. note:: A syntactically email address (*e.g.* hnielsen@cbs.dtu.dk) must be specified however this will be rendered in bio.tools UI in a spam-resilient form (*e.g. hnielsen at cbs.dtu.dk)
+  
   
 URL
 ^^^
 **URL of the primary contact.**
 
-*e.g.* **https://joebloggs.com**
+*e.g.* ****
 
 - the URL must resolve to a page of contact information
 
@@ -342,20 +353,41 @@ Telephone number
 Links
 -----
 
+**Miscellaneous links for the software e.g. repository, issue tracker or mailing list.**
+
+
 URL
 ^^^
-****
+**A link of some relevance to the software (URL).**
+
 *e.g.* ****
 
 Comment
 ^^^^^^^
-****
+**Comment about the link.**
+
 *e.g.* ****
 
 Link type
 ^^^^^^^^^
-****
-*e.g.* ****
+**The type of data, information or system that is obtained when the link is resolved.**
+
+*e.g.* **Repository**
+
+.. csv-table::
+   :header: "Accessibility", "Description"
+   :widths: 25, 100
+
+   "Browser", "A website for browsing data."
+   "Helpdesk", "Helpdesk providing support in using the software."
+   "Issue tracker", "Tracker for software issues, bug reports, feature requests etc."
+   "Mailing list", "Mailing list for the software announcements, discussions, support etc."
+   "Mirror", "Mirror of an (identical) online service."
+   "Registry", "Some registry, catalogue etc. other than bio.tools."
+   "Repository", "Repository where source code, data and other files may be downloaded."
+   "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
+													
+
 
 Download
 --------
