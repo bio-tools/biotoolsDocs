@@ -24,4 +24,8 @@ This article is freely available (Open Access).
 
 Workbench integration
 ---------------------
+
+Hillion KH, Ison J and Ménager H. (2017). ToolDog – generating tool descriptors from the ELIXIR tool registry [version 1; not peer reviewed]. F1000Research 2017, 6:767 (poster).
+doi:`10.7490/f1000research.1114125.1 <http://doi.org/10.7490/f1000research.1114125.1>`_
+
 Ménager, H., Kalaš, M., Rapacki, K. and Ison, J. (2016).  `Using registries to integrate bioinformatics tools and services into workbench environments <https://link.springer.com/article/10.1007/s10009-015-0392-z>`_  *Int J Softw Tools Technol Transfer*  18: 581. doi:`10.1007/s10009-015-0392-z <http://doi.org/10.1007/s10009-015-0392-z>`_
