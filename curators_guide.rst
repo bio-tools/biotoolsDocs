@@ -437,23 +437,39 @@ Download type
 											
 Documentation
 -------------
+**A link to documentation about the software e.g. manual, API specification or training material.**
 
 URL
 ^^^
-****
+**Link to documentation on the web for the tool.**
+
 *e.g.* ****
 
 Comment
 ^^^^^^^
-****
+**Comment about the documentation.**
+
 *e.g.* ****
 
 Documentation type
 ^^^^^^^^^^^^^^^^^^
-****
+**Type of documentation that is linked to.**
+
 *e.g.* ****
 
+.. csv-table::
+   :header: "Download type", "Description"
+   :widths: 25, 100
+		
+   "API documentation", "Human-readable API documentation."
+   "Citation instructions", "Information on how to correctly cite use of the software."
+   "General", "General documentation."
+   "Manual ", "Information on how to use the software."
+   "Terms of use", "Rules that one must agree to abide by in order to use a service."
+   "Training material", "Online training material such as text on a Web page, a presentation, video, tutorial etc."
+   "Other", "Some other type of documentation not listed in biotoolsSchema."
 
+		
 Publications
 ------------
 **Publications about the software**
