@@ -551,7 +551,7 @@ Entity type
 ^^^^^^^^^^^
 **Type of entity that is credited.**
 
-*e.g.* ****
+*e.g.* **Person**
 
 .. csv-table::
    :header: "Entity type", "Description"
