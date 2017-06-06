@@ -375,7 +375,7 @@ Link type
 *e.g.* **Repository**
 
 .. csv-table::
-   :header: "Accessibility", "Description"
+   :header: "Link type", "Description"
    :widths: 25, 100
 
    "Browser", "A website for browsing data."
@@ -391,22 +391,50 @@ Link type
 
 Download
 --------
+**A link to a download for the software, e.g. source code, virtual machine image or container.**
 
 URL
 ^^^
-****
+**Link to download (or repo providing a download) for the software.**
+
 *e.g.* ****
 
 Comment
 ^^^^^^^
-****
+**Comment about the download**
+
 *e.g.* ****
 
 Download type
 ^^^^^^^^^^^^^
-****
+**Type of download that is linked to.**
+
 *e.g.* ****
 
+.. csv-table::
+   :header: "Download type", "Description"
+   :widths: 25, 100
+
+   "API specification", "File providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file."
+   "Biological data", "Biological data, or a web page on a database portal where such data may be downloaded. "
+   "Binaries", "Binaries for the software."
+   "Binary package", "Binary package for the software."
+   "Command-line specification", "File providing a command line specification for the software."
+   "Container file", "Container file including the software."
+   "CWL file", "Common Workflow Language (CWL) file for the software."
+   "Icon", "Icon of the software."
+   "Ontology", "A file containing an ontology, controlled vocabulary, terminology etc."
+   "Screenshot", "Screenshot of the software."
+   "Source code", "Software source code."
+   "Source package", "Source package (of various types) for the software."
+   "Test data", "Data for testing the software is working correctly."
+   "Test script", "Script used for testing testing whether the software is working correctly."
+   "Tool wrapper (galaxy)", "Galaxy tool configuration file (wrapper) for the software."
+   "Tool wrapper (taverna)", "Taverna configuration file for the software."
+   "Tool wrapper (other)", "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software."
+   "VM image", "Virtual machine (VM) image for the software."
+
+											
 Documentation
 -------------
 
