@@ -476,24 +476,38 @@ Publications
 
 PubMed Central ID
 ^^^^^^^^^^^^^^^^^
-****
+**PubMed Central Identifier (PMCID) of a publication about the software.**
+
 *e.g.* ****
 
 PubMed ID
 ^^^^^^^^^
-****
+**PubMed Identifier (PMID) of a publication about the software.**
+
 *e.g.* ****
 
 Digital Object ID
 ^^^^^^^^^^^^^^^^^
-****
+**Digital Object Identifier (DOI) of a publication about the software.**
+
 *e.g.* ****
 
 Publication type
 ^^^^^^^^^^^^^^^^
-****
+**Type of publication.**
+
 *e.g.* ****
 
+.. csv-table::
+   :header: "Download type", "Description"
+   :widths: 25, 100
+	    
+   "Primary", "The principal publication about the software itself; the article to cite when acknowledging use of the software."
+   "Benchmark", "A publication which assessed the performance of the software."
+   "Review", "A publication where the software was reviewed."
+   "Other", "A publication about the software but not the primary publication or a benchmark study."
+
+		
 Credits
 -------
 
