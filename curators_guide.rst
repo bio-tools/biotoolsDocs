@@ -142,7 +142,7 @@ Operation
 ^^^^^^^^^
 **The basic operation(s) performed by the software**
 
-*e.g.* 'Protein signal peptide detection' (http://edamontology.org/operation_0418)**
+*e.g.* **'Protein signal peptide detection' (http://edamontology.org/operation_0418)**
 
 - specify the primary operations performed by this function of the tool
 
@@ -154,7 +154,7 @@ Data type (input and output data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Type of primary input / output data (if any)**
 
-*e.g.* 'Sequence' (http://edamontology.org/data_2044)**
+*e.g.* **'Sequence' (http://edamontology.org/data_2044)**
 
 .. note::
    - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
@@ -163,7 +163,7 @@ Data format (input and output data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Allowed format(s) of primary inputs/outputs**
 
-*e.g.* 'FASTA' (http://edamontology.org/format_1929)**
+*e.g.* **'FASTA' (http://edamontology.org/format_1929)**
 
 .. note::
    - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
@@ -668,3 +668,10 @@ Workflow
 ^^^^^^^^
 **A set of tools which have been composed together into a pipeline of some sort. Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script.**
 
+- when deciding how to annotate a workflow inputs, operations and outputs, consider the worfklow as a "black box" , *i.e.* annotate the input(s) to and output(s) of the workflow as a whole, and the primary operation(s) of the workflow
+  
+.. note::
+   - `bio.tools <https://bio.tools>`_ does not currently contain many examples of workflows.  We welcome input on how to describe worfklows and ensure good coverage:  please `get in touch with us <mailto:registry@elixir-dk.org>`_.
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``includes`` relationship will allow specification of the tools that are included in a workflow.  
+
+.. important:: workflows can contain many tools; **do not** list all the operations performed by these tools, just the main operation(s) of the workflow as a whole.
