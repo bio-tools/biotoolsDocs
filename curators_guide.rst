@@ -660,15 +660,35 @@ Web service
 ^^^^^^^^^^^
 **An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP.**
 
+- in general, describe the attributes of the web service as a whole, not individual endpoint of the service (see note below)
+- in case the web service has a single endpoint only, the input(s), operation(s) and output(s) may be annotated
+- in case the web service has many endpoints, annotate the primary operation(s), but **not** the inputs and outputs
+- annotate the location of the WSDL file using the `download <http://biotools.readthedocs.io/en/latest/curators_guide.html#download>`_ attribute with `download type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
+- when assigning the `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, use the pattern ``name WS`` *e.g.* ``EMMA WS``
+- in case the web service provides an interface to an existing tool registered in bio.tools, try to ensure the relevant annotations are consistent
+
+.. note::
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in bio.tools
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` relationship will allow specification of the tool that the web service provides an interface to
+
 Workbench
 ^^^^^^^^^
 **An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools. Includes workflow systems, platforms, frameworks etc.**
+
+- describe the attributes of the workbench as a whole, not (typically) individual tools or functions provided by it
+- individual tools provided by the workbench, especially where these tools are indepepdently available, should be registered as separate entries
+- entries for the workbench itself and it's component tools can be associated by annotatong them as part of a common ``collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
+
+.. tip:: If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
+	 
+.. note::
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``includes`` relationship will allow specification of the tools that are included in a workbench.
 
 Workflow
 ^^^^^^^^
 **A set of tools which have been composed together into a pipeline of some sort. Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script.**
 
-- when deciding how to annotate a workflow inputs, operations and outputs, consider the worfklow as a "black box" , *i.e.* annotate the input(s) to and output(s) of the workflow as a whole, and the primary operation(s) of the workflow
+- when deciding how to annotate a workflow inputs, operations and outputs, consider the worfklow as a "black box" , *i.e.* annotate the input(s) to, output(s) from and primary operation(s) of the workflow as a whole
   
 .. note::
    - `bio.tools <https://bio.tools>`_ does not currently contain many examples of workflows.  We welcome input on how to describe worfklows and ensure good coverage:  please `get in touch with us <mailto:registry@elixir-dk.org>`_.
