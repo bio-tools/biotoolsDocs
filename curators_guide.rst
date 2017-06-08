@@ -35,7 +35,7 @@ Name
 .. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses
 
 .. tip::
-   - for software that essentially just wraps or provides an interface to some other tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
+   - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
    - in case of mulitple related entries which may all include a common tool in part of their name, be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``, or ``Open PHACTS`` and ``Open PHACTS API``
   
 .. attention::
@@ -138,6 +138,8 @@ See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/l
   
 .. image:: tool_function.PNG
 
+- when annotating the function of a tool, bear in mind that bio.tools aims to provide a coarse-grained description, *i.e.* you specify only the primary input(s), operation(s) and output(s).  For example, if annotating a sequence alignment tool, you would annotate sequences (input), sequence alignment (operation) and sequence alignment (output) but not the gap insertion and extension penalties, or other parameters.
+	   
 Operation
 ^^^^^^^^^
 **The basic operation(s) performed by the software**
@@ -170,7 +172,8 @@ Data format (input and output data)
 
 Comment
 ^^^^^^^
-****
+**Concise comment about this function, if not apparent from the software description and EDAM annotations.**
+
 *e.g.* ****
      
 Labels
@@ -655,7 +658,7 @@ Suite
 - describe the attributes of the suite as a whole, not (typically) individual tools or functions provided by it
 - individual tools included in the suite should be registered as separate entries
 - when annotating the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of the suite, pick one or two of the primary operation(s) of the included tools
-- entries for the suite itself and it's component tools can be associated by annotatong them as part of a common ``collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
+- entries for the suite itself and it's component tools can be associated by annotatong them as part of a common `collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
 
 .. tip:: If you are considering to register a suite with many tools, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
 	 
@@ -668,9 +671,14 @@ Web application
 ^^^^^^^^^^^^^^^
 **A tool with a graphical user interface that runs in your Web browser.**
 
+
+
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` and ``uses`` relationships will allow specification of the web applications that provided interfaces to or use other tools.
 
+   - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!     
+
+     
 Web API
 ^^^^^^^
 **An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP. Includes everything from simple data-access URLs to RESTful APIs.**
@@ -680,7 +688,7 @@ Web API
 - in case the API has many endpoints, annotate the primary operation(s), but **not** the inputs and outputs
 - annotate the location of machine-readable API specification (*e.g.* openAPI file) using the `download <http://biotools.readthedocs.io/en/latest/curators_guide.html#download>`_ attribute with `download type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
   - annotate the location of any human-readable documentation using the `documentation <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation>`_ attribute with `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
-- when assigning the `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, use the pattern ``name WS`` *e.g.* ``EMMA WS``
+- when assigning the `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
 - in case the web service provides an interface to an existing tool registered in bio.tools, try to ensure the relevant annotations are consistent
 
 .. note::
@@ -710,7 +718,7 @@ Workbench
 - describe the attributes of the workbench as a whole, not (typically) individual tools or functions provided by it
 - individual tools included in the workbench, especially where these tools are indepepdently available, should be registered as separate entries
 - individual functions provided by the workbench, especially where these are not independently available, should each be described in their own `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_
-- entries for the workbench itself and it's component tools can be associated by annotatong them as part of a common ``collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
+- entries for the workbench itself and it's component tools can be associated by annotatong them as part of a common `collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
 
 .. tip:: If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
 	 
