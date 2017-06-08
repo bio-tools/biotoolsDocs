@@ -1,9 +1,9 @@
-Hangouts
+Status meetings (previously known as 'Hangouts')
 ========
 
-Monthly informal hangouts to discuss all matters around bio.tools including ELIXIR EXCELERATE WP1 ("Tools Interoperability and Service Registry") tasks and activities of ELIXIR Denmark technical staff.
+Monthly informal meetings to discuss all matters around bio.tools including ELIXIR EXCELERATE WP1 ("Tools Interoperability and Service Registry") tasks and activities of ELIXIR Denmark technical staff.
 
-If you'd like to attend a hangout, please mail Henriette Husum Bak-Jensen (hhu@bio.ku.dk) cc Jon Ison (jison@cbs.dtu.dk), including your gmail and skype addresses.  To understand how we organise tasks and projects, read the `Contributors Guide <http://biotools.readthedocs.io/en/latest/project_management.html>`_.
+If you'd like to attend a status meeting, please mail Henriette Husum Bak-Jensen (hhu@bio.ku.dk) cc Jon Ison (jison@cbs.dtu.dk), including your gmail and skype addresses.  To understand how we organise tasks and projects, read the `Contributors Guide <http://biotools.readthedocs.io/en/latest/project_management.html>`_.
 
 Before each meeting, always it's helpful to read the `bio.tools status report <http://biotools.readthedocs.io/en/latest/status_reports.html>`_. 
 
@@ -11,8 +11,7 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 2017 Meetings
 -------------
 
-- CANCELLED Fri May 26, 11 AM CEST **WP1-focus**
-- Fri June 16 (!), 11 AM CEST
+- Fri June 16, 11 AM CEST **WP1-focus**
 - No meeting in July, Aug
 - Fri Sep 29, 11 AM CEST **WP1-focus**
 - Fri Oct 27, 11 AM CET
@@ -23,7 +22,7 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 Next meeting
 ------------
 
-2017 May 26, 11 AM CEST
+2017 June 16, 11 AM CEST
 -----------------------
 
 Call details
@@ -38,12 +37,33 @@ Installation guides: https://www.deic.dk/via_computer_dk
 
 Attendeees
 ^^^^^^^^^^
-all welcome
+
+Apologies
+^^^^^^^^^^
+Vivi Raundahl Gregersen
 
 Agenda
 ^^^^^^
 
-**To be announced later**
+**1) Settle the discussion on ‘bio-tools information standards’ i.e. reach an agreement on the specification of ‘minimum information requirement’ and ‘gold standard information requirement’**
+
+Jon will present the final proposal - which is subject to discussion.
+
+You can see the latest version of the information requirements `here <http://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#information-requirement>`_ and the comments and suggestions made so far on this version `via this link <https://github.com/bio-tools/biotoolsSchema/issues/77>`_.
+
+  
+
+Importantly, we strongly encourage additional comments and suggestions be made via Github on the latter `link <https://github.com/bio-tools/biotoolsSchema/issues/77>`_ *by end of Friday June 9th*. 
+
+After this time, Jon will make a major revision that take the comments into account, and send the final proposal on Wednesday June 14 – for everyone to read in order to prep for an open discussion and ventilating of remaining concerns, at the meeting.
+**The concensus from the meeting will be presented to Danish Elixir Steering committee for final approval on June 20.**
+
+
+**2) Burning issues from partners** 
+
+you're very welcome to email Henriette (hhu@bio.ku.dk) and Jon (jison@cbs.dtu.dk) in advance.
+
+**3) Any other business**
 
 
 -------
