@@ -37,6 +37,7 @@ Installation guides: https://www.deic.dk/via_computer_dk
 
 Attendeees
 ^^^^^^^^^^
+WP-1 partners
 
 Apologies
 ^^^^^^^^^^
