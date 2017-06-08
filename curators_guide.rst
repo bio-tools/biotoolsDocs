@@ -636,6 +636,10 @@ Plug-in
 ^^^^^^^
 **A software component encapsulating a set of related functions, which are not standalone, i.e. depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.**
 
+.. note::
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isPluginFor`` relationship will allow specification of the tool to which the plug-in is applicable.
+
+     
 Script
 ^^^^^^
 **A tool written for some run-time environment (e.g. other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (e.g. Perl, Python) or some domain-specific languages (e.g. sed).**
@@ -648,14 +652,41 @@ Suite
 ^^^^^
 **A collection of tools which are bundled together into a convenient toolkit. Such tools typically share related functionality, a common user interface and can exchange data conveniently. This includes collections of stand-alone command-line tools, or Web applications within a common portal.**
 
+- describe the attributes of the suite as a whole, not (typically) individual tools or functions provided by it
+- individual tools included in the suite should be registered as separate entries
+- when annotating the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of the suite, pick one or two of the primary operation(s) of the included tools
+- entries for the suite itself and it's component tools can be associated by annotatong them as part of a common ``collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
+
+.. tip:: If you are considering to register a suite with many tools, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
+	 
+.. note::
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``includes`` relationship will allow specification of the tools that are included in a suite.
+
+.. attention:: **do not** annotate the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <>`_ of input and output data, *unless* all tools in the suite happen to have these in common
+
 Web application
 ^^^^^^^^^^^^^^^
 **A tool with a graphical user interface that runs in your Web browser.**
+
+.. note::
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` and ``uses`` relationships will allow specification of the web applications that provided interfaces to or use other tools.
 
 Web API
 ^^^^^^^
 **An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP. Includes everything from simple data-access URLs to RESTful APIs.**
 
+- in general, describe the attributes of the API as a whole, not individual endpoint of the API (see note below)
+- in case the API has a single endpoint only, the input(s), operation(s) and output(s) may be annotated
+- in case the API has many endpoints, annotate the primary operation(s), but **not** the inputs and outputs
+- annotate the location of machine-readable API specification (*e.g.* openAPI file) using the `download <http://biotools.readthedocs.io/en/latest/curators_guide.html#download>`_ attribute with `download type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
+  - annotate the location of any human-readable documentation using the `documentation <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation>`_ attribute with `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
+- when assigning the `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, use the pattern ``name WS`` *e.g.* ``EMMA WS``
+- in case the web service provides an interface to an existing tool registered in bio.tools, try to ensure the relevant annotations are consistent
+
+.. note::
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in bio.tools
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` relationship will allow specification of the tool that the web service provides an interface to
+     
 Web service
 ^^^^^^^^^^^
 **An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP.**
@@ -664,6 +695,7 @@ Web service
 - in case the web service has a single endpoint only, the input(s), operation(s) and output(s) may be annotated
 - in case the web service has many endpoints, annotate the primary operation(s), but **not** the inputs and outputs
 - annotate the location of the WSDL file using the `download <http://biotools.readthedocs.io/en/latest/curators_guide.html#download>`_ attribute with `download type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
+- annotate the location of any human-readable documentation using the `documentation <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation>`_ attribute with `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
 - when assigning the `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, use the pattern ``name WS`` *e.g.* ``EMMA WS``
 - in case the web service provides an interface to an existing tool registered in bio.tools, try to ensure the relevant annotations are consistent
 
@@ -676,7 +708,8 @@ Workbench
 **An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools. Includes workflow systems, platforms, frameworks etc.**
 
 - describe the attributes of the workbench as a whole, not (typically) individual tools or functions provided by it
-- individual tools provided by the workbench, especially where these tools are indepepdently available, should be registered as separate entries
+- individual tools included in the workbench, especially where these tools are indepepdently available, should be registered as separate entries
+- individual functions provided by the workbench, especially where these are not independently available, should each be described in their own `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_
 - entries for the workbench itself and it's component tools can be associated by annotatong them as part of a common ``collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
 
 .. tip:: If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
