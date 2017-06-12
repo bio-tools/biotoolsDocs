@@ -138,8 +138,11 @@ See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/l
   
 .. image:: tool_function.PNG
 
-- when annotating the function of a tool, bear in mind that bio.tools aims to provide a coarse-grained description, *i.e.* you specify only the primary input(s), operation(s) and output(s).  For example, if annotating a sequence alignment tool, you would annotate sequences (input), sequence alignment (operation) and sequence alignment (output) but not the gap insertion and extension penalties, or other parameters.
-	   
+- as a first step, plan how to describe the software in bio.tools: you need to identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious, but if in any doubt mail the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
+- bear in mind that bio.tools aims to provide a coarse-grained description, *i.e.* you specify only the primary input(s), operation(s) and output(s).  For example, if annotating a sequence alignment tool, you would annotate sequences (input), sequence alignment (operation) and sequence alignment (output) but not the gap insertion and extension penalties, or other parameters.
+
+  
+  
 Operation
 ^^^^^^^^^
 **The basic operation(s) performed by the software**
@@ -635,14 +638,17 @@ Ontology
 ^^^^^^^^
 **A collection of information about concepts, including terms, synonyms, descriptions etc.**
 
+- pick one or more `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the scientific areas covered by the ontology
+- pick the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of "Query and retrieval" (http://edamontology.org/operation_0224)
+- do not annotate the type or format of the input and output data
+  
 Plug-in
 ^^^^^^^
 **A software component encapsulating a set of related functions, which are not standalone, i.e. depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.**
 
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isPluginFor`` relationship will allow specification of the tool to which the plug-in is applicable.
-
-     
+   
 Script
 ^^^^^^
 **A tool written for some run-time environment (e.g. other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (e.g. Perl, Python) or some domain-specific languages (e.g. sed).**
@@ -653,7 +659,7 @@ SPARQL endpoint
 
 - pick one or more `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the underyling data
 - pick the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of "Query and retrieval" (http://edamontology.org/operation_0224)
-- do not annotate the type or format of the (input and output data)
+- do not annotate the type or format of the input and output data
 
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` relationship will allow specification of the data resource (database portal) that a SPARQL endpoint provides an interface to.
