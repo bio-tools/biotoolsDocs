@@ -3,6 +3,8 @@ Curators Guide
 
 **UNDER CONSTRUCTION**: guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines, will appear here. 
 
+Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
+
 bio.tools includes all types of *bioinformatics tools* - application software with well-defined data processing functions (inputs, outputs and operations).  bio.tools includes simple tools with one or a few closely related functions, and complex, multimodal tools with many functions.  Tools may be available for immediate use as online services, or in a form which a user can download, install, configure and run themselves.  Each bio.tools entry describes a discrete, but possibly complex software entity.  The `types of tools <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ define the technical scope of the registry, *i.e.* the types of software that may be included.
 
 The guidelines below are organised as follows:
