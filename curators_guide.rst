@@ -41,7 +41,7 @@ Name
 - if shortening the name is necessary, do no truncate within a word and ensure the name remains intuitive
 - for database portals, use common abbreviation if available, *e.g.*  ``PDB`` **not** ``The Protein Databank``
 - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
-- **do not** include version information **unless** this is really part of the common name (*e.g.* used in tool homepage and publication)
+- **do not** include version information *unless* this is really part of the common name (*e.g.* used in tool homepage and publication)
      
 **Automatically verified**
 
