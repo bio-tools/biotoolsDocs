@@ -13,8 +13,15 @@ The guidelines below are organised as follows:
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_ for EDAM annotations in general
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
 
+Each individual guideline is organised into sections as follows:
+
+- **Automatically verified** guidelines are checked as part of automated QC performed periodically by the bio.tools system
+- **Manually verified** guidelines are checked as part of manual QC performed by bio.tools admin
+- **Other** guidelines are not verified but should still be followed
+
 .. note::
-    For curation advice or to make suggestions about these guidelines please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+   - entries in which all attributes pass both the automated and manual checks will be labelled as "Verified" (and stamped with data of verification and last update).
+   - for curation advice or to make suggestions about these guidelines please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
 
     
 Summary
@@ -26,23 +33,27 @@ Name
 
 *e.g.* **"SignalP"**
 
+**Manually verified**
 - use the name that is commonly used to refer to the software
 - preserve the canonical capitalisation, if any *e.g.* ``ExPASy`` 
 - use the short form (*e.g.* acronym) of the name, if available *e.g.* use ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
 - if shortening the name is necessary, do no truncate within a word and ensure the name remains intuitive
 - for database portals, use common abbreviation if available, *e.g.*  ``PDB`` **not** ``The Protein Databank``
+- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
+- **do not** include version information **unless** this is really part of the common name (*e.g.* used in tool homepage and publication)
+     
+**Automatically verified**  
 - for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
 - for Web services (SOAP+WSDL), use the pattern ``name WS`` *e.g.* ``EMMA WS``
+- **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
+     
+.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses
+
+.. tip::
+   - in case of mulitple related entries be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``, or ``Open PHACTS`` and ``Open PHACTS API``
 
 .. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
 
-.. tip::
-   - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
-   - in case of mulitple related entries which may all include a common tool in part of their name, be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``, or ``Open PHACTS`` and ``Open PHACTS API``
-  
-.. attention::
-   - **do not** include version information **unless** this is used in the common name (*e.g.* as in the tool homepage and publication)
-   - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
 
 
 ID
