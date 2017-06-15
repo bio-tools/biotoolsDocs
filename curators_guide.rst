@@ -34,6 +34,7 @@ Name
 *e.g.* **"SignalP"**
 
 **Manually verified**
+
 - use the name that is commonly used to refer to the software
 - preserve the canonical capitalisation, if any *e.g.* ``ExPASy`` 
 - use the short form (*e.g.* acronym) of the name, if available *e.g.* use ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
@@ -42,7 +43,8 @@ Name
 - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
 - **do not** include version information **unless** this is really part of the common name (*e.g.* used in tool homepage and publication)
      
-**Automatically verified**  
+**Automatically verified**
+
 - for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
 - for Web services (SOAP+WSDL), use the pattern ``name WS`` *e.g.* ``EMMA WS``
 - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
