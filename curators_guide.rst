@@ -10,7 +10,7 @@ bio.tools includes all types of *bioinformatics tools* - application software wi
 The guidelines below are organised as follows:
 
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ on specific attributes defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ and organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
-- `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id19>`_ for EDAM annotations in general
+- `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_ for EDAM annotations in general
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
 
 .. note::
@@ -312,7 +312,7 @@ Accessibility
 
    "Open access", "An online service which is available for use to all, but possibly requiring user accounts / authentication."
    "Restricted access", "An online service which is available for use to a restricted audience, e.g. members of a specific institute."
-   "Proprietary", "Software for which the software's publisher or another person retains intellectual property rights Å\ usually copyright of the source code, but sometimes patent rights."
+   "Proprietary", "Software for which the software's publisher or another person retains intellectual property rights ¬Å\ usually copyright of the source code, but sometimes patent rights."
    "Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
 Contact
