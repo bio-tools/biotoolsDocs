@@ -21,7 +21,7 @@ Each individual guideline is organised into sections as follows:
 
 .. note::
    - entries in which all attributes pass both the automated and manual checks will be labelled as "Verified" (and stamped with data of verification and last update).
-   - for curation advice or to make suggestions about these guidelines please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+   - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ `get in touch with us <mailto:registry-support@elixir-dk.org>`_ directly.
 
     
 Summary
