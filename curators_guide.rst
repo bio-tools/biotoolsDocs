@@ -34,7 +34,7 @@ Name
 - for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
 - for Web services (SOAP+WSDL), use the pattern ``name WS`` *e.g.* ``EMMA WS``
 
-.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses
+.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, period, comma, dash, colon, plus symbol, semicolon and parentheses
 
 .. tip::
    - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
