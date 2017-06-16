@@ -11,7 +11,6 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 2017 Meetings
 -------------
 
-- Fri June 16, 11 AM CEST **WP1-focus**
 - No meeting in July, Aug
 - Fri Sep 29, 11 AM CEST **WP1-focus**
 - Fri Oct 27, 11 AM CET
@@ -37,34 +36,41 @@ Installation guides: https://www.deic.dk/via_computer_dk
 
 Attendeees
 ^^^^^^^^^^
-WP-1 partners
+WP-1 partners of which the following were present Anne Wenzel, Emil Rydza, Hans Ienasescu, Jon Ison, Matus Kalas, Piotr Chmura, Severine, Henriette Husum Bak-Jensen.
 
 Apologies
 ^^^^^^^^^^
-Vivi Raundahl Gregersen
-
-Agenda
-^^^^^^
-
-**1) Settle the discussion on ‘bio-tools information standards’ i.e. reach an agreement on the specification of ‘minimum information requirement’ and ‘gold standard information requirement’**
-
-Jon will present the final proposal - which is subject to discussion.
-
-You can see the latest version of the information requirements `here <http://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#information-requirement>`_ and the comments and suggestions made so far on this version `via this link <https://github.com/bio-tools/biotoolsSchema/issues/77>`_.
-
-  
-
-Importantly, we strongly encourage additional comments and suggestions be made via Github on the latter `link <https://github.com/bio-tools/biotoolsSchema/issues/77>`_ *by end of Friday June 9th*. 
-
-After this time, Jon will make a major revision that take the comments into account, and send the final proposal on Wednesday June 14 – for everyone to read in order to prep for an open discussion and ventilating of remaining concerns, at the meeting.
-**The concensus from the meeting will be presented to Danish Elixir Steering committee for final approval on June 20.**
+Vivi Raundahl Gregersen, Hedi Peterson, Veit Schwämmle, Vivi Gregersen, Ahto Salumets, Salva , Hervé Menager
 
 
-**2) Burning issues from partners** 
+Minutes
+^^^^^^^
+The goal of todays meeting was to go over the proposed standards for tools entries in bio.tools  (see https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst ). 
+The minutes also offer fundamental concerns – that prompt for consideration before launching the standards
+Several comments were made at the meeting chat and also issues were brought up. Those can be found here https://github.com/bio-tools/biotoolsSchema/issues/77 and more can be added after the meeting, please.
+The main points - constructive discussion points and actions points – at the meeting, were the following:
 
-you're very welcome to email Henriette (hhu@bio.ku.dk) and Jon (jison@cbs.dtu.dk) in advance.
+**The idea of 'revising the standards on an annual basis' is challenging**
 
-**3) Any other business**
+Four standard tiers/labels are contemplated (OKAY, GOOD, VERY GOOD, EXCELLENT) that are all of 'acceptable' quality. A fifth label (NEEDS TO IMPROVE) is for entries which lack basic information. Each label is associated with a set of attributes. The set of attributes required to earn a label – or the list of allowed sub-domains to tick a particular attribute, could in principle be changed – if practical experience shows it would be valuable. And so we envision to revisit, with caution, the set of four (five) standards on an annual basis – with input from the community BUT - by all means, any future change in the standards must not bereave a tool of an 'earned' label, or lead to a 'greying' of an annotation void. Rather such changes should apply to future earning of labels, and be presented in the 'background guide info for curators' for verified-label tools, that now needs more annotation work.
+
+**Annotation of Not applicable, None exists, Unknown, and Need Updating**
+
+These terms are all valuable information, and should be carefully and individually assigned as annotation options, for all attributes. MK made the point that distinct tool types warrant a distinct set of attributes – in order to avoid numerous 'not applicable' annotation results. It was agreed that MK will draft a matrix (tool types vs attributes) that will help decide if some tool types should indeed be assigned a distinct set of attributes, and if not, at least will help capture the adequacy of annotating 'not applicable' for a given tool attribute. 
+
+**Annotation metrics – assessing quantitative measures on the quality input**
+
+This point was made by MK and wants to assess the registry's total number of annotated information on a given attribute. Other obvious quantitative measures include amount of information (most simply number of JSON/XML nodes); last modified (time since); last new version (time since); last scientific publication (time since). This will help us monitor the overall progress on quality of the registry as a supplement to tracking number of users and number of entries (quantity). 
+
+
+**Date-stamps**
+
+The annotation 'None exists' should be time stamped, because it may be relevant to update the information.
+The annotation 'Not applicable' should not be Date-stamped, because it will never be relevant information.
+
+**Verification of labels**
+
+Several arguments were made for and against a Date-stamped verified label of a given tool. In particular if we're dealing with manual verification of earning a given label: 1) this could be seen as censure, by the developers, which would counteract his/her willingness to simply supply the best possible annotation/information on a given tool, 2) it is labour-intensive and possibly old-fashioned (not Wiki-like), 3) there is a danger of the verification process is of lower quality than the annotation process itself. On the other hand, the end user may better trust a manually verified date-stamped label. We need to consider the need of developers (the best provider of info) and of the end-user (trust issue). Including the possibility for developing a machine-learning-driven autocurator (Action Piotr Chmura). It is possible that the ressources spent of verification were better spent to improve the annotation.
 
 
 -------
