@@ -494,6 +494,11 @@ Publications
 ------------
 **Publications about the software**
 
+- the specified ID should resolve to a valid publication
+
+.. note::
+   We are considering broadening the scope of what qualifies as a valid publication to include formal documents available via URL, such things as online manuals.  Obviously care is needed here to avoid misuse.
+
 PubMed Central ID
 ^^^^^^^^^^^^^^^^^
 **PubMed Central Identifier (PMCID) of a publication about the software.**
