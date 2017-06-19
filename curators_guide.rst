@@ -45,7 +45,7 @@ Name
      
 **Automatically verified**
 
-- for APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
+- for Web APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
 - for Web services (SOAP+WSDL), use the pattern ``name WS`` *e.g.* ``EMMA WS``
 - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
      
@@ -63,15 +63,18 @@ ID
 *e.g.* **signalp**
      
 - the ID should be clean and intuitive: where possible, simply use the default
+- replace ' ' (spaces) in the name with underscores
+- use '_' to delimit parts of names *if* these 
+- preserve '-' in the names, but remove other non-alphabetic or non-numeric characters
 - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
-- if (but only if) necessary, use '_' to delimit parts of names
-   - for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``cufflinks-cloud IFB``.
-
+- for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``cufflinks-cloud IFB``.
+     
 .. note::
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
    - once set, the ID can only be changed by bio.tools admin!
    - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+
 
 
 Version
@@ -133,7 +136,7 @@ Collection
 *e.g.* **CBS**
 
 - keep it short and intuitive
-
+  
 .. note::
    - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
@@ -334,6 +337,7 @@ Contact
 - 'Name' must be specified along with one or both of 'Email' and 'URL' (see below)
 - in general, a URL is preferable to an email
 
+  
 Name
 ^^^^
 **Name of the primary contact.**
@@ -382,6 +386,8 @@ URL
 
 *e.g.* ****
 
+- the URL must resolve to an appropriate page
+
 Comment
 ^^^^^^^
 **Comment about the link.**
@@ -419,6 +425,8 @@ URL
 
 *e.g.* ****
 
+- the URL must resolve to an appropriate download
+  
 Comment
 ^^^^^^^
 **Comment about the download**
@@ -465,6 +473,8 @@ URL
 
 *e.g.* ****
 
+- the URL must resolve to a page of documentation
+  
 Comment
 ^^^^^^^
 **Comment about the documentation.**
@@ -571,6 +581,8 @@ URL
 
 *e.g.* ****
 
+- the URL must resolve to an appropriate page
+
 Entity type
 ^^^^^^^^^^^
 **Type of entity that is credited.**
@@ -631,7 +643,9 @@ EDAM annotation guidelines
 - use the most specific concept(s) that apply
 - in case more than sibling concept is applicable (*i.e.* concepts under a common parent) than consider using parent concept instead
 
-.. attention:: in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
+.. attention::
+   - in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
+   - **do not** use top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation"
 
 Guidelines per tool type
 ------------------------
@@ -707,7 +721,7 @@ Web application
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` and ``uses`` relationships will allow specification of the tools that a web application provides an interface to or uses.
 
-   - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!     
+   - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name (without spaces) of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloudIFB``.  **Do not** misappropriate the original name!     
 
      
 Web API
