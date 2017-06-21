@@ -77,11 +77,6 @@ Name
 - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application over an existing tool, use the pattern ``toolName-wrapperName`` where ``wrapperName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks-cloudIFB``.  **Do not** misappropriate the original name!
 - **do not** include version information *unless* this is part of the name in common name in the tool homepage and publication.
 
-
-
-
-
-
      
 **Automatically verified**
 
@@ -103,13 +98,16 @@ ID
 **Unique ID of the tool that is assigned upon registration of the software in bio.tools**
 
 *e.g.* **signalp**
-     
-- the ID should be clean and intuitive: where possible, simply use the default
-- replace ' ' (spaces) in the name with underscores
-- use '_' to delimit parts of names *if* these 
-- preserve '-' in the names, but remove other non-alphabetic or non-numeric characters
+
+**Manually verified**
+- the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
 - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
-- for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``cufflinks-cloud IFB``.
+
+**Automatically verified**
+- replace ' ' (spaces) in the name with underscores
+- preserve '-' (dash), but either remove non-alphabetic or non-numeric characters, or replace them with underscores
+- use '_' to delimit parts of names *if* these are not already truncated in the original name
+- for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName-providerName`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``cufflinks-cloudIFB``.
      
 .. note::
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
@@ -740,7 +738,7 @@ Web application
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` and ``uses`` relationships will allow specification of the tools that a web application provides an interface to or uses.
 
-   - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name (without spaces) of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloudIFB``.  **Do not** misappropriate the original name!     
+   - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is a name (without spaces) of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloudIFB``.  **Do not** misappropriate the original name!     
 
      
 Web API
