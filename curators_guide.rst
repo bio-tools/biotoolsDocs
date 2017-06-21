@@ -99,10 +99,12 @@ ID
 *e.g.* **signalp**
 
 **Manually verified**
+
 - the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
 - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
 
 **Automatically verified**
+
 - replace ' ' (spaces) in the name with underscores
 - preserve '-' (dash), but either remove non-alphabetic or non-numeric characters, or replace them with underscores
 - use '_' to delimit parts of names *if* these are not already truncated in the original name
