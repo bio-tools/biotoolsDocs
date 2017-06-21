@@ -23,6 +23,41 @@ Each individual guideline is organised into sections as follows:
    - entries in which all attributes pass both the automated and manual checks will be labelled as "Verified" (and stamped with data of verification and last update).
    - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ `get in touch with us <mailto:registry-support@elixir-dk.org>`_ directly.
 
+General guidelines
+------------------
+
+Tool versions
+-------------
+
+Tool functions and operations
+-----------------------------
+bio.tools usee a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+
+See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
+  
+.. image:: tool_function.PNG
+
+- as a first step, plan how to describe the software in bio.tools: you need to identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious, but if in any doubt mail the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
+- bear in mind that bio.tools aims to provide a coarse-grained description, *i.e.* you specify only the primary input(s), operation(s) and output(s).  For example, if annotating a sequence alignment tool, you would annotate sequences (input), sequence alignment (operation) and sequence alignment (output) but not the gap insertion and extension penalties, or other parameters.
+
+
+
+EDAM annotations
+----------------
+
+- if in any doubt as to meaning, refer to the concept definitions using:
+
+  - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
+  - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
+  
+- use the most specific concept(s) that apply
+- in case more than sibling concept is applicable (*i.e.* concepts under a common parent) than consider using parent concept instead
+
+.. attention::
+   - in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
+   - **do not** use top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation"
+
+
     
 Summary
 -------
@@ -35,13 +70,18 @@ Name
 
 **Manually verified**
 
-- use the name that is commonly used to refer to the software
-- preserve the canonical capitalisation, if any *e.g.* ``ExPASy`` 
-- use the short form (*e.g.* acronym) of the name, if available *e.g.* use ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
-- if shortening the name is necessary, do no truncate within a word and ensure the name remains intuitive
-- for database portals, use common abbreviation if available, *e.g.*  ``PDB`` **not** ``The Protein Databank``
-- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloud IFB``.  **Do not** misappropriate the original name!
-- **do not** include version information *unless* this is really part of the common name (*e.g.* used in tool homepage and publication)
+- use the name in common use, *i.e.* in the tool homepage and publication
+- use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
+- preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``
+- for database portals, use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (**do not** invent one!)  
+- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application over an existing tool, use the pattern ``toolName-wrapperName`` where ``wrapperName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks-cloudIFB``.  **Do not** misappropriate the original name!
+- **do not** include version information *unless* this is part of the name in common name in the tool homepage and publication.
+
+
+
+
+
+
      
 **Automatically verified**
 
@@ -51,7 +91,9 @@ Name
      
 .. tip::
    - in case of mulitple related entries be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``, or ``Open PHACTS`` and ``Open PHACTS API``
-
+   - be wary of names that are very long (>25 characters); in exceptional circumstances, if shortening the name is necessary, do no truncate within a word and ensure the name remains intuitive
+   - in cases where two distinct versions of a tool are being registered as separate entries, but the tool name in ommon use does not include version information, then use the pattern ``toolname (version versionID)`` where versionID is the version number.  This should not normally be necessary: see the notes on `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
+     
 .. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
 
 
@@ -148,17 +190,6 @@ Collection
 Function
 --------
 
-bio.tools usee a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
-
-See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
-  
-.. image:: tool_function.PNG
-
-- as a first step, plan how to describe the software in bio.tools: you need to identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious, but if in any doubt mail the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
-- bear in mind that bio.tools aims to provide a coarse-grained description, *i.e.* you specify only the primary input(s), operation(s) and output(s).  For example, if annotating a sequence alignment tool, you would annotate sequences (input), sequence alignment (operation) and sequence alignment (output) but not the gap insertion and extension penalties, or other parameters.
-
-  
-  
 Operation
 ^^^^^^^^^
 **The basic operation(s) performed by the software**
@@ -189,6 +220,9 @@ Data format (input and output data)
 .. note::
    - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
 
+.. tip::
+   - many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.
+     
 Comment
 ^^^^^^^
 **Concise comment about this function, if not apparent from the software description and EDAM annotations.**
@@ -632,21 +666,6 @@ Comment
 .. attention:: **do not** merely duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
 
   
-EDAM annotation guidelines
---------------------------
-
-- if in any doubt as to meaning, refer to the concept definitions using:
-
-  - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
-  - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
-  
-- use the most specific concept(s) that apply
-- in case more than sibling concept is applicable (*i.e.* concepts under a common parent) than consider using parent concept instead
-
-.. attention::
-   - in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
-   - **do not** use top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation"
-
 Guidelines per tool type
 ------------------------
 
