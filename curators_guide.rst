@@ -27,10 +27,10 @@ General guidelines
 ------------------
 
 Tool versions
--------------
+^^^^^^^^^^^^^
 
 Tool functions and operations
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 bio.tools usee a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
 See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
@@ -43,7 +43,7 @@ See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/l
 
 
 EDAM annotations
-----------------
+^^^^^^^^^^^^^^^^
 
 - if in any doubt as to meaning, refer to the concept definitions using:
 
