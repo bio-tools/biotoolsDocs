@@ -58,7 +58,6 @@ EDAM annotations
    - **do not** use top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation"
 
 
-    
 Summary
 -------
 
@@ -75,19 +74,19 @@ Name
 - preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``
 - for database portals, use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (**do not** invent one!)  
 - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application over an existing tool, use the pattern ``toolName-wrapperName`` where ``wrapperName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks-cloudIFB``.  **Do not** misappropriate the original name!
-- **do not** include version information *unless* this is part of the name in common name in the tool homepage and publication.
+- **do not** include version information *unless* this is part of the name in common use in the tool homepage and publication.
 
      
 **Automatically verified**
 
-- for Web APIs, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
+- for Web APIs (RESTful or RESTlike), use the pattern ``name API`` *e.g.* ``Open PHACTS API``
 - for Web services (SOAP+WSDL), use the pattern ``name WS`` *e.g.* ``EMMA WS``
 - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
      
 .. tip::
-   - in case of mulitple related entries be consistent, *e.g.* ``HOMER-A`` and ``HOMER-M``, or ``Open PHACTS`` and ``Open PHACTS API``
-   - be wary of names that are very long (>25 characters); in exceptional circumstances, if shortening the name is necessary, do no truncate within a word and ensure the name remains intuitive
-   - in cases where two distinct versions of a tool are being registered as separate entries, but the tool name in ommon use does not include version information, then use the pattern ``toolname (version versionID)`` where versionID is the version number.  This should not normally be necessary: see the notes on `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
+   - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
+   - be wary of names that are very long (>25 characters); in exceptional circumstances, if shortening the name is necessary, **do not** truncate within a word and ensure the name remains intuitive
+   - in cases where two distinct versions of a tool are being registered as separate entries, but the common tool name does not include version information, then use the pattern ``toolname (version versionID)`` where ``versionID`` is the version number.  This should not normally be necessary: see the notes on `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
      
 .. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
 
