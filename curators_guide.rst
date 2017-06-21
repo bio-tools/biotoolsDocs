@@ -73,14 +73,14 @@ Name
 - use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
 - preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``
 - for database portals, use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (**do not** invent one!)  
-- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application over an existing tool, use the pattern ``toolName-wrapperName`` where ``wrapperName`` is the name of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks-cloudIFB``.  **Do not** misappropriate the original name!
+
+- for Web APIs (REST), Web services (SOAP+WSDL) and for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application over an existing tool, use the pattern ``toolName {API|WS} (wrapperName)`` giving ``API`` for Web APIs, ``WS`` for Web services and where ``wrapperName`` is the name of some institute, workbench, collection *etc.*.  For example ``abiview WS (husar)``.  **Do not** misappropriate the original name!
 - **do not** include version information *unless* this is part of the name in common use in the tool homepage and publication.
 
-     
+
 **Automatically verified**
 
-- for Web APIs (RESTful or RESTlike), use the pattern ``name API`` *e.g.* ``Open PHACTS API``
-- for Web services (SOAP+WSDL), use the pattern ``name WS`` *e.g.* ``EMMA WS``
+- for Web APIs (REST) and Web services (SOAP+WSDL) include ``API`` or ``WS`` respectively, as per the pattern ``toolName {API|WS} (wrapperName)`` (see above).
 - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
      
 .. tip::
