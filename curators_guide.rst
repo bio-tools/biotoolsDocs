@@ -106,9 +106,9 @@ ID
 **Automatically verified**
 
 - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
-- preserve all reserved characters ((uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
+- preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
 - use '_' to delimit parts of names *if* these are not already truncated in the original name
-- for wrappers, interfaces *etc.* to other tool, use the pattern ``toolName {API|WS} (wrapperName)`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``abiview WS (husar)``.
+- for Web APIs and Web services, use the pattern ``toolName {API|WS} (wrapperName)`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``abiview WS (husar)``.
      
 .. note::
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
