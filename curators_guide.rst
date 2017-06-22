@@ -50,6 +50,8 @@ Consider the following *before* creating a bio.tools entry:
 4. Are there version-specific considerations?  As a rule, a bio.tools entry describes the *latest version* available at the time of registration and is updated, as required, for subsequent releases.  In exceptional circumstances, a new version with fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, follow carefully the guidelines for for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
 
 5. Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_ in detail (below).
+6. Read the general advice on `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_ before annotating `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and `outputs.
+
 
 .. attention::
    The current version of `bio.tools <https://bio.tools/>`_ allows version specification via a discrete component in the Tool Card URL, e.g. `https://bio.tools/tool/SignalP/version/4.1 <https://bio.tools/tool/SignalP/version/4.1>`_.  Version specification will be dropped in the next release, however, it will still be possible to specify the `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id16>`_ of a tool that is being described.
@@ -58,7 +60,6 @@ Tool functions
 ^^^^^^^^^^^^^^
 bio.tools uses a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
-See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
   
 .. image:: tool_function.PNG
 
