@@ -51,11 +51,12 @@ Consider the following *before* creating a bio.tools entry:
 
 5. Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_ in detail (below).
 
-
+.. attention::
+   The current version of `bio.tools <https://bio.tools/>`_ allows version specification via a discrete component in the Tool Card URL, e.g. `https://bio.tools/tool/SignalP/version/4.1 <https://bio.tools/tool/SignalP/version/4.1>`_.  Version specification will be dropped in the next release, however, it will still be possible to specify the `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id16>`_ of a tool that is being described.
 
 Tool functions
 ^^^^^^^^^^^^^^
-bio.tools usee a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+bio.tools uses a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
 See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
   
