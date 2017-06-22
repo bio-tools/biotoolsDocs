@@ -30,6 +30,9 @@ Individual  attribute guidelines are organised as follows:
 General guidelines
 ------------------
 
+Types of tool
+^^^^^^^^^^^^^
+
 Tool versions
 ^^^^^^^^^^^^^
 
