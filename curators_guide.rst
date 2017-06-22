@@ -11,18 +11,11 @@ Each bio.tools entry describes a discrete, but possibly complex software entity.
 
 The guidelines below are organised as follows:
 
+- `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ including general advice on <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_ EDAM annotations.  You should read these first of all.
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ on specific attributes defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ and organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
-- `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_ for EDAM annotations in general
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
 
-Each individual guideline is organised into sections as follows:
-
-- **Automatically verified** guidelines are checked as part of automated QC performed periodically by the bio.tools system
-- **Manually verified** guidelines are checked as part of manual QC performed by bio.tools admin
-- **Other** guidelines are not verified but should still be followed
-
 .. note::
-   - entries in which all attributes pass both the automated and manual checks will be labelled as "Verified" (and stamped with data of verification and last update).
    - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ `get in touch with us <mailto:registry-support@elixir-dk.org>`_ directly.
 
 General guidelines
@@ -60,11 +53,24 @@ EDAM annotations
    - **do not** use top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation"
 
 
+Attribute guidelines
+--------------------
+Each individual guideline is organised into sections as follows:
+
+- **Automatically verified** guidelines are checked as part of automated QC performed periodically by the bio.tools system
+- **Manually verified** guidelines are checked as part of manual QC performed by bio.tools admin
+- **Other** guidelines are not verified but should still be followed
+
+.. note::
+   - entries in which all attributes pass both the automated and manual checks will be labelled as "Verified" (and stamped with data of verification and last update).
+     
+
+     
 Summary
--------
+^^^^^^^
 
 Name
-^^^^
+....
 **Canonical software name assigned by the software developer or service provider**
 
 *e.g.* **"SignalP"**
