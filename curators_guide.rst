@@ -7,15 +7,15 @@ Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/i
 
 bio.tools includes all types of *bioinformatics tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function performing one or two closely related operatons, to complex, multimodal tools with many functions.  Tools may be available for immediate use as online services, or in a form which a user can download, install, configure and run themselves.
 
-Each bio.tools entry describes a discrete, but possibly complex software entity.  The `types of tools <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ define the technical scope of the registry, *i.e.* the types of software that may be included.
+Each bio.tools entry describes a discrete, but possibly complex software entity.  The `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ define the technical scope of the registry, *i.e.* the types of software that may be included.
 
 The guidelines below are organised as follows:
 
 - `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ including general advice on `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_.  You should read these first of all.
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ on specific attributes defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ and organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
-- `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst#tool-types>`_
+- `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_
 
-Individual  attribute guidelines are organised as follows:
+Individual attribute guidelines are organised as follows:
 
 - **Automatically verified** guidelines are checked as part of automated QC performed periodically by the bio.tools system
 - **Manually verified** guidelines are checked as part of manual QC performed by bio.tools admin
@@ -30,11 +30,20 @@ Individual  attribute guidelines are organised as follows:
 General guidelines
 ------------------
 
-Types of tool
-^^^^^^^^^^^^^
+Consider the following *before* creating a bio.tools entry:
 
-Tool versions
-^^^^^^^^^^^^^
+1. Review the list of `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ and identify those which are applicable: during registration, one or more tool types may be assigned reflecting different facets of the software.
+2. Decide whether one or more entries are required to describe the software.  
+   - tool collections including `workbenches <http://biotools.readthedocs.io/en/latest/curators_guide.html#workbench>`_ and other `suites <http://biotools.readthedocs.io/en/latest/curators_guide.html#suite>`_.
+   - tools made available under a variety of interfaces, including as `command-line tools <>`_ , `web APIs <>`_, `web services <>`_ and `web applications <>`_ are normally described by a single entry **unless** these forms have fundamental functional differences (operations inputs and outputs).  
+     
+   If in doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.>`_.  Multiple entries may be required:
+
+3. Is the software already registered?
+4. Are there version-specific concerns?
+5. What are the basic functions?
+6. How exactly to describe the functions?
+
 
 Tool functions and operations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
