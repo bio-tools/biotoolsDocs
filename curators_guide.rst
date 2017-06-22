@@ -25,7 +25,7 @@ Individual attribute guidelines are organised as follows:
    - entries in which all attributes pass both the automated and manual checks will be labelled as "Verified" (and stamped with data of verification and last update).
   
 .. note::
-   - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ `get in touch with us <mailto:registry-support@elixir-dk.org>`_ directly.
+   - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
 
 General guidelines
 ------------------
@@ -45,12 +45,12 @@ Consider the following *before* creating a bio.tools entry:
    - if you're the rightful owner of the entry (*i.e.* the tool developer or provider of an online service) then request ownership of it
    - otherwise, request edit rights 
 
-   Make these requests using the buttons at the bottom of the Tool Card). If you plant to register multiple entries *en masse*, discusss this first with `registry-support <mailto:registry-support@elixir-dk.org>`_.  
+   Make these requests using the buttons at the bottom of the Tool Card). If you plant to register multiple entries *en masse*, please discusss this first with `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.  
      
 4. Are there version-specific considerations?  As a rule, a bio.tools entry describes the *latest version* available at the time of registration and is updated, as required, for subsequent releases.  In exceptional circumstances, a new version with fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, follow carefully the guidelines for for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
 
 5. Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_ in detail (below).
-6. Read the general advice on `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_ before annotating `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and `outputs.
+6. Read the general advice on `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_ before annotating `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs.
 
 
 .. attention::
@@ -63,8 +63,10 @@ bio.tools uses a model of software (see Figure below) defined within `biotoolsSc
   
 .. image:: tool_function.PNG
 
-- as a first step, plan how to describe the software in bio.tools: you need to identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious, but if in any doubt mail the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
-- bear in mind that bio.tools aims to provide a coarse-grained description, *i.e.* you specify only the primary input(s), operation(s) and output(s).  For example, if annotating a sequence alignment tool, you would annotate sequences (input), sequence alignment (operation) and sequence alignment (output) but not the gap insertion and extension penalties, or other parameters.
+- plan how to describe the software: you need to identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious, but if in any doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
+- as a general rule, if the tool allows an option between doing one thing or another, then these should be described as distinct functions.  If in contrast a tool always does one or more things, then these should be annotated as distinct operations within a single function
+- bio.tools aims to provide a fairly coarse-grained description, *i.e.* you should specify the primary functions and operations, from a typical end-user perspective; if in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
+- this holds for input(s) and output(s) too.  For example, if annotating a sequence alignment tool, you would annotate sequences (input), and sequence alignment (output) but not the gap insertion and extension penalties, or other parameters.
 
 
 
