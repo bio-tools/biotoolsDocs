@@ -44,14 +44,17 @@ Consider the following *before* creating a bio.tools entry:
 
    - if you're the rightful owner of the entry (*e.g.* the developer of the tool or provider of an onliine service) then request ownership of it (using the button at the bottom of the Tool Card)
    - otherwise, request edit rights (again, via Tool Card)
-   
-4. Are there version-specific concerns?
-5. What are the basic functions?
-6. How exactly to describe the functions?
+
+   If you're considering registration of multiple entries *en masse*, then please discusss this first with `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.>`_.  
+     
+4. Are there version-specific considerations?  As a rule, a bio.tools entry describes the *latest version* available at the time of registration and is updated, as required, to keep this up-to-date with subsequent releases.  In exceptional circumstances, a new version provides fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, consider carefully the guidelines for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
+
+5. Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_ in detail
 
 
-Tool functions and operations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Tool functions
+^^^^^^^^^^^^^^
 bio.tools usee a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
 See the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
