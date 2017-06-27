@@ -68,6 +68,7 @@ bio.tools uses a model of software (see below) defined within `biotoolsSchema <h
 .. image:: tool_function.PNG
 
 Plan how how to describe the software:
+
 - identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious.  If in any doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 - as a general rule, if the tool allows an option between doing one thing or another, then annotate these as distinct functions.  If in contrast a tool always does one or more things, then annotate these as distinct operations within a single function
 - bio.tools aims for fairly coarse-grained description, *i.e.* specify the primary functions and operations, from a typical end-user perspective; if in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
