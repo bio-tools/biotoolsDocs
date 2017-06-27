@@ -20,6 +20,9 @@ Contents:
    Editors Guide <editors_guide>
    Documentors Guide <documentors_guide>
    API reference <api_reference>
+   API reference - development <api_reference_dev>
+   API Attribute model - development <api_attribute_model_dev>
+   Contributors Guide <contributors_guide>
    Hangouts <hangouts>
    Changelog and roadmap <changelog_roadmap>
    Governance <governance>
