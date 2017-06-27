@@ -1,17 +1,15 @@
 Curators Guide
 ==============
 
-**UNDER CONSTRUCTION**: guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines, will appear here. 
+**UNDER CONSTRUCTION**: guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines.  Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
 
-Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
+bio.tools includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which a user can download, install, configure and run themselves.
 
-bio.tools includes all types of *bioinformatics tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function performing one or two closely related operatons, to complex, multimodal tools with many functions.  Tools may be available for immediate use as online services, or in a form which a user can download, install, configure and run themselves.
+Each bio.tools entry describes a discrete tool.  The scope, i.e. the `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
-Each bio.tools entry describes a discrete, but possibly complex software entity.  The `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ define the technical scope of the registry, *i.e.* the types of software that may be included.
+Guidelines below include:
 
-The guidelines below are organised as follows:
-
-- `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ including general advice on `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_.  You should read these first of all.
+- `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ including information about `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id12>`_ and `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_.  You should read these first of all.
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ on specific attributes defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ and organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_
 
@@ -21,36 +19,40 @@ Individual attribute guidelines are organised as follows:
 - **Manually verified** guidelines are checked as part of manual QC performed by bio.tools admin
 - **Tips and notes** are not verified
 
-.. important::
-   - entries in which all attributes pass both the automated and manual checks will be labelled as "Verified" (and stamped with data of verification and last update).
-  
 .. note::
+   - entries in which all attributes pass both the automated and manual checks will, in the future, be be labelled as "Verified" (and stamped with data of verification and last update).  For further information, see the emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools
    - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
-
+     
 General guidelines
 ------------------
 
 Consider the following *before* creating a bio.tools entry:
 
-1. Identify which `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ apply: one or more types may be assigned reflecting different facets of the software.  See the tool type-specific `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_.
-2. Decide whether one or more entries are required to describe the software.  
+1. **What tool types apply?**
+
+   - One or more `types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ may be assigned reflecting different facets of the software.
+   - See the tool type-specific `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_.
+2. **Is one or more entries required to describe the software?**
 
    - `workbenches <http://biotools.readthedocs.io/en/latest/curators_guide.html#workbench>`_ and other `suites <http://biotools.readthedocs.io/en/latest/curators_guide.html#suite>`_ often require multiple entries.
    - tools with multiple interfaces (*i.e.* where two or more of `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_ apply) are normally described by a single entry **unless** these interfaces provide fundamental functional differences (operations, inputs and outputs).  
      
    If in doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_.  
 
-3. Check whether software is already registered. If it is:
+3. **Is the software already registered?** If it is:
 
    - if you're the rightful owner of the entry (*i.e.* the tool developer or provider of an online service) then request ownership of it
    - otherwise, request edit rights 
 
    Make these requests using the buttons at the bottom of the Tool Card). If you plant to register multiple entries *en masse*, please discusss this first with `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.  
      
-4. Are there version-specific considerations?  As a rule, a bio.tools entry describes the *latest version* available at the time of registration and is updated, as required, for subsequent releases.  In exceptional circumstances, a new version with fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, follow carefully the guidelines for for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
+4. **Are there version-specific considerations?**
 
-5. Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_ in detail (below).
-6. Read the general advice on `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_ before annotating `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs.
+   - As a rule, a bio.tools entry describes the *latest version* available at the time of registration and is updated, as required, for subsequent releases.
+   - In exceptional circumstances, a new version with fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, follow carefully the guidelines for for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
+
+5. **Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_ in detail** (see below).
+6. **Read the general advice on `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_** before annotating `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs.
 
 
 .. attention::
