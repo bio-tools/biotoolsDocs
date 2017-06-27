@@ -62,15 +62,16 @@ Consider the following *before* creating a bio.tools entry:
 
 Tool functions
 ^^^^^^^^^^^^^^
-bio.tools uses a model of software (see Figure below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation(s) (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+bio.tools uses a model of software (see below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
   
 .. image:: tool_function.PNG
 
-- plan how to describe the software: you need to identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious, but if in any doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
-- as a general rule, if the tool allows an option between doing one thing or another, then these should be described as distinct functions.  If in contrast a tool always does one or more things, then these should be annotated as distinct operations within a single function
-- bio.tools aims to provide a fairly coarse-grained description, *i.e.* you should specify the primary functions and operations, from a typical end-user perspective; if in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
-- this holds for input(s) and output(s) too.  For example, if annotating a sequence alignment tool, you would annotate sequences (input), and sequence alignment (output) but not the gap insertion and extension penalties, or other parameters.
+Plan how how to describe the software:
+- identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious.  If in any doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
+- as a general rule, if the tool allows an option between doing one thing or another, then annotate these as distinct functions.  If in contrast a tool always does one or more things, then annotate these as distinct operations within a single function
+- bio.tools aims for fairly coarse-grained description, *i.e.* specify the primary functions and operations, from a typical end-user perspective; if in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
+- this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
 
 
 
