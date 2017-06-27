@@ -5,7 +5,7 @@ Curators Guide
 
 bio.tools includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which a user can download, install, configure and run themselves.
 
-Each bio.tools entry describes a discrete tool.  The scope, i.e. the `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+Each bio.tools entry describes a discrete tool.  The scope, i.e. the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
 Guidelines below include:
 
@@ -20,7 +20,7 @@ Individual attribute guidelines are organised as follows:
 - **Tips and notes** are not verified
 
 .. note::
-   - entries in which all attributes pass both the automated and manual checks will, in the future, be be labelled as "Verified" (and stamped with data of verification and last update).  For further information, see the emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools
+   - entries in which all attributes pass both the automated and manual checks will, in the future, be be labelled as "Verified" (and stamped with data of verification and last update).  For further information, see the emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools.
    - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
      
 General guidelines
@@ -28,18 +28,20 @@ General guidelines
 
 Consider the following *before* creating a bio.tools entry:
 
-1. **What tool types apply?**
-
-   - One or more `types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ may be assigned reflecting different facets of the software.
-   - See the tool type-specific `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_.
-2. **Is one or more entries required to describe the software?**
+1. **Are one or more entries required to describe the software?**
 
    - `workbenches <http://biotools.readthedocs.io/en/latest/curators_guide.html#workbench>`_ and other `suites <http://biotools.readthedocs.io/en/latest/curators_guide.html#suite>`_ often require multiple entries.
-   - tools with multiple interfaces (*i.e.* where two or more of `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_ apply) are normally described by a single entry **unless** these interfaces provide fundamental functional differences (operations, inputs and outputs).  
+   - tools with multiple interfaces (*e.g.* `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_) are normally described by a single entry **unless** these interfaces provide fundamental functional differences (operations, inputs and outputs).  
      
    If in doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_.  
 
-3. **Is the software already registered?** If it is:
+2. **What tool types apply?**
+
+   - one or more `types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ may be assigned in a single entry reflecting different facets of the software that are described in that entry.
+   - read the tool type-specific `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_.
+
+     
+3. **What if the software is already registered?** 
 
    - if you're the rightful owner of the entry (*i.e.* the tool developer or provider of an online service) then request ownership of it
    - otherwise, request edit rights 
@@ -48,15 +50,15 @@ Consider the following *before* creating a bio.tools entry:
      
 4. **Are there version-specific considerations?**
 
-   - As a rule, a bio.tools entry describes the *latest version* available at the time of registration and is updated, as required, for subsequent releases.
-   - In exceptional circumstances, a new version with fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, follow carefully the guidelines for for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
+   - as a rule, a bio.tools entry describes the *latest version* available at the time of registration and is updated, as required, for subsequent releases.
+   - in exceptional circumstances, a new version with fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, follow carefully the guidelines for for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
 
-5. **Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_ in detail** (see below).
-6. **Read the general advice on `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_** before annotating `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs.
+5. **Plan how to describe the tool functions in detail** (see `instructions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_ below)
+6. **Read the general EDAM annotations guidelines** (see `below <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`) before annotating `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs.
 
 
 .. attention::
-   The current version of `bio.tools <https://bio.tools/>`_ allows version specification via a discrete component in the Tool Card URL, e.g. `https://bio.tools/tool/SignalP/version/4.1 <https://bio.tools/tool/SignalP/version/4.1>`_.  Version specification will be dropped in the next release, however, it will still be possible to specify the `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id16>`_ of a tool that is being described.
+   The current version of `bio.tools <https://bio.tools/>`_ allows version specification via a discrete component in the Tool Card URL (e.g. https://bio.tools/tool/SignalP/version/4.1).  Version specification will be dropped in the next release (e.g.. https://dev.bio.tools/SignalP), however, it will still be possible to specify the `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id16>`_ of a tool that is being described.
 
 Tool functions
 ^^^^^^^^^^^^^^
