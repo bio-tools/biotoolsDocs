@@ -131,7 +131,7 @@ Name
 
 
 ID
-^^
+..
 **Unique ID of the tool that is assigned upon registration of the software in bio.tools**
 
 *e.g.* **signalp**
@@ -157,7 +157,7 @@ ID
 
 
 Version
-^^^^^^^
+.......
 **Version (typically a version number) of the software assigned by the software developer or service provider.**
 
 *e.g.* **4.1**
@@ -174,7 +174,7 @@ Version
   
   
 Description
-^^^^^^^^^^^
+...........
 **Short and concise textual description of the software function**
 
 *e.g.* **"Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms."**
@@ -198,7 +198,7 @@ Description
   
 
 Homepage
-^^^^^^^^
+........
 **Homepage of the software, or some URL that best serves this purpose**
 
 *e.g.* **http://cbs.dtu.dk/services/SignalP/**
@@ -209,7 +209,7 @@ Homepage
 .. attention:: **do not** specify a general URL such as an institutional homepage
 
 Collection
-^^^^^^^^^^
+..........
 **Unique ID of a collection that the software has been assigned to within bio.tools.**
 
 *e.g.* **CBS**
@@ -225,10 +225,10 @@ Collection
 
 
 Function
---------
+^^^^^^^^
 
 Operation
-^^^^^^^^^
+.........
 **The basic operation(s) performed by the software**
 
 *e.g.* **'Protein signal peptide detection' (http://edamontology.org/operation_0418)**
@@ -240,7 +240,7 @@ Operation
 
      
 Data type (input and output data)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.................................
 **Type of primary input / output data (if any)**
 
 *e.g.* **'Sequence' (http://edamontology.org/data_2044)**
@@ -249,7 +249,7 @@ Data type (input and output data)
    - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
 
 Data format (input and output data)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...................................
 **Allowed format(s) of primary inputs/outputs**
 
 *e.g.* **'FASTA' (http://edamontology.org/format_1929)**
@@ -261,16 +261,16 @@ Data format (input and output data)
    - many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.
      
 Comment
-^^^^^^^
+.......
 **Concise comment about this function, if not apparent from the software description and EDAM annotations.**
 
 *e.g.* ****
      
 Labels
-------
+^^^^^^
 
 Tool type
-^^^^^^^^^
+.........
 **The type of application software: a discrete software entity can have more than one type**
 
 *e.g.* **Command-line tool**, **Web application**, 
@@ -302,7 +302,7 @@ Tool type
 .. tip::  In cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable
 
 Topic
-^^^^^
+.....
 **General scientific domain the software serves or other general category**
 
 *e.g.* 'Protein sites, features and motifs' (http://edamontology.org/topic_3510)
@@ -312,7 +312,7 @@ Topic
    - see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
 Operating system
-^^^^^^^^^^^^^^^^
+................
 **The operating system supported by a downloadable software package.**
 
 *e.g.* **Linux**
@@ -320,7 +320,7 @@ Operating system
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
 
 Language
-^^^^^^^^
+........
 **Name of programming language the software source code was written in.**
 
 *e.g.* ****
@@ -328,7 +328,7 @@ Language
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
   
 Maturity
-^^^^^^^^
+........
 **How mature the software product is.**
 
 *e.g.* **Mature**
@@ -345,7 +345,7 @@ Maturity
    
   
 License
-^^^^^^^
+.......
 **Software or data usage license.**
 
 *e.g.* **CBS License**
@@ -368,7 +368,7 @@ License
 
    
 Cost
-^^^^
+....
 **Monetary cost of acquiring the software.**
 
 *e.g.* **Free of charge (with retritions)**
@@ -384,7 +384,7 @@ Cost
    "Commercial", "Software which you have to pay to access."
   
 Accessibility
-^^^^^^^^^^^^^
+.............
 **Whether the software is freely available for use.**
 
 *e.g.* **Open access**
@@ -401,7 +401,7 @@ Accessibility
    "Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
 Contact
--------
+^^^^^^^
 **Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.**
 
 - this is the first port-of-call when seeking help with the software
@@ -410,7 +410,7 @@ Contact
 
   
 Name
-^^^^
+....
 **Name of the primary contact.**
 
 *e.g.* **Henrik Nielsen**
@@ -419,7 +419,7 @@ Name
 - specify a name of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
 
 Email
-^^^^^
+.....
 **Email address of the primary contact.**
 
 *e.g.* **hnielsen@cbs.dtu.dk**
@@ -430,7 +430,7 @@ Email
   
   
 URL
-^^^
+...
 **URL of the primary contact.**
 
 *e.g.* ****
@@ -438,7 +438,7 @@ URL
 - the URL must resolve to a page of contact information
 
 Telephone number
-^^^^^^^^^^^^^^^^
+................
 **Telephone number of primary contact.**
 
 *e.g.* **+49-89-636-48018**
@@ -446,13 +446,13 @@ Telephone number
 - only give a telephone number if this is already publicly available
 
 Links
------
+^^^^^
 
 **Miscellaneous links for the software e.g. repository, issue tracker or mailing list.**
 
 
 URL
-^^^
+...
 **A link of some relevance to the software (URL).**
 
 *e.g.* ****
@@ -460,13 +460,13 @@ URL
 - the URL must resolve to an appropriate page
 
 Comment
-^^^^^^^
+.......
 **Comment about the link.**
 
 *e.g.* ****
 
 Link type
-^^^^^^^^^
+.........
 **The type of data, information or system that is obtained when the link is resolved.**
 
 *e.g.* **Repository**
@@ -487,11 +487,11 @@ Link type
 
 
 Download
---------
+^^^^^^^^
 **A link to a download for the software, e.g. source code, virtual machine image or container.**
 
 URL
-^^^
+...
 **Link to download (or repo providing a download) for the software.**
 
 *e.g.* ****
@@ -499,13 +499,13 @@ URL
 - the URL must resolve to an appropriate download
   
 Comment
-^^^^^^^
+.......
 **Comment about the download**
 
 *e.g.* ****
 
 Download type
-^^^^^^^^^^^^^
+.............
 **Type of download that is linked to.**
 
 *e.g.* ****
@@ -535,11 +535,11 @@ Download type
 
 											
 Documentation
--------------
+^^^^^^^^^^^^^
 **A link to documentation about the software e.g. manual, API specification or training material.**
 
 URL
-^^^
+...
 **Link to documentation on the web for the tool.**
 
 *e.g.* ****
@@ -547,13 +547,13 @@ URL
 - the URL must resolve to a page of documentation
   
 Comment
-^^^^^^^
+.......
 **Comment about the documentation.**
 
 *e.g.* ****
 
 Documentation type
-^^^^^^^^^^^^^^^^^^
+..................
 **Type of documentation that is linked to.**
 
 *e.g.* ****
@@ -572,7 +572,7 @@ Documentation type
 
 		
 Publications
-------------
+^^^^^^^^^^^^
 **Publications about the software**
 
 - the specified ID should resolve to a valid publication
@@ -581,25 +581,25 @@ Publications
    We are considering broadening the scope of what qualifies as a valid publication to include formal documents available via URL, such things as online manuals.  Obviously care is needed here to avoid misuse.
 
 PubMed Central ID
-^^^^^^^^^^^^^^^^^
+.................
 **PubMed Central Identifier (PMCID) of a publication about the software.**
 
 *e.g.* ****
 
 PubMed ID
-^^^^^^^^^
+.........
 **PubMed Identifier (PMID) of a publication about the software.**
 
 *e.g.* ****
 
 Digital Object ID
-^^^^^^^^^^^^^^^^^
+.................
 **Digital Object Identifier (DOI) of a publication about the software.**
 
 *e.g.* ****
 
 Publication type
-^^^^^^^^^^^^^^^^
+................
 **Type of publication.**
 
 *e.g.* ****
@@ -615,11 +615,11 @@ Publication type
 
 		
 Credits
--------
+^^^^^^^
 **An individual or organisation that should be credited for the software.**
 
 GRID ID
-^^^^^^^
+.......
 **Unique identifier (GRID ID) of an organisation that is credited.**
 
 *e.g.* **grid.5170.3**
@@ -627,7 +627,7 @@ GRID ID
 .. note:: Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.
 
 ORCID ID
-^^^^^^^^
+........
 **Unique identifier (ORCID iD) of a person that is credited.**
 
 *e.g.* **http://orcid.org/0000-0002-1825-0097**
@@ -635,19 +635,19 @@ ORCID ID
 .. note:: Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
 
 Name
-^^^^
+....
 **Name of the entity that is credited.**
 
 *e.g.* ****
 
 Email
-^^^^^
+.....
 **Email address of the entity that is credited.**
 
 *e.g.* ****
 
 URL
-^^^
+...
 **URL for the entity that is credited, e.g. homepage of an institute.**
 
 *e.g.* ****
@@ -655,7 +655,7 @@ URL
 - the URL must resolve to an appropriate page
 
 Entity type
-^^^^^^^^^^^
+...........
 **Type of entity that is credited.**
 
 *e.g.* **Person**
@@ -673,7 +673,7 @@ Entity type
 
 	    
 Role
-^^^^
+....
 **Role performed by entity that is credited.**
 
 *e.g.* **Developer**
@@ -693,7 +693,7 @@ Role
 
 .. note:: The current version of biotoolsSchema and bio.tools only supports one "role" assignation per credit; this will be changed to support multiple asignations (see https://github.com/bio-tools/biotoolsSchema/issues/80)
 Comment
-^^^^^^^
+.......
 **A comment about the credit.**
 
 *e.g.* **Wrote the user manual.**
