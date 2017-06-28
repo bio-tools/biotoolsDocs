@@ -86,12 +86,16 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
   - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
 
 - pick the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.
-- in case more than sibling term is applicable (*i.e.* terms under a common parent) than consider using parent term instead
+- in case more than sibling term is applicable (*i.e.* terms under a common parent) than consider using parent term instead.
 - if you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
 
 .. attention::
    - in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
    - **do not** use top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation"
+
+
+.. note::
+   It takes some time from requesting new EDAM terms for these to be supported in bio.tools.  In future, you'll be able to request terms directly via the bio.tools registration interface and these terms will become immediately available for use, albeit subject to approval and inclusion in EDAM.
 
 Attribute guidelines
 --------------------
@@ -107,12 +111,15 @@ Name
 
 **Manually verified**
 
-- use the name in common use, *i.e.* in the tool homepage and publication
-- use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``
-- preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``
+- use the name in common use, *i.e.* in the tool homepage and publication.
+- use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
+- preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
 - for database portals, use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (**do not** invent one!)  
 
-- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application over an existing tool, and also for for Web APIs (REST), Web services (SOAP+WSDL), use the pattern ``toolName {API|WS}{( wrapperName)}`` giving ``API`` for Web APIs, ``WS`` for Web services and where ``wrapperName`` is the name of some institute, workbench, collection *etc.*.  For example ``abiview WS (husar)``.  **Do not** misappropriate the original name!  See the description of `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_.
+- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application over an existing tool, and also for for Web APIs (REST), Web services (SOAP+WSDL), use the pattern:
+``toolName {API|WS}{( wrapperName)}``
+using ``API`` for Web APIs, ``WS`` for Web services and where ``wrapperName`` is the name of some institute, workbench, collection *etc.*.  For example `
+`abiview WS (husar)``.  **Do not** misappropriate the original name!  See the description of `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_.
 - **do not** include version information *unless* this is part of the name in common use in the tool homepage and publication.  In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), use the pattern ``toolname (version versionID)`` where ``versionID`` is the version number, *e.g.* ``FindPeaks (version 3.1)``
      
 
@@ -703,8 +710,8 @@ Comment
 .. attention:: **do not** merely duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
 
   
-Guidelines per tool type
-------------------------
+Tool type guidelines
+--------------------
 
 Command-line tool
 ^^^^^^^^^^^^^^^^^
