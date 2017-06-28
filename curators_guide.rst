@@ -255,10 +255,9 @@ Collection
 - keep it short and intuitive
 
 .. tip::
-   - collections may be used to group together entries which would otherwise be unrelated
-   - collections may be created for some other registry, catalogue, WIKI *etc.* where this tool is described, or for any arbitrary purpose.
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
+   - collections may be created for for any arbitrary purpose
      
-
 
 Function
 ^^^^^^^^
