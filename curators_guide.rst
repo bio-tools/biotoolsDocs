@@ -54,7 +54,7 @@ Consider the following *before* creating a bio.tools entry:
    - in exceptional circumstances, a new version with fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, follow carefully the guidelines for for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
 
 5. **Plan how to describe the tool functions in detail** (see `below <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_)
-6. **Read the general EDAM annotations guidelines** (see `below <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_) before annotating `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs.
+6. **Read the general EDAM annotations guidelines** (see `below <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_) before starting.
 
 
 .. attention::
@@ -78,14 +78,20 @@ Plan how how to describe the software:
 
 EDAM annotations
 ^^^^^^^^^^^^^^^^
+The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used to annotate applicable `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs.
 
-- if in any doubt as to meaning, refer to the concept definitions using:
+Follow these general guidelines:
+
+- if you're struggling to find the terms you need, or the meaning of a term is not obvious, search EDAM:
 
   - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
   - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
-  
-- use the most specific concept(s) that apply
-- in case more than sibling concept is applicable (*i.e.* concepts under a common parent) than consider using parent concept instead
+
+  The browsers have different functionalities.  Perform multiple searches using synonyms, alternative spellings etc.
+
+- pick the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.
+- in case more than sibling term is applicable (*i.e.* terms under a common parent) than consider using parent term instead
+- if you cannot find the right term, request it’s added to EDAM on `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
 
 .. attention::
    - in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
