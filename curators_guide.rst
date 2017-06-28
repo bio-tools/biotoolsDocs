@@ -107,6 +107,8 @@ Name
 
 *e.g.* **"SignalP"**
 
+.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
+
 **Manually verified**
 
 - use the name in common use, *i.e.* in the tool homepage and publication.
@@ -137,8 +139,6 @@ Name
    - be wary of names that are very long (>25 characters); in exceptional circumstances, if shortening the name is necessary, **do not** truncate within a word and ensure the name remains intuitive
    - to register versions of a tool as separate entries; see the notes on `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
   
-.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
-
 
 
 ID
@@ -147,22 +147,24 @@ ID
 
 *e.g.* **signalp**
 
-**Manually verified**
-- the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
-- **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
-
-**Automatically verified**
-- replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
-- preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
-- use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
-- for Web APIs and Web services, use the pattern ``toolName {API|WS} (wrapperName)`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``abiview WS (husar)``.
-     
 .. note::
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
    - once set, the ID can only be changed by bio.tools admin!
    - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
+**Manually verified**
+
+- the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
+- **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
+
+**Automatically verified**
+
+- replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
+- preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
+- use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
+- for Web APIs and Web services, use the pattern ``toolName {API|WS} (wrapperName)`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``abiview WS (husar)``.
+     
 
 
 Version
@@ -196,22 +198,26 @@ Description
 
 *e.g.* **"Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms."**
 
-- use declarative sentences (ideally a single sentence!) in the present tense
-- provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
-- begin with a capital letter and end with a '.': 
-
 .. note:: Description is minimum 10 and maximum 200 characters
 
-.. attention::
-   **do not** include any of the following:
+**Manually verified**
+	  
+- use declarative sentences (ideally a single sentence!) in the present tense
+- provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
+- ensure no ugly mid-word truncations
+- **do not** include any of the following:
+
+  - technical terms describing the type of software
+  - details about the software provider *e.g.* institute or person name
+  - statements about how good the software is (although mentions of applicability are OK)
+       
+**Automatically verified**
+
+- begin with a capital letter and end with a '.': 
+- **do not** include any of the following:
 
    - tool name
-   - technical terms describing the type of software
-   - details about the software provider *e.g.* institute or person name
    - URLs
-   - statements about how good the software is (although mentions of applicability are OK)
-
-   **do not** truncate longer descriptions within words!
   
 
 Homepage
