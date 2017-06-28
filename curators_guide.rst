@@ -116,11 +116,11 @@ Name
 - preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
 - for database portals, use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (**do not** invent one!)  
 
-- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application over an existing tool, and also for for Web APIs (REST), Web services (SOAP+WSDL), use the pattern:
+- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over an existing tool, and also for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), use the pattern:
 
   ``toolName {API|WS}{( wrapperName)}``
 
-  using ``API`` for Web APIs, ``WS`` for Web services and where ``wrapperName`` is the name of some institute, workbench, collection *etc.*.  For example ` `abiview WS (husar)``.  **Do not** misappropriate the original name!  See the description of `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_.
+  using ``API`` for Web APIs, ``WS`` for Web services and where ``wrapperName`` is the name of some institute, workbench, collection *etc.*.  For example ``abiview WS (husar)``.  **Do not** misappropriate the original name!  See the description of `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_.
 
 - **do not** include version information *unless* this is part of the name in common use in the tool homepage and publication.  In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), use the pattern
 
@@ -131,7 +131,7 @@ Name
 
 **Automatically verified**
 
-- for Web APIs (REST) and Web services (SOAP+WSDL) include ``API`` or ``WS`` respectively, as per the pattern ``toolName {API|WS} (wrapperName)`` (see above).
+- for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST) and `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL) include ``API`` or ``WS`` respectively, as per the pattern ``toolName {API|WS} (wrapperName)`` (see above).
 - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
      
 .. tip::
@@ -158,7 +158,7 @@ ID
 
 - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
 - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
-- use '_' to delimit parts of names *if* these are not already truncated in the original name
+- use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
 - for Web APIs and Web services, use the pattern ``toolName {API|WS} (wrapperName)`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``abiview WS (husar)``.
      
 .. note::
@@ -175,13 +175,16 @@ Version
 
 *e.g.* **4.1**
 
+- the version specified indicates which version of the tool is described by other attributes in the entry: **only** change the version
+  - if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
+  - or if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
 - specify exactly the version label in use
-- for database portals and web applications, only specify a version if this is used in the public name
+- for database portals and web applications, only specify a version if this is used in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
 
 .. note:: The version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
 
 .. attention::
-   - **do not** include labels such as "v", "ver", "version", "rel", "release" *etc.*
+   - **do not** include labels such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
    - **do not** assume version "1" in case the version number is not readily findable
 
   
