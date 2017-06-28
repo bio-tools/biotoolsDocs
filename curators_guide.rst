@@ -78,31 +78,29 @@ Plan how how to describe the software:
 
 EDAM annotations
 ^^^^^^^^^^^^^^^^
-The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used to annotate applicable `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs.
+The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used to annotate applicable `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs. Follow these general guidelines:
 
-Follow these general guidelines:
-
-- if you're struggling to find the terms you need, or the meaning of a term is not obvious, search EDAM:
+- if you're struggling to find the terms you need, or the meaning of a term is not obvious, search EDAM using the browsers below (they have different functionalities).  Multiple searches using synonyms, alternative spellings *etc.* can help.
 
   - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
   - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
 
-  The browsers have different functionalities.  Perform multiple searches using synonyms, alternative spellings etc.
-
 - pick the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.
 - in case more than sibling term is applicable (*i.e.* terms under a common parent) than consider using parent term instead
-- if you cannot find the right term, request it’s added to EDAM on `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
+- if you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
 
 .. attention::
    - in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
    - **do not** use top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation"
 
+Attribute guidelines
+--------------------
      
 Summary
--------
+^^^^^^^
 
 Name
-^^^^
+....
 **Canonical software name assigned by the software developer or service provider**
 
 *e.g.* **"SignalP"**
