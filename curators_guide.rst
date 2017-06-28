@@ -176,15 +176,19 @@ Version
 *e.g.* **4.1**
 
 - the version specified indicates which version of the tool is described by other attributes in the entry: **only** change the version
+
   - if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
   - or if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
+
 - specify exactly the version label in use
 - for database portals and web applications, only specify a version if this is used in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
 
 .. note:: The version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
 
-.. attention::
+**Manually verified**
    - **do not** include labels such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
+     
+.. attention::
    - **do not** assume version "1" in case the version number is not readily findable
 
   
