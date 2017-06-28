@@ -8,13 +8,11 @@ bio.tools includes all types of bioinformatics *tools* - application software wi
 Each bio.tools entry describes a discrete tool.  The scope, i.e. the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
 Guidelines below include:
-
 - `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ including information about `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id12>`_ and `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_.  You should read these first of all.
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ on specific attributes defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ and organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_
 
 Individual attribute guidelines are organised as follows:
-
 - **Automatically verified** guidelines are checked as part of automated QC performed periodically by the bio.tools system
 - **Manually verified** guidelines are checked as part of manual QC performed by bio.tools admin
 - **Tips and notes** are not verified
@@ -110,7 +108,6 @@ Name
 *e.g.* **"SignalP"**
 
 **Manually verified**
-
 - use the name in common use, *i.e.* in the tool homepage and publication.
 - use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
 - preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
@@ -130,7 +127,6 @@ Name
      
 
 **Automatically verified**
-
 - for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST) and `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL) include ``API`` or ``WS`` respectively, as per the pattern ``toolName {API|WS} (wrapperName)`` (see above).
 - **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
      
@@ -150,12 +146,10 @@ ID
 *e.g.* **signalp**
 
 **Manually verified**
-
 - the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
 - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
 
 **Automatically verified**
-
 - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
 - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
 - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
