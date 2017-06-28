@@ -233,7 +233,8 @@ Homepage
 .. note::
    A valid URL is specified.
 
-**Manually verified**   
+**Manually verified**
+
 - the URL should resolve to a web page of information specific to the software: **do not** specify a general URL such as an institutional homepage
 
 .. tip:: In case a tool lacks it's own website, URL of it's code repository is OK
@@ -245,12 +246,16 @@ Collection
 
 *e.g.* **CBS**
 
-- keep it short and intuitive
-  
 .. note::
    - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
-   - collections are used to group together entries which would otherwise be unrelated
+
+**Manually verified**
+
+- keep it short and intuitive
+
+.. tip::
+   - collections may be used to group together entries which would otherwise be unrelated
    - collections may be created for some other registry, catalogue, WIKI *etc.* where this tool is described, or for any arbitrary purpose.
      
 
