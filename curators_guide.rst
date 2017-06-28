@@ -8,11 +8,13 @@ bio.tools includes all types of bioinformatics *tools* - application software wi
 Each bio.tools entry describes a discrete tool.  The scope, i.e. the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
 Guidelines below include:
+
 - `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ including information about `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id12>`_ and `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_.  You should read these first of all.
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ on specific attributes defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ and organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
 - `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ specific to individual `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_
 
 Individual attribute guidelines are organised as follows:
+
 - **Automatically verified** guidelines are checked as part of automated QC performed periodically by the bio.tools system
 - **Manually verified** guidelines are checked as part of manual QC performed by bio.tools admin
 - **Tips and notes** are not verified
@@ -24,6 +26,8 @@ Individual attribute guidelines are organised as follows:
 General guidelines
 ------------------
 
+Before you start
+^^^^^^^^^^^^^^^^
 Consider the following *before* creating a bio.tools entry:
 
 1. **Are one or more entries required to describe the software?**
@@ -226,10 +230,14 @@ Homepage
 
 *e.g.* **http://cbs.dtu.dk/services/SignalP/**
 
-- the URL should resolve to a web page of information specific to the software
-- in case a tool lacks it's own website, URL of it's code repository is OK
+.. note::
+   A valid URL is specified.
 
-.. attention:: **do not** specify a general URL such as an institutional homepage
+**Manually verified**   
+- the URL should resolve to a web page of information specific to the software: **do not** specify a general URL such as an institutional homepage
+
+.. tip:: In case a tool lacks it's own website, URL of it's code repository is OK
+
 
 Collection
 ..........
