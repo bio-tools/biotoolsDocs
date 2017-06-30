@@ -11,7 +11,7 @@ A summary of planned technical development of bio.tools software.  Developments 
 
   - *content quality is now the priority aiming for 10,000 entries by Dec 2016*
   - clean-up of `toold names / IDs <https://biotools.sifterapp.com/issues/401>`_
-  - consolidation of `duplicates <https://biotools.sifterapp.com/issues/297>`_
+  - consolidation of `duplicates <https://biotools.sifterapp.com/issues/297>`_ (Q3-Q4)
   - systematic identification of rightful entry owners:  email requesting adoption of entries, request new tools (Q2-)
   - systematic `annotation of tool publication IDs <https://biotools.sifterapp.com/issues/224>`_
   - systematic improvement of entries following QC checks (Q2-) 
@@ -44,10 +44,14 @@ A summary of planned technical development of bio.tools software.  Developments 
   - M1.4 - `close-to-source annotation <https://biotools.sifterapp.com/issues/254>`_
   - M1.7.1 - `novel user interfaces <https://biotools.sifterapp.com/issues/255>`_
 
-    
+- *revisions in light of EXCELERATE midterm review tbd* -
     
 2017 Q4
 -------
+- curation
+
+  - planning of comprehensive coverage & systematic improvment in scientific areas via  `"thematic editors" <https://biotools.sifterapp.com/issues/374>`_
+
 - features / technical
 
   - improved search and filtering
@@ -58,7 +62,7 @@ A summary of planned technical development of bio.tools software.  Developments 
   - extra enhancements to content reporting (*e.g.* contributors by top-level domain, contributors by geographic location, contributing institutes *etc.*)
   - begin implementation of integration with BioShadock, BioContainers etc. (containers), IFB cloud (VMs, workflows)
 
-- planning of comprehensive coverage & systematic improvment in scientific areas via  `"thematic editors" <https://biotools.sifterapp.com/issues/374>`_
+
 
 
 
