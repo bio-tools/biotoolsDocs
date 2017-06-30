@@ -12,29 +12,28 @@ A summary of planned technical development of bio.tools software.  Developments 
   - *content quality is now the priority aiming for 10,000 entries by Dec 2016*
   - clean-up of `toold names / IDs <https://biotools.sifterapp.com/issues/401>`_
   - consolidation of `duplicates <https://biotools.sifterapp.com/issues/297>`_
+  - systematic identification of rightful entry owners:  email requesting adoption of entries, request new tools (Q2-)
   - systematic `annotation of tool publication IDs <https://biotools.sifterapp.com/issues/224>`_
   - systematic improvement of entries following QC checks (Q2-) 
-  - `NAR databases edition <https://biotools.sifterapp.com/issues/246>`_ coverage
-  - `Bioinformatics Links Directory - databases <https://biotools.sifterapp.com/issues/307>`_ coverage (Q2-Q3)
   - curation of tools from msutils.org to “gold-standard” via `studentship <https://biotools.sifterapp.com/issues/177>`_ (Q2-Q3)
-  - systematic identification of rightful entry owners:  email requesting adoption of entries, request new tools (Q2-)
+
+- features / technical
+
+  - extra enhancements to content reporting (total #annotations, #annotations vs. time, annotations by type: table, chart)
+  - indexing of whole site following clean-up of duplicates and tool IDs
+  - expose #citations, altmetric attention score 
+  - support for biotoolsSchema 2.0.0 XML format I/O
+  - (mock up) new Curator Tooling
+  - (prototype) Metrics Card with infographic showing compliance to information standard
+  - (scoping) implementation of integration with BioShadock, BioContainers etc. (containers), IFB cloud (VMs, workflows)  
+
 
 - docs
 
-  - finalise `entry quality metrics <https://biotools.sifterapp.com/issues/243>`_ : see the `emerging standard <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst>`_ and join the `discussion on GitHub <https://github.com/bio-tools/biotoolsSchema/issues/77>`_.
+  - finalise `entry quality metrics <https://biotools.sifterapp.com/issues/243>`_ : see the `emerging standard <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst>`_ and join the `discussion on GitHub <https://github.com/bio-tools/biotoolsSchema/issues/77>`_
   - finalise the `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html”>`_
-  - update `API documentation <http://biotools.readthedocs.io/en/latest/api_reference_dev.html>`_ including attributes `JSON model <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html>`_
+
     
-- features / technical
-
-  - Metrics Card with infographic showing compliance to information standard (prototype)
-  - extra enhancements to content reporting (total #annotations, #annotations vs. time, annotations by type (table, chart)
-  - support for biotoolsSchema 2.0.0 XML format I/O
-  - indexing of whole site following clean-up of duplicates and tool IDs
-  - expose #citations, altmetric attention score 
-  - mock-up of new Curator Tooling
-  - scoping implementation of integration with BioShadock, BioContainers etc. (containers), IFB cloud (VMs, workflows)  
-
 - ELIXIR EXCELERATE WP1 Deliverables & milestones
 
   - D1.2 - `registry release <https://biotools.sifterapp.com/issues/257>`_
@@ -45,38 +44,42 @@ A summary of planned technical development of bio.tools software.  Developments 
   - M1.4 - `close-to-source annotation <https://biotools.sifterapp.com/issues/254>`_
   - M1.7.1 - `novel user interfaces <https://biotools.sifterapp.com/issues/255>`_
 
-- begin implementation of integration with BioShadock, BioContainers etc. (containers), IFB cloud (VMs, workflows)
     
     
 2017 Q4
 -------
 - features / technical
 
-  - "tools similar to these" feature (using EDAM annotations)
   - improved search and filtering
   - drop mandatory requirement for email or URL in credits (non-breaking change in biotoolsSchema 2.1.0 and UI)
-  - "drive-by curation" (suggestions from non-account holders)
   - sorting on #citations, altmetric score, publication date *etc.*
   - graph of #citations, altmetric score *etc.* by time
   - expose publication metadata, *e.g.* copy-pastable citation information
   - extra enhancements to content reporting (*e.g.* contributors by top-level domain, contributors by geographic location, contributing institutes *etc.*)
-- planning of comprehensive coverage & systematic improvment in scientific areas
+  - begin implementation of integration with BioShadock, BioContainers etc. (containers), IFB cloud (VMs, workflows)
 
-  - assignment of thematic editors responsible for overseeing content coverage & quality
-  - thematic workshops (EDAM developments, tool lists, visual workflows)
-  - refactoring existing content for consistency & other improvment
-  - *provisional on additional funding*    
+- planning of comprehensive coverage & systematic improvment in scientific areas via  `"thematic editors" <https://biotools.sifterapp.com/issues/374>`_
 
-- evaluate user impact
-
-  - assess tool discoverability (tool cards, tool homepage URLs) via Google
-  - add BioSchema Tool Specification mark-up, assess impact on presentation of search results
-  - provide metadata as service (tbd)  
 
 
 
 Beyond 2017
 -----------
+
+- features / technical
+
+  - "tools similar to these" feature (using EDAM annotations)
+  - "drive-by curation" (suggestions from non-account holders)
+  - add BioSchema Tool Specification mark-up, assess impact on presentation of search results
+  - provide metadata as service (tbd)  
+
+- evaluate user impact
+
+  - assess tool discoverability (tool cards, tool homepage URLs) via Google
+
+
+
+  
 - M1.1.3 EDAM release with coverage of different resource categories and RIs. Implementation of tooling for sustainable community development
 - M1.5 Good Practice Guidelines
 - M1.6 Implementation of resource metadata catalogue & evaluation of impact of Resource Synergy Meeting series
@@ -124,6 +127,9 @@ A summary of technical developments of bio.tools software to date.
   - improved search and filtering
   - proof-of-principle of `interactive diagrams <https://biotools.sifterapp.com/issues/65>`_ of published workflows / tool-specific diagrams (https://bio.tools/worklows)
 
+- docs
+
+  - update `API documentation <http://biotools.readthedocs.io/en/latest/api_reference_dev.html>`_ including attributes `JSON model <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html>`_
      
      
 April 2017
