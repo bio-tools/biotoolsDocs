@@ -61,10 +61,8 @@ A summary of planned technical development of bio.tools software.  Developments 
   - expose publication metadata, *e.g.* copy-pastable citation information
   - extra enhancements to content reporting (*e.g.* contributors by top-level domain, contributors by geographic location, contributing institutes *etc.*)
   - begin implementation of integration with BioShadock, BioContainers etc. (containers), IFB cloud (VMs, workflows)
-
-
-
-
+  - begin implementation of new bio.tools UI including Tool Annotator and icon-based navigation
+  - begin implementation of Curator Tooling
 
 
 Beyond 2017
@@ -124,9 +122,9 @@ A summary of technical developments of bio.tools software to date.
 - features / technical
   
   - SEO in preparation for indexing the whole site
-  - scoping the `Icon / topic-based view <https://biotools.sifterapp.com/issues/172>`_ for browsing bio.tools
-  - prototype `Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
-  - mock-up of new tools UI (splash page, sub-pages, summary view, grid view)
+  - (scoping) `Icon / topic-based view <https://biotools.sifterapp.com/issues/172>`_ for browsing bio.tools
+  - (prototype) `Tool Annotator <https://biotools.sifterapp.com/issues/211>`_ UI
+  - (mock-up) of new bio.tools UI (splash page, sub-pages, summary view, grid view)
   - "disown" entry button (My Profile)
   - improved search and filtering
   - proof-of-principle of `interactive diagrams <https://biotools.sifterapp.com/issues/65>`_ of published workflows / tool-specific diagrams (https://bio.tools/worklows)
