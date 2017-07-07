@@ -48,7 +48,7 @@ Consider the following *before* creating a bio.tools entry:
    - if you're the rightful owner of the entry (*i.e.* the tool developer or provider of an online service) then request ownership of it
    - otherwise, request edit rights 
 
-   Make these requests using the buttons at the bottom of the Tool Card). If you plant to register multiple entries *en masse*, please discusss this first with `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.  
+   Make these requests using the buttons at the bottom of the Tool Card). If you plan to register multiple entries *en masse*, please discuss this first with `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.  
      
 4. **Are there version-specific considerations?**
 
