@@ -675,6 +675,8 @@ Name
 
 *e.g.* ****
 
+* **do not** give a redirect, *e.g.* "See publication" or any other information than the name of the entity that is credited.
+
 Email
 .....
 **Email address of the entity that is credited.**
