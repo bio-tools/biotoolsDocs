@@ -120,17 +120,22 @@ Name
 - preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
 - for database portals, use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (**do not** invent one!)  
 
-- for software that essentially just wraps or provides an interface to some other tool, *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over an existing tool, and also for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), use the pattern:
+- for software that essentially just wraps or provides an interface to some other tool (possibly from some collection), *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over a command-line tool from the EMBOSS suite, and also for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), use the pattern:
 
-  ``toolName {API|WS}{( wrapperName)}``
+  ``{collectionName} toolName {API|WS}{( providerName)}``
 
-  using ``API`` for Web APIs, ``WS`` for Web services and where ``wrapperName`` is the name of some institute, workbench, collection *etc.*.  For example ``abiview WS (husar)``.  **Do not** misappropriate the original name!  See the description of `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_.
+  * using ``API`` for Web APIs, ``WS`` for Web services
+  * ``collectionName`` is the name of suite, workbench or other collection
+  * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id17>`_ of the tool that is wrapped
+  * ``providerName`` is the name of the institute providing the service
 
-- **do not** include version information *unless* this is part of the name in common use in the tool homepage and publication.  In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), use the pattern
+  For example ``EMBOSS water API (ebi)``.  **Do not** misappropriate the original name!  See the description of `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_.
 
-  ``toolname (version versionID)``
+- **do not** include version information *unless* this is part of the name in common use in the tool homepage and publication.  In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), substitute for ``toolName`` in the patter above:
 
-  where ``versionID`` is the version number, *e.g.* ``FindPeaks (version 3.1)``
+  ``toolname versionID``
+
+  where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``
      
 
 **Automatically verified**
@@ -167,7 +172,7 @@ ID
 - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
 - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
 - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
-- for Web APIs and Web services, use the pattern ``toolName_{API|WS}_wrapperName)`` as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``abiview_WS_husar``.
+- for Web APIs and Web services, use the pattern as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``EMBOSS_water_API_ebi``.
      
 
 
