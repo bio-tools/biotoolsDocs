@@ -24,7 +24,7 @@ Contents:
    API Attribute model - development <api_attribute_model_dev>
    Contributors Guide <contributors_guide>
    Hangouts <hangouts>
-   Changelog and roadmap <changelog_roadmap>
+   Roadmap <roadmap>
    Governance <governance>
    Contributors <contributors>
    Studentships <studentships>
