@@ -37,11 +37,11 @@ A three day workshop organised by ELIXIR-EE and partners aiming to implement a p
 
 ------
 
-**The future of proteomics in ELIXIR (Workshop, March 1-2 2017, Tübingen, DE)**
+**Workshop: The future of proteomics in ELIXIR (Mar 1-2 2017, Tübingen, DE)**
 
 https://www.elixir-europe.org/events/strategic-workshop-future-proteomics-elixir
 
-Focussed on creating a white paper to discuss the common infrastructures and services needed by the European proteomics community.
+Focussed on creating a white paper to discuss the common infrastructures and services needed by the European proteomics community.  bio.tools and EDAM were discussed.
 
 ------
 
@@ -52,7 +52,8 @@ The forum was aimed at the companies that use public bioinformatics resources in
 https://www.elixir-europe.org/events/elixir-innovation-and-sme-forum%3A-genomics-and-health-global-resources-local-innovation
 
 ------
-**bio.tools & EDAM @ 2nd NEUBIAS taggathon (Workshop, Feb 13-15 2016, Oeiras near Lisbon, PT)**
+
+**Workshop: bio.tools & EDAM @ 2nd NEUBIAS taggathon (Feb 13-15 2016, Oeiras near Lisbon, PT)**
 
 http://eubias.org/NEUBIAS/what-is-taggathon/taggathon-2-gulbenkian-oeiras/
 
