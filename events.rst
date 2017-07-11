@@ -108,7 +108,7 @@ ELIXIR-DK will have a booth at ECCB and will showcase the work of the Danish ELI
 
 **Conference: ELIXIR-DK @ 2nd Annual Danish Bioinformatics Conference (Aug 25-26 2016, Odense, DK)**
 
-http://www.eccb2016.org/ 
+http://dandrite.au.dk/fileadmin/dandrite/Events/The_2nd_Annual_Danish_Bioinformatics_Conference_ophaeng.pdf
 
 ELIXIR-DK will have a booth at DKBC and will showcase the work of the Danish ELIXIR node including the ELIXIR Tools & Data Services Registry (dev.bio.tools) and the EDAM ontology.
 
