@@ -45,7 +45,10 @@ Focussed on creating a white paper to discuss the common infrastructures and ser
 
 ------
 
-**ELIXIR discovery portals (Workshop, ELIXIR Innovation and SME Forum: Genomics and Health - Global resources for local Innovation, Feb 27-28 2017, Helsinki, FI)**
+**Workshop: ELIXIR discovery portals (ELIXIR Innovation and SME Forum: Genomics and Health - Global resources for local Innovation, Feb 27-28 2017, Helsinki, FI)**
+
+The forum was aimed at the companies that use public bioinformatics resources in their business and would like to further streamline this process.  The event was jointly organized by ELIXIR Finland, ELIXIR Estonia and the ELIXIR Hub.  bio.tools was presented.
+
 https://www.elixir-europe.org/events/elixir-innovation-and-sme-forum%3A-genomics-and-health-global-resources-local-innovation
 
 ------
