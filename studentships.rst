@@ -54,7 +54,7 @@ See `update on progress <http://chem-bla-ics.blogspot.nl/2017/03/openapi-to-biot
 
 **Annotating software tools in a scientific context**
 
-STATUS: Approved for funding.  Students needed.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/literature_integration.pdf>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent3>`_. 
+STATUS: Funded and ongoing (3 students).  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/literature_integration.pdf>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent3>`_. 
 
 -----
 
