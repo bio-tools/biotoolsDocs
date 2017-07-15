@@ -22,16 +22,15 @@ Contents:
    API reference <api_reference>
    API reference - development <api_reference_dev>
    API Attribute model - development <api_attribute_model_dev>
-   Contributors Guide <contributors_guide>
    Hangouts <hangouts>
    Roadmap <roadmap>
-   Governance <governance>
-   Contributors <contributors>
    Studentships <studentships>
    GitHub projects <github_projects>
    Events <events>
-   Publications <publications>
+   Governance <governance>
+   Contributors <contributors>
    License <license>
+   Publications <publications>
    Support <support>
 
 ..  Status reports <status_reports>
