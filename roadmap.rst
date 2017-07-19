@@ -16,6 +16,6 @@ https://biotools.sifterapp.com/projects/39459/issues?srt=milestone
 **bio.tools content roadmap**
 https://biotools.sifterapp.com/projects/39503/issues?srt=milestone
 
-Please join the discussion in sifter and GitHub.  The bio.tools core team is tiny!  New features take a while - you're patience is appreciated!
+Please join the discussion in sifter and GitHub.  The bio.tools core team is tiny, so bug fixes, new features *etc.* take a while - you're patience is appreciated!
 
 For a sifter account mail `Jon Ison <mailto:jison@bioinformatics.dtu.dk>`_.  
