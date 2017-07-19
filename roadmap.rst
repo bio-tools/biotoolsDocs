@@ -10,11 +10,8 @@ All developments of bio.tools software and content are informed by:
 
 For a summary of planned developments including priorities and milestones see https://biotools.sifterapp.com/.
 
-**bio.tools features roadmap**
-https://biotools.sifterapp.com/projects/39459/issues?srt=milestone
-
-**bio.tools content roadmap**
-https://biotools.sifterapp.com/projects/39503/issues?srt=milestone
+* `bio.tools features roadmap <https://biotools.sifterapp.com/projects/39459/issues?srt=milestone>`_
+* `bio.tools content roadmap <https://biotools.sifterapp.com/projects/39503/issues?srt=milestone>`_
 
 Please join the discussion in sifter and GitHub.  The bio.tools core team is tiny, so bug fixes, new features *etc.* take a while - you're patience is appreciated!
 
