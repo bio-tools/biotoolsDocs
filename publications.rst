@@ -4,10 +4,10 @@ Publications
 Workbench integration
 ---------------------
 
-Hillion KH, Ison J and Ménager H. (2017). ToolDog – generating tool descriptors from the ELIXIR tool registry [version 1; not peer reviewed]. F1000Research 2017, 6:767 (poster).
+Hillion KH, Ison J and Ménager H. (2017). `ToolDog – generating tool descriptors from the ELIXIR tool registry <http://doi.org/10.7490/f1000research.1114125.1>`_  [version 1; not peer reviewed]. F1000Research 2017, 6:767 (poster).
 doi:`10.7490/f1000research.1114125.1 <http://doi.org/10.7490/f1000research.1114125.1>`_
 
-Doppelt-Azeroual, O., Mareuil, F., Deveaud, Kalaš, M., Soranzo, N., van den Beek, M., Grüning, B., Ison, J. and Ménager, H. (2017) *GigaScience*,  doi:`10.1093/gigascience/gix022 <https://doi.org/10.1093/gigascience/gix022>`_
+Doppelt-Azeroual, O., Mareuil, F., Deveaud, Kalaš, M., Soranzo, N., van den Beek, M., Grüning, B., Ison, J. and Ménager, H. (2017).  `ReGaTE: Registration of Galaxy Tools in Elixir <https://doi.org/10.1093/gigascience/gix022>`_  *GigaScience*,  doi:`10.1093/gigascience/gix022 <https://doi.org/10.1093/gigascience/gix022>`_
 
 Ménager, H., Kalaš, M., Rapacki, K. and Ison, J. (2016).  `Using registries to integrate bioinformatics tools and services into workbench environments <https://link.springer.com/article/10.1007/s10009-015-0392-z>`_  *Int J Softw Tools Technol Transfer*,  doi:`10.1007/s10009-015-0392-z <http://doi.org/10.1007/s10009-015-0392-z>`_
 
