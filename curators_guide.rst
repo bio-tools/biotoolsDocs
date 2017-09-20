@@ -178,9 +178,11 @@ ID
 
 *e.g.* **signalp**
 
+.. attention::
+   - the ID is set (and can only be changed) by bio.tools admin: if you're not a bio.tools admin you can ignore this section
+
 .. note::
    - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/signalp
-   - the ID is set (and can only be changed) by bio.tools admin
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
