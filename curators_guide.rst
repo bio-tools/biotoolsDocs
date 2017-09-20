@@ -137,32 +137,34 @@ Name
 
    - for `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ the pattern is
 
-     ``name (acronym)``
-
-     *e.g.* ``The Protein Databank (PDB)``.
+     ``name (acronym)``  *e.g.* ``The Protein Databank (PDB)``.
 
    - a common abbreviation can be given instead of an acronym: if there is no common acronym or abbreviation, omit this part (you **MUST NOT** invent one unless you happen to be the datbaase manager!)  
 
 .. note::  **Naming pattern**
     
-   - for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and software that essentially just wraps or provides an interface to some other tool (possibly from some collection), *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over a command-line tool from a suite, the pattern is:
+   - for tools that simply wrap or provides an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, the pattern is:
 
    ``{collectionName} toolName {API|WS}{( providerName)}``
 
    where:
   
-   * ``collectionName`` is the name of suite, workbench or other collection (if applicable)
+   * ``collectionName`` is the name of suite, workbench or other collection the underlying tool is from (if applicable)
    * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id17>`_ of the underlying tool
-   * using ``API`` for Web APIs, ``WS`` for Web services
+   * use ``API`` for Web APIs, ``WS`` for Web services
    * ``providerName`` is the name of the institute providing the service (if applicable)
 
    *e.g.* ``EMBOSS water API (ebi)``
 
-   In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), substitute for ``toolName`` in the pattern above:
+   In exceptional cases (*i.e.* when registering, as separate entries, `versions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ of a tool which have distrinct functionality), substitute for ``toolName`` in the pattern above:
+   
   ``toolname versionID``
 
-   where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``.  See the guidelines for `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
-     
+   where:
+
+   * ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``.
+
+   
 .. tip::
    - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
    - be wary of names that are very long (>25 characters); in exceptional circumstances, if shortening the name is necessary, you **MUST NOT** truncate the name in a way (e.g. within the middle of a word) that would render it meaningless or unintuitive
