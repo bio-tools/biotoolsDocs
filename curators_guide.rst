@@ -69,7 +69,7 @@ Consider the following *before* creating a bio.tools entry:
 
 
 .. attention::
-   The current version of `bio.tools <https://bio.tools/>`_ allows version specification via a discrete component in the Tool Card URL (e.g. https://bio.tools/tool/SignalP/version/4.1).  Version specification will be dropped in the next release (e.g.. https://dev.bio.tools/SignalP), however, it will still be possible to specify the `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id16>`_ of a tool that is being described.
+   The current version of `bio.tools <https://bio.tools/>`_ allows version specification via a discrete component in the Tool Card URL (e.g. https://bio.tools/SignalP/version/4.1).  Version specification will be dropped in the next release (e.g.. https://dev.bio.tools/SignalP), however, it will still be possible to specify the `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id16>`_ of a tool that is being described.
 
 Tool functions
 ^^^^^^^^^^^^^^
@@ -130,10 +130,10 @@ Name
 - **4.** you **MUST NOT** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* *unless* these are part of the common name
 - **5.** you **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
 - **6.** you **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  
-- **7.** you **SHOULD** follow the naming patterns (see notes below) where original tools are re-used 
+- **7.** you **SHOULD** follow the naming patterns (see below) where original tools are re-used 
 
 
-.. attention::  **Naming pattern**
+.. note::  **Naming pattern**
 
    - for `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ use the pattern:
 
@@ -143,7 +143,7 @@ Name
    - a common abbreviation can be given instead of an acronym: if no common acronym or abbreviation exists, omit this part (do not invent one!)
      
 
-.. attention::  **Naming pattern**
+.. note::  **Naming pattern**
     
    - for tools that simply wrap or provide an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and `web applications <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, use the pattern:
 
@@ -180,22 +180,20 @@ ID
 *e.g.* **signalp**
 
 .. note::
+   - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/signalp
+   - the ID is set (and can only be changed) by bio.tools admin
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
-   - once set, the ID can only be changed by bio.tools admin!
-   - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/tool/signalp
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
-**Manually verified guidelines**
 
-- the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
-- **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
-
-**Automatically verified guidelines**
-
-- replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
-- preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
-- use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
-- for Web APIs and Web services, use the pattern as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``EMBOSS_water_API_ebi``.
+.. important::
+   **Transforming name to toolID** (for bio.tools admin only)
+   - the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
+   - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
+   - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
+   - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
+   - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
+   - for Web APIs and Web services, use the pattern as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``EMBOSS_water_API_ebi``.
      
 
 
