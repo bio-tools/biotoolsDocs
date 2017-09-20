@@ -127,7 +127,8 @@ Name
 - **SHOULD** use the name in common use, *i.e.* in the tool homepage and publication.
 - **SHOULD** use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
 - **MUST** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
-- for database portals, **MUST** use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (you **MUST NOT** invent one unless you are the datbase manager!)  
+- you **MUST NOT** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* *unless* these are part of the common name
+  - for database portals, **MUST** use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (you **MUST NOT** invent one unless you are the datbase manager!)  
 
 - for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and software that essentially just wraps or provides an interface to some other tool (possibly from some collection), *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over a command-line tool from a suite, you **SHOULD** use the pattern:
 
@@ -140,27 +141,21 @@ where:
   * using ``API`` for Web APIs, ``WS`` for Web services
   * ``providerName`` is the name of the institute providing the service (if applicable)
 
-*e.g.* ``EMBOSS water API (ebi)``.
+*e.g.* ``EMBOSS water API (ebi)``
 
-You **MUST NOT** misappropriate the original name, for example simply using ``water`` for the example above would be wrong!  
-
+- you **MUST NOT** misappropriate the original name, for example simply using ``water`` for the example above would be wrong!  
 - you **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), substitute for ``toolName`` in the patter above:
 
   ``toolname versionID``
 
-where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``
-     
-
-**Automatically verified**
-
-- for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST) and `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL) include ``API`` or ``WS`` respectively, as per the pattern ``toolName {API|WS} (wrapperName)`` (see above).
-- **do not** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* unless these are part of the common name
+where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``.  See the guidelines for `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
      
 .. tip::
    - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
-   - be wary of names that are very long (>25 characters); in exceptional circumstances, if shortening the name is necessary, **do not** truncate within a word and ensure the name remains intuitive
-   - to register versions of a tool as separate entries; see the notes on `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
-  
+   - be wary of names that are very long (>25 characters); in exceptional circumstances, if shortening the name is necessary, you **MUST NOT** truncate the name in a way (e.g. within the middle of a word) that would render it meaningless or unintuitive
+
+.. note::
+   - the guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools.  Conformance to this standard (including passing automated and manual QC checks) will, in the future, be labelled within bio.tools.
 
 
 ID
