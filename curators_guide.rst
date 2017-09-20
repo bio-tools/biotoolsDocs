@@ -31,6 +31,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 .. note::
    - the guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools.  Conformance to this standard (including passing automated and manual QC checks) will, in the future, be labelled within bio.tools.
    - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
+
      
 General guidelines
 ------------------
@@ -167,10 +168,8 @@ Name
    
 .. tip::
    - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
-   - be wary of names that are very long (>25 characters); in exceptional circumstances, if shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
+   - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
-.. note::
-   - the guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools.  Conformance to this standard (including passing automated and manual QC checks) will, in the future, be labelled within bio.tools.
 
 
 ID
@@ -188,6 +187,7 @@ ID
 
 .. important::
    **Transforming name to toolID** (for bio.tools admin only)
+   
    - the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
    - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
    - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
