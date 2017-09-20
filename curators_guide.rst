@@ -188,14 +188,14 @@ ID
 
 
 .. important::
-   **Transforming name to toolID** (for bio.tools admin only)
+   **Transforming name to toolID** (bio.tools admin only)
    
    - the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
    - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
    - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
    - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
    - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
-   - for Web APIs and Web services, use the pattern as per guideline for `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``EMBOSS_water_API_ebi``.
+   - for Web APIs and Web services, follow the patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``EMBOSS_water_API_ebi``
      
 
 
