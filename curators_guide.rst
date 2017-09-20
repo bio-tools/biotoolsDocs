@@ -26,9 +26,10 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 - **"MUST NOT"** or **"SHALL NOT"** mean that the guideline is an absolute prohibition of the specification.
 - **"SHOULD"** or **"RECOMMENDED"** mean that there may exist valid reasons in particular circumstances to ignore a particular guideline, but the full implications must be understood and carefully weighed before doing so.
 - **"SHOULD NOT"** or the phrase **"NOT RECOMMENDED"** mean that there may exist valid reasons in particular circumstances when acting contrary to the geuideline is acceptable or even useful, but the full implications should be understood and the case carefully weighed before doing so.
-  
+- **"MAY** or **"OPTIONAL"** mean that the guideline is truly optional; you can choose to follow it or not.
+    
 .. note::
-   - the guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools.  Conformance to this standard (including passing automated and manual QC checks) will, in the future, be labelled within bio.tools.  
+   - the guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools.  Conformance to this standard (including passing automated and manual QC checks) will, in the future, be labelled within bio.tools.
    - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
      
 General guidelines
@@ -41,7 +42,7 @@ Consider the following *before* creating a bio.tools entry:
 1. **Are one or more entries required to describe the software?**
 
    - `workbenches <http://biotools.readthedocs.io/en/latest/curators_guide.html#workbench>`_ and other `suites <http://biotools.readthedocs.io/en/latest/curators_guide.html#suite>`_ often require multiple entries.
-   - tools with multiple interfaces (*e.g.* `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_) are normally described by a single entry **unless** these interfaces provide fundamental functional differences (operations, inputs and outputs).  
+   - tools with multiple interfaces (*e.g.* `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences (operations, inputs and outputs).  
      
    If in doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_.  
 
@@ -100,8 +101,8 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 - if you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
 
 .. attention::
-   - in cases of multiple annotations per field, **do not** specify both a term and it's parent or other ancestor
-   - **do not** use top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation"
+   - in cases of multiple annotations per field, you **MUST NOT** specify both a term and it's parent or other ancestor
+   - top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" **MUST NOT** be used
 
 
 .. note::
@@ -123,27 +124,31 @@ Name
 
 **Manually verified**
 
-- use the name in common use, *i.e.* in the tool homepage and publication.
-- use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
-- preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
-- for database portals, use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (**do not** invent one!)  
+- **SHOULD** use the name in common use, *i.e.* in the tool homepage and publication.
+- **SHOULD** use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
+- **MUST** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
+- for database portals, **MUST** use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (you **MUST NOT** invent one unless you are the datbase manager!)  
 
-- for software that essentially just wraps or provides an interface to some other tool (possibly from some collection), *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over a command-line tool from the EMBOSS suite, and also for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), use the pattern:
+- for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and software that essentially just wraps or provides an interface to some other tool (possibly from some collection), *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over a command-line tool from a suite, you **SHOULD** use the pattern:
 
   ``{collectionName} toolName {API|WS}{( providerName)}``
 
+where:
+  
+  * ``collectionName`` is the name of suite, workbench or other collection (if applicable)
+  * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id17>`_ of the underlying tool
   * using ``API`` for Web APIs, ``WS`` for Web services
-  * ``collectionName`` is the name of suite, workbench or other collection
-  * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id17>`_ of the tool that is wrapped
-  * ``providerName`` is the name of the institute providing the service
+  * ``providerName`` is the name of the institute providing the service (if applicable)
 
-  For example ``EMBOSS water API (ebi)``.  **Do not** misappropriate the original name!  See the description of `tool types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_.
+*e.g.* ``EMBOSS water API (ebi)``.
 
-- **do not** include version information *unless* this is part of the name in common use in the tool homepage and publication.  In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), substitute for ``toolName`` in the patter above:
+You **MUST NOT** misappropriate the original name, for example simply using ``water`` for the example above would be wrong!  
+
+- you **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), substitute for ``toolName`` in the patter above:
 
   ``toolname versionID``
 
-  where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``
+where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``
      
 
 **Automatically verified**
