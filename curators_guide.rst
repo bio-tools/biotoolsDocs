@@ -135,34 +135,33 @@ Name
 
 .. note::  **Naming pattern**
 
-   - for `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ the pattern is
+   - for `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ use the pattern:
 
-     ``name (acronym)``  *e.g.* ``The Protein Databank (PDB)``.
+     ``name (acronym)``
+     *e.g.* ``The Protein Databank (PDB)``
 
-   - a common abbreviation can be given instead of an acronym: if there is no common acronym or abbreviation, omit this part (you **MUST NOT** invent one unless you happen to be the datbaase manager!)  
+   - a common abbreviation can be given instead of an acronym: if no common acronym or abbreviation exists, omit this part (do not invent one!)
+     
 
 .. note::  **Naming pattern**
     
-   - for tools that simply wrap or provides an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, the pattern is:
+   - for tools that simply wrap or provide an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and `web applications <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, use the pattern:
 
    ``{collectionName} toolName {API|WS}{( providerName)}``
+   *e.g.* ``EMBOSS water API (ebi)``
 
    where:
   
    * ``collectionName`` is the name of suite, workbench or other collection the underlying tool is from (if applicable)
    * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id17>`_ of the underlying tool
-   * use ``API`` for Web APIs, ``WS`` for Web services
-   * ``providerName`` is the name of the institute providing the service (if applicable)
-
-   *e.g.* ``EMBOSS water API (ebi)``
+   * use ``API`` for Web APIs or ``WS`` for Web services
+   * ``providerName`` is the name of the institute providing the online service (if applicable)
 
    In exceptional cases (*i.e.* when registering, as separate entries, `versions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ of a tool which have distrinct functionality), substitute for ``toolName`` in the pattern above:
    
-  ``toolname versionID``
+   ``toolname versionID``
 
-   where:
-
-   * ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``.
+   where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``.
 
    
 .. tip::
