@@ -124,31 +124,44 @@ Name
 
 **Manually verified**
 
-- **SHOULD** use the name in common use, *i.e.* in the tool homepage and publication.
-- **SHOULD** use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
-- **MUST** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
-- you **MUST NOT** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* *unless* these are part of the common name
-  - for database portals, **MUST** use the pattern ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``.  A common abbreviation can be given instead of an acronym.  If there is no common acronym or abbreviation, omit this part (you **MUST NOT** invent one unless you are the datbase manager!)  
+- **1.** you **SHOULD** use the name in common use, *i.e.* in the tool homepage and publication.
+- **2.** you **SHOULD** use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
+- **3.** you **MUST** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
+- **4.** you **MUST NOT** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* *unless* these are part of the common name
+- **5.** you **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
+- **6.** you **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  
+- **7.** you **SHOULD** follow the naming patterns (see notes below) where original tools are re-used 
 
-- for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and software that essentially just wraps or provides an interface to some other tool (possibly from some collection), *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over a command-line tool from a suite, you **SHOULD** use the pattern:
 
-  ``{collectionName} toolName {API|WS}{( providerName)}``
+.. note::  **Naming pattern**
 
-where:
+   - for `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ the pattern is
+
+     ``name (acronym)``
+
+     *e.g.* ``The Protein Databank (PDB)``.
+
+   - a common abbreviation can be given instead of an acronym: if there is no common acronym or abbreviation, omit this part (you **MUST NOT** invent one unless you happen to be the datbaase manager!)  
+
+.. note::  **Naming pattern**
+    
+   - for `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and software that essentially just wraps or provides an interface to some other tool (possibly from some collection), *e.g.* a `web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over a command-line tool from a suite, the pattern is:
+
+   ``{collectionName} toolName {API|WS}{( providerName)}``
+
+   where:
   
-  * ``collectionName`` is the name of suite, workbench or other collection (if applicable)
-  * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id17>`_ of the underlying tool
-  * using ``API`` for Web APIs, ``WS`` for Web services
-  * ``providerName`` is the name of the institute providing the service (if applicable)
+   * ``collectionName`` is the name of suite, workbench or other collection (if applicable)
+   * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id17>`_ of the underlying tool
+   * using ``API`` for Web APIs, ``WS`` for Web services
+   * ``providerName`` is the name of the institute providing the service (if applicable)
 
-*e.g.* ``EMBOSS water API (ebi)``
+   *e.g.* ``EMBOSS water API (ebi)``
 
-- you **MUST NOT** misappropriate the original name, for example simply using ``water`` for the example above would be wrong!  
-- you **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), substitute for ``toolName`` in the patter above:
-
+   In exceptional cases (*i.e.* when registering, as separate entries, versions of a tool which have distrinct functionality), substitute for ``toolName`` in the pattern above:
   ``toolname versionID``
 
-where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``.  See the guidelines for `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
+   where ``versionID`` is the version number, *e.g.* ``FindPeaks 3.1``.  See the guidelines for `Tool version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_.
      
 .. tip::
    - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
