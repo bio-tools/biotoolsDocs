@@ -107,7 +107,7 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 
 
 .. note::
-   It takes some time from requesting new EDAM terms for these to be supported in bio.tools.  In future, you'll be able to request terms directly via the bio.tools registration interface and these terms will become immediately available for use, albeit subject to approval and inclusion in EDAM.
+   It currently takes some time from requesting new EDAM terms for these to be supported in bio.tools.  In future, you'll be able to request terms directly via the bio.tools registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and bio.tools.
 
 Attribute guidelines
 --------------------
@@ -125,13 +125,13 @@ Name
 
 **Manually verified guidelines**
 
-- **1.** you **SHOULD** use the name in common use, *i.e.* in the tool homepage and publication.
-- **2.** you **SHOULD** use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
-- **3.** you **MUST** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
-- **4.** you **MUST NOT** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* *unless* these are part of the common name
-- **5.** you **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
-- **6.** you **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  
-- **7.** you **SHOULD** follow the naming patterns (see below) where original tools are re-used 
+- **1.** **SHOULD** use the name in common use, *i.e.* in the tool homepage and publication.
+- **2.** **SHOULD** use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
+- **3.** **MUST** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
+- **4.** **MUST NOT** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* *unless* these are part of the common name
+- **5.** **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
+- **6.** **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  
+- **7.** **SHOULD** follow the naming patterns (see below) where original tools are re-used 
 
 
 .. note::  **Naming pattern**
@@ -209,17 +209,19 @@ Version
 
 **Manually verified guidelines**
 
-- specify exactly the version label in common use
-- for database portals and web applications, only specify a version if this is used in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
-- **do not** include labels such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
+- **1.** **MUST** specify exactly the public version label in common use
+- **2.** **MUST** correctly identify the tool version as described by the other attributes (see box below)
+- **3.** **MUST NOT** include tokens such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
+- **4.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
+
 
 .. important::
-   The version specified indicates which version of the tool is described by other attributes in the entry: **only** change the version
+   Care is needed to attributes correspond to the indicated tool version.  **Only** change the version:
 
      - if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
      - or if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
   
-.. attention::
+.. caution::
    - **do not** assume version "1" in case the version number is not readily findable
 
   
@@ -233,24 +235,21 @@ Description
 .. note:: Description is minimum 10 and maximum 200 characters
 
 **Manually verified guidelines**
-	  
-- use declarative sentences (ideally a single sentence!) in the present tense
-- provide only a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
-- ensure no ugly mid-word truncations
-- **do not** include any of the following:
 
-  - technical terms describing the type of software
+- **1.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
+- **2.** **SHOULD** only provide a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
+- **3.** **MUST NOT** include any of the following:
+
+  - technical terms describing the type (e.g. "command-line tool") of software
   - details about the software provider *e.g.* institute or person name
   - statements about how good the software is (although mentions of applicability are OK)
        
 **Automatically verified guidelines**
 
-- begin with a capital letter and end with a '.': 
-- **do not** include any of the following:
+- **4.** **MUST** begin with a capital letter and end with a '.': 
+- **5.** **MUST NOT** include URLs
+- **6.** **SHOULD NOT** include tool name
 
-   - tool name
-   - URLs
-  
 
 Homepage
 ........
@@ -263,7 +262,8 @@ Homepage
 
 **Manually verified guidelines**
 
-- the URL should resolve to a web page of information specific to the software: **do not** specify a general URL such as an institutional homepage
+- **1.** **SHOULD** resolve to a web page of information specific to the software
+- **2.** **MUST NOT** be a general URL such as an institutional homepage, unless nothing better is available
 
 .. tip:: In case a tool lacks it's own website, URL of it's code repository is OK
 
@@ -280,11 +280,11 @@ Collection
 
 **Manually verified guidelines**
 
-- keep it short and intuitive
+- **1.** **SHOUD** be short and intuitive
 
 .. tip::
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
    - collections may be created for for any arbitrary purpose
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
      
 
 Function
@@ -301,6 +301,21 @@ Operation
 .. note::
    - an EDAM Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
 
+**Manually verified guidelines**
+
+- **1.** **MUST** correctly identify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
+- **2.** **MUST** be correctly grouped into functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
+- **3.** **SHOULD** use the most specific term(s) available, unless multiple sibling terms are applicable (*i.e.* terms under a common parent) in which case the parent term may be applicable.  
+- **4.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
+
+**Automatically verified guidelines**
+- **5.** **MUST NOT** use vague terms as defined by EDAM (see note below).
+
+
+.. note::
+   **Vague terms**
+   Some higher-level concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in bio.tools. THey are defined in EDAM.owl via ``<uiTip>Not recommended for annotation in bio.tools.</uiTip>``
+  
      
 Data type (input and output data)
 .................................
