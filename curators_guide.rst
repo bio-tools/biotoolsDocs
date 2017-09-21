@@ -5,7 +5,7 @@ Curators Guide
 
 bio.tools includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which a user can download, install, configure and run themselves.
 
-Each bio.tools entry describes a discrete tool.  The scope, i.e. the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+Each bio.tools entry describes a discrete tool.  The scope, *i.e.* the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
 Guidelines below include:
 
@@ -16,8 +16,8 @@ Guidelines below include:
 Individual attribute guidelines are organised as follows:
 
 - **Automatically verified** guidelines are checked as part of automated QC performed periodically by the bio.tools system
-- **Manually verified** guidelines are checked as part of manual QC performed by bio.tools admin
-- **Tips and notes** are not verified
+- **Manually verified** guidelines are checked as part of manual QC performed by trusted curators (bio.tools admin, entry owners *etc.*)
+- Advice given in boxes (notes, tips, caution *etc.* are not verified
 
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in `RFC 2119 <http://www.ietf.org/rfc/rfc2119.txt>`_ as follows:
@@ -101,13 +101,20 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 - in case more than sibling term is applicable (*i.e.* terms under a common parent) than consider using parent term instead.
 - if you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
 
-.. attention::
-   - in cases of multiple annotations per field, you **MUST NOT** specify both a term and it's parent or other ancestor
-   - top-level EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" **MUST NOT** be used
+
+**Automatically verified guidelines**
+
+- **MUST NOT** use both a term and it's parent or other ancestor, when annotating a single attribute
+- **MUST NOT** use "organisational" EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" (see note below)
 
 
 .. note::
+   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in bio.tools. THey are defined in EDAM.owl via ``<uiTip>Not recommended for annotation in bio.tools.</uiTip>``
+      
+.. note::
    It currently takes some time from requesting new EDAM terms for these to be supported in bio.tools.  In future, you'll be able to request terms directly via the bio.tools registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and bio.tools.
+
+   
 
 Attribute guidelines
 --------------------
@@ -309,12 +316,11 @@ Operation
 - **4.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
 **Automatically verified guidelines**
-- **5.** **MUST NOT** use vague terms as defined by EDAM (see note below).
+
+- see `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_)
 
 
-.. note::
-   **Vague terms**
-   Some higher-level concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in bio.tools. THey are defined in EDAM.owl via ``<uiTip>Not recommended for annotation in bio.tools.</uiTip>``
+
   
      
 Data type (input and output data)
@@ -812,7 +818,7 @@ Ontology
   
 Plug-in
 ^^^^^^^
-**A software component encapsulating a set of related functions, which are not standalone, i.e. depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.**
+**A software component encapsulating a set of related functions, which are not standalone, *i.e.* depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.**
 
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isPluginFor`` relationship will allow specification of the tool to which the plug-in is applicable.
