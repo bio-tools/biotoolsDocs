@@ -92,28 +92,28 @@ EDAM annotations
 ^^^^^^^^^^^^^^^^
 The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used to annotate applicable `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs. Follow these general guidelines:
 
-- if you're struggling to find the terms you need, or the meaning of a term is not obvious, search EDAM using the browsers below (they have different functionalities).  Multiple searches using synonyms, alternative spellings *etc.* can help.
-
-  - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
-  - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
-
-- pick the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.
-- in case more than sibling term is applicable (*i.e.* terms under a common parent) than consider using parent term instead.
-- if you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
-
-
 **Automatically verified guidelines**
 
 - **MUST NOT** use both a term and it's parent or other ancestor, when annotating a single attribute
 - **MUST NOT** use "organisational" EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" (see note below)
 
 
-.. note::
-   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in bio.tools. THey are defined in EDAM.owl via ``<uiTip>Not recommended for annotation in bio.tools.</uiTip>``
-      
+.. tip::
+   Where possible, use the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.  In case more than sibling term is applicable (*i.e.* terms under a common parent) then consider using parent term instead.
+
+   If you're struggling to find the terms you need, or the meaning of a term is not obvious, search EDAM using the browsers below (they have different functionalities).  Multiple searches using synonyms, alternative spellings *etc.* can help.
+
+   - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
+   - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
+
+   If you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
+     
 .. note::
    It currently takes some time from requesting new EDAM terms for these to be supported in bio.tools.  In future, you'll be able to request terms directly via the bio.tools registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and bio.tools.
 
+.. note::
+   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in bio.tools. THey are defined in EDAM.owl via ``<uiTip>Not recommended for annotation in bio.tools.</uiTip>``
+      
    
 
 Attribute guidelines
