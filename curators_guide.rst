@@ -119,8 +119,8 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 Attribute guidelines
 --------------------
      
-Summary
-^^^^^^^
+Summary group
+^^^^^^^^^^^^^
 
 Name
 ....
@@ -294,8 +294,8 @@ Collection
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
      
 
-Function
-^^^^^^^^
+Function group
+^^^^^^^^^^^^^^
 
 Operation
 .........
@@ -350,8 +350,8 @@ Comment
 
 *e.g.* ****
      
-Labels
-^^^^^^
+Labels group
+^^^^^^^^^^^^
 
 Tool type
 .........
@@ -484,8 +484,8 @@ Accessibility
    "Proprietary", "Software for which the software's publisher or another person retains intellectual property rights \ usually copyright of the source code, but sometimes patent rights."
    "Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
-Contact
-^^^^^^^
+Contact group
+^^^^^^^^^^^^^
 **Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.**
 
 - this is the first port-of-call when seeking help with the software
@@ -529,8 +529,8 @@ Telephone number
 
 - only give a telephone number if this is already publicly available
 
-Links
-^^^^^
+Links group
+^^^^^^^^^^^
 
 **Miscellaneous links for the software e.g. repository, issue tracker or mailing list.**
 
@@ -570,8 +570,8 @@ Link type
 													
 
 
-Download
-^^^^^^^^
+Download group
+^^^^^^^^^^^^^^
 **A link to a download for the software, e.g. source code, virtual machine image or container.**
 
 URL
@@ -618,8 +618,8 @@ Download type
    "VM image", "Virtual machine (VM) image for the software."
 
 											
-Documentation
-^^^^^^^^^^^^^
+Documentation group
+^^^^^^^^^^^^^^^^^^^
 **A link to documentation about the software e.g. manual, API specification or training material.**
 
 URL
@@ -655,8 +655,8 @@ Documentation type
    "Other", "Some other type of documentation not listed in biotoolsSchema."
 
 		
-Publications
-^^^^^^^^^^^^
+Publications group
+^^^^^^^^^^^^^^^^^^
 **Publications about the software**
 
 - the specified ID should resolve to a valid publication
@@ -698,8 +698,8 @@ Publication type
    "Other", "A publication about the software but not the primary publication or a benchmark study."
 
 		
-Credits
-^^^^^^^
+Credits group
+^^^^^^^^^^^^^
 **An individual or organisation that should be credited for the software.**
 
 GRID ID
