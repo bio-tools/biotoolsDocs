@@ -94,13 +94,12 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 
 **Automatically verified guidelines** 
 
-- **MUST NOT** use both a term and it's parent or other ancestor, when annotating a single attribute
-- **MUST NOT** use "organisational" EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" (see note below)
+- **1.** **MUST NOT** use both a term and it's parent or other ancestor, when annotating a single attribute
+- **2.** **MUST NOT** use "organisational" EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" (see note below)
+- **3.** **SHOULD** use the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.  If multiple sibling terms are applicable (*i.e.* terms under a common parent), the parent term may be applicable.  
 
 
 .. tip::
-   Where possible, use the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.  In case more than sibling term is applicable (*i.e.* terms under a common parent) then consider using parent term instead.
-
    If you're struggling to find the terms you need, or the meaning of a term is not obvious, search EDAM using the browsers below (they have different functionalities).  Multiple searches using synonyms, alternative spellings *etc.* can help.
 
    - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
@@ -254,7 +253,7 @@ Description
        
 **Automatically verified guidelines**
 
-- **4.** **MUST** begin with a capital letter and end with a '.': 
+- **4.** **MUST** begin with a capital letter and end with a period ('.') 
 - **5.** **MUST NOT** include URLs
 - **6.** **SHOULD NOT** include tool name
 
@@ -313,25 +312,19 @@ Operation
 
 *e.g.* **'Protein signal peptide detection' (http://edamontology.org/operation_0418)**
 
-- specify the primary operations performed by this function of the tool
+**Manually verified guidelines**
 
-.. note::
+- **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
+- **2.** **MUST** be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
+- **3.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
+
+
+.. attention:: see the general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_)
+
+  .. note::
    **biotoolsSchema syntax**
 
    - an EDAM Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
-
-**Manually verified guidelines**
-
-- **1.** **MUST** correctly identify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
-- **2.** **MUST** be correctly grouped into functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
-- **3.** **SHOULD** use the most specific term(s) available, unless multiple sibling terms are applicable (*i.e.* terms under a common parent) in which case the parent term may be applicable.  
-- **4.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
-
-**Automatically verified guidelines**
-
-- see `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_)
-
-
 
   
      
@@ -340,6 +333,12 @@ Data type (input and output data)
 **Type of primary input / output data (if any)**
 
 *e.g.* **'Sequence' (http://edamontology.org/data_2044)**
+
+**Manually verified guidelines**
+
+- **1.** **MUST** correctly specify types of input or output data processed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
+- **2.** **MUST** be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
+- **3.** **SHOULD** describe all the primary inputs and outputs of the tool and **SHOULD NOT** describe secondary / minor inputs and outputs: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
 .. note::
    **biotoolsSchema syntax**
@@ -351,6 +350,12 @@ Data format (input and output data)
 **Allowed format(s) of primary inputs/outputs**
 
 *e.g.* **'FASTA' (http://edamontology.org/format_1929)**
+
+**Manually verified guidelines**
+
+- **1.** **MUST** correctly specify data formats supported on input or output by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
+- **2.** **MUST** be correctly associated with the data type of an input or output (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
+- **3.** **SHOULD** describe the primary data formats and **MAY** exhaustively describe *all* formats: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
 .. note::
    **biotoolsSchema syntax**
@@ -364,7 +369,17 @@ Comment
 .......
 **Concise comment about this function, if not apparent from the software description and EDAM annotations.**
 
-*e.g.* ****
+*e.g.* **This option is slower, but more precise.**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
      
 Labels group
 ^^^^^^^^^^^^
@@ -375,7 +390,15 @@ Tool type
 
 *e.g.* **Command-line tool**, **Web application**, 
 
-- assign all types (see below) that are applicable
+**Manually verified guidelines**
+
+- **1.** **MUST** assign all types (see below) that are applicable
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 
 .. csv-table::
    :header: "Type", "Description"
@@ -407,6 +430,15 @@ Topic
 
 *e.g.* 'Protein sites, features and motifs' (http://edamontology.org/topic_3510)
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 .. note::
    **biotoolsSchema syntax**
 
@@ -419,6 +451,15 @@ Operating system
 
 *e.g.* **Linux**
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
 
 Language
@@ -427,6 +468,15 @@ Language
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
   
 Maturity
@@ -434,6 +484,15 @@ Maturity
 **How mature the software product is.**
 
 *e.g.* **Mature**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 - assign the tag (see below) that is most applicable; if you are not sure, then do not complete this field
 
@@ -451,6 +510,15 @@ License
 **Software or data usage license.**
 
 *e.g.* **CBS License**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign the one that applies
 - use 'Proprietary' in case where some license (not defined in biotoolsSchema) exists and must be obtained from the provider before the software can be downloaded, used, owned *etc.*
@@ -477,6 +545,15 @@ Cost
 
 *e.g.* **Free of charge (with retritions)**
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 - apply the tag (see below) that is applicable
 
 .. csv-table::
@@ -492,6 +569,15 @@ Accessibility
 **Whether the software is freely available for use.**
 
 *e.g.* **Open access**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 - apply the tag (see below) that is applicable
 
@@ -519,6 +605,15 @@ Name
 
 *e.g.* **Henrik Nielsen**
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 - this is the name of the thing for which an email and/or URL is specified
 - specify a name of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
 
@@ -527,6 +622,15 @@ Email
 **Email address of the primary contact.**
 
 *e.g.* **hnielsen@cbs.dtu.dk**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 - only give an email if it already publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
 
@@ -539,6 +643,15 @@ URL
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 - the URL must resolve to a page of contact information
 
 Telephone number
@@ -546,6 +659,15 @@ Telephone number
 **Telephone number of primary contact.**
 
 *e.g.* **+49-89-636-48018**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 - only give a telephone number if this is already publicly available
 
@@ -561,19 +683,46 @@ URL
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 - the URL must resolve to an appropriate page
 
 Comment
 .......
+
 **Comment about the link.**
 
 *e.g.* ****
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 Link type
 .........
 **The type of data, information or system that is obtained when the link is resolved.**
 
 *e.g.* **Repository**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 .. csv-table::
    :header: "Link type", "Description"
@@ -600,6 +749,15 @@ URL
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 - the URL must resolve to an appropriate download
   
 Comment
@@ -608,11 +766,30 @@ Comment
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
+
 Download type
 .............
 **Type of download that is linked to.**
 
 *e.g.* ****
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 .. csv-table::
    :header: "Download type", "Description"
@@ -648,6 +825,15 @@ URL
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 - the URL must resolve to a page of documentation
   
 Comment
@@ -656,11 +842,29 @@ Comment
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 Documentation type
 ..................
 **Type of documentation that is linked to.**
 
 *e.g.* ****
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 .. csv-table::
    :header: "Documentation type", "Description"
@@ -690,11 +894,29 @@ PubMed Central ID
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 PubMed ID
 .........
 **PubMed Identifier (PMID) of a publication about the software.**
 
 *e.g.* ****
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 Digital Object ID
 .................
@@ -702,11 +924,29 @@ Digital Object ID
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 Publication type
 ................
 **Type of publication.**
 
 *e.g.* ****
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 .. csv-table::
    :header: "Download type", "Description"
@@ -728,6 +968,15 @@ GRID ID
 
 *e.g.* **grid.5170.3**
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 .. note:: Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.
 
 ORCID ID
@@ -735,6 +984,15 @@ ORCID ID
 **Unique identifier (ORCID iD) of a person that is credited.**
 
 *e.g.* **http://orcid.org/0000-0002-1825-0097**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 .. note:: Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
 
@@ -744,6 +1002,15 @@ Name
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 * **do not** give a redirect, *e.g.* "See publication" or any other information than the name of the entity that is credited.
 
 Email
@@ -752,11 +1019,29 @@ Email
 
 *e.g.* ****
 
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
+
 URL
 ...
 **URL for the entity that is credited, e.g. homepage of an institute.**
 
 *e.g.* ****
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 - the URL must resolve to an appropriate page
 
@@ -765,6 +1050,15 @@ Entity type
 **Type of entity that is credited.**
 
 *e.g.* **Person**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 .. csv-table::
    :header: "Entity type", "Description"
@@ -783,6 +1077,15 @@ Role
 **Role performed by entity that is credited.**
 
 *e.g.* **Developer**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 .. csv-table::
    :header: "Role", "Description"
@@ -803,6 +1106,15 @@ Comment
 **A comment about the credit.**
 
 *e.g.* **Wrote the user manual.**
+
+**Manually verified guidelines**
+
+- **1.** todo
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - todo
 
 - use this to elaborate on the contribution of the credited entity.
 
