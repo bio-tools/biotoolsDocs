@@ -140,8 +140,8 @@ Name
 .. note::
    **biotoolsSchema syntax**
 
-   The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses.
-
+   - the name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses.
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 .. note::  **Naming pattern**
 
@@ -223,7 +223,8 @@ Version
 .. note::
    **biotoolsSchema syntax**
 
-   The version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
+   - the version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 .. important::
    Care is needed to ensure annotations correspond to the indicated tool version.
@@ -260,8 +261,8 @@ Description
 .. note::
    **biotoolsSchema syntax**
 
-   Description is minimum 10 and maximum 200 characters.
-
+   - description is minimum 10 and maximum 1000 characters.
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
   
 Homepage
 ........
@@ -373,12 +374,12 @@ Comment
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **SHOULD NOT** duplicate online documentation;
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
      
 Labels group
@@ -612,7 +613,7 @@ Name
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 - this is the name of the thing for which an email and/or URL is specified
 - specify a name of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
@@ -630,7 +631,7 @@ Email
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 - only give an email if it already publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
 
@@ -667,7 +668,7 @@ Telephone number
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 - only give a telephone number if this is already publicly available
 
@@ -707,7 +708,7 @@ Comment
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 Link type
 .........
@@ -773,7 +774,7 @@ Comment
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 
 Download type
@@ -849,7 +850,7 @@ Comment
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 Documentation type
 ..................
@@ -1009,7 +1010,7 @@ Name
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 * **do not** give a redirect, *e.g.* "See publication" or any other information than the name of the entity that is credited.
 
@@ -1026,7 +1027,7 @@ Email
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 URL
 ...
@@ -1114,7 +1115,7 @@ Comment
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 - use this to elaborate on the contribution of the credited entity.
 
