@@ -141,7 +141,7 @@ Name
 .. note::
    **biotoolsSchema syntax**
 
-   The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
+   The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses.
 
 
 .. note::  **Naming pattern**
@@ -189,6 +189,8 @@ ID
    - the ID is set (and can only be changed) by bio.tools admin: if you're not a bio.tools admin you can ignore this section
 
 .. note::
+   **biotoolsSchema syntax**
+
    - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/signalp
    - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
@@ -212,8 +214,6 @@ Version
 
 *e.g.* **4.1**
 
-.. note:: The version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
-
 **Manually verified guidelines**
 
 - **1.** **MUST** specify exactly the public version label in common use
@@ -221,12 +221,15 @@ Version
 - **3.** **MUST NOT** include tokens such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
 - **4.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
 
+.. note::
+   **biotoolsSchema syntax**
+
+   The version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
 
 .. important::
-   Care is needed to attributes correspond to the indicated tool version.  **Only** change the version:
-
-     - if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
-     - or if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
+   Care is needed to ensure annotations correspond to the indicated tool version.
+     - **only** change the version if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
+     - if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
   
 .. caution::
    - **do not** assume version "1" in case the version number is not readily findable
@@ -238,8 +241,6 @@ Description
 **Short and concise textual description of the software function**
 
 *e.g.* **"Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms."**
-
-.. note:: Description is minimum 10 and maximum 200 characters
 
 **Manually verified guidelines**
 
@@ -257,7 +258,12 @@ Description
 - **5.** **MUST NOT** include URLs
 - **6.** **SHOULD NOT** include tool name
 
+.. note::
+   **biotoolsSchema syntax**
 
+   Description is minimum 10 and maximum 200 characters.
+
+  
 Homepage
 ........
 **Homepage of the software, or some URL that best serves this purpose**
@@ -265,6 +271,8 @@ Homepage
 *e.g.* **http://cbs.dtu.dk/services/SignalP/**
 
 .. note::
+   **biotoolsSchema syntax**
+
    A valid URL is specified.
 
 **Manually verified guidelines**
@@ -282,6 +290,8 @@ Collection
 *e.g.* **CBS**
 
 .. note::
+   **biotoolsSchema syntax**
+
    - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
@@ -306,6 +316,8 @@ Operation
 - specify the primary operations performed by this function of the tool
 
 .. note::
+   **biotoolsSchema syntax**
+
    - an EDAM Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
 
 **Manually verified guidelines**
@@ -330,6 +342,8 @@ Data type (input and output data)
 *e.g.* **'Sequence' (http://edamontology.org/data_2044)**
 
 .. note::
+   **biotoolsSchema syntax**
+
    - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
 
 Data format (input and output data)
@@ -339,6 +353,8 @@ Data format (input and output data)
 *e.g.* **'FASTA' (http://edamontology.org/format_1929)**
 
 .. note::
+   **biotoolsSchema syntax**
+
    - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
 
 .. tip::
@@ -392,6 +408,8 @@ Topic
 *e.g.* 'Protein sites, features and motifs' (http://edamontology.org/topic_3510)
 
 .. note::
+   **biotoolsSchema syntax**
+
    - an EDAM Topic concept URL and / or term are specified, *e.g.* "Proteomics", http://edamontology.org/topic_0121.
    - see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
@@ -439,6 +457,8 @@ License
 - use 'Other' in all other cases where a license exists but is not defined in biotoolsSchema (and consider requesting it's addition via `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/>`_)
   
 .. note::
+   **biotoolsSchema syntax**
+
    Most permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") may be attached to the bio.tools entry (see table below)
 
 .. csv-table::  Labelling based on license (future work)
