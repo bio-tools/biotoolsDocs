@@ -90,9 +90,9 @@ Plan how how to describe the software:
 
 EDAM annotations
 ^^^^^^^^^^^^^^^^
-The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used to annotate applicable `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs. Follow these general guidelines:
+The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used to annotate applicable `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs. The general guidelines below apply for all EDAM annotations.
 
-**Automatically verified guidelines**
+**Automatically verified guidelines** 
 
 - **MUST NOT** use both a term and it's parent or other ancestor, when annotating a single attribute
 - **MUST NOT** use "organisational" EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" (see note below)
@@ -128,8 +128,6 @@ Name
 
 *e.g.* **"SignalP"**
 
-.. note:: The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
-
 **Manually verified guidelines**
 
 - **1.** **SHOULD** use the name in common use, *i.e.* in the tool homepage and publication.
@@ -140,13 +138,16 @@ Name
 - **6.** **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  
 - **7.** **SHOULD** follow the naming patterns (see below) where original tools are re-used 
 
+.. note::
+   **biotoolsSchema syntax**
+   The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
+
 
 .. note::  **Naming pattern**
 
    - for `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ use the pattern:
 
-     ``name (acronym)``
-     *e.g.* ``The Protein Databank (PDB)``
+     ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``
 
    - a common abbreviation can be given instead of an acronym: if no common acronym or abbreviation exists, omit this part (do not invent one!)
      
@@ -155,8 +156,7 @@ Name
     
    - for tools that simply wrap or provide an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and `web applications <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, use the pattern:
 
-     ``{collectionName} toolName {API|WS}{( providerName)}``
-     *e.g.* ``EMBOSS water API (ebi)``
+     ``{collectionName} toolName {API|WS}{( providerName)}`` *e.g.* ``EMBOSS water API (ebi)``
 
    where:
   
@@ -167,10 +167,9 @@ Name
 
    In exceptional cases (*i.e.* when registering, as separate entries, `versions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ of a tool which have distrinct functionality), substitute for ``toolName`` in the pattern above:
    
-   ``toolname versionID``
-   *e.g.* ``FindPeaks 3.1``.
+     ``toolname versionID`` *e.g.* ``FindPeaks 3.1``.
 
-   where ``versionID`` is the version number
+   where ``versionID`` is the version number.
 
    
 .. tip::
