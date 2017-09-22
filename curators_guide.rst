@@ -139,7 +139,7 @@ Name
 - **7.** **SHOULD** follow the naming patterns (see below) where original tools are re-used 
 
 .. note::
-   *`*biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ syntax**
+   **biotoolsSchema syntax**
 
    The name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses
 
