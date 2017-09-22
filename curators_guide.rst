@@ -374,7 +374,9 @@ Comment
 
 **Manually verified guidelines**
 
-- **1.** **SHOULD NOT** duplicate online documentation;
+- **1.** **MUST** not duplicate what is already apparent from the EDAM annotations
+- **2.** **SHOULD** concisely summarise only critical usage information
+- **3.** **SHOULD NOT** duplicate online documentation; give a link if necessary
 
 .. note::
    **biotoolsSchema syntax**
@@ -398,7 +400,7 @@ Tool type
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 
 .. csv-table::
@@ -493,7 +495,7 @@ Maturity
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 - assign the tag (see below) that is most applicable; if you are not sure, then do not complete this field
 
@@ -519,7 +521,7 @@ License
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign the one that applies
 - use 'Proprietary' in case where some license (not defined in biotoolsSchema) exists and must be obtained from the provider before the software can be downloaded, used, owned *etc.*
@@ -553,7 +555,7 @@ Cost
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 - apply the tag (see below) that is applicable
 
@@ -578,7 +580,7 @@ Accessibility
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 - apply the tag (see below) that is applicable
 
@@ -723,7 +725,7 @@ Link type
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Link type", "Description"
@@ -790,7 +792,7 @@ Download type
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Download type", "Description"
@@ -865,7 +867,7 @@ Documentation type
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Documentation type", "Description"
@@ -947,7 +949,7 @@ Publication type
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Download type", "Description"
@@ -1059,7 +1061,7 @@ Entity type
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Entity type", "Description"
@@ -1086,7 +1088,7 @@ Role
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Role", "Description"
