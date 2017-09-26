@@ -595,10 +595,12 @@ Contact group
 ^^^^^^^^^^^^^
 **Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.**
 
-- this is the first port-of-call when seeking help with the software
-- 'Name' must be specified along with one or both of 'Email' and 'URL' (see below)
-- in general, a URL is preferable to an email
+**Manually verified guidelines**
 
+- **1.** **MUST** provide contact details for the first port-of-call when seeking help with the software
+- **2.** **MUST** ensure the specified name corresponds to the email, URL and telephone number
+- **3.** **MAY** specify one or more other contacts
+  
   
 Name
 ....
@@ -608,15 +610,12 @@ Name
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** Must give the first and last names of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
 
 .. note::
    **biotoolsSchema syntax**
 
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-
-- this is the name of the thing for which an email and/or URL is specified
-- specify a name of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
 
 Email
 .....
@@ -626,34 +625,34 @@ Email
 
 **Manually verified guidelines**
 
-- **1.** todo
-
+- **1.** **MUST** specify a syntactically valid email address  
+- **2.** **MUST NOT** specify an email address that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
+- **3.** **MUST NOT** specify a stale (obsolete) email address
+  
 .. note::
    **biotoolsSchema syntax**
 
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
-- only give an email if it already publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
-
-.. note:: A syntactically email address (*e.g.* hnielsen@cbs.dtu.dk) must be specified however this will be rendered in bio.tools UI in a spam-resilient form (*e.g. hnielsen at cbs.dtu.dk)
+.. note:: Email addresses will be rendered in bio.tools UI in a spam-resilient form (*e.g.* "hnielsen at cbs.dtu.dk")
   
   
 URL
 ...
 **URL of the primary contact.**
 
-*e.g.* ****
+*e.g.* **https://www.ebi.ac.uk/about/contact**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** resolve to a page of contact information
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - a valid URL is specified.
 
-- the URL must resolve to a page of contact information
+
 
 Telephone number
 ................
@@ -663,14 +662,15 @@ Telephone number
 
 **Manually verified guidelines**
 
-- **1.** todo
-
+- **1.** **MUST** specify a valid telephone number
+- **2.** **MUST NOT** specify a telephone number that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
+- **3.** **MUST NOT** specify a stale (obsolete) telephone number
+  
 .. note::
    **biotoolsSchema syntax**
 
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
-- only give a telephone number if this is already publicly available
 
 Links group
 ^^^^^^^^^^^
