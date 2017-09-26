@@ -682,28 +682,29 @@ URL
 ...
 **A link of some relevance to the software (URL).**
 
-*e.g.* ****
+*e.g.* **https://github.com/pharmbio/sciluigi/issues**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** resolve to a page of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#link-type>`_
+- **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available  
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - a valid URL is specified.
 
-- the URL must resolve to an appropriate page
 
 Comment
 .......
 
 **Comment about the link.**
 
-*e.g.* ****
+*e.g.* **Please use the issue tracker for reporting bugs and making features requests.**
+
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **SHOULD** be concise and summarise only practical information about the link
 
 .. note::
    **biotoolsSchema syntax**
@@ -714,12 +715,12 @@ Link type
 .........
 **The type of data, information or system that is obtained when the link is resolved.**
 
-*e.g.* **Repository**
+*e.g.* **Mailing list**
 
 **Manually verified guidelines**
 
-- **1.** todo
-
+- **1.** **MUST** acurately specify the type of information available at the link
+  
 .. note::
    **biotoolsSchema syntax**
 
@@ -748,18 +749,18 @@ URL
 ...
 **Link to download (or repo providing a download) for the software.**
 
-*e.g.* ****
+*e.g.* **http://bioconductor/packages/release/bioc/src/contrib/VanillaICE_1.36.0.tar.gz**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** resolve to a page providing either an immediately download, or links for a download of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_
+- **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - a valid URL is specified.
 
-- the URL must resolve to an appropriate download
   
 Comment
 .......
@@ -769,7 +770,7 @@ Comment
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **SHOULD** be concise and summarise only practical information about the link
 
 .. note::
    **biotoolsSchema syntax**
@@ -781,11 +782,11 @@ Download type
 .............
 **Type of download that is linked to.**
 
-*e.g.* ****
+*e.g.* **Binaries**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately specify the type of download available at the link 
 
 .. note::
    **biotoolsSchema syntax**
@@ -824,28 +825,28 @@ URL
 ...
 **Link to documentation on the web for the tool.**
 
-*e.g.* ****
+*e.g.* **http://bioconductor.org/packages/release/bioc/html/VanillaICE.html**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** resolve to a page of the indicated `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_
+- **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - a valid URL is specified.
 
-- the URL must resolve to a page of documentation
   
 Comment
 .......
 **Comment about the documentation.**
 
-*e.g.* ****
+*e.g.* **Comprehensive usage information suitable for biologist end-users.**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **SHOULD** be concise and summarise only practical information about the link
 
 .. note::
    **biotoolsSchema syntax**
@@ -860,7 +861,7 @@ Documentation type
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately specify the type of documentation available at the link 
 
 .. note::
    **biotoolsSchema syntax**
@@ -884,65 +885,54 @@ Publications group
 ^^^^^^^^^^^^^^^^^^
 **Publications about the software**
 
-- the specified ID should resolve to a valid publication
+**Manually verified guidelines**
 
-.. note::
-   We are considering broadening the scope of what qualifies as a valid publication to include formal documents available via URL, such things as online manuals.  Obviously care is needed here to avoid misuse.
+- **1.** **MUST** correctly identify a relevant publication
+
+
 
 PubMed Central ID
 .................
 **PubMed Central Identifier (PMCID) of a publication about the software.**
 
-*e.g.* ****
-
-**Manually verified guidelines**
-
-- **1.** todo
+*e.g.* **PMC4343077**
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - PMCID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 PubMed ID
 .........
 **PubMed Identifier (PMID) of a publication about the software.**
 
-*e.g.* ****
-
-**Manually verified guidelines**
-
-- **1.** todo
+*e.g.* **21959131**
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - valid PMID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 Digital Object ID
 .................
 **Digital Object Identifier (DOI) of a publication about the software.**
 
-*e.g.* ****
-
-**Manually verified guidelines**
-
-- **1.** todo
+*e.g.* **10.1038/nmeth.1701**
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - valid DOI syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 Publication type
 ................
 **Type of publication.**
 
-*e.g.* ****
+*e.g.* **Primary**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately specify the type of publication
 
 .. note::
    **biotoolsSchema syntax**
@@ -971,14 +961,14 @@ GRID ID
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** correctly identify a credited organisation 
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - valid GRID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
-.. note:: Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.
+.. note:: Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.  If ORCID institutional identifiers become available, these will also be supported.
 
 ORCID ID
 ........
@@ -988,12 +978,12 @@ ORCID ID
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** correctly identify a credited person
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - valid ORCID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 .. note:: Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
 
@@ -1001,28 +991,31 @@ Name
 ....
 **Name of the entity that is credited.**
 
-*e.g.* ****
+*e.g.* **EMBL EBI**
 
 **Manually verified guidelines**
 
-- **1.** todo
-
+- **1.** **MUST** give the first and last names of a person, or the correct name of some other entity.
+- **2.** **MUST NOT** give a redirect, *e.g.* "See publication", a URL, or any information other than the name of the entity that is credited.
+  
 .. note::
    **biotoolsSchema syntax**
 
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
-* **do not** give a redirect, *e.g.* "See publication" or any other information than the name of the entity that is credited.
+
 
 Email
 .....
 **Email address of the entity that is credited.**
 
-*e.g.* ****
+*e.g.* **hnielsen@cbs.dtu.dk**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** specify a syntactically valid email address  
+- **2.** **MUST NOT** specify an email address that is not publicly acknowledged as credit for the software, *e.g.* on a webpage or in a publication
+- **3.** **MUST NOT** specify a stale (obsolete) email address
 
 .. note::
    **biotoolsSchema syntax**
@@ -1033,18 +1026,17 @@ URL
 ...
 **URL for the entity that is credited, e.g. homepage of an institute.**
 
-*e.g.* ****
+*e.g.* **http://www.ebi.ac.uk/**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** resolve to a page of information directly relevant to the credited entity
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - a valid URL is specified.
 
-- the URL must resolve to an appropriate page
 
 Entity type
 ...........
@@ -1054,7 +1046,7 @@ Entity type
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately specify the type of entity that is credited
 
 .. note::
    **biotoolsSchema syntax**
@@ -1081,7 +1073,7 @@ Role
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately specify the role of credited entity
 
 .. note::
    **biotoolsSchema syntax**
@@ -1099,9 +1091,10 @@ Role
    "Contributor", "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
    "Support", "Provider of support in using the software."
 
-- specify all the roles that are applicable
 
 .. note:: The current version of biotoolsSchema and bio.tools only supports one "role" assignation per credit; this will be changed to support multiple asignations (see https://github.com/bio-tools/biotoolsSchema/issues/80)
+
+	  
 Comment
 .......
 **A comment about the credit.**
@@ -1110,16 +1103,15 @@ Comment
 
 **Manually verified guidelines**
 
-- **1.** todo
-
+- **1.** **SHOULD** be concise and acurate, elaborating on the contribution of the credited entity
+- **2.** **MUST NOT** duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
+	       
 .. note::
    **biotoolsSchema syntax**
 
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
-- use this to elaborate on the contribution of the credited entity.
 
-.. attention:: **do not** merely duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
 
   
 Tool type guidelines
