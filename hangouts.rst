@@ -12,7 +12,7 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 -------------
 
 - No meeting in July, Aug
-- Fri Sep 29, 11 AM CEST **WP1-focus**
+- POSTPONED (date TBD) Fri Sep 29, 11 AM CEST **WP1-focus**
 - Fri Oct 27, 11 AM CET
 - Fri Nov 24, 11 AM CET **WP1-focus**
 - No meeting in Dec 
