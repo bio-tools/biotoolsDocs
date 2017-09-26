@@ -315,14 +315,14 @@ Operation
 
 **Manually verified guidelines**
 
-- **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
+- **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), that specific version of the tool
 - **2.** **MUST** be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
 
-.. attention:: see the general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_)
+.. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
 
-  .. note::
+.. note::
    **biotoolsSchema syntax**
 
    - an EDAM Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
@@ -337,15 +337,21 @@ Data type (input and output data)
 
 **Manually verified guidelines**
 
-- **1.** **MUST** correctly specify types of input or output data processed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
+- **1.** **MUST** correctly specify types of input or output data processed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), that specific version of the tool
 - **2.** **MUST** be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe all the primary inputs and outputs of the tool and **SHOULD NOT** describe secondary / minor inputs and outputs: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
+.. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
+	       
 .. note::
    **biotoolsSchema syntax**
 
    - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
 
+.. tip::
+   - many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.
+
+     
 Data format (input and output data)
 ...................................
 **Allowed format(s) of primary inputs/outputs**
@@ -358,14 +364,13 @@ Data format (input and output data)
 - **2.** **MUST** be correctly associated with the data type of an input or output (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe the primary data formats and **MAY** exhaustively describe *all* formats: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
+.. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
+		 
 .. note::
    **biotoolsSchema syntax**
 
    - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
-
-.. tip::
-   - many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.
-     
+    
 Comment
 .......
 **Concise comment about this function, if not apparent from the software description and EDAM annotations.**
@@ -375,7 +380,7 @@ Comment
 **Manually verified guidelines**
 
 - **1.** **MUST** not duplicate what is already apparent from the EDAM annotations
-- **2.** **SHOULD** concisely summarise only critical usage information
+- **2.** **SHOULD** be concise and summarise only critical usage information
 - **3.** **SHOULD NOT** duplicate online documentation; give a link if necessary
 
 .. note::
@@ -395,7 +400,7 @@ Tool type
 
 **Manually verified guidelines**
 
-- **1.** **MUST** assign all types (see below) that are applicable
+- **1.** **MUST** specify all types (see below) that are applicable
 
 .. note::
    **biotoolsSchema syntax**
@@ -425,7 +430,7 @@ Tool type
   
 .. note:: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
 
-.. tip::  In cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable
+.. tip::  In cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable to that entry.
 
 Topic
 .....
@@ -435,18 +440,16 @@ Topic
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **SHOULD** specify the most important and relevant scientific topics
+- **2.** **SHOULD NOT** exhaustively specify all the topics of lower relevance
 
-.. note::
-   **biotoolsSchema syntax**
-
-   - todo
-
+.. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply  
+  
 .. note::
    **biotoolsSchema syntax**
 
    - an EDAM Topic concept URL and / or term are specified, *e.g.* "Proteomics", http://edamontology.org/topic_0121.
-   - see the general `EDAM annotation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
+
 
 Operating system
 ................
@@ -456,12 +459,12 @@ Operating system
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** specify all operating systems (see below) that are applicable
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
 
@@ -469,18 +472,18 @@ Language
 ........
 **Name of programming language the software source code was written in.**
 
-*e.g.* ****
+*e.g.* **C**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** specify the primary language (see below) used
+- **2.** **MAY** exhaustively specify other languages used
 
 .. note::
    **biotoolsSchema syntax**
 
-   - todo
+   - one or more terms from a controlled vocabulary (see below)
 
-- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
   
 Maturity
 ........
@@ -490,15 +493,15 @@ Maturity
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately reflect the software maturity.  
 
+.. attention:: Normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
+		 
 .. note::
    **biotoolsSchema syntax**
 
    - one or more terms from a controlled vocabulary (see below)
-
-- assign the tag (see below) that is most applicable; if you are not sure, then do not complete this field
-
+  
 .. csv-table::
    :header: "Maturity", "Description"
    :widths: 25, 100
