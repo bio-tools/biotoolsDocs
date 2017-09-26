@@ -515,24 +515,22 @@ License
 .......
 **Software or data usage license.**
 
-*e.g.* **CBS License**
+*e.g.* **GPL-3.0**
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately describe the license used.
+- **2.** **SHOULD** use "Proprietary" in cases where the software is under license (not defined in biotoolsSchema) whereby it can be obtained from the provider (*e.g.* for money), and then owned, *i.e.* definitely not an open-source or free software license.
+- **3.** **SHOULD** use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary".
+
+.. tip:: Use the "Other" license for custom institutional licenses that are out of scope of `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.  If you've found a license that you think should be included in biotoolsSchema please report it *via* `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/new>`_.
 
 .. note::
    **biotoolsSchema syntax**
 
-   - one or more terms from a controlled vocabulary (see below)
+   - one or more terms from a controlled vocabulary (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.)
 
-- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign the one that applies
-- use 'Proprietary' in case where some license (not defined in biotoolsSchema) exists and must be obtained from the provider before the software can be downloaded, used, owned *etc.*
-- use 'Other' in all other cases where a license exists but is not defined in biotoolsSchema (and consider requesting it's addition via `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/>`_)
-  
 .. note::
-   **biotoolsSchema syntax**
-
    Most permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") may be attached to the bio.tools entry (see table below)
 
 .. csv-table::  Labelling based on license (future work)
@@ -553,14 +551,13 @@ Cost
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately describe the monetary cost of acquiring the software.
 
 .. note::
    **biotoolsSchema syntax**
 
    - one or more terms from a controlled vocabulary (see below)
 
-- apply the tag (see below) that is applicable
 
 .. csv-table::
    :header: "Cost", "Description"
@@ -578,14 +575,12 @@ Accessibility
 
 **Manually verified guidelines**
 
-- **1.** todo
+- **1.** **MUST** acurately describe the accessibility conditions that apply.
 
 .. note::
    **biotoolsSchema syntax**
 
    - one or more terms from a controlled vocabulary (see below)
-
-- apply the tag (see below) that is applicable
 
 .. csv-table::
    :header: "Accessibility", "Description"
