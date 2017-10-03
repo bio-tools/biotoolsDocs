@@ -120,5 +120,6 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Tunca Dogan (EMBL-EBI, UK)
 - Vegard Nygaard (ELIXIR NO)
 - Victor de la Torre (INB)
-- Karel Berka (Palacky U, CZ)
+- Wiktor Jurkowski (Earlham, UK)
+
 
