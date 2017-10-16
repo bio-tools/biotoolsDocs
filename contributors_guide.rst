@@ -51,9 +51,3 @@ Hangouts
 We have a call on the **last Fri of each month @ 11AM CET**.  Technical representatives of ELIXIR-DK institutes routinely attend.  Guests are very welcome: if you'd like to join mail `Henriette Husum Bak-Jensen <mailto:hhu@bio.ku.dk>`_.  
 
 The hangouts have an open agenda and respond to current critical needs. See the `meeting minutes <http://biotools.readthedocs.org/en/latest/hangouts.html>`_.
- 
-Status reports
---------------
-A short summary of bio.tools activities, including last months actions and next months plans, is released on the last Thu of each month, to be discussed at the monthly hangout (above).  Read the `status reports <http://biotools.readthedocs.org/en/latest/status_reports.html>`_.  
-
-See also `https://bio.tools/stats <https://bio.tools/stats>`_ and the `ChangeLog <http://biotools.readthedocs.org/en/latest/changelog_roadmap.html>`_.
