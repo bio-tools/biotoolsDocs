@@ -1,9 +1,6 @@
 Publications
 ============
 
-Workbench integration
----------------------
-
 Hillion KH, Ison J and Ménager H. (2017). `ToolDog – generating tool descriptors from the ELIXIR tool registry <http://doi.org/10.7490/f1000research.1114125.1>`_  [version 1; not peer reviewed]. F1000Research 2017, 6:767 (poster).
 doi:`10.7490/f1000research.1114125.1 <http://doi.org/10.7490/f1000research.1114125.1>`_
 
