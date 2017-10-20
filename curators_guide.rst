@@ -104,6 +104,8 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 
    - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
    - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
+   - `EDAM Tool Annotator Demo <http://people.binf.ku.dk/vzn529/eta/>`_
+   
 
    If you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
      
