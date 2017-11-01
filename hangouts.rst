@@ -48,10 +48,15 @@ Agenda
 2. Deliverables & milestones due in 2018
 
    2.1 Summary(https://biotools.sifterapp.com/projects/40459/issues?srt=milestone)
+   
    2.2 M1.3 - literature integration (update)
+
    2.3 M1.6 - metacatalogue + synergy meetings (update)
+
    2.4 D1.5 - metrics in registry (update)
+
    2.5 D1.7 - user helpdesk / fora (action needed, see below)
+
    2.6 D1.8 - matchmaking service : (discussion needed - recommend to drop this)
 
 3. Framing a WP1 f2f meeting for early 2018 (round-table contributions)
