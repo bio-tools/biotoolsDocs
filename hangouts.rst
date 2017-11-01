@@ -1,5 +1,5 @@
-Status meetings (previously known as 'Hangouts')
-========
+Coordination meetings
+=====================
 
 Monthly informal meetings to discuss all matters around bio.tools including ELIXIR EXCELERATE WP1 ("Tools Interoperability and Service Registry") tasks and activities of ELIXIR Denmark technical staff.
 
@@ -76,6 +76,53 @@ Several arguments were made for and against a Date-stamped verified label of a g
 -------
 Archive
 -------
+
+2017 June 16, 11 AM CEST
+-----------------------
+
+Call details
+^^^^^^^^^^^^
+
+TC by DeIC platform (ensure Jon & Henriette have your email address)
+Connect via Computer: http://v.deic.dk?ID=610026 (Windows / Mac)
+Write your name and meeting ID: 610026.  Click Participate Now. 
+Scopia Desktop client will be installed before entering the meeting room the first time. 
+Installation guides: https://www.deic.dk/via_computer_dk
+
+
+Attendeees
+^^^^^^^^^^
+Representatives of ELIXIR EXCELERATE WP1 partners are expected to attend.
+
+Apologies
+^^^^^^^^^^
+
+Agenda
+^^^^^^
+
+1. Purpose of this call 
+2. Deliverables & milestones due in 2018
+   2.1 Summary(https://biotools.sifterapp.com/projects/40459/issues?srt=milestone)
+   2.2 M1.3 - literature integration (update)
+   2.3 M1.6 - metacatalogue + synergy meetings (update)
+   2.4 D1.5 - metrics in registry (update)
+   2.5 D1.7 - user helpdesk / fora (action needed, see (1) below)
+   2.6 D1.8 - matchmaking service : (discussion needed - recommend to drop this)
+
+3. Framing a WP1 f2f meeting for early 2018 (round-table contributions)
+
+   *add your agenda items here*
+
+4. Publication opportunities
+5. AOB
+
+
+(1) See Task 1.4 (below) from original EXCELERATE proposal.  The idea was indicated as high-priority in the EXCELERATE mid-term review.  We need to identify leader(s) for this deliverable.
+
+**Task 1.4: User support and derived registry development (36.7PM)**
+This task will provide direct and indirect user support to deliver impact for ELIXIR end-users. Direct support will be achieved primarily by leveraging the existing and highly popular user bioinformatics forums (BioStars, BioPlanet etc.).  A User-support specialist will patrol such forums and respond to questions in one of four ways: 1) Where resources answering to the Users needs exist in the registry, a link to them in the registry will be provided via our API. 2) Where resources exist in the registry, but the registry API cannot be used to answer the question directly, they will request new features of the API and in so doing drive development of the Query Interface. 3) Where an appropriate resource exists but has not been registered, they will request the appropriate registry curator add it to the registry. 4) Where a registered resource exists that is close, but not quite what is required, they will forward feature requests to the appropriate developers, possibly via the Matchmaking Service (D1.5).
+
+
 
 2017, Apr 28 11 AM CEST
 -----------------------
