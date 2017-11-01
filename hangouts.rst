@@ -45,7 +45,7 @@ Agenda
 ^^^^^^
 
 1. Purpose of this call 
-2. Deliverables & milestones due in 2018
+2. Deliverables & milestones due in 2018 (Jon Ison)
 
    2.1 Summary(https://biotools.sifterapp.com/projects/40459/issues?srt=milestone)
    
@@ -63,7 +63,7 @@ Agenda
 
    *add your agenda items here*
 
-4. Publication opportunities
+4. Publication opportunities (Jon Ison)
 5. AOB
 
 
