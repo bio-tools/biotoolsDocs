@@ -21,8 +21,8 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 Next meeting
 ------------
 
-2017 Novmber 23, 11 AM CET
---------------------------
+2017 Novmber 23, 10.30 or 12.30 AM CET (tbd)
+--------------------------------------------
 
 Call details
 ^^^^^^^^^^^^
