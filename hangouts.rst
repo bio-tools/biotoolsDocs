@@ -46,6 +46,7 @@ Agenda
 
 1. Purpose of this call 
 2. Deliverables & milestones due in 2018
+
    2.1 Summary(https://biotools.sifterapp.com/projects/40459/issues?srt=milestone)
    2.2 M1.3 - literature integration (update)
    2.3 M1.6 - metacatalogue + synergy meetings (update)
