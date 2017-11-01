@@ -14,7 +14,7 @@ Before each meeting, always it's helpful to read the `bio.tools status report <h
 - No meeting in July, Aug
 - POSTPONED (date TBD) Fri Sep 29, 11 AM CEST **WP1-focus**
 - Fri Oct 27, 11 AM CET
-- Fri Nov 24, 11 AM CET **WP1-focus**
+- Thu Nov 23, 10.30 or 12.30 (tbd) CET for 2 hours **WP1-focus**
 - No meeting in Dec 
 
 ------------
