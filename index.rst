@@ -14,6 +14,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   What is bio.tools? <what_is_biotools>
    Contributors Guide <contributors_guide>
    User Guide <user_guide>
    Curators Guide <curators_guide>
