@@ -9,18 +9,12 @@ Documentation files are written in **reStructuredText** and have the file extens
 
 reStructuredText links 
 ----------------------
-`Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
- 
-`Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
 
-`Full documentation <http://docutils.sourceforge.net/rst.html>`_
-
-`Online editor <http://rst.ninjs.org/>`_
-
-`readthedocs FAQ <http://docs.readthedocs.io/en/latest/faq.html>`_
-
-`readthedocs : getting started <https://github.com/rtfd/readthedocs.org/blob/master/docs/getting_started.rst>`_
-
-`readthedocs build process <http://docs.readthedocs.io/en/latest/builds.html>`_
-
-`thread on wide table handling <https://github.com/rtfd/sphinx_rtd_theme/issues/117>`_
+* `Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
+* `Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
+* `Full documentation <http://docutils.sourceforge.net/rst.html>`_
+* `Online editor <http://rst.ninjs.org/>`_
+* `readthedocs FAQ <http://docs.readthedocs.io/en/latest/faq.html>`_
+* `readthedocs : getting started <https://github.com/rtfd/readthedocs.org/blob/master/docs/getting_started.rst>`_
+* `readthedocs build process <http://docs.readthedocs.io/en/latest/builds.html>`_
+* `thread on wide table handling <https://github.com/rtfd/sphinx_rtd_theme/issues/117>`_
