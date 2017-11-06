@@ -6,6 +6,8 @@ What is bio.tools?
 * find, understand, compare and select resources == **discovery**
 * use and connect them in workflows == **(inter)operability**
 
+Objectives
+----------
 Our main objectives are:
 
 * build and maintain a comprehensive **registry** of high-quality software metadata / descriptions 
@@ -15,11 +17,9 @@ Our main objectives are:
 * integrate the registry with popular **workbench environments** in a way that improves resource interoperability
 * **support** registry stakeholders including tool providers and end-users
 
+Scope
+-----
 bio.tools scope is *application software* with well-defined data processing functions (inputs, outputs and operations).  bio.tools includes a broad range of `software types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type-guidelines>`_ including tools available for immediate use as online services, or in a form which which you can download, install, configure and run yourself.  This includes simple tools with one or a few closely related functions, and complex, multimodal tools with many functions.
-
-bio.tools content is freely available to all under `open license <http://biotools.readthedocs.io/en/latest/license.html>`_.
-
-bio.tools development is supported by `ELIXIR <https://www.elixir-europe.org/>`_ - the European Research Infrastructure for life science information.
 
 Technical components
 --------------------
@@ -38,12 +38,19 @@ Technical components
   
 * **bio.tools metrics** available at https://bio.tools/stats include registry growth, contributors, annotation breakdown *etc.*
 
-Documentation
+Docs overview
 -------------
-* `Contributors Guide <http://biotools.readthedocs.io/en/latest/contributors_guide.html>`_ explains how to get involved : please do!
-* `User Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_ explains how to use the bio.tools user interfaces.
-* `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html>`_ describes how to create a high quality bio.tools entry.
-* `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_ describes thematic editorships to improve bio.tools in scientific areas.
-* `Documentors Guide <http://biotools.readthedocs.io/en/latest/documentors_guide.html>`_ describes how to edit the bio.tools docs.
-* `API reference <http://biotools.readthedocs.io/en/latest/api_reference.html>`_ describes the bio.tools API.
+* `Contributors Guide <http://biotools.readthedocs.io/en/latest/contributors_guide.html>`_ - how to get involved (please do!)
+* `User Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_ - how to use the bio.tools user interfaces.
+* `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html>`_ - how to create a high quality bio.tools entry.
+* `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_ - thematic editorships to improve bio.tools in scientific areas.
+* `Documentors Guide <http://biotools.readthedocs.io/en/latest/documentors_guide.html>`_ - how to edit the bio.tools docs.
+* `API reference <http://biotools.readthedocs.io/en/latest/api_reference.html>`_ - bio.tools API docs.
+* `Hangouts <http://biotools.readthedocs.io/en/latest/hangouts.html>`_  - monthly coordination meetings (you're welcome to join!)
+* `Roadmap <http://biotools.readthedocs.io/en/latest/roadmap.html>`_  - technical plans for the next year
+* `Studentships <http://biotools.readthedocs.io/en/latest/studentships.html>`_ - bio.tools studentship scheme for curation-focussed mini-projects.
+* `GitHub projects <http://biotools.readthedocs.io/en/latest/studentships.html>`_ - open projects of relevance to bio.tools.
+
+bio.tools development is supported by `ELIXIR <https://www.elixir-europe.org/>`_ - the European Research Infrastructure for life science information. bio.tools content is freely available to all under `open license <http://biotools.readthedocs.io/en/latest/license.html>`_.
+
 
