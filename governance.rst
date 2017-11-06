@@ -30,6 +30,8 @@ Named **registry editors** are registry-core members responsible for overseeing 
 - driving coverage (EDAM, tools)
 - liasing with community & leading workshops in their specialist area
 
+See the `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_.
+  
 Registry Contributors
 ---------------------
 Registry contributors include anyone who makes significant contributions to the registry content or registry-related software, by whatever means, but have none of the responsibilities or expectations of Registry Core.
