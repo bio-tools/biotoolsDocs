@@ -15,7 +15,7 @@ The sheer number of software and continuous advancements in tool development dem
 * Mentor a student for practical work such as manual curation
 * Implement sustainable procedures for systematic tool reviews (e.g. bio.tools alert service) and curation standards
 
-Benefit: A thematic editorships provides the opportunity to become a documented expert. Editors will acquire extensive knowledge and experience about available software in their fields e.g. to publish high-quality reviews. The editors will train additional experts during training and curation events (e.g. hackathons) as well as via student supervision. Moreover, the ELIXIR framework will support them to apply for further funding to amplify their activities within their field (at least, this will be pursued).
+*Benefits*: A thematic editorships provides the opportunity to become a documented expert. Editors will acquire extensive knowledge and experience about available software in their fields *e.g.* to publish high-quality reviews. The editors will train additional experts during training and curation events (*e.g.* hackathons) as well as *via* student supervision. Moreover, the ELIXIR framework will support them to apply for further funding to amplify their activities within their field (at least, this will be pursued).
 
 Current thematic editors
 ------------------------
