@@ -20,9 +20,9 @@ Benefit: A thematic editorships provides the opportunity to become a documented 
 Current thematic editors
 ------------------------
 
-======            ======
+================= ==================================================================
 Editor            Topics
-======            ======
+================= ==================================================================
 Anne Wenzel       RNA structure
 Jon Ison          General purpose sequence analysis
 Jose M. Carazo    Electron microscopy, structural biology
@@ -33,6 +33,6 @@ Martin Krallinger Text Mining, natural language processing, named entity recogni
 Reza Salek        Metabolomics
 Veit Schwämmle    Proteomics, statistics
 Vivi R. Gregersen Agricultural science (association analysis, genomics)
-
+================= ==================================================================
 
 `bio.tools studentships <http://biotools.readthedocs.io/en/latest/studentships.html>`_ can support thematic editors.  A typical studentship comprises (at least) one full month of full working hours which are mostly distributed over a longer time period. Applications are written on basis of the template (see *e.g.*  `proteomics studentship <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_).  The students are recruited after proposal dissemination *via* GitHub, project mailing lists *etc.*
