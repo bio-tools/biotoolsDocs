@@ -26,8 +26,10 @@ Documentation
 -------------
 * `Contributors Guide <http://biotools.readthedocs.io/en/latest/contributors_guide.html>`_ explains how to get involved : please do!
 * `User Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_ explains how to use the bio.tools user interfaces.
-* `Curators Guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#>`_ describe how each attribute should be specified, *i.e.* concern the quality of an entry. The guidelines go beyond the syntactic and semantic constraints defined by biotoolsSchema and EDAM, and are part of broader `tool information standards <https://github.com/bio-tools/biotoolsSchemaDocs/blob/master/information_requirement.rst>`_ being adopted by bio.tools.  
-  
+* `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html>`_ describes how to create a high quality bio.tools entry.
+* `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_ describes thematic editorships to improve bio.tools in scientific areas.
+* `Documentors Guide <http://biotools.readthedocs.io/en/latest/documentors_guide.html>`_ describes how to edit the bio.tools docs.
+* `API reference <http://biotools.readthedocs.io/en/latest/api_reference.html>`_ describes the bio.tools API.
 
 
 Technical components
