@@ -3,7 +3,7 @@ Contributors Guide
 
 Task management
 ---------------
-*All* tasks in the bio.tools orbit are managed in **sifterapp** (high-level tasks, moderated by Jon) or **JIRA** (low-level software tasks, moderated by Emil).  If you'd like a sifterapp or JIRA account, please mail `Jon Ison <mailto:jison@cbs.dtu.dk>`_ or `Emil Rydza <mailto:ekry@dtu.dk>`_.
+*All* tasks concering bio.tools are managed in **sifterapp** (high-level tasks, moderated by `Jon Ison <mailto:jison@cbs.dtu.dk>`_) or **JIRA** (low-level software tasks, moderated by `Emil Rydza <mailto:ekry@dtu.dk>`_).  If you'd like a sifterapp or JIRA account, please mail Jon or Emil. 
 
 - https://biotools.sifterapp.com
  
@@ -41,10 +41,6 @@ To send mail:
 - registry@elixir-dk.org
 - registry-support@elixir-dk.org
 - edam@elixir-dk.org
-  
-See also the general `ELIXIR mailing lists <https://lists.elixir-europe.org/mailman/listinfo>`_.
-
-- **Tools** is a low-traffic, broad readership list for the ELIXIR Tools Platform.
 
 Hangouts
 ------------------
