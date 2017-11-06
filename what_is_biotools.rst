@@ -21,17 +21,6 @@ bio.tools content is freely available to all under `open license <http://biotool
 
 bio.tools development is supported by `ELIXIR <https://www.elixir-europe.org/>`_ - the European Research Infrastructure for life science information.
 
-
-Documentation
--------------
-* `Contributors Guide <http://biotools.readthedocs.io/en/latest/contributors_guide.html>`_ explains how to get involved : please do!
-* `User Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_ explains how to use the bio.tools user interfaces.
-* `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html>`_ describes how to create a high quality bio.tools entry.
-* `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_ describes thematic editorships to improve bio.tools in scientific areas.
-* `Documentors Guide <http://biotools.readthedocs.io/en/latest/documentors_guide.html>`_ describes how to edit the bio.tools docs.
-* `API reference <http://biotools.readthedocs.io/en/latest/api_reference.html>`_ describes the bio.tools API.
-
-
 Technical components
 --------------------
 * `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ is a description model for bioinformatics software.  It is a formalised XML schema (XSD) which defines 50 important scientific, technical and administrative attributes.  It defines what attributes may be specified in a bio.tools entry, a precise syntax for those descriptions, and controlled vocabularies for consistent description of technical aspects such as software license and software type.
@@ -48,4 +37,13 @@ Technical components
 * `bio.tools API <http://biotools.readthedocs.io/en/latest/api_reference.html>`_ provides programmatic means to query, add and edit registry content.
   
 * **bio.tools metrics** available at https://bio.tools/stats include registry growth, contributors, annotation breakdown *etc.*
+
+Documentation
+-------------
+* `Contributors Guide <http://biotools.readthedocs.io/en/latest/contributors_guide.html>`_ explains how to get involved : please do!
+* `User Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_ explains how to use the bio.tools user interfaces.
+* `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html>`_ describes how to create a high quality bio.tools entry.
+* `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_ describes thematic editorships to improve bio.tools in scientific areas.
+* `Documentors Guide <http://biotools.readthedocs.io/en/latest/documentors_guide.html>`_ describes how to edit the bio.tools docs.
+* `API reference <http://biotools.readthedocs.io/en/latest/api_reference.html>`_ describes the bio.tools API.
 
