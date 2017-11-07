@@ -47,31 +47,45 @@ Agenda
 2. Deliverables & milestones due in 2018 (Jon Ison)
 
    2.1. Summary (https://biotools.sifterapp.com/projects/40459/issues?srt=milestone)
+
    2.2. M1.3 - literature integration (update)
+   
    2.3. M1.6 - metacatalogue + synergy meetings (update)
+   
    2.4. D1.5 - metrics in registry (update)
+   
    2.5. D1.7 - user helpdesk / fora (action needed, see below)
+   
    2.6. D1.8 - matchmaking service : (discussion needed - recommend to drop this)
 
 3. WP1 partner round-table presentations (5' / partner)
 
    3.1.  ELIXIR-DK (DTU et al.)
+   
    3.2.  ELIXIR-EE (UTARTU)
+   
    3.3.  ELIXIR-ES (BSC, IRB)
+   
    3.4.  ELIXIR-FR (IP, CNRS)
+   
    3.5.  ELIXIR-CZ (MU)
+   
    3.6.  ELIXIR-NO (UiB)
+   
    3.7.  ELIXIR-EMBL (EBI)
+   
    3.8.  ELIXIR-CH (SIB)
+   
    3.9.  ELIXIR-UK (UOXF)
+   
    3.10. ELIXIR-PT (INESC-ID)
    
-3. Framing a WP1 f2f meeting for early 2018 (round-table contributions)
+4. Framing a WP1 f2f meeting for early 2018 (round-table contributions)
 
    *add your suggested agenda items for the f2f here*
 
-4. Publication opportunities (Jon Ison)
-5. AOB
+5. Publication opportunities (Jon Ison)
+6. AOB
 
 
 
