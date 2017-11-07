@@ -13,15 +13,15 @@ You are welcome to attend; please mail Henriette Husum Bak-Jensen (hhu@bio.ku.dk
 - No meeting in July, Aug
 - POSTPONED (date TBD) Fri Sep 29, 11 AM CEST **WP1-focus**
 - Fri Oct 27, 11 AM CET
-- Thu Nov 23, 10.30 or 12.30 (tbd) CET for 2 hours **WP1-focus**
+- Thu Nov 23, 12.30 CET for 2 hours **WP1-focus**
 - No meeting in Dec 
 
 ------------
 Next meeting
 ------------
 
-2017 Novmber 23, 12.30 AM CET (tbd)
---------------------------------------------
+2017 Novmber 23, 12.30 AM CET 
+------------------------------
 
 Call details
 ^^^^^^^^^^^^
