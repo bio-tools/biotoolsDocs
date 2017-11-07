@@ -89,7 +89,7 @@ Agenda
 
 
 
-
+.. note::
 **D1.7 user helpdesk / fora**
 Excerpt from EXCELERATE proposal is below.  The idea was indicated as high-priority in the EXCELERATE mid-term review.  We need to identify leader(s) for this deliverable.
 
