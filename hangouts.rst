@@ -43,8 +43,8 @@ Apologies
 Agenda
 ^^^^^^
 
-1. Purpose of this call (Jon Ison)
-2. Deliverables & milestones due in 2018 (Jon Ison)
+1. **Purpose of this call** (Jon Ison)
+2. **Deliverables & milestones due in 2018** (Jon Ison)
 
    2.1. Summary (https://biotools.sifterapp.com/projects/40459/issues?srt=milestone)
 
@@ -58,7 +58,7 @@ Agenda
    
    2.6. D1.8 - matchmaking service : (discussion needed - recommend to drop this)
 
-3. WP1 partner round-table presentations (5' / partner)
+3. **WP1 partner round-table presentations** (5' / partner)
 
    3.1.  ELIXIR-DK (DTU et al.)
    
@@ -80,12 +80,12 @@ Agenda
    
    3.10. ELIXIR-PT (INESC-ID)
    
-4. Framing a WP1 f2f meeting for early 2018 (round-table contributions)
+4. **Framing a WP1 f2f meeting** early 2018, round-table contributions
 
    *add your suggested agenda items for the f2f here*
 
-5. Publication opportunities (Jon Ison)
-6. AOB
+5. **Publication opportunities** (Jon Ison)
+6. **AOB**
 
 
 
