@@ -90,15 +90,16 @@ Agenda
 
 
 .. note::
-**D1.7 user helpdesk / fora**
-Excerpt from EXCELERATE proposal is below.  The idea was indicated as high-priority in the EXCELERATE mid-term review.  We need to identify leader(s) for this deliverable.
 
-This task will provide direct and indirect user support to deliver impact for ELIXIR end-users. Direct support will be achieved primarily by leveraging the existing and highly popular user bioinformatics forums (BioStars, BioPlanet etc.).  A User-support specialist will patrol such forums and respond to questions in one of four ways:
+   **D1.7 user helpdesk / fora**
+   Excerpt from EXCELERATE proposal is below.  The idea was indicated as high-priority in the EXCELERATE mid-term review.  We need to identify leader(s) for this deliverable.
 
-1. Where resources answering to the Users needs exist in the registry, a link to them in the registry will be provided via our API.
-2. Where resources exist in the registry, but the registry API cannot be used to answer the question directly, they will request new features of the API and in so doing drive development of the Query Interface.
-3. Where an appropriate resource exists but has not been registered, they will request the appropriate registry curator add it to the registry.
-4. Where a registered resource exists that is close, but not quite what is required, they will forward feature requests to the appropriate developers, possibly via the Matchmaking Service (D1.5).
+   This task will provide direct and indirect user support to deliver impact for ELIXIR end-users. Direct support will be achieved primarily by leveraging the existing and highly popular user bioinformatics forums (BioStars, BioPlanet etc.).  A User-support specialist will patrol such forums and respond to questions in one of four ways:
+
+   1. Where resources answering to the Users needs exist in the registry, a link to them in the registry will be provided via our API.
+   2. Where resources exist in the registry, but the registry API cannot be used to answer the question directly, they will request new features of the API and in so doing drive development of the Query Interface.
+   3. Where an appropriate resource exists but has not been registered, they will request the appropriate registry curator add it to the registry.
+   4. Where a registered resource exists that is close, but not quite what is required, they will forward feature requests to the appropriate developers, possibly via the Matchmaking Service (D1.5).
 
 
 -------
