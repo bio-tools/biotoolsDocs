@@ -23,8 +23,8 @@ Next meeting
 2017 Novmber 23, 12.30 CET 
 ---------------------------
 
-Call details
-^^^^^^^^^^^^
+Call details (*to be confirmed*)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 TC by DeIC platform (ensure Jon & Henriette have your email address)
 Connect via Computer: http://v.deic.dk?ID=610026 (Windows / Mac)
@@ -36,6 +36,13 @@ Installation guides: https://www.deic.dk/via_computer_dk
 Attendeees
 ^^^^^^^^^^
 Representatives of ELIXIR EXCELERATE WP1 partners are expected to attend.
+
+Confirmed
+^^^^^^^^^
+Jon Ison (DTU, DK)
+Matus Kalas (UiB, NO)
+Dan Søndergaard (AU, DK) + student helpers
+Hervé Menager and/or Kenzo Hillion1 (IP, FR)
 
 Apologies
 ^^^^^^^^^^
