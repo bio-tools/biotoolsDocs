@@ -10,14 +10,6 @@ We organise many events as well as attend events organised by others.  If you wa
 Forthcoming events
 ------------------
 
-**ELIXIR-DK / bio.tools Open Day (Aug 23 2017, Odense, DK)**
-
-http://tinyurl.com/registryhackathon14
-
-An informal day of presentations, discussion and hacking around activities of the Danish ELIXIR node, including presentations about the ELIXIR Tools and Data Services Registry (https://bio.tools), bio.tools content and feature development, the EDAM ontology, applications of the registry, future plans and more.
-
-------
-
 **Technical Hackathon : Towards a comprehensive catalogue of data formats (Autumn 2017 tbd, Amsterdam, NL)**
 *tentative*
 
@@ -28,6 +20,13 @@ A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  
 
 Past events
 -----------
+**ELIXIR-DK / bio.tools Open Day (Aug 23 2017, Odense, DK)**
+
+http://tinyurl.com/registryhackathon14
+
+An informal day of presentations, discussion and hacking around activities of the Danish ELIXIR node, including presentations about the ELIXIR Tools and Data Services Registry (https://bio.tools), bio.tools content and feature development, the EDAM ontology, applications of the registry, future plans and more.
+
+------
 
 **Technical Hackathon : Visual Workflows in bio.tools (Mar 1-3 2017, Tallin, EE)**
 

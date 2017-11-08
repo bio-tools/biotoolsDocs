@@ -1,7 +1,8 @@
 Governance
 ==========
 bio.tools follows a simple `governance model <https://bio.tools/governance>`_ of three tiers under the leadership of the 
-`Danish ELIXIR node <http://elixir-denmark.org>`_ (Professor Søren Brunak, Head of Node).  Development on the ground is led by two Technical Coordinators: `Emil Rydza <mailto:ekry@dtu.dk>`_ is leading the software development and `Jon Ison <mailto:jison@cbs.dtu.dk>`_ is leading the collaborations and content, in close collaboration with the registry core developers (see below) and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
+`Danish ELIXIR node <http://elixir-denmark.org>`_ (Professor Søren Brunak, Head of Node).  Development on the ground is led by
+`Jon Ison <mailto:jison@bioinformatics.dtu.dk>`_ (technical coordination), `Emil Rydza <mailto:ekry@dtu.dk>`_ (lead software developer) and `Hans Ienasescu <mailto:hans@bio.tools>`_ (lead curator), in close collaboration with the registry core developers (see below) and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
 
 If you’d like to get involved with the project please mail registry-core@elixir-dk.org.
 
