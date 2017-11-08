@@ -43,6 +43,11 @@ Jon Ison (DTU, DK)
 Matus Kalas (UiB, NO)
 Dan Søndergaard (AU, DK) + student helpers
 Hervé Menager and/or Kenzo Hillion1 (IP, FR)
+Vassilios Ioannidis (SIB, CH)
+Severine Duvaud (SIB, CH)
+Heinz Stockinger (SIB, CH)
+Veit Schwammle (SDU, DK)
+Henriette Husum Bak-Jensen (KU, DK)
 
 Apologies
 ^^^^^^^^^^
