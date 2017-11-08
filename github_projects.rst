@@ -38,27 +38,6 @@ https://github.com/bio-tools/biotoolsConnect/
 
 Adaptors for content exchange with community projects (SeqWIKI, BioConductor, BioJS, ExPASy, ms-utils.org).
 
-
-
-EDAM
-----
-https://github.com/edamontology/edamontology
-
-Controlled vocabulary used by bio.tools.
-
-ToolDog
--------
-https://github.com/bio-tools/tooldog
-
-Generate XML template for Galaxy or CWL from the description of tools from the registry.
-
-OpenAPI-Importer
-----------------
-https://github.com/bio-tools/OpenAPI-Importer
-
-Tool to convert Swagger configuration files to Bio.Tools input XML.
-
-
 ReGaTE
 ------
 https://github.com/C3BI-pasteur-fr/ReGaTE
@@ -71,13 +50,40 @@ https://github.com/c3bi-pasteur-fr/ReMoTE
 
 Content import from Mobyle instances.
 
+OpenAPI-Importer
+----------------
+https://github.com/bio-tools/OpenAPI-Importer
 
+Tool to convert Swagger configuration files to Bio.Tools input XML.
 
+ToolDog
+-------
+https://github.com/bio-tools/tooldog
 
+Generate XML template for Galaxy or CWL from the description of tools from the registry.
+
+biotoolsCompose
+---------------
+https://github.com/bio-tools/biotoolsCompose
+
+Semi-automated workflow design using EDAM-annotated tools.
+
+EDAM
+----
+https://github.com/edamontology/edamontology
+
+Controlled vocabulary used by bio.tools.
 
 edamMap
 -------
 https://https://github.com/edamontology/edammap
 
 Mapping terms and text to EDAM concepts.
+
+
+Studentships
+------------
+https://github.com/bio-tools/Studentships
+
+Proposals for the bio.tools `studentship scheme <http://biotools.readthedocs.io/en/latest/studentships.html>`_.
 
