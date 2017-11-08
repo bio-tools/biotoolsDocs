@@ -65,8 +65,10 @@ Agenda
    
    2.6. D1.8 - matchmaking service : (discussion needed - recommend to drop this)
 
-3. **WP1 partner round-table presentations** (5' / partner)
-
+3. **WP1 partner round-table presentations of what's been done and what's planned for 2018** (5' / partner)
+   
+   3.0.  Overall priorities and goals for WP1 for 2018 (DTU et al.)
+   
    3.1.  ELIXIR-DK (DTU et al.)
    
    3.2.  ELIXIR-EE (UTARTU)
@@ -90,7 +92,7 @@ Agenda
 4. **Framing a WP1 f2f meeting** early 2018, round-table contributions
 
    *add your suggested agenda items for the f2f here*
-
+   
 5. **Publication opportunities** (Jon Ison)
 6. **AOB**
 
