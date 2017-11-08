@@ -60,7 +60,7 @@ STATUS: Funded and ongoing (3 students).  See `Proposal <https://github.com/bio-
 
 **Annotating software tools in domains of the Life Sciences**
 
-STATUS: Approved for funding.  Students needed.  See `Proposal <https://github.com/bio-tools/Studentships/blob/master/thematic_editing.pdf>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent4>`_.
+STATUS: Approved for funding.  We are open to `proposals <https://github.com/bio-tools/Studentships/blob/master/thematic_editing.pdf>`_ from `thematic editors <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_.  Open for `comments <http://tinyurl.com/biotoolsstudent4>`_.
 
 
 
