@@ -54,3 +54,12 @@ Docs overview
 bio.tools development is supported by `ELIXIR <https://www.elixir-europe.org/>`_ - the European Research Infrastructure for life science information. bio.tools content is freely available to all under `open license <http://biotools.readthedocs.io/en/latest/license.html>`_.
 
 
+Getting involved : a quick-start guide
+--------------------------------------
+1. Read the `docs <http://biotools.readthedocs.io/en/latest/>`_ but especially the `contributors guide <http://biotools.readthedocs.io/en/latest/contributors_guide.html>`_.
+2. All project / high-level task management is done in `sifter <https://biotools.sifterapp.com/>`_, email `Jon Ison <mailto:jison@bioinformatics.dtu.dk>`_ if you want in!
+3. Join the `mailing lists <http://biotools.readthedocs.io/en/latest/contributors_guide.html#mailing-list>`_ but note that most of the discussion is done via sifter.  Important announcements and some discussion are done via registry-core (see below)
+4. Members of `registry-core <http://biotools.readthedocs.io/en/latest/governance.html#registry-core>`_ share a mailing list and calendar, but there are some implications of joining.  Email `Jon <mailto:jison@bioinformatics.dtu.dk>`_ if you want to join.
+5. GitHub is used heavily for public / fine-grained issue tracking, code *etc.*, see the `bio.tools <https://github.com/bio-tools/>`_ and `EDAM <https://github.com/edamontology/>`_ organisations, in particuar the `biotoolsregistry <https://github.com/bio-tools/biotoolsregistry>`_ and `edamontology <https://github.com/edamontology/edamontology>`_ projects. Email `Jon <mailto:jison@bioinformatics.dtu.dk>`_ if you want to join.
+6. We run monthly `hangouts <http://biotools.readthedocs.io/en/latest/hangouts.html>`_ (coordination meetings) and - for technical people routinely involved with bio.tools curation or software development - weekely technical calls.  To join the hangouts email `Henriette <hhu@bio.ku.dk>`_ cc `Jon <mailto:jison@bioinformatics.dtu.dk>`_ or to join the weekly calls email `Emil <ekry@dtu.dk>`_ cc `Jon <mailto:jison@bioinformatics.dtu.dk>`_.
+7. Dive in at the deep end!  There are no end of projects and tasks to get involved with, see `sifter <https://biotools.sifterapp.com/>`_ and email `Jon <mailto:jison@bioinformatics.dtu.dk>`_ in the 1st instance to get orientated.
