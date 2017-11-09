@@ -39,15 +39,16 @@ Representatives of ELIXIR EXCELERATE WP1 partners are expected to attend.
 
 Confirmed
 ^^^^^^^^^
-Jon Ison (DTU, DK)
-Matus Kalas (UiB, NO)
-Dan Søndergaard (AU, DK) + student helpers
-Hervé Menager and/or Kenzo Hillion1 (IP, FR)
-Vassilios Ioannidis (SIB, CH)
-Severine Duvaud (SIB, CH)
-Heinz Stockinger (SIB, CH)
-Veit Schwammle (SDU, DK)
-Henriette Husum Bak-Jensen (KU, DK)
+* Jon Ison (DTU, DK)
+* Matus Kalas (UiB, NO)
+* Dan Søndergaard (AU, DK) + student helpers
+* Hervé Menager and/or Kenzo Hillion1 (IP, FR)
+* Vassilios Ioannidis (SIB, CH)
+* Severine Duvaud (SIB, CH)
+* Heinz Stockinger (SIB, CH)
+* Veit Schwammle (SDU, DK)
+* Henriette Husum Bak-Jensen (KU, DK)
+* Ahto Salumets (UTARTU, EE)
 
 Apologies
 ^^^^^^^^^^
