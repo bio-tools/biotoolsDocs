@@ -49,6 +49,8 @@ Confirmed
 * Veit Schwammle (SDU, DK)
 * Henriette Husum Bak-Jensen (KU, DK)
 * Ahto Salumets (UTARTU, EE)
+* Josep Gelpi (BSC, ES, *provisional*)
+* Hedi Peterson (UTARTU, EE)
 
 Apologies
 ^^^^^^^^^^
