@@ -161,6 +161,10 @@ A sample JSON document may look like this:
       }
     }
 
+.. note::
+   The API supports XML and YAML format uploads and will (soon!) support XML comatible with biotoolsSchema (https://github.com/bio-tools/biotoolsschema).  Example files will be added here soon.
+    
+    
 Data model
 ==========
 
