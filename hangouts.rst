@@ -52,9 +52,21 @@ Confirmed
 * Josep Gelpi (BSC, ES, *provisional*)
 * Hedi Peterson (UTARTU, EE)
 
+Unconfirmed
+^^^^^^^^^^^
+* Radka Svobodova (MU, CZ)
+* Salvador Capella (BSC, ES)
+* Emil Rydza (DTU, DK)
+* Hans Ienasescu (KU, DK)
+* Lukasz Berger (DTU, DK)
+* Piotr Chmura (DTU, DK)
+* Tomas Racek (MU, CZ)
+
 Apologies
 ^^^^^^^^^^
-
+* Erik Jaaniso (UTARTU, EE)
+ 
+  
 Agenda
 ^^^^^^
 
