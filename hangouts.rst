@@ -51,21 +51,23 @@ Confirmed
 * Ahto Salumets (UTARTU, EE)
 * Josep Gelpi (BSC, ES, *provisional*)
 * Hedi Peterson (UTARTU, EE)
-
+* Radka Svobodova (MU, CZ)
+  
 Unconfirmed
 ^^^^^^^^^^^
-* Radka Svobodova (MU, CZ)
-* Salvador Capella (BSC, ES)
 * Emil Rydza (DTU, DK)
 * Hans Ienasescu (KU, DK)
 * Lukasz Berger (DTU, DK)
 * Piotr Chmura (DTU, DK)
-* Tomas Racek (MU, CZ)
+
 
 Apologies
 ^^^^^^^^^^
 * Erik Jaaniso (UTARTU, EE)
- 
+* Salvador Capella (BSC, ES) 
+* Tomas Racek (MU, CZ)
+* Salvador Capella (BSC, ES)
+
   
 Agenda
 ^^^^^^
