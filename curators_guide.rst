@@ -3,6 +3,7 @@ Curators Guide
 
 .. attention::
    **UNDER CONSTRUCTION**
+
    - guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines.  Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
    - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
 
@@ -25,6 +26,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 - **"MAY** or **"OPTIONAL"** mean that the guideline is truly optional; you can choose to follow it or not.
     
 .. note::
+   
    The guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools, as a basis to monitor content and label bio.tools entries.
 
    - **automatically verified** guidelines are (or will be) checked *via* automated periodic QC of the bio.tools system
