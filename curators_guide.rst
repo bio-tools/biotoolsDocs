@@ -2,10 +2,9 @@ Curators Guide
 ==============
 
 .. attention::
-**UNDER CONSTRUCTION**
-
-  - guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines.  Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
-  - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
+   **UNDER CONSTRUCTION**
+   - guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines.  Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
+   - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
 
   
 bio.tools includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which you can download, install, configure and run yourself.
@@ -26,11 +25,11 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 - **"MAY** or **"OPTIONAL"** mean that the guideline is truly optional; you can choose to follow it or not.
     
 .. note::
-The guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools, as a basis to monitor content and label bio.tools entries.
+   The guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools, as a basis to monitor content and label bio.tools entries.
 
-- **automatically verified** guidelines are (or will be) checked *via* automated periodic QC of the bio.tools system
-- **manually verified** guidelines are checked *via* manual QC performed by trusted curators (bio.tools admin, entry owners *etc.*)
-- advice given in boxes (notes, tips, caution *etc.* are not verified
+   - **automatically verified** guidelines are (or will be) checked *via* automated periodic QC of the bio.tools system
+   - **manually verified** guidelines are checked *via* manual QC performed by trusted curators (bio.tools admin, entry owners *etc.*)
+   - advice given in boxes (notes, tips, caution *etc.* are not verified
 
 
      
