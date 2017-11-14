@@ -17,7 +17,7 @@ Usually, a bio.tools entry describes a discrete tool.  Some entries describe *co
 - guidelines specific to individual `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_
 
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in `RFC 2119 <http://www.ietf.org/rfc/rfc2119.txt>`_ as follows:
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in `RFC 2119 <http://www.ietf.org/rfc/rfc2119.txt>`_:
 
 - **"MUST"**, **"REQUIRED"** or **"SHALL"** mean that the guideline is an absolute requirement of the specification.
 - **"MUST NOT"** or **"SHALL NOT"** mean that the guideline is an absolute prohibition of the specification.
