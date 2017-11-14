@@ -1,23 +1,19 @@
 Curators Guide
 ==============
 
-**UNDER CONSTRUCTION**: guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines.  Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
+.. attention::
+**UNDER CONSTRUCTION**
+- guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines.  Please provide comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
+- for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
 
-bio.tools includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which a user can download, install, configure and run themselves.
+  
+bio.tools includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which you can download, install, configure and run yourself.
 
-Each bio.tools entry describes a discrete tool.  The scope, *i.e.* the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+Usually, a bio.tools entry describes a discrete tool.  Some entries describe *collections* of tools, such as software suites.  The scope, *i.e.* the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ which uses the `EDAM ontology <https://github.com/edamontology/edamontology/>`_ as a source of terms for the tool scientific description.  These curation guidelines describe how to create a high quality tool description, above and beyond the syntactic and semantic constraints that are defined in biotoolsSchema and EDAM.
 
-Guidelines below include:
-
-- `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ including information about `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id12>`_ and `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_.  You should read these first of all.
-- guidelines on `specific attributes <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ and organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
+- `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ include basic considerations, annotation of `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id12>`_ and the use of `EDAM <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_.  You should read these first of all.
+- guidelines on `specific attributes <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ 
 - guidelines specific to individual `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_
-
-Individual attribute guidelines are organised as follows:
-
-- **Automatically verified** guidelines are checked as part of automated QC performed periodically by the bio.tools system
-- **Manually verified** guidelines are checked as part of manual QC performed by trusted curators (bio.tools admin, entry owners *etc.*)
-- Advice given in boxes (notes, tips, caution *etc.* are not verified
 
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in `RFC 2119 <http://www.ietf.org/rfc/rfc2119.txt>`_ as follows:
@@ -29,8 +25,12 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 - **"MAY** or **"OPTIONAL"** mean that the guideline is truly optional; you can choose to follow it or not.
     
 .. note::
-   - the guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools.  Conformance to this standard (including passing automated and manual QC checks) will, in the future, be labelled within bio.tools.
-   - for curation advice or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_ or mail `registry-support <mailto:registry-support@elixir-dk.org>`_ directly.
+The guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools, as a basis to monitor content and label bio.tools entries.
+
+- **automatically verified** guidelines are (or will be) checked *via* automated periodic QC of the bio.tools system
+- **manually verified** guidelines are checked *via* manual QC performed by trusted curators (bio.tools admin, entry owners *etc.*)
+- advice given in boxes (notes, tips, caution *etc.* are not verified
+
 
      
 General guidelines
@@ -119,7 +119,14 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 
 Attribute guidelines
 --------------------
-     
+
+.. attention::
+Guidelines below are organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
+
+
+
+  
+
 Summary group
 ^^^^^^^^^^^^^
 
