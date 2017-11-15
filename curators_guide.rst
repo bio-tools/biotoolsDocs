@@ -1244,7 +1244,7 @@ Further guidelines (bio.tools admin only)
    The guidelines that follow are for attributes and other aspects under the control of bio.tools admin.  If you're not a bio.tools admin you can ignore this section.
 
 biotoolsID
-..........
+^^^^^^^^^^
 
 **Unique ID of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name**
 
@@ -1253,8 +1253,8 @@ biotoolsID
 .. attention::
    - the ID by default is a URL-safe version of the tool name, and is set (and can only be changed) by bio.tools admin.  
 
-   - **MUST** use the default value where possible and **SHOULD** be clean and intuitive otherwise
-   - **MUST NOT** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
+- **MUST** use the default value where possible and **SHOULD** be clean and intuitive otherwise
+- **MUST NOT** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
 
 .. note::
    **biotoolsSchema syntax**
@@ -1271,7 +1271,7 @@ biotoolsID
    - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
 
 biotoolsCURIE
-.............
+^^^^^^^^^^^^^
 **bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool**
 
 *e.g.* **biotools:signalp**
