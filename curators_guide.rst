@@ -242,24 +242,25 @@ Description
 
 **Manually verified guidelines**
 
-- **1.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
-- **2.** **SHOULD** only provide a terse statement of the tool function: what is done not how: this can include the primary operation(s) and possibly the types of primary input and output data
-- **3.** **MUST NOT** include any of the following:
+- **1.** **MUST** provide a terse statement of the tool purpose or function(s): what is done not how: this can include the primary operation(s) and input/output data
+- **2.** **MUST NOT** include any of the following:
 
-  - technical terms describing the type (e.g. "command-line tool") of software
+  - technical terms describing the software type, e.g. "command-line tool"
   - details about the software provider *e.g.* institute or person name
   - statements about how good the software is (although mentions of applicability are OK)
-       
+
+- **3.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
+
 **Automatically verified guidelines**
 
 - **4.** **MUST** begin with a capital letter and end with a period ('.') 
 - **5.** **MUST NOT** include URLs
-- **6.** **SHOULD NOT** include tool name
+- **6.** **SHOULD NOT** include tool name, *e.g.* don't start with "MyTool is a tool for ..."
 
 .. note::
    **biotoolsSchema syntax**
 
-   - description is minimum 10 and maximum 1000 characters.
+   - description is minimum 10 and maximum 500 characters.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
   
 Homepage
@@ -275,11 +276,9 @@ Homepage
 
 **Manually verified guidelines**
 
-- **1.** **SHOULD** resolve to a web page of information specific to the software
-- **2.** **MUST NOT** be a general URL such as an institutional homepage, unless nothing better is available
+- **1.** **MUST** resolve to a web page from the developer or provider of the software that most specifically describes the software
 
-.. tip:: In case a tool lacks it's own website, URL of it's code repository is OK
-
+.. tip:: In case a tool lacks it's own website, a URL of it's code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
 
 Collection
 ..........
