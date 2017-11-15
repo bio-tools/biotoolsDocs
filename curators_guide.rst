@@ -227,7 +227,7 @@ Version
    - 1.1 - 1.4, 2.0-alpha, 2.0-beta-01 - 2.0-beta-04, 2.0.0
    - *etc.*
 
-   We do not mandate anything, but recommend to keep things simple, the default being to specify a single individual version label in a single field.
+   We do not mandate anything here, but recommend to keep things simple, the default being to specify a single individual version label in a single field.
        
 .. caution::
    - **do not** assume version "1" in case the version number is not readily findable
