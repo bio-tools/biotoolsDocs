@@ -46,14 +46,13 @@ Consider the following *before* creating a bio.tools entry:
 1. **Are one or more entries required to describe the software?**
 
    - `workbenches <http://biotools.readthedocs.io/en/latest/curators_guide.html#workbench>`_ and other `suites <http://biotools.readthedocs.io/en/latest/curators_guide.html#suite>`_ often require multiple entries.
-   - tools with multiple interfaces (*e.g.* `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences (operations, inputs and outputs).  
-     
-   If in doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_.  
+   - tools with multiple interfaces (*e.g.* `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_ below).
+   - if in doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 
 2. **What tool types apply?**
 
-   - one or more `types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ may be assigned in a single entry reflecting different facets of the software that are described in that entry.
-   - read the tool type-specific `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_.
+   - one or more tool `types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ may be assigned in a single entry reflecting different facets of the software described by the entry.
+   - read the tool type-specific `guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_ before you create the tool.
 
      
 3. **What if the software is already registered?** 
@@ -61,14 +60,16 @@ Consider the following *before* creating a bio.tools entry:
    - if you're the rightful owner of the entry (*i.e.* the tool developer or provider of an online service) then request ownership of it
    - otherwise, request edit rights 
 
-   Make these requests using the buttons at the bottom of the Tool Card). If you plan to register multiple entries *en masse*, please discuss this first with `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.  
+   Make these requests using the buttons at the bottom of the Tool Card (see *e.g.* https://bio.tools/signalp).
+
+   If you plan to register multiple entries *en masse*, please discuss this first with `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.  
      
 4. **Are there version-specific considerations?**
 
-   - as a rule, a bio.tools entry describes the *latest version* available at the time of registration and is updated, as required, for subsequent releases.
-   - in exceptional circumstances, a new version with fundamental functional differences (operations, inputs and outputs) and can be registered as an entirely new entry.  In such cases, follow carefully the guidelines for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
+   - as a rule, a bio.tools entry **SHOULD** describe the *latest version* available at the time of registration and **SHOULD** be updated, as required, for subsequent releases.
+   - if a new version has fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_ below) it **MAY** be registered as an entirely new entry.  In such cases, follow carefully the guidelines for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
 
-5. **Plan how to describe the tool functions in detail** (see `below <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_)
+5. **Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_**
 6. **Read the general EDAM annotations guidelines** (see `below <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_) before starting.
 
 
