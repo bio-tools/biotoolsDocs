@@ -195,8 +195,6 @@ Name
    - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
 
-
-
 Version
 .......
 **Version (typically a version number) of the software assigned by the software developer or service provider.**
@@ -1271,8 +1269,16 @@ biotoolsID
    - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
    - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
 
-     
+biotoolsCURIE
+..
+**bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool**
 
+*e.g.* **biotools:signalp**
+     
+.. note::
+   **biotoolsSchema syntax**
+
+   - identical to biotoolsID but with the prefix ``biotools:``.
 
 
    
