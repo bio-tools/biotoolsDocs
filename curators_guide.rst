@@ -90,8 +90,8 @@ Plan how how to describe the software:
 .. note::
    A future refactoring may improve the modelling for alternative specification of inputs and outputs, by allowing multiple data+format couplets for a given input or output.  If this is done, the proposed guideline would be: 
 
-   - you **MAY** annotate all the commonly used alternatives and - if specifying alternatives - **MUST** annotate these as distinct data + format couplets within a single input or output.
-   - many inputs and outputs are complex, with individual data files containining multiple types of data.  You **MUST** select the single EDAM Data term that best describes an input or output (see `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotations> below) and **MUST NOT** specify multiple EDAM Data terms describing differents facets of the data.
+   - you **MAY** annotate all the commonly used alternatives and, if specifying alternatives, **MUST** annotate these as distinct data + format couplets within a single input or output.
+   - many inputs and outputs are complex, with individual data files containining multiple types of data.  You **MUST** select the single EDAM Data term that best describes an input or output (see `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotations>`_ below) and **MUST NOT** specify multiple EDAM Data terms describing differents facets of the data.
 
    Input on this issue is welcomed via `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/83>`_.
 
