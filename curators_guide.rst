@@ -196,34 +196,6 @@ Name
 
 
 
-ID
-..
-**Unique ID of the tool that is assigned upon registration of the software in bio.tools**
-
-*e.g.* **signalp**
-
-.. attention::
-   - the ID is set (and can only be changed) by bio.tools admin: if you're not a bio.tools admin you can ignore this section
-
-.. note::
-   **biotoolsSchema syntax**
-
-   - the ID is used in the Tool Card URLs, *e.g.* https://bio.tools/signalp
-   - the ID is a URL-safe derivative of (often identical to) the tool name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
-   - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
-
-
-.. important::
-   **Transforming name to toolID** (bio.tools admin only)
-   
-   - the ID should be clean and intuitive: where possible, simply use the default (a URL-safe version of the tool name)
-   - **do not** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
-   - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
-   - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
-   - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
-   - for Web APIs and Web services, follow the patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ above, *e.g.* ``EMBOSS_water_API_ebi``
-     
-
 
 Version
 .......
@@ -1266,3 +1238,43 @@ Workflow
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``includes`` relationship will allow specification of the tools that are included in a workflow.  
 
 .. important:: workflows can contain many tools; **do not** list all the operations performed by these tools, just the main operation(s) of the workflow as a whole.
+
+
+Further guidelines (bio.tools admin only)
+-----------------------------------------
+.. attention::
+   The guidelines that follow are for attributes and other aspects under the control of bio.tools admin.  If you're not a bio.tools admin you can ignore this section.
+
+biotoolsID
+..
+**Unique ID of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name**
+
+*e.g.* **signalp**
+
+.. attention::
+   - the ID by default is a URL-safe version of the tool name, and is set (and can only be changed) by bio.tools admin.  
+
+   - **MUST** use the default value where possible and **SHOULD** be clean and intuitive otherwise
+   - **MUST NOT** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - the ID is a URL-safe derivative of (often identical to) the tool name.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
+     
+.. note::
+   **Transformation rules**
+   The following rules apply when transforming the supplied tool name:
+
+   - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
+   - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
+   - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
+   - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
+
+     
+
+
+
+   
+     
+
