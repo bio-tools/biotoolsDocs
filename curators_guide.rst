@@ -144,12 +144,12 @@ Name
 
 **Manually verified guidelines**
 
-- **1.** **SHOULD** use the name in common use, *i.e.* in the tool homepage and publication.
-- **2.** **SHOULD** use the short form of the name *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
-- **3.** **MUST** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
+- **1.** **MUST** use the name in common use, *e.g.* in the tool homepage and publication.
+- **2.** **MUST** use the short form of the name, if available *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
+- **3.** **SHOULD** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
 - **4.** **MUST NOT** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* *unless* these are part of the common name
 - **5.** **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
-- **6.** **SHOULD NOT** include version information *unless* this is part of the name in common use in the tool homepage and publication.  
+- **6.** **MUST NOT** include version information *unless* this is part of the name in common use
 - **7.** **SHOULD** follow the naming patterns (see below) where original tools are re-used 
 
 .. note::
@@ -164,7 +164,8 @@ Name
 
      ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``
 
-   - a common abbreviation can be given instead of an acronym: if no common acronym or abbreviation exists, omit this part (do not invent one!)
+   - a common abbreviation can be given instead of an acronym
+   - if no common acronym or abbreviation exists, omit this part: do not invent one!
      
 
 .. note::  **Naming pattern**
@@ -180,15 +181,17 @@ Name
    * use ``API`` for Web APIs or ``WS`` for Web services
    * ``providerName`` is the name of the institute providing the online service (if applicable)
 
-   In exceptional cases (*i.e.* when registering, as separate entries, `versions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ of a tool which have distrinct functionality), substitute for ``toolName`` in the pattern above:
+   If in exceptional cases (*i.e.* when registering, as separate entries, `versions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ of a tool with `fundamental differences <http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start>`_), substitute for ``toolName`` in the pattern above:
    
-     ``toolname versionID`` *e.g.* ``FindPeaks 3.1``.
+     ``toolname versionID`` *e.g.* ``FindPeaks 3.1``
 
    where ``versionID`` is the version number.
 
    
 .. tip::
    - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
+
+.. tip::
    - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
 
