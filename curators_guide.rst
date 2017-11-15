@@ -103,7 +103,7 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 
 - **1.** **MUST NOT** use "organisational" EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" (see note below)
 - **2.** **SHOULD** use the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.  If multiple sibling terms are applicable (*i.e.* terms under a common parent), the parent term may be applicable.
-- **3.** **SHOULD NOT** use both a term and it's parent or other ancestor, when annotating a single attribute.  An exception would be a tool which *e.g.* performs some general `Sequence analysis <http://edamontology.org/operation_2403>_ operations but specialises on `Protein feature detection <http://edamontology.org/operation_3092>`_.
+- **3.** **SHOULD NOT** use both a term and it's parent or other ancestor, when annotating a single attribute.  An exception would be a tool which *e.g.* performs some general `Sequence analysis <http://edamontology.org/operation_2403>`_ operations but specialises on `Protein feature detection <http://edamontology.org/operation_3092>`_.
 
 .. tip::
    If you're struggling to find the terms you need, or the meaning of a term is not obvious, search EDAM using the browsers below (they have different functionalities).  Multiple searches using synonyms, alternative spellings *etc.* can help.
@@ -128,10 +128,7 @@ Attribute guidelines
 
 .. attention::
 Guidelines below are organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
-
-
-
-  
+ 
 
 Summary group
 ^^^^^^^^^^^^^
@@ -197,16 +194,17 @@ Name
 
 Version
 .......
-**Version (typically a version number) of the software assigned by the software developer or service provider.**
+**Version information (typically a version number) of the software applicable to this bio.tools entry.**
 
 *e.g.* **4.1**
 
 **Manually verified guidelines**
 
-- **1.** **MUST** specify exactly the public version label in common use
-- **2.** **MUST** correctly identify the tool version as described by the other attributes (see box below)
-- **3.** **MUST NOT** include tokens such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
-- **4.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
+- **1.** **MUST** correctly identify the tool version as described by the other attributes (see note below)
+- **2.** **MAY** identify all tool versions which are applicable to the entry
+- **3.** **MUST** specify exactly the public version label in common use
+- **4.** **MUST NOT** include tokens such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
+- **5.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
 
 .. note::
    **biotoolsSchema syntax**
@@ -218,7 +216,19 @@ Version
    Care is needed to ensure annotations correspond to the indicated tool version.
      - **only** change the version if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
      - if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
-  
+
+.. tip::
+   One or more version fields may be specified, and each - in princple - allows flexible specification of version information including single versions, ranges, lists and lists including ranges, *e.g.*:
+
+   - 1.1
+   - beta01
+   - 2.0 - 2.7
+   - 1.1, 1.2.1, 1.4, v5
+   - 1.1 - 1.4, 2.0-alpha, 2.0-beta-01 - 2.0-beta-04, 2.0.0
+   - *etc.*
+
+   We do not mandate anything, but recommend to keep things simple, the default being to specify a single individual version label in a single field.
+       
 .. caution::
    - **do not** assume version "1" in case the version number is not readily findable
 
@@ -1246,7 +1256,7 @@ Further guidelines (bio.tools admin only)
 biotoolsID
 ^^^^^^^^^^
 
-**Unique ID of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name**
+**Unique ID of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name.**
 
 *e.g.* **signalp**
 
@@ -1273,14 +1283,14 @@ biotoolsID
 
 biotoolsCURIE
 ^^^^^^^^^^^^^
-**bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool**
+**bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool.**
 
 *e.g.* **biotools:signalp**
      
 .. note::
    **biotoolsSchema syntax**
 
-   - identical to biotoolsID but with the prefix ``biotools:``.
+   - identical to biotoolsID but with the prefix ``biotools:``
 
 
    
