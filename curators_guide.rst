@@ -69,8 +69,8 @@ Consider the following *before* creating a bio.tools entry:
    - as a rule, a bio.tools entry **SHOULD** describe the *latest version* available at the time of registration and **SHOULD** be updated, as required, for subsequent releases.
    - if a new version has fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_ below) it **MAY** be registered as an entirely new entry.  In such cases, follow carefully the guidelines for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
 
-5. **Plan how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_**
-6. **Read the general EDAM annotations guidelines** (see `below <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_) before starting.
+5. **Plan** how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_.
+6. **Read** the general `EDAM annotations guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
 
 .. attention::
