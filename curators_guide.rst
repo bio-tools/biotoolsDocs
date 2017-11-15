@@ -1263,6 +1263,7 @@ biotoolsID
      
 .. note::
    **Transformation rules**
+   
    The following rules apply when transforming the supplied tool name:
 
    - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
