@@ -72,10 +72,6 @@ Consider the following *before* creating a bio.tools entry:
 5. **Plan** how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_.
 6. **Read** the general `EDAM annotations guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
-
-.. attention::
-   The current version of `bio.tools <https://bio.tools/>`_ allows version specification via a discrete component in the Tool Card URL (e.g. https://bio.tools/SignalP/version/4.1).  Version specification will be dropped in the next release (e.g.. https://dev.bio.tools/SignalP), however, it will still be possible to specify the `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id16>`_ of a tool that is being described.
-
 Tool functions
 ^^^^^^^^^^^^^^
 bio.tools uses a model of software (see below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
@@ -85,12 +81,18 @@ bio.tools uses a model of software (see below) defined within `biotoolsSchema <h
 
 Plan how how to describe the software:
 
-- identify the distinct functions (modes of operation) and the individual operations associated with each one.  For well documented tools this is usually obvious.  If in any doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
-- as a general rule, if the tool allows an option between doing one thing or another, then annotate these as distinct functions.  If in contrast a tool always does one or more things, then annotate these as distinct operations within a single function
-- bio.tools aims for fairly coarse-grained description, *i.e.* specify the primary functions and operations, from a typical end-user perspective; if in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
+- identify the distinct functions (modes of operation) and the individual operations associated with each one.  Typically different functions (modes) perform different operations and for well documented tools, this is usually obvious.  If in any doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
+- as a general rule, if the tool allows an option between doing one thing or another, then you **MUST** annotate the operations as distinct functions.  If in contrast a tool always does one or more things, then you **MUST** annotate these as distinct operations within a single function.
+- bio.tools aims for fairly coarse-grained description, *i.e.* you **SHOULD** only specify the primary functions and operations, from a typical end-user perspective.  If a tool happens to perform some operation internally, but this is secondary to its advertised purpose, then you **SHOULD NOT** annotate it.  If in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
 - this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
+- many tools allow a primary input or output to be specified in a number of alternative ways, *e.g.* a sequence input that may be specified *via* a sequence identifier, or as a literal sequence.  In such cases, you **MAY** annotate the alternatives as distinct functions (see above).  If specifying just alternative, you **SHOULD** use the EDAM Data concept for the type of data, rather than identifier.  
 
+.. note::
+   A future refactoring may improve the modelling for alternative specification of inputs and outputs, by allowing multiple data+format couplets for a given input or output.  If this is done, the proposed guideline would be: 
+   - you **MAY** annotate all the commonly used alternatives and - if specifying alternatives - **MUST** annotate these as distinct data + format couplets within a single input or output.
+   - many inputs and outputs are complex, with individual data files containining multiple types of data.  You **MUST** select the single EDAM Data term that best describes an input or output (see `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotations> below) and **MUST NOT** specify multiple EDAM Data terms describing differents facets of the data.
 
+   Input on this issue is welcomed via `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/83>`_.
 
 EDAM annotations
 ^^^^^^^^^^^^^^^^
