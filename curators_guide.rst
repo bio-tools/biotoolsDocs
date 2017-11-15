@@ -1244,7 +1244,8 @@ Further guidelines (bio.tools admin only)
    The guidelines that follow are for attributes and other aspects under the control of bio.tools admin.  If you're not a bio.tools admin you can ignore this section.
 
 biotoolsID
-..
+..........
+
 **Unique ID of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name**
 
 *e.g.* **signalp**
@@ -1270,7 +1271,7 @@ biotoolsID
    - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
 
 biotoolsCURIE
-..
+.............
 **bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool**
 
 *e.g.* **biotools:signalp**
