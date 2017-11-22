@@ -61,7 +61,8 @@ Confirmed
 * Josep Gelpi (BSC, ES, *provisional*)
 * Hedi Peterson (UTARTU, EE)
 * Radka Svobodova (MU, CZ)
-  
+* Jonathan Hickford (EBI)
+
 Unconfirmed
 ^^^^^^^^^^^
 * Emil Rydza (DTU, DK)
