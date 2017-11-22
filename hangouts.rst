@@ -20,8 +20,8 @@ You are welcome to attend; please mail Henriette Husum Bak-Jensen (hhu@bio.ku.dk
 Next meeting
 ------------
 
-2017 Novmber 23, 12.30 CET 
----------------------------
+2017 Novmber 23, 12.30 - 2.30 PM CET 
+------------------------------------
 
 Call details
 ^^^^^^^^^^^^
