@@ -26,11 +26,12 @@ Next meeting
 Call details (*to be confirmed*)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TC by DeIC platform (ensure Jon & Henriette have your email address)
-Connect via Computer: http://v.deic.dk?ID=610026 (Windows / Mac)
-Write your name and meeting ID: 610026.  Click Participate Now. 
-Scopia Desktop client will be installed before entering the meeting room the first time. 
-Installation guides: https://www.deic.dk/via_computer_dk
+Connection details:
+1. Plug in your headset **before** joining the call
+2. Follow the link: https://c.deic.dk/wp1call/
+3. Write your name.  Click Participate Now. 
+
+Software (Adobe Connect) may need to be installed before entering the meeting room the first time : it's **strongly recommended** you click the link above now, to install the software as necessary.
 
 
 Attendeees
