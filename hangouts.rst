@@ -23,8 +23,8 @@ Next meeting
 2017 Novmber 23, 12.30 CET 
 ---------------------------
 
-Call details (*to be confirmed*)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Call details
+^^^^^^^^^^^^
 
 Connection details:
 
