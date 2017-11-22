@@ -27,6 +27,7 @@ Call details (*to be confirmed*)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Connection details:
+
 1. Plug in your headset **before** joining the call
 2. Follow the link: https://c.deic.dk/wp1call/
 3. Write your name.  Click Participate Now. 
@@ -34,8 +35,9 @@ Connection details:
 Software (Adobe Connect) may need to be installed before entering the meeting room the first time : it's **strongly recommended** you click the link above now, to install the software as necessary.
 
 If you have never attended an Adobe Connect meeting before:
-* Test your connection: https://c.deic.dk/common/help/en/support/meeting_test.htm
-* Get a quick overview: http://www.adobe.com/products/adobeconnect.html
+
+- Test your connection: https://c.deic.dk/common/help/en/support/meeting_test.htm
+- Get a quick overview: http://www.adobe.com/products/adobeconnect.html
 
 
 
