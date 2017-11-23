@@ -129,7 +129,28 @@ Agenda
 6. **AOB**
 
 
+.. note::
 
+   **Deliverables & milestones**
+
+   **2017 Q3**
+   - M1.3 - literature integration (POSTPONED from Aug 17)
+
+   **2018 Q3**
+   - D1.3 - registry release + formats
+   - D1.5 - metrics in registry (POSTPONED from Aug 17)
+   - D1.7 - user helpdesk/fora
+   - D1.8 - matchmaking service (Aug 18)
+
+   - M1.1.3 - EDAM release + tooling
+   - M1.5 - Good Practice Guidelines
+   - M1.6 - metacatalogue + synergy meetings
+   - M1.7.2 - novel user interfaces
+
+
+
+
+   
 .. note::
 
    **D1.7 user helpdesk / fora**
