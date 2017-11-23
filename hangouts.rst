@@ -134,9 +134,11 @@ Agenda
    **Deliverables & milestones**
 
    **2017 Q3**
+
    - M1.3 - literature integration (POSTPONED from Aug 17)
 
    **2018 Q3**
+
    - D1.3 - registry release + formats
    - D1.5 - metrics in registry (POSTPONED from Aug 17)
    - D1.7 - user helpdesk/fora
