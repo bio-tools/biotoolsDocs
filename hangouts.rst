@@ -61,6 +61,7 @@ Confirmed
 * Hedi Peterson (UTARTU, EE)
 * Radka Svobodova (MU, CZ)
 * Jonathan Hickford (EBI)
+* Peter McQuilton (OERC, UK)
 
 Unconfirmed
 ^^^^^^^^^^^
