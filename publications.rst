@@ -1,7 +1,6 @@
 Publications
 ============
-
-Hillion KH, Ison J and Ménager H. (2017). `Using bio.tools to generate and annotate workbench tool descriptions <https://f1000research.com/articles/6-2074/v1>`_  F1000Research 2017 (article).
+Hillion KH, Kuzmin I, Khodak A, Rasche E, Crusoe M, Peterson H, Ison J, Ménager, H.  (2017). `Using bio.tools to generate and annotate workbench tool descriptions <https://f1000research.com/articles/6-2074/v1>`_  F1000Research 2017 (article).
 doi:`10.12688/f1000research.12974.1 <https://10.12688/f1000research.12974.1>`_
 
 Doppelt-Azeroual, O., Mareuil, F., Deveaud, Kalaš, M., Soranzo, N., van den Beek, M., Grüning, B., Ison, J. and Ménager, H. (2017).  `ReGaTE: Registration of Galaxy Tools in Elixir <https://doi.org/10.1093/gigascience/gix022>`_  *GigaScience*,  doi:`10.1093/gigascience/gix022 <https://doi.org/10.1093/gigascience/gix022>`_
