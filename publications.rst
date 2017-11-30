@@ -1,8 +1,8 @@
 Publications
 ============
 
-Hillion KH, Ison J and Ménager H. (2017). `ToolDog – generating tool descriptors from the ELIXIR tool registry <http://doi.org/10.7490/f1000research.1114125.1>`_  [version 1; not peer reviewed]. F1000Research 2017, 6:767 (poster).
-doi:`10.7490/f1000research.1114125.1 <http://doi.org/10.7490/f1000research.1114125.1>`_
+Hillion KH, Ison J and Ménager H. (2017). `Using bio.tools to generate and annotate workbench tool descriptions <https://f1000research.com/articles/6-2074/v1>`_  F1000Research 2017 (article).
+doi:`10.12688/f1000research.12974.1 <https://10.12688/f1000research.12974.1>`_
 
 Doppelt-Azeroual, O., Mareuil, F., Deveaud, Kalaš, M., Soranzo, N., van den Beek, M., Grüning, B., Ison, J. and Ménager, H. (2017).  `ReGaTE: Registration of Galaxy Tools in Elixir <https://doi.org/10.1093/gigascience/gix022>`_  *GigaScience*,  doi:`10.1093/gigascience/gix022 <https://doi.org/10.1093/gigascience/gix022>`_
 
@@ -16,8 +16,8 @@ Citation
 --------
 If you use bio.tools, please cite:
 
-Ison, J. et al. (2015). `Tools and data services registry: a community effort to document bioinformatics resources. <http://nar.oxfordjournals.org/content/early/2015/11/03/nar.gkv1116.long>`_ *Nucleic Acids Research.*  doi: `10.1093/nar/gkv1116 <http://dx.doi.org/10.1093/nar/gkv1116>`_ 
+Ison, J. et al. (2015). `Tools and data services registry: a community effort to document bioinformatics resources. <http://nar.oxfordjournals.org/content/early/2015/11/03/nar.gkv1116.long>`_ *Nucleic Acids Research.*  doi: `10.1093/nar/gkv1116 <https://dx.doi.org/10.1093/nar/gkv1116>`_ 
 
 If you use EDAM or its part, please cite:
 
-Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). `EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats <http://bioinformatics.oxfordjournals.org/content/29/10/1325.full>`_ *Bioinformatics*, doi: `10.1093/bioinformatics/btt113 <http://doi.org/10.1093/bioinformatics/btt113>`_ 
+Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). `EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats <http://bioinformatics.oxfordjournals.org/content/29/10/1325.full>`_ *Bioinformatics*, doi: `10.1093/bioinformatics/btt113 <https://doi.org/10.1093/bioinformatics/btt113>`_ 

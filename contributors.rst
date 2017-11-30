@@ -14,6 +14,7 @@ Registry Core
 - Matúš Kalaš (University of Bergen, NO) - **schema & ontology developer**, user engagement, ontology & schema development
 - Ahto Salumets (UT, EE) - **curation**
 - Tomáš Raček (Masaryk University, CZ) - **curation**
+- Alban Gaignard (CNRS, France) **Semantic Web applications**
 - Anne Wenzel (RTH, DK) - **curation** (RNA tools)
 - Erik Jaaniso (UT, EE) - **software development**, lead engineer for `edammap <https://github.com/edamontology/edammap>`_
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
@@ -57,7 +58,6 @@ Registry Contributors
 Thanks to the many people who have contributed - if you're not listed below, please let us know!
 
 - Aleksandra Nenadic (University of Manchester)
-- Alban Gaignard (CNRS, France)
 - Anders Dannesboe (BIRC, DK) - virtualization / container services 
 - Anthony Bretaudeau (INRA - GenOuest/BIPAA)
 - Bjoern Gruening (Uni-Freiburg)
