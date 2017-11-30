@@ -1,6 +1,6 @@
 Governance
 ==========
-bio.tools follows a simple `governance model <https://bio.tools/governance>`_ of three tiers under the leadership of the 
+bio.tools follows a simple governance model of three tiers under the leadership of the 
 `Danish ELIXIR node <http://elixir-denmark.org>`_ (Professor Søren Brunak, Head of Node).  Development on the ground is led by
 `Jon Ison <mailto:jison@bioinformatics.dtu.dk>`_ (technical coordination), `Emil Rydza <mailto:ekry@dtu.dk>`_ (lead software developer) and `Hans Ienasescu <mailto:hans@bio.tools>`_ (lead curator), in close collaboration with the registry core developers (see below) and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
 
@@ -8,7 +8,7 @@ If you’d like to get involved with the project please mail registry-core@elixi
 
 Registry Core
 -------------
-Registry Core includes the technical and scientific experts at the heart of the development and curation of bio.tools.  Priorities are set in a quasi-democratic way with the **content leader** (currently Jon Ison) or **software leader** (currently Emil Rydza) having the final say where necessary (in so far as this is meaningful).  Registry Core members must either be funded, or have the intent and some bandwidth, to support the registry in the long-term.  The content and software leader ensures the Registry Core group and all Contributors are listened to and informed.
+Registry Core includes the technical and scientific experts at the heart of the development and curation of bio.tools.  Priorities are set in a quasi-democratic way with the **technical coordinator** (currently Jon Ison), **content leader** (currently Hans Ienasescu) or **software leader** (currently Emil Rydza) having the final over these respective areas, where necessary (in so far as this is meaningful).  Registry Core members must either be funded, or have the intent and some bandwidth, to support the registry in the long-term.  The technical coordinator ensures the Registry Core group and all Contributors are listened to and informed.
 
 `Members of Registry Core <http://biotools.readthedocs.io/en/latest/contributors.html#registry-core>`_ are responsible for agreeing aims and general good practice.  They are expected to advocate bio.tools and (as bandwidth allows) collaborate with one another to help develop the registry software, related technical projects and registry content, *e.g.*:
 
