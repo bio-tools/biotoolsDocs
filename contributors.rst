@@ -3,26 +3,26 @@ Contributors
 
 Registry Core
 -------------
-- Jon Ison (DTU, DK) - **technical coordination**
-- Emil Rydza (KU, DK) - **software leader**
-- Piotr Chmura (KU, DK) - **software development** (back-end)
-- Lukasz Berger (DTU, DK) - **software development** (front-end)
-- Hans-Ioan Lenasescu (KU, DK) - **curation leader**, Web development
-- Tomáš Raček (Masaryk University, CZ) - **curation**
-- Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, schema, EDAM
-- Matúš Kalaš (University of Bergen, NO) - **user engagement**, schema, EDAM
+- Jon Ison (DTU, DK) - **technical coordinator**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
+- Emil Rydza (KU, DK) - **software leader**, lead developer for bio.tools
+- Hans-Ioan Lenasescu (KU, DK) - **content leader**, Web development
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
-- Ahto Salumets (UT, EE) - curation
-- Anne Wenzel (RTH, DK) - curation, RNA tools
-- Dan Bolser (EMBL-EBI, EU) - WIKI integration
+- Piotr Chmura (KU, DK) - **software developer**, bio.tools development (back-end)
+- Lukasz Berger (DTU, DK) - **software developer** bio.tools development (front-end)
+- Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, ontology & schema development
+- Kenzo Hillion (Institut Pasteur, FR) - **workbench integration**, 
+- Matúš Kalaš (University of Bergen, NO) - **engineer**, user engagement, ontology & schema development
+- Ahto Salumets (UT, EE) - **curator**
+- Tomáš Raček (Masaryk University, CZ) - **curator**
+- Anne Wenzel (RTH, DK) - **curator** (RNA tools)
+- Erik Jaaniso (UT, EE) - **software developer**, lead engineer for `edammap <https://github.com/edamontology/edammap>`_
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
 - Dmitry Repchevsky (BSC, ES) - Web services & monitoring
-- Erik Jaaniso (UT, EE) - text mining
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
+- Dan Bolser (EMBL-EBI, EU) - WIKI integration
+- Magnus Palmblad (LUMC, NL) - msutil.org integration
 - José María Fernández (CNIO, ES) - benchmarking
 - Karel Berka (Palacky University, CZ) - advisor 
-- Kenzo Hillion (Institut Pasteur, FR) - workbench integration
-- Magnus Palmblad (LUMC, NL) - msutil.org integration
 - Michael Crusoe (Common Workflow Language project) - advisor, CWL integration
 - Peter Juvan (University of Ljubljana, SI) - curation
 - Rabie SAIDI (EMBL-EBI, EU) - text mining
