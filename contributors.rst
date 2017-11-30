@@ -3,19 +3,19 @@ Contributors
 
 Registry Core
 -------------
-- Jon Ison (DTU, DK) - **technical coordinator**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
-- Emil Rydza (KU, DK) - **software leader**, lead developer for bio.tools
-- Hans-Ioan Lenasescu (KU, DK) - **content leader**, Web development
+- Jon Ison (DTU, DK) - **technical coordination**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
+- Emil Rydza (KU, DK) - **software development (lead)**, lead developer for bio.tools
+- Hans-Ioan Lenasescu (KU, DK) - **curation (lead)**, Web development
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
-- Piotr Chmura (KU, DK) - **software developer**, bio.tools development (back-end)
-- Lukasz Berger (DTU, DK) - **software developer** bio.tools development (front-end)
+- Piotr Chmura (KU, DK) - **software development**, bio.tools development (back-end)
+- Lukasz Berger (DTU, DK) - **software development** bio.tools development (front-end)
 - Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, ontology & schema development
 - Kenzo Hillion (Institut Pasteur, FR) - **workbench integration**, 
-- Matúš Kalaš (University of Bergen, NO) - **engineer**, user engagement, ontology & schema development
-- Ahto Salumets (UT, EE) - **curator**
-- Tomáš Raček (Masaryk University, CZ) - **curator**
-- Anne Wenzel (RTH, DK) - **curator** (RNA tools)
-- Erik Jaaniso (UT, EE) - **software developer**, lead engineer for `edammap <https://github.com/edamontology/edammap>`_
+- Matúš Kalaš (University of Bergen, NO) - **schema & ontology developer**, user engagement, ontology & schema development
+- Ahto Salumets (UT, EE) - **curation**
+- Tomáš Raček (Masaryk University, CZ) - **curation**
+- Anne Wenzel (RTH, DK) - **curation** (RNA tools)
+- Erik Jaaniso (UT, EE) - **software development**, lead engineer for `edammap <https://github.com/edamontology/edammap>`_
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
 - Dmitry Repchevsky (BSC, ES) - Web services & monitoring
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
@@ -38,7 +38,7 @@ Registry Core (Registry Editors)
 - Josep Gelpí (INB / BSC-CSN, ES) - **structural bioinformatics**, benchmarking & tools interoperability
 - Juergen Haas (University of Basel, CH) - **protein structural biology**, benchmarking
 - Marta Villegas (BSC, ES) - **NLP** and **text mining** 
-- Veit Schwämmle (SDU-BMB, DK) - **proteomics**, EDAM, bio.tools applications
+- Veit Schwämmle (SDU-BMB, DK) - **proteomics**, ontology development, bio.tools applications
 - Vivi Raundahl Gregersen (Aarhus University, DK) - **agricultural science**
 
 
