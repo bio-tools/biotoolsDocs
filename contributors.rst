@@ -74,6 +74,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Gert Vriend (CMBI, NL)
 - Gianluca Della Vedova (Univ. Milano-Bicocca, IT)
 - Gianni Cesereni (University of Rome "Tor Vergata")
+- Giuseppe Profiti (ELIXIR-IT & University of Bologna, IT)
 - Gonçalo Antunes (INESC-ID)
 - Guy Yachdav (TUM, DE)
 - Hedi Peterson (University of Tartu)
