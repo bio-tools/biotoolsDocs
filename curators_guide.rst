@@ -1165,9 +1165,9 @@ Suite
 ^^^^^
 **A collection of tools which are bundled together into a convenient toolkit. Such tools typically share related functionality, a common user interface and can exchange data conveniently. This includes collections of stand-alone command-line tools, or Web applications within a common portal.**
 
-- describe the attributes of the suite as a whole, not (typically) individual tools or functions provided by it
+- describe the attributes that are commmon to the suite as a whole, not (typically) attributes of individual tools
 - individual tools included in the suite should be registered as separate entries
-- when annotating the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of the suite, pick one or two of the primary operation(s) of the included tools
+- when annotating the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of the suite, select operations that are core function of the suite itself / common to all tools in the suite.  Alternatively pick one or two of the primary operation(s) of the included tools
 - entries for the suite itself and it's component tools can be associated by annotatong them as part of a common `collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
 
 .. tip:: If you are considering to register a suite with many tools, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
