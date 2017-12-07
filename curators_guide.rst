@@ -145,6 +145,8 @@ Name
 - **6.** **MUST NOT** include version information *unless* this is part of the name in common use
 - **7.** **SHOULD** follow the naming patterns (see below) where original tools are re-used 
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#name>`_
+  
 .. note::  **Naming pattern**
 
    - for `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ use the pattern:
@@ -154,9 +156,6 @@ Name
    - a common abbreviation can be given instead of an acronym
    - if no common acronym or abbreviation exists, omit this part: do not invent one!
      
-
-.. note::  **Naming pattern**
-    
    - for tools that simply wrap or provide an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and `web applications <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, use the pattern:
 
      ``{collectionName} toolName {API|WS}{( providerName)}`` *e.g.* ``EMBOSS water API (ebi)``

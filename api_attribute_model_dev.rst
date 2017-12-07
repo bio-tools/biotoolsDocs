@@ -183,6 +183,7 @@ Type
 
 Restrictions
   Min length: 1
+
   Max length: 100
 
   Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
@@ -193,16 +194,15 @@ Example
 
   "name": "SignalP"
 
-Curation guidelines
-  `Name guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_
+
 
 .. note::
-   **Syntax**
-
    - the name has a 100 character limit and may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_
 
-  
+
+
   
 Short description
 -----------------
@@ -212,22 +212,26 @@ Attribute name
   shortDescription
 
 Required
-  Yes
+  No
 
 Type
   String
 
 Restrictions
-  Max length: 1000
+  Min length: 10
+
+  Max length: 100
 
 Example
 
 .. code-block:: js
 
-  "description": "Prediction of the presence and location of signal
-  peptide cleavage sites in amino acid sequences from different organisms."
+  "shortDescription": "Detect and visualise single-nucleotide polymorphisms (SNPs)."
 
+.. note::
+  - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#shortdescription>`_
 
+  
 Description
 -----------
 Attribute name
