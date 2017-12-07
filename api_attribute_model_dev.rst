@@ -191,8 +191,11 @@ Restrictions
 Example
 
 .. code-block:: js
-
+  # JSON
   "name": "SignalP"
+
+  # XML
+  <name>SignalP</name>
 
 
 
