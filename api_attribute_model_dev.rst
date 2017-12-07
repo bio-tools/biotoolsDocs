@@ -170,6 +170,8 @@ Data model
 
 Name
 ----
+*Canonical software name assigned by the software developer or service provider.*
+
 Attribute name
   name
 
@@ -190,6 +192,49 @@ Example
 
   "name": "SignalP"
 
+Short description
+-----------------
+Attribute name
+  shortDescription
+
+Required
+  Yes
+
+Type
+  String
+
+Restrictions
+  Max length: 1000
+
+Example
+
+.. code-block:: js
+
+  "description": "Prediction of the presence and location of signal
+  peptide cleavage sites in amino acid sequences from different organisms."
+
+
+Description
+-----------
+Attribute name
+  description
+
+Required
+  Yes
+
+Type
+  String
+
+Restrictions
+  Max length: 1000
+
+Example
+
+.. code-block:: js
+
+  "description": "Prediction of the presence and location of signal
+  peptide cleavage sites in amino acid sequences from different organisms."
+  
 Current version
 ---------------
 Attribute name
@@ -585,27 +630,6 @@ Example
 .. code-block:: js
 
   "homepage": "http://cbs.dtu.dk/services/SignalP/"
-
-Description
------------
-Attribute name
-  description
-
-Required
-  Yes
-
-Type
-  String
-
-Restrictions
-  Max length: 1000
-
-Example
-
-.. code-block:: js
-
-  "description": "Prediction of the presence and location of signal
-  peptide cleavage sites in amino acid sequences from different organisms."
 
 Cost
 -----------

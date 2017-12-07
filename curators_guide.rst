@@ -135,9 +135,7 @@ Summary group
 
 Name
 ....
-**Canonical software name assigned by the software developer or service provider**
-
-*e.g.* **"SignalP"**
+*Canonical software name assigned by the software developer or service provider, e.g. "SignalP"*
 
 **Manually verified guidelines**
 
