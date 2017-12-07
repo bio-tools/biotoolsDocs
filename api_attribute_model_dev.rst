@@ -170,7 +170,7 @@ Data model
 
 Name
 ----
-*Canonical software name assigned by the software developer or service provider.*
+*Canonical software name assigned by the software developer or service provider, e.g. "SignalP"*
 
 Attribute name
   name
@@ -182,9 +182,10 @@ Type
   String
 
 Restrictions
-  Max length: 50
+  Min length: 1
+  Max length: 100
 
-  Pattern: ^[\p{Zs}A-Za-z0-9+\.,\-_:; ()]*$
+  Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
 
 Example
 
@@ -192,8 +193,21 @@ Example
 
   "name": "SignalP"
 
+Curation guidelines
+  `Name guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_
+
+.. note::
+   **Syntax**
+
+   - the name has a 100 character limit and may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+
+  
+  
 Short description
 -----------------
+*Short and concise textual description of the software function, e.g. "Detect and visualise single-nucleotide polymorphisms (SNPs)."*
+
 Attribute name
   shortDescription
 
@@ -759,7 +773,7 @@ Link object definition
         * Restrictions: max length: 300
     * type
         * Required: Yes
-        * Type: EDNUM
+        * Type: ENUM
         * Allowed values: ``Browser``, ``Helpdesk``, ``Issue tracker``, ``Mailinglist``, ``Mirror``, ``Registry``, ``Repository``, ``Social media``
     * comment
         * Required: No
@@ -797,7 +811,7 @@ Download object definition
         * Restrictions: max length: 300
     * type
         * Required: Yes
-        * Type: EDNUM
+        * Type: ENUM
         * Allowed values: ``API specification``, ``Biological data``, ``Binaries``, ``Binary package``, ``Command-line specification``, ``Container file``, ``CWL file``, ``Icon``, ``Ontology``, ``Screenshot``, ``Source code``, ``Source package``, ``Test data``, ``Test script``, ``Tool wrapper (galaxy)``, ``Tool wrapper (taverna)``, ``Tool wrapper (other)``, ``VM image``
     * comment
         * Required: No
@@ -836,7 +850,7 @@ Documentation object definition
         * Restrictions: max length: 300
     * type
         * Required: Yes
-        * Type: EDNUM
+        * Type: ENUM
         * Allowed values: ``API documentation``, ``Citation instructions``, ``General``, ``Manual``, ``Terms of use``, ``Training material``, ``Other``
     * comment
         * Required: No

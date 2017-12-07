@@ -137,8 +137,6 @@ Name
 ....
 *Canonical software name assigned by the software developer or service provider, e.g. "SignalP"*
 
-**Manually verified guidelines**
-
 - **1.** **MUST** use the name in common use, *e.g.* in the tool homepage and publication.
 - **2.** **MUST** use the short form of the name, if available *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
 - **3.** **SHOULD** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
@@ -146,12 +144,6 @@ Name
 - **5.** **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
 - **6.** **MUST NOT** include version information *unless* this is part of the name in common use
 - **7.** **SHOULD** follow the naming patterns (see below) where original tools are re-used 
-
-.. note::
-   **biotoolsSchema syntax**
-
-   - the name has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, spaces, periods, commas, dashes, colons, plus symbols, semicolons and parentheses.
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 .. note::  **Naming pattern**
 
@@ -185,9 +177,36 @@ Name
    
 .. tip::
    - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
-
-.. tip::
    - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
+
+shortDescription
+................
+*Short and concise textual description of the software function, e.g. "Detect and visualise single-nucleotide polymorphisms (SNPs)."*
+
+**Manually verified guidelines**
+
+- **1.** **MUST** provide a terse statement of the tool purpose or function(s): what is done not how: this can include the primary operation(s), input(s) and output(s)
+- **2.** **SHOULD NOT** include any of the following, unless they are essential to distinguish the tool from others registered in bio.tools:
+
+  - technical terms describing the software type, e.g. "command-line tool"
+  - details about the software provider *e.g.* institute or person name
+
+- **3.** **MUST NOT** include statements about how good the software is (although mentions of applicability are OK)
+
+- **4.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
+
+**Automatically verified guidelines**
+
+- **5.** **MUST** begin with a capital letter and end with a period ('.') 
+- **6.** **MUST NOT** include URLs
+- **7.** **SHOULD NOT** include tool name, *e.g.* don't start with "MyTool is a tool for ..."
+
+.. note::
+   **biotoolsSchema syntax**
+
+   - description is minimum 10 and maximum 500 characters.
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+  
 
 
 Version
@@ -231,36 +250,6 @@ Version
    - **do not** assume version "1" in case the version number is not readily findable
 
   
-  
-Description
-...........
-**Short and concise textual description of the software function**
-
-*e.g.* **"Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms."**
-
-**Manually verified guidelines**
-
-- **1.** **MUST** provide a terse statement of the tool purpose or function(s): what is done not how: this can include the primary operation(s), input(s) and output(s)
-- **2.** **SHOULD NOT** include any of the following, unless they are essential to distinguish the tool from others registered in bio.tools:
-
-  - technical terms describing the software type, e.g. "command-line tool"
-  - details about the software provider *e.g.* institute or person name
-
-- **3.** **MUST NOT** include statements about how good the software is (although mentions of applicability are OK)
-
-- **4.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
-
-**Automatically verified guidelines**
-
-- **5.** **MUST** begin with a capital letter and end with a period ('.') 
-- **6.** **MUST NOT** include URLs
-- **7.** **SHOULD NOT** include tool name, *e.g.* don't start with "MyTool is a tool for ..."
-
-.. note::
-   **biotoolsSchema syntax**
-
-   - description is minimum 10 and maximum 500 characters.
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
   
 Homepage
 ........
