@@ -207,8 +207,6 @@ Example
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_
 
-
-
   
 Short description
 -----------------
@@ -235,9 +233,11 @@ Example
   "shortDescription": "Detect and visualise single-nucleotide polymorphisms (SNPs)."
 
 .. note::
+   - description is minimum 10 and maximum 100 characters.
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#shortdescription>`_
 
-  
+
 Description
 -----------
 Attribute name

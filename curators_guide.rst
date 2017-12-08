@@ -119,7 +119,7 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
    It currently takes some time from requesting new EDAM terms for these to be supported in bio.tools.  In future, you'll be able to request terms directly via the bio.tools registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and bio.tools.
 
 .. note::
-   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in bio.tools. They are defined in `EDAM.owl <https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl>`_ via ``<uiTip>Not recommended for annotation in bio.tools.</uiTip>`.  Such tips are visible in the OLS and BioPortal browsers.
+   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in bio.tools. They are defined in `EDAM.owl <https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl>`_ via ``<usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>`.  Such tips are visible in the OLS and BioPortal browsers.
       
    
 
@@ -145,9 +145,9 @@ Name
 - **6.** **SHOULD** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
 - **7.** **SHOULD** follow the naming patterns (see below)
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#name>`_
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#name>`_.
   
-.. note::  **Naming pattern**
+.. note::  **Naming patterns**
 
    For `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ use the pattern:
 
@@ -172,41 +172,31 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
      ``toolname versionID`` *e.g.* ``FindPeaks 3.1``
 
    where ``versionID`` is the version number.
-
    
 .. tip::
    - in case of mulitple related entries be consistent, *e.g.* ``Open PHACTS`` and ``Open PHACTS API``
    - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
+     
 shortDescription
 ................
 *Short and concise textual description of the software function, e.g. "Detect and visualise single-nucleotide polymorphisms (SNPs)."*
 
-**Manually verified guidelines**
+- **1.** **MUST** provide a terse statement of the tool purpose / primary function: what is done not how
+- **2.** **MUST** begin with a capital letter and end with a period ('.') 
+- **3.** **MUST NOT** include tool name
+- **4.** **MUST NOT** include any of the following, *unless* essential to distinguish the tool from other bio.tool entries:
 
-- **1.** **MUST** provide a terse statement of the tool purpose or function(s): what is done not how: this can include the primary operation(s), input(s) and output(s)
-- **2.** **SHOULD NOT** include any of the following, unless they are essential to distinguish the tool from others registered in bio.tools:
+  - general or technical terms ("software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.*) 
+  - provenance information *e.g.* software provider, institute or person name
 
-  - technical terms describing the software type, e.g. "command-line tool"
-  - details about the software provider *e.g.* institute or person name
-
-- **3.** **MUST NOT** include statements about how good the software is (although mentions of applicability are OK)
-
-- **4.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
-
-**Automatically verified guidelines**
-
-- **5.** **MUST** begin with a capital letter and end with a period ('.') 
+- **5.** **MUST NOT** include statements about how good the software is (mentions of applicability are OK)
 - **6.** **MUST NOT** include URLs
-- **7.** **SHOULD NOT** include tool name, *e.g.* don't start with "MyTool is a tool for ..."
+- **7.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
 
-.. note::
-   **biotoolsSchema syntax**
 
-   - description is minimum 10 and maximum 500 characters.
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#name>`_.
   
-
 
 Version
 .......
