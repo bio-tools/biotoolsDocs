@@ -291,7 +291,7 @@ Type
 
 Restrictions
   Pattern: http(s?)://[^\s/$.?#].[^\s]*
-https?://.+
+
 Example
 
 .. code-block:: js
@@ -305,11 +305,14 @@ Example
 .. note::
    - a single valid URL is specified.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_
-    
-Current version
----------------
+
+
+biotoolsID
+----------
+*Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name, e.g. "needle".*
+
 Attribute name
-  currentVersion
+  biotoolsID
 
 Required
   No
@@ -318,14 +321,100 @@ Type
   String
 
 Restrictions
-  Max length: 50
+  Pattern: [_\-.0-9a-zA-Z]*
 
 Example
 
 .. code-block:: js
 
-  "currentVersion": "4.1"
+  # XML
+  <biotoolsID>needle</biotoolsID>
 
+  # JSON
+  "biotoolsID": "needle"
+
+.. attention::
+   - a biotoolsID is set (and can only be changed) by bio.tools admin.  It can be retrieved by API, but if specified in the payload to a ``PUT`` or ``POST`` request will be disregarded.  
+     
+.. note::
+   - a URL-safe and Linked-Data-safe derivative of (often identical to) the tool name. Allowed characters are uppercase and lowercase English letters (case insensitive!), decimal digits, hyphen, period, and underscore. Spaces can be preserved as underscore ("_").
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_
+
+
+biotoolsCURIE
+-------------
+*bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool, e.g. "biotools:needle"*
+
+Attribute name
+  biotoolsCURIE
+
+Required
+  No
+
+Type
+  String
+
+Restrictions
+  Pattern: biotools:[_\-.0-9a-zA-Z]*
+
+Example
+
+.. code-block:: js
+
+  # XML
+  <biotoolsCURIE>needle</biotoolsCURIE>
+
+  # JSON
+  "biotoolsCURIE": "needle"
+
+.. attention::
+   - a biotoolsCURIE is set (and can only be changed) by bio.tools admin.  It can be retrieved by API, but if specified in the payload to a ``PUT`` or ``POST`` request will be disregarded.
+   
+.. note::
+   - the bio.tools CURIE is simply the bio.tools tool ID with the prefix "biotools:".
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolscurie>`_
+
+
+Version
+-------
+Attribute name
+ version
+
+Required
+  No
+
+Type
+  String
+
+Restrictions
+  Min length: 1
+
+  Max length: 100
+
+  Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+  
+Example
+
+.. code-block:: js
+
+  # XML
+  <version>6.4.0.0</version>
+  <version>1.1 - 1.4, 2.0-alpha, 2.0-beta-01 - 2.0-beta-04, 2.0.0</version>
+  
+  # JSON
+  "version":
+  [
+    "6.4.0.0",
+    "1.1 - 1.4, 2.0-alpha, 2.0-beta-01 - 2.0-beta-04, 2.0.0"
+  ]
+
+
+.. note::
+   - the name has a 100 character limit and may only contain space, uppercase and lowercase English letters, decimal digits, plus symbol, period, comma, dash, colon, semicolon and parentheses.
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_
+     
+  
 Topic
 -----
 Attribute name

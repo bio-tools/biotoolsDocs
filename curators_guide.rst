@@ -229,28 +229,21 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
 
 Version
 .......
-**Version information (typically a version number) of the software applicable to this bio.tools entry.**
-
-*e.g.* **4.1**
-
-**Manually verified guidelines**
+*Version information (typically a version number) of the software applicable to this bio.tools entry, e.g. "6.4.0.0"*
 
 - **1.** **MUST** correctly identify the tool version as described by the other attributes (see note below)
-- **2.** **MAY** identify all tool versions which are applicable to the entry
-- **3.** **MUST** specify exactly the public version label in common use
-- **4.** **MUST NOT** include tokens such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
+- **2.** **MUST** specify exactly the public version label in common use
+- **3.** **MUST NOT** include tokens such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
+- **4.** **MAY** identify all tool versions which are applicable to the entry
 - **5.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
 
-.. note::
-   **biotoolsSchema syntax**
-
-   - the version has a 100 character limit and may only contain uppercase and lowercase letters, decimal digits, period, comma, dash, colon, plus symbol, semicolon and parentheses.
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+  See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#version>`_.  
 
 .. important::
    Care is needed to ensure annotations correspond to the indicated tool version.
      - **only** change the version if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
      - if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
+     - **do not** assume version "1" in case the version number is not readily findable
 
 .. tip::
    One or more version fields may be specified, and each - in princple - allows flexible specification of version information including single versions, ranges, lists and lists including ranges, *e.g.*:
@@ -262,10 +255,8 @@ Version
    - 1.1 - 1.4, 2.0-alpha, 2.0-beta-01 - 2.0-beta-04, 2.0.0
    - *etc.*
 
-   We do not mandate anything here, but recommend to keep things simple, the default being to specify a single individual version label in a single field.
+   We recommend to keep things simple (one version label per field by default) and pragmatic (using version ranges where desirable).
        
-.. caution::
-   - **do not** assume version "1" in case the version number is not readily findable
 
   
   
@@ -1244,21 +1235,15 @@ Further guidelines (bio.tools admin only)
 biotoolsID
 ^^^^^^^^^^
 
-**Unique ID of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name.**
-
-*e.g.* **signalp**
+*Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name, e.g. "needle".*
 
 .. attention::
    - the ID by default is a URL-safe version of the tool name, and is set (and can only be changed) by bio.tools admin.  
 
-- **MUST** use the default value where possible and **SHOULD** be clean and intuitive otherwise
+- **MUST** use the default value where possible
+- **MUST** be clean and intuitive (in case use of default is not possible) 
 - **MUST NOT** truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless
 
-.. note::
-   **biotoolsSchema syntax**
-
-   - the ID is a URL-safe derivative of (often identical to) the tool name.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed. Spaces are preserved as underscore ("_").
-     
 .. note::
    **Transformation rules**
    
@@ -1269,14 +1254,12 @@ biotoolsID
    - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
    - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
 
+     
 biotoolsCURIE
 ^^^^^^^^^^^^^
-**bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool.**
-
-*e.g.* **biotools:signalp**
+*bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool, e.g. "biotools:needle"*
      
 .. note::
-   **biotoolsSchema syntax**
 
    - identical to biotoolsID but with the prefix ``biotools:``
 
