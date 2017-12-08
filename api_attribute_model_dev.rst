@@ -170,7 +170,7 @@ Data model
 
 Name
 ----
-*Canonical software name assigned by the software developer or service provider, e.g. "SignalP"*
+*Canonical software name assigned by the software developer or service provider, e.g. "needle"*
 
 Attribute name
   name
@@ -193,24 +193,24 @@ Example
 .. code-block:: js
 		
   # XML
-  <name>SignalP</name>
+  <name>needle</name>
 
   # JSON
-  "name": "SignalP"
+  "name": "needle"
 
 
 
 
 
 .. note::
-   - the name has a 100 character limit and may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
+   - 100 character limit and may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_
 
   
 Short description
 -----------------
-*Short and concise textual description of the software function, e.g. "Detect and visualise single-nucleotide polymorphisms (SNPs)."*
+*Short and concise textual description of the software function, e.g. "Needleman-Wunsch global alignment of two sequences."*
 
 Attribute name
   shortDescription
@@ -231,13 +231,13 @@ Example
 .. code-block:: js
 
   # XML
-  <shortDescription>Detect and visualise single-nucleotide polymorphisms (SNPs).</shortDescription>
+  <shortDescription>Needleman-Wunsch global alignment of two sequences.</shortDescription>
 
   # JSON
-  "shortDescription": "Detect and visualise single-nucleotide polymorphisms (SNPs)."
+  "shortDescription": "Needleman-Wunsch global alignment of two sequences."
 
 .. note::
-   - description is minimum 10 and maximum 100 characters.
+   - minimum 10 and maximum 100 characters.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#shortdescription>`_
 
@@ -260,8 +260,16 @@ Example
 
 .. code-block:: js
 
-  "description": "Prediction of the presence and location of signal
-  peptide cleavage sites in amino acid sequences from different organisms."
+  # XML
+  <shortDescription>needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best.</shortDescription>
+
+  # JSON
+  "shortDescription": "needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best."
+
+.. note::
+  - minimum 10 and maximum 500 characters.
+  - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+  - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_
   
 Current version
 ---------------

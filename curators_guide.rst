@@ -135,7 +135,7 @@ Summary group
 
 Name
 ....
-*Canonical software name assigned by the software developer or service provider, e.g. "SignalP"*
+*Canonical software name assigned by the software developer or service provider, e.g. "needle"*
 
 - **1.** **MUST** use name in common use, *e.g.* in the tool homepage and publication.
 - **2.** **MUST** use short form if available *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
@@ -180,9 +180,9 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
      
 shortDescription
 ................
-*Short and concise textual description of the software function, e.g. "Detect and visualise single-nucleotide polymorphisms (SNPs)."*
+*Short and concise textual description of the software function, e.g. "Needleman-Wunsch global alignment of two sequences."*
 
-- **1.** **MUST** provide a terse statement of the tool purpose / primary function: what is done not how
+- **1.** **MUST** provide a terse statement of the primary purpose / function of the tool: what is done not how
 - **2.** **MUST** begin with a capital letter and end with a period ('.') 
 - **3.** **MUST NOT** include tool name
 - **4.** **MUST NOT** include any of the following, *unless* essential to distinguish the tool from other bio.tool entries:
@@ -195,8 +195,26 @@ shortDescription
 - **7.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
 
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#name>`_.
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#shortDescription>`_.
   
+
+description
+...........
+*Textual description of the software, e.g. "needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best."*
+
+- **1.** **MUST** provide a concise summary of purpose / function of the tool
+- **2.** **MUST** begin with a capital letter and end with a period ('.') 
+- **4.** **SHOULD NOT** include any of the following, *unless* essential to distinguish the tool from other bio.tool entries:
+
+  - general or technical terms ("software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.*) 
+  - provenance information *e.g.* software provider, institute or person name
+
+- **5.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
+- **6.** **SHOULD NOT** include URLs
+
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#description>`_.
+  
+
 
 Version
 .......
