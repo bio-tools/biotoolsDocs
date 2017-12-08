@@ -178,7 +178,7 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
      
-shortDescription
+Short description
 ................
 *Short and concise textual description of the software function, e.g. "Needleman-Wunsch global alignment of two sequences."*
 
@@ -198,7 +198,7 @@ shortDescription
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#shortDescription>`_.
   
 
-description
+Description
 ...........
 *Textual description of the software, e.g. "needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best."*
 
@@ -214,6 +214,17 @@ description
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#description>`_.
   
+
+Homepage
+........
+*Homepage of the software, or some URL that best serves this purpose, e.g. "http://emboss.open-bio.org/rel/rel6/apps/needle.html"*
+
+- **1.** **MUST** resolve to a web page from the developer / provider that most specifically describes the tool
+
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#homepage>`_.  
+  
+.. tip:: In case a tool lacks it's own website, a URL of it's code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
+
 
 
 Version
@@ -258,23 +269,6 @@ Version
 
   
   
-Homepage
-........
-**Homepage of the software, or some URL that best serves this purpose**
-
-*e.g.* **http://cbs.dtu.dk/services/SignalP/**
-
-.. note::
-   **biotoolsSchema syntax**
-
-   A valid URL is specified.
-
-**Manually verified guidelines**
-
-- **1.** **MUST** resolve to a web page from the developer or provider of the software that most specifically describes the software
-
-.. tip:: In case a tool lacks it's own website, a URL of it's code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
-
 Collection
 ..........
 **Unique ID of a collection that the software has been assigned to within bio.tools.**

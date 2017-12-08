@@ -244,6 +244,8 @@ Example
 
 Description
 -----------
+*Textual description of the software, e.g. "needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best."*
+
 Attribute name
   description
 
@@ -254,7 +256,9 @@ Type
   String
 
 Restrictions
-  Max length: 1000
+  Min length: 10
+  
+  Max length: 500
 
 Example
 
@@ -270,7 +274,38 @@ Example
   - minimum 10 and maximum 500 characters.
   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_
-  
+
+
+Homepage
+--------
+*Homepage of the software, or some URL that best serves this purpose, e.g. "http://emboss.open-bio.org/rel/rel6/apps/needle.html"*
+
+Attribute name
+  homepage
+
+Required
+  Yes
+
+Type
+  URL
+
+Restrictions
+  Pattern: http(s?)://[^\s/$.?#].[^\s]*
+https?://.+
+Example
+
+.. code-block:: js
+
+  # XML
+  <homepage>http://emboss.open-bio.org/rel/rel6/apps/needle.html</homepage>
+
+  # JSON
+  "homepage": "http://emboss.open-bio.org/rel/rel6/apps/needle.html"
+
+.. note::
+   - a single valid URL is specified.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_
+    
 Current version
 ---------------
 Attribute name
@@ -645,27 +680,6 @@ Example
     }
   ]
 
-Homepage
---------
-Attribute name
-  homepage
-
-Required
-  Yes
-
-Type
-  URL
-
-Restrictions
-  Max length: 300
-
-  Pattern: ^https?:\/\/[^\s\/$.?#].[^\s]*$
-
-Example
-
-.. code-block:: js
-
-  "homepage": "http://cbs.dtu.dk/services/SignalP/"
 
 Cost
 -----------
