@@ -230,6 +230,10 @@ Example
 
 .. code-block:: js
 
+  # XML
+  <shortDescription>Detect and visualise single-nucleotide polymorphisms (SNPs).</shortDescription>
+
+  # JSON
   "shortDescription": "Detect and visualise single-nucleotide polymorphisms (SNPs)."
 
 .. note::

@@ -190,7 +190,7 @@ shortDescription
   - general or technical terms ("software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.*) 
   - provenance information *e.g.* software provider, institute or person name
 
-- **5.** **MUST NOT** include statements about how good the software is (mentions of applicability are OK)
+- **5.** **MUST NOT** describe how good the software is (mentions of applicability are OK)
 - **6.** **MUST NOT** include URLs
 - **7.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
 
