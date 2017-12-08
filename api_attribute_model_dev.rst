@@ -181,11 +181,12 @@ Required
 Type
   String
 
-**Restrictions**
+Restrictions
+  Min length: 1
 
-| Min length: 1
-| Max length: 100
-| Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+  Max length: 100
+
+  Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
 
 Example
 
