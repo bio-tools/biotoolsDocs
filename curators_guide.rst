@@ -137,26 +137,26 @@ Name
 ....
 *Canonical software name assigned by the software developer or service provider, e.g. "SignalP"*
 
-- **1.** **MUST** use the name in common use, *e.g.* in the tool homepage and publication.
-- **2.** **MUST** use the short form of the name, if available *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
-- **3.** **SHOULD** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
-- **4.** **MUST NOT** include general or technical terms such as "software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.* *unless* these are part of the common name
-- **5.** **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
-- **6.** **MUST NOT** include version information *unless* this is part of the name in common use
-- **7.** **SHOULD** follow the naming patterns (see below) where original tools are re-used 
+- **1.** **MUST** use name in common use, *e.g.* in the tool homepage and publication.
+- **2.** **MUST** use short form if available *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
+- **3.** **MUST NOT** include general or technical terms ("software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.*) *unless* these are part of the common name
+- **4.** **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
+- **5.** **MUST NOT** include version information *unless* this is part of common name
+- **6.** **SHOULD** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
+- **7.** **SHOULD** follow the naming patterns (see below)
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#name>`_
   
 .. note::  **Naming pattern**
 
-   - for `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ use the pattern:
+   For `database portals <http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal>`_ use the pattern:
 
      ``name (acronym)`` *e.g.* ``The Protein Databank (PDB)``
 
    - a common abbreviation can be given instead of an acronym
    - if no common acronym or abbreviation exists, omit this part: do not invent one!
      
-   - for tools that simply wrap or provide an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and `web applications <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, use the pattern:
+   For tools that simply wrap or provide an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and `web applications <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, use the pattern:
 
      ``{collectionName} toolName {API|WS}{( providerName)}`` *e.g.* ``EMBOSS water API (ebi)``
 
