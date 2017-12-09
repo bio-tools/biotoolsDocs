@@ -237,7 +237,7 @@ Version
 - **4.** **MAY** identify all tool versions which are applicable to the entry
 - **5.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
 
-  See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#version>`_.  
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#version>`_.  
 
 .. important::
    Care is needed to ensure annotations correspond to the indicated tool version.
@@ -258,21 +258,40 @@ Version
    We recommend to keep things simple (one version label per field by default) and pragmatic (using version ranges where desirable).
        
 
+Other IDs
+.........
+*A unique identifier of the software, typically assigned by an ID-assignment authority other than bio.tools, e.g. "RRID:SCR_015644"*
+
+- **1.** **MUST** correctly identify the same tool as indicated by the `biotoolsID <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_
+- **2.** **MUST** specify exactly the public version label in common use
+- **3.** **MUST NOT** include tokens such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
+- **4.** **MAY** identify all tool versions which are applicable to the entry
+- **5.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
+
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#otherid>`_.
+
+.. important::
+   Care is needed to ensure annotations correspond to the indicated tool version.
+     - **only** change the version if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
+     - if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
+     - **do not** assume version "1" in case the version number is not readily findable
+
+.. tip::
+   One or more version fields may be specified, and each - in princple - allows flexible specification of version information including single versions, ranges, lists and lists including ranges, *e.g.*:
+
+   - 1.1
+   
   
   
 Collection
 ..........
-**Unique ID of a collection that the software has been assigned to within bio.tools.**
-
-*e.g.* **CBS**
+*Unique ID of a collection that the software has been assigned to within bio.tools, e.g. "CBS*
 
 .. note::
-   **biotoolsSchema syntax**
-
    - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
-**Manually verified guidelines**
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
 
 - **1.** **SHOUD** be short and intuitive
 
@@ -286,43 +305,34 @@ Function group
 
 Operation
 .........
-**The basic operation(s) performed by the software**
-
-*e.g.* **'Protein signal peptide detection' (http://edamontology.org/operation_0418)**
-
-**Manually verified guidelines**
+*The basic operation(s) performed by the software, e.g. "'Protein signal peptide detection' (http://edamontology.org/operation_0418)"*
 
 - **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), that specific version of the tool
 - **2.** **MUST** be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
 
 .. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
 
 .. note::
-   **biotoolsSchema syntax**
-
    - an EDAM Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
 
   
      
 Data type (input and output data)
 .................................
-**Type of primary input / output data (if any)**
-
-*e.g.* **'Sequence' (http://edamontology.org/data_2044)**
-
-**Manually verified guidelines**
+*Type of primary input / output data (if any) e.g. "'Sequence' (http://edamontology.org/data_2044)"*
 
 - **1.** **MUST** correctly specify types of input or output data processed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), that specific version of the tool
 - **2.** **MUST** be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe all the primary inputs and outputs of the tool and **SHOULD NOT** describe secondary / minor inputs and outputs: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
+See the syntax guidelines for `input <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#input>`_ and `output <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#output>`_
+  
 .. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
 	       
 .. note::
-   **biotoolsSchema syntax**
-
    - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
 
 .. tip::
@@ -331,38 +341,28 @@ Data type (input and output data)
      
 Data format (input and output data)
 ...................................
-**Allowed format(s) of primary inputs/outputs**
-
-*e.g.* **'FASTA' (http://edamontology.org/format_1929)**
-
-**Manually verified guidelines**
+*Allowed format(s) of primary inputs/outputs e.g. "'FASTA' (http://edamontology.org/format_1929)"*
 
 - **1.** **MUST** correctly specify data formats supported on input or output by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
 - **2.** **MUST** be correctly associated with the data type of an input or output (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe the primary data formats and **MAY** exhaustively describe *all* formats: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#format>`_.
+
 .. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
 		 
 .. note::
-   **biotoolsSchema syntax**
-
    - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
     
 Comment
 .......
-**Concise comment about this function, if not apparent from the software description and EDAM annotations.**
-
-*e.g.* **This option is slower, but more precise.**
-
-**Manually verified guidelines**
+*Concise comment about this function, if not apparent from the software description and EDAM annotations, e.g. "This option is slower, but more precise.*"
 
 - **1.** **MUST** not duplicate what is already apparent from the EDAM annotations
 - **2.** **SHOULD** be concise and summarise only critical usage information
 - **3.** **SHOULD NOT** duplicate online documentation; give a link if necessary
 
 .. note::
-   **biotoolsSchema syntax**
-
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
      
@@ -371,17 +371,13 @@ Labels group
 
 Tool type
 .........
-**The type of application software: a discrete software entity can have more than one type**
-
-*e.g.* **Command-line tool**, **Web application**, 
-
-**Manually verified guidelines**
+*The type of application software: a discrete software entity can have more than one type, e.g. "Command-line tool, Web application"*
 
 - **1.** **MUST** specify all types (see below) that are applicable
 
-.. note::
-   **biotoolsSchema syntax**
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#tool-type>`_.
 
+.. note::
    - one or more terms from a controlled vocabulary (see below)
 
 
@@ -411,72 +407,56 @@ Tool type
 
 Topic
 .....
-**General scientific domain the software serves or other general category**
-
-*e.g.* 'Protein sites, features and motifs' (http://edamontology.org/topic_3510)
-
-**Manually verified guidelines**
+*General scientific domain the software serves or other general category, e.g. "'Protein sites, features and motifs' (http://edamontology.org/topic_3510)"*
 
 - **1.** **SHOULD** specify the most important and relevant scientific topics
 - **2.** **SHOULD NOT** exhaustively specify all the topics of lower relevance
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#topic>`_.
+
 .. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply  
   
 .. note::
-   **biotoolsSchema syntax**
-
    - an EDAM Topic concept URL and / or term are specified, *e.g.* "Proteomics", http://edamontology.org/topic_0121.
 
 
 Operating system
 ................
-**The operating system supported by a downloadable software package.**
-
-*e.g.* **Linux**
-
-**Manually verified guidelines**
+*The operating system supported by a downloadable software package, e.g. "Linux"*
 
 - **1.** **MUST** specify all operating systems (see below) that are applicable
 
-.. note::
-   **biotoolsSchema syntax**
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operating-system>`_.
 
+.. note::
    - one or more terms from a controlled vocabulary (see below)
 
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
 
 Language
 ........
-**Name of programming language the software source code was written in.**
-
-*e.g.* **C**
-
-**Manually verified guidelines**
+*Name of programming language the software source code was written in, e.g. "C"*
 
 - **1.** **MUST** specify the primary language (see below) used
 - **2.** **MAY** exhaustively specify other languages used
 
-.. note::
-   **biotoolsSchema syntax**
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#language>`_.
 
+.. note::
    - one or more terms from a controlled vocabulary (see below)
 
   
 Maturity
 ........
-**How mature the software product is.**
-
-*e.g.* **Mature**
-
-**Manually verified guidelines**
+*How mature the software product is, e.g. "Mature"*
 
 - **1.** **MUST** acurately reflect the software maturity.  
+
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#maturity>`_.
 
 .. attention:: Normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
 		 
 .. note::
-   **biotoolsSchema syntax**
-
    - one or more terms from a controlled vocabulary (see below)
   
 .. csv-table::
@@ -490,21 +470,17 @@ Maturity
   
 License
 .......
-**Software or data usage license.**
-
-*e.g.* **GPL-3.0**
-
-**Manually verified guidelines**
+*Software or data usage license, e.g. "GPL-3.0"*
 
 - **1.** **MUST** acurately describe the license used.
 - **2.** **SHOULD** use "Proprietary" in cases where the software is under license (not defined in biotoolsSchema) whereby it can be obtained from the provider (*e.g.* for money), and then owned, *i.e.* definitely not an open-source or free software license.
 - **3.** **SHOULD** use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary".
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
+
 .. tip:: Use the "Other" license for custom institutional licenses that are out of scope of `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.  If you've found a license that you think should be included in biotoolsSchema please report it *via* `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/new>`_.
 
 .. note::
-   **biotoolsSchema syntax**
-
    - one or more terms from a controlled vocabulary (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.)
 
 .. note::
@@ -522,17 +498,13 @@ License
    
 Cost
 ....
-**Monetary cost of acquiring the software.**
-
-*e.g.* **Free of charge (with retritions)**
-
-**Manually verified guidelines**
+*Monetary cost of acquiring the software, e.g. "Free of charge (with retritions)"*
 
 - **1.** **MUST** acurately describe the monetary cost of acquiring the software.
 
-.. note::
-   **biotoolsSchema syntax**
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
 
+.. note::
    - one or more terms from a controlled vocabulary (see below)
 
 
@@ -546,17 +518,13 @@ Cost
   
 Accessibility
 .............
-**Whether the software is freely available for use.**
-
-*e.g.* **Open access**
-
-**Manually verified guidelines**
+*Whether the software is freely available for use, e.g. "Open access"*
 
 - **1.** **MUST** acurately describe the accessibility conditions that apply.
 
-.. note::
-   **biotoolsSchema syntax**
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#accessibility>`_.
 
+.. note::
    - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
@@ -633,19 +601,14 @@ URL
 
 Telephone number
 ................
-**Telephone number of primary contact.**
-
-*e.g.* **+49-89-636-48018**
-
-**Manually verified guidelines**
+*Telephone number of primary contact, e.g. "+49-89-636-48018"*
 
 - **1.** **MUST** specify a valid telephone number
 - **2.** **MUST NOT** specify a telephone number that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
 - **3.** **MUST NOT** specify a stale (obsolete) telephone number
+
   
 .. note::
-   **biotoolsSchema syntax**
-
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 
@@ -654,53 +617,38 @@ Links group
 
 **Miscellaneous links for the software e.g. repository, issue tracker or mailing list.**
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#link>`_.
+
 
 URL
 ...
-**A link of some relevance to the software (URL).**
-
-*e.g.* **https://github.com/pharmbio/sciluigi/issues**
-
-**Manually verified guidelines**
+*A link of some relevance to the software (URL), e.g. "https://github.com/pharmbio/sciluigi/issues"*
 
 - **1.** **MUST** resolve to a page of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#link-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available  
 
+ 
 .. note::
-   **biotoolsSchema syntax**
-
    - a valid URL is specified.
 
 
 Comment
 .......
 
-**Comment about the link.**
-
-*e.g.* **Please use the issue tracker for reporting bugs and making features requests.**
-
-**Manually verified guidelines**
+*Comment about the link, e.g. "Please use the issue tracker for reporting bugs and making features requests."*
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
 .. note::
-   **biotoolsSchema syntax**
-
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 Link type
 .........
-**The type of data, information or system that is obtained when the link is resolved.**
-
-*e.g.* **Mailing list**
-
-**Manually verified guidelines**
+*The type of data, information or system that is obtained when the link is resolved, e.g. "Mailing list"*
 
 - **1.** **MUST** acurately specify the type of information available at the link
   
 .. note::
-   **biotoolsSchema syntax**
-
    - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
@@ -722,52 +670,36 @@ Download group
 ^^^^^^^^^^^^^^
 **A link to a download for the software, e.g. source code, virtual machine image or container.**
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#download>`_.
+
 URL
 ...
-**Link to download (or repo providing a download) for the software.**
-
-*e.g.* **http://bioconductor/packages/release/bioc/src/contrib/VanillaICE_1.36.0.tar.gz**
-
-**Manually verified guidelines**
+*Link to download (or repo providing a download) for the software, e.g. "http://bioconductor/packages/release/bioc/src/contrib/VanillaICE_1.36.0.tar.gz"*
 
 - **1.** **MUST** resolve to a page providing either an immediately download, or links for a download of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
 
 .. note::
-   **biotoolsSchema syntax**
-
    - a valid URL is specified.
 
   
 Comment
 .......
-**Comment about the download**
-
-*e.g.* ****
-
-**Manually verified guidelines**
+*Comment about the download, e.g. "TODOTODOTODO"*
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
 .. note::
-   **biotoolsSchema syntax**
-
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 
 Download type
 .............
-**Type of download that is linked to.**
-
-*e.g.* **Binaries**
-
-**Manually verified guidelines**
+*Type of download that is linked to, e.g. "Binaries"*
 
 - **1.** **MUST** acurately specify the type of download available at the link 
 
 .. note::
-   **biotoolsSchema syntax**
-
    - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
@@ -798,51 +730,36 @@ Documentation group
 ^^^^^^^^^^^^^^^^^^^
 **A link to documentation about the software e.g. manual, API specification or training material.**
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#documentation>`_.
+
+
 URL
 ...
-**Link to documentation on the web for the tool.**
-
-*e.g.* **http://bioconductor.org/packages/release/bioc/html/VanillaICE.html**
-
-**Manually verified guidelines**
+*Link to documentation on the web for the tool, e.g. "http://bioconductor.org/packages/release/bioc/html/VanillaICE.html"*
 
 - **1.** **MUST** resolve to a page of the indicated `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
 
 .. note::
-   **biotoolsSchema syntax**
-
    - a valid URL is specified.
 
   
 Comment
 .......
-**Comment about the documentation.**
-
-*e.g.* **Comprehensive usage information suitable for biologist end-users.**
-
-**Manually verified guidelines**
+*Comment about the documentation, e.g. "Comprehensive usage information suitable for biologist end-users."*
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
 .. note::
-   **biotoolsSchema syntax**
-
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 Documentation type
 ..................
-**Type of documentation that is linked to.**
-
-*e.g.* ****
-
-**Manually verified guidelines**
+*Type of documentation that is linked to, e.g. "TODOTODOTODO"*
 
 - **1.** **MUST** acurately specify the type of documentation available at the link 
 
 .. note::
-   **biotoolsSchema syntax**
-
    - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
@@ -862,58 +779,39 @@ Publications group
 ^^^^^^^^^^^^^^^^^^
 **Publications about the software**
 
-**Manually verified guidelines**
-
 - **1.** **MUST** correctly identify a relevant publication
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#publication>`_.
 
 
 PubMed Central ID
 .................
-**PubMed Central Identifier (PMCID) of a publication about the software.**
-
-*e.g.* **PMC4343077**
+*PubMed Central Identifier (PMCID) of a publication about the software, e.g. "PMC4343077"*
 
 .. note::
-   **biotoolsSchema syntax**
-
    - PMCID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 PubMed ID
 .........
-**PubMed Identifier (PMID) of a publication about the software.**
-
-*e.g.* **21959131**
+*PubMed Identifier (PMID) of a publication about the software, e.g. "21959131"*
 
 .. note::
-   **biotoolsSchema syntax**
-
    - valid PMID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 Digital Object ID
 .................
-**Digital Object Identifier (DOI) of a publication about the software.**
-
-*e.g.* **10.1038/nmeth.1701**
+*Digital Object Identifier (DOI) of a publication about the software, e.g. "10.1038/nmeth.1701"*
 
 .. note::
-   **biotoolsSchema syntax**
-
    - valid DOI syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 Publication type
 ................
-**Type of publication.**
-
-*e.g.* **Primary**
-
-**Manually verified guidelines**
+*Type of publication, e.g. "Primary"*
 
 - **1.** **MUST** acurately specify the type of publication
 
 .. note::
-   **biotoolsSchema syntax**
-
    - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
@@ -930,104 +828,71 @@ Credits group
 ^^^^^^^^^^^^^
 **An individual or organisation that should be credited for the software.**
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#credit>`_.
+
+
 GRID ID
 .......
-**Unique identifier (GRID ID) of an organisation that is credited.**
-
-*e.g.* **grid.5170.3**
-
-**Manually verified guidelines**
+*Unique identifier (GRID ID) of an organisation that is credited, e.g. "grid.5170.3"*
 
 - **1.** **MUST** correctly identify a credited organisation 
 
 .. note::
-   **biotoolsSchema syntax**
-
    - valid GRID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 .. note:: Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.  If ORCID institutional identifiers become available, these will also be supported.
 
 ORCID ID
 ........
-**Unique identifier (ORCID iD) of a person that is credited.**
-
-*e.g.* **http://orcid.org/0000-0002-1825-0097**
-
-**Manually verified guidelines**
+*Unique identifier (ORCID iD) of a person that is credited, e.g. "http://orcid.org/0000-0002-1825-0097"*
 
 - **1.** **MUST** correctly identify a credited person
 
 .. note::
-   **biotoolsSchema syntax**
-
    - valid ORCID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 .. note:: Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
 
 Name
 ....
-**Name of the entity that is credited.**
-
-*e.g.* **EMBL EBI**
-
-**Manually verified guidelines**
+*Name of the entity that is credited, e.g. "EMBL EBI"*
 
 - **1.** **MUST** give the first and last names of a person, or the correct name of some other entity.
 - **2.** **MUST NOT** give a redirect, *e.g.* "See publication", a URL, or any information other than the name of the entity that is credited.
   
 .. note::
-   **biotoolsSchema syntax**
-
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 
 
 Email
 .....
-**Email address of the entity that is credited.**
-
-*e.g.* **hnielsen@cbs.dtu.dk**
-
-**Manually verified guidelines**
+*Email address of the entity that is credited e.g. "hnielsen@cbs.dtu.dk"*
 
 - **1.** **MUST** specify a syntactically valid email address  
 - **2.** **MUST NOT** specify an email address that is not publicly acknowledged as credit for the software, *e.g.* on a webpage or in a publication
 - **3.** **MUST NOT** specify a stale (obsolete) email address
 
 .. note::
-   **biotoolsSchema syntax**
-
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 URL
 ...
-**URL for the entity that is credited, e.g. homepage of an institute.**
-
-*e.g.* **http://www.ebi.ac.uk/**
-
-**Manually verified guidelines**
+*URL for the entity that is credited, e.g. homepage of an institute, e.g. "http://www.ebi.ac.uk/"*
 
 - **1.** **MUST** resolve to a page of information directly relevant to the credited entity
 
 .. note::
-   **biotoolsSchema syntax**
-
    - a valid URL is specified.
 
 
 Entity type
 ...........
-**Type of entity that is credited.**
-
-*e.g.* **Person**
-
-**Manually verified guidelines**
+*Type of entity that is credited, e.g. "Person"*
 
 - **1.** **MUST** acurately specify the type of entity that is credited
 
 .. note::
-   **biotoolsSchema syntax**
-
    - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
@@ -1044,17 +909,11 @@ Entity type
 	    
 Role
 ....
-**Role performed by entity that is credited.**
-
-*e.g.* **Developer**
-
-**Manually verified guidelines**
+*Role performed by entity that is credited, e.g. "Developer"*
 
 - **1.** **MUST** acurately specify the role of credited entity
 
 .. note::
-   **biotoolsSchema syntax**
-
    - one or more terms from a controlled vocabulary (see below)
 
 .. csv-table::
@@ -1074,18 +933,12 @@ Role
 	  
 Comment
 .......
-**A comment about the credit.**
-
-*e.g.* **Wrote the user manual.**
-
-**Manually verified guidelines**
+*A comment about the credit, e.g. "Wrote the user manual."*
 
 - **1.** **SHOULD** be concise and acurate, elaborating on the contribution of the credited entity
 - **2.** **MUST NOT** duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
 	       
 .. note::
-   **biotoolsSchema syntax**
-
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 
