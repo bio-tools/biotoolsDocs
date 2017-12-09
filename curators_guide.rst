@@ -264,10 +264,19 @@ Other IDs
 
 - **1.** **MUST** correctly identify the same tool as indicated by the `biotoolsID <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_
 - **2.** **MUST** include version information if IDs for multiple different versions are specified
+- **3.** **MAY** specify the type of identifier (see below)
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#otherid>`_.
    
-  
+.. csv-table::
+   :header: "Maturity", "Description"
+   :widths: 25, 100
+
+   "doi", "Digital Object Identifier of the software assigned (typically) by the software developer or service provider."
+   "rrid", "Research Resource Identifier as used by the NIH-supported Resource Identification Portal (https://scicrunch.org/resources)."
+   "cpe", "Common Platform Enumeration (CPE) identifier as listed in the CPE dictionary (https://cpe.mitre.org/dictionary/)."
+   "biotoolsCURIE", "bio.tools CURIE (secondary identifier)."
+   
   
 Collection
 ..........
@@ -417,6 +426,14 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
 .. note::
    - one or more terms from a controlled vocabulary (see below)
 
+.. csv-table::
+   :header: "Maturity", "Description"
+   :widths: 25, 100
+
+   "Linux", "All flavours of Linux/UNIX operating systems."
+   "Windows", "All flavours of Microsoft Windows operating system."
+   "Mac", "All flavours of Apple Macintosh operating systems (primarily Mac OS X)."
+     
 - valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
 
 Language
