@@ -263,23 +263,9 @@ Other IDs
 *A unique identifier of the software, typically assigned by an ID-assignment authority other than bio.tools, e.g. "RRID:SCR_015644"*
 
 - **1.** **MUST** correctly identify the same tool as indicated by the `biotoolsID <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_
-- **2.** **MUST** specify exactly the public version label in common use
-- **3.** **MUST NOT** include tokens such as "v", "ver", "version", "rel", "release" *etc.*, *unless* these are part of the public version label
-- **4.** **MAY** identify all tool versions which are applicable to the entry
-- **5.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
+- **2.** **MUST** include version information if IDs for multiple different versions are specified
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#otherid>`_.
-
-.. important::
-   Care is needed to ensure annotations correspond to the indicated tool version.
-     - **only** change the version if you're sure there's no fundamental change to the specified tool `functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ (operations, inputs and outputs)
-     - if there are fundamental changes, update the tool `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_ annotation
-     - **do not** assume version "1" in case the version number is not readily findable
-
-.. tip::
-   One or more version fields may be specified, and each - in princple - allows flexible specification of version information including single versions, ranges, lists and lists including ranges, *e.g.*:
-
-   - 1.1
    
   
   
