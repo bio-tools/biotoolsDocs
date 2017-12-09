@@ -427,23 +427,22 @@ Type
   List of otherID objects (1 or more)
 
 otherID object definition
-  Content
-    * value
-        * Required: Yes
-        * Type: String
-    * type
-        * Required: No
-        * Type: ENUM
-    * version
-        * Required: No
-        * Type: String	  
+  * value
+      * Required: Yes
+      * Type: String
+  * type
+      * Required: No
+      * Type: ENUM
+  * version
+      * Required: No
+      * Type: String	  
 
-Allowed values of **type**
+Allowed values of **type** (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_)
   - ``doi``
   - ``rrid``
   - ``cpe``
   - ``biotoolsCURIE``
-  - see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_.
+ 
     
 **Example**
 
