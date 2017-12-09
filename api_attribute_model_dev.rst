@@ -415,8 +415,8 @@ Restrictions
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_
      
   
-otherID
--------
+Other IDs
+---------
 Attribute name
   otherID
 
@@ -438,7 +438,13 @@ otherID object definition
         * Required: No
         * Type: String	  
 
-
+Allowed values of **type**
+  - ``doi``
+  - ``rrid``
+  - ``cpe``
+  - ``biotoolsCURIE``
+  - see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_.
+    
 **Example**
 
 .. code-block:: js
