@@ -14,8 +14,9 @@ To submit a tool via our bio.tools API you’ll need to POST a JSON / XML / YAML
 
 XML
 ---
+A sample XML document may look like this:
 
-todo
+.. code-block:: xml
 
 JSON
 ----
@@ -175,7 +176,7 @@ YAML
 A sample YAML document may look like this:
 
 .. code-block:: yaml
-    
+		
 .. note::
    The API supports XML and YAML format uploads and will (soon!) support XML comatible with biotoolsSchema (https://github.com/bio-tools/biotoolsschema).  Example files will be added here soon.
     
@@ -352,7 +353,7 @@ Restrictions
    - a biotoolsID is set (and can only be changed) by bio.tools admin.  It can be retrieved by API, but if specified in the payload to a ``PUT`` or ``POST`` request will be disregarded.  
      
 .. note::
-   - a URL-safe and Linked-Data-safe derivative of (often identical to) the tool name. Allowed characters are uppercase and lowercase English letters (case insensitive!), decimal digits, hyphen, period, and underscore. Spaces can be preserved as underscore ("_").
+   - the biotoolssID is a URL-safe and Linked-Data-safe derivative of (often identical to) the tool name. Allowed characters are uppercase and lowercase English letters (case insensitive!), decimal digits, hyphen, period, and underscore. Spaces can be preserved as underscore ("_").
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_
 
 

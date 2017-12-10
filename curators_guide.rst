@@ -99,8 +99,6 @@ EDAM annotations
 ^^^^^^^^^^^^^^^^
 The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used to annotate applicable `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs. The general guidelines below apply for all EDAM annotations.
 
-**Automatically verified guidelines** 
-
 - **1.** **MUST NOT** use "organisational" EDAM concepts *e.g.* Topic of "Topic" or Operation of "Operation" (see note below)
 - **2.** **SHOULD** use the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.  If multiple sibling terms are applicable (*i.e.* terms under a common parent), the parent term may be applicable.
 - **3.** **SHOULD NOT** use both a term and it's parent or other ancestor, when annotating a single attribute.  An exception would be a tool which *e.g.* performs some general `Sequence analysis <http://edamontology.org/operation_2403>`_ operations but specialises on `Protein feature detection <http://edamontology.org/operation_3092>`_.
@@ -352,10 +350,11 @@ Collection
    - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
    - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
 
 - **1.** **SHOUD** be short and intuitive
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
+  
 .. tip::
    - collections may be created for for any arbitrary purpose
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
@@ -366,13 +365,7 @@ Tool type
 .........
 *The type of application software: a discrete software entity can have more than one type, e.g. "Command-line tool, Web application"*
 
-- **1.** **MUST** specify all types (see below) that are applicable
-
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#tool-type>`_.
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
-
+- **1.** **MUST** specify all types that are applicable, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Type", "Description"
@@ -392,6 +385,8 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    "Web service", "An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP."
    "Workbench", "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
    "Workflow", "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
+
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#tool-type>`_.
 
   
 .. note:: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
@@ -415,12 +410,7 @@ Operating system
 ................
 *The operating system supported by a downloadable software package, e.g. "Linux"*
 
-- **1.** **MUST** specify all operating systems (see below) that are applicable
-
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operating-system>`_.
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
+- **1.** **MUST** specify all operating systems that are applicable, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Maturity", "Description"
@@ -430,32 +420,29 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    "Windows", "All flavours of Microsoft Windows operating system."
    "Mac", "All flavours of Apple Macintosh operating systems (primarily Mac OS X)."
      
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operating-system>`_.
+
 
 Language
 ........
 *Name of programming language the software source code was written in, e.g. "C"*
 
-- **1.** **MUST** specify the primary language (see below) used
+- **1.** **MUST** specify the primary language used, in terms from a controlled vocabulary (see below)
 - **2.** **MAY** exhaustively specify other languages used
+
+.. note::
+  - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.)
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#language>`_.
 
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
-
+    
   
 Maturity
 ........
 *How mature the software product is, e.g. "Mature"*
 
-- **1.** **MUST** acurately reflect the software maturity.  
+- **1.** **MUST** acurately reflect the software maturity, in terms from a controlled vocabulary (see below)
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#maturity>`_.
-
-.. attention:: Normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
-		 
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
   
 .. csv-table::
    :header: "Maturity", "Description"
@@ -464,7 +451,12 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    "Emerging", "Nascent or early release software that may not yet be fully featured or stable."
    "Mature", "Software that is generally considered to fulfill several of the following: secure, reliable, actively maintained, fully featured, proven in production environments, has an active community, and is described or cited in the scientific literature."
    "Legacy", "Software which is no longer in common use, deprecated by the provider, superseded by other software, replaced by a newer version, is obsolete etc."
-   
+
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#maturity>`_.
+
+.. attention:: Normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
+		 
+	    
   
 License
 .......
@@ -474,12 +466,13 @@ License
 - **2.** **SHOULD** use "Proprietary" in cases where the software is under license (not defined in biotoolsSchema) whereby it can be obtained from the provider (*e.g.* for money), and then owned, *i.e.* definitely not an open-source or free software license.
 - **3.** **SHOULD** use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary".
 
+  .. note::
+  - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.)
+
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
 
 .. tip:: Use the "Other" license for custom institutional licenses that are out of scope of `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.  If you've found a license that you think should be included in biotoolsSchema please report it *via* `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/new>`_.
 
-.. note::
-   - one or more terms from a controlled vocabulary (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.)
 
 .. note::
    Most permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") may be attached to the bio.tools entry (see table below)
@@ -498,13 +491,7 @@ Cost
 ....
 *Monetary cost of acquiring the software, e.g. "Free of charge (with retritions)"*
 
-- **1.** **MUST** acurately describe the monetary cost of acquiring the software.
-
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
-
+- **1.** **MUST** acurately describe the monetary cost of acquiring the software, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Cost", "Description"
@@ -513,17 +500,15 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    "Free of charge", "Software which available for use by all, with full functionality, at no monetary cost to the user."
    "Free of charge (with restrictions)", "Software which is available for use at no monetary cost to the user, but possibly with limited functionality, usage restrictions, or other limitations."
    "Commercial", "Software which you have to pay to access."
-  
+
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
+
+
 Accessibility
 .............
 *Whether the software is freely available for use, e.g. "Open access"*
 
-- **1.** **MUST** acurately describe the accessibility conditions that apply.
-
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#accessibility>`_.
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
+- **1.** **MUST** acurately describe the accessibility conditions that apply, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Accessibility", "Description"
@@ -534,11 +519,12 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    "Proprietary", "Software for which the software's publisher or another person retains intellectual property rights \ usually copyright of the source code, but sometimes patent rights."
    "Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#accessibility>`_.
+
+   
 Contact group
 ^^^^^^^^^^^^^
-**Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.**
-
-**Manually verified guidelines**
+*Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.*
 
 - **1.** **MUST** provide contact details for the first port-of-call when seeking help with the software
 - **2.** **MUST** ensure the specified name corresponds to the email, URL and telephone number
@@ -551,7 +537,6 @@ Name
 
 *e.g.* **Henrik Nielsen**
 
-**Manually verified guidelines**
 
 - **1.** Must give the first and last names of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
 
@@ -565,8 +550,6 @@ Email
 **Email address of the primary contact.**
 
 *e.g.* **hnielsen@cbs.dtu.dk**
-
-**Manually verified guidelines**
 
 - **1.** **MUST** specify a syntactically valid email address  
 - **2.** **MUST NOT** specify an email address that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
@@ -585,8 +568,6 @@ URL
 **URL of the primary contact.**
 
 *e.g.* **https://www.ebi.ac.uk/about/contact**
-
-**Manually verified guidelines**
 
 - **1.** **MUST** resolve to a page of contact information
 
@@ -643,11 +624,8 @@ Link type
 .........
 *The type of data, information or system that is obtained when the link is resolved, e.g. "Mailing list"*
 
-- **1.** **MUST** acurately specify the type of information available at the link
+- **1.** **MUST** acurately specify the type of information available at the link, in terms from a controlled vocabulary (see below)
   
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
-
 .. csv-table::
    :header: "Link type", "Description"
    :widths: 25, 100
@@ -694,10 +672,7 @@ Download type
 .............
 *Type of download that is linked to, e.g. "Binaries"*
 
-- **1.** **MUST** acurately specify the type of download available at the link 
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
+- **1.** **MUST** acurately specify the type of download available at the link, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Download type", "Description"
@@ -754,10 +729,7 @@ Documentation type
 ..................
 *Type of documentation that is linked to, e.g. "TODOTODOTODO"*
 
-- **1.** **MUST** acurately specify the type of documentation available at the link 
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
+- **1.** **MUST** acurately specify the type of documentation available at the link, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Documentation type", "Description"
@@ -806,10 +778,7 @@ Publication type
 ................
 *Type of publication, e.g. "Primary"*
 
-- **1.** **MUST** acurately specify the type of publication
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
+- **1.** **MUST** acurately specify the type of publication, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Download type", "Description"
@@ -887,10 +856,7 @@ Entity type
 ...........
 *Type of entity that is credited, e.g. "Person"*
 
-- **1.** **MUST** acurately specify the type of entity that is credited
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
+- **1.** **MUST** acurately specify the type of entity that is credited, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Entity type", "Description"
@@ -908,10 +874,7 @@ Role
 ....
 *Role performed by entity that is credited, e.g. "Developer"*
 
-- **1.** **MUST** acurately specify the role of credited entity
-
-.. note::
-   - one or more terms from a controlled vocabulary (see below)
+- **1.** **MUST** acurately specify the role of credited entity, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
    :header: "Role", "Description"
