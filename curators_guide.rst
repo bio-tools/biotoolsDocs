@@ -652,27 +652,6 @@ Comment
 .. note::
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
-.. _link-type:
-     
-Link type
-.........
-*The type of data, information or system that is obtained when the link is resolved, e.g. "Mailing list"*
-
-- **1.** **MUST** acurately specify the type of information available at the link, in terms from a controlled vocabulary (see below)
-  
-.. csv-table::
-   :header: "Link type", "Description"
-   :widths: 25, 100
-
-   "Browser", "A website for browsing data."
-   "Helpdesk", "Helpdesk providing support in using the software."
-   "Issue tracker", "Tracker for software issues, bug reports, feature requests etc."
-   "Mailing list", "Mailing list for the software announcements, discussions, support etc."
-   "Mirror", "Mirror of an (identical) online service."
-   "Registry", "Some registry, catalogue etc. other than bio.tools."
-   "Repository", "Repository where source code, data and other files may be downloaded."
-   "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
-													
 
 
 Download group
