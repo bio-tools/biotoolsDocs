@@ -501,7 +501,7 @@ Attribute name
   function
 
 Required
-  Yes
+  No
 
 Type
   List of function objects (1 or more)
@@ -520,19 +520,65 @@ Function object definition
     * comment
         * Required: No
         * Type: String
-        * Restrictions: max length: 1000
+        * Restrictions: min length: 10, max length: 1000
+    * cmd
+        * Required: No
+        * Type: String
+        * Restrictions: min length: 1, max length: 100	  
 
+.. note::
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#function-group>`_
+	  
 **Example**
 
 .. code-block:: js
 
   # XML
+  <function>
+      <operation>
+          <uri>http://edamontology.org/operation_0418</uri>
+          <term>Protein signal peptide detection</term>
+      </operation>
+      <operation>
+          <uri>http://edamontology.org/operation_0422</uri>
+          <term>Protein cleavage site prediction</term>
+      </operation>
+      <input>
+          <data>
+            <uri>http://edamontology.org/data_2044</uri>
+            <term>Sequence</term>
+          </data>
+          <format>
+              <uri>http://edamontology.org/format_1929</uri>
+              <term>FASTA</term>
+          </format>
+      <output>
+          <data>
+            <uri>http://edamontology.org/data_1277</uri>
+            <term>Protein features</term>
+          </data>
+          <format>
+              <uri>http://edamontology.org/format_2305</uri>
+              <term>GFF</term>
+          </format>
+          <data>
+            <uri>http://edamontology.org/data_2955</uri>
+            <term>Sequence report</term>
+          </data>
+          <format>
+              <uri>http://edamontology.org/format_1929</uri>
+              <term>FASTA</term>
+          </format>
+      </output>
+      <comment>Predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.</comment>
+      <cmd>-s best</cmd>
+  </function>  
+
 
   # JSON
   "function":
   [
     {
-      "comment": "predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms",
       "operation":
       [
         {
@@ -592,6 +638,8 @@ Function object definition
           ]
         }
       ]
+      "comment": "Predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
+      "cmd": "-s best",
     }
   ]
 
@@ -619,21 +667,28 @@ EDAM object definition
     * term
         * Required: No (if URI present)
         * Type: String
-  Notes
-    Either term or URI can be provided, or both. 
 
-    URI and term are validated against EDAM ontology.
-    
-    If term does not match URI an error will be returned.
+.. note::
+   - an `EDAM ontology <https://github.com/edamontology/edamontology>`_ Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
+   - URI and term are validated against EDAM ontology; if term and URI do not match, an error will be returned.
+   - synonyms of terms (as defined in EDAM) are accepted, however, **the synonym will be replaced with main term**.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_
 
-    Synonym terms are accepted, however, **the synonym will be replaced with main term**.
 
 **Example**
 
 .. code-block:: js
 
   # XML
-
+  <operation>
+          <uri>http://edamontology.org/operation_0418</uri>
+          <term>Protein signal peptide detection</term>
+  </operation>
+  <operation>
+          <uri>http://edamontology.org/operation_0422</uri>
+          <term>Protein cleavage site prediction</term>
+  </operation>
+  
   # JSON		
   "operation":
   [
@@ -677,7 +732,15 @@ Input object definition
 .. code-block:: js
 
   # XML
-
+      <data>
+        <uri>http://edamontology.org/data_2044</uri>
+        <term>Sequence</term>
+      </data>
+      <format>
+          <uri>http://edamontology.org/format_1929</uri>
+          <term>FASTA</term>
+      </format>
+  
   # JSON
   "input":
   [
@@ -727,7 +790,16 @@ Output object definition
 .. code-block:: js
 
   # XML
-
+  "output":
+      <data>
+        <uri>http://edamontology.org/data_2044</uri>
+        <term>Sequence</term>
+      </data>
+      <format>
+          <uri>http://edamontology.org/format_1929</uri>
+          <term>FASTA</term>
+      </format>
+  
   # JSON
   "output":
   [
@@ -771,21 +843,23 @@ EDAM object definition
     * term
         * Required: No (if URI present)
         * Type: String
-  Notes
-    Either term or URI can be provided, or both. 
 
-    URI and term are validated against EDAM ontology.
-    
-    If term does not match URI an error will be returned.
-
-    Synonym terms are accepted, however, **the synonym will be replaced with main term**.
+.. note::
+   - an `EDAM ontology <https://github.com/edamontology/edamontology>`_ Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
+   - URI and term are validated against EDAM ontology; if term and URI do not match, an error will be returned.
+   - synonyms of terms (as defined in EDAM) are accepted, however, **the synonym will be replaced with main term**.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_
 
 **Example**
 
 .. code-block:: js
 
   # XML
-
+  <data>
+    <uri>http://edamontology.org/data_2044</uri>
+    <term>Sequence</term>
+  </data>
+  
   # JSON		
   "data":
   {
@@ -817,21 +891,24 @@ EDAM object definition
     * term
         * Required: No (if URI present)
         * Type: String
-  Notes
-    Either term or URI can be provided, or both. 
 
-    URI and term are validated against EDAM ontology.
-    
-    If term does not match URI an error will be returned.
+.. note::
+   - an `EDAM ontology <https://github.com/edamontology/edamontology>`_ Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
+   - URI and term are validated against EDAM ontology; if term and URI do not match, an error will be returned.
+   - synonyms of terms (as defined in EDAM) are accepted, however, **the synonym will be replaced with main term**.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_
 
-    Synonym terms are accepted, however, **the synonym will be replaced with main term**.
 
 **Example**
 
 .. code-block:: js
 
   # XML
-
+  <format>
+      <uri>http://edamontology.org/format_1929</uri>
+      <term>FASTA</term>
+  </format>
+  
   # JSON		
   "format":
   [
@@ -898,7 +975,15 @@ EDAM object definition
 .. code-block:: js
 
   # XML
-
+  <topic>
+            <uri>http://edamontology.org/topic_0605</uri>
+            <term>Informatics</term>
+  </topic>
+  <topic>
+            <uri>http://edamontology.org/topic_3303</uri>
+            <term>Medicine</term>
+  </topic>
+    
   # JSON		
   "topic":
   [

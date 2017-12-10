@@ -132,6 +132,7 @@ Guidelines below are organised into sections as they appear in the `bio.tools <h
 
 Summary group
 ^^^^^^^^^^^^^
+*Basic information about the software.*
 
 Name
 ....
@@ -278,40 +279,23 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    "biotoolsCURIE", "bio.tools CURIE (secondary identifier)."
    
   
-Collection
-..........
-*Unique ID of a collection that the software has been assigned to within bio.tools, e.g. "CBS*
-
-.. note::
-   - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
-   - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
-
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
-
-- **1.** **SHOUD** be short and intuitive
-
-.. tip::
-   - collections may be created for for any arbitrary purpose
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
-     
 
 Function group
 ^^^^^^^^^^^^^^
+*Details of a function (i.e. mode of operations) the software provides, expressed in terms from the EDAM ontology.*
 
 Operation
 .........
 *The basic operation(s) performed by the software, e.g. "'Protein signal peptide detection' (http://edamontology.org/operation_0418)"*
 
-- **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), that specific version of the tool
+- **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), those specific version of the tool
 - **2.** **MUST** be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
-
-.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
-
-.. note::
-   - an EDAM Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
+     
+.. attention::
+   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
 
   
      
@@ -326,9 +310,6 @@ Data type (input and output data)
 See the syntax guidelines for `input <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#input>`_ and `output <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#output>`_
   
 .. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
-	       
-.. note::
-   - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
 
 .. tip::
    - many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.
@@ -346,8 +327,6 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
 
 .. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
 		 
-.. note::
-   - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
     
 Comment
 .......
@@ -363,6 +342,25 @@ Comment
      
 Labels group
 ^^^^^^^^^^^^
+*Miscellaneous scientific, technical and administrative details of the software, expressed in terms from controlled vocabularies.*
+
+Collection
+..........
+*Unique ID of a collection that the software has been assigned to within bio.tools, e.g. "CBS*
+
+.. note::
+   - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
+   - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+
+See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
+
+- **1.** **SHOUD** be short and intuitive
+
+.. tip::
+   - collections may be created for for any arbitrary purpose
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
+     
+
 
 Tool type
 .........
@@ -614,8 +612,7 @@ Telephone number
 
 Links group
 ^^^^^^^^^^^
-
-**Miscellaneous links for the software e.g. repository, issue tracker or mailing list.**
+*Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#link>`_.
 
@@ -668,7 +665,7 @@ Link type
 
 Download group
 ^^^^^^^^^^^^^^
-**A link to a download for the software, e.g. source code, virtual machine image or container.**
+*Links to downloads for the software, e.g. source code, virtual machine image or container.*
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#download>`_.
 
@@ -728,7 +725,7 @@ Download type
 											
 Documentation group
 ^^^^^^^^^^^^^^^^^^^
-**A link to documentation about the software e.g. manual, API specification or training material.**
+*Links to documentation about the software e.g. manual, API specification or training material.*
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#documentation>`_.
 
@@ -777,7 +774,7 @@ Documentation type
 		
 Publications group
 ^^^^^^^^^^^^^^^^^^
-**Publications about the software**
+*Publications about the software*
 
 - **1.** **MUST** correctly identify a relevant publication
 
@@ -826,7 +823,7 @@ Publication type
 		
 Credits group
 ^^^^^^^^^^^^^
-**An individual or organisation that should be credited for the software.**
+*Individuals or organisations that should be credited for the software.*
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#credit>`_.
 
