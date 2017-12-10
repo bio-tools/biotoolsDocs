@@ -127,7 +127,6 @@ Attribute guidelines
 .. attention::
 Guidelines below are organised into sections as they appear in the `bio.tools <https://bio.tools>`_ registration user interface
  
-
 Summary group
 ^^^^^^^^^^^^^
 *Basic information about the software.*
@@ -354,8 +353,8 @@ Command
 .......
 *Relevant command, command-line fragment or option for executing this function / running the tool in this mode, e.g "-s best"*
 
-- **1.** **MUST** specify a command, command-line fragment or option specified in the tool documentation
-- **2.** **MUST** correspond correctly to the indicated function
+- **1.** **MUST** specify precisely a command, command-line fragment or option specified in the tool documentation
+- **2.** **MUST** be correctly associated with a function (the command must be used to invoke that specific tool function)
 
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
@@ -364,26 +363,6 @@ Command
 Labels group
 ^^^^^^^^^^^^
 *Miscellaneous scientific, technical and administrative details of the software, expressed in terms from controlled vocabularies.*
-
-Collection
-..........
-*Unique ID of a collection that the software has been assigned to within bio.tools, e.g. "CBS*
-
-.. note::
-   - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
-   - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
-
-
-- **1.** **SHOUD** be short and intuitive
-
-.. tip::
-   - collections may be created for for any arbitrary purpose
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
-     
-.. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
-  
-
 
 Tool type
 .........
@@ -417,6 +396,7 @@ Tool type
 .. note::
    - bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#tool-type>`_.     
+
 
 Topic
 .....
@@ -464,28 +444,6 @@ Language
 
     
   
-Maturity
-........
-*How mature the software product is, e.g. "Mature"*
-
-- **1.** **MUST** acurately reflect the software maturity, in terms from a controlled vocabulary (see below)
-  
-.. csv-table::
-   :header: "Maturity", "Description"
-   :widths: 25, 100
-
-   "Emerging", "Nascent or early release software that may not yet be fully featured or stable."
-   "Mature", "Software that is generally considered to fulfill several of the following: secure, reliable, actively maintained, fully featured, proven in production environments, has an active community, and is described or cited in the scientific literature."
-   "Legacy", "Software which is no longer in common use, deprecated by the provider, superseded by other software, replaced by a newer version, is obsolete etc."
-
-.. attention::
-   - normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
-		 
-.. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#maturity>`_.
-
-	    
-  
 License
 .......
 *Software or data usage license, e.g. "GPL-3.0"*
@@ -512,6 +470,50 @@ License
       "Free software", "Free as in 'freedom' not necessarily free of charge.  Software is made available under a license approved by the Free Software Foundation (FSF). The software satisfies the criteria of the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html). The source code is available to others."
       "Free and open source", "Software is made available under a license approved by both the Open Source Initiative (OSI) and the Free Software Foundation (FSF), and satisfies the criteria of the OSI Open Source Definition maintained (https://opensource.org/docs/osd) and the FSF Free Software Definition (http://www.gnu.org/philosophy/free-sw.html).  Such software ensures users have the freedom to run, copy, distribute, study, change and improve the software.  The source code is available to others."
       "Copyleft", "Software is made available under a license designated as 'copyleft' by the Free Software Foundation (FSF).  The license ensures such software is free and that all modified and extended versions of the program are free as well. Free as in 'freedom' not necessarily free of charge, as per the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html)."
+
+     
+Collection
+..........
+*Unique ID of a collection that the software has been assigned to within bio.tools, e.g. "CBS*
+
+.. note::
+   - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
+   - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+
+
+- **1.** **SHOUD** be short and intuitive
+
+.. tip::
+   - collections may be created for for any arbitrary purpose
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
+     
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
+  
+
+  
+Maturity
+........
+*How mature the software product is, e.g. "Mature"*
+
+- **1.** **MUST** acurately reflect the software maturity, in terms from a controlled vocabulary (see below)
+  
+.. csv-table::
+   :header: "Maturity", "Description"
+   :widths: 25, 100
+
+   "Emerging", "Nascent or early release software that may not yet be fully featured or stable."
+   "Mature", "Software that is generally considered to fulfill several of the following: secure, reliable, actively maintained, fully featured, proven in production environments, has an active community, and is described or cited in the scientific literature."
+   "Legacy", "Software which is no longer in common use, deprecated by the provider, superseded by other software, replaced by a newer version, is obsolete etc."
+
+.. attention::
+   - normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
+		 
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#maturity>`_.
+
+	    
+
 
    
 Cost
