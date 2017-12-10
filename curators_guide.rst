@@ -308,7 +308,7 @@ Data type (input and output data)
 .................................
 *Type of primary input / output data (if any) e.g. "'Sequence' (http://edamontology.org/data_2044)"*
 
-- **1.** **MUST** correctly specify types of input or output data processed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), that specific version of the tool
+- **1.** **MUST** correctly specify types of input or output data processed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), those specific version(s) of the tool
 - **2.** **MUST** be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe all the primary inputs and outputs of the tool and **SHOULD NOT** describe secondary / minor inputs and outputs: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
@@ -328,7 +328,7 @@ Data format (input and output data)
 ...................................
 *Allowed format(s) of primary inputs/outputs e.g. "'FASTA' (http://edamontology.org/format_1929)"*
 
-- **1.** **MUST** correctly specify data formats supported on input or output by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, that specific version of the tool
+- **1.** **MUST** correctly specify data formats supported on input or output by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, those specific version(s) of the tool
 - **2.** **MUST** be correctly associated with the data type of an input or output (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe the primary data formats and **MAY** exhaustively describe *all* formats: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
@@ -347,8 +347,19 @@ Comment
 - **3.** **SHOULD NOT** duplicate online documentation; give a link if necessary
 
 .. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
 
+
+Command
+.......
+*Relevant command, command-line fragment or option for executing this function / running the tool in this mode, e.g "-s best"*
+
+- **1.** **MUST** specify a command, command-line fragment or option specified in the tool documentation
+- **2.** **MUST** correspond correctly to the indicated function
+
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
+     
      
 Labels group
 ^^^^^^^^^^^^
@@ -493,14 +504,14 @@ License
 .. note::
    Most permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") may be attached to the bio.tools entry (see table below)
 
-.. csv-table::  Labelling based on license (future work)
-   :header: "License", "Description"
-   :widths: 25, 100
+   .. csv-table::  Labelling based on license (future work)
+      :header: "License", "Description"
+      :widths: 25, 100
 
-   "Open-source", "Software is made available under a license approved by the Open Source Initiative (OSI). The software is distributed in a way that satisfies the 10 criteria of the Open Source Definition maintained by OSI (see https://opensource.org/docs/osd). The source code is available to others."
-   "Free software", "Free as in 'freedom' not necessarily free of charge.  Software is made available under a license approved by the Free Software Foundation (FSF). The software satisfies the criteria of the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html). The source code is available to others."
-   "Free and open source", "Software is made available under a license approved by both the Open Source Initiative (OSI) and the Free Software Foundation (FSF), and satisfies the criteria of the OSI Open Source Definition maintained (https://opensource.org/docs/osd) and the FSF Free Software Definition (http://www.gnu.org/philosophy/free-sw.html).  Such software ensures users have the freedom to run, copy, distribute, study, change and improve the software.  The source code is available to others."
-   "Copyleft", "Software is made available under a license designated as 'copyleft' by the Free Software Foundation (FSF).  The license ensures such software is free and that all modified and extended versions of the program are free as well. Free as in 'freedom' not necessarily free of charge, as per the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html)."
+      "Open-source", "Software is made available under a license approved by the Open Source Initiative (OSI). The software is distributed in a way that satisfies the 10 criteria of the Open Source Definition maintained by OSI (see https://opensource.org/docs/osd). The source code is available to others."
+      "Free software", "Free as in 'freedom' not necessarily free of charge.  Software is made available under a license approved by the Free Software Foundation (FSF). The software satisfies the criteria of the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html). The source code is available to others."
+      "Free and open source", "Software is made available under a license approved by both the Open Source Initiative (OSI) and the Free Software Foundation (FSF), and satisfies the criteria of the OSI Open Source Definition maintained (https://opensource.org/docs/osd) and the FSF Free Software Definition (http://www.gnu.org/philosophy/free-sw.html).  Such software ensures users have the freedom to run, copy, distribute, study, change and improve the software.  The source code is available to others."
+      "Copyleft", "Software is made available under a license designated as 'copyleft' by the Free Software Foundation (FSF).  The license ensures such software is free and that all modified and extended versions of the program are free as well. Free as in 'freedom' not necessarily free of charge, as per the Free Software Definition maintained by FSF (see http://www.gnu.org/philosophy/free-sw.html)."
 
    
 Cost

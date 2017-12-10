@@ -224,7 +224,7 @@ Restrictions
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_
 
-.. _function:
+.. _short-description:
 
 Short description
 -----------------
@@ -531,7 +531,8 @@ Function object definition
         * Restrictions: min length: 1, max length: 100	  
 
 .. note::
-   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#function-group>`_
+   - **comment** and **cmd**: line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#function-group>`_.
 	  
 **Example**
 
@@ -666,10 +667,10 @@ Type
 EDAM object definition
   Content
     * uri
-        * Required: No (if term present)
+        * Required: No (if term present), Yes (otherwise)
         * Type: URL
     * term
-        * Required: No (if URI present)
+        * Required: No (if URI present), Yes (otherwise)
         * Type: String
 
 .. note::
@@ -842,10 +843,10 @@ Type
 EDAM object definition
   Content
     * uri
-        * Required: No (if term present)
+        * Required: No (if term present), Yes (otherwise)
         * Type: URL
     * term
-        * Required: No (if URI present)
+        * Required: No (if URI present), Yes (otherwise)
         * Type: String
 
 .. note::
@@ -890,10 +891,10 @@ Type
 EDAM object definition
   Content
     * uri
-        * Required: No (if term present)
+        * Required: No (if term present), Yes (otherwise)
         * Type: URL
     * term
-        * Required: No (if URI present)
+        * Required: No (if URI present), Yes (otherwise)
         * Type: String
 
 .. note::
@@ -968,10 +969,10 @@ Type
 EDAM object definition
   Content
     * uri
-        * Required: No (if term present)
+        * Required: No (if term present), Yes (otherwise)
         * Type: URL
     * term
-        * Required: No (if URI present)
+        * Required: No (if URI present), Yes (otherwise)
         * Type: String
 
 **Example**
