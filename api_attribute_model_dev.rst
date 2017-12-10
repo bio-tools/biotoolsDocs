@@ -492,8 +492,8 @@ Allowed values of **type** (see `Curators Guide <http://biotools.readthedocs.io/
   ]
 
 .. note::
-   Type can normally be inferred from the value but should be specified otherwise.  In the example it was not actually necessary to specify "type".
-  
+   - type can normally be inferred from the value but should be specified otherwise.  In the example it was not actually necessary to specify "type".
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_
 
 
 Function
@@ -512,10 +512,10 @@ Function object definition
     * :ref:`operation`
         * Required: Yes
         * Type: List of EDAM objects
-    * input
+    * :ref:`input`
         * Required: No
         * Type: List of input objects
-    * output
+    * :ref:`output`
         * Required: No
         * Type: List of output objects
     * comment
