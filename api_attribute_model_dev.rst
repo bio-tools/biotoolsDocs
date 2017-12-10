@@ -184,6 +184,7 @@ A sample YAML document may look like this:
 Tool attributes
 ===============
 
+
 Name
 ----
 *Canonical software name assigned by the software developer or service provider, e.g. "needle"*
@@ -223,7 +224,8 @@ Restrictions
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_
 
-  
+.. _function:
+
 Short description
 -----------------
 *Short and concise textual description of the software function, e.g. "Needleman-Wunsch global alignment of two sequences."*
@@ -495,6 +497,7 @@ Allowed values of **type** (see `Curators Guide <http://biotools.readthedocs.io/
    - type can normally be inferred from the value but should be specified otherwise.  In the example it was not actually necessary to specify "type".
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_
 
+.. _function:
 
 Function
 --------

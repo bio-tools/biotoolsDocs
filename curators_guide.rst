@@ -144,7 +144,8 @@ Name
 - **6.** **SHOULD** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
 - **7.** **SHOULD** follow the naming patterns (see below)
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#name>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#name>`_.
   
 .. note::  **Naming patterns**
 
@@ -178,7 +179,7 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
 
      
 Short description
-................
+.................
 *Short and concise textual description of the software function, e.g. "Needleman-Wunsch global alignment of two sequences."*
 
 - **1.** **MUST** provide a terse statement of the primary purpose / function of the tool: what is done not how
@@ -194,7 +195,8 @@ Short description
 - **7.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
 
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#shortDescription>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#shortDescription>`_.
   
 
 Description
@@ -211,7 +213,8 @@ Description
 - **5.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
 - **6.** **SHOULD NOT** include URLs
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#description>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#description>`_.
   
 
 Homepage
@@ -220,7 +223,8 @@ Homepage
 
 - **1.** **MUST** resolve to a web page from the developer / provider that most specifically describes the tool
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#homepage>`_.  
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#homepage>`_.  
   
 .. tip:: In case a tool lacks it's own website, a URL of it's code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
 
@@ -236,7 +240,8 @@ Version
 - **4.** **MAY** identify all tool versions which are applicable to the entry
 - **5.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#version>`_.  
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#version>`_.  
 
 .. important::
    Care is needed to ensure annotations correspond to the indicated tool version.
@@ -265,8 +270,6 @@ Other IDs
 - **2.** **MUST** include version information if IDs for multiple different versions are specified
 - **3.** **MAY** specify the type of identifier (see below)
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#otherid>`_.
-   
 .. csv-table::
    :header: "Maturity", "Description"
    :widths: 25, 100
@@ -276,25 +279,29 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    "cpe", "Common Platform Enumeration (CPE) identifier as listed in the CPE dictionary (https://cpe.mitre.org/dictionary/)."
    "biotoolsCURIE", "bio.tools CURIE (secondary identifier)."
    
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#otherid>`_.
+   
   
 
 Function group
 ^^^^^^^^^^^^^^
-*Details of a function (i.e. mode of operations) the software provides, expressed in terms from the EDAM ontology.*
+*Details of a function (i.e. mode of operation) the software provides, expressed in terms from the EDAM ontology.*
 
 Operation
 .........
-*The basic operation(s) performed by the software, e.g. "'Protein signal peptide detection' (http://edamontology.org/operation_0418)"*
+*The basic operation(s) performed by this software function (EDAM Operation), e.g. "'Protein signal peptide detection' (http://edamontology.org/operation_0418)"*
 
-- **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), those specific version of the tool
+- **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), those specific version(s) of the tool
 - **2.** **MUST** be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
-     
 .. attention::
    - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
 
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
+     
   
      
 Data type (input and output data)
@@ -305,13 +312,17 @@ Data type (input and output data)
 - **2.** **MUST** be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe all the primary inputs and outputs of the tool and **SHOULD NOT** describe secondary / minor inputs and outputs: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
-See the syntax guidelines for `input <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#input>`_ and `output <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#output>`_
-  
-.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
+.. attention::
+   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
 
 .. tip::
    - many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.
 
+.. note::
+   - see the syntax guidelines for `input <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#input>`_ and `output <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#output>`_
+  
+
+     
      
 Data format (input and output data)
 ...................................
@@ -321,10 +332,11 @@ Data format (input and output data)
 - **2.** **MUST** be correctly associated with the data type of an input or output (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
 - **3.** **SHOULD** describe the primary data formats and **MAY** exhaustively describe *all* formats: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#format>`_.
-
 .. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
-		 
+
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#format>`_.
+       
     
 Comment
 .......
@@ -353,12 +365,13 @@ Collection
 
 - **1.** **SHOUD** be short and intuitive
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
-  
 .. tip::
    - collections may be created for for any arbitrary purpose
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
      
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
+  
 
 
 Tool type
@@ -386,12 +399,13 @@ Tool type
    "Workbench", "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
    "Workflow", "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#tool-type>`_.
 
+.. tip::
+   - in cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable to that entry.
   
-.. note:: bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
-
-.. tip::  In cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable to that entry.
+.. note::
+   - bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#tool-type>`_.     
 
 Topic
 .....
@@ -401,10 +415,12 @@ Topic
 - **2.** **MAY** specify all highly relevant scientific topics
 - **3.** **SHOULD NOT** exhaustively specify all the topics of lower or secondary relevance
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#topic>`_.
-
-.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
+.. attention::
+   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
   
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#topic>`_.
+
 
 Operating system
 ................
@@ -420,7 +436,8 @@ Operating system
    "Windows", "All flavours of Microsoft Windows operating system."
    "Mac", "All flavours of Apple Macintosh operating systems (primarily Mac OS X)."
      
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operating-system>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operating-system>`_.
 
 
 Language
@@ -432,8 +449,7 @@ Language
 
 .. note::
   - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.)
-
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#language>`_.
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#language>`_.
 
     
   
@@ -442,7 +458,6 @@ Maturity
 *How mature the software product is, e.g. "Mature"*
 
 - **1.** **MUST** acurately reflect the software maturity, in terms from a controlled vocabulary (see below)
-
   
 .. csv-table::
    :header: "Maturity", "Description"
@@ -452,10 +467,12 @@ Maturity
    "Mature", "Software that is generally considered to fulfill several of the following: secure, reliable, actively maintained, fully featured, proven in production environments, has an active community, and is described or cited in the scientific literature."
    "Legacy", "Software which is no longer in common use, deprecated by the provider, superseded by other software, replaced by a newer version, is obsolete etc."
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#maturity>`_.
-
-.. attention:: Normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
+.. attention::
+   - normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
 		 
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#maturity>`_.
+
 	    
   
 License
@@ -468,8 +485,7 @@ License
 
   .. note::
   - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.)
-
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
 
 .. tip:: Use the "Other" license for custom institutional licenses that are out of scope of `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.  If you've found a license that you think should be included in biotoolsSchema please report it *via* `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/new>`_.
 
@@ -501,7 +517,8 @@ Cost
    "Free of charge (with restrictions)", "Software which is available for use at no monetary cost to the user, but possibly with limited functionality, usage restrictions, or other limitations."
    "Commercial", "Software which you have to pay to access."
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
 
 
 Accessibility
@@ -519,7 +536,8 @@ Accessibility
    "Proprietary", "Software for which the software's publisher or another person retains intellectual property rights \ usually copyright of the source code, but sometimes patent rights."
    "Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#accessibility>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#accessibility>`_.
 
    
 Contact group
@@ -595,7 +613,8 @@ Links group
 ^^^^^^^^^^^
 *Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#link>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#link>`_.
 
 
 URL
@@ -645,7 +664,8 @@ Download group
 ^^^^^^^^^^^^^^
 *Links to downloads for the software, e.g. source code, virtual machine image or container.*
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#download>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#download>`_.
 
 URL
 ...
@@ -702,7 +722,8 @@ Documentation group
 ^^^^^^^^^^^^^^^^^^^
 *Links to documentation about the software e.g. manual, API specification or training material.*
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#documentation>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#documentation>`_.
 
 
 URL
@@ -750,7 +771,8 @@ Publications group
 
 - **1.** **MUST** correctly identify a relevant publication
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#publication>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#publication>`_.
 
 
 PubMed Central ID
@@ -794,7 +816,8 @@ Credits group
 ^^^^^^^^^^^^^
 *Individuals or organisations that should be credited for the software.*
 
-See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#credit>`_.
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#credit>`_.
 
 
 GRID ID
