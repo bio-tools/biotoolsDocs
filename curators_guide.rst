@@ -308,7 +308,7 @@ Operation
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
 
-.. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
+.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
 
 .. note::
    - an EDAM Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
@@ -325,7 +325,7 @@ Data type (input and output data)
 
 See the syntax guidelines for `input <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#input>`_ and `output <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#output>`_
   
-.. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
+.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
 	       
 .. note::
    - an EDAM Data concept URL and / or term are specified, *e.g.* "Protein sequences", http://edamontology.org/data_2976. 
@@ -344,7 +344,7 @@ Data format (input and output data)
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#format>`_.
 
-.. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply
+.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
 		 
 .. note::
    - an EDAM Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
@@ -402,18 +402,16 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
 
 Topic
 .....
-*General scientific domain the software serves or other general category, e.g. "'Protein sites, features and motifs' (http://edamontology.org/topic_3510)"*
+*General scientific domain the software serves or other general category (EDAM Topic), e.g. "'Protein sites, features and motifs' (http://edamontology.org/topic_3510)"*
 
-- **1.** **SHOULD** specify the most important and relevant scientific topics
-- **2.** **SHOULD NOT** exhaustively specify all the topics of lower relevance
+- **1.** **MUST** specify the single most important and relevant scientific topic
+- **2.** **MAY** specify all highly relevant scientific topics
+- **3.** **SHOULD NOT** exhaustively specify all the topics of lower or secondary relevance
 
 See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#topic>`_.
 
-.. attention:: general guidelines for `EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_ also apply  
+.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
   
-.. note::
-   - an EDAM Topic concept URL and / or term are specified, *e.g.* "Proteomics", http://edamontology.org/topic_0121.
-
 
 Operating system
 ................
@@ -434,7 +432,6 @@ See the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribu
    "Windows", "All flavours of Microsoft Windows operating system."
    "Mac", "All flavours of Apple Macintosh operating systems (primarily Mac OS X)."
      
-- valid types are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_ : assign all that apply
 
 Language
 ........
