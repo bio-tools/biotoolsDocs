@@ -5,7 +5,7 @@ Curators Guide
    **UNDER CONSTRUCTION**
 
    - guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines. 
-   - or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
+   - to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
    - for curation advice mail `registry-support <mailto:registry-support@elixir-dk.org>`_
 
   
@@ -652,6 +652,8 @@ Comment
 .. note::
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
+.. _link-type:
+     
 Link type
 .........
 *The type of data, information or system that is obtained when the link is resolved, e.g. "Mailing list"*
