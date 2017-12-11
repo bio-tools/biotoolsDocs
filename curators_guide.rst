@@ -548,75 +548,6 @@ Accessibility
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#accessibility>`_.
 
-   
-Contact group
-^^^^^^^^^^^^^
-*Details of primary point(s) of contact, e.g. person, helpdesk or mailing list.*
-
-- **1.** **MUST** provide contact details for the first port-of-call when seeking help with the software
-- **2.** **MUST** ensure the specified name corresponds to the email, URL and telephone number
-- **3.** **MAY** specify one or more other contacts
-  
-  
-Name
-....
-**Name of the primary contact.**
-
-*e.g.* **Henrik Nielsen**
-
-
-- **1.** Must give the first and last names of a person, or something like "Mailing list", "Helpdesk" *etc.* as appropriate
-
-.. note::
-   **biotoolsSchema syntax**
-
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-
-Email
-.....
-**Email address of the primary contact.**
-
-*e.g.* **hnielsen@cbs.dtu.dk**
-
-- **1.** **MUST** specify a syntactically valid email address  
-- **2.** **MUST NOT** specify an email address that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
-- **3.** **MUST NOT** specify a stale (obsolete) email address
-  
-.. note::
-   **biotoolsSchema syntax**
-
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-
-.. note:: Email addresses will be rendered in bio.tools UI in a spam-resilient form (*e.g.* "hnielsen at cbs.dtu.dk")
-  
-  
-URL
-...
-**URL of the primary contact.**
-
-*e.g.* **https://www.ebi.ac.uk/about/contact**
-
-- **1.** **MUST** resolve to a page of contact information
-
-.. note::
-   **biotoolsSchema syntax**
-
-   - a valid URL is specified.
-
-
-
-Telephone number
-................
-*Telephone number of primary contact, e.g. "+49-89-636-48018"*
-
-- **1.** **MUST** specify a valid telephone number
-- **2.** **MUST NOT** specify a telephone number that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
-- **3.** **MUST NOT** specify a stale (obsolete) telephone number
-
-  
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-
 
 Links group
 ^^^^^^^^^^^
@@ -746,7 +677,7 @@ Comment
 
 Documentation type
 ..................
-*Type of documentation that is linked to, e.g. "TODOTODOTODO"*
+*Type of documentation that is linked to, e.g. "Citation instructions"*
 
 - **1.** **MUST** acurately specify the type of documentation available at the link, in terms from a controlled vocabulary (see below)
 
@@ -772,7 +703,8 @@ Publications group
 *Publications about the software*
 
 - **1.** **MUST** correctly identify a relevant publication
-
+- **2.** **MUST** specify multiple IDs for a single publication within a single publication group
+  
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#publication>`_.
 
@@ -781,22 +713,15 @@ PubMed Central ID
 .................
 *PubMed Central Identifier (PMCID) of a publication about the software, e.g. "PMC4343077"*
 
-.. note::
-   - PMCID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 PubMed ID
 .........
 *PubMed Identifier (PMID) of a publication about the software, e.g. "21959131"*
 
-.. note::
-   - valid PMID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
-
 Digital Object ID
 .................
 *Digital Object Identifier (DOI) of a publication about the software, e.g. "10.1038/nmeth.1701"*
 
-.. note::
-   - valid DOI syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 Publication type
 ................
@@ -818,8 +743,87 @@ Credits group
 ^^^^^^^^^^^^^
 *Individuals or organisations that should be credited, or may be contacted about the software.*
 
+- **1.** **MUST** provide contact details for the first port-of-call when seeking help with the software
+- **2.** **MUST** ensure the specified name corresponds to the email, URL and telephone number
+- **3.** **MAY** specify one or more other contacts
+  
+
+
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#credit>`_.
+
+
+     
+Name
+....
+*Name of the entity that is credited, e.g. "EMBL EBI"*
+
+- **1.** **MUST** give the first and last names of a person, or the correct name of some other entity.
+- **2.** **MUST NOT** give a redirect, *e.g.* "See publication", a URL, or any information other than the name of the entity that is credited.
+
+.. note::
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+
+ELIXIR Platform
+...............
+*Name of the ELIXIR Platform that is credited, e.g. "Tools"*
+
+- **1.** **MUST** only credit the ELIXIR Platform if directly contributing to the work, using a term from a controlled vocabulary (see below)
+
+.. csv-table::
+   :header: "ELIXIR Platform", "Description"
+   :widths: 25, 100
+	    
+   "Data", "ELIXIR Data Platform"
+   "Tools", "ELIXIR Tools Platform"
+   "Compute", "ELIXIR Compute Platform"
+   "Interoperability", "ELIXIR Interoperability Platform"
+   "Training", "ELIXIR Training Platform"
+
+ELIXIR Node
+...........
+*Name of the ELIXIR Node that is credited, e.g. "Norway"*
+
+- **1.** **MUST** only credit the ELIXIR Node if directly contributing to the work, using a term from a controlled vocabulary (see below)
+
+.. csv-table::
+   :header: "ELIXIR Node"
+   :widths: 25
+	    
+   "Belgium"
+   "Czech Republic"
+   "Denmark"
+   "EMBL"
+   "Estonia"
+   "Finland"
+   "France"
+   "Germany"
+   "Greece"
+   "Hungary"
+   "Ireland"
+   "Israel"
+   "Italy"
+   "Luxembourg"
+   "Netherlands"
+   "Norway"
+   "Portugal"
+   "Slovenia"
+   "Spain"
+   "Sweden"
+   "Switzerland"
+   "UK"
+
+     
+ORCID ID
+........
+*Unique identifier (ORCID iD) of a person that is credited, e.g. "http://orcid.org/0000-0002-1825-0097"*
+
+- **1.** **MUST** correctly identify a credited person
+
+.. note::
+   - valid ORCID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
+
+.. note:: Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
 
 
 GRID ID
@@ -832,29 +836,6 @@ GRID ID
    - valid GRID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
 .. note:: Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.  If ORCID institutional identifiers become available, these will also be supported.
-
-ORCID ID
-........
-*Unique identifier (ORCID iD) of a person that is credited, e.g. "http://orcid.org/0000-0002-1825-0097"*
-
-- **1.** **MUST** correctly identify a credited person
-
-.. note::
-   - valid ORCID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
-
-.. note:: Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
-
-Name
-....
-*Name of the entity that is credited, e.g. "EMBL EBI"*
-
-- **1.** **MUST** give the first and last names of a person, or the correct name of some other entity.
-- **2.** **MUST NOT** give a redirect, *e.g.* "See publication", a URL, or any information other than the name of the entity that is credited.
-  
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-
-
 
 Email
 .....
@@ -876,6 +857,17 @@ URL
 .. note::
    - a valid URL is specified.
 
+Telephone number
+................
+*Telephone number of the entity that is credited, e.g. "+49-89-636-48018"*
+
+- **1.** **MUST** specify a valid telephone number
+- **2.** **MUST NOT** specify a telephone number that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
+- **3.** **MUST NOT** specify a stale (obsolete) telephone number
+
+  
+.. note::
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 Entity type
 ...........

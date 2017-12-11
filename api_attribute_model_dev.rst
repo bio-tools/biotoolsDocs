@@ -469,7 +469,8 @@ otherID object definition
         - ``biotoolsCURIE``	
   * version
       * Required: No
-      * Type: String	  
+      * Type: String
+      * Restrictions: Min length: 1, Max length: 100, Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
 
 **Example**
 
@@ -1373,6 +1374,7 @@ Download object definition
         * Required: Yes
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_)
+
 	  - ``API specification``
 	  - ``Biological data``
 	  - ``Binaries``
@@ -1395,7 +1397,15 @@ Download object definition
         * Required: No
         * Type: String
         * Restrictions: min length: 10, max length: 1000
-
+    * cmd
+        * Required: No
+        * Type: String
+        * Restrictions: min length: 1, max length: 100
+    * version
+        * Required: No
+        * Type: String
+        * Restrictions: Min length: 1, Max length: 100, Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+	  
 **Example**
 
 .. code-block:: js
@@ -1405,6 +1415,8 @@ Download object definition
    <url>http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp</url>
    <type>Source code</url>
    <comment>Complete distibution</comment>
+   <cmd>n/a</cmd>
+   <version>1.4</version>
   </download> 
       
   # JSON		
@@ -1413,7 +1425,9 @@ Download object definition
     {
       "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
       "type": "Source code",
-      "comment": "Complete distibution"
+      "comment": "Complete distibution",
+      "cmd": "n/a",
+      "version": "1.4"
     }
   ]
 
@@ -1503,12 +1517,15 @@ Publication object definition
     * pmcid
         * Required: No
         * Type: PMCID
+	* Pattern: (PMC)[1-9][0-9]{0,8}
     * pmid
         * Required: No
         * Type: PMID
+  	* Pattern: [1-9][0-9]{0,8}
     * doi
         * Required: No
         * Type: DOI
+	* Pattern: 10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+
     * type
         * Required: No
         * Type: ENUM
@@ -1520,7 +1537,7 @@ Publication object definition
     * version
         * Required: No
         * Type: String
-        * Restrictions: max length: 300
+        * Restrictions: Min length: 1, Max length: 100, Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
 
 **Example**
 
@@ -1550,57 +1567,6 @@ Publication object definition
 .. note::
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#publications-group>`_.  
   
-.. _contact:
-
-Contact
---------
-Attribute name
-  contact
-
-Required
-  No
-
-Type
-  List of contact objects
-
-Contact object definition
-  Content
-    * name
-        * Required: Yes
-        * Type: String
-        * Restrictions: max length: 100
-    * url
-        * Required: No
-        * Type: URL
-        * Restrictions: max length: 300
-    * email
-        * Required: No
-        * Type: Email
-        * Restrictions: max length: 300
-    * tel
-        * Required: No
-        * Type: String
-        * Restrictions: max length: 30
-
-
-**Example**
-
-.. code-block:: js
-
-  # XML
-
-  # JSON		
-  "contact":
-  [
-    {
-      "name": "Henrik Nielsen",
-      "url": "http://cbs.dtu.dk",
-      "email": "test@cbs.dtu.dk",
-      "tel": "123456798"
-    }
-  ]
-  
-
 .. _credit:
 
 Credit
@@ -1622,14 +1588,6 @@ Credit object definition
         * Required: Yes
         * Type: String
         * Restrictions: max length: 100
-    * url
-        * Required: No
-        * Type: URL
-        * Restrictions: max length: 300
-    * email
-        * Required: No
-        * Type: Email
-        * Restrictions: max length: 300
     * orcidId
         * Required: No
         * Type: String
@@ -1638,10 +1596,23 @@ Credit object definition
         * Required: No
         * Type: String
         * Restrictions: max length: 100
+    * email
+        * Required: No
+        * Type: Email
+        * Restrictions: max length: 300
+    * url
+        * Required: No
+        * Type: URL
+        * Restrictions: max length: 300 
+    * tel
+        * Required: No
+        * Type: String
+        * Restrictions: max length: 30
     * typeEntity
         * Required: No
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#type-entity>`_)
+
 	  - ``Person``
 	  - ``Project``
 	  - ``Division``
@@ -1652,12 +1623,14 @@ Credit object definition
         * Required: No
         * Type: ENUM (list)
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#type-role>`_)
+
 	  - ``Developer``
 	  - ``Maintainer``
 	  - ``Provider``
 	  - ``Documentor``
 	  - ``Contributor``
 	  - ``Support``
+	  - ``Primary contact``	    
     * comment
         * Required: No
         * Type: String
