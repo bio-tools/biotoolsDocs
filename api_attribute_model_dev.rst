@@ -945,7 +945,9 @@ EDAM object definition
 
 
 Tool type
-----------------
+---------
+*The type of application software: a discrete software entity can have more than one type, e.g. "Command-line tool, Web application"*
+
 Attribute name
   toolType
 
@@ -1047,6 +1049,8 @@ EDAM object definition
 
 Operating system
 ----------------
+*The operating system supported by a downloadable software package, e.g. "Linux"*
+
 Attribute name
   operatingSystem
 
@@ -1081,7 +1085,9 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 
      
 Language
-----------------
+--------
+*Name of programming language the software source code was written in, e.g. "C"*
+
 Attribute name
   language
 
@@ -1113,7 +1119,9 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#language>`_.
 
 License
------------
+-------
+*Software or data usage license, e.g. "GPL-3.0"*
+
 Attribute name
   license
 
@@ -1141,6 +1149,8 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
   
 Collection
 ----------
+*Unique ID of a collection that the software has been assigned to within bio.tools, e.g. "CBS*
+
 Attribute name
   collectionID
 
@@ -1180,7 +1190,9 @@ Restrictions
   
 
 Maturity
------------
+--------
+*How mature the software product is, e.g. "Mature"*
+
 Attribute name
   maturity
 
@@ -1209,7 +1221,9 @@ Allowed valuse (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#maturity>`_.  
   
 Cost
------------
+----
+*Monetary cost of acquiring the software, e.g. "Free of charge (with retritions)"*
+
 Attribute name
   cost
 
@@ -1239,6 +1253,8 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 
 Accessibility
 -------------
+*Whether the software is freely available for use, e.g. "Open access"*
+
 Attribute name
   accessibility
 
@@ -1294,6 +1310,7 @@ Link object definition
         * Required: Yes
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#id61>`_)
+	  
 	  - ``Browser``
 	  - ``Helpdesk``
 	  - ``Issue tracker``
@@ -1336,6 +1353,8 @@ Link object definition
   
 Download
 --------
+*Links to downloads for the software, e.g. source code, virtual machine image or container.*
+
 Attribute name
   download
 
@@ -1350,7 +1369,6 @@ Download object definition
     * url
         * Required: Yes
         * Type: URL
-        * Restrictions: max length: 300
     * type
         * Required: Yes
         * Type: ENUM
@@ -1376,7 +1394,7 @@ Download object definition
     * comment
         * Required: No
         * Type: String
-        * Restrictions: max length: 1000
+        * Restrictions: min length: 10, max length: 1000
 
 **Example**
 
@@ -1400,10 +1418,13 @@ Download object definition
   ]
 
 .. note::
+   - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group>`_.
+
   
 Documentation
 --------------
+*Links to documentation about the software e.g. manual, API specification or training material.*
 
 Attribute name
   documentation
@@ -1419,13 +1440,14 @@ Documentation object definition
     * url
         * Required: Yes
         * Type: URL
-        * Restrictions: max length: 300
     * type
         * Required: Yes
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_)
+
 	  - ``API documentation``
 	  - ``Citation instructions``
+    	  - ``Contributions policy``
 	  - ``General``
 	  - ``Manual``
 	  - ``Terms of use``
@@ -1434,7 +1456,7 @@ Documentation object definition
     * comment
         * Required: No
         * Type: String
-        * Restrictions: max length: 1000
+        * Restrictions: min legth:10, max length: 1000
 
 **Example**
 
@@ -1458,12 +1480,15 @@ Documentation object definition
   ]
 
 .. note::
+   - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group>`_.
      
 .. _publication:
 
 Publication
 -----------
+*Publications about the software*
+
 Attribute name
   publication
 
@@ -1579,7 +1604,9 @@ Contact object definition
 .. _credit:
 
 Credit
---------
+------
+*Individuals or organisations that should be credited, or may be contacted about the software.*
+
 Attribute name
   credit
 

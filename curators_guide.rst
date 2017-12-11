@@ -682,18 +682,12 @@ URL
 - **1.** **MUST** resolve to a page providing either an immediately download, or links for a download of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
 
-.. note::
-   - a valid URL is specified.
-
   
 Comment
 .......
-*Comment about the download, e.g. "TODOTODOTODO"*
+*Comment about the download, e.g. "Complete distibution"*
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
-
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 
 Download type
@@ -767,10 +761,14 @@ Documentation type
 		
    "API documentation", "Human-readable API documentation."
    "Citation instructions", "Information on how to correctly cite use of the software."
+   "Contributions policy", "Information about policy for making contributions to the software project."
    "General", "General documentation."
+   "Governance", "Information about the software governance model."
+   "Installation instructions", "Instructions how to install the software."
    "Manual ", "Information on how to use the software."
    "Terms of use", "Rules that one must agree to abide by in order to use a service."
    "Training material", "Online training material such as text on a Web page, a presentation, video, tutorial etc."
+   "Tutorial", "A tutorial about using the software."
    "Other", "Some other type of documentation not listed in biotoolsSchema."
 
 		
@@ -823,7 +821,7 @@ Publication type
 		
 Credits group
 ^^^^^^^^^^^^^
-*Individuals or organisations that should be credited for the software.*
+*Individuals or organisations that should be credited, or may be contacted about the software.*
 
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#credit>`_.
