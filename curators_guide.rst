@@ -477,11 +477,6 @@ Collection
 ..........
 *Unique ID of a collection that the software has been assigned to within bio.tools, e.g. "CBS*
 
-.. note::
-   - the ID is a URL-safe name restricted to 12 characters maximum.  Unreserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde) are allowed. All other characters including reserved characters and other characters deemed unsafe are not allowed.
-   - the 12 char limit is not currently enforced by bio.tools and will be increased in the next release of `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
-
-
 - **1.** **SHOUD** be short and intuitive
 
 .. tip::

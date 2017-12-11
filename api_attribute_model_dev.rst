@@ -449,7 +449,7 @@ Required
   No
 
 Type
-  List of otherID objects (1 or more)
+  List of otherID objects
 
 otherID object definition
   * value
@@ -516,7 +516,7 @@ Required
   No
 
 Type
-  List of function objects (1 or more)
+  List of function objects
 
 Function object definition
   Content
@@ -670,7 +670,7 @@ Child of
   :ref:`function`
 
 Type
-  List of EDAM objects (1 or more)
+  List of EDAM objects
 
 EDAM object definition
   Content
@@ -729,7 +729,7 @@ Child of
   :ref:`function`
 
 Type
-  List of input objects (0 or more)
+  List of input objects
 
 Input object definition
   Content
@@ -787,7 +787,7 @@ Child of
   :ref:`function`
 
 Type
-  List of output objects (0 or more)
+  List of output objects
 
 Output object definition
   Content
@@ -894,7 +894,7 @@ Child of
   :ref:`input` or :ref:`output`
 
 Type
-  List of EDAM objects (0 or more)
+  List of EDAM objects
 
 EDAM object definition
   Content
@@ -989,7 +989,7 @@ Required
   No
 
 Type
-  List of EDAM objects (1 or more)
+  List of EDAM objects
 
 EDAM object definition
   Content
@@ -1269,7 +1269,7 @@ Required
   No
 
 Type
-  List of link objects (1 or more)
+  List of link objects
 
 Link object definition
   Content
@@ -1327,7 +1327,7 @@ Required
   No
 
 Type
-  List of download objects (0 or more)
+  List of download objects
 
 Download object definition
   Content
@@ -1396,7 +1396,7 @@ Required
   No
 
 Type
-  List of documentation objects (0 or more)
+  List of documentation objects
 
 Documentation object definition
   Content
@@ -1455,7 +1455,7 @@ Required
   Yes
 
 Type
-  List of publication objects (1 or more)
+  List of publication objects
 
 Publication object definition
   Content
@@ -1520,7 +1520,7 @@ Required
   No
 
 Type
-  List of contact objects (0 or more)
+  List of contact objects
 
 Contact object definition
   Content
@@ -1571,7 +1571,7 @@ Required
   No
 
 Type
-  List of credit objects (0 or more)
+  List of credit objects
 
 Credit object definition
   Content
