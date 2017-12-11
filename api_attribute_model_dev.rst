@@ -402,6 +402,8 @@ Restrictions
 
 Version
 -------
+*Version information (typically a version number) of the software applicable to this bio.tools entry, e.g. "6.4.0.0"*
+
 Attribute name
  version
 
@@ -442,6 +444,8 @@ Restrictions
   
 Other IDs
 ---------
+*A unique identifier of the software, typically assigned by an ID-assignment authority other than bio.tools, e.g. "RRID:SCR_015644"*
+
 Attribute name
   otherID
 
@@ -467,9 +471,6 @@ otherID object definition
       * Required: No
       * Type: String	  
 
-
- 
-    
 **Example**
 
 .. code-block:: js
@@ -509,6 +510,8 @@ otherID object definition
 
 Function
 --------
+*Details of a function (i.e. mode of operation) the software provides, expressed in terms from the EDAM ontology.*
+
 Attribute name
   function
 
@@ -660,6 +663,8 @@ Function object definition
 
 Operation
 ---------
+*The basic operation(s) performed by this software function (EDAM Operation), e.g. "'Protein signal peptide detection' (http://edamontology.org/operation_0418)"*
+
 Attribute name
   operation
 
@@ -718,7 +723,9 @@ EDAM object definition
 .. _input:
 
 Input
---------
+-----
+*Primary input data (if any)*
+
 Attribute name
   input
 
@@ -776,7 +783,9 @@ Input object definition
 .. _output:
 
 Output
---------
+------
+*Primary output data (if any)*
+
 Attribute name
   output
 
@@ -835,7 +844,8 @@ Output object definition
 .. _data:
 
 Data
---------
+----
+*EDAM Data concept,  e.g. "'Sequence' (http://edamontology.org/data_2044)"*
 Attribute name
   data
 
@@ -883,7 +893,9 @@ EDAM object definition
 .. _format:
 
 Format
---------
+------
+*EDAM Format concept,  e.g. "'FASTA' (http://edamontology.org/format_1929)"*
+
 Attribute name
   format
 
@@ -909,7 +921,7 @@ EDAM object definition
    - an `EDAM ontology <https://github.com/edamontology/edamontology>`_ Format concept URL and / or term are specified, *e.g.* "FASTA", http://edamontology.org/format_1929.
    - URI and term are validated against EDAM ontology; if term and URI do not match, an error will be returned.
    - synonyms of terms (as defined in EDAM) are accepted, however, **the synonym will be replaced with main term**.
-   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_.
 
 
 **Example**
@@ -1262,6 +1274,8 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 
 Link
 ----
+*Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
+
 Attribute name
   link
 
@@ -1276,7 +1290,6 @@ Link object definition
     * url
         * Required: Yes
         * Type: URL
-        * Restrictions: max length: 300
     * type
         * Required: Yes
         * Type: ENUM
@@ -1284,15 +1297,17 @@ Link object definition
 	  - ``Browser``
 	  - ``Helpdesk``
 	  - ``Issue tracker``
-	  - ``Mailinglist``
+	  - ``Mailing list``
 	  - ``Mirror``
 	  - ``Registry``
 	  - ``Repository``
 	  - ``Social media``
+    	  - ``Scientific benchmark``
+    	  - ``Technical monitoring``
     * comment
         * Required: No
         * Type: String
-        * Restrictions: max length: 1000
+        * Restrictions: min length: 10, max length: 1000
 
 **Example**
 
@@ -1316,6 +1331,7 @@ Link object definition
   ]
 
 .. note::
+   - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#links-group>`_.
   
 Download

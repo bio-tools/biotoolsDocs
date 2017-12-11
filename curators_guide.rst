@@ -450,7 +450,7 @@ License
 
 - **1.** **MUST** acurately describe the license used.
 - **2.** **SHOULD** use "Proprietary" in cases where the software is under license (not defined in biotoolsSchema) whereby it can be obtained from the provider (*e.g.* for money), and then owned, *i.e.* definitely not an open-source or free software license.
-- **3.** **SHOULD use "Unlicensed" for software which is not licensed and is not "Proprietary".
+- **3.** **SHOULD** use "Unlicensed" for software which is not licensed and is not "Proprietary".
 - **4.** **SHOULD** use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary".
   
   .. note::
@@ -623,8 +623,9 @@ Links group
 *Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#link>`_.
-
+  - the bio.tools registration interace allows a curator to record when a link of a certain type is known to *not* be available
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#link>`_.
+   
 
 URL
 ...
@@ -632,21 +633,15 @@ URL
 
 - **1.** **MUST** resolve to a page of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#link-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available  
-
  
-.. note::
-   - a valid URL is specified.
-
 
 Comment
 .......
 
 *Comment about the link, e.g. "Please use the issue tracker for reporting bugs and making features requests."*
 
-- **1.** **SHOULD** be concise and summarise only practical information about the link
+- **1.** **SHOULD** be a concise summary of practical information
 
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 .. _link-type:
      
@@ -668,7 +663,8 @@ Link type
    "Registry", "Some registry, catalogue etc. other than bio.tools."
    "Repository", "Repository where source code, data and other files may be downloaded."
    "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
-													
+   "Scientific benchmark", "Information about the scientific performance of a tool."
+   "Technical monitoring", "Information about the technical status of a tool."													
 
 
 Download group
@@ -676,7 +672,8 @@ Download group
 *Links to downloads for the software, e.g. source code, virtual machine image or container.*
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#download>`_.
+  - the bio.tools registration interace allows a curator to record when a documentation link of a certain type is known to *not* be available
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#download>`_.
 
 URL
 ...
@@ -734,7 +731,8 @@ Documentation group
 *Links to documentation about the software e.g. manual, API specification or training material.*
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#documentation>`_.
+  - the bio.tools registration interace allows a curator to record when a documentation link of a certain type is known to *not* be available
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#documentation>`_.
 
 
 URL
