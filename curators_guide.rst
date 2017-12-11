@@ -736,9 +736,6 @@ URL
 - **1.** **MUST** resolve to a page of the indicated `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
 
-.. note::
-   - a valid URL is specified.
-
   
 Comment
 .......
@@ -746,8 +743,6 @@ Comment
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 Documentation type
 ..................
