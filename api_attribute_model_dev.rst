@@ -470,7 +470,8 @@ otherID object definition
   * version
       * Required: No
       * Type: String
-      * Restrictions: Min length: 1, Max length: 100, Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+      * Restrictions: Min length: 1, Max length: 100
+      *	Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
 
 **Example**
 
@@ -1404,7 +1405,8 @@ Download object definition
     * version
         * Required: No
         * Type: String
-        * Restrictions: Min length: 1, Max length: 100, Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+        * Restrictions: Min length: 1, Max length: 100
+	* Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
 	  
 **Example**
 
@@ -1537,7 +1539,8 @@ Publication object definition
     * version
         * Required: No
         * Type: String
-        * Restrictions: Min length: 1, Max length: 100, Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+        * Restrictions: Min length: 1, Max length: 100
+	* Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
 
 **Example**
 
@@ -1588,6 +1591,43 @@ Credit object definition
         * Required: Yes
         * Type: String
         * Restrictions: min length: 1, max length: 100
+    * elixirPlatform
+        * Required: No
+        * Type: ENUM
+        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`_)
+
+	  - ``Data``
+	  - ``Tools``
+	  - ``Compute``
+	  - ``Interoperability``
+	  - ``Training``
+    * typeEntity
+        * Required: No
+        * Type: ENUM
+        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_)
+
+	  - ``Belgium``
+	  - ``Czech Republic``
+	  - ``Denmark``
+	  - ``EMBL``
+	  - ``Estonia``
+	  - ``Finland``
+	  - ``France``
+	  - ``Germany``
+	  - ``Greece``
+	  - ``Hungary``
+	  - ``Ireland``
+	  - ``Israel``
+	  - ``Italy``
+	  - ``Luxembourg``
+	  - ``Netherlands``
+	  - ``Norway``
+	  - ``Portugal``
+	  - ``Slovenia``
+	  - ``Spain``
+	  - ``Sweden``
+	  - ``Switzerland``
+	  - ``UK``
     * orcidId
         * Required: No
         * Type: String
@@ -1643,13 +1683,14 @@ Credit object definition
   # XML
   <credit>
    <name>TN Petersen</name>
-   <url>http://cbs.dtu.dk</url>
+   <orcidId>http://orcid.org/0000-0002-1825-0097</orcidId>
+   <gridId>grid.5170.3</gridId>
    <email>test@cbs.dtu.dk</email>
-   <orcidId>test</orcidId>
-   <gridId>test</gridId>
+   <url>http://cbs.dtu.dk</url>
+   <tel>12345678</tel>
    <typeEntity>Person</typeEntity>
    <typeRole>Developer</typeRole>
-   <comment>test</comment>
+   <comment>Lead developer</comment>
   </credit>
   
   # JSON		
@@ -1657,19 +1698,40 @@ Credit object definition
   [
     {
       "name": "TN Petersen",
+      "orcidId":"http://orcid.org/0000-0002-1825-0097",
+      "gridId": "grid.5170.3",
       "url": "http://cbs.dtu.dk",
       "email": "test@cbs.dtu.dk",
-      "orcidId":"test",
-      "gridId": "test",
+      "tel": "12345678"
       "typeEntity": "Person",
       "typeRole": "Developer",
-      "comment": "test"
+      "comment": "Lead developer"
     }
   ]
 
-.. note::
-   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#credits-group>`_.    
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <credit>
+   <elixirPlatform>Tools</elixirPlatform>
+  </credit>
   
+  # JSON
+  "credit":
+  [
+    {
+      "elixirPlatform": "Norway"
+    }
+  ]
+		
+.. note::
+   - a credit consists either simply the name of an ELIXIR Platform or ELIXIR node *or* the name of some other entity that is credited, with associated metadata
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#credits-group>`_.    
+
+
+
 Entry management attributes
 ===========================
 
