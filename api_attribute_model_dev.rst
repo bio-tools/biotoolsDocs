@@ -664,7 +664,7 @@ Function object definition
 .. _operation:
 
 Operation
----------
+.........
 *The basic operation(s) performed by this software function (EDAM Operation), e.g. "'Protein signal peptide detection' (http://edamontology.org/operation_0418)"*
 
 Attribute name
@@ -725,7 +725,7 @@ EDAM object definition
 .. _input:
 
 Input
------
+.....
 *Primary input data (if any)*
 
 Attribute name
@@ -785,7 +785,7 @@ Input object definition
 .. _output:
 
 Output
-------
+......
 *Primary output data (if any)*
 
 Attribute name
@@ -846,7 +846,7 @@ Output object definition
 .. _data:
 
 Data
-----
+....
 *EDAM Data concept,  e.g. "'Sequence' (http://edamontology.org/data_2044)"*
 Attribute name
   data
@@ -895,7 +895,7 @@ EDAM object definition
 .. _format:
 
 Format
-------
+......
 *EDAM Format concept,  e.g. "'FASTA' (http://edamontology.org/format_1929)"*
 
 Attribute name

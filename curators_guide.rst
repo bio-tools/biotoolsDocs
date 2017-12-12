@@ -280,8 +280,26 @@ Other IDs
    
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#otherid>`_.
-   
-  
+
+Value
+~~~~~
+*Value of tool identifier, e.g. "RRID:SCR_001156"*
+
+- **1.** **MUST** specify a valid identifier for the tool.
+
+Type
+~~~~
+*Type of tool identifier, e.g. "rrid"*
+
+- **1.** **MAY** specify the applicable type, in terms from a controlled vocabulary (see below) - although this should not normally be necessary
+
+Version
+~~~~~~~
+*Version information (typically a version number) of the software applicable to this identifier, e.g. "1.4"*
+
+- **1.** **MUST** correctly identify the applicable tool version 
+- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id22>`_
+
 
 Function group
 ^^^^^^^^^^^^^^
@@ -554,7 +572,7 @@ Links group
 *Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
 
 .. note::
-  - the bio.tools registration interace allows a curator to record when a link of a certain type is known to *not* be available
+  - the bio.tools registration interace & API allows a curator to record when a link of a certain type is known to *not* be available
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#link>`_.
    
 
@@ -564,7 +582,7 @@ URL
 
 - **1.** **MUST** resolve to a page of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#link-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available  
- 
+- **3.** **MUST NOT** specify a link of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
 
 Comment
 .......
@@ -603,7 +621,7 @@ Download group
 *Links to downloads for the software, e.g. source code, virtual machine image or container.*
 
 .. note::
-  - the bio.tools registration interace allows a curator to record when a documentation link of a certain type is known to *not* be available
+  - the bio.tools registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#download>`_.
 
 URL
@@ -612,15 +630,8 @@ URL
 
 - **1.** **MUST** resolve to a page providing either an immediately download, or links for a download of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
-
+- **3.** **MUST NOT** specify a download of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
   
-Comment
-.......
-*Comment about the download, e.g. "Complete distibution"*
-
-- **1.** **SHOULD** be concise and summarise only practical information about the link
-
-
 Download type
 .............
 *Type of download that is linked to, e.g. "Binaries"*
@@ -650,13 +661,34 @@ Download type
    "Tool wrapper (other)", "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software."
    "VM image", "Virtual machine (VM) image for the software."
 
+Comment
+.......
+*Comment about the download, e.g. "Complete distibution"*
+
+- **1.** **SHOULD** be concise and summarise only practical information about the link
+
+
+Cmd
+...
+*A useful command pertinent to the download, e.g. for getting or installing a tool, e.g. "-s best".*
+
+- **1.** **MUST** be a functional commmand of practical value
+
+Version
+.......
+*Version information (typically a version number) of the software applicable to this download.*
+
+- **1.** **MUST** correctly identify the applicable tool version 
+- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id22>`_
+
+   
 											
 Documentation group
 ^^^^^^^^^^^^^^^^^^^
 *Links to documentation about the software e.g. manual, API specification or training material.*
 
 .. note::
-  - the bio.tools registration interace allows a curator to record when a documentation link of a certain type is known to *not* be available
+  - the bio.tools registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#documentation>`_.
 
 
@@ -666,7 +698,7 @@ URL
 
 - **1.** **MUST** resolve to a page of the indicated `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
-
+- **3.** **MUST NOT** specify documentation of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
   
 Comment
 .......
@@ -738,6 +770,13 @@ Publication type
    "Review", "A publication where the software was reviewed."
    "Other", "A publication about the software but not the primary publication or a benchmark study."
 
+Version
+.......
+*Version information (typically a version number) of the software applicable to this publication.*
+
+- **1.** **MUST** correctly identify the applicable tool version 
+- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id22>`_
+  
 		
 Credits group
 ^^^^^^^^^^^^^
