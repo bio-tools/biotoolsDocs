@@ -15,8 +15,7 @@ This page documents the structure of a XML / JSON / YAML file that describes a t
 
 Payload formats
 ===============
-
-To submit a tool via our bio.tools API you’ll need to POST a JSON / XML / YAML document to the `tool endpoint <http://biotools.readthedocs.io/en/latest/api_reference.html#register-a-resource>`_.
+To submit a tool via our bio.tools API you’ll need to POST a tool description to the `tool endpoint <http://biotools.readthedocs.io/en/latest/api_reference.html#register-a-resource>`_. The API supports XML, JSON and YAML format uploads comatible with biotoolsSchema (https://github.com/bio-tools/biotoolsschema).
 
 
 XML
@@ -31,20 +30,23 @@ JSON
 A sample JSON document may look like this:
 
 .. code-block:: js
-
+# THIS EXAMPLE IS WRONG ... WILL FIX SOON
     {
       "name": "SignalP",
-      "topic": [
+      "topic":
+      [
         {
           "uri": "http://edamontology.org/topic_0003",
           "term": "Topic"
         }
       ],
-      "function": [
+      "function":
+      [
         {
           "comment": "predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms",
           "handle": "--someOption",
-          "operation": [
+          "operation":
+	  [
             {
               "uri": "http://edamontology.org/operation_0418",
               "term": "Protein signal peptide detection"
@@ -54,13 +56,16 @@ A sample JSON document may look like this:
               "term": "Protein cleavage site prediction"
             }
           ],
-          "input": [
+          "input":
+	  [
             {
-              "data": {
+              "data":
+	      {
                 "uri": "http://edamontology.org/data_2044",
                 "term": "Sequence"
               },
-              "format": [
+              "format":
+	      [
                 {
                   "uri": "http://edamontology.org/format_1929",
                   "term": "FASTA"
@@ -68,13 +73,16 @@ A sample JSON document may look like this:
               ]
             }
           ],
-          "output": [
+          "output":
+	  [
             {
-              "data": {
+              "data":
+	      {
                 "uri": "http://edamontology.org/data_1277",
                 "term": "Protein features"
               },
-              "format": [
+              "format":
+	      [
                 {
                   "uri": "http://edamontology.org/format_2305",
                   "term": "GFF"
@@ -82,16 +90,18 @@ A sample JSON document may look like this:
               ]
             },
             {
-              "data": {
+              "data":
+	      {
                 "uri": "http://edamontology.org/data_2955",
                 "term": "Sequence report"
               },
-              "format": [
+              "format":
+	      [
               	{
                   "uri": "http://edamontology.org/format_2305",
                   "term": "GFF"
                 }
-              	]
+              ]
             }
           ]
         }
@@ -100,7 +110,8 @@ A sample JSON document may look like this:
       "description": "Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
       "cost": "Free of charge (with restrictions)",
       "maturity": "Mature",
-      "credit": [
+      "credit":
+      [
         {
           "name": "TN Petersen",
           "email": "test@email.com",
@@ -111,14 +122,16 @@ A sample JSON document may look like this:
           "comment": "test"
         }
       ],
-      "link": [
+      "link":
+      [
         {
           "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
           "type": "Repository",
           "comment": "test"
         }
       ],
-      "download": [
+      "download":
+      [
         {
           "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
           "type": "Source code",
@@ -131,23 +144,30 @@ A sample JSON document may look like this:
         }
       ],
       "license": "Proprietary",
-      "operatingSystem": [
+      "operatingSystem":
+      [
         "Linux",
         "Mac"
       ],
-      "toolType": [
+      "toolType":
+      [
         "Command-line tool",
         "Web application"
       ],
-      "language": ["ActionScript"],
-      "documentation": [
+      "language":
+      [
+        "ActionScript"
+      ],
+      "documentation":
+      [
         {
           "url": "http://www.cbs.dtu.dk/services/SignalP",
           "type": "General",
           "comment": "test"
         }
       ],
-      "publication": [
+      "publication":
+      [
         {
           "pmcid": "21959131",
           "pmid": "21959131",
@@ -161,10 +181,12 @@ A sample JSON document may look like this:
           "type": "Other"
         }
       ],
-      "collectionID": [
+      "collectionID":
+      [
         "CBS"
       ],
-      "contact": [
+      "contact":
+      [
         {
           "email": "hnielsen@cbs.dtu.dk",
           "name": "Henrik Nielsen",
@@ -184,8 +206,6 @@ A sample YAML document may look like this:
 
 .. code-block:: yaml
 		
-.. note::
-   The API supports XML and YAML format uploads and will (soon!) support XML comatible with biotoolsSchema (https://github.com/bio-tools/biotoolsschema).  Example files will be added here soon.
     
     
 Tool attributes
