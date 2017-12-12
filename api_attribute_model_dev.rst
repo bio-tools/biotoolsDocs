@@ -1349,7 +1349,27 @@ Link object definition
     }
   ]
 
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <link>
+   <isAvailable>Not available</isAvailable>
+   <type>Repository</type>
+  </download> 
+   
+  # JSON
+  "link":
+  [
+    {
+      "isAvailable": "Not available"
+      "type": "Repository"
+    }
+  ]
+  
 .. note::
+   - if a link of a certain type is known to *not* be available, this can be specified using the ``isAvailable`` attribute (see Example)
    - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#links-group>`_.
   
@@ -1433,7 +1453,27 @@ Download object definition
     }
   ]
 
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <download>
+   <isAvailable>Not available</isAvailable>
+   <type>Source code</type>
+  </download> 
+   
+  # JSON
+  "download":
+  [
+    {
+      "isAvailable": "Not available"
+      "type": "Source code"
+    }
+  ]
+  
 .. note::
+   - if a download link of a certain type is known to *not* be available, this can be specified using the ``isAvailable`` attribute (see Example)
    - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group>`_.
 
@@ -1495,7 +1535,28 @@ Documentation object definition
     }
   ]
 
+
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <documentation>
+   <isAvailable>Not available</isAvailable>
+   <type>General</type>
+  </documentation> 
+   
+  # JSON
+  "documentation":
+  [
+    {
+      "isAvailable": "Not available"
+      "type": "General"
+    }
+  ]
+  
 .. note::
+   - if a documentation link of a certain type is known to *not* be available, this can be specified using the ``isAvailable`` attribute (see Example)
    - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group>`_.
      
@@ -1567,7 +1628,26 @@ Publication object definition
     }
   ]
 
+
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <publication>
+   <isAvailable>Not available</isAvailable>
+  </publication> 
+   
+  # JSON
+  "publication":
+  [
+    {
+      "isAvailable": "Not available"
+    }
+  ]
+  
 .. note::
+   - if a publication is known to *not* be available, this can be specified using the ``isAvailable`` attribute (see Example)
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#publications-group>`_.  
   
 .. _credit:
@@ -1705,8 +1785,11 @@ Credit object definition
       "email": "test@cbs.dtu.dk",
       "tel": "12345678"
       "typeEntity": "Person",
-      "typeRole": "Developer",
-      "typeRole": "Documentor",      
+      "typeRole":
+      [
+        "Developer",
+        "Documentor"
+      ]
       "comment": "Lead developer"
     }
   ]
