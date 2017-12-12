@@ -227,7 +227,7 @@ Restrictions
 
 
 .. note::
-   - 100 character limit and may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
+   - name may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_.
 
@@ -437,7 +437,7 @@ Restrictions
 
 
 .. note::
-   - the name has a 100 character limit and may only contain space, uppercase and lowercase English letters, decimal digits, plus symbol, period, comma, dash, colon, semicolon and parentheses.
+   - name may only contain space, uppercase and lowercase English letters, decimal digits, plus symbol, period, comma, dash, colon, semicolon and parentheses.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_.
      
@@ -1185,7 +1185,7 @@ Restrictions
   ]
 
 .. note::
-   - 100 character limit and may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
+   - collection may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_.
 
@@ -1690,6 +1690,7 @@ Credit object definition
    <tel>12345678</tel>
    <typeEntity>Person</typeEntity>
    <typeRole>Developer</typeRole>
+   <typeRole>Documentor</typeRole>
    <comment>Lead developer</comment>
   </credit>
   
@@ -1705,6 +1706,7 @@ Credit object definition
       "tel": "12345678"
       "typeEntity": "Person",
       "typeRole": "Developer",
+      "typeRole": "Documentor",      
       "comment": "Lead developer"
     }
   ]
@@ -1728,6 +1730,8 @@ Credit object definition
 		
 .. note::
    - a credit consists either simply the name of an ELIXIR Platform or ELIXIR node *or* the name of some other entity that is credited, with associated metadata
+   - the credit name may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
+   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.     
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#credits-group>`_.    
 
 
