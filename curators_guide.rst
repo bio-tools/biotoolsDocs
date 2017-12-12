@@ -584,14 +584,6 @@ URL
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available  
 - **3.** **MUST NOT** specify a link of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
 
-Comment
-.......
-
-*Comment about the link, e.g. "Please use the issue tracker for reporting bugs and making features requests."*
-
-- **1.** **SHOULD** be a concise summary of practical information
-
-
 .. _link-type:
      
 Link type
@@ -614,6 +606,14 @@ Link type
    "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
    "Scientific benchmark", "Information about the scientific performance of a tool."
    "Technical monitoring", "Information about the technical status of a tool."													
+Comment
+.......
+
+*Comment about the link, e.g. "Please use the issue tracker for reporting bugs and making features requests."*
+
+- **1.** **SHOULD** be a concise summary of practical information
+
+
 
 
 Download group
@@ -700,12 +700,6 @@ URL
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
 - **3.** **MUST NOT** specify documentation of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
   
-Comment
-.......
-*Comment about the documentation, e.g. "Comprehensive usage information suitable for biologist end-users."*
-
-- **1.** **SHOULD** be concise and summarise only practical information about the link
-
 
 Documentation type
 ..................
@@ -729,7 +723,14 @@ Documentation type
    "Tutorial", "A tutorial about using the software."
    "Other", "Some other type of documentation not listed in biotoolsSchema."
 
-		
+Comment
+.......
+*Comment about the documentation, e.g. "Comprehensive usage information suitable for biologist end-users."*
+
+- **1.** **SHOULD** be concise and summarise only practical information about the link
+
+
+  
 Publications group
 ^^^^^^^^^^^^^^^^^^
 *Publications about the software*

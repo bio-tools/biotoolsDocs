@@ -8,7 +8,7 @@ Attribute model - development
    - guidelines for the `bio.tools <https://bio.tools>`_ API 
    - or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/>`_
 
-.. note:: This is the API documentation for upcoming features, already available on the dev server at https://dev.bio.tools.
+.. note:: This is the API documentation for upcoming features, coming soon to https://bio.tools.
 
 This page documents the structure of a XML / JSON / YAML file that describes a tool for submission to https://bio.tools.
 
@@ -16,7 +16,7 @@ This page documents the structure of a XML / JSON / YAML file that describes a t
 Payload formats
 ===============
 
-To submit a tool via our bio.tools API you’ll need to POST a JSON / XML / YAML document to the ``tool`` endpoint. 
+To submit a tool via our bio.tools API you’ll need to POST a JSON / XML / YAML document to the `tool endpoint <http://biotools.readthedocs.io/en/latest/api_reference.html#register-a-resource>`_.
 
 
 XML
