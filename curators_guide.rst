@@ -743,13 +743,12 @@ Credits group
 ^^^^^^^^^^^^^
 *Individuals or organisations that should be credited, or may be contacted about the software.*
 
-- **1.** **MUST** provide contact details for the first port-of-call when seeking help with the software
-- **2.** **MUST** ensure the specified name corresponds to the email, URL and telephone number
-- **3.** **MAY** specify one or more other contacts
-  
+- **1.** **SHOULD** provide contact details for the first port-of-call when seeking help with the software
+- **2.** **MAY** specify one or more other credits
 
 
 .. note::
+   - a credit consists either simply the name of an ELIXIR Platform or ELIXIR node *or* the name of some other entity that is credited, with associated metadata
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#credit>`_.
 
 
@@ -761,8 +760,6 @@ Name
 - **1.** **MUST** give the first and last names of a person, or the correct name of some other entity.
 - **2.** **MUST NOT** give a redirect, *e.g.* "See publication", a URL, or any information other than the name of the entity that is credited.
 
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 ELIXIR Platform
 ...............
@@ -821,9 +818,7 @@ ORCID ID
 - **1.** **MUST** correctly identify a credited person
 
 .. note::
-   - valid ORCID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
-
-.. note:: Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
+   Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
 
 
 GRID ID
@@ -832,10 +827,9 @@ GRID ID
 
 - **1.** **MUST** correctly identify a credited organisation 
 
-.. note::
-   - valid GRID ID syntax must be specified (see `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_)
 
-.. note:: Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.  If ORCID institutional identifiers become available, these will also be supported.
+.. note::
+   Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.  If ORCID institutional identifiers become available, these will also be supported.
 
 Email
 .....
@@ -845,17 +839,12 @@ Email
 - **2.** **MUST NOT** specify an email address that is not publicly acknowledged as credit for the software, *e.g.* on a webpage or in a publication
 - **3.** **MUST NOT** specify a stale (obsolete) email address
 
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-
 URL
 ...
 *URL for the entity that is credited, e.g. homepage of an institute, e.g. "http://www.ebi.ac.uk/"*
 
 - **1.** **MUST** resolve to a page of information directly relevant to the credited entity
 
-.. note::
-   - a valid URL is specified.
 
 Telephone number
 ................
@@ -864,10 +853,6 @@ Telephone number
 - **1.** **MUST** specify a valid telephone number
 - **2.** **MUST NOT** specify a telephone number that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
 - **3.** **MUST NOT** specify a stale (obsolete) telephone number
-
-  
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
 
 Entity type
 ...........
@@ -891,7 +876,8 @@ Role
 ....
 *Role performed by entity that is credited, e.g. "Developer"*
 
-- **1.** **MUST** acurately specify the role of credited entity, in terms from a controlled vocabulary (see below)
+- **1.** **MUST** acurately specify the primary role of credited entity, in terms from a controlled vocabulary (see below)
+- **2.** **MAY** exhaustively specify all the roles of the credited entity
 
 .. csv-table::
    :header: "Role", "Description"
@@ -904,10 +890,6 @@ Role
    "Contributor", "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
    "Support", "Provider of support in using the software."
 
-
-.. note:: The current version of biotoolsSchema and bio.tools only supports one "role" assignation per credit; this will be changed to support multiple asignations (see https://github.com/bio-tools/biotoolsSchema/issues/80)
-
-	  
 Comment
 .......
 *A comment about the credit, e.g. "Wrote the user manual."*
@@ -915,10 +897,6 @@ Comment
 - **1.** **SHOULD** be concise and acurate, elaborating on the contribution of the credited entity
 - **2.** **MUST NOT** duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
 	       
-.. note::
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-
-
 
   
 Tool type guidelines

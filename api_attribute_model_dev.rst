@@ -1587,27 +1587,27 @@ Credit object definition
     * name
         * Required: Yes
         * Type: String
-        * Restrictions: max length: 100
+        * Restrictions: min length: 1, max length: 100
     * orcidId
         * Required: No
         * Type: String
-        * Restrictions: max length: 100
+        * Restrictions: pattern: http://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}
     * gridId
         * Required: No
         * Type: String
-        * Restrictions: max length: 100
+        * Restrictions: pattern: grid.[0-9]{4,}.[a-f0-9]{1,2}
     * email
         * Required: No
         * Type: Email
-        * Restrictions: max length: 300
+        * Restrictions: pattern: [A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*
     * url
         * Required: No
         * Type: URL
-        * Restrictions: max length: 300 
+        * Restrictions: pattern: http(s?)://[^\s/$.?#].[^\s]*
     * tel
         * Required: No
         * Type: String
-        * Restrictions: max length: 30
+        * Restrictions: min length: 5, max length: 50
     * typeEntity
         * Required: No
         * Type: ENUM
@@ -1634,7 +1634,7 @@ Credit object definition
     * comment
         * Required: No
         * Type: String
-        * Restrictions: max length: 1000
+        * Restrictions: min length: 10, max length: 1000
 
 **Example**
 
