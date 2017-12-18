@@ -41,6 +41,7 @@ Registry Core (Registry Editors)
 - Marta Villegas (BSC, ES) - **NLP** and **text mining** 
 - Veit Schwämmle (SDU-BMB, DK) - **proteomics**, ontology development, bio.tools applications
 - Vivi Raundahl Gregersen (Aarhus University, DK) - **agricultural science**
+- Carlos Oscar Sorzano (CNB/CSIC, ES) - **electron microscopy**
 
 
 Registry Core (tentative)
