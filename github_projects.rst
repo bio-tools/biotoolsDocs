@@ -12,7 +12,7 @@ biotoolsDocs
 ------------
 https://github.com/bio-tools/biotoolsDocs
 
-`Online docs <https://http://biotools.readthedocs.io/en/latest/>`_ for bio.tools (these docs!)
+`Online docs <https://biotools.readthedocs.io/en/latest/>`_ for bio.tools (these docs!)
 
 biotoolsSchema
 --------------
@@ -24,7 +24,7 @@ biotoolsSchemaDocs
 ------------------
 https://github.com/bio-tools/biotoolsSchemaDocs
 
-`Online docs <http://biotoolsschemadocs.readthedocs.io/en/latest>`_ for biotoolsSchema.
+`Online docs <http://biotoolsschema.readthedocs.io/en/latest>`_ for biotoolsSchema.
 
 biotoolsShim
 ------------
@@ -76,7 +76,7 @@ Controlled vocabulary used by bio.tools.
 
 edamMap
 -------
-https://https://github.com/edamontology/edammap
+https://github.com/edamontology/edammap
 
 Mapping terms and text to EDAM concepts.
 
