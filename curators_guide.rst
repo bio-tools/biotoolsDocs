@@ -902,39 +902,52 @@ Command-line tool
 ^^^^^^^^^^^^^^^^^
 **A tool with a text-based (command-line) interface.**
 
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+
 Database portal
 ^^^^^^^^^^^^^^^
 **A Web application, suite or workbench providing a portal to a biological database.**
+
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_; consider terms under `Data management <http://edamontology.org/topic_3071>`_ 
+- consider an operation of `Database search <http://edamontology.org/operation_2421>`_ (or its children)
 
 Desktop application
 ^^^^^^^^^^^^^^^^^^^
 **A tool with a graphical user interface that runs on your desktop environment, e.g. on a PC or mobile device.**
 
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+  
 Library
 ^^^^^^^
 **A collection of components that are used to construct other tools. bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries.**
+
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
 
 Ontology
 ^^^^^^^^
 **A collection of information about concepts, including terms, synonyms, descriptions etc.**
 
-- pick one or more `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the scientific areas covered by the ontology
-- pick the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of "Query and retrieval" (http://edamontology.org/operation_0224)
+- pick `Ontology and terminology <http://edamontology.org/topic_0089>`_ and one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+  
+- pick `Query and retrieval <http://edamontology.org/operation_0224>`_ `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_
 - do not annotate the type or format of the input and output data
   
 Plug-in
 ^^^^^^^
 **A software component encapsulating a set of related functions, which are not standalone, *i.e.* depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.**
 
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+
 Script
 ^^^^^^
 **A tool written for some run-time environment (e.g. other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (e.g. Perl, Python) or some domain-specific languages (e.g. sed).**
 
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+  
 SPARQL endpoint
 ^^^^^^^^^^^^^^^
 **A service that provides queries over an RDF knowledge base via the SPARQL query language and protocol, and returns results via HTTP.**
 
-- pick one or more `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the underyling data
 - pick the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of "Query and retrieval" (http://edamontology.org/operation_0224)
 - do not annotate the type or format of the input and output data
 
@@ -942,6 +955,8 @@ Suite
 ^^^^^
 **A collection of tools which are bundled together into a convenient toolkit. Such tools typically share related functionality, a common user interface and can exchange data conveniently. This includes collections of stand-alone command-line tools, or Web applications within a common portal.**
 
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that describe the workbench as a whole (don't try to be exhaustive)
+  
 - describe the attributes that are commmon to the suite as a whole, not (typically) attributes of individual tools
 - individual tools included in the suite should be registered as separate entries
 - when annotating the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of the suite, select operations that are core function of the suite itself / common to all tools in the suite.  Alternatively pick one or two of the primary operation(s) of the included tools
@@ -955,7 +970,7 @@ Web application
 ^^^^^^^^^^^^^^^
 **A tool with a graphical user interface that runs in your Web browser.**
 
-
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
 
 .. note::
    - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is a name (without spaces) of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloudIFB``.  **Do not** misappropriate the original name!     
@@ -964,6 +979,8 @@ Web application
 Web API
 ^^^^^^^
 **An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP. Includes everything from simple data-access URLs to RESTful APIs.**
+
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
 
 - in general, describe the attributes of the API as a whole, not individual endpoint of the API (see note below)
 - in case the API has a single endpoint only, the input(s), operation(s) and output(s) may be annotated
@@ -981,6 +998,9 @@ Web service
 ^^^^^^^^^^^
 **An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP.**
 
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+
+  
 - in general, describe the attributes of the web service as a whole, not individual endpoint of the service (see note below)
 - in case the web service has a single endpoint only, the input(s), operation(s) and output(s) may be annotated
 - in case the web service has many endpoints, annotate the primary operation(s), but **not** the inputs and outputs
@@ -997,6 +1017,8 @@ Workbench
 ^^^^^^^^^
 **An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools. Includes workflow systems, platforms, frameworks etc.**
 
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the workbench as a whole (don't try to be exhaustive)
+  
 - describe the attributes of the workbench as a whole, not (typically) individual tools or functions provided by it
 - individual tools included in the workbench, especially where these tools are indepepdently available, should be registered as separate entries
 - individual functions provided by the workbench, especially where these are not independently available, should each be described in their own `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_
@@ -1009,6 +1031,8 @@ Workflow
 ^^^^^^^^
 **A set of tools which have been composed together into a pipeline of some sort. Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script.**
 
+- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the workflow as a whole (don't try to be exhaustive)
+  
 - when deciding how to annotate a workflow inputs, operations and outputs, consider the worfklow as a "black box" , *i.e.* annotate the input(s) to, output(s) from and primary operation(s) of the workflow as a whole
   
 .. note::
