@@ -54,8 +54,8 @@ These are attributes supported by bio.tools
   id, name, topic, function, operation, input, 
   inputDataFormat, inputDataType, output, outputDataFormat, 
   outputDataType, homepage, description, version, 
-  accessibility, toolType, collection, contact, 
-  elixirInfo, maturity, operatingSystem, language, 
+  accessibility, toolType, collection, 
+  maturity, operatingSystem, language, 
   cost, license, documentation, link, download, publication, 
   credit, owner
 

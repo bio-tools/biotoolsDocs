@@ -108,6 +108,7 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 
    - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
    - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
+   - `EDAM ontology browser from IFB <https://ifb-elixirfr.github.io/edam-browser/>`_
    - `EDAM Tool Annotator Demo <http://people.binf.ku.dk/vzn529/eta/>`_
    
 
@@ -177,26 +178,6 @@ Name
    - be wary of names that are very long (>25 characters). If shortening the name is necessary, don't truncate it in a way (*e.g.* within the middle of a word) that would render it meaningless or unintuitive
 
      
-Short description
-.................
-*Short and concise textual description of the software function, e.g. "Needleman-Wunsch global alignment of two sequences."*
-
-- **1.** **MUST** provide a terse statement of the primary purpose / function of the tool: what is done not how
-- **2.** **MUST** begin with a capital letter and end with a period ('.') 
-- **3.** **MUST NOT** include tool name
-- **4.** **MUST NOT** include any of the following, *unless* essential to distinguish the tool from other bio.tool entries:
-
-  - general or technical terms ("software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.*) 
-  - provenance information *e.g.* software provider, institute or person name
-
-- **5.** **MUST NOT** describe how good the software is (mentions of applicability are OK)
-- **6.** **MUST NOT** include URLs
-- **7.** **SHOULD** use declarative sentences (ideally a single sentence!) in the present tense
-
-
-.. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#shortDescription>`_.
-  
 
 Description
 ...........
@@ -499,7 +480,6 @@ Collection
 
 .. tip::
    - collections may be created for for any arbitrary purpose
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.
      
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#collection>`_.
@@ -606,8 +586,8 @@ Link type
    "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
    "Scientific benchmark", "Information about the scientific performance of a tool."
    "Technical monitoring", "Information about the technical status of a tool."													
-Comment
-.......
+Note
+....
 
 *Comment about the link, e.g. "Please use the issue tracker for reporting bugs and making features requests."*
 
@@ -661,18 +641,12 @@ Download type
    "Tool wrapper (other)", "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software."
    "VM image", "Virtual machine (VM) image for the software."
 
-Comment
-.......
+Note
+....
 *Comment about the download, e.g. "Complete distibution"*
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
-
-Cmd
-...
-*A useful command pertinent to the download, e.g. for getting or installing a tool, e.g. "-s best".*
-
-- **1.** **MUST** be a functional commmand of practical value
 
 Version
 .......
@@ -723,8 +697,8 @@ Documentation type
    "Tutorial", "A tutorial about using the software."
    "Other", "Some other type of documentation not listed in biotoolsSchema."
 
-Comment
-.......
+Note
+....
 *Comment about the documentation, e.g. "Comprehensive usage information suitable for biologist end-users."*
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
@@ -861,16 +835,6 @@ ORCID ID
    Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
 
 
-GRID ID
-.......
-*Unique identifier (GRID ID) of an organisation that is credited, e.g. "grid.5170.3"*
-
-- **1.** **MUST** correctly identify a credited organisation 
-
-
-.. note::
-   Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see https://www.grid.ac/.  If ORCID institutional identifiers become available, these will also be supported.
-
 Email
 .....
 *Email address of the entity that is credited e.g. "hnielsen@cbs.dtu.dk"*
@@ -885,14 +849,6 @@ URL
 
 - **1.** **MUST** resolve to a page of information directly relevant to the credited entity
 
-
-Telephone number
-................
-*Telephone number of the entity that is credited, e.g. "+49-89-636-48018"*
-
-- **1.** **MUST** specify a valid telephone number
-- **2.** **MUST NOT** specify a telephone number that is not publicly advertised as a contact point for the software, *e.g.* on a webpage or in a publication
-- **3.** **MUST NOT** specify a stale (obsolete) telephone number
 
 Entity type
 ...........
@@ -930,8 +886,8 @@ Role
    "Contributor", "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
    "Support", "Provider of support in using the software."
 
-Comment
-.......
+Note
+....
 *A comment about the credit, e.g. "Wrote the user manual."*
 
 - **1.** **SHOULD** be concise and acurate, elaborating on the contribution of the credited entity
@@ -970,9 +926,6 @@ Plug-in
 ^^^^^^^
 **A software component encapsulating a set of related functions, which are not standalone, *i.e.* depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.**
 
-.. note::
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isPluginFor`` relationship will allow specification of the tool to which the plug-in is applicable.
-   
 Script
 ^^^^^^
 **A tool written for some run-time environment (e.g. other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (e.g. Perl, Python) or some domain-specific languages (e.g. sed).**
@@ -985,9 +938,6 @@ SPARQL endpoint
 - pick the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of "Query and retrieval" (http://edamontology.org/operation_0224)
 - do not annotate the type or format of the input and output data
 
-.. note::
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` relationship will allow specification of the data resource (database portal) that a SPARQL endpoint provides an interface to.
-     
 Suite
 ^^^^^
 **A collection of tools which are bundled together into a convenient toolkit. Such tools typically share related functionality, a common user interface and can exchange data conveniently. This includes collections of stand-alone command-line tools, or Web applications within a common portal.**
@@ -999,9 +949,6 @@ Suite
 
 .. tip:: If you are considering to register a suite with many tools, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
 	 
-.. note::
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``includes`` relationship will allow specification of the tools that are included in a suite.
-
 .. attention:: **do not** annotate the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <>`_ of input and output data, *unless* all tools in the suite happen to have these in common
 
 Web application
@@ -1011,8 +958,6 @@ Web application
 
 
 .. note::
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` and ``uses`` relationships will allow specification of the tools that a web application provides an interface to or uses.
-
    - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is a name (without spaces) of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloudIFB``.  **Do not** misappropriate the original name!     
 
      
@@ -1030,7 +975,7 @@ Web API
 
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in bio.tools
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` relationship will allow specification of the tool or data resource (database portal) that the web service provides an interface to.
+
      
 Web service
 ^^^^^^^^^^^
@@ -1046,7 +991,7 @@ Web service
 
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in bio.tools
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``isInterfaceTo`` relationship will allow specification of the tool that the web service provides an interface to
+
 
 Workbench
 ^^^^^^^^^
@@ -1059,8 +1004,6 @@ Workbench
 
 .. tip:: If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
 	 
-.. note::
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``includes`` relationship will allow specification of the tools that are included in a workbench.
 
 Workflow
 ^^^^^^^^
@@ -1070,7 +1013,7 @@ Workflow
   
 .. note::
    - `bio.tools <https://bio.tools>`_ does not currently contain many examples of workflows.  We welcome input on how to describe worfklows and ensure good coverage:  please `get in touch with us <mailto:registry@elixir-dk.org>`_.
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the ``includes`` relationship will allow specification of the tools that are included in a workflow.  
+
 
 .. important:: workflows can contain many tools; **do not** list all the operations performed by these tools, just the main operation(s) of the workflow as a whole.
 

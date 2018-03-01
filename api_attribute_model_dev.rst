@@ -43,7 +43,7 @@ A sample JSON document may look like this:
       "function":
       [
         {
-          "comment": "predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms",
+          "note": "predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms",
           "handle": "--someOption",
           "operation":
 	  [
@@ -116,10 +116,9 @@ A sample JSON document may look like this:
           "name": "TN Petersen",
           "email": "test@email.com",
           "orcidid": "test",
-          "gridid": "test",
           "typeEntity": "Person",
           "typeRole": "Developer",
-          "comment": "test"
+          "note": "A comment goes here"
         }
       ],
       "link":
@@ -127,7 +126,7 @@ A sample JSON document may look like this:
         {
           "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
           "type": "Repository",
-          "comment": "test"
+          "note": "A comment goes here"
         }
       ],
       "download":
@@ -135,12 +134,12 @@ A sample JSON document may look like this:
         {
           "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
           "type": "Source code",
-          "comment": "test"
+          "note": "A comment goes here"
         },
         {
           "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
           "type": "Binaries",
-          "comment": "test"
+          "note": "A comment goes here"
         }
       ],
       "license": "Proprietary",
@@ -163,7 +162,7 @@ A sample JSON document may look like this:
         {
           "url": "http://www.cbs.dtu.dk/services/SignalP",
           "type": "General",
-          "comment": "test"
+          "note": "A comment goes here"
         }
       ],
       "publication":
@@ -190,7 +189,6 @@ A sample JSON document may look like this:
         {
           "email": "hnielsen@cbs.dtu.dk",
           "name": "Henrik Nielsen",
-          "tel": "123456798",
           "url": "https://bio.tools"
         }
       ],
@@ -251,41 +249,6 @@ Restrictions
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_.
 
-.. _short-description:
-
-Short description
------------------
-*Short and concise textual description of the software function, e.g. "Needleman-Wunsch global alignment of two sequences."*
-
-Attribute name
-  shortDescription
-
-Required
-  No
-
-Type
-  String
-
-Restrictions
-  Min length: 10
-
-  Max length: 100
-
-**Example**
-
-.. code-block:: js
-
-  # XML
-  <shortDescription>Needleman-Wunsch global alignment of two sequences.</shortDescription>
-
-  # JSON
-  "shortDescription": "Needleman-Wunsch global alignment of two sequences."
-
-.. note::
-   - minimum 10 and maximum 100 characters.
-   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-  - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#shortdescription>`_.
-
 
 Description
 -----------
@@ -310,10 +273,10 @@ Restrictions
 .. code-block:: js
 
   # XML
-  <shortDescription>needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best.</shortDescription>
+  <description>needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best.</description>
 
   # JSON
-  "shortDescription": "needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best."
+  "description": "needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best."
 
 .. note::
   - minimum 10 and maximum 500 characters.
@@ -554,7 +517,7 @@ Function object definition
     * :ref:`output`
         * Required: No
         * Type: List of output objects
-    * comment
+    * note
         * Required: No
         * Type: String
         * Restrictions: min length: 10, max length: 1000
@@ -564,8 +527,8 @@ Function object definition
         * Restrictions: min length: 1, max length: 100	  
 
 .. note::
-   - **comment** and **cmd**: line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-   - see the curation guidelines for the `function group <http://biotools.readthedocs.io/en/latest/curators_guide.html#function-group>`_, `comment <http://biotools.readthedocs.io/en/latest/curators_guide.html#comment>`_ and `command <http://biotools.readthedocs.io/en/latest/curators_guide.html#command>`_.
+   - **note** and **cmd**: line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+   - see the curation guidelines for the `function group <http://biotools.readthedocs.io/en/latest/curators_guide.html#function-group>`_, `note <http://biotools.readthedocs.io/en/latest/curators_guide.html#note>`_ and `command <http://biotools.readthedocs.io/en/latest/curators_guide.html#command>`_.
 	  
 **Example**
 
@@ -608,7 +571,7 @@ Function object definition
               <term>FASTA</term>
           </format>
       </output>
-      <comment>Predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.</comment>
+      <note>Predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.</note>
       <cmd>-s best</cmd>
   </function>  
 
@@ -676,7 +639,7 @@ Function object definition
           ]
         }
       ]
-      "comment": "Predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
+      "note": "Predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
       "cmd": "-s best",
     }
   ]
@@ -1343,7 +1306,7 @@ Link object definition
 	  - ``Social media``
     	  - ``Scientific benchmark``
     	  - ``Technical monitoring``
-    * comment
+    * note
         * Required: No
         * Type: String
         * Restrictions: min length: 10, max length: 1000
@@ -1356,7 +1319,7 @@ Link object definition
   <link>
    <url>http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp</url>
    <type>Repository</type>
-   <comment>Source code for current and old versions.</comment>
+   <note>Source code for current and old versions.</note>
   </link> 
       
   # JSON		
@@ -1365,32 +1328,13 @@ Link object definition
     {
       "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
       "type": "Repository",
-      "comment": "Source code for current and old versions."
+      "note": "Source code for current and old versions."
     }
   ]
 
-**Example**
-
-.. code-block:: js
-
-  # XML
-  <link>
-   <isAvailable>Not available</isAvailable>
-   <type>Repository</type>
-  </download> 
-   
-  # JSON
-  "link":
-  [
-    {
-      "isAvailable": "Not available"
-      "type": "Repository"
-    }
-  ]
   
 .. note::
-   - if a link of a certain type is known to *not* be available, this can be specified using the ``isAvailable`` attribute (see Example)
-   - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+   - the note is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#links-group>`_.
   
 Download
@@ -1438,10 +1382,6 @@ Download object definition
         * Required: No
         * Type: String
         * Restrictions: min length: 10, max length: 1000
-    * cmd
-        * Required: No
-        * Type: String
-        * Restrictions: min length: 1, max length: 100
     * version
         * Required: No
         * Type: String
@@ -1457,7 +1397,6 @@ Download object definition
    <url>http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp</url>
    <type>Source code</url>
    <comment>Complete distibution</comment>
-   <cmd>n/a</cmd>
    <version>1.4</version>
   </download> 
       
@@ -1467,33 +1406,12 @@ Download object definition
     {
       "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
       "type": "Source code",
-      "comment": "Complete distibution",
-      "cmd": "n/a",
+      "note": "Complete distibution",
       "version": "1.4"
     }
   ]
 
-**Example**
-
-.. code-block:: js
-
-  # XML
-  <download>
-   <isAvailable>Not available</isAvailable>
-   <type>Source code</type>
-  </download> 
-   
-  # JSON
-  "download":
-  [
-    {
-      "isAvailable": "Not available"
-      "type": "Source code"
-    }
-  ]
-  
 .. note::
-   - if a download link of a certain type is known to *not* be available, this can be specified using the ``isAvailable`` attribute (see Example)
    - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group>`_.
 
@@ -1551,32 +1469,12 @@ Documentation object definition
     {
       "url": "http://www.cbs.dtu.dk/services/SignalP",
       "type": "General",
-      "comment": "Comprehensive usage instructions"
+      "note": "Comprehensive usage instructions"
     }
   ]
 
 
-**Example**
-
-.. code-block:: js
-
-  # XML
-  <documentation>
-   <isAvailable>Not available</isAvailable>
-   <type>General</type>
-  </documentation> 
-   
-  # JSON
-  "documentation":
-  [
-    {
-      "isAvailable": "Not available"
-      "type": "General"
-    }
-  ]
-  
 .. note::
-   - if a documentation link of a certain type is known to *not* be available, this can be specified using the ``isAvailable`` attribute (see Example)
    - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group>`_.
      
@@ -1649,25 +1547,7 @@ Publication object definition
   ]
 
 
-**Example**
-
-.. code-block:: js
-
-  # XML
-  <publication>
-   <isAvailable>Not available</isAvailable>
-  </publication> 
-   
-  # JSON
-  "publication":
-  [
-    {
-      "isAvailable": "Not available"
-    }
-  ]
-  
 .. note::
-   - if a publication is known to *not* be available, this can be specified using the ``isAvailable`` attribute (see Example)
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#publications-group>`_.  
   
 .. _credit:
@@ -1732,10 +1612,6 @@ Credit object definition
         * Required: No
         * Type: String
         * Restrictions: pattern: http://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}
-    * gridId
-        * Required: No
-        * Type: String
-        * Restrictions: pattern: grid.[0-9]{4,}.[a-f0-9]{1,2}
     * email
         * Required: No
         * Type: Email
@@ -1744,10 +1620,6 @@ Credit object definition
         * Required: No
         * Type: URL
         * Restrictions: pattern: http(s?)://[^\s/$.?#].[^\s]*
-    * tel
-        * Required: No
-        * Type: String
-        * Restrictions: min length: 5, max length: 50
     * typeEntity
         * Required: No
         * Type: ENUM
@@ -1784,10 +1656,8 @@ Credit object definition
   <credit>
    <name>TN Petersen</name>
    <orcidId>http://orcid.org/0000-0002-1825-0097</orcidId>
-   <gridId>grid.5170.3</gridId>
    <email>test@cbs.dtu.dk</email>
    <url>http://cbs.dtu.dk</url>
-   <tel>12345678</tel>
    <typeEntity>Person</typeEntity>
    <typeRole>Developer</typeRole>
    <typeRole>Documentor</typeRole>
@@ -1800,17 +1670,15 @@ Credit object definition
     {
       "name": "TN Petersen",
       "orcidId":"http://orcid.org/0000-0002-1825-0097",
-      "gridId": "grid.5170.3",
       "url": "http://cbs.dtu.dk",
       "email": "test@cbs.dtu.dk",
-      "tel": "12345678"
       "typeEntity": "Person",
       "typeRole":
       [
         "Developer",
         "Documentor"
       ]
-      "comment": "Lead developer"
+      "note": "Lead developer"
     }
   ]
 
