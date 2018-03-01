@@ -355,7 +355,7 @@ Data format (input and output data)
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#format>`_.
        
     
-Comment
+Note
 .......
 *Concise comment about this function, if not apparent from the software description and EDAM annotations, e.g. "This option is slower, but more precise.*"
 
