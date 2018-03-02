@@ -10,7 +10,7 @@ Attribute model - development
 
 .. note:: This is the API documentation for upcoming features, coming soon to https://bio.tools.
 
-This page documents the structure of a XML / JSON / YAML file that describes a tool for submission to https://bio.tools.
+This page documents the structure of a XML / JSON file that describes a tool for submission to https://bio.tools.
 
 
 Payload formats
@@ -20,9 +20,8 @@ To submit a tool via our bio.tools API you’ll need to POST a tool description 
 
 XML
 ---
-A sample XML document may look like this:
+For sample XML documents see `GitHub <https://github.com/bio-tools/biotoolsSchema/tree/master/stable/example_files>`_.
 
-.. code-block:: xml
 
 JSON
 ----
@@ -30,102 +29,155 @@ JSON
 A sample JSON document may look like this:
 
 .. code-block:: js
-# THIS EXAMPLE IS WRONG ... WILL FIX SOON
-    {
+
+   {
       "name": "SignalP",
+      "description": "Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
+      "homepage": "http://cbs.dtu.dk/services/SignalP/",
+      "biotoolsID": "signalp",
+      "biotoolsCURIE": "biotools:signalp",
+      "version":
+      [
+         "6.4.0.0",
+         "1.1 - 1.4, 2.0-alpha, 2.0-beta-01 - 2.0-beta-04, 2.0.0"
+      ]
+      "otherID":
+      [
+         {
+            "value": "RRID:SCR_015644",
+	    "type": "rrid",
+            "version": "4.1"
+         },
+         {
+            "value": "10.1007/978-1-4939-7015-5_6",
+            "type": "doi"
+            "version": "4.1"	    
+         }
+      ]
+     
+      "function":
+      [
+         {
+            "operation":
+	    [
+               {
+                  "uri": "http://edamontology.org/operation_0418",
+                  "term": "Protein signal peptide detection"
+               },
+               {
+                  "uri": "http://edamontology.org/operation_0422",
+                  "term": "Protein cleavage site prediction"
+               }
+            ],
+            "input":
+	    [
+              {
+                "data":
+	        {
+                   "uri": "http://edamontology.org/data_2044",
+                   "term": "Sequence"
+                },
+                "format":
+	        [
+                  {
+                     "uri": "http://edamontology.org/format_1929",
+                     "term": "FASTA"
+                  },
+                  {
+                     "uri": "http://edamontology.org/format_3008",
+                     "term": "MAF"
+                  }
+                ]
+              }
+            ],
+            "output":
+	    [
+               {
+                  "data":
+	          {
+                     "uri": "http://edamontology.org/data_1277",
+                     "term": "Protein features"
+                  },
+                  "format":
+	          [
+                     {
+                        "uri": "http://edamontology.org/format_2305",
+                        "term": "GFF"
+                     },
+		                          {
+                        "uri": "http://edamontology.org/format_3164",
+                        "term": "GTrack"
+                     },
+                  ]
+               },
+               {
+                  "data":
+	          {
+                     "uri": "http://edamontology.org/data_2955",
+                     "term": "Sequence report"
+                  },
+                  "format":
+	          [
+              	     {
+                        "uri": "http://edamontology.org/format_2331",
+                        "term": "HTML"
+                     }
+                  ]
+               }
+            ]
+            "note": "Predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
+            "cmd": "--someOption",
+         }  
+      ],
+      "toolType":
+      [
+        "Command-line tool",
+        "Web application"
+      ],
       "topic":
       [
         {
-          "uri": "http://edamontology.org/topic_0003",
-          "term": "Topic"
-        }
-      ],
-      "function":
-      [
+          "uri": "http://edamontology.org/topic_0080",
+          "term": "Sequence analysis"
+        },
         {
-          "note": "predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms",
-          "handle": "--someOption",
-          "operation":
-	  [
-            {
-              "uri": "http://edamontology.org/operation_0418",
-              "term": "Protein signal peptide detection"
-            },
-            {
-              "uri": "http://edamontology.org/operation_0422",
-              "term": "Protein cleavage site prediction"
-            }
-          ],
-          "input":
-	  [
-            {
-              "data":
-	      {
-                "uri": "http://edamontology.org/data_2044",
-                "term": "Sequence"
-              },
-              "format":
-	      [
-                {
-                  "uri": "http://edamontology.org/format_1929",
-                  "term": "FASTA"
-                }
-              ]
-            }
-          ],
-          "output":
-	  [
-            {
-              "data":
-	      {
-                "uri": "http://edamontology.org/data_1277",
-                "term": "Protein features"
-              },
-              "format":
-	      [
-                {
-                  "uri": "http://edamontology.org/format_2305",
-                  "term": "GFF"
-                }
-              ]
-            },
-            {
-              "data":
-	      {
-                "uri": "http://edamontology.org/data_2955",
-                "term": "Sequence report"
-              },
-              "format":
-	      [
-              	{
-                  "uri": "http://edamontology.org/format_2305",
-                  "term": "GFF"
-                }
-              ]
-            }
-          ]
+          "uri": "http://edamontology.org/topic_0078",
+          "term": "Proteins"
         }
       ],
-      "homepage": "http://cbs.dtu.dk/services/SignalP/",
-      "description": "Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
-      "cost": "Free of charge (with restrictions)",
+      "operatingSystem":
+      [
+        "Linux",
+        "Mac"
+      ],
+      "language":
+      [
+        "ActionScript",
+        "C"
+      ],
+      "license": "Proprietary",
+      "collectionID":
+      [
+        "CBS",
+        "mytools"
+      ],
       "maturity": "Mature",
-      "credit":
+      "cost": "Free of charge (with restrictions)",
+      "accessibility":
       [
-        {
-          "name": "TN Petersen",
-          "email": "test@email.com",
-          "orcidid": "test",
-          "typeEntity": "Person",
-          "typeRole": "Developer",
-          "note": "A comment goes here"
-        }
+         "Open access",
+         "Freeware"
       ],
       "link":
       [
         {
           "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
           "type": "Repository",
+          "note": "A comment goes here"
+        },
+        {
+          "url": "http://www.cbs.dtu.dk/helpdesk",
+          "type": "Helpdesk",
           "note": "A comment goes here"
         }
       ],
@@ -135,27 +187,18 @@ A sample JSON document may look like this:
           "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
           "type": "Source code",
           "note": "A comment goes here"
-        },
+          "diskFormat": "raw",
+          "containerFormat": "docker", 
+          "version": "1.4"
+      },
         {
           "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
           "type": "Binaries",
           "note": "A comment goes here"
+          "diskFormat": "raw",
+          "containerFormat": "docker", 
+          "version": "1.4"
         }
-      ],
-      "license": "Proprietary",
-      "operatingSystem":
-      [
-        "Linux",
-        "Mac"
-      ],
-      "toolType":
-      [
-        "Command-line tool",
-        "Web application"
-      ],
-      "language":
-      [
-        "ActionScript"
       ],
       "documentation":
       [
@@ -163,48 +206,51 @@ A sample JSON document may look like this:
           "url": "http://www.cbs.dtu.dk/services/SignalP",
           "type": "General",
           "note": "A comment goes here"
+        },
+       {
+          "url": "http://www.cbs.dtu.dk/services/SignalP",
+          "type": "Citation instructions",
+          "note": "A comment goes here"
         }
       ],
+   
       "publication":
       [
         {
-          "pmcid": "21959131",
-          "pmid": "21959131",
-          "doi": "doi:10.1038/nmeth.1701",
-          "type": "Primary"
+           "doi": "doi:10.1038/nmeth.1701",
+           "pmid": "21959131",
+           "pmcid": "21959131",
+           "type": "Primary",
+           "version": "1.4"
         },
         {
-          "pmcid": "21959131",
-          "pmid": "21959131",
-          "doi": "doi:10.1038/nmeth.1701",
-          "type": "Other"
+           "doi": "doi:10.1038/nmeth.1701",
+           "pmid": "21959131",
+           "pmcid": "21959131",
+           "type": "Other",
+           "version": "1.4"
         }
       ],
-      "collectionID":
+      "credit":
       [
-        "CBS"
+         {
+            "name": "TN Petersen",
+            "email": "test@email.com",
+            "url": "http://someurl.org",
+            "orcidid": "test",
+            "typeEntity": "Person",
+            "typeRole": "Developer",
+            "note": "A comment goes here"
+         },
+ 	 {
+ 	    "elixirPlatform", "Tools",
+ 	 },
+  	 {
+ 	    "elixirNode", "Denmark"
+         }
       ],
-      "contact":
-      [
-        {
-          "email": "hnielsen@cbs.dtu.dk",
-          "name": "Henrik Nielsen",
-          "url": "https://bio.tools"
-        }
-      ],
-      "editPermission": {
-        "type": "private",
-        "authors": ["ekry"]
-      }
     }
 
-YAML
-----
-A sample YAML document may look like this:
-
-.. code-block:: yaml
-		
-    
     
 Tool attributes
 ===============
@@ -1378,7 +1424,34 @@ Download object definition
 	  - ``Tool wrapper (taverna)``
 	  - ``Tool wrapper (other)``
 	  - ``VM image``
-    * comment
+    * diskFormat
+        * Required: No
+        * Type: ENUM
+        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#diskformat>`_)
+
+	  - ``aki``
+	  - ``ami``
+    	  - ``ari``
+	  - ``iso``
+  	  - ``qcow2``
+    	  - ``raw``
+  	  - ``vdi``
+    	  - ``vhd``
+       	  - ``vmdk``
+    * containerFormat
+        * Required: No
+        * Type: ENUM
+        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#containerformat>`_)
+
+	  - ``aki``
+	  - ``ami``
+  	  - ``ari``
+	  - ``bare``
+  	  - ``docker``
+          - ``ovf``
+	  - ``rkt``
+	  - ``singularity``  	    
+    * note
         * Required: No
         * Type: String
         * Restrictions: min length: 10, max length: 1000
@@ -1396,7 +1469,9 @@ Download object definition
   <download>
    <url>http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp</url>
    <type>Source code</url>
-   <comment>Complete distibution</comment>
+   <note>Complete distibution</note>
+   <diskFormat>raw</diskFormat>
+   <containerFormat>docker</containerFormat>
    <version>1.4</version>
   </download> 
       
@@ -1407,6 +1482,8 @@ Download object definition
       "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
       "type": "Source code",
       "note": "Complete distibution",
+      "diskFormat": "raw",
+      "containerFormat": "docker", 
       "version": "1.4"
     }
   ]
@@ -1447,7 +1524,7 @@ Documentation object definition
 	  - ``Terms of use``
 	  - ``Training material``
 	  - ``Other``
-    * comment
+    * note
         * Required: No
         * Type: String
         * Restrictions: min legth:10, max length: 1000
@@ -1460,7 +1537,7 @@ Documentation object definition
   <documentation>
    <url>http://www.cbs.dtu.dk/services/SignalP</url>
    <type>General</type>
-   <comment>Comprehensive usage instructions.</comment>
+   <note>Comprehensive usage instructions.</note>
   </documentation>
   
   # JSON		
@@ -1643,7 +1720,7 @@ Credit object definition
 	  - ``Contributor``
 	  - ``Support``
 	  - ``Primary contact``	    
-    * comment
+    * note
         * Required: No
         * Type: String
         * Restrictions: min length: 10, max length: 1000
@@ -1661,7 +1738,7 @@ Credit object definition
    <typeEntity>Person</typeEntity>
    <typeRole>Developer</typeRole>
    <typeRole>Documentor</typeRole>
-   <comment>Lead developer</comment>
+   <note>Lead developer</note>
   </credit>
   
   # JSON		

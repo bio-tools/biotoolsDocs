@@ -648,6 +648,45 @@ Note
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
 
+Disk format
+...........
+*Virtual machine disk image format*
+
+- **1.** **MUST** acurately specify the format of download of type "VM image", in terms from a controlled vocabulary (see below)
+
+.. csv-table::
+   :header: "Disk format", "Description"
+   :widths: 25, 100
+
+   "aki", "An Amazon kernel image"
+   "ami", "An Amazon machine image"
+   "ari", "An Amazon ramdisk image"
+   "iso", "An archive format for the data contents of an optical disc, such as CD-ROM"
+   "qcow2", "Supported by the QEMU emulator that can expand dynamically and supports Copy on Write"
+   "raw", "An unstructured disk image format; if you have a file without an extension it is possibly a raw format"
+   "vdi", "Supported by VirtualBox virtual machine monitor and the QEMU emulator"
+   "vhd", "The VHD disk format, a common disk format used by virtual machine monitors from VMware, Xen, Microsoft, VirtualBox, and others"
+   "vmdk", "Common disk format supported by many common virtual machine monitors"
+
+Container format
+................
+*Container format*
+
+- **1.** **MUST** acurately specify the format of download of type "Container file", in terms from a controlled vocabulary (see below)
+
+.. csv-table::
+   :header: "Container format", "Description"
+   :widths: 25, 100
+
+   "aki", "An Amazon kernel image"
+   "ami", "An Amazon machine image"
+   "ari", "An Amazon ramdisk image"
+   "bare", "The image does not have a container or metadata envelope"
+   "docker", "A docker container format"
+   "ovf", "The OVF container format"
+   "rkt", "Rocket container image"
+   "singularity", "Singularity container format"
+
 Version
 .......
 *Version information (typically a version number) of the software applicable to this download.*
