@@ -438,7 +438,7 @@ Language
 - **2.** **MAY** exhaustively specify other languages used
 
 .. note::
-  - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.
+  - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/stable>`_.
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#language>`_.
 
     
@@ -453,10 +453,10 @@ License
 - **4.** **SHOULD** use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary".
   
   .. note::
-  - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.
+  - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/stable>`_.
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#license>`_.
 
-.. tip:: Use the "Other" license for custom institutional licenses that are out of scope of `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_.  If you've found a license that you think should be included in biotoolsSchema please report it *via* `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/new>`_.
+.. tip:: Use the "Other" license for custom institutional licenses that are out of scope of `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/stable>`_.  If you've found a license that you think should be included in biotoolsSchema please report it *via* `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/new>`_.
 
 
 .. note::
@@ -776,13 +776,15 @@ Publication type
 - **1.** **MUST** acurately specify the type of publication, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
-   :header: "Download type", "Description"
+   :header: "Publication type", "Description"
    :widths: 25, 100
 	    
    "Primary", "The principal publication about the software itself; the article to cite when acknowledging use of the software."
-   "Benchmark", "A publication which assessed the performance of the software."
+   "Method", "A publication describing a scientific method or algorithm implemented by the software."
+   "Usage", "A publication describing the application of the software to scientific research, a particular task or dataset."
+   "Comparison", "A publication which assessed the performance of the software."
    "Review", "A publication where the software was reviewed."
-   "Other", "A publication about the software but not the primary publication or a benchmark study."
+   "Other", "A publication of relevance to the software but not fitting the other categories."
 
 Version
 .......
@@ -796,7 +798,7 @@ Credits group
 ^^^^^^^^^^^^^
 *Individuals or organisations that should be credited, or may be contacted about the software.*
 
-- **1.** **SHOULD** provide contact details for the first port-of-call when seeking help with the software
+- **1.** **SHOULD** provide contact details for the first port-of-call when seeking help with the software, and **SHOULD** annotate the role of this entity as "Primary contact"
 - **2.** **MAY** specify one or more other credits
 
 
@@ -924,6 +926,7 @@ Role
    "Documentor", "Author of software documentation including making edits to a bio.tools entry."
    "Contributor", "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
    "Support", "Provider of support in using the software."
+   "Primary contact", "The primary point of contact for the software."
 
 Note
 ....

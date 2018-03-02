@@ -1520,9 +1520,12 @@ Documentation object definition
 	  - ``Citation instructions``
     	  - ``Contributions policy``
 	  - ``General``
+	  - ``Governance``
+	  - ``Installation instructions``	    	    
 	  - ``Manual``
 	  - ``Terms of use``
 	  - ``Training material``
+	  - ``Tutorial``	    
 	  - ``Other``
     * note
         * Required: No
@@ -1589,8 +1592,10 @@ Publication object definition
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-type>`_)
 	  - ``Primary``
-	  - ``Benchmark``
-	  - ``Review``
+	  - ``Method``	    
+	  - ``Usage``
+	  - ``Comparison``
+	  - ``Review``	    
 	  - ``Other``
     * version
         * Required: No
