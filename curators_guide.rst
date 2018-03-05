@@ -944,27 +944,31 @@ Command-line tool
 ^^^^^^^^^^^^^^^^^
 **A tool with a text-based (command-line) interface.**
 
-- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+- carefully identify the major functions (modes of operation) performed by the tool (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_) and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
+  
 
 Database portal
 ^^^^^^^^^^^^^^^
 **A Web application, suite or workbench providing a portal to a biological database.**
 
-- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_; consider terms under `Data management <http://edamontology.org/topic_3071>`_ 
+- pick one or more `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the database content. See also the specialised `Data management <http://edamontology.org/topic_3071>`_ concepts.
+- consider carefully whether the database portal will be described by a single, or more than one bio.tools entry (see `Before you start <http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start>`_).  In case the portal contains one or more discrete tools (web applications), it is recommended to register these as separate entries.
 - consider an operation of `Database search <http://edamontology.org/operation_2421>`_ (or its children)
 
 Desktop application
 ^^^^^^^^^^^^^^^^^^^
 **A tool with a graphical user interface that runs on your desktop environment, e.g. on a PC or mobile device.**
 
-- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+- desktop applications often have complex functionality: carefully identify the major functions (modes of operation) performed by the application (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_) and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
+- consider an operation of `Visualisation <http://edamontology.org/operation_0337>`_ (or its children) - typical of desktop apps.
   
 Library
 ^^^^^^^
 **A collection of components that are used to construct other tools. bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries.**
 
-- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
-
+- in case the library includes just a few components, each should (typically) be modelled as a distinct function (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_); annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each component (function) in turn.
+- in case the library includes very many components, model the whole library as having a single function (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_); and annotate only the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ (do not try to be exhaustive).
+  
 Ontology
 ^^^^^^^^
 **A collection of information about concepts, including terms, synonyms, descriptions etc.**
