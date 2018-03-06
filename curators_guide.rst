@@ -973,21 +973,23 @@ Ontology
 ^^^^^^^^
 **A collection of information about concepts, including terms, synonyms, descriptions etc.**
 
-- pick `Ontology and terminology <http://edamontology.org/topic_0089>`_ and one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
+- pick `Ontology and terminology <http://edamontology.org/topic_0089>`_ and one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ describing the scope of the ontology.
   
-- pick `Query and retrieval <http://edamontology.org/operation_0224>`_ `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_
-- do not annotate the type or format of the input and output data
+- do not annotate the function (operations, or type / format of the input and output data)
   
 Plug-in
 ^^^^^^^
 **A software component encapsulating a set of related functions, which are not standalone, *i.e.* depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.**
 
-- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
-
+- when annotating the plug-in `function(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_, be careful to not duplicate the description of the tool which plug-in plugs into
+- carefully identify the major new functions (modes of operation) which the plug-in provides, and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
+  
 Script
 ^^^^^^
 **A tool written for some run-time environment (e.g. other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (e.g. Perl, Python) or some domain-specific languages (e.g. sed).**
 
+- scripts typically have a single function (mode of operation) (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_), however, in case of complex scripts, carefully identify the major functions (modes of operation) performed by the script, and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
+  
 - pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
   
 SPARQL endpoint
