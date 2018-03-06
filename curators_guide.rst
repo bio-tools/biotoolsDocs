@@ -284,7 +284,7 @@ Version
 
 Function group
 ^^^^^^^^^^^^^^
-*Details of a function (i.e. mode of operation) the software provides, expressed in terms from the EDAM ontology.*
+*Details of a function (i.e. mode of operation) the software provides, expressed in concepts from the EDAM ontology.*
 
 Operation
 .........
@@ -779,12 +779,12 @@ Publication type
    :header: "Publication type", "Description"
    :widths: 25, 100
 	    
-   "Primary", "The principal publication about the software itself; the article to cite when acknowledging use of the software."
-   "Method", "A publication describing a scientific method or algorithm implemented by the software."
-   "Usage", "A publication describing the application of the software to scientific research, a particular task or dataset."
-   "Comparison", "A publication which assessed the performance of the software."
-   "Review", "A publication where the software was reviewed."
-   "Other", "A publication of relevance to the software but not fitting the other categories."
+   "Primary", "The principal publication about the tool itself; the article to cite when acknowledging use of the tool."
+   "Method", "A publication describing a scientific method or algorithm implemented by the tool."
+   "Usage", "A publication describing the application of the tool to scientific research, a particular task or dataset."
+   "Comparison", "A publication which assessed the performance of the tool."
+   "Review", "A publication where the tool was reviewed."
+   "Other", "A publication of relevance to the tool but not fitting the other categories."
 
 Version
 .......
