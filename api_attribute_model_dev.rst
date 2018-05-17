@@ -8,14 +8,14 @@ Attribute model - development
    - guidelines for the `bio.tools <https://bio.tools>`_ API 
    - or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/>`_
 
-.. note:: This is the API documentation for upcoming features, coming soon to https://bio.tools.
+.. note:: This is the API documentation for upcoming features in support of `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_ , coming soon to https://bio.tools.
 
 This page documents the structure of a XML / JSON file that describes a tool for submission to https://bio.tools.
 
 
 Payload formats
 ===============
-To submit a tool via our bio.tools API you’ll need to POST a tool description to the `tool endpoint <http://biotools.readthedocs.io/en/latest/api_reference.html#register-a-resource>`_. The API supports XML, JSON and YAML format uploads comatible with biotoolsSchema (https://github.com/bio-tools/biotoolsschema).
+To submit a tool via our bio.tools API you’ll need to POST a tool description to the `tool endpoint <http://biotools.readthedocs.io/en/latest/api_reference.html#register-a-resource>`_. The API supports XML, JSON and YAML format uploads comatible with `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
 
 
 XML
@@ -1115,8 +1115,8 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_.
 
      
-Language
---------
+Programming language
+--------------------
 *Name of programming language the software source code was written in, e.g. "C"*
 
 Attribute name
@@ -1128,7 +1128,7 @@ Required
 Type
   ENUM (list)
 
-Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#language>`_)
+Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language>`_)
   ``ActionScript``, ``Ada``, ``AppleScript``, ``Assembly language``, ``AWK``, ``Bash``, ``C``, ``C#``, ``C++``, ``COBOL``, ``ColdFusion``, ``CWL``, ``D``, ``Delphi``, ``Dylan``, ``Eiffel``, ``Forth``, ``Fortran``, ``Groovy``, ``Haskell``, ``Icarus``, ``Java``, ``Javascript``, ``JSP``, ``LabVIEW``, ``Lisp``, ``Lua``, ``Maple``, ``Mathematica``, ``MATLAB``, ``MLXTRAN``, ``NMTRAN``, ``Pascal``, ``Perl``, ``PHP``, ``Prolog``, ``PyMOL``, ``Python``, ``R``, ``Racket``, ``REXX``, ``Ruby``, ``SAS``, ``Scala``, ``Scheme``, ``Shell``, ``Smalltalk``, ``SQL``, ``Turing``, ``Verilog``, ``VHDL``, ``Visual Basic``, ``Other``
 
 **Example**

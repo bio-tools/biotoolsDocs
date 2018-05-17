@@ -260,7 +260,7 @@ Other IDs
    "biotoolsCURIE", "bio.tools CURIE (secondary identifier)."
    
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#otherid>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#other-ids>`_.
 
 Value
 ~~~~~
@@ -439,7 +439,7 @@ Programming language
 
 .. note::
   - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/stable>`_.
-  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#language>`_.
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#programming-language>`_.
 
     
   
