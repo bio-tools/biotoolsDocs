@@ -430,8 +430,8 @@ Operating system
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operating-system>`_.
 
 
-Language
-........
+Programming language
+....................
 *Name of programming language the software source code was written in, e.g. "C"*
 
 - **1.** **MUST** specify the primary language used, in terms from a controlled vocabulary (see below)
@@ -648,8 +648,8 @@ Note
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
 
-Disk format
-...........
+Disk image format
+.................
 *Virtual machine disk image format*
 
 - **1.** **MUST** acurately specify the format of download of type "VM image", in terms from a controlled vocabulary (see below)
@@ -909,8 +909,8 @@ Entity type
    "Funding agency", "Credit of a legal entity providing funding for development of the software or provision of an online service."
 
 	    
-Role
-....
+Entity role
+...........
 *Role performed by entity that is credited, e.g. "Developer"*
 
 - **1.** **MUST** acurately specify the primary role of credited entity, in terms from a controlled vocabulary (see below)

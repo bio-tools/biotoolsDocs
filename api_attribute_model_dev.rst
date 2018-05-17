@@ -720,7 +720,7 @@ EDAM object definition
 .. note::
    - an `EDAM ontology <https://github.com/edamontology/edamontology>`_ Operation concept URL and / or term are specified, *e.g.* "Multiple sequence alignment", http://edamontology.org/operation_0492.
    - URI and term are validated against EDAM ontology; if term and URI do not match, an error will be returned.
-   - synonyms of terms (as defined in EDAM) are accepted, however, **the synonym will be replaced with main term**.
+   - synonyms of terms (as defined in EDAM) are accepted
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_.
 
 
