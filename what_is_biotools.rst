@@ -6,6 +6,8 @@ What is bio.tools?
 * find, understand, compare and select resources == **discovery**
 * use and connect them in workflows == **(inter)operability**
 
+Our **vision** is to be the sustainable primary archive for basic tool metadata, providing a persistent reference to high-quality (curated and verified) "canonical" descriptions of unique tools, with information about their provision via online services and various downloadable artefacts, and including entries for different versions of a tool, where these have major functional differences.
+  
 Objectives
 ----------
 Our main objectives are:
@@ -19,7 +21,7 @@ Our main objectives are:
 
 Scope
 -----
-bio.tools scope is *application software* with well-defined data processing functions (inputs, outputs and operations).  bio.tools includes a broad range of `software types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type-guidelines>`_ including tools available for immediate use as online services, or in a form which which you can download, install, configure and run yourself.  This includes simple tools with one or a few closely related functions, and complex, multimodal tools with many functions.
+bio.tools scope is *application software* with well-defined data processing functions (inputs, outputs and operations).  bio.tools includes a broad range of `software types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type-guidelines>`_ including tools available for immediate use as online services, or in a form which which you can download, install, configure and run yourself.  This includes simple tools with one or a few closely related functions, and complex, multimodal tools with many functions.  It also includes executable workflows, database portals and Web APIs.
 
 Technical components
 --------------------
