@@ -10,17 +10,6 @@ We organise many events as well as attend events organised by others.  If you wa
 Forthcoming events
 ------------------
 
-**Technical Hackathon : Towards a comprehensive catalogue of data formats (Autumn 2017 tbd, Amsterdam, NL)**
-*tentative*
-
-A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  More details will be added soon.
-
-
-
-
-Past events
------------
-
 **Conference: ELIXIR-DK @ 4th Annual Danish Bioinformatics Conference (Aug 29-30 2018, Odense, DK)**
 
 http://elixir-node.cbs.dtu.dk/?page_id=2369
@@ -36,6 +25,17 @@ https://gccbosc2018.sched.com/list/descriptions/
 The 2018 Galaxy Community Conference (GCC2018) and Bioinformatics Open Source Conference 2018 (BOSC2018) are meeting together in Portland, Oregon, United States, June 25-30, 2018.  There will be two days of training, a two+ day meeting, and four days of intense collaboration.  The meeting features joint & parallel sessions, shared keynotes, poster & demo sessions, birds-of-a-feather, and social events. EDAM, and the tooling around bio.tools for integration with Galaxy, will be presented.
 
 ------
+
+**Technical Hackathon : Towards a comprehensive catalogue of data formats (Autumn 2017 tbd, Amsterdam, NL)**
+*tentative*
+
+A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  More details will be added soon.
+
+
+
+
+Past events
+-----------
 
 **Conference: ELIXIR All-hands (Jun 4-7 2018, Berlin, DE)**
 
