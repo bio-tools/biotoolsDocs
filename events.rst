@@ -20,7 +20,80 @@ A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  
 
 Past events
 -----------
-**ELIXIR-DK / bio.tools Open Day (Aug 23 2017, Odense, DK)**
+
+**Conference: ELIXIR-DK @ 4th Annual Danish Bioinformatics Conference (Aug 29-30 2018, Odense, DK)**
+
+http://elixir-node.cbs.dtu.dk/?page_id=2369
+
+This will showcase the work of the Danish ELIXIR node in context of the Danish and European bioinformatics community. 
+
+------
+
+**Conference: BOSC 2018 (Jun 25-30 2018, Portland, USA)**
+
+https://gccbosc2018.sched.com/list/descriptions/
+
+The 2018 Galaxy Community Conference (GCC2018) and Bioinformatics Open Source Conference 2018 (BOSC2018) are meeting together in Portland, Oregon, United States, June 25-30, 2018.  There will be two days of training, a two+ day meeting, and four days of intense collaboration.  The meeting features joint & parallel sessions, shared keynotes, poster & demo sessions, birds-of-a-feather, and social events. EDAM, and the tooling around bio.tools for integration with Galaxy, will be presented.
+
+------
+
+**Conference: ELIXIR All-hands (Jun 4-7 2018, Berlin, DE)**
+
+https://www.elixir-europe.org/events/elixir-all-hands-2018
+
+The fourth ELIXIR All Hands meeting, bringing together members of the ELIXIR community from across the ELIXIR Nodes, and collaborators from partner organisations, in order to review ELIXIR achievements and activities so far and discuss plans for the future. 
+
+------
+
+**Meeting: ELIXIR EXCELERATE WP1 Meeting (Feb 20-22 2018, Copenhagen, DK)**
+
+https://tinyurl.com/wp1f2f-2018 
+
+A face-to-face meeting to discuss matters around ELIXIR EXCELERATE WP1 (tools) developments.  The meeting is primarily for WP1 partners, however anyone who is involved in bio.tools development is welcome to attend. 
+
+------
+
+**Workshop: Debian Med 2018 Sprint (Feb 10-12 2018, Barcelona, ES)**
+
+https://wiki.debian.org/Sprints/2018/DebianMed2018
+
+This is an informal co-working and co-learning event, participants are welcome to attend on the days that work for their schedule.  EDAM and the integration of bio.tools with Debian Med and CWL was worked on.
+
+------
+
+**Meeting: ELIXIR Tools Platform Meeting (Feb 8-9 2018, Barcelona, ES)**
+
+https://tinyurl.com/etp-feb2018
+
+ELIXIR Tools Platform all-hands meeting to discuss activities of the platform and its projects.
+
+------
+
+**Meeting: ELIXIR EXCELERATE WP2 Meeting (Feb 7 2018, Barcelona, ES)**
+
+https://docs.google.com/document/d/1-Ydv-SxTH_aJ4XaGh4g0I1mINgfMKG_yz6wNma1s9hY/edit
+
+Meeting of ELIXIR EXCELERATE WP2 to discuss progress of OpenEBench, strategies for reaching out scientific communities running benchmark activities and practical examples on both technical monitoring and scientific benchmarking activities.
+
+------
+
+**Workshop: bio.tools & EDAM @ 3rd NEUBIAS taggathon (Sep 11-14 2017, Gothenburg, SE)**
+
+http://eubias.org/NEUBIAS/what-is-taggathon/new-3-gothenburg-sweden/
+
+The purpose of the taggathons is to implement and feed the content of NEUBIAS webtool; an organized repository of bio image analysis software and workflows for biologists, bioimage analysts and algorithm developers, complementary to ELIXIR bio.tools.  The tagathon focuses on curation (identifying and tagging tools), semantics development including synonymous terms between Biology and Image Analysis, with development of EDAM-Bioimaging, and Semantic Web queries.
+
+------
+
+**Conference: ELIXIR Denmark - 3rd Annual Danish Bioinformatics Conference (Aug 24-25 2017, Odense, DK)**
+
+http://elixir-node.cbs.dtu.dk/?page_id=2120
+
+The third Danish Bioinformatics Conference organised by ELIXIR Denmark, bringing together members of the bioinformatics community from Denmark and across Europe.
+
+------
+
+**Workshop: ELIXIR-DK / bio.tools Open Day (Aug 23 2017, Odense, DK)**
 
 http://tinyurl.com/registryhackathon14
 
@@ -28,7 +101,29 @@ An informal day of presentations, discussion and hacking around activities of th
 
 ------
 
-**Technical Hackathon : Visual Workflows in bio.tools (Mar 1-3 2017, Tallin, EE)**
+**Conference: BOSC 2017 (Jul 22-23 2017, Prague, CZ)**
+
+The Bioinformatics Open Source Conference (BOSC) is organized by the Open Bioinformatics Foundation (OBF), a non-profit group dedicated to promoting the practice and philosophy of open source software development and open science within the biological research community. BOSC has provided a forum for developers and users to interact and share research results and ideas in open source bioinformatics. EDAM was presented.
+
+------
+
+**Technical hackathon: CodeFest 2017 (Jul 20-21 2017, Prague, CZ)**
+
+https://www.open-bio.org/wiki/Codefest_2017
+
+This is an opportunity for anyone interested in open science, biology and programming to meet, discuss and work collaboratively. Everyone is welcome to attend. We will have a mix of experienced developers, newcomers to bioinformatics and everything in between.  EDAM and bio.tools integration with the Common Worflow Language (CWL) were worked on.
+
+------
+
+**Conference: ELIXIR All-hands (Mar 20-22 2017, Rome, IT)**
+
+https://www.elixir-europe.org/events/elixir-all-hands-2017
+
+The third ELIXIR All Hands meeting, bringing together members of the ELIXIR community from across the ELIXIR Nodes, and collaborators from partner organisations, in order to review ELIXIR achievements and activities so far and discuss plans for the future.
+
+------
+
+**Technical Hackathon: Visual Workflows in bio.tools (Mar 1-3 2017, Tallin, EE)**
 
 http://tinyurl.com/registryhackathon13
 
@@ -52,7 +147,15 @@ https://www.elixir-europe.org/events/elixir-innovation-and-sme-forum%3A-genomics
 
 ------
 
-**Workshop: bio.tools & EDAM @ 2nd NEUBIAS taggathon (Feb 13-15 2016, Oeiras near Lisbon, PT)**
+**Meeting: ELIXIR Tools Platform Meeting (Feb 22-23 2017, Barcelona, ES**
+
+https://www.elixir-europe.org/events/elixir-tools-platform-all-hands-meeting
+
+The 2nd meeting to discuss progress and plans for the [ELIXIR Tools Platform](https://www.elixir-europe.org/platforms/tools).
+
+------
+
+**Workshop: bio.tools & EDAM @ 2nd NEUBIAS taggathon (Feb 13-15 2017, Oeiras near Lisbon, PT)**
 
 http://eubias.org/NEUBIAS/what-is-taggathon/taggathon-2-gulbenkian-oeiras/
 
