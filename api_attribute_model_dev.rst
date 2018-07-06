@@ -266,6 +266,9 @@ Attribute name
 Required
   Yes
 
+Cardinality
+  todo
+  
 Type
   String
 
@@ -306,6 +309,9 @@ Attribute name
 Required
   Yes
 
+Cardinality
+  todo
+
 Type
   String
 
@@ -340,6 +346,9 @@ Attribute name
 Required
   Yes
 
+Cardinality
+  todo
+  
 Type
   URL
 
@@ -371,6 +380,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   String
 
@@ -405,6 +417,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   String
 
@@ -439,6 +454,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   String
 
@@ -481,15 +499,20 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   List of otherID objects
 
 otherID object definition
   * value
       * Required: Yes
+      * Cardinality: todo
       * Type: String
   * type
       * Required: No
+      * Cardinality: tod	
       * Type: ENUM (list)
       * Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_)
         - ``doi``
@@ -498,6 +521,7 @@ otherID object definition
         - ``biotoolsCURIE``	
   * version
       * Required: No
+      * Cardinality: todo
       * Type: String
       * Restrictions: Min length: 1, Max length: 100
       *	Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
@@ -549,6 +573,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   List of function objects
 
@@ -556,19 +583,24 @@ Function object definition
   Content
     * :ref:`operation`
         * Required: Yes
+	* Cardinality: todo
         * Type: List of EDAM objects
     * :ref:`input`
         * Required: No
+	* Cardinality: todo
         * Type: List of input objects
     * :ref:`output`
         * Required: No
+	* Cardinality: todo
         * Type: List of output objects
     * note
         * Required: No
+	* Cardinality: todo
         * Type: String
         * Restrictions: min length: 10, max length: 1000
     * cmd
         * Required: No
+	* Cardinlity: todo
         * Type: String
         * Restrictions: min length: 1, max length: 100	  
 
@@ -702,6 +734,9 @@ Attribute name
 Required
   Yes
 
+Cardinality
+  todo
+  
 Child of
   :ref:`function`
 
@@ -712,9 +747,11 @@ EDAM object definition
   Content
     * uri
         * Required: No (if term present), Yes (otherwise)
+	* Cardinality: todo
         * Type: URL
     * term
         * Required: No (if URI present), Yes (otherwise)
+	* Cardinality: todo
         * Type: String
 
 .. note::
@@ -763,6 +800,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Child of
   :ref:`function`
 
@@ -773,9 +813,11 @@ Input object definition
   Content
     * data
         * Required: Yes
+	* Cardinality: todo
         * Type: EDAM object
     * format
         * Required: No
+	* Cardinality: todo
         * Type: List of EDAM objects
 
 **Example**
@@ -823,6 +865,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Child of
   :ref:`function`
 
@@ -833,9 +878,11 @@ Output object definition
   Content
     * data
         * Required: Yes
+	* Cardinality: todo
         * Type: EDAM object
     * format
         * Required: No
+	* Cardinality: todo
         * Type: List of EDAM objects
 
 **Example**
@@ -883,6 +930,9 @@ Attribute name
 Required
   Yes
 
+Cardinality
+  todo
+  
 Child of
   :ref:`input` or :ref:`output`
 
@@ -893,9 +943,11 @@ EDAM object definition
   Content
     * uri
         * Required: No (if term present), Yes (otherwise)
+	* Cardinality: todo
         * Type: URL
     * term
         * Required: No (if URI present), Yes (otherwise)
+	* Cardinality: todo
         * Type: String
 
 .. note::
@@ -933,6 +985,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Child of
   :ref:`input` or :ref:`output`
 
@@ -943,9 +998,11 @@ EDAM object definition
   Content
     * uri
         * Required: No (if term present), Yes (otherwise)
+	* Cardinality: todo
         * Type: URL
     * term
         * Required: No (if URI present), Yes (otherwise)
+	* Cardinality: todo
         * Type: String
 
 .. note::
@@ -985,6 +1042,9 @@ Attribute name
 Required
   Yes
 
+Cardinality
+  todo
+  
 Type
   ENUM (list)
 
@@ -1033,6 +1093,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   List of EDAM objects
 
@@ -1040,9 +1103,11 @@ EDAM object definition
   Content
     * uri
         * Required: No (if term present), Yes (otherwise)
+	* Cardinality: todo
         * Type: URL
     * term
         * Required: No (if URI present), Yes (otherwise)
+	* Cardinality: todo
         * Type: String
 
 **Example**
@@ -1088,6 +1153,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   ENUM (list)
 
@@ -1125,6 +1193,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   ENUM (list)
 
@@ -1159,6 +1230,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+ 
 Type
   ENUM
 
@@ -1187,6 +1261,9 @@ Attribute name
 
 Required
   No
+
+Cardinality
+  todo
 
 Type
   List of strings
@@ -1230,6 +1307,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   ENUM
 
@@ -1261,6 +1341,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   ENUM
 
@@ -1292,6 +1375,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   ENUM (list)
 
@@ -1329,6 +1415,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   List of link objects
 
@@ -1336,9 +1425,11 @@ Link object definition
   Content
     * url
         * Required: Yes
+	* Cardinality: todo
         * Type: URL
     * type
         * Required: Yes
+	* Cardinality: todo
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#id61>`_)
 	  
@@ -1354,6 +1445,7 @@ Link object definition
     	  - ``Technical monitoring``
     * note
         * Required: No
+	* Cardinality: todo
         * Type: String
         * Restrictions: min length: 10, max length: 1000
 
@@ -1393,6 +1485,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   List of download objects
 
@@ -1400,9 +1495,11 @@ Download object definition
   Content
     * url
         * Required: Yes
+	* Cardinality: todo
         * Type: URL
     * type
         * Required: Yes
+	* Cardinality: todo
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_)
 
@@ -1426,6 +1523,7 @@ Download object definition
 	  - ``VM image``
     * diskFormat
         * Required: No
+	* Cardinality: todo
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#diskformat>`_)
 
@@ -1440,6 +1538,7 @@ Download object definition
        	  - ``vmdk``
     * containerFormat
         * Required: No
+	* Cardinality: todo
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#containerformat>`_)
 
@@ -1453,10 +1552,12 @@ Download object definition
 	  - ``singularity``  	    
     * note
         * Required: No
+	* Cardinality: todo
         * Type: String
         * Restrictions: min length: 10, max length: 1000
     * version
         * Required: No
+	* Cardinality: todo
         * Type: String
         * Restrictions: Min length: 1, Max length: 100
 	* Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
@@ -1503,6 +1604,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   List of documentation objects
 
@@ -1510,9 +1614,11 @@ Documentation object definition
   Content
     * url
         * Required: Yes
+	* Cardinality: todo
         * Type: URL
     * type
         * Required: Yes
+	* Cardinality: todo
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_)
 
@@ -1529,6 +1635,7 @@ Documentation object definition
 	  - ``Other``
     * note
         * Required: No
+	* Cardinality: todo
         * Type: String
         * Restrictions: min legth:10, max length: 1000
 
@@ -1570,6 +1677,9 @@ Attribute name
 Required
   Yes
 
+Cardinality
+  todo
+  
 Type
   List of publication objects
 
@@ -1577,18 +1687,22 @@ Publication object definition
   Content
     * pmcid
         * Required: No
+	* Cardinality: todo
         * Type: PMCID
 	* Pattern: (PMC)[1-9][0-9]{0,8}
     * pmid
         * Required: No
+	* Cardinality: todo	  
         * Type: PMID
   	* Pattern: [1-9][0-9]{0,8}
     * doi
         * Required: No
+	* Cardinality: todo	  
         * Type: DOI
 	* Pattern: 10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+
     * type
         * Required: No
+	* Cardinality: todo	  
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-type>`_)
 	  - ``Primary``
@@ -1599,6 +1713,7 @@ Publication object definition
 	  - ``Other``
     * version
         * Required: No
+	* Cardinality: todo	  
         * Type: String
         * Restrictions: Min length: 1, Max length: 100
 	* Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
@@ -1644,6 +1759,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   List of credit objects
 
@@ -1651,10 +1769,12 @@ Credit object definition
   Content
     * name
         * Required: Yes
+	* Cardinality: todo
         * Type: String
         * Restrictions: min length: 1, max length: 100
     * elixirPlatform
         * Required: No
+	* Cardinality: todo	  
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`_)
 
@@ -1665,6 +1785,7 @@ Credit object definition
 	  - ``Training``
     * typeEntity
         * Required: No
+	* Cardinality: todo	  
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_)
 
@@ -1692,18 +1813,22 @@ Credit object definition
 	  - ``UK``
     * orcidId
         * Required: No
+	* Cardinality: todo	  
         * Type: String
         * Restrictions: pattern: http://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}
     * email
         * Required: No
+	* Cardinality: todo	  
         * Type: Email
         * Restrictions: pattern: [A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*
     * url
         * Required: No
+	* Cardinality: todo
         * Type: URL
         * Restrictions: pattern: http(s?)://[^\s/$.?#].[^\s]*
     * typeEntity
         * Required: No
+	* Cardinality: todo
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#type-entity>`_)
 
@@ -1715,6 +1840,7 @@ Credit object definition
 	  - ``Funding agency``
     * typeRole
         * Required: No
+	* Cardinality: todo	  
         * Type: ENUM (list)
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#type-role>`_)
 
@@ -1727,6 +1853,7 @@ Credit object definition
 	  - ``Primary contact``	    
     * note
         * Required: No
+	* Cardinality: todo
         * Type: String
         * Restrictions: min length: 10, max length: 1000
 
@@ -1802,6 +1929,9 @@ Attribute name
 Required
   No
 
+Cardinality
+  todo
+  
 Type
   Permission object
 
@@ -1809,6 +1939,7 @@ Permission object definition
   Content
     * type
         * Required: Yes
+	* Cardinality: todo
         * Type: ENUM
         * Allowed values:
 	  - ``private``
@@ -1816,6 +1947,7 @@ Permission object definition
 	  - ``group``
     * authors
         * Required: No
+	* Cardinality: todo
         * Type: List of usernames
 
   Notes

@@ -51,7 +51,9 @@ These are attributes supported by bio.tools
 
 .. code-block:: js
 
-  id, name, topic, function, operation, input, 
+  name,
+   
+  id, , topic, function, operation, input, 
   inputDataFormat, inputDataType, output, outputDataFormat, 
   outputDataType, homepage, description, version, 
   accessibility, toolType, collection, 
