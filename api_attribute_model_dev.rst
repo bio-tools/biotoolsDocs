@@ -310,7 +310,7 @@ Required
   Yes
 
 Cardinality
-  todo
+  1 only
 
 Type
   String
@@ -347,7 +347,7 @@ Required
   Yes
 
 Cardinality
-  todo
+  1
   
 Type
   URL
@@ -381,7 +381,7 @@ Required
   No
 
 Cardinality
-  todo
+  1
   
 Type
   String
@@ -418,7 +418,7 @@ Required
   No
 
 Cardinality
-  todo
+  1
   
 Type
   String
@@ -455,10 +455,10 @@ Required
   No
 
 Cardinality
-  todo
+  0 to many
   
 Type
-  String
+  String array
 
 Restrictions
   Min length: 1
@@ -500,7 +500,7 @@ Required
   No
 
 Cardinality
-  todo
+  0 to many
   
 Type
   List of otherID objects
@@ -508,20 +508,26 @@ Type
 otherID object definition
   * value
       * Required: Yes
-      * Cardinality: todo
+      * Cardinality: 1 only
       * Type: String
+      * Pattern: (doi:)?10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+
+      * Pattern: RRID:.+
+      * Pattern: cpe:.+
+      * Pattern: biotools:[_\-.0-9a-zA-Z]*	      
+      
   * type
       * Required: No
-      * Cardinality: tod	
+      * Cardinality: 1 only	
       * Type: ENUM (list)
       * Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_)
         - ``doi``
         - ``rrid``
         - ``cpe``
-        - ``biotoolsCURIE``	
+        - ``biotoolsCURIE``
+	  
   * version
       * Required: No
-      * Cardinality: todo
+      * Cardinality: 1 only
       * Type: String
       * Restrictions: Min length: 1, Max length: 100
       *	Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*

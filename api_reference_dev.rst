@@ -51,16 +51,17 @@ These are attributes supported by bio.tools
 
 .. code-block:: js
 
-  name,
+  name, description, homepage, biotoolsID, version, 
    
-  id, , topic, function, operation, input, 
+, topic, function, operation, input, 
   inputDataFormat, inputDataType, output, outputDataFormat, 
-  outputDataType, homepage, description, version, 
+  outputDataType, 
   accessibility, toolType, collection, 
   maturity, operatingSystem, language, 
   cost, license, documentation, link, download, publication, 
   credit, owner
 
+  
 
 Example
 """""""""""""""""""
