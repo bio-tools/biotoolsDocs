@@ -267,7 +267,7 @@ Required
   Yes
 
 Cardinality
-  todo
+  1 only
   
 Type
   String
