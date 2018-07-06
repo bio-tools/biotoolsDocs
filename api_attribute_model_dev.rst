@@ -510,10 +510,10 @@ otherID object definition
       * Required: Yes
       * Cardinality: 1 only
       * Type: String
-      * Pattern: ``(doi:)?10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+``
-      * Pattern: ``RRID:.+``
-      * Pattern: ``cpe:.+``
-      * Pattern: ``biotools:[_\-.0-9a-zA-Z]*``
+      * Pattern: ``(doi|DOI):?10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+``
+      * Pattern: ``(rrid|RRID):.+``
+      * Pattern: ``(cpe|CPE):.+``
+      * Pattern: ``(biotools|BIOTOOLS):[_\-.0-9a-zA-Z]*``
       
   * type
       * Required: No
