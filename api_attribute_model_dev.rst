@@ -520,6 +520,7 @@ otherID object definition
       * Cardinality: 1 only	
       * Type: ENUM (list)
       * Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_)
+	
         - ``doi``
         - ``rrid``
         - ``cpe``
