@@ -558,7 +558,7 @@ otherID object definition
             "version": "4.1"
         },
         {
-            "value": "10.1007/978-1-4939-7015-5_6",
+            "value": "doi:10.1007/978-1-4939-7015-5_6",
             "type": "doi"
             "version": "4.1"	    
         }
