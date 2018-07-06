@@ -277,7 +277,7 @@ Restrictions
 
   Max length: 100
 
-  Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+  Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
 
 **Example**
 
@@ -353,7 +353,7 @@ Type
   URL
 
 Restrictions
-  Pattern: http(s?)://[^\s/$.?#].[^\s]*
+  Pattern: ``http(s?)://[^\s/$.?#].[^\s]*``
 
 **Example**
 
@@ -387,7 +387,7 @@ Type
   String
 
 Restrictions
-  Pattern: [_\-.0-9a-zA-Z]*
+  Pattern: ``[_\-.0-9a-zA-Z]*``
 
 **Example**
 
@@ -424,7 +424,7 @@ Type
   String
 
 Restrictions
-  Pattern: biotools:[_\-.0-9a-zA-Z]*
+  Pattern: ``biotools:[_\-.0-9a-zA-Z]*``
 
 **Example**
 
@@ -465,7 +465,7 @@ Restrictions
 
   Max length: 100
 
-  Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+  Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
   
 **Example**
 
@@ -510,10 +510,10 @@ otherID object definition
       * Required: Yes
       * Cardinality: 1 only
       * Type: String
-      * Pattern: (doi:)?10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+
-      * Pattern: RRID:.+
-      * Pattern: cpe:.+
-      * Pattern: biotools:[_\-.0-9a-zA-Z]*	      
+      * Pattern: ``(doi:)?10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+``
+      * Pattern: ``RRID:.+``
+      * Pattern: ``cpe:.+``
+      * Pattern: ``biotools:[_\-.0-9a-zA-Z]*``
       
   * type
       * Required: No
@@ -530,7 +530,7 @@ otherID object definition
       * Cardinality: 1 only
       * Type: String
       * Restrictions: Min length: 1, Max length: 100
-      *	Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+      *	Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
 
 **Example**
 
@@ -1279,7 +1279,7 @@ Restrictions
 
   Max length: 100
 
-  Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+  Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
     
 **Example**
 
@@ -1566,7 +1566,7 @@ Download object definition
 	* Cardinality: todo
         * Type: String
         * Restrictions: Min length: 1, Max length: 100
-	* Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+	* Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
 	  
 **Example**
 
@@ -1695,17 +1695,17 @@ Publication object definition
         * Required: No
 	* Cardinality: todo
         * Type: PMCID
-	* Pattern: (PMC)[1-9][0-9]{0,8}
+	* Pattern: ``(PMC)[1-9][0-9]{0,8}``
     * pmid
         * Required: No
 	* Cardinality: todo	  
         * Type: PMID
-  	* Pattern: [1-9][0-9]{0,8}
+  	* Pattern: ``[1-9][0-9]{0,8}``
     * doi
         * Required: No
 	* Cardinality: todo	  
         * Type: DOI
-	* Pattern: 10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+
+	* Pattern: ``10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+``
     * type
         * Required: No
 	* Cardinality: todo	  
@@ -1722,7 +1722,7 @@ Publication object definition
 	* Cardinality: todo	  
         * Type: String
         * Restrictions: Min length: 1, Max length: 100
-	* Pattern: [\p{Zs}A-Za-z0-9+\.,\-_:;()]*
+	* Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
 
 **Example**
 
