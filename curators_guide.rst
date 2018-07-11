@@ -251,7 +251,7 @@ Other IDs
 - **3.** **MAY** specify the type of identifier (see below)
 
 .. csv-table::
-   :header: "Maturity", "Description"
+   :header: "Type", "Description"
    :widths: 25, 100
 
    "doi", "Digital Object Identifier of the software assigned (typically) by the software developer or service provider."
@@ -262,6 +262,10 @@ Other IDs
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#other-ids>`_.
 
+.. attention::
+   Alternative IDs of type ``biotoolsCURIE`` are set (and can only be changed) by bio.tools admin. They allow bio.tools to support multiple `biotoolsIDs <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_ (hence resolvable Tool Card URLs) for a single tool; this done in exceptional circumstances only, *e.g.* the name of a tool is changed.
+
+     
 Value
 ~~~~~
 *Value of tool identifier, e.g. "RRID:SCR_001156"*

@@ -49,7 +49,7 @@ A sample JSON document may look like this:
             "version": "4.1"
          },
          {
-            "value": "10.1007/978-1-4939-7015-5_6",
+            "value": "doi:10.1007/978-1-4939-7015-5_6",
             "type": "doi"
             "version": "4.1"	    
          }
@@ -217,14 +217,14 @@ A sample JSON document may look like this:
       "publication":
       [
         {
-           "doi": "doi:10.1038/nmeth.1701",
+           "doi": "10.1038/nmeth.1701",
            "pmid": "21959131",
            "pmcid": "21959131",
            "type": "Primary",
            "version": "1.4"
         },
         {
-           "doi": "doi:10.1038/nmeth.1701",
+           "doi": "10.1038/nmeth.1701",
            "pmid": "21959131",
            "pmcid": "21959131",
            "type": "Other",
@@ -517,7 +517,7 @@ otherID object definition
       
   * type
       * Required: No
-      * Cardinality: 1 only	
+      * Cardinality: 0 or 1
       * Type: ENUM (list)
       * Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids>`_)
 	
@@ -528,7 +528,7 @@ otherID object definition
 	  
   * version
       * Required: No
-      * Cardinality: 1 only
+      * Cardinality: 0 or 1
       * Type: String
       * Restrictions: Min length: 1, Max length: 100
       *	Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
@@ -544,7 +544,7 @@ otherID object definition
         <version>4.1</version>
   </otherID>
   <otherID>
-        <value>10.1007/978-1-4939-7015-5_6</value>
+        <value>doi:10.1007/978-1-4939-7015-5_6</value>
         <type>doi</type>
         <version>4.1</version>
   </otherID>
@@ -581,7 +581,7 @@ Required
   No
 
 Cardinality
-  todo
+  0 to many
   
 Type
   List of function objects
@@ -590,24 +590,24 @@ Function object definition
   Content
     * :ref:`operation`
         * Required: Yes
-	* Cardinality: todo
+	* Cardinality: 1 to many
         * Type: List of EDAM objects
     * :ref:`input`
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 to many
         * Type: List of input objects
     * :ref:`output`
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 to many
         * Type: List of output objects
     * note
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: min length: 10, max length: 1000
     * cmd
         * Required: No
-	* Cardinlity: todo
+	* Cardinlity: 0 or 1
         * Type: String
         * Restrictions: min length: 1, max length: 100	  
 
@@ -739,10 +739,10 @@ Attribute name
   operation
 
 Required
-  Yes
+  Yes (if Function specified), No (otherwise)
 
 Cardinality
-  todo
+  1 to many
   
 Child of
   :ref:`function`
@@ -754,11 +754,11 @@ EDAM object definition
   Content
     * uri
         * Required: No (if term present), Yes (otherwise)
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: URL
     * term
         * Required: No (if URI present), Yes (otherwise)
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: String
 
 .. note::
@@ -808,7 +808,7 @@ Required
   No
 
 Cardinality
-  todo
+  0 to many
   
 Child of
   :ref:`function`
@@ -820,11 +820,11 @@ Input object definition
   Content
     * data
         * Required: Yes
-	* Cardinality: todo
+	* Cardinality: 1 only
         * Type: EDAM object
     * format
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 to many
         * Type: List of EDAM objects
 
 **Example**
@@ -873,7 +873,7 @@ Required
   No
 
 Cardinality
-  todo
+  0 to many
   
 Child of
   :ref:`function`
@@ -885,11 +885,11 @@ Output object definition
   Content
     * data
         * Required: Yes
-	* Cardinality: todo
+	* Cardinality: 1 only
         * Type: EDAM object
     * format
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 to many
         * Type: List of EDAM objects
 
 **Example**
@@ -935,10 +935,10 @@ Attribute name
   data
 
 Required
-  Yes
+  Yes (if Input or Output specified), No (otherwise)
 
 Cardinality
-  todo
+  1 only
   
 Child of
   :ref:`input` or :ref:`output`
@@ -950,11 +950,11 @@ EDAM object definition
   Content
     * uri
         * Required: No (if term present), Yes (otherwise)
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: URL
     * term
         * Required: No (if URI present), Yes (otherwise)
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: String
 
 .. note::
@@ -993,7 +993,7 @@ Required
   No
 
 Cardinality
-  todo
+  0 to many
   
 Child of
   :ref:`input` or :ref:`output`
@@ -1005,11 +1005,11 @@ EDAM object definition
   Content
     * uri
         * Required: No (if term present), Yes (otherwise)
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: URL
     * term
         * Required: No (if URI present), Yes (otherwise)
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: String
 
 .. note::
@@ -1110,11 +1110,11 @@ EDAM object definition
   Content
     * uri
         * Required: No (if term present), Yes (otherwise)
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: URL
     * term
         * Required: No (if URI present), Yes (otherwise)
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: String
 
 **Example**
@@ -1744,7 +1744,7 @@ Publication object definition
     {
       "pmcid": "21959131",
       "pmid": "21959131",
-      "doi": "doi:10.1038/nmeth.1701",
+      "doi": "10.1038/nmeth.1701",
       "type": "Primary",
       "version": "4.0"
     }

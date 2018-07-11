@@ -8,9 +8,9 @@ An API (Application programming interface) is a protocol intended to be used as 
 
 If you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
 
-List resources
-------------------
-List and search through all the available resources. Can sort, filter, and search the results.
+List tools
+----------
+List and search through all the available tools. Can sort, filter, and search the results.
 
 *HTTP GET*
 
@@ -51,16 +51,15 @@ These are attributes supported by bio.tools
 
 .. code-block:: js
 
-  name, description, homepage, biotoolsID, version, 
+  name, description, homepage, biotoolsID, version, function, operation, input, inputDataType, inputDataFormat, output, outputDataType, outputDataFormat, 
    
-, topic, function, operation, input, 
-  inputDataFormat, inputDataType, output, outputDataFormat, 
-  outputDataType, 
-  accessibility, toolType, collection, 
-  maturity, operatingSystem, language, 
-  cost, license, documentation, link, download, publication, 
-  credit, owner
+, topic, accessibility, toolType, collection, maturity, operatingSystem, language, cost, license, documentation, link, download, publication, credit, owner
 
+These attributes will be supported by bio.tools in due course:
+
+.. code-block:: js
+
+   otherID
   
 
 Example
@@ -70,22 +69,27 @@ Example
 
    curl -X GET "https://dev.bio.tools/api/tool/?page=1&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
 
+
+.. caution::
+   If querying by ``homepage`` you must quote the query value, *e.g.*
+   ```https://bio.tools/api/tool?homepage="http://cosbi4.ee.ncku.edu.tw/pirScan/"```
+
 Response data
 """""""""""""""""""
 ================== ========================================================================== =========================
 Key Name           Description                                                                Example
 ================== ========================================================================== =========================
-count              The total resource count results for your query                            2313
+count              The total tool count results for your query                                2313
 previous           Link to the previous page                                                  ?page=4
 next               Link to the next page                                                      ?page=6
-list               An array with multiple resources                                           ARRAY
+list               An array with multiple tools                                               ARRAY
                    and their relative information 
 ================== ========================================================================== =========================
 
 
-Resource detail
-------------------
-Obtain information about a single resource.
+Tool detail
+-----------
+Obtain information about a single tool.
 
 *HTTP GET*
 
@@ -101,7 +105,7 @@ Endpoint Parameters
 =========  ========  ======================  =======  ===================
 Parameter  Required  Type                    Default  Description        
 =========  ========  ======================  =======  ===================
-id         Yes       String                           Resource unique ID 
+id         Yes       String                           biotoolsID 
 format     No        String(json, xml, api)  json     Response media type
 =========  ========  ======================  =======  ===================
 
@@ -114,8 +118,8 @@ Example
    curl -X GET "https://dev.bio.tools/api/tool/signalp/?format=json"
 
 
-Register a resource
--------------------
+Register a tool
+---------------
 
 .. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
@@ -131,11 +135,11 @@ Endpoint Parameters
 =========  ========  ======== ====================================================================================================================================
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
-data       Yes       Resource Resource you wish to register.
-                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+data       Yes       Tool Tool you wish to register.
+                              See an `example tool <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
-.. note:: It is possible to specify editing permissions for resources. Learn how to manage :ref:`Editing_permissions`.
+.. note:: It is possible to specify editing permissions for tools. Learn how to manage :ref:`Editing_permissions`.
 
 Headers
 """"""""""
@@ -158,10 +162,10 @@ Example
    -d '<resource>' "https://dev.bio.tools/api/tool/"
 
 
-Validate registering a resource
+Validate registering a tool
 -------------------------------
 
-Test registering a resource without it actually being saved into the database.
+Test registering a tool without it actually being saved into the database.
 
 .. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
@@ -177,8 +181,8 @@ Endpoint Parameters
 =========  ========  ======== ====================================================================================================================================
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
-data       Yes       Resource Resource you wish to validate.
-                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+data       Yes       Tool     Tool you wish to validate.
+                              See an `example tool <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 
@@ -203,9 +207,9 @@ Example
    -d '<resource>' "https://dev.bio.tools/api/tool/validate/"
 
 
-Update a resource
+Update a tool
 ------------------
-Update a resource description.
+Update a tool description.
 
 .. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
@@ -222,12 +226,12 @@ Endpoint Parameters
 =========  ========  ======== ====================================================================================================================================
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
-id         Yes       String   Resource unique ID 
-data       Yes       Resource Description with which you wish to update the resource
-                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+id         Yes       String   biotoolsID 
+data       Yes       Tool     Description with which you wish to update the tool
+                              See an `example tool <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
-.. note:: It is possible to specify editing permissions for resources. Learn how to manage :ref:`Editing_permissions`.
+.. note:: It is possible to specify editing permissions for tools. Learn how to manage :ref:`Editing_permissions`.
 
 Headers
 """"""""""
@@ -251,9 +255,9 @@ Example
 
 
 
-Validate updating a resource
+Validate updating a tool
 -----------------------------
-Test updating a resource without it actually being saved into the database.
+Test updating a tool without it actually being saved into the database.
 
 .. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
@@ -270,9 +274,9 @@ Endpoint Parameters
 =========  ========  ======== ====================================================================================================================================
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
-id         Yes       String   Resource unique ID 
-data       Yes       Resource Description with which you wish to update the resource for validation
-                              See an `example resource <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+id         Yes       String   biotoolsID 
+data       Yes       Tool Description with which you wish to update the tool for validation
+                              See an `example tool <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 Headers
@@ -300,13 +304,13 @@ Example
 
 Editing permissions
 -------------------
-It is possible to manage editing permissions for the registered resources. There are currently three types of editing permissions supported by the system:
+It is possible to manage editing permissions for the registered tools. There are currently three types of editing permissions supported by the system:
 
 .. _Private:
 
 Private
 """""""
-A private resource can only be edited by the creator of the resource. This is the default option. In order to set this kind of permission, add the following info into the resource data:
+A private tool can only be edited by the creator of the tool. This is the default option. In order to set this kind of permission, add the following info into the tool data:
 
 .. code-block:: text
 
@@ -318,7 +322,7 @@ A private resource can only be edited by the creator of the resource. This is th
 
 Public
 """"""
-Public resource can be modified by any user registered in the system. In order to set this kind of permission, add the following info into the resource data:
+Public tool can be modified by any user registered in the system. In order to set this kind of permission, add the following info into the tool data:
 
 .. code-block:: text
 
@@ -330,7 +334,7 @@ Public resource can be modified by any user registered in the system. In order t
 
 Group
 """""
-Specify a list of users in the system that can edit the resource. In order to set this kind of permission, add the following info into the resource data:
+Specify a list of users in the system that can edit the tool. In order to set this kind of permission, add the following info into the tool data:
 
 .. code-block:: text
 
@@ -342,10 +346,10 @@ Specify a list of users in the system that can edit the resource. In order to se
     }
 
 
-Delete a resource
+Delete a tool
 ------------------
 
-Removes a resource from the registry.
+Removes a tool from the registry.
 
 .. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
@@ -362,7 +366,7 @@ Endpoint Parameters
 =========  ========  ======== ====================================================================================================================================
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
-id         Yes       String   Resource unique ID
+id         Yes       String   biotoolsID
 =========  ========  ======== ====================================================================================================================================
 
 
@@ -553,7 +557,7 @@ key                Authentication token
 Get user information
 --------------------------------
 
-Returns information about the logged in user account, including a list of registered resource (name, id, version, additionDate, lastUpdate)
+Returns information about the logged in user account, including a list of registered tool (name, id, version, additionDate, lastUpdate)
 
 .. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
@@ -596,7 +600,7 @@ Key Name           Description
 ================== ========================================================
 username           Account username
 email              Account email
-resources          List of registered resources 
+resources          List of registered tools 
                    (limited to name, id, version, additionDate, lastUpdate)
 ================== ========================================================
 
