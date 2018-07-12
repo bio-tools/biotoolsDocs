@@ -63,15 +63,28 @@ These are the attributes supported by bio.tools:
   output
   outputDataType
   outputDataFormat
-   
-, topic, accessibility, toolType, collection, maturity, operatingSystem, language, cost, license, documentation, link, download, publication, credit, owner
+  toolType
+  topic
+  operatingSystem
+  language
+  license
+  collectionID
+  maturity
+  cost
+
+  to confirm: documentation,  publication, credit, owner
 
 These attributes will be supported by bio.tools in due course:
 
 .. code-block:: js
 
-   otherID
-  
+  otherID
+  accessibility
+  link
+  linkType
+  download
+  downloadType
+  downloadVersion  
 
 Example
 """""""

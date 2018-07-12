@@ -1,4 +1,90 @@
 ## From curators_guide.rst
+Disk image format
+.................
+*Virtual machine disk image format*
+
+- **1.** **MUST** acurately specify the format of download of type "VM image", in terms from a controlled vocabulary (see below)
+
+.. csv-table::
+   :header: "Disk format", "Description"
+   :widths: 25, 100
+
+   "aki", "An Amazon kernel image"
+   "ami", "An Amazon machine image"
+   "ari", "An Amazon ramdisk image"
+   "iso", "An archive format for the data contents of an optical disc, such as CD-ROM"
+   "qcow2", "Supported by the QEMU emulator that can expand dynamically and supports Copy on Write"
+   "raw", "An unstructured disk image format; if you have a file without an extension it is possibly a raw format"
+   "vdi", "Supported by VirtualBox virtual machine monitor and the QEMU emulator"
+   "vhd", "The VHD disk format, a common disk format used by virtual machine monitors from VMware, Xen, Microsoft, VirtualBox, and others"
+   "vmdk", "Common disk format supported by many common virtual machine monitors"
+
+Container format
+................
+*Container format*
+
+- **1.** **MUST** acurately specify the format of download of type "Container file", in terms from a controlled vocabulary (see below)
+
+.. csv-table::
+   :header: "Container format", "Description"
+   :widths: 25, 100
+
+   "aki", "An Amazon kernel image"
+   "ami", "An Amazon machine image"
+   "ari", "An Amazon ramdisk image"
+   "bare", "The image does not have a container or metadata envelope"
+   "docker", "A docker container format"
+   "ovf", "The OVF container format"
+   "rkt", "Rocket container image"
+   "singularity", "Singularity container format"
+
+
+
+
+
+## From api_attribute_model_dev.rst
+          "diskFormat": "raw",
+          "diskFormat": "raw",
+    * diskFormat
+        * Required: No
+	* Cardinality: 1 only
+        * Type: ENUM
+        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#diskformat>`_)
+
+	  - ``aki``
+	  - ``ami``
+    	  - ``ari``
+	  - ``iso``
+  	  - ``qcow2``
+    	  - ``raw``
+  	  - ``vdi``
+    	  - ``vhd``
+       	  - ``vmdk``
+    * containerFormat
+        * Required: No
+	* Cardinality: 1 only
+        * Type: ENUM
+        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#containerformat>`_)
+
+	  - ``aki``
+	  - ``ami``
+  	  - ``ari``
+	  - ``bare``
+  	  - ``docker``
+          - ``ovf``
+	  - ``rkt``
+	  - ``singularity``  	    
+   <diskFormat>raw</diskFormat>
+      "diskFormat": "raw",
+
+      "containerFormat": "docker", 
+          "containerFormat": "docker", 
+   <containerFormat>docker</containerFormat>
+      "containerFormat": "docker", 
+
+
+
+## From curators_guide.rst
 
 Short description
 .................
