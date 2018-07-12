@@ -1,16 +1,15 @@
 API endpoints - development
 ===========================
 
-.. note:: This is the API documentation for upcoming features, available on the dev server at https://dev.bio.tools.
+.. important:: This is the API documentation for upcoming features, available on the dev server at https://dev.bio.tools.
 
-This is a lightweight web service with a REST interface, which provides an easy way to access the bio.tools database. 
-An API (Application programming interface) is a protocol intended to be used as an interface by software components to communicate with each other. 
-
-If you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+.. note::
+   The bio.tools Web API provides an easy way to access the bio.tools database.
+   If you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
 
 List tools
 ----------
-List and search through all the available tools. Can sort, filter, and search the results.
+*List and search through all the available tools. Can sort, filter, and search the results.*
 
 *HTTP GET*
 
@@ -45,9 +44,9 @@ To filter the results by attribute name, the attribute name has to be added as a
 .. _Attributes:
 
 Attributes
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~
 
-These are attributes supported by bio.tools
+These are the attributes supported by bio.tools:
 
 .. code-block:: js
 
@@ -63,7 +62,7 @@ These are attributes supported by bio.tools
   inputDataFormat
   output
   outputDataType
-  outputDataFormat, 
+  outputDataFormat
    
 , topic, accessibility, toolType, collection, maturity, operatingSystem, language, cost, license, documentation, link, download, publication, credit, owner
 
@@ -75,7 +74,7 @@ These attributes will be supported by bio.tools in due course:
   
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -87,7 +86,7 @@ Example
    ```https://bio.tools/api/tool?homepage="http://cosbi4.ee.ncku.edu.tw/pirScan/"```
 
 Response data
-"""""""""""""""""""
+"""""""""""""
 ================== ========================================================================== =========================
 Key Name           Description                                                                Example
 ================== ========================================================================== =========================
@@ -101,7 +100,7 @@ list               An array with multiple tools                                 
 
 Tool detail
 -----------
-Obtain information about a single tool.
+*Obtain information about a single tool.*
 
 *HTTP GET*
 
@@ -123,7 +122,7 @@ format     No        String(json, xml, api)  json     Response media type
 
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -133,7 +132,10 @@ Example
 Register a tool
 ---------------
 
-.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+*Register a new tool.*
+
+
+.. important:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP POST*
 
@@ -154,18 +156,18 @@ data       Yes       Tool Tool you wish to register.
 .. note:: It is possible to specify editing permissions for tools. Learn how to manage :ref:`Editing_permissions`.
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
-Content-Type   Yes       String(application/json,                   Resource media type
+Content-Type   Yes       String(application/json,                   Media type
                          application/xml)   
 Authorization  Yes       String('Token <authorization token>')      Authorization header.
                                                                     Learn how to :ref:`Token`.
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -175,11 +177,12 @@ Example
 
 
 Validate registering a tool
--------------------------------
+---------------------------
 
-Test registering a tool without it actually being saved into the database.
+*Test registering a tool without it actually being saved into the database.*
 
-.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+.. important::
+   This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP POST*
 
@@ -199,18 +202,18 @@ data       Yes       Tool     Tool you wish to validate.
 
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
-Content-Type   Yes       String(application/json,                   Resource media type
+Content-Type   Yes       String(application/json,                   Media type
                          application/xml)   
 Authorization  Yes       String('Token <authorization token>')      Authorization header.
                                                                     Learn how to :ref:`Token`.
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -220,10 +223,10 @@ Example
 
 
 Update a tool
-------------------
-Update a tool description.
+-------------
+*Update a tool description.*
 
-.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+.. important:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP PUT*
 
@@ -246,18 +249,18 @@ data       Yes       Tool     Description with which you wish to update the tool
 .. note:: It is possible to specify editing permissions for tools. Learn how to manage :ref:`Editing_permissions`.
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
-Content-Type   Yes       String(application/json,                   Resource media type
+Content-Type   Yes       String(application/json,                   Media type
                          application/xml)   
 Authorization  Yes       String('Token <authorization token>')      Authorization header.
                                                                     Learn how to :ref:`Token`.
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -268,10 +271,11 @@ Example
 
 
 Validate updating a tool
------------------------------
-Test updating a tool without it actually being saved into the database.
+------------------------
+*Test updating a tool without it actually being saved into the database.*
 
-.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+.. important::
+   This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP PUT*
 
@@ -292,18 +296,18 @@ data       Yes       Tool Description with which you wish to update the tool for
 =========  ========  ======== ====================================================================================================================================
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
-Content-Type   Yes       String(application/json,                   Resource media type
+Content-Type   Yes       String(application/json,                   Media type
                          application/xml)   
 Authorization  Yes       String('Token <authorization token>')      Authorization header.
                                                                     Learn how to :ref:`Token`.
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -316,7 +320,9 @@ Example
 
 Editing permissions
 -------------------
-It is possible to manage editing permissions for the registered tools. There are currently three types of editing permissions supported by the system:
+*Manage editing permissions for the registered tools.*
+
+There are currently three types of editing permissions supported by the system:
 
 .. _Private:
 
@@ -359,11 +365,12 @@ Specify a list of users in the system that can edit the tool. In order to set th
 
 
 Delete a tool
-------------------
+-------------
 
-Removes a tool from the registry.
+*Removes a tool from the registry.*
 
-.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+.. important::
+   This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP DELETE*
 
@@ -383,7 +390,7 @@ id         Yes       String   biotoolsID
 
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
@@ -392,7 +399,7 @@ Authorization  Yes       String('Token <authorization token>')      Authorizatio
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -402,8 +409,8 @@ Example
 
 
 List used terms
-------------------
-Obtain a list of terms registered with tools for some attributes, e.g. a list of names of all tools.
+---------------
+*Obtain a list of terms registered with tools for some attributes, e.g. a list of names of all tools.*
 
 *HTTP GET*
 
@@ -422,14 +429,14 @@ format     No        String(json, xml, api)                                     
 
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
    curl -X GET "https://dev.bio.tools/api/used-terms/name/?format=json"
 
 Response data
-"""""""""""""""""""
+"""""""""""""
 ================== ====================
 Key Name           Description         
 ================== ====================
@@ -440,7 +447,7 @@ data               A list of used terms
 Create a user account
 ---------------------
 
-Creates a user account and emails a verification email.
+*Creates a user account and emails a verification email.*
 
 *HTTP POST*
 
@@ -449,7 +456,7 @@ Creates a user account and emails a verification email.
     https://dev.bio.tools/api/rest-auth/registration/
 
 POST data
-"""""""""""""""""""
+"""""""""
 ==================  ========  ======  ========================================================================== =========================
 Key Name            Required  Type    Description                                                                Example
 ==================  ========  ======  ========================================================================== =========================
@@ -460,7 +467,7 @@ email               Yes       String  Account email. The verification email will
 ==================  ========  ======  ========================================================================== =========================
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
@@ -469,7 +476,7 @@ Content-Type   Yes       String(application/json,                   POST data me
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -483,7 +490,7 @@ Example
 Verify a user account
 ---------------------
 
-Verifies a user account based on the emailed verification key.
+*Verifies a user account based on the emailed verification key.*
 
 *HTTP POST*
 
@@ -492,7 +499,7 @@ Verifies a user account based on the emailed verification key.
     https://dev.bio.tools/api/rest-auth/registration/verify-email/
 
 POST data
-"""""""""""""""""""
+"""""""""
 ==================  ========  ======  ========================================================================== ================================================================
 Key Name            Required  Type    Description                                                                Example
 ==================  ========  ======  ========================================================================== ================================================================
@@ -500,7 +507,7 @@ key                 Yes       String  Verification key from account creation ema
 ==================  ========  ======  ========================================================================== ================================================================
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
@@ -509,7 +516,7 @@ Content-Type   Yes       String(application/json,                   POST data me
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -521,9 +528,9 @@ Example
 .. _Token:
 
 Log in / obtain token
---------------------------------
+---------------------
 
-Logs the user in and returns an authentication token.
+*Logs the user in and returns an authentication token.*
 
 *HTTP POST*
 
@@ -532,7 +539,7 @@ Logs the user in and returns an authentication token.
     https://dev.bio.tools/api/rest-auth/login/
 
 POST data
-"""""""""""""""""""
+"""""""""
 ==================  ========  ======  ========================================================================== =========================
 Key Name            Required  Type    Description                                                                Example
 ==================  ========  ======  ========================================================================== =========================
@@ -541,7 +548,7 @@ password            Yes       String  Password                                  
 ==================  ========  ======  ========================================================================== =========================
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
@@ -550,7 +557,7 @@ Content-Type   Yes       String(application/json,                   POST data me
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -559,7 +566,7 @@ Example
    "https://dev.bio.tools/api/rest-auth/login/"
 
 Response data
-"""""""""""""""""""
+"""""""""""""
 ================== ====================
 Key Name           Description         
 ================== ====================
@@ -567,11 +574,11 @@ key                Authentication token
 ================== ====================
 
 Get user information
---------------------------------
+--------------------
+*Return information about the logged in user account, including a list of registered tool (name, id, version, additionDate, lastUpdate)*
 
-Returns information about the logged in user account, including a list of registered tool (name, id, version, additionDate, lastUpdate)
-
-.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+.. important::
+   This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP GET*
 
@@ -588,7 +595,7 @@ format     No        String(json, xml, api)                                     
 =========  ========  ==============================================================  =======  ==========================================================
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
@@ -597,7 +604,7 @@ Authorization  Yes       String('Token <authorization token>')      Authorizatio
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -606,7 +613,7 @@ Example
    "https://dev.bio.tools/api/rest-auth/user/?format=json"
 
 Response data
-"""""""""""""""""""
+"""""""""""""
 ================== ========================================================
 Key Name           Description         
 ================== ========================================================
@@ -618,9 +625,11 @@ resources          List of registered tools
 
 
 Log out
-------------------
+-------
+*Log out of the system.*
 
-.. note:: This method requires the user to be authenticated. Learn how to :ref:`Token`.
+.. important::
+   This method requires the user to be authenticated. Learn how to :ref:`Token`.
 
 *HTTP POST*
 
@@ -629,7 +638,7 @@ Log out
     https://dev.bio.tools/api/rest-auth/logout/
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
@@ -638,7 +647,7 @@ Authorization  Yes       String('Token <authorization token>')      Authorizatio
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -648,9 +657,9 @@ Example
 
 
 Reset user password
---------------------------------
+-------------------
 
-Sends a password reset email.
+*Send a password reset email.*
 
 *HTTP POST*
 
@@ -659,7 +668,7 @@ Sends a password reset email.
     https://dev.bio.tools/api/rest-auth/password/reset/
 
 POST data
-"""""""""""""""""""
+"""""""""
 ==================  ========  ======  ========================================================================== =========================
 Key Name            Required  Type    Description                                                                Example
 ==================  ========  ======  ========================================================================== =========================
@@ -667,7 +676,7 @@ email               Yes       String  Account email                             
 ==================  ========  ======  ========================================================================== =========================
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
@@ -676,7 +685,7 @@ Content-Type   Yes       String(application/json,                   POST data me
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -685,9 +694,9 @@ Example
    "https://dev.bio.tools/api/rest-auth/password/reset/"
 
 Confirm password reset
---------------------------------
+----------------------
 
-Confirms a password reset using uid and token from a password reset email.
+*Confirm a password reset using uid and token from a password reset email.*
 
 *HTTP POST*
 
@@ -696,7 +705,7 @@ Confirms a password reset using uid and token from a password reset email.
     https://dev.bio.tools/api/rest-auth/password/reset/confirm/
 
 POST data
-"""""""""""""""""""
+"""""""""
 ==================  ========  ======  ========================================================================== =========================
 Key Name            Required  Type    Description                                                                Example
 ==================  ========  ======  ========================================================================== =========================
@@ -707,7 +716,7 @@ password2           Yes       String  New password repeated                     
 ==================  ========  ======  ========================================================================== =========================
 
 Headers
-""""""""""
+"""""""
 =============  ========  =========================================  ==============================================================================================
 Parameter      Required  Allowed values                             Description        
 =============  ========  =========================================  ==============================================================================================
@@ -716,7 +725,7 @@ Content-Type   Yes       String(application/json,                   POST data me
 =============  ========  =========================================  ==============================================================================================
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
@@ -727,7 +736,7 @@ Example
 
 Stats
 -----
-Compile stats about a the registry.
+*Compile stats about a the registry.*
 
 *HTTP GET*
 
@@ -736,7 +745,7 @@ Compile stats about a the registry.
     https://dev.bio.tools/api/stats
 
 Example
-"""""""""""""""""""
+"""""""
 
 .. code-block:: bash
 
