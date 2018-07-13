@@ -72,7 +72,7 @@ Consider the following *before* creating a bio.tools entry:
 5. **Plan** how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_.
 6. **Read** the general `EDAM annotations guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
-.. _Tool functions:
+.. _Toolfunctions:
    
 Tool functions 
 ^^^^^^^^^^^^^^^
