@@ -557,6 +557,58 @@ Accessibility
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#accessibility>`_.
 
 
+ELIXIR Platform
+...............
+*Name of the ELIXIR Platform that is credited, e.g. "Tools"*
+
+- **1.** **MUST** only credit the ELIXIR Platform if directly contributing to the work, using a term from a controlled vocabulary (see below)
+
+.. csv-table::
+   :header: "ELIXIR Platform", "Description"
+   :widths: 25, 100
+	    
+   "Data", "ELIXIR Data Platform"
+   "Tools", "ELIXIR Tools Platform"
+   "Compute", "ELIXIR Compute Platform"
+   "Interoperability", "ELIXIR Interoperability Platform"
+   "Training", "ELIXIR Training Platform"
+
+ELIXIR Node
+...........
+*Name of the ELIXIR Node that is credited, e.g. "Norway"*
+
+- **1.** **MUST** only credit the ELIXIR Node if directly contributing to the work, using a term from a controlled vocabulary (see below)
+
+.. csv-table::
+   :header: "ELIXIR Node"
+   :widths: 25
+	    
+   "Belgium"
+   "Czech Republic"
+   "Denmark"
+   "EMBL"
+   "Estonia"
+   "Finland"
+   "France"
+   "Germany"
+   "Greece"
+   "Hungary"
+   "Ireland"
+   "Israel"
+   "Italy"
+   "Luxembourg"
+   "Netherlands"
+   "Norway"
+   "Portugal"
+   "Slovenia"
+   "Spain"
+   "Sweden"
+   "Switzerland"
+   "UK"
+     
+
+     
+
 Links group
 ^^^^^^^^^^^
 *Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
@@ -775,7 +827,7 @@ Credits group
 
 
 .. note::
-   - a credit consists either simply the name of an ELIXIR Platform or ELIXIR node *or* the name of some other entity that is credited, with associated metadata
+   - a credit consists of the name, email and/or URL of some entity that is credited, with other associated metadata
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#credit>`_.
 
 
@@ -788,56 +840,6 @@ Name (credit)
 - **2.** **MUST NOT** give a redirect, *e.g.* "See publication", a URL, or any information other than the name of the entity that is credited.
 
 
-ELIXIR Platform
-...............
-*Name of the ELIXIR Platform that is credited, e.g. "Tools"*
-
-- **1.** **MUST** only credit the ELIXIR Platform if directly contributing to the work, using a term from a controlled vocabulary (see below)
-
-.. csv-table::
-   :header: "ELIXIR Platform", "Description"
-   :widths: 25, 100
-	    
-   "Data", "ELIXIR Data Platform"
-   "Tools", "ELIXIR Tools Platform"
-   "Compute", "ELIXIR Compute Platform"
-   "Interoperability", "ELIXIR Interoperability Platform"
-   "Training", "ELIXIR Training Platform"
-
-ELIXIR Node
-...........
-*Name of the ELIXIR Node that is credited, e.g. "Norway"*
-
-- **1.** **MUST** only credit the ELIXIR Node if directly contributing to the work, using a term from a controlled vocabulary (see below)
-
-.. csv-table::
-   :header: "ELIXIR Node"
-   :widths: 25
-	    
-   "Belgium"
-   "Czech Republic"
-   "Denmark"
-   "EMBL"
-   "Estonia"
-   "Finland"
-   "France"
-   "Germany"
-   "Greece"
-   "Hungary"
-   "Ireland"
-   "Israel"
-   "Italy"
-   "Luxembourg"
-   "Netherlands"
-   "Norway"
-   "Portugal"
-   "Slovenia"
-   "Spain"
-   "Sweden"
-   "Switzerland"
-   "UK"
-
-     
 ORCID ID
 ........
 *Unique identifier (ORCID iD) of a person that is credited, e.g. "http://orcid.org/0000-0002-1825-0097"*
@@ -877,7 +879,7 @@ Entity type
    "Project", "Credit of a community software project not formally associated with any single institute."
    "Division", "Credit of or a formal part of an institutional organisation, e.g. a department, research group, team, etc"
    "Institute", "Credit of an organisation such as a university, hospital, research institute, service center, unit etc."
-   "Consortium", "Credit of an association of two or more institutes or other legal entities which have joined forces for some common purpose.  Includes Research Infrastructures (RIs) such as ELIXIR, parts of an RI such as an ELIXIR node etc. "
+   "Consortium", "Credit of an association of two or more institutes or other legal entities which have joined forces for some common purpose.  Includes Research Infrastructures (RIs) such as ELIXIR."
    "Funding agency", "Credit of a legal entity providing funding for development of the software or provision of an online service."
 
 	    
