@@ -35,7 +35,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
    - advice given in boxes (notes, tips, caution *etc.* are not verified
 
 
-     
+.. _generalguidelines:
+
 General guidelines
 ------------------
 
@@ -72,7 +73,7 @@ Consider the following *before* creating a bio.tools entry:
 5. **Plan** how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_.
 6. **Read** the general `EDAM annotations guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
-.. _Toolfunctions:
+.. _toolfunctions:
    
 Tool functions 
 ^^^^^^^^^^^^^^^
@@ -97,6 +98,8 @@ Plan how how to describe the software:
 
    Input on this issue is welcomed via `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/83>`_.
 
+.. _edamannotations:
+   
 EDAM annotations
 ^^^^^^^^^^^^^^^^
 The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used to annotate applicable `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_, `operations <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_, and the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_ of inputs and outputs. The general guidelines below apply for all EDAM annotations.
@@ -212,8 +215,8 @@ Homepage
 
 
 
-Version
-.......
+Version (tool)
+..............
 *Version information (typically a version number) of the software applicable to this bio.tools entry, e.g. "6.4.0.0"*
 
 - **1.** **MUST** correctly identify the tool version as described by the other attributes (see note below)
@@ -571,7 +574,7 @@ URL (link)
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available  
 - **3.** **MUST NOT** specify a link of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
 
-.. _link-type:
+.. _linktype:
      
 Link type
 .........
@@ -681,6 +684,7 @@ URL (documentation)
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
 - **3.** **MUST NOT** specify documentation of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
   
+.. _documentationtype:
 
 Documentation type
 ..................
@@ -908,6 +912,8 @@ Note (credit)
 Tool type guidelines
 --------------------
 
+.. _commandlinetool:
+
 Command-line tool
 ^^^^^^^^^^^^^^^^^
 **A tool with a text-based (command-line) interface.**
@@ -982,6 +988,8 @@ Suite
 	 
 .. attention:: **do not** annotate the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <>`_ of input and output data, *unless* all tools in the suite happen to have these in common
 
+.. _webapplication:
+
 Web application
 ^^^^^^^^^^^^^^^
 **A tool with a graphical user interface that runs in your Web browser.**
@@ -991,7 +999,8 @@ Web application
 .. note::
    - for software that essentially just wraps or provides an interface to some other tool, *e.g.* a web application or web service over an existing tool, use the pattern ``toolName providerName`` where ``providerName`` is a name (without spaces) of some institute, workbench, collection *etc.*, *e.g.* ``cufflinks cloudIFB``.  **Do not** misappropriate the original name!     
 
-     
+.. _webapi:
+
 Web API
 ^^^^^^^
 **An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP. Includes everything from simple data-access URLs to RESTful APIs.**
@@ -1009,6 +1018,7 @@ Web API
 .. note::
    - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in bio.tools
 
+.. _webservice:     
      
 Web service
 ^^^^^^^^^^^
@@ -1062,6 +1072,8 @@ Further guidelines (bio.tools admin only)
 -----------------------------------------
 .. attention::
    The guidelines that follow are for attributes and other aspects under the control of bio.tools admin.  If you're not a bio.tools admin you can ignore this section.
+
+.. _biotoolsid:
 
 biotoolsID
 ^^^^^^^^^^
