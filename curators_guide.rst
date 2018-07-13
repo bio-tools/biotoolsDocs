@@ -36,8 +36,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 
      
-General guidelines
-------------------
+General guideline
+-----------------
 
 Before you start
 ^^^^^^^^^^^^^^^^
@@ -72,8 +72,8 @@ Consider the following *before* creating a bio.tools entry:
 5. **Plan** how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_.
 6. **Read** the general `EDAM annotations guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
 
-Tool functions
-^^^^^^^^^^^^^^
+Tool function
+^^^^^^^^^^^^^
 bio.tools uses a model of software (see below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
   
@@ -132,8 +132,8 @@ Summary group
 ^^^^^^^^^^^^^
 *Basic information about the software.*
 
-Name
-....
+Name (tool)
+...........
 *Canonical software name assigned by the software developer or service provider, e.g. "needle"*
 
 - **1.** **MUST** use name in common use, *e.g.* in the tool homepage and publication.
