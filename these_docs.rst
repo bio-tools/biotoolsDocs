@@ -1,5 +1,8 @@
-Documentors Guide
-=================
+These docs
+==========
+
+.. note::
+   Help with these docs is greatly appreciated.  You can work on them directly via `GitHub <https://github.com/bio-tools/biotoolsDocs>`_ or make comments, requests, report bugs *etc* by using the `issue tracker <https://github.com/bio-tools/biotoolsdocs/issues>`_.
 
 Documentation for `bio.tools <https://bio.tools>`_  and related projects are maintained in GitHub:
 

@@ -19,7 +19,6 @@ Contents:
    User Guide <user_guide>
    Curators Guide <curators_guide>
    Editors Guide <editors_guide>
-   Documentors Guide <documentors_guide>
    API reference <api_reference>
    API reference - development <api_reference_dev>
    API Attribute model - development <api_attribute_model_dev>
@@ -33,6 +32,7 @@ Contents:
    License <license>
    Publications <publications>
    Support <support>
+   These docs <these_docs>
 
 ..  Status reports <status_reports>
    
