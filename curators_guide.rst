@@ -272,8 +272,8 @@ Value
 
 - **1.** **MUST** specify a valid identifier for the tool.
 
-Type
-~~~~
+Type (otherID)
+~~~~~~~~~~~~~~
 *Type of tool identifier, e.g. "rrid"*
 
 - **1.** **MAY** specify the applicable type, in terms from a controlled vocabulary (see below) - although this should not normally be necessary
@@ -340,8 +340,8 @@ Data format (input and output data)
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#format>`_.
        
     
-Note
-.......
+Note (function)
+...............
 *Concise comment about this function, if not apparent from the software description and EDAM annotations, e.g. "This option is slower, but more precise.*"
 
 - **1.** **MUST** not duplicate what is already apparent from the EDAM annotations
@@ -561,8 +561,8 @@ Links group
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#link>`_.
    
 
-URL
-...
+URL (link)
+..........
 *A link of some relevance to the software (URL), e.g. "https://github.com/pharmbio/sciluigi/issues"*
 
 - **1.** **MUST** resolve to a page of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#link-type>`_
@@ -591,8 +591,8 @@ Link type
    "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
    "Scientific benchmark", "Information about the scientific performance of a tool."
    "Technical monitoring", "Information about the technical status of a tool."													
-Note
-....
+Note (link)
+...........
 
 *Comment about the link, e.g. "Please use the issue tracker for reporting bugs and making features requests."*
 
@@ -609,8 +609,8 @@ Download group
   - the bio.tools registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#download>`_.
 
-URL
-...
+URL (download)
+..............
 *Link to download (or repo providing a download) for the software, e.g. "http://bioconductor/packages/release/bioc/src/contrib/VanillaICE_1.36.0.tar.gz"*
 
 - **1.** **MUST** resolve to a page providing either an immediately download, or links for a download of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_
@@ -646,15 +646,15 @@ Download type
    "Tool wrapper (other)", "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software."
    "VM image", "Virtual machine (VM) image for the software."
 
-Note
-....
+Note (download)
+...............
 *Comment about the download, e.g. "Complete distibution"*
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
 
-Version
-.......
+Version (download)
+..................
 *Version information (typically a version number) of the software applicable to this download.*
 
 - **1.** **MUST** correctly identify the applicable tool version 
@@ -671,8 +671,8 @@ Documentation group
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#documentation>`_.
 
 
-URL
-...
+URL (documentation)
+...................
 *Link to documentation on the web for the tool, e.g. "http://bioconductor.org/packages/release/bioc/html/VanillaICE.html"*
 
 - **1.** **MUST** resolve to a page of the indicated `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_
@@ -702,8 +702,8 @@ Documentation type
    "Tutorial", "A tutorial about using the software."
    "Other", "Some other type of documentation not listed in biotoolsSchema."
 
-Note
-....
+Note (documentation)
+....................
 *Comment about the documentation, e.g. "Comprehensive usage information suitable for biologist end-users."*
 
 - **1.** **SHOULD** be concise and summarise only practical information about the link
@@ -752,8 +752,8 @@ Publication type
    "Review", "A publication where the tool was reviewed."
    "Other", "A publication of relevance to the tool but not fitting the other categories."
 
-Version
-.......
+Version (publication)
+.....................
 *Version information (typically a version number) of the software applicable to this publication.*
 
 - **1.** **MUST** correctly identify the applicable tool version 
@@ -774,8 +774,8 @@ Credits group
 
 
      
-Name
-....
+Name (credit)
+.............
 *Name of the entity that is credited, e.g. "EMBL EBI"*
 
 - **1.** **MUST** give the first and last names of a person, or the correct name of some other entity.
@@ -850,8 +850,8 @@ Email
 - **2.** **MUST NOT** specify an email address that is not publicly acknowledged as credit for the software, *e.g.* on a webpage or in a publication
 - **3.** **MUST NOT** specify a stale (obsolete) email address
 
-URL
-...
+URL (credit)
+............
 *URL for the entity that is credited, e.g. homepage of an institute, e.g. "http://www.ebi.ac.uk/"*
 
 - **1.** **MUST** resolve to a page of information directly relevant to the credited entity
@@ -894,8 +894,8 @@ Entity role
    "Support", "Provider of support in using the software."
    "Primary contact", "The primary point of contact for the software."
 
-Note
-....
+Note (credit)
+.............
 *A comment about the credit, e.g. "Wrote the user manual."*
 
 - **1.** **SHOULD** be concise and acurate, elaborating on the contribution of the credited entity
