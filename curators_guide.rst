@@ -278,8 +278,8 @@ Type
 
 - **1.** **MAY** specify the applicable type, in terms from a controlled vocabulary (see below) - although this should not normally be necessary
 
-Version
-~~~~~~~
+Version (otherID)
+~~~~~~~~~~~~~~~~~
 *Version information (typically a version number) of the software applicable to this identifier, e.g. "1.4"*
 
 - **1.** **MUST** correctly identify the applicable tool version 

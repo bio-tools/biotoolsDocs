@@ -72,7 +72,7 @@ These are the attributes supported by bio.tools:
   maturity
   cost
 
-  to confirm: documentation,  publication, credit, owner
+  to confirm: publication, credit, owner
 
 These attributes will be supported by bio.tools in due course:
 
@@ -80,12 +80,15 @@ These attributes will be supported by bio.tools in due course:
 
   otherID
   accessibility
-  link
+  linkNote 
   linkType
-  download
+  downloadNote
   downloadType
   downloadVersion  
+  documentationNote
+  documentationType
 
+  
 Example
 """""""
 

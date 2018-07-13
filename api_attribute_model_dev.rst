@@ -503,7 +503,7 @@ Type
 
 otherID object definition
   * value
-      * Required: Yes (if otherID specified), No (otherwise)
+      * Required: Yes
       * Cardinality: 1 only
       * Type: String
       * Pattern: ``(doi|DOI):?10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+``
@@ -735,7 +735,7 @@ Attribute name
   operation
 
 Required
-  Yes (if Function specified), No (otherwise)
+  Yes 
 
 Cardinality
   1 to many
@@ -931,7 +931,7 @@ Attribute name
   data
 
 Required
-  Yes (if Input or Output specified), No (otherwise)
+  Yes
 
 Cardinality
   1 only
@@ -1427,11 +1427,11 @@ Type
 Link object definition
   Content
     * url
-        * Required: Yes (if Link specified), No (otherwise)
+        * Required: Yes
 	* Cardinality: 1 only
         * Type: URL
     * type
-        * Required: Yes (if Link specified), No (otherwise)
+        * Required: Yes
 	* Cardinality: 1 only
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#id61>`_)
@@ -1447,7 +1447,7 @@ Link object definition
     	  - ``Scientific benchmark``
     	  - ``Technical monitoring``
     * note
-        * Required: Yes (if Link specified), No (otherwise)
+        * Required: No
 	* Cardinality: 0 to 1
         * Type: String
         * Restrictions: min length: 10, max length: 1000
@@ -1497,11 +1497,11 @@ Type
 Download object definition
   Content
     * url
-        * Required: Yes (if Download specified), No (otherwise)
+        * Required: Yes
 	* Cardinality: 1 only
         * Type: URL
     * type
-        * Required: (if Download specified), No (otherwise)
+        * Required: Yes
 	* Cardinality: 1 only
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_)
@@ -1575,7 +1575,7 @@ Required
   No
 
 Cardinality
-  todo
+  0 to many
   
 Type
   List of documentation objects
@@ -1648,7 +1648,7 @@ Required
   Yes
 
 Cardinality
-  todo
+  0 to many
   
 Type
   List of publication objects
@@ -1656,23 +1656,23 @@ Type
 Publication object definition
   Content
     * pmcid
-        * Required: No
+        * Required: One of doi, pmid or pmcid must be specified.
 	* Cardinality: todo
         * Type: PMCID
 	* Pattern: ``(PMC)[1-9][0-9]{0,8}``
     * pmid
-        * Required: No
+        * Required: One of doi, pmid or pmcid must be specified.
 	* Cardinality: todo	  
         * Type: PMID
   	* Pattern: ``[1-9][0-9]{0,8}``
     * doi
-        * Required: No
+        * Required: One of doi, pmid or pmcid must be specified.
 	* Cardinality: todo	  
         * Type: DOI
 	* Pattern: ``10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+``
     * type
         * Required: No
-	* Cardinality: todo	  
+	* Cardinality: 1 only	  
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-type>`_)
 	  - ``Primary``
@@ -1683,7 +1683,7 @@ Publication object definition
 	  - ``Other``
     * version
         * Required: No
-	* Cardinality: todo	  
+	* Cardinality: 1 only	  
         * Type: String
         * Restrictions: Min length: 1, Max length: 100
 	* Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
