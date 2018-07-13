@@ -292,7 +292,7 @@ Restrictions
 .. note::
    - name may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#id18>`_.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_.
 
 
 Description
@@ -1434,7 +1434,7 @@ Link object definition
         * Required: Yes
 	* Cardinality: 1 only
         * Type: ENUM
-        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#id61>`_)
+        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#linktype>`_)
 	  
 	  - ``Browser``
 	  - ``Helpdesk``

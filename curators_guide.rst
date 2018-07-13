@@ -13,7 +13,7 @@ bio.tools includes all types of bioinformatics *tools* - application software wi
 
 Usually, a bio.tools entry describes a discrete tool.  Some entries describe *collections* of tools, such as software suites.  The scope, *i.e.* the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ which uses the `EDAM ontology <https://github.com/edamontology/edamontology/>`_ as a source of terms for the tool scientific description.  These curation guidelines describe how to create a high quality tool description, above and beyond the syntactic and semantic constraints that are defined in biotoolsSchema and EDAM.
 
-- `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ include basic considerations, annotation of `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id12>`_ and the use of `EDAM <http://biotools.readthedocs.io/en/latest/curators_guide.html#id100>`_.  You should read these first of all.
+- `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ include basic considerations, annotation of `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ and the use of `EDAM <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.  You should read these first of all.
 - guidelines on `specific attributes <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ 
 - guidelines specific to individual `types of tools <http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type>`_
 
@@ -47,7 +47,7 @@ Consider the following *before* creating a bio.tools entry:
 1. **Are one or more entries required to describe the software?**
 
    - `workbenches <http://biotools.readthedocs.io/en/latest/curators_guide.html#workbench>`_ and other `suites <http://biotools.readthedocs.io/en/latest/curators_guide.html#suite>`_ often require multiple entries.
-   - tools with multiple interfaces (*e.g.* `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_ below).
+   - tools with multiple interfaces (*e.g.* `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ below).
    - if in doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 
 2. **What tool types apply?**
@@ -68,7 +68,7 @@ Consider the following *before* creating a bio.tools entry:
 4. **Are there version-specific considerations?**
 
    - as a rule, a bio.tools entry **SHOULD** describe the *latest version* available at the time of registration and **SHOULD** be updated, as required, for subsequent releases.
-   - if a new version has fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_ below) it **MAY** be registered as an entirely new entry.  In such cases, follow carefully the guidelines for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
+   - if a new version has fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ below) it **MAY** be registered as an entirely new entry.  In such cases, follow carefully the guidelines for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
 
 5. **Plan** how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_.
 6. **Read** the general `EDAM annotations guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines>`_.
@@ -161,14 +161,14 @@ Name (tool)
    - a common abbreviation can be given instead of an acronym
    - if no common acronym or abbreviation exists, omit this part: do not invent one!
      
-   For tools that simply wrap or provide an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#id125>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#id133>`_ (SOAP+WSDL), and `web applications <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_ over command-line tools, use the pattern:
+   For tools that simply wrap or provide an interface to some other tool, including `Web APIs <http://biotools.readthedocs.io/en/latest/curators_guide.html#webapi>`_ (REST), `Web services <http://biotools.readthedocs.io/en/latest/curators_guide.html#webservice>`_ (SOAP+WSDL), and `web applications <http://biotools.readthedocs.io/en/latest/curators_guide.html#webapplication>`_ over command-line tools, use the pattern:
 
      ``{collectionName} toolName {API|WS}{( providerName)}`` *e.g.* ``EMBOSS water API (ebi)``
 
    where:
   
    * ``collectionName`` is the name of suite, workbench or other collection the underlying tool is from (if applicable)
-   * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id17>`_ of the underlying tool
+   * ``toolName`` is the `canonical name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_ of the underlying tool
    * use ``API`` for Web APIs or ``WS`` for Web services
    * ``providerName`` is the name of the institute providing the online service (if applicable)
 
@@ -288,7 +288,7 @@ Version (otherID)
 *Version information (typically a version number) of the software applicable to this identifier, e.g. "1.4"*
 
 - **1.** **MUST** correctly identify the applicable tool version 
-- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id22>`_
+- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool>`_
 
 
 Function group
@@ -300,11 +300,11 @@ Operation
 *The basic operation(s) performed by this software function (EDAM Operation), e.g. "'Protein signal peptide detection' (http://edamontology.org/operation_0418)"*
 
 - **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), those specific version(s) of the tool
-- **2.** **MUST** be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
+- **2.** **MUST** be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_).
 - **3.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
 .. attention::
-   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
+   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
 
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#operation>`_.
@@ -316,11 +316,11 @@ Data type (input and output data)
 *Type of primary input / output data (if any) e.g. "'Sequence' (http://edamontology.org/data_2044)"*
 
 - **1.** **MUST** correctly specify types of input or output data processed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), those specific version(s) of the tool
-- **2.** **MUST** be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
+- **2.** **MUST** be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_).
 - **3.** **SHOULD** describe all the primary inputs and outputs of the tool and **SHOULD NOT** describe secondary / minor inputs and outputs: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
 .. attention::
-   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
+   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
 
 .. tip::
    - many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.
@@ -336,10 +336,10 @@ Data format (input and output data)
 *Allowed format(s) of primary inputs/outputs e.g. "'FASTA' (http://edamontology.org/format_1929)"*
 
 - **1.** **MUST** correctly specify data formats supported on input or output by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, those specific version(s) of the tool
-- **2.** **MUST** be correctly associated with the data type of an input or output (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id9>`_).
+- **2.** **MUST** be correctly associated with the data type of an input or output (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_).
 - **3.** **SHOULD** describe the primary data formats and **MAY** exhaustively describe *all* formats: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
 
-.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
+.. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
 
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#format>`_.
@@ -415,7 +415,7 @@ Topic
 - **3.** **SHOULD NOT** exhaustively specify all the topics of lower or secondary relevance
 
 .. attention::
-   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#id13>`_.
+   - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
   
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#topic>`_.
@@ -663,7 +663,7 @@ Version (download)
 *Version information (typically a version number) of the software applicable to this download.*
 
 - **1.** **MUST** correctly identify the applicable tool version 
-- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id22>`_
+- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool>`_
 
    
 											
@@ -763,7 +763,7 @@ Version (publication)
 *Version information (typically a version number) of the software applicable to this publication.*
 
 - **1.** **MUST** correctly identify the applicable tool version 
-- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#id22>`_
+- **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool>`_
   
 		
 Credits group
@@ -918,7 +918,7 @@ Command-line tool
 ^^^^^^^^^^^^^^^^^
 **A tool with a text-based (command-line) interface.**
 
-- carefully identify the major functions (modes of operation) performed by the tool (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_) and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
+- carefully identify the major functions (modes of operation) performed by the tool (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_) and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
   
 
 Database portal
@@ -933,15 +933,15 @@ Desktop application
 ^^^^^^^^^^^^^^^^^^^
 **A tool with a graphical user interface that runs on your desktop environment, e.g. on a PC or mobile device.**
 
-- desktop applications often have complex functionality: carefully identify the major functions (modes of operation) performed by the application (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_) and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
+- desktop applications often have complex functionality: carefully identify the major functions (modes of operation) performed by the application (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_) and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
 - consider an operation of `Visualisation <http://edamontology.org/operation_0337>`_ (or its children) - typical of desktop apps.
   
 Library
 ^^^^^^^
 **A collection of components that are used to construct other tools. bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries.**
 
-- in case the library includes just a few components, each should (typically) be modelled as a distinct function (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_); annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each component (function) in turn.
-- in case the library includes very many components, model the whole library as having a single function (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_); and annotate only the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ (do not try to be exhaustive).
+- in case the library includes just a few components, each should (typically) be modelled as a distinct function (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_); annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each component (function) in turn.
+- in case the library includes very many components, model the whole library as having a single function (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_); and annotate only the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ (do not try to be exhaustive).
   
 Ontology
 ^^^^^^^^
@@ -955,14 +955,14 @@ Plug-in
 ^^^^^^^
 **A software component encapsulating a set of related functions, which are not standalone, *i.e.* depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.**
 
-- when annotating the plug-in `function(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_, be careful to not duplicate the description of the tool which plug-in plugs into
+- when annotating the plug-in `function(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_, be careful to not duplicate the description of the tool which plug-in plugs into
 - carefully identify the major new functions (modes of operation) which the plug-in provides, and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
   
 Script
 ^^^^^^
 **A tool written for some run-time environment (e.g. other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (e.g. Perl, Python) or some domain-specific languages (e.g. sed).**
 
-- scripts typically have a single function (mode of operation) (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#id7>`_), however, in case of complex scripts, carefully identify the major functions (modes of operation) performed by the script, and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
+- scripts typically have a single function (mode of operation) (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_), however, in case of complex scripts, carefully identify the major functions (modes of operation) performed by the script, and annotate the major `operation(s) <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ associated with each function, in turn.
   
 - pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_
   
@@ -1094,7 +1094,7 @@ biotoolsID
 
    - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
    - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
-   - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#id123>`_
+   - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_
    - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
 
      
