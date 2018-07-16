@@ -1408,6 +1408,112 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 .. note::
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_.
 
+
+ELIXIR platform
+---------------
+*ELIXIR Platform associated with the software.*
+
+Attribute name
+  elixirPlatform
+
+Required
+  No
+
+Cardinality
+  0 to many
+  
+Type
+  ENUM (list)
+
+Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`_)
+
+  - ``Data``
+  - ``Tools``
+  - ``Compute``
+  - ``Interoperability``
+  - ``Training``
+
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <elixirPlatform>Open access</elixirPlatform>
+  <elixirPlatform>Freeware</elixirPlatform>
+  
+  # JSON		
+  "elixirPlatform":
+  [
+    "Tools",
+    "Compute"
+  ]
+
+.. note::
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`_.
+
+
+ELIXIR node
+-----------
+*ELIXIR Node associated with the software.*
+
+Attribute name
+  elixirNode
+
+Required
+  No
+
+Cardinality
+  0 to many
+  
+Type
+  ENUM (list)
+
+Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_)
+
+  - ``Belgium``
+  - ``Czech Republic``
+  - ``Denmark``
+  - ``EMBL``
+  - ``Estonia``
+  - ``Finland``
+  - ``France``
+  - ``Germany``
+  - ``Greece``
+  - ``Hungary``
+  - ``Ireland``
+  - ``Israel``
+  - ``Italy``
+  - ``Luxembourg``
+  - ``Netherlands``
+  - ``Norway``
+  - ``Portugal``
+  - ``Slovenia``
+  - ``Spain``
+  - ``Sweden``
+  - ``Switzerland``
+  - ``UK``
+
+
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <elixirNode>Open access</elixirNode>
+  <elixirNode>Freeware</elixirNode>
+  
+  # JSON		
+  "elixirNode":
+  [
+    "DK",
+    "FR"
+  ]
+
+.. note::
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_.
+
+     
+     
 Link
 ----
 *Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
@@ -1742,45 +1848,6 @@ Credit object definition
 	* Cardinality: todo
         * Type: String
         * Restrictions: min length: 1, max length: 100
-    * elixirPlatform
-        * Required: No
-	* Cardinality: todo	  
-        * Type: ENUM
-        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`_)
-
-	  - ``Data``
-	  - ``Tools``
-	  - ``Compute``
-	  - ``Interoperability``
-	  - ``Training``
-    * typeEntity
-        * Required: No
-	* Cardinality: todo	  
-        * Type: ENUM
-        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_)
-
-	  - ``Belgium``
-	  - ``Czech Republic``
-	  - ``Denmark``
-	  - ``EMBL``
-	  - ``Estonia``
-	  - ``Finland``
-	  - ``France``
-	  - ``Germany``
-	  - ``Greece``
-	  - ``Hungary``
-	  - ``Ireland``
-	  - ``Israel``
-	  - ``Italy``
-	  - ``Luxembourg``
-	  - ``Netherlands``
-	  - ``Norway``
-	  - ``Portugal``
-	  - ``Slovenia``
-	  - ``Spain``
-	  - ``Sweden``
-	  - ``Switzerland``
-	  - ``UK``
     * orcidId
         * Required: No
 	* Cardinality: todo	  
