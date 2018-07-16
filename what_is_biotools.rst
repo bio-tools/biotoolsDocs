@@ -49,10 +49,10 @@ Each bio.tools entry is assigned a unique identifier (**biotoolsID**): a manuall
    :header: "", "Example"
    :widths: 25, 50
 	    
-"biotoolsID", "signalp"
-"CURIE", "biotools:signalp"
-"Identifiers.org", "http://identifiers.org/biotools/signalp"
-"Tool Card URL", "https://bio.tools/signalp"
+   "biotoolsID", "signalp"
+   "CURIE", "biotools:signalp"
+   "Identifiers.org", "http://identifiers.org/biotools/signalp"
+   "Tool Card URL", "https://bio.tools/signalp"
 
 Registered software which, for one reason or another, is no longer operational, retain their ID and URL but are marked as obsolete.  Hence, descriptions of legacy resources are archived.  
 
