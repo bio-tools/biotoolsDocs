@@ -45,12 +45,14 @@ bio.tools Tool Identifiers
 
 Each bio.tools entry is assigned a unique identifier (**biotoolsID**): a manually verified, URL-safe version of (normally identical to) the supplied tool name.  The IDs are used in persistent URLs, resolving to Tool Cards of essential information.  The recommended short-form is a compact URI (CURIE), which is resolvable in `Identifiers.org <http://identifiers.org/>`_.
 
-System          | Example
---------------- | ------
-biotoolsID      | signalp
-CURIE           | biotools:signalp
-Identifiers.org | http://identifiers.org/biotools/signalp
-Tool Card URL   | https://bio.tools/signalp
+.. csv-table::
+   :header: "", "Example"
+   :widths: 25, 50
+	    
+"biotoolsID", "signalp"
+"CURIE", "biotools:signalp"
+"Identifiers.org", "http://identifiers.org/biotools/signalp"
+"Tool Card URL", "https://bio.tools/signalp"
 
 Registered software which, for one reason or another, is no longer operational, retain their ID and URL but are marked as obsolete.  Hence, descriptions of legacy resources are archived.  
 
