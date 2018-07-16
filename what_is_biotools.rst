@@ -43,7 +43,7 @@ Technical components
 bio.tools Tool Identifiers
 --------------------------
 
-Each bio.tools entry is assigned a unique identifier: a manually verified, URL-safe version of (normally identical to) the supplied tool name.  The IDs are used in persistent URLs, resolving to Tool Cards of essential information.  The recommended short-form is a compact URI (CURIE), which is resolvable in `Identifiers.org <http://identifiers.org/>`_.
+Each bio.tools entry is assigned a unique identifier (**biotoolsID**): a manually verified, URL-safe version of (normally identical to) the supplied tool name.  The IDs are used in persistent URLs, resolving to Tool Cards of essential information.  The recommended short-form is a compact URI (CURIE), which is resolvable in `Identifiers.org <http://identifiers.org/>`_.
 
 System          | Example
 --------------- | ------
