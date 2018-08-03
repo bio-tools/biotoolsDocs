@@ -3,6 +3,4 @@ License
 
 The registry content is freely available to all under the Creative Commons Attribution licence (`CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`_). 
 
-Access to the registry source code for the front and back-end, can be granted to trusted partners upon request: please email `Peter Longreen <mailto:peterl@dtu.dk>`_.
-
-ELIXIR is an open collaboration between equal partners and in this spirit, the bio.tools source code will be opened to a broader public, at the discretion of ELIXIR Denmark Head of Nodes, in due course.
+The source code of the registry is under standard GPL 3.0 license (https://github.com/bio-tools/biotoolsRegistry/blob/master/LICENSE).
