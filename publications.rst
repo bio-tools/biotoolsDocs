@@ -1,6 +1,9 @@
 Publications
 ============
-Hillion K.H., Kuzmin I., Khodak A., Rasche E., Crusoe M., Peterson H., Ison J., Ménager, H.  (2017). `Using bio.tools to generate and annotate workbench tool descriptions <https://f1000research.com/articles/6-2074/v1>`_  F1000Research 2017 (article).
+
+Palmblad, M., Lamprecht, A-L, Ison, J. and Schw�mmle, V. (2018) `Automated workflow composition in mass spectrometry based proteomics < https://doi.org/10.1093/bioinformatics/bty646>`_  *Bioinformatics* doi:`10.1093/bioinformatics/bty646<https://doi.org/10.1093/bioinformatics/bty646>`_
+
+Hillion K.H., Kuzmin I., Khodak A., Rasche E., Crusoe M., Peterson H., Ison J., Ménager, H.  (2017). `Using bio.tools to generate and annotate workbench tool descriptions <https://f1000research.com/articles/6-2074/v1>`_  *F1000Research* (article).
 doi:`10.12688/f1000research.12974.1 <https://doi.org/10.12688/f1000research.12974.1>`_
 
 Doppelt-Azeroual, O., Mareuil, F., Deveaud, Kalaš, M., Soranzo, N., van den Beek, M., Grüning, B., Ison, J. and Ménager, H. (2017).  `ReGaTE: Registration of Galaxy Tools in Elixir <https://doi.org/10.1093/gigascience/gix022>`_  *GigaScience*,  doi:`10.1093/gigascience/gix022 <https://doi.org/10.1093/gigascience/gix022>`_
