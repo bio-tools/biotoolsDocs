@@ -1,7 +1,7 @@
 Publications
 ============
 
-Palmblad, M., Lamprecht, A-L, Ison, J. and Schwammle, V. (2018) `Automated workflow composition in mass spectrometry based proteomics <https://doi.org/10.1093/bioinformatics/bty646>`_  *Bioinformatics* doi:`10.1093/bioinformatics/bty646<https://doi.org/10.1093/bioinformatics/bty646>`_
+Palmblad, M., Lamprecht, A-L, Ison, J. and Schwammle, V. (2018) `Automated workflow composition in mass spectrometry based proteomics <https://doi.org/10.1093/bioinformatics/bty646>`_  *Bioinformatics* doi:`10.1093/bioinformatics/bty646 <https://doi.org/10.1093/bioinformatics/bty646>`_
 
 Hillion K.H., Kuzmin I., Khodak A., Rasche E., Crusoe M., Peterson H., Ison J., Ménager, H.  (2017). `Using bio.tools to generate and annotate workbench tool descriptions <https://f1000research.com/articles/6-2074/v1>`_  *F1000Research* (article).
 doi:`10.12688/f1000research.12974.1 <https://doi.org/10.12688/f1000research.12974.1>`_
