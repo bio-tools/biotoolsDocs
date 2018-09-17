@@ -49,9 +49,9 @@ Attributes
 These are the attributes supported by bio.tools:
 
 
-============        =======================================================================                       =========================
+==================  ============================================================================================  =========================
 Parameter           Search behaviour                                                                              Example
-============        =======================================================================                       =========================
+==================  ============================================================================================  =========================
 biotoolsID          Exact search for bio.tools tool ID                                                            ``biotoolsid=signalp``
 name                Fuzzy search for tool name                                                                    ``name=signalp``
 homepage            Fuzzy search for tool homepage URL                                                            ````
@@ -105,7 +105,7 @@ downloadVersion     Exact search for tool version associated with a download    
 otherID             Fuzzy search over alternate tool IDs (ID value, type of ID and version)                       ````
 otherIDType         Exact search for type of alternate tool ID                                                    ````
 otherIDVersion      Exact search for tool version associated with an alternate ID                                 ````
-============        =======================================================================                       =========================
+==================  ============================================================================================  =========================
 
 
 Example
