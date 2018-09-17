@@ -52,10 +52,10 @@ These are the attributes supported by bio.tools:
 ==================  ============================================================================================  =========================
 Parameter           Search behaviour                                                                              Example
 ==================  ============================================================================================  =========================
-biotoolsID          Search for bio.tools tool ID                                                                  ``biotoolsID=signalp``, ``biotoolsID="signalp"``
-name                Search for tool name                                                                          ``name=signalp``, ``name="signalp"``
+biotoolsID          Search for bio.tools tool ID (usually quoted)                                                 ``biotoolsID="signalp"``
+name                Search for tool name                                                                          ``name=signalp``
 homepage            Exact search for tool homepage URL: must be quoted                                            ``homepage="http://cbs.dtu.dk/services/SignalP/"``
-description         Search over tool description                                                                  ``description="signal peptide cleavage"``
+description         Search over tool description                                                                  ``description=%20peptide%20cleavage``
 version             Exact search for tool version: must be quoted                                                 ``version="4.1"``
 topic               Search for EDAM Topic (term)                                                                  ``topic="Protein sites, features and motifs"``
 topicID             Exact search for EDAM Topic (URI): must be quoted                                             ``topicID="topic_3510"``
@@ -120,7 +120,7 @@ otherIDVersion      Exact search for tool version associated with an alternate I
        
    Values of other parameters can be quoted or unquoted:
      *  Unquoted values invoke a fuzzy (flexible) search
-     *  Quoted values invoke an exact search; it looks for a exact match of the full-length of the search phrase in the target field
+     *  Quoted values invoke an exact phrase search; it will search for an exact match of the full-length of the search phrase in the target field
 
    *e.g.*
      * ``https://bio.tools/api/tool?biotoolsID="signalp"`` returns the tool with the ID of "signalp"
