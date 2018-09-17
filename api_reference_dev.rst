@@ -52,60 +52,75 @@ These are the attributes supported by bio.tools:
 ==================  ============================================================================================  =========================
 Parameter           Search behaviour                                                                              Example
 ==================  ============================================================================================  =========================
-biotoolsID          Exact search for bio.tools tool ID                                                            ``biotoolsid=signalp``
-name                Fuzzy search for tool name                                                                    ``name=signalp``
-homepage            Fuzzy search for tool homepage URL                                                            ``homepage="http://cbs.dtu.dk/services/SignalP/"``
-description         Fuzzy search over tool description                                                            ``description="signal peptide cleavage"``
-version             Exact search for tool version                                                                 ``version=4.1``
-topic               Fuzzy search for EDAM Topic (term)                                                            ``topic="Protein sites, features and motifs"``
-topicID             Exact search for EDAM Topic (URI)                                                             ``topicID=topic_3510``
-function            Fuzzy search over function (input, operation, output, note and command)                       ``.`
-operation           Fuzzy search for EDAM Operation (term)                                                        ``.`
-operationID         Exact search for EDAM Operation (ID)                                                          ``.`
-dataType            Fuzzy search over input and output for EDAM Data (term)                                       ``.`
-dataTypeID          Exact search over input and output for EDAM Data (ID)                                         ``.`
-dataFormat          Fuzzy search over input and output for EDAM Format (term)                                     ``.`
-dataFormatID        Exact search over input and output for EDAM Format (ID)                                       ``.`
-input               Fuzzy search over input for EDAM Data and Format (term)                                       ``.`
-inputID             Exact search over input for EDAM Data and Format (ID)                                         ``.`
-inputDataType       Fuzzy search over input for EDAM Data (term)                                                  ``.`
-inputDataTypeID     Exact search over input for EDAM Data (ID)                                                    ``.`
-inputDataFormat     Fuzzy search over input for EDAM Format (term)                                                ``.`
-inputDataFormatID   Exact search over input for EDAM Format (ID)                                                  ``.`
-output              Fuzzy search over output for EDAM Data and Format (term)                                      ``.`
-outputID            Exact search over output for EDAM Data and Format (ID)                                        ``.`
-outputDataType      Fuzzy search over output for EDAM Data (term)                                                 ``.`
-outputDataTypeID    Exact search over output for EDAM Data (ID)                                                   ``.`
-outputDataFormat    Fuzzy search over output for EDAM Format (term)                                               ``.`
-outputDataFormatID  Exact search over output for EDAM Format (ID)                                                 ``.`
-toolType            Exact search for tool type                                                                    ``.`
-collectionID        Exact search for tool collection                                                              ``.`
-maturity            Exact search for tool maturity                                                                ``.`
-operatingSystem     Exact search for tool operation system                                                        ``.`
-language            Exact search for programming language                                                         ``.`
-cost                Exact search for cost                                                                         ``.`
-license             Exact search for software or data usage license                                               ``.`
-accessibility       Exact search for tool accessibility                                                           ``.`
-credit              Fuzzy search over credit (name, email, URL, ORCID iD, type of entity, type of role and note)  ``.`
-creditName          Exact search for name of credited entity                                                      ``.`
-creditTypeRole      Exact search for role of credited entity                                                      ``.`
-creditTypeEntity    Exact search for type of credited entity                                                      ``.`
-creditOrcidID       Exact search for ORCID iD of credited entity                                                  ``.`
-publication         Fuzzy search over publication (DOI, PMID, PMCID, publication type and tool version)           ``.`
-publicationID       Exact search for publication ID (DOI, PMID or PMCID)                                          ``.`
-publicationType     Exact search for publication type                                                             ``.`
-publicationVersion  Exact search for tool version associated with a publication                                   ``.`
-link                Fuzzy search over general link (URL, type and note)                                           ``.`
-linkType            Exact search for type of information found at a link                                          ``.`
-documentation       Fuzzy search over documentation link (URL, type and note)                                     ``.`
-documentationType   Exact search for type of documentation                                                        ``.`
-download            Fuzzy search over download link (URL, type, version and note)                                 ``.`
-downloadType        Exact search for type of download                                                             ``.`
-downloadVersion     Exact search for tool version associated with a download                                      ``.`
-otherID             Fuzzy search over alternate tool IDs (ID value, type of ID and version)                       ``.`
-otherIDType         Exact search for type of alternate tool ID                                                    ``.`
-otherIDVersion      Exact search for tool version associated with an alternate ID                                 ``.`
+biotoolsID          Search for bio.tools tool ID                                                                  ``biotoolsID=signalp``, ``biotoolsID="signalp"``
+name                Search for tool name                                                                          ``name=signalp``, ``name="signalp"``
+homepage            Exact search for tool homepage URL: must be quoted                                            ``homepage="http://cbs.dtu.dk/services/SignalP/"``
+description         Search over tool description                                                                  ``description="signal peptide cleavage"``
+version             Exact search for tool version: must be quoted                                                 ``version="4.1"``
+topic               Search for EDAM Topic (term)                                                                  ``topic="Protein sites, features and motifs"``
+topicID             Exact search for EDAM Topic (URI): must be quoted                                             ``topicID="topic_3510"``
+function            Fuzzy search over function (input, operation, output, note and command)                       ``function="Sequence analysis"``
+operation           Fuzzy search for EDAM Operation (term)                                                        ``operation="Sequence analysis"``
+operationID         Exact search for EDAM Operation (ID)                                                          ``operationID="operation_2403"``
+dataType            Fuzzy search over input and output for EDAM Data (term)                                       ``.``
+dataTypeID          Exact search over input and output for EDAM Data (ID)                                         ``.``
+dataFormat          Fuzzy search over input and output for EDAM Format (term)                                     ``.``
+dataFormatID        Exact search over input and output for EDAM Format (ID)                                       ``.``
+input               Fuzzy search over input for EDAM Data and Format (term)                                       ``.``
+inputID             Exact search over input for EDAM Data and Format (ID)                                         ``.``
+inputDataType       Fuzzy search over input for EDAM Data (term)                                                  ``.``
+inputDataTypeID     Exact search over input for EDAM Data (ID)                                                    ``.``
+inputDataFormat     Fuzzy search over input for EDAM Format (term)                                                ``.``
+inputDataFormatID   Exact search over input for EDAM Format (ID)                                                  ``.``
+output              Fuzzy search over output for EDAM Data and Format (term)                                      ``.``
+outputID            Exact search over output for EDAM Data and Format (ID)                                        ``.``
+outputDataType      Fuzzy search over output for EDAM Data (term)                                                 ``.``
+outputDataTypeID    Exact search over output for EDAM Data (ID)                                                   ``.``
+outputDataFormat    Fuzzy search over output for EDAM Format (term)                                               ``.``
+outputDataFormatID  Exact search over output for EDAM Format (ID)                                                 ``.``
+toolType            Exact search for tool type                                                                    ``.``
+collectionID        Exact search for tool collection                                                              ``.``
+maturity            Exact search for tool maturity                                                                ``.``
+operatingSystem     Exact search for tool operation system                                                        ``.``
+language            Exact search for programming language                                                         ``.``
+cost                Exact search for cost                                                                         ``.``
+license             Exact search for software or data usage license                                               ``.``
+accessibility       Exact search for tool accessibility                                                           ``.``
+credit              Fuzzy search over credit (name, email, URL, ORCID iD, type of entity, type of role and note)  ``.``
+creditName          Exact search for name of credited entity                                                      ``.``
+creditTypeRole      Exact search for role of credited entity                                                      ``.``
+creditTypeEntity    Exact search for type of credited entity                                                      ``.``
+creditOrcidID       Exact search for ORCID iD of credited entity                                                  ``.``
+publication         Fuzzy search over publication (DOI, PMID, PMCID, publication type and tool version)           ``.``
+publicationID       Exact search for publication ID (DOI, PMID or PMCID)                                          ``.``
+publicationType     Exact search for publication type                                                             ``.``
+publicationVersion  Exact search for tool version associated with a publication                                   ``.``
+link                Fuzzy search over general link (URL, type and note)                                           ``.``
+linkType            Exact search for type of information found at a link                                          ``.``
+documentation       Fuzzy search over documentation link (URL, type and note)                                     ``.``
+documentationType   Exact search for type of documentation                                                        ``.``
+download            Fuzzy search over download link (URL, type, version and note)                                 ``.``
+downloadType        Exact search for type of download                                                             ``.``
+downloadVersion     Exact search for tool version associated with a download                                      ``.``
+otherID             Fuzzy search over alternate tool IDs (ID value, type of ID and version)                       ``.``
+otherIDType         Exact search for type of alternate tool ID                                                    ``.``
+otherIDVersion      Exact search for tool version associated with an alternate ID                                 ``.``
 ==================  ============================================================================================  =========================
+
+
+.. important::
+   Values of the following parameters **must** be given in quotes to get sensible (or any) results:
+     * ``homepage``
+     * ``version``
+     * ``topicID``
+     * ...
+
+   Values of other parameters can be quoted or unquoted:
+     *  Unquoted values invoke a fuzzy (flexible) search
+     *  Quoted values invoke an exact search; it looks for a exact match of the full-length of the search phrase in the target field
+
+.. caution::
+   The parameters are (currently) case-sensitive, *e.g.* you **must** use ``&biotoolsID=`` and not ``&biotoolsid``.  The API parameters will be made case-insensitive in future.
 
 
 Example
@@ -116,12 +131,17 @@ Example
    curl -X GET "https://dev.bio.tools/api/tool/?page=1&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
 
 .. note::
-   An EDAM concept ID can be specified in any of the following formats:
+   An EDAM concept ID can be specified as a full URI or concept ID:
    * Concept URI *e.g.* ``http://edamontology.org/operation_2403``
-   * Concept CURIE *e.g.* ``EDAM:operation_2403``
    * Concept ID *e.g.* ``operation_2403``
+
+   In future we may add support for:  
+   * Concept CURIE *e.g.* ``EDAM:operation_2403``
    * Numerical ID *e.g.* ``2403``
 
+   Note: the terms **must** be quoted, *e.g.* ``&topicID="operation_2403"``
+   
+     
 .. caution::
    If querying by ``homepage`` you must quote the query value, *e.g.*
    ```https://bio.tools/api/tool?homepage="http://cosbi4.ee.ncku.edu.tw/pirScan/"```
