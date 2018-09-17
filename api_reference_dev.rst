@@ -119,8 +119,8 @@ otherIDVersion      Exact search for tool version associated with an alternate I
      * ``https://bio.tools/api/tool?topicID="topic_3510"``
        
    Values of other parameters can be quoted or unquoted:
-     *  Unquoted values invoke a fuzzy (flexible) search
-     *  Quoted values invoke an exact phrase search; it will search for an exact match of the full-length of the search phrase in the target field
+     *  Unquoted values invoke a fuzzy word search: it will search for fuzzy matches of words in the search phrase, to the target field
+     *  Quoted values invoke an exact phrase search; it will search for an exact match of the full-length of the search phrase, to the target field
 
    *e.g.*
      * ``https://bio.tools/api/tool?biotoolsID="signalp"`` returns the tool with the ID of "signalp"
