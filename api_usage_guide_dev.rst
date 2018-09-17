@@ -10,12 +10,16 @@ API Usage Guide - development
 
 .. note:: This is the API documentation for upcoming features in support of `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_ , coming soon to https://bio.tools.
 
-This page documents the structure of a XML / JSON file that describes a tool for submission to https://bio.tools.
+bio.tools implements the model of software information defined in `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_ .  This page summarises the structure and syntax of an XML / JSON file that describes a tool for submission to bio.tools via the API.
 
 
 Payload formats
 ===============
-To submit a tool via our bio.tools API you’ll need to POST a tool description to the `tool endpoint <http://biotools.readthedocs.io/en/latest/api_reference.html#register-a-resource>`_. The API supports XML, JSON and YAML format uploads comatible with `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+To submit a tool via the bio.tools API you’ll need to POST a tool description to the `tool endpoint <http://biotools.readthedocs.io/en/latest/api_reference.html#register-a-resource>`_. The API supports XML and JSON format uploads and downloads comatible with `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.
+
+
+.. note::
+   Support for YAML (and other) formats can be added if required.  If you want this, please tell us via ``GitHub <https://github.com/bio-tools/biotoolsregistry/issues>`_.
 
 
 XML
