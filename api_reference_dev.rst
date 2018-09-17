@@ -86,7 +86,7 @@ language           Exact search for programming language                        
 cost               Exact search for cost                                                                        ````
 license            Exact search for software or data usage license                                              ````
 accessibility      Exact search for tool accessibility                                                          ````
-credit             Fuzzy search over credit (name, email, URL, ORCID iD, type of entity, type of role and note  ````
+credit             Fuzzy search over credit (name, email, URL, ORCID iD, type of entity, type of role and note) ````
 creditName         Exact search for name of credited entity                                                     ````
 creditTypeRole     Exact search for role of credited entity                                                     ````
 creditTypeEntity   Exact search for type of credited entity                                                     ````
@@ -105,6 +105,7 @@ downloadVersion    Exact search for tool version associated with a download     
 otherID            Fuzzy search over alternate tool IDs (ID value, type of ID and version)                      ````
 otherIDType        Exact search for type of alternate tool ID                                                   ````
 otherIDVersion     Exact search for tool version associated with an alternate ID                                ````
+============       =======================================================================                      =========================
 
 
 Example
