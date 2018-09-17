@@ -115,10 +115,18 @@ otherIDVersion      Exact search for tool version associated with an alternate I
      * ``topicID``
      * ...
 
+   *e.g.* 
+     * ``https://bio.tools/api/tool?topicID="topic_3510"``
+       
    Values of other parameters can be quoted or unquoted:
      *  Unquoted values invoke a fuzzy (flexible) search
      *  Quoted values invoke an exact search; it looks for a exact match of the full-length of the search phrase in the target field
 
+   *e.g.*
+     * ``https://bio.tools/api/tool?biotoolsID="signalp"`` returns the tool with the ID of "signalp"
+     * ``https://bio.tools/api/tool?biotoolsID=signalp`` returns tools with an ID that fuzzy-matches "signalp"       
+
+	
 .. caution::
    The parameters are (currently) case-sensitive, *e.g.* you **must** use ``&biotoolsID=`` and not ``&biotoolsid``.  The API parameters will be made case-insensitive in future.
 
@@ -131,20 +139,20 @@ Example
    curl -X GET "https://dev.bio.tools/api/tool/?page=1&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
 
 .. note::
-   An EDAM concept ID can be specified as a full URI or concept ID:
-   * Concept URI *e.g.* ``http://edamontology.org/operation_2403``
-   * Concept ID *e.g.* ``operation_2403``
+   An EDAM concept ID can be specified as a concept URI or ID:
+     * Concept URI *e.g.* ``http://edamontology.org/operation_2403``
+     * Concept ID *e.g.* ``operation_2403``
 
    In future we may add support for:  
-   * Concept CURIE *e.g.* ``EDAM:operation_2403``
-   * Numerical ID *e.g.* ``2403``
+     * Concept CURIE *e.g.* ``EDAM:operation_2403``
+     * Numerical ID *e.g.* ``2403``
 
-   Note: the terms **must** be quoted, *e.g.* ``&topicID="operation_2403"``
+   Note: URIs and IDs **must** be quoted, *e.g.* ``&topicID="operation_2403"``
    
      
 .. caution::
    If querying by ``homepage`` you must quote the query value, *e.g.*
-   ```https://bio.tools/api/tool?homepage="http://cosbi4.ee.ncku.edu.tw/pirScan/"```
+
 
 Response data
 """""""""""""
