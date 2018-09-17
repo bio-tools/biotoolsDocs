@@ -61,23 +61,23 @@ topic               Search for EDAM Topic (term)                                
 topicID             Exact search for EDAM Topic (URI): must be quoted                                             ``topicID="topic_3510"``
 function            Fuzzy search over function (input, operation, output, note and command)                       ``function="Sequence analysis"``
 operation           Fuzzy search for EDAM Operation (term)                                                        ``operation="Sequence analysis"``
-operationID         Exact search for EDAM Operation (ID)                                                          ``operationID="operation_2403"``
-dataType            Fuzzy search over input and output for EDAM Data (term)                                       ``.``
-dataTypeID          Exact search over input and output for EDAM Data (ID)                                         ``.``
-dataFormat          Fuzzy search over input and output for EDAM Format (term)                                     ``.``
-dataFormatID        Exact search over input and output for EDAM Format (ID)                                       ``.``
-input               Fuzzy search over input for EDAM Data and Format (term)                                       ``.``
-inputID             Exact search over input for EDAM Data and Format (ID)                                         ``.``
-inputDataType       Fuzzy search over input for EDAM Data (term)                                                  ``.``
-inputDataTypeID     Exact search over input for EDAM Data (ID)                                                    ``.``
-inputDataFormat     Fuzzy search over input for EDAM Format (term)                                                ``.``
-inputDataFormatID   Exact search over input for EDAM Format (ID)                                                  ``.``
-output              Fuzzy search over output for EDAM Data and Format (term)                                      ``.``
-outputID            Exact search over output for EDAM Data and Format (ID)                                        ``.``
-outputDataType      Fuzzy search over output for EDAM Data (term)                                                 ``.``
-outputDataTypeID    Exact search over output for EDAM Data (ID)                                                   ``.``
-outputDataFormat    Fuzzy search over output for EDAM Format (term)                                               ``.``
-outputDataFormatID  Exact search over output for EDAM Format (ID)                                                 ``.``
+operationID         Exact search for EDAM Operation (ID): must be quoted                                                     ``operationID="operation_2403"``
+dataType            Fuzzy search over input and output for EDAM Data (term)                                       ``dataType="Protein sequence"``
+dataTypeID          Exact search over input and output for EDAM Data (ID): must be quoted                                         ``dataTypeID="data_2976"``
+dataFormat          Fuzzy search over input and output for EDAM Format (term)                                     ``dataFormat="FASTA"``
+dataFormatID        Exact search over input and output for EDAM Format (ID): must be quoted                                       ``dataFormatID="format_1929"``
+input               Fuzzy search over input for EDAM Data and Format (term)                                       ``input="Protein sequence"``
+inputID             Exact search over input for EDAM Data and Format (ID)                                         ``inputID="data_2976"``
+inputDataType       Fuzzy search over input for EDAM Data (term)                                                  ``inputDataType="Protein sequence"``
+inputDataTypeID     Exact search over input for EDAM Data (ID): must be quoted                                                    ``inputDataTypeID="data_2976"``
+inputDataFormat     Fuzzy search over input for EDAM Format (term)                                                ``inputDataFormat="FASTA"``
+inputDataFormatID   Exact search over input for EDAM Format (ID): must be quoted                                                  ``inputDataFormatID="format_1929"``
+output              Fuzzy search over output for EDAM Data and Format (term)                                      ``output="Sequence alignment"``
+outputID            Exact search over output for EDAM Data and Format (ID): must be quoted                                        ``outputID="data_0863"``
+outputDataType      Fuzzy search over output for EDAM Data (term)                                                 ``outputDataType="Sequence alignment"``
+outputDataTypeID    Exact search over output for EDAM Data (ID): must be quoted                                                   ``outputDataTypeID="data_0863"``
+outputDataFormat    Fuzzy search over output for EDAM Format (term)                                               ``outputDataFormat="ClustalW format"``
+outputDataFormatID  Exact search over output for EDAM Format (ID): must be quoted                                                 ``outputDataFormatID="format_1982"``
 toolType            Exact search for tool type                                                                    ``.``
 collectionID        Exact search for tool collection                                                              ``.``
 maturity            Exact search for tool maturity                                                                ``.``
@@ -90,21 +90,21 @@ credit              Fuzzy search over credit (name, email, URL, ORCID iD, type o
 creditName          Exact search for name of credited entity                                                      ``.``
 creditTypeRole      Exact search for role of credited entity                                                      ``.``
 creditTypeEntity    Exact search for type of credited entity                                                      ``.``
-creditOrcidID       Exact search for ORCID iD of credited entity                                                  ``.``
+creditOrcidID       Exact search for ORCID iD of credited entity: must be quoted                                  ``.``
 publication         Fuzzy search over publication (DOI, PMID, PMCID, publication type and tool version)           ``.``
-publicationID       Exact search for publication ID (DOI, PMID or PMCID)                                          ``.``
+publicationID       Exact search for publication ID (DOI, PMID or PMCID): must be quoted                          ``.``
 publicationType     Exact search for publication type                                                             ``.``
-publicationVersion  Exact search for tool version associated with a publication                                   ``.``
+publicationVersion  Exact search for tool version associated with a publication: must be quoted                   ``.``
 link                Fuzzy search over general link (URL, type and note)                                           ``.``
 linkType            Exact search for type of information found at a link                                          ``.``
 documentation       Fuzzy search over documentation link (URL, type and note)                                     ``.``
 documentationType   Exact search for type of documentation                                                        ``.``
 download            Fuzzy search over download link (URL, type, version and note)                                 ``.``
 downloadType        Exact search for type of download                                                             ``.``
-downloadVersion     Exact search for tool version associated with a download                                      ``.``
+downloadVersion     Exact search for tool version associated with a download: must be quoted                      ``.``
 otherID             Fuzzy search over alternate tool IDs (ID value, type of ID and version)                       ``.``
 otherIDType         Exact search for type of alternate tool ID                                                    ``.``
-otherIDVersion      Exact search for tool version associated with an alternate ID                                 ``.``
+otherIDVersion      Exact search for tool version associated with an alternate ID: must be quoted                 ``.``
 ==================  ============================================================================================  =========================
 
 
