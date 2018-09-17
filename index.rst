@@ -21,7 +21,7 @@ Contents:
    Editors Guide <editors_guide>
    API reference <api_reference>
    API reference - development <api_reference_dev>
-   API Attribute model - development <api_attribute_model_dev>
+   API Usage Guide - development <api_usage_guide_dev>
    Hangouts <hangouts>
    Roadmap <roadmap>
    Studentships <studentships>
