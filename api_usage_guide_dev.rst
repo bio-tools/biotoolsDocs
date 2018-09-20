@@ -19,12 +19,16 @@ To submit a tool via the bio.tools API you’ll need to POST a tool description 
 
 
 .. note::
-   Support for YAML (and other) formats can be added if required.  If you want this, please tell us via ``GitHub <https://github.com/bio-tools/biotoolsregistry/issues>`_.
+   Support for YAML (and other) formats can be added if required.  If you want this, please tell us via `GitHub <https://github.com/bio-tools/biotoolsregistry/issues>`_.
 
-
+ 
 XML
 ---
-For sample XML documents see `GitHub <https://github.com/bio-tools/biotoolsSchema/tree/master/stable/example_files>`_.
+See the `sample XML document <https://github.com/bio-tools/biotoolsSchema/tree/master/stable/example_files>`_.
+
+
+.. important::
+   When working in XML, please first read the `biotoolsSchema docs <https://biotoolsschema.readthedocs.io/en/latest/biotoolsschema_elements.html>`_.  It is essential to stick to the element order (including nested elements) in the `sample XML documents <https://github.com/bio-tools/biotoolsSchema/tree/master/stable/example_files>`_ as shown below.
 
 
 JSON
