@@ -28,7 +28,7 @@ See the `sample XML document <https://github.com/bio-tools/biotoolsSchema/tree/m
 
 
 .. important::
-   When working in XML, please first read the `biotoolsSchema docs <https://biotoolsschema.readthedocs.io/en/latest/biotoolsschema_elements.html>`_.  It is essential to stick to the element order (including nested elements) in the `sample XML documents <https://github.com/bio-tools/biotoolsSchema/tree/master/stable/example_files>`_ as shown below.
+   When working in XML, please first read the `biotoolsSchema docs <https://biotoolsschema.readthedocs.io/en/latest/biotoolsschema_elements.html>`_.  It is essential to stick to the element order (including nested elements) in the `sample XML documents <https://github.com/bio-tools/biotoolsSchema/tree/master/stable/example_files>`_ and as shown below.
 
 
 JSON
