@@ -9,9 +9,9 @@ All developments of bio.tools software and content are informed by:
 5. Events on the ground.
 
 
-For a summary of planned developments including priorities and milestones, see `GitHub <https://github.com/bio-tools/biotoolsregistry/issues>`_   
+For a summary of planned developments including priorities and milestones, see `GitHub <https://github.com/bio-tools/biotoolsregistry/issues>`_.
 
-For higher-level project and task management, see https://biotools.sifterapp.com/.
+For higher-level project and task management, see https://biotools.sifterapp.com/:
 
   * `bio.tools features roadmap <https://biotools.sifterapp.com/projects/39459/issues?srt=milestone>`_
   * `bio.tools content roadmap <https://biotools.sifterapp.com/projects/39503/issues?srt=milestone>`_
