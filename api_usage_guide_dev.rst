@@ -385,7 +385,7 @@ Required
   No
 
 Cardinality
-  1
+  0 or 1
   
 Type
   String
@@ -422,7 +422,7 @@ Required
   No
 
 Cardinality
-  1
+  0 or 1
   
 Type
   String
@@ -611,7 +611,7 @@ Function object definition
         * Restrictions: min length: 10, max length: 1000
     * cmd
         * Required: No
-	* Cardinlity: 0 or 1
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: min length: 1, max length: 100	  
 
@@ -1562,7 +1562,7 @@ Link object definition
     	  - ``Technical monitoring``
     * note
         * Required: No
-	* Cardinality: 0 to 1
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: min length: 10, max length: 1000
 
@@ -1640,12 +1640,12 @@ Download object definition
 	  - ``VM image``
     * note
         * Required: No
-	* Cardinality: 1 only
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: min length: 10, max length: 1000
     * version
         * Required: No
-	* Cardinality: 1 only
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: Min length: 1, Max length: 100
 	* Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
@@ -1698,11 +1698,11 @@ Documentation object definition
   Content
     * url
         * Required: Yes
-	* Cardinality: todo
+	* Cardinality: 1 only
         * Type: URL
     * type
         * Required: Yes
-	* Cardinality: todo
+	* Cardinality: 1 only
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_)
 
@@ -1719,7 +1719,7 @@ Documentation object definition
 	  - ``Other``
     * note
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: min legth:10, max length: 1000
 
@@ -1771,22 +1771,22 @@ Publication object definition
   Content
     * pmcid
         * Required: One of doi, pmid or pmcid must be specified.
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: PMCID
 	* Pattern: ``(PMC)[1-9][0-9]{0,8}``
     * pmid
         * Required: One of doi, pmid or pmcid must be specified.
-	* Cardinality: todo	  
+	* Cardinality: 0 or 1
         * Type: PMID
   	* Pattern: ``[1-9][0-9]{0,8}``
     * doi
         * Required: One of doi, pmid or pmcid must be specified.
-	* Cardinality: todo	  
+	* Cardinality: 0 or 1
         * Type: DOI
 	* Pattern: ``10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+``
     * type
         * Required: No
-	* Cardinality: 1 only	  
+	* Cardinality: 0 or 1
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-type>`_)
 	  - ``Primary``
@@ -1797,7 +1797,7 @@ Publication object definition
 	  - ``Other``
     * version
         * Required: No
-	* Cardinality: 1 only	  
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: Min length: 1, Max length: 100
 	* Pattern: ``[\p{Zs}A-Za-z0-9+\.,\-_:;()]*``
@@ -1844,7 +1844,7 @@ Required
   No
 
 Cardinality
-  todo
+  0 to many
   
 Type
   List of credit objects
@@ -1853,27 +1853,27 @@ Credit object definition
   Content
     * name
         * Required: Yes
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: min length: 1, max length: 100
     * orcidId
         * Required: No
-	* Cardinality: todo	  
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: pattern: http://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}
     * email
         * Required: No
-	* Cardinality: todo	  
+	* Cardinality: 0 or 1
         * Type: Email
         * Restrictions: pattern: [A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*
     * url
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: URL
         * Restrictions: pattern: http(s?)://[^\s/$.?#].[^\s]*
     * typeEntity
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#type-entity>`_)
 
@@ -1885,7 +1885,7 @@ Credit object definition
 	  - ``Funding agency``
     * typeRole
         * Required: No
-	* Cardinality: todo	  
+	* Cardinality: 0 to many
         * Type: ENUM (list)
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#type-role>`_)
 
@@ -1898,7 +1898,7 @@ Credit object definition
 	  - ``Primary contact``	    
     * note
         * Required: No
-	* Cardinality: todo
+	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: min length: 10, max length: 1000
 
@@ -1954,7 +1954,7 @@ Credit object definition
   ]
 		
 .. note::
-   - a credit consists either simply the name of an ELIXIR Platform or ELIXIR node *or* the name of some other entity that is credited, with associated metadata
+   - one of ``<name>``, ``<email>`` or ``<url>`` must be specified.
    - the credit name may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.     
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#credits-group>`_.    
