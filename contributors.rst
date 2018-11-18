@@ -5,7 +5,7 @@ Registry Core
 -------------
 - Jon Ison (DTU, DK) - **technical coordination**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
 - Emil Rydza (KU, DK) - **software development (lead)**, lead developer for bio.tools
-- Hans-Ioan Lenasescu (KU, DK) - **curation (lead)**, Web development
+- Hans-Ioan Ienasescu (DTU, DK) - **curation (lead)**, Web development
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
 - Piotr Chmura (KU, DK) - **software development**, bio.tools development (back-end)
 - Lukasz Berger (DTU, DK) - **software development** bio.tools development (front-end)

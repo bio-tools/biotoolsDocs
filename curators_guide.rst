@@ -446,8 +446,67 @@ Programming language
 - **1.** **MUST** specify the primary language used, in terms from a controlled vocabulary (see below)
 - **2.** **MAY** exhaustively specify other languages used
 
+.. csv-table::
+   :header: "Programming language"
+   :widths: 25
+
+   "ActionScript"
+   "Ada"
+   "AppleScript"
+   "Assembly language"
+   "AWK"
+   "Bash"
+   "C"
+   "C#"
+   "C++"
+   "COBOL"
+   "ColdFusion"
+   "CWL"
+   "D"
+   "Delphi"
+   "Dylan"
+   "Eiffel"
+   "Forth"
+   "Fortran"
+   "Groovy"
+   "Haskell"
+   "Icarus"
+   "Java"
+   "JavaScript"
+   "JSP"
+   "LabVIEW"
+   "Lisp"
+   "Lua"
+   "Maple"
+   "Mathematica"
+   "MATLAB"
+   "MLXTRAN"
+   "NMTRAN"
+   "OCaml"
+   "Pascal"
+   "Perl"
+   "PHP"
+   "Prolog"
+   "PyMOL"
+   "Python"
+   "R"
+   "Racket"
+   "REXX"
+   "Ruby"
+   "SAS"
+   "Scala"
+   "Scheme"
+   "Shell"
+   "Smalltalk"
+   "SQL"
+   "Turing"
+   "Verilog"
+   "VHDL"
+   "Visual Basic"
+   "XAML"
+   "Other"
+
 .. note::
-  - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/stable>`_.
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#programming-language>`_.
 
     
