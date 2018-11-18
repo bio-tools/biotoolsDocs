@@ -1674,7 +1674,7 @@ Download object definition
   ]
 
 .. note::
-   - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+   - the note is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group>`_.
 
   
@@ -1746,7 +1746,7 @@ Documentation object definition
 
 
 .. note::
-   - the comment is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
+   - the note is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group>`_.
      
 .. _publication:
