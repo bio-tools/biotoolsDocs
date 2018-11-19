@@ -833,7 +833,8 @@ Publications group
 
 - **1.** **MUST** correctly identify a relevant publication
 - **2.** **MUST** specify multiple IDs for a single publication within a single publication group
-  
+- **3.** **SHOULD** specify a DOI (if available) (in preference to PMID and PMCID)
+
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#publication>`_.
 
