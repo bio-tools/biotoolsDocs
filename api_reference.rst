@@ -139,7 +139,7 @@ outputDataFormat    Fuzzy search over output for EDAM Format (term) (quoted as n
 outputDataFormatID  Exact search over output for EDAM Format (ID) (**must** be quoted)
 
                     `outputDataFormatID="format_1982" <https://bio.tools/api/t/?outputDataFormatID="format_1982">`_ 
-toolType            Exact search for tool type (quote as needed)
+toolType            Exact search for tool type
 
                     `toolType="Command-line tool" <https://bio.tools/api/t/?toolType="Command-line%20tool">`_ 
 collectionID        Exact search for tool collection (normally quoted)
@@ -148,19 +148,19 @@ collectionID        Exact search for tool collection (normally quoted)
 maturity            Exact search for tool maturity
 
                     `maturity=Mature <https://bio.tools/api/t/?maturity=Mature>`_ 
-operatingSystem     Exact search for tool operation system                                                          
+operatingSystem     Exact search for tool operating system                                                          
 
                     `operatingSystem=Linux <https://bio.tools/api/t/?operatingSystem=Linux>`_ 
 language            Exact search for programming language
 
                     `language=Java <https://bio.tools/api/t/?language=Java>`_ 
-cost                Exact search for cost (quoted as needed)                  
+cost                Exact search for cost 
 
                     `cost="Free of charge" <https://bio.tools/api/t/?cost="Free%20of%20charge">`_ 
-license             Exact search for software or data usage license
+license             Exact search for software or data usage license (quoted as needed)
 
                     `license=GPL-3.0 <https://bio.tools/api/t/?license=GPL-3.0>`_ 
-accessibility       Exact search for tool accessibility (quoted as needed)                                       
+accessibility       Exact search for tool accessibility                                      
 
                     `accessibility="Open access" <https://bio.tools/api/t/?accessibility="Open%20access">`_ 
 credit              Fuzzy search over credit (name, email, URL, ORCID iD, type of entity, type of role and note)    
