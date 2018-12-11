@@ -2,9 +2,16 @@
 API Reference
 *************
 
-.. note::
-   The bio.tools Web API provides an easy way to access the bio.tools database.
-   If you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+
+.. attention::
+
+   - reference docs for the `bio.tools <https://bio.tools>`_ API 
+   - to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/>`_
+   - if you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+
+     
+The bio.tools Web API provides an easy way to access the bio.tools database.
+
 
 List tools
 ----------

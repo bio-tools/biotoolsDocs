@@ -5,7 +5,8 @@ API Usage Guide
 .. attention::
 
    - guidelines for the `bio.tools <https://bio.tools>`_ API 
-   - or to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/>`_
+   - to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/>`_
+   - see also the `API Reference <https://biotools.readthedocs.io/en/latest/api_reference.html>`_  
 
 bio.tools implements the model of software information defined in `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_ .  This page summarises the structure and syntax of an XML / JSON file that describes a tool for submission to bio.tools via the API.
 
