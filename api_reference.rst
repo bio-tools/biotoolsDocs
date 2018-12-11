@@ -1,5 +1,6 @@
-API endpoints - development
-===========================
+*************
+API Reference
+*************
 
 .. note::
    The bio.tools Web API provides an easy way to access the bio.tools database.
