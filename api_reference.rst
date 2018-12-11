@@ -75,7 +75,7 @@ description         Search over tool description (quoted as needed)
 version             Exact search for tool version (**must** be quoted)
 
                     `version="4.1" <https://bio.tools/api/t/?version="4.1">`_ 
-topic               Search for EDAM Topic (term) (usually quoted - to get exact match)
+topic               Search for EDAM Topic (term) (quoted as needed)
 
                     `topic="Proteomics" <https://bio.tools/api/t/?topic="Proteomics">`_ 
 
