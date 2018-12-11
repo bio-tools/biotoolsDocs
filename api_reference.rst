@@ -159,7 +159,7 @@ cost                Exact search for cost (quoted as needed)
                     `cost="Free of charge" <https://bio.tools/api/t/?cost="Free%20of%20charge">`_ 
 license             Exact search for software or data usage license
 
-                    `license=GPL-3.0 <https://bio.tools/api/t/?>`_ 
+                    `license=GPL-3.0 <https://bio.tools/api/t/?license=GPL-3.0>`_ 
 accessibility       Exact search for tool accessibility (quoted as needed)                                       
 
                     `accessibility="Open access" <https://bio.tools/api/t/?accessibility="Open%20access">`_ 
