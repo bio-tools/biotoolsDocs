@@ -8,6 +8,7 @@ API Reference
    - reference docs for the `bio.tools <https://bio.tools>`_ API 
    - to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/>`_
    - if you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+   - see also the `API Usage Guide <https://biotools.readthedocs.io/en/latest/api_usage_guide.html>`_
 
      
 The bio.tools Web API provides an easy way to access the bio.tools database.
@@ -58,7 +59,7 @@ These are the attributes supported by bio.tools:
 ==================  ============================================================================================  =========================
 Parameter           Search behaviour                                                                              Example
 ==================  ============================================================================================  =========================
-biotoolsID          Search for bio.tools tool ID (usually quoted)                                                 ``biotoolsID="signalp"``
+biotoolsID          Search for bio.tools tool ID (usually quoted)                                                 `biotoolsID=signalp<https://bio.tools/api/t/?biotoolsID="signalp">`_
 name                Search for tool name                                                                          ``name=signalp``
 homepage            Exact search for tool homepage URL: must be quoted                                            ``homepage="http://cbs.dtu.dk/services/SignalP/"``
 description         Search over tool description                                                                  ``description=%20peptide%20cleavage``
