@@ -144,7 +144,7 @@ toolType            Exact search for tool type (quote as needed)
                     `toolType="Command-line tool" <https://bio.tools/api/t/?toolType="Command-line%20tool">`_ 
 collectionID        Exact search for tool collection (normally quoted)
 
-                    `collectionID="Rare Diseases" <https://bio.tools/api/t/?collectionID="Rare%20Diseases">`_ 
+                    `collectionID="Rare Disease" <https://bio.tools/api/t/?collectionID="Rare%20Disease">`_ 
 maturity            Exact search for tool maturity
 
                     `maturity=Mature <https://bio.tools/api/t/?maturity=Mature>`_ 
@@ -153,7 +153,7 @@ operatingSystem     Exact search for tool operation system
                     `operatingSystem=Linux <https://bio.tools/api/t/?operatingSystem=Linux>`_ 
 language            Exact search for programming language
 
-                    `language=C <https://bio.tools/api/t/?language=C>`_ 
+                    `language=Java <https://bio.tools/api/t/?language=Java>`_ 
 cost                Exact search for cost (quoted as needed)                  
 
                     `cost="Free of charge" <https://bio.tools/api/t/?cost="Free%20of%20charge">`_ 
