@@ -13,8 +13,8 @@ List tools
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/
-    https://dev.bio.tools/api/t/
+    https://bio.tools/api/tool/
+    https://bio.tools/api/t/
 
 Endpoint parameters
 """""""""""""""""""
@@ -134,7 +134,7 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://dev.bio.tools/api/tool/?page=1&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
+   curl -X GET "https://bio.tools/api/tool/?page=1&format=json&name=signalp&sort=name&ord=asc&q=protein-signal-peptide-detection"
 
 .. note::
    An EDAM concept ID can be specified as a concept URI or ID:
@@ -173,9 +173,9 @@ Tool detail
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/
-    https://dev.bio.tools/api/t/:id/
-    https://dev.bio.tools/api/:id/
+    https://bio.tools/api/tool/:id/
+    https://bio.tools/api/t/:id/
+    https://bio.tools/api/:id/
 
 
 Endpoint Parameters
@@ -193,7 +193,7 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://dev.bio.tools/api/tool/signalp/?format=json"
+   curl -X GET "https://bio.tools/api/tool/signalp/?format=json"
 
 
 Register a tool
@@ -208,8 +208,8 @@ Register a tool
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/
-    https://dev.bio.tools/api/t/
+    https://bio.tools/api/tool/
+    https://bio.tools/api/t/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -217,7 +217,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Tool     Tool you wish to register.
-                              See an `example tool <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example tool <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 .. note:: It is possible to specify editing permissions for tools. Learn how to manage :ref:`Editing_permissions`.
@@ -240,7 +240,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/"
+   -d '<resource>' "https://bio.tools/api/tool/"
 
 
 Validate registering a tool
@@ -255,8 +255,8 @@ Validate registering a tool
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/validate/
-    https://dev.bio.tools/api/t/validate/
+    https://bio.tools/api/tool/validate/
+    https://bio.tools/api/t/validate/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -264,7 +264,7 @@ Endpoint Parameters
 Parameter  Required  Type     Description        
 =========  ========  ======== ====================================================================================================================================
 data       Yes       Tool     Tool you wish to validate.
-                              See an `example tool <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example tool <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 
@@ -286,7 +286,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/validate/"
+   -d '<resource>' "https://bio.tools/api/tool/validate/"
 
 
 Update a tool
@@ -299,9 +299,9 @@ Update a tool
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/
-    https://dev.bio.tools/api/t/:id/
-    https://dev.bio.tools/api/:id/
+    https://bio.tools/api/tool/:id/
+    https://bio.tools/api/t/:id/
+    https://bio.tools/api/:id/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -310,7 +310,7 @@ Parameter  Required  Type     Description
 =========  ========  ======== ====================================================================================================================================
 id         Yes       String   biotoolsID 
 data       Yes       Tool     Description with which you wish to update the tool
-                              See an `example tool <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example tool <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 .. note:: It is possible to specify editing permissions for tools. Learn how to manage :ref:`Editing_permissions`.
@@ -333,7 +333,7 @@ Example
 
    curl -X PUT -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/SignalP"
+   -d '<resource>' "https://bio.tools/api/tool/SignalP"
 
 
 
@@ -348,9 +348,9 @@ Validate updating a tool
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/validate/
-    https://dev.bio.tools/api/t/:id/validate/
-    https://dev.bio.tools/api/:id/validate/
+    https://bio.tools/api/tool/:id/validate/
+    https://bio.tools/api/t/:id/validate/
+    https://bio.tools/api/:id/validate/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -359,7 +359,7 @@ Parameter  Required  Type     Description
 =========  ========  ======== ====================================================================================================================================
 id         Yes       String   biotoolsID 
 data       Yes       Tool Description with which you wish to update the tool for validation
-                              See an `example tool <https://dev.bio.tools/api/tool/SignalP?format=json>`_.
+                              See an `example tool <https://bio.tools/api/tool/SignalP?format=json>`_.
 =========  ========  ======== ====================================================================================================================================
 
 Headers
@@ -380,7 +380,7 @@ Example
 
    curl -X PUT -H "Content-Type: application/json" \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   -d '<resource>' "https://dev.bio.tools/api/tool/SignalP/validate/"
+   -d '<resource>' "https://bio.tools/api/tool/SignalP/validate/"
 
 
 .. _Editing_permissions:
@@ -443,9 +443,9 @@ Delete a tool
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/tool/:id/
-    https://dev.bio.tools/api/t/:id/
-    https://dev.bio.tools/api/:id/
+    https://bio.tools/api/tool/:id/
+    https://bio.tools/api/t/:id/
+    https://bio.tools/api/:id/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -472,7 +472,7 @@ Example
 
    curl -X DELETE \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   "https://dev.bio.tools/api/tool/SignalP"
+   "https://bio.tools/api/tool/SignalP"
 
 
 List used terms
@@ -483,7 +483,7 @@ List used terms
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/used-terms/:attribute
+    https://bio.tools/api/used-terms/:attribute
 
 Endpoint Parameters
 """""""""""""""""""
@@ -500,7 +500,7 @@ Example
 
 .. code-block:: bash
 
-   curl -X GET "https://dev.bio.tools/api/used-terms/name/?format=json"
+   curl -X GET "https://bio.tools/api/used-terms/name/?format=json"
 
 Response data
 """""""""""""
@@ -520,7 +520,7 @@ Create a user account
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/registration/
+    https://bio.tools/api/rest-auth/registration/
 
 POST data
 """""""""
@@ -550,7 +550,7 @@ Example
    curl -X POST -H "Content-Type: application/json" \
    -d '{"username":"username", "password1":"password", \
    "password2":"password", "email":"example@example.org"}' \
-   "https://dev.bio.tools/api/rest-auth/registration/"
+   "https://bio.tools/api/rest-auth/registration/"
 
 
 
@@ -563,7 +563,7 @@ Verify a user account
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/registration/verify-email/
+    https://bio.tools/api/rest-auth/registration/verify-email/
 
 POST data
 """""""""
@@ -589,7 +589,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -d '{"key":"ndwowtbpmlk5zxdxfrwgu2822xynjidhizhwosycve7hro1of156hjwdsf1f6gbn"}' \
-   "https://dev.bio.tools/api/rest-auth/registration/verify-email/"
+   "https://bio.tools/api/rest-auth/registration/verify-email/"
 
 
 .. _Token:
@@ -603,7 +603,7 @@ Log in / obtain token
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/login/
+    https://bio.tools/api/rest-auth/login/
 
 POST data
 """""""""
@@ -630,7 +630,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -d '{"username":"username","password":"password"}' \
-   "https://dev.bio.tools/api/rest-auth/login/"
+   "https://bio.tools/api/rest-auth/login/"
 
 Response data
 """""""""""""
@@ -651,7 +651,7 @@ Get user information
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/user/
+    https://bio.tools/api/rest-auth/user/
 
 Endpoint Parameters
 """""""""""""""""""
@@ -677,7 +677,7 @@ Example
 
    curl -X GET \
    -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-   "https://dev.bio.tools/api/rest-auth/user/?format=json"
+   "https://bio.tools/api/rest-auth/user/?format=json"
 
 Response data
 """""""""""""
@@ -702,7 +702,7 @@ Log out
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/logout/
+    https://bio.tools/api/rest-auth/logout/
 
 Headers
 """""""
@@ -720,7 +720,7 @@ Example
 
   curl -X POST 
   -H "Authorization: Token 028595d682541e7e1a5dcf2306eccb720dadafd7" \
-  "https://dev.bio.tools/api/rest-auth/logout/"
+  "https://bio.tools/api/rest-auth/logout/"
 
 
 Reset user password
@@ -732,7 +732,7 @@ Reset user password
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/password/reset/
+    https://bio.tools/api/rest-auth/password/reset/
 
 POST data
 """""""""
@@ -758,7 +758,7 @@ Example
 
    curl -X POST -H "Content-Type: application/json" \
    -d '{"email":"example@example.org"}' \
-   "https://dev.bio.tools/api/rest-auth/password/reset/"
+   "https://bio.tools/api/rest-auth/password/reset/"
 
 Confirm password reset
 ----------------------
@@ -769,7 +769,7 @@ Confirm password reset
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/rest-auth/password/reset/confirm/
+    https://bio.tools/api/rest-auth/password/reset/confirm/
 
 POST data
 """""""""
@@ -799,7 +799,7 @@ Example
    curl -X POST -H "Content-Type: application/json" \
    -d '{"uid":"MQ", "token":"4ct-67e90a1ab4f22fbb9b9f", \
    "password1":"new_password", "password2":"new_password"}' \
-   "https://dev.bio.tools/api/rest-auth/password/reset/confirm/"
+   "https://bio.tools/api/rest-auth/password/reset/confirm/"
 
 Stats
 -----
@@ -809,11 +809,11 @@ Stats
 
 .. code-block:: text
 
-    https://dev.bio.tools/api/stats
+    https://bio.tools/api/stats
 
 Example
 """""""
 
 .. code-block:: bash
 
-   curl -X GET "https://dev.bio.tools/api/stats"
+   curl -X GET "https://bio.tools/api/stats"
