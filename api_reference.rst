@@ -65,160 +65,161 @@ biotoolsID          Search for bio.tools tool ID (usually quoted)
 
 name                Search for tool name
 
-                    `name=signalp` <https://bio.tools/api/t/?name=signalp>`_ 
+                    `name=signalp <https://bio.tools/api/t/?name=signalp>`_ 
 homepage            Exact search for tool homepage URL: must be quoted
 
-                    ``homepage="http://cbs.dtu.dk/services/SignalP/"``
-description         Search over tool description
+                    `homepage="http://cbs.dtu.dk/services/SignalP/" <https://bio.tools/api/t/?homepage="http://cbs.dtu.dk/services/SignalP/">`_ 
+description         Search over tool description (quoted or not)
 
-                    ``description=%20peptide%20cleavage``
+                    `description="peptide cleavage" <https://bio.tools/api/t/?description="peptide cleavage">`_ 
 version             Exact search for tool version: must be quoted
 
-                    ``version="4.1"``
+                    `version="4.1" <https://bio.tools/api/t/?version="4.1">`_ 
 topic               Search for EDAM Topic (term)
-                    ``topic="Protein sites, features and motifs"``
+
+                    `topic="Protein features" <https://bio.tools/api/t/?topic="Protein features">`_ 
 
 topicID             Exact search for EDAM Topic (URI): must be quoted                                               
 
-                    ``topicID="topic_3510"``
+                    `topicID="topic_3510" <https://bio.tools/api/t/?topicID="topic_3510">`_ 
 function            Fuzzy search over function (input, operation, output, note and command)                         
 
-                    ``function="Sequence analysis"``
+                    `function="Sequence analysis" <https://bio.tools/api/t/?function="Sequence analysis">`_ 
 operation           Fuzzy search for EDAM Operation (term)                                                          
 
-                    ``operation="Sequence analysis"``
+                    `operation="Sequence analysis" <https://bio.tools/api/t/?operation="Sequence analysis">`_ 
 operationID         Exact search for EDAM Operation (ID): must be quoted                                            
 
-                    ``operationID="operation_2403"``
+                    `operationID="operation_2403" <https://bio.tools/api/t/?operationID="operation_2403">`_ 
 dataType            Fuzzy search over input and output for EDAM Data (term)                                         
 
-                    ``dataType="Protein sequence"``
+                    `dataType="Protein sequence" <https://bio.tools/api/t/?dataType="Protein sequence">`_ 
 dataTypeID          Exact search over input and output for EDAM Data (ID): must be quoted                           
 
-                    ``dataTypeID="data_2976"``
+                    `dataTypeID="data_2976" <https://bio.tools/api/t/?dataTypeID="data_2976">`_ 
 dataFormat          Fuzzy search over input and output for EDAM Format (term)                                       
 
-                    ``dataFormat="FASTA"``
+                    `dataFormat="FASTA" <https://bio.tools/api/t/?dataFormat="FASTA">`_ 
 dataFormatID        Exact search over input and output for EDAM Format (ID): must be quoted                         
 
-                    ``dataFormatID="format_1929"``
+                    `dataFormatID="format_1929" <https://bio.tools/api/t/?dataFormatID="format_1929">`_ 
 input               Fuzzy search over input for EDAM Data and Format (term)                                         
 
-                    ``input="Protein sequence"``
+                    `input="Protein sequence" <https://bio.tools/api/t/?input="Protein sequence">`_ 
 inputID             Exact search over input for EDAM Data and Format (ID)                                           
 
-                    ``inputID="data_2976"``
+                    `inputID="data_2976" <https://bio.tools/api/t/?inputID="data_2976">`_ 
 inputDataType       Fuzzy search over input for EDAM Data (term)                                                    
 
-                    ``inputDataType="Protein sequence"``
+                    `inputDataType="Protein sequence" <https://bio.tools/api/t/?inputDataType="Protein sequence">`_ 
 inputDataTypeID     Exact search over input for EDAM Data (ID): must be quoted                                      
 
-                    ``inputDataTypeID="data_2976"``
+                    `inputDataTypeID="data_2976" <https://bio.tools/api/t/?inputDataTypeID="data_2976">`_ 
 inputDataFormat     Fuzzy search over input for EDAM Format (term)                                                  
 
-                    ``inputDataFormat="FASTA"``
+                    `inputDataFormat="FASTA" <https://bio.tools/api/t/?inputDataFormat="FASTA">`_ 
 inputDataFormatID   Exact search over input for EDAM Format (ID): must be quoted                                    
 
-                    ``inputDataFormatID="format_1929"``
+                    `inputDataFormatID="format_1929" <https://bio.tools/api/t/?inputDataFormatID="format_1929">`_ 
 output              Fuzzy search over output for EDAM Data and Format (term)                                        
 
-                    ``output="Sequence alignment"``
+                    `output="Sequence alignment" <https://bio.tools/api/t/?output="Sequence alignment">`_ 
 outputID            Exact search over output for EDAM Data and Format (ID): must be quoted                          
 
-                    ``outputID="data_0863"``
+                    `outputID="data_0863" <https://bio.tools/api/t/?outputID="data_0863">`_ 
 outputDataType      Fuzzy search over output for EDAM Data (term)                                                   
 
-                    ``outputDataType="Sequence alignment"``
+                    `outputDataType="Sequence alignment" <https://bio.tools/api/t/?outputDataType="Sequence alignment">`_ 
 outputDataTypeID    Exact search over output for EDAM Data (ID): must be quoted                                     
 
-                    ``outputDataTypeID="data_0863"``
+                    `outputDataTypeID="data_0863" <https://bio.tools/api/t/?outputDataTypeID="data_0863">`_ 
 outputDataFormat    Fuzzy search over output for EDAM Format (term)                                                 
 
-                    ``outputDataFormat="ClustalW format"``
+                    `outputDataFormat="ClustalW format" <https://bio.tools/api/t/?outputDataFormat="ClustalW format">`_ 
 outputDataFormatID  Exact search over output for EDAM Format (ID): must be quoted                                   
 
-                    ``outputDataFormatID="format_1982"``
+                    `outputDataFormatID="format_1982" <https://bio.tools/api/t/?outputDataFormatID="format_1982">`_ 
 toolType            Exact search for tool type                                                                      
 
-                    ``.``
-collectionID        Exact search for tool collection                                                                
+                    `toolType= <https://bio.tools/api/t/?>`_ 
+collectionID        Exact search for tool collection (normally quoted)
 
-                    ``.``
-maturity            Exact search for tool maturity                                                                  
+                    `collectionID="Rare Diseases" <https://bio.tools/api/t/?collectionID="Rare Diseases">`_ 
+maturity            Exact search for tool maturity
 
-                    ``.``
+                    `maturity=Mature <https://bio.tools/api/t/?maturity=Mature>`_ 
 operatingSystem     Exact search for tool operation system                                                          
 
-                    ``.``
-language            Exact search for programming language                                                           
+                    `operatingSystem=Linux <https://bio.tools/api/t/?operatingSystem=Linux>`_ 
+language            Exact search for programming language
 
-                    ``.``
-cost                Exact search for cost                                                                           
+                    `language=C <https://bio.tools/api/t/?language=C>`_ 
+cost                Exact search for cost (quoted as needed)                  
 
-                    ``.``
-license             Exact search for software or data usage license                                                 
+                    `cost="Free of charge" <https://bio.tools/api/t/?cost="Free of charge">`_ 
+license             Exact search for software or data usage license
 
-                    ``.``
-accessibility       Exact search for tool accessibility                                                             
+                    `license=GPL-3.0 <https://bio.tools/api/t/?>`_ 
+accessibility       Exact search for tool accessibility (quoted as needed)                                       
 
-                    ``.``
+                    `accessibility="Open access" <https://bio.tools/api/t/?accessibility="Open access">`_ 
 credit              Fuzzy search over credit (name, email, URL, ORCID iD, type of entity, type of role and note)    
 
-                    ``.``
+                    `credit="Henrik Nielsen" <https://bio.tools/api/t/?credit="Henrik Nielsen">`_ 
 creditName          Exact search for name of credited entity                                                        
 
-                    ``.``
-creditTypeRole      Exact search for role of credited entity                                                        
+                    `creditName="Henrik Nielsen" <https://bio.tools/api/t/?creditName="Henrik Nielsen">`_ 
+creditTypeRole      Exact search for role of credited entity (quoted as needed)              
 
-                    ``.``
-creditTypeEntity    Exact search for type of credited entity                                                        
+                    `creditTypeRole= <https://bio.tools/api/t/?>`_ 
+creditTypeEntity    Exact search for type of credited entity (quoted as needed)
 
-                    ``.``
+                    `creditTypeEntity="Funding agency" <https://bio.tools/api/t/?creditTypeEntity="Funding agency">`_ 
 creditOrcidID       Exact search for ORCID iD of credited entity: must be quoted                                    
 
-                    ``.``
-publication         Fuzzy search over publication (DOI, PMID, PMCID, publication type and tool version)             
+                    `creditOrcidID=0000-0001-5121-2036 <https://bio.tools/api/t/?creditOrcidID=0000-0001-5121-2036>`_ 
+publication         Fuzzy search over publication (DOI, PMID, PMCID, publication type and tool version) (quoted as needed)            
 
-                    ``.``
+                    `publication=10.12688/f1000research.12974.1 <https://bio.tools/api/t/?publication=10.12688/f1000research.12974.1>`_ 
 publicationID       Exact search for publication ID (DOI, PMID or PMCID): must be quoted                            
 
-                    ``.``
-publicationType     Exact search for publication type                                                               
+                    `publicationID=10.12688/f1000research.12974.1 <https://bio.tools/api/t/?publicationID=10.12688/f1000research.12974.1>`_ 
+publicationType     Exact search for publication type
 
-                    ``.``
+                    `publicationType=Primary <https://bio.tools/api/t/?publicationType=Primary>`_ 
 publicationVersion  Exact search for tool version associated with a publication: must be quoted                     
 
-                    ``.``
-link                Fuzzy search over general link (URL, type and note)                                             
+                    `publicationVersion=1.0 <https://bio.tools/api/t/?publicationVersion=1.0>`_ 
+link                Fuzzy search over general link (URL, type and note) (quote as needed)
 
-                    ``.``
-linkType            Exact search for type of information found at a link                                            
+                    `link="Issue tracker" <https://bio.tools/api/t/?link="Issue tracker">`_ 
+linkType            Exact search for type of information found at a link (quote as needed)
 
-                    ``.``
-documentation       Fuzzy search over documentation link (URL, type and note)                                       
+                    `linkType="Issue tracker" <https://bio.tools/api/t/?>`_
+documentation       Fuzzy search over documentation link (URL, type and note) (quote as needed)                          
 
-                    ``.``
-documentationType   Exact search for type of documentation                                                          
+                    `documentation=Manual <https://bio.tools/api/t/?documentation=Manual>`_ 
+documentationType   Exact search for type of documentation (quote as needed)                     
 
-                    ``.``
-download            Fuzzy search over download link (URL, type, version and note)                                   
+                    `documentationType=Manual <https://bio.tools/api/t/?documentationType=Manual>`_ 
+download            Fuzzy search over download link (URL, type, version and note) (quote as needed)
 
-                    ``.``
-downloadType        Exact search for type of download                                                               
+                    `download=Binaries <https://bio.tools/api/t/?download=Binaries>`_ 
+downloadType        Exact search for type of download (quote as needed)                 
 
-                    ``.``
+                    `downloadType=Binaries <https://bio.tools/api/t/?downloadType=Binaries>`_ 
 downloadVersion     Exact search for tool version associated with a download: must be quoted                        
 
-                    ``.``
+                    `downloadVersion="1.0" <https://bio.tools/api/t/?downloadVersion="1.0">`_ 
 otherID             Fuzzy search over alternate tool IDs (ID value, type of ID and version)                         
 
-                    ``.``
+                    `otherID=SCR_015644 <https://bio.tools/api/t/?otherID=SCR_015644>`_ 
 otherIDType         Exact search for type of alternate tool ID                                                      
 
-                    ``.``
+                    `otherIDType=RRID <https://bio.tools/api/t/?otherIDType=RRID>`_ 
 otherIDVersion      Exact search for tool version associated with an alternate ID: must be quoted                   
 
-                    ``.``
+                    `otherIDVersion="1.0" <https://bio.tools/api/t/?otherIDVersion="1.0">`_ 
 ==================  ============================================================================================
 
 
@@ -242,7 +243,10 @@ otherIDVersion      Exact search for tool version associated with an alternate I
 
 	
 .. caution::
-   The parameters are (currently) case-sensitive, *e.g.* you **must** use ``&biotoolsID=`` and not ``&biotoolsid``.  The API parameters will be made case-insensitive in future.
+   The parameters are (currently) case-sensitive, *e.g.* you **must** use ``&biotoolsID=`` and not ``&biotoolsid``==================  ============================================================================================
+
+
+.. important=  The API parameters will be made case-insensitive in future.
 
 
 Example
