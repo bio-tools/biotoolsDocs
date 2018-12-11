@@ -169,10 +169,10 @@ credit              Fuzzy search over credit (name, email, URL, ORCID iD, type o
 creditName          Exact search for name of credited entity                                                        
 
                     `creditName="Henrik Nielsen" <https://bio.tools/api/t/?creditName="Henrik%20Nielsen">`_ 
-creditTypeRole      Exact search for role of credited entity (quoted as needed)              
+creditTypeRole      Exact search for role of credited entity 
 
                     `creditTypeRole=Developer <https://bio.tools/api/t/?creditTypeRole=Developer>`_ 
-creditTypeEntity    Exact search for type of credited entity (quoted as needed)
+creditTypeEntity    Exact search for type of credited entity 
 
                     `creditTypeEntity="Funding agency" <https://bio.tools/api/t/?creditTypeEntity="Funding%20agency">`_ 
 creditOrcidID       Exact search for ORCID iD of credited entity (**must** be quoted)
@@ -199,13 +199,13 @@ linkType            Exact search for type of information found at a link
 documentation       Fuzzy search over documentation link (URL, type and note) (quote as needed)                          
 
                     `documentation=Manual <https://bio.tools/api/t/?documentation=Manual>`_ 
-documentationType   Exact search for type of documentation (quote as needed)                     
+documentationType   Exact search for type of documentation
 
                     `documentationType=Manual <https://bio.tools/api/t/?documentationType=Manual>`_ 
 download            Fuzzy search over download link (URL, type, version and note) (quote as needed)
 
                     `download=Binaries <https://bio.tools/api/t/?download=Binaries>`_ 
-downloadType        Exact search for type of download (quote as needed)                 
+downloadType        Exact search for type of download
 
                     `downloadType=Binaries <https://bio.tools/api/t/?downloadType=Binaries>`_ 
 downloadVersion     Exact search for tool version associated with a download (**must** be quoted)
@@ -213,8 +213,12 @@ downloadVersion     Exact search for tool version associated with a download (**
                     `downloadVersion="1.0" <https://bio.tools/api/t/?downloadVersion="1.0">`_ 
 otherID             Fuzzy search over alternate tool IDs (ID value, type of ID and version)                         
 
-                    `otherID=SCR_015644 <https://bio.tools/api/t/?otherID=SCR_015644>`_ 
-otherIDType         Exact search for type of alternate tool ID                                                      
+                    `otherID="rrid:SCR_015644" <https://bio.tools/api/t/?otherID="rrid:SCR_015644">`_ 
+
+otherIDValue        Exact search for value of alternate tool ID (**must** be quoted)
+
+                    `otherIDValue="rrid:SCR_015644" <https://bio.tools/api/t/?otherIDValue="rrid:SCR_015644">`_		    
+otherIDType         Exact search for type of alternate tool ID                                
 
                     `otherIDType=RRID <https://bio.tools/api/t/?otherIDType=RRID>`_ 
 otherIDVersion      Exact search for tool version associated with an alternate ID (**must** be quoted)
