@@ -59,7 +59,7 @@ These are the attributes supported by bio.tools:
 ==================  ============================================================================================  =========================
 Parameter           Search behaviour                                                                              Example
 ==================  ============================================================================================  =========================
-biotoolsID          Search for bio.tools tool ID (usually quoted)                                                 `biotoolsID=signalp<https://bio.tools/api/t/?biotoolsID="signalp">`_
+biotoolsID          Search for bio.tools tool ID (usually quoted)                                                 `biotoolsID="signalp" <https://bio.tools/api/t/?biotoolsID="signalp">`_
 name                Search for tool name                                                                          ``name=signalp``
 homepage            Exact search for tool homepage URL: must be quoted                                            ``homepage="http://cbs.dtu.dk/services/SignalP/"``
 description         Search over tool description                                                                  ``description=%20peptide%20cleavage``
