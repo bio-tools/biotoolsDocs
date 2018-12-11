@@ -1,8 +1,6 @@
 API endpoints - development
 ===========================
 
-.. important:: This is the API documentation for upcoming features, available on the dev server at https://dev.bio.tools.
-
 .. note::
    The bio.tools Web API provides an easy way to access the bio.tools database.
    If you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.

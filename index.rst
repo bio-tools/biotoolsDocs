@@ -20,8 +20,7 @@ Contents:
    Curators Guide <curators_guide>
    Editors Guide <editors_guide>
    API reference <api_reference>
-   API reference - development <api_reference_dev>
-   API Usage Guide - development <api_usage_guide_dev>
+   API Usage Guide <api_usage_guide>
    Hangouts <hangouts>
    Roadmap <roadmap>
    Studentships <studentships>
