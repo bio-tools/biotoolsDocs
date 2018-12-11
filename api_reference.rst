@@ -159,7 +159,7 @@ cost                Exact search for cost
                     `cost="Free of charge" <https://bio.tools/api/t/?cost="Free%20of%20charge">`_ 
 license             Exact search for software or data usage license (quoted as needed)
 
-                    `license=GPL-3.0 <https://bio.tools/api/t/?license=GPL-3.0>`_ 
+                    `license="GPL-3.0" <https://bio.tools/api/t/?license="GPL-3.0">`_ 
 accessibility       Exact search for tool accessibility                                      
 
                     `accessibility="Open access" <https://bio.tools/api/t/?accessibility="Open%20access">`_ 
@@ -177,23 +177,23 @@ creditTypeEntity    Exact search for type of credited entity (quoted as needed)
                     `creditTypeEntity="Funding agency" <https://bio.tools/api/t/?creditTypeEntity="Funding%20agency">`_ 
 creditOrcidID       Exact search for ORCID iD of credited entity (**must** be quoted)
 
-                    `creditOrcidID=0000-0001-5121-2036 <https://bio.tools/api/t/?creditOrcidID=0000-0001-5121-2036>`_ 
+                    `creditOrcidID="0000-0001-5121-2036" <https://bio.tools/api/t/?creditOrcidID="0000-0001-5121-2036">`_ 
 publication         Fuzzy search over publication (DOI, PMID, PMCID, publication type and tool version) (quoted as needed)            
 
                     `publication=10.12688/f1000research.12974.1 <https://bio.tools/api/t/?publication=10.12688/f1000research.12974.1>`_ 
 publicationID       Exact search for publication ID (DOI, PMID or PMCID) (**must** be quoted)
 
-                    `publicationID=10.12688/f1000research.12974.1 <https://bio.tools/api/t/?publicationID=10.12688/f1000research.12974.1>`_ 
+                    `publicationID="10.12688/f1000research.12974.1" <https://bio.tools/api/t/?publicationID="10.12688/f1000research.12974.1">`_ 
 publicationType     Exact search for publication type
 
                     `publicationType=Primary <https://bio.tools/api/t/?publicationType=Primary>`_ 
 publicationVersion  Exact search for tool version associated with a publication (**must** be quoted)
 
-                    `publicationVersion=1.0 <https://bio.tools/api/t/?publicationVersion=1.0>`_ 
+                    `publicationVersion="1.0" <https://bio.tools/api/t/?publicationVersion="1.0">`_ 
 link                Fuzzy search over general link (URL, type and note) (quote as needed)
 
                     `link="Issue tracker" <https://bio.tools/api/t/?link="Issue%20tracker">`_ 
-linkType            Exact search for type of information found at a link (quote as needed)
+linkType            Exact search for type of information found at a link
 
                     `linkType="Issue tracker" <https://bio.tools/api/t/?>`_
 documentation       Fuzzy search over documentation link (URL, type and note) (quote as needed)                          
