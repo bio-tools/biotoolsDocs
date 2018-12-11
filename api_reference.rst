@@ -75,11 +75,11 @@ description         Search over tool description (quoted as needed)
 version             Exact search for tool version (**must** be quoted)
 
                     `version="4.1" <https://bio.tools/api/t/?version="4.1">`_ 
-topic               Search for EDAM Topic (term)
+topic               Search for EDAM Topic (term) (usually quoted - to get exact match)
 
-                    `topic="Protein features" <https://bio.tools/api/t/?topic="Protein features">`_ 
+                    `topic="Sequence analysis" <https://bio.tools/api/t/?topic="Sequence analysis">`_ 
 
-topicID             Exact search for EDAM Topic (URI): must be quoted                                               
+topicID             Exact search for EDAM Topic (URI): **must** be quoted                                               
 
                     `topicID="topic_3510" <https://bio.tools/api/t/?topicID="topic_3510">`_ 
 function            Fuzzy search over function (input, operation, output, note and command)                         
