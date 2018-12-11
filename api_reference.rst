@@ -61,11 +61,11 @@ Parameter           Search behaviour
 ==================  ============================================================================================
 biotoolsID          Search for bio.tools tool ID (usually quoted)
 
-                    `biotoolsID="signalp" <https://bio.tools/api/t/?biotoolsID="signalp">`_                         |  
-		    
+                    `biotoolsID="signalp" <https://bio.tools/api/t/?biotoolsID="signalp">`_
+
 name                Search for tool name
 
-                    ``name=signalp``
+                    `name=signalp` <https://bio.tools/api/t/?name=signalp>`_ 
 homepage            Exact search for tool homepage URL: must be quoted
 
                     ``homepage="http://cbs.dtu.dk/services/SignalP/"``
