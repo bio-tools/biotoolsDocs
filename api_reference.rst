@@ -195,7 +195,7 @@ link                Fuzzy search over general link (URL, type and note) (quote a
                     `link="Issue tracker" <https://bio.tools/api/t/?link="Issue%20tracker">`_ 
 linkType            Exact search for type of information found at a link
 
-                    `linkType="Issue tracker" <https://bio.tools/api/t/?>`_
+                    `linkType="Issue tracker" <https://bio.tools/api/t/?linkType="Issue tracker">`_
 documentation       Fuzzy search over documentation link (URL, type and note) (quote as needed)                          
 
                     `documentation=Manual <https://bio.tools/api/t/?documentation=Manual>`_ 
