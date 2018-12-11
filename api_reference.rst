@@ -139,9 +139,9 @@ outputDataFormat    Fuzzy search over output for EDAM Format (term)
 outputDataFormatID  Exact search over output for EDAM Format (ID): must be quoted                                   
 
                     `outputDataFormatID="format_1982" <https://bio.tools/api/t/?outputDataFormatID="format_1982">`_ 
-toolType            Exact search for tool type                                                                      
+toolType            Exact search for tool type (quote as needed)
 
-                    `toolType= <https://bio.tools/api/t/?>`_ 
+                    `toolType="Command-line tool" <https://bio.tools/api/t/?toolType="Command-line tool">`_ 
 collectionID        Exact search for tool collection (normally quoted)
 
                     `collectionID="Rare Diseases" <https://bio.tools/api/t/?collectionID="Rare Diseases">`_ 
@@ -171,7 +171,7 @@ creditName          Exact search for name of credited entity
                     `creditName="Henrik Nielsen" <https://bio.tools/api/t/?creditName="Henrik Nielsen">`_ 
 creditTypeRole      Exact search for role of credited entity (quoted as needed)              
 
-                    `creditTypeRole= <https://bio.tools/api/t/?>`_ 
+                    `creditTypeRole=Developer <https://bio.tools/api/t/?creditTypeRole=Developer>`_ 
 creditTypeEntity    Exact search for type of credited entity (quoted as needed)
 
                     `creditTypeEntity="Funding agency" <https://bio.tools/api/t/?creditTypeEntity="Funding agency">`_ 
