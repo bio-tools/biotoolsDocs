@@ -85,58 +85,58 @@ topicID             Exact search for EDAM Topic (URI): **must** be quoted
 function            Fuzzy search over function (input, operation, output, note and command)                         
 
                     `function="Sequence analysis" <https://bio.tools/api/t/?function="Sequence%20analysis">`_ 
-operation           Fuzzy search for EDAM Operation (term)                                                          
+operation           Fuzzy search for EDAM Operation (term) (usually quoted - to get exact match)                              
 
                     `operation="Sequence analysis" <https://bio.tools/api/t/?operation="Sequence%20analysis">`_ 
-operationID         Exact search for EDAM Operation (ID): must be quoted                                            
+operationID         Exact search for EDAM Operation (ID)(**must** be quoted)
 
                     `operationID="operation_2403" <https://bio.tools/api/t/?operationID="operation_2403">`_ 
-dataType            Fuzzy search over input and output for EDAM Data (term)                                         
+dataType            Fuzzy search over input and output for EDAM Data (term) (usually quoted - to get exact match)                              
 
                     `dataType="Protein sequence" <https://bio.tools/api/t/?dataType="Protein%20sequence">`_ 
-dataTypeID          Exact search over input and output for EDAM Data (ID): must be quoted                           
+dataTypeID          Exact search over input and output for EDAM Data (ID) (**must** be quoted)                           
 
                     `dataTypeID="data_2976" <https://bio.tools/api/t/?dataTypeID="data_2976">`_ 
-dataFormat          Fuzzy search over input and output for EDAM Format (term)                                       
+dataFormat          Fuzzy search over input and output for EDAM Format (term) (usually quoted - to get exact match)                      
 
                     `dataFormat="FASTA" <https://bio.tools/api/t/?dataFormat="FASTA">`_ 
-dataFormatID        Exact search over input and output for EDAM Format (ID): must be quoted                         
+dataFormatID        Exact search over input and output for EDAM Format (ID) (**must** be quoted)
 
                     `dataFormatID="format_1929" <https://bio.tools/api/t/?dataFormatID="format_1929">`_ 
-input               Fuzzy search over input for EDAM Data and Format (term)                                         
+input               Fuzzy search over input for EDAM Data and Format (term) (usually quoted - to get exact match)
 
                     `input="Protein sequence" <https://bio.tools/api/t/?input="Protein%20sequence">`_ 
-inputID             Exact search over input for EDAM Data and Format (ID)                                           
+inputID             Exact search over input for EDAM Data and Format (ID) (usually quoted - to get exact match)                                         
 
                     `inputID="data_2976" <https://bio.tools/api/t/?inputID="data_2976">`_ 
-inputDataType       Fuzzy search over input for EDAM Data (term)                                                    
+inputDataType       Fuzzy search over input for EDAM Data (term) (usually quoted - to get exact match)     
 
                     `inputDataType="Protein sequence" <https://bio.tools/api/t/?inputDataType="Protein%20sequence">`_ 
-inputDataTypeID     Exact search over input for EDAM Data (ID): must be quoted                                      
+inputDataTypeID     Exact search over input for EDAM Data (ID) (**must** be quoted)
 
                     `inputDataTypeID="data_2976" <https://bio.tools/api/t/?inputDataTypeID="data_2976">`_ 
-inputDataFormat     Fuzzy search over input for EDAM Format (term)                                                  
+inputDataFormat     Fuzzy search over input for EDAM Format (term) (usually quoted - to get exact match)                                 
 
                     `inputDataFormat="FASTA" <https://bio.tools/api/t/?inputDataFormat="FASTA">`_ 
-inputDataFormatID   Exact search over input for EDAM Format (ID): must be quoted                                    
+inputDataFormatID   Exact search over input for EDAM Format (ID) (**must** be quoted)
 
                     `inputDataFormatID="format_1929" <https://bio.tools/api/t/?inputDataFormatID="format_1929">`_ 
-output              Fuzzy search over output for EDAM Data and Format (term)                                        
+output              Fuzzy search over output for EDAM Data and Format (term) (usually quoted - to get exact match)
 
                     `output="Sequence alignment" <https://bio.tools/api/t/?output="Sequence%20alignment">`_ 
-outputID            Exact search over output for EDAM Data and Format (ID): must be quoted                          
+outputID            Exact search over output for EDAM Data and Format (ID) (**must** be quoted)
 
                     `outputID="data_0863" <https://bio.tools/api/t/?outputID="data_0863">`_ 
-outputDataType      Fuzzy search over output for EDAM Data (term)                                                   
+outputDataType      Fuzzy search over output for EDAM Data (term) (usually quoted - to get exact match)
 
                     `outputDataType="Sequence alignment" <https://bio.tools/api/t/?outputDataType="Sequence%20alignment">`_ 
-outputDataTypeID    Exact search over output for EDAM Data (ID): must be quoted                                     
+outputDataTypeID    Exact search over output for EDAM Data (ID) (**must** be quoted)
 
                     `outputDataTypeID="data_0863" <https://bio.tools/api/t/?outputDataTypeID="data_0863">`_ 
-outputDataFormat    Fuzzy search over output for EDAM Format (term)                                                 
+outputDataFormat    Fuzzy search over output for EDAM Format (term) (usually quoted - to get exact match)                                
 
                     `outputDataFormat="ClustalW format" <https://bio.tools/api/t/?outputDataFormat="ClustalW%20format">`_ 
-outputDataFormatID  Exact search over output for EDAM Format (ID): must be quoted                                   
+outputDataFormatID  Exact search over output for EDAM Format (ID) (**must** be quoted)
 
                     `outputDataFormatID="format_1982" <https://bio.tools/api/t/?outputDataFormatID="format_1982">`_ 
 toolType            Exact search for tool type (quote as needed)
