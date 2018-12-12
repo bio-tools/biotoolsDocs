@@ -88,7 +88,7 @@ function            Fuzzy search over function (input, operation, output, note a
 operation           Fuzzy search for EDAM Operation (term) (quoted as needed)                              
 
                     `operation="Sequence analysis" <https://bio.tools/api/t/?operation="Sequence%20analysis">`_ 
-operationID         Exact search for EDAM Operation (ID)(**must** be quoted)
+operationID         Exact search for EDAM Operation (ID) (**must** be quoted)
 
                     `operationID="operation_2403" <https://bio.tools/api/t/?operationID="operation_2403">`_ 
 dataType            Fuzzy search over input and output for EDAM Data (term) (quoted as needed)                              
@@ -232,9 +232,23 @@ otherIDVersion      Exact search for tool version associated with an alternate I
      * ``homepage``
      * ``version``
      * ``topicID``
-     * ...
+     * ``operationID``
+     * ``dataTypeID``       
+     * ``dataFormatID``
+     * ``inputID``
+     * ``inputDataTypeID``
+     * ``inputDataFormatID``
+     * ``outputID``
+     * ``outputDataTypeID``
+     * ``outputDataFormatID``
+     * ``creditOrcidID``            
+     * ``publicationID``
+     * ``publicationVersion``
+     * ``downloadVersion``
+     * ``otherIDValue``
+     * ``otherIDVersion``       
 
-   *e.g.* 
+    *e.g.* 
      * ``https://bio.tools/api/tool?topicID="topic_3510"``
        
    Values of other parameters can be quoted or unquoted:
@@ -247,7 +261,7 @@ otherIDVersion      Exact search for tool version associated with an alternate I
 
 	
 .. caution::
-   The parameters are (currently) case-sensitive, *e.g.* you **must** use ``&biotoolsID=`` and not ``&biotoolsid``==================  ============================================================================================
+   The parameters are (currently) case-sensitive, *e.g.* you **must** use ``&biotoolsID=`` and not ``&biotoolsid``
 
 
 .. important=  The API parameters will be made case-insensitive in future.
