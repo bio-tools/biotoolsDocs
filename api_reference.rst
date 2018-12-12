@@ -253,11 +253,11 @@ otherIDVersion      Exact search for tool version associated with an alternate I
        
    Values of other parameters can be quoted or unquoted:
      *  Unquoted values invoke a fuzzy word search: it will search for fuzzy matches of words in the search phrase, to the target field
-     *  Quoted values invoke an exact phrase search; it will search for an exact match of the full-length of the search phrase, to the target field
+     *  Quoted values invoke an exact phrase search; it will search for an exact match of the full-length of the search phrase, to the target field (matches to target substrings are allowed)
 
    *e.g.*
-     * ``https://bio.tools/api/tool?biotoolsID="signalp"`` returns the tool with the ID of "signalp"
-     * ``https://bio.tools/api/tool?biotoolsID=signalp`` returns tools with an ID that fuzzy-matches "signalp"       
+     * ``https://bio.tools/api/tool?biotoolsID="blast"`` returns the tool with biotoolsID of "blast" (the "canonical" blast)
+     * ``https://bio.tools/api/tool?biotoolsID=blast`` returns all tools with "blast" in their biotoolsID (all blast flavours)
 
 	
 .. caution::
