@@ -286,9 +286,6 @@ Example
    Note: URIs and IDs **must** be quoted, *e.g.* ``&topicID="operation_2403"``
    
      
-.. caution::
-   If querying by ``homepage`` you must quote the query value, *e.g.*
-
 
 Response data
 """""""""""""
