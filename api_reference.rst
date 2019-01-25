@@ -14,6 +14,27 @@ API Reference
 The bio.tools Web API provides an easy way to access the bio.tools database.
 
 
+
+.. caution::
+
+   bio.tools supports upload/download of data in XML format compliant to `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_.  You should use these endpoints (see `Tool detail <https://biotools.readthedocs.io/en/latest/api_reference.html#tool-detail>`_ below):
+
+   .. code-block:: text
+
+    https://bio.tools/api/tool/:id/
+    https://bio.tools/api/t/:id/
+    https://bio.tools/api/:id/
+
+    *e.g.* https://bio.tools/api/tool/signalp
+
+    Currently, the XML format returned from *searches* over bio.tools
+
+    *e.g.* https://bio.tools/api/tool?toolid=signalp&format=xml
+
+    is garbled / not valid (don't use it!)
+
+    
+
 List tools
 ----------
 *List and search through all the available tools. Can sort, filter, and search the results.*
