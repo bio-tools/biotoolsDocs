@@ -17,7 +17,7 @@ The bio.tools Web API provides an easy way to access the bio.tools database.
 
 .. caution::
 
-   bio.tools supports upload/download of data in XML format compliant to `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_.  You should use these endpoints (see `Tool detail <https://biotools.readthedocs.io/en/latest/api_reference.html#tool-detail>`_ below):
+   bio.tools supports upload/download of data in XML format compliant to `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_.  If you want to download in XML format you should use these endpoints (see `Tool detail <https://biotools.readthedocs.io/en/latest/api_reference.html#tool-detail>`_ below):
 
    .. code-block:: text
 
