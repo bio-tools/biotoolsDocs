@@ -27,11 +27,11 @@ The bio.tools Web API provides an easy way to access the bio.tools database.
 
     *e.g.* https://bio.tools/api/tool/signalp
 
-    Currently, the XML format returned from *searches* over bio.tools
+    Were you to try to get XML format returned from a *search* over bio.tools
 
     *e.g.* https://bio.tools/api/tool?toolid=signalp&format=xml
 
-    is garbled / not valid (don't use it!)
+    currently you'd get garbled / invalid XML (don't use it!) - we're looking at a fix.
 
     
 
@@ -52,7 +52,7 @@ Endpoint parameters
 Parameter      Required  Type                                     Default     Description        
 ===========    ========  =======================================  ==========  ============================================
 page           No        Integer                                  1           Result page number 
-format         No        String(json, xml, api)                   json        Response media type
+format         No        String(json, api)                        json        Response media type
 q              No        String                                               Query term, used for searching, 
                                                                               matches all attributes
 sort           No        String(lastUpdate,                       lastUpdate  Sorts the results by choosen value
