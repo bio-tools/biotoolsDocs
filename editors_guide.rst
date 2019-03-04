@@ -10,12 +10,12 @@ The sheer number of software and continuous advancements in tool development dem
 **Thematic editors** are well connected with their respective scientific community, experts in their field, have a broad knowledge about commonly used software and are motivated to promote bio.tools. The following tasks will enforce an improvement to the bio.tools content:
 
 * Review of bio.tools and EDAM to survey conceptual and semantic coverage.
-* Development of a strategy to achieve and sustain a minimum information level, as per the emerging information standard (Section 3.4, Appendix C). Updates and documentation have been provided through assigned Sifterapp issues (e.g. RNA analysis tools, proteomics tools, livestock and plant tools and Metabolomics tools).
+* Development of a strategy to achieve and sustain a minimum information level, as per the emerging `information standard <https://bio-tools.github.io/Tool-Information-Standard/>`_. 
 * Engage with their community, supervise hackathons and promote bio.tools in general.
 * Mentor a student for practical work such as manual curation.
 * Implement sustainable procedures for systematic tool reviews (e.g. bio.tools alert service) and curation standards.
 
-*Benefits*: A thematic editorships provides the opportunity to become a documented expert. Editors will acquire extensive knowledge and experience about available software in their fields *e.g.* to publish high-quality reviews. The editors will train additional experts during training and curation events (*e.g.* hackathons) as well as *via* student supervision. Moreover, the ELIXIR framework will support them to apply for further funding to amplify their activities within their field (at least, this will be pursued).
+*Benefits*: A thematic editorships provides the opportunity to become a curation expert. Editors will acquire extensive knowledge and experience about available software in their fields *e.g.* to publish high-quality reviews. The editors will train additional experts during training and curation events (*e.g.* hackathons) as well as *via* student supervision. Moreover, the ELIXIR infrastructure will support them to amplify their activities within a broader context.
 
 Current thematic editors
 ------------------------
