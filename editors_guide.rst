@@ -53,4 +53,4 @@ Stanislav Geidl   Chemoinformatics
 ================= ==================================================================
 
 
-`bio.tools studentships <http://biotools.readthedocs.io/en/latest/studentships.html>`_ can support thematic editors.  A typical studentship comprises (at least) one full month of full working hours which are mostly distributed over a longer time period. Applications are written on basis of the template (see *e.g.*  `proteomics studentship <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_).  The students are recruited after proposal dissemination *via* GitHub, project mailing lists *etc.*
+`bio.tools studentships <http://biotools.readthedocs.io/en/latest/studentships.html>`_ can support thematic editors.  A typical studentship comprises (at least) one full month of full working hours which are mostly distributed over a longer time period. Applications are written on basis of the template (see *e.g.*  `proteomics studentship <https://github.com/bio-tools/Studentships/blob/master/proteomics_software.pdf>`_).  The students are recruited after proposal dissemination *via* GitHub, project mailing lists *etc*.
