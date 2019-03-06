@@ -32,6 +32,7 @@ Please use the appropriate `mailing list <http://elixirmail.cbs.dtu.dk/mailman/l
 - **registry-dev** and **edam-dev** for technical discussion amongst developers 
 
 To send mail:
+
 - registry@elixir-dk.org
 - registry-support@elixir-dk.org
 - edam@elixir-dk.org
