@@ -1,7 +1,7 @@
 User Guide
 ==========
 
-This user guide aims to help you through the different steps to register your own entry to `bio.tools`_.
+This user guide aims to help you through the different steps to add entries to `bio.tools`_.
 
 .. Note::
     If you find a bug, have any questions or suggestions, please `get in touch <mailto:registry-support@elixir-dk.org>`_.
@@ -16,18 +16,18 @@ Then you just need to give a username, your email address and a password to get 
 
 Add content
 -----------
-Every user is welcome to register their own and other resources in *bio.tools*. Once your account is
-created, you can start adding your content by clicking on `add content`_.
+Every user is welcome to add their own and other resources in *bio.tools*. Once your account is
+created, you can start adding your content by clicking on `Menu ... Add content`_.
 
 The registration of an new entry is split in different parts that are described below.
 
-At every moment, you can check the validity of your information by clicking on Validate and
+At any moment, you can check the validity of your information by clicking on Validate and
 save it by clicking on Save |validate_save|.
 
 .. Note::
     Saving the entry makes it directly available online.
     If you want to save what you have done without publishing it, the only
-    way is to go to the :ref:`json` part and save the .json file locally.
+    way currently is to go to the :ref:`json` part and save the .json file locally.
 
 .. _`add content`: https://bio.tools/register
 
@@ -56,7 +56,7 @@ is automatically generated from the name.
     - http://bio.tools/t/ID/
     - http://bio.tools/ID/
 
-    Currently, if you want to change the ID you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.  In future, the ID will be editable at registration time. 
+   Currently, if you want to change the ID you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.  In future, the ID will be editable at registration time. 
 
       
 Function
