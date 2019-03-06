@@ -8,7 +8,7 @@ This user guide aims to help you through the different steps to add entries to `
 
 Create an account
 -----------------
-Creating an account on *bio.tools* is very quick and simple. Just click on the `Sign-up`_ button
+Creating an account on *bio.tools* is very quick and simple. Just click on the `Sign-up` button
 at the top-right corner of the page.
 Then you just need to give a username, your email address and a password to get your account done. 
 
@@ -16,8 +16,8 @@ Then you just need to give a username, your email address and a password to get 
 
 Add content
 -----------
-Every user is welcome to add their own and other resources in *bio.tools*. Once your account is
-created, you can start adding your content by clicking on `Menu ... Add content`_.
+Everyone is welcome to add their own and other resources to *bio.tools*. Once your account is
+created, you can start adding your content by clicking on `Menu ... Add content`.
 
 The registration of an new entry is split in different parts that are described below.
 
