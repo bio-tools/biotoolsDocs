@@ -9,9 +9,9 @@ Curators Guide
    - for curation advice mail `registry-support <mailto:registry-support@elixir-dk.org>`_
 
   
-bio.tools includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which you can download, install, configure and run yourself.
+*bio.tools* includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which you can download, install, configure and run yourself.
 
-Usually, a bio.tools entry describes a discrete tool.  Some entries describe *collections* of tools, such as software suites.  The scope, *i.e.* the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ which uses the `EDAM ontology <https://github.com/edamontology/edamontology/>`_ as a source of terms for the tool scientific description.  These curation guidelines describe how to create a high quality tool description, above and beyond the syntactic and semantic constraints that are defined in biotoolsSchema and EDAM.
+Usually, a *bio.tools* entry describes a discrete tool.  Some entries describe *collections* of tools, such as software suites.  The scope, *i.e.* the types of tools that may be included, and the attributes for their description, are defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ which uses the `EDAM ontology <https://github.com/edamontology/edamontology/>`_ as a source of terms for the tool scientific description.  These curation guidelines describe how to create a high quality tool description, above and beyond the syntactic and semantic constraints that are defined in biotoolsSchema and EDAM.
 
 - `general guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines>`_ include basic considerations, annotation of `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ and the use of `EDAM <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.  You should read these first of all.
 - guidelines on `specific attributes <http://biotools.readthedocs.io/en/latest/curators_guide.html#summary>`_ defined in the `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ 
@@ -28,10 +28,10 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
     
 .. note::
    
-   The guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by bio.tools, as a basis to monitor content and label bio.tools entries.
+   The guidelines are a key component of an emerging `information standard <http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html>`_ for tools being adopted by *bio.tools*, as a basis to monitor content and label *bio.tools* entries.
 
-   - **automatically verified** guidelines are (or will be) checked *via* automated periodic QC of the bio.tools system
-   - **manually verified** guidelines are checked *via* manual QC performed by trusted curators (bio.tools admin, entry owners *etc.*)
+   - **automatically verified** guidelines are (or will be) checked *via* automated periodic QC of the *bio.tools* system
+   - **manually verified** guidelines are checked *via* manual QC performed by trusted curators (*bio.tools* admin, entry owners *etc.*)
    - advice given in boxes (notes, tips, caution *etc.* are not verified
 
 
@@ -42,7 +42,7 @@ General guidelines
 
 Before you start
 ^^^^^^^^^^^^^^^^
-Consider the following *before* creating a bio.tools entry:
+Consider the following *before* creating a *bio.tools* entry:
 
 1. **Are one or more entries required to describe the software?**
 
@@ -67,7 +67,7 @@ Consider the following *before* creating a bio.tools entry:
      
 4. **Are there version-specific considerations?**
 
-   - as a rule, a bio.tools entry **SHOULD** describe the *latest version* available at the time of registration and **SHOULD** be updated, as required, for subsequent releases.
+   - as a rule, a *bio.tools* entry **SHOULD** describe the *latest version* available at the time of registration and **SHOULD** be updated, as required, for subsequent releases.
    - if a new version has fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ below) it **MAY** be registered as an entirely new entry.  In such cases, follow carefully the guidelines for tool `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_ and `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version>`_ annotations.
 
 5. **Plan** how to describe the `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions>`_.
@@ -77,7 +77,7 @@ Consider the following *before* creating a bio.tools entry:
    
 Tool functions 
 ^^^^^^^^^^^^^^^
-bio.tools uses a model of software (see below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+*bio.tools* uses a model of software (see below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
   
 .. image:: tool_function.PNG
@@ -86,7 +86,7 @@ Plan how how to describe the software:
 
 - identify the distinct functions (modes of operation) and the individual operations associated with each one.  Typically different functions (modes) perform different operations and for well documented tools, this is usually obvious.  If in any doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 - as a general rule, if the tool allows an option between doing one thing or another, then you **MUST** annotate the operations as distinct functions.  If in contrast a tool always does one or more things, then you **MUST** annotate these as distinct operations within a single function.
-- bio.tools aims for fairly coarse-grained description, *i.e.* you **SHOULD** only specify the primary functions and operations, from a typical end-user perspective.  If a tool happens to perform some operation internally, but this is secondary to its advertised purpose, then you **SHOULD NOT** annotate it.  If in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
+- *bio.tools* aims for fairly coarse-grained description, *i.e.* you **SHOULD** only specify the primary functions and operations, from a typical end-user perspective.  If a tool happens to perform some operation internally, but this is secondary to its advertised purpose, then you **SHOULD NOT** annotate it.  If in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
 - this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
 - many tools allow a primary input or output to be specified in a number of alternative ways, *e.g.* a sequence input that may be specified *via* a sequence identifier, or as a literal sequence.  In such cases, you **MAY** annotate the alternatives as distinct functions (see above).  If specifying just one alternative, you **SHOULD** use the EDAM Data concept for the type of data, rather than identifier.  
 
@@ -120,10 +120,10 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
    If you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
      
 .. note::
-   It currently takes some time from requesting new EDAM terms for these to be supported in bio.tools.  In future, you'll be able to request terms directly via the bio.tools registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and bio.tools.
+   It currently takes some time from requesting new EDAM terms for these to be supported in *bio.tools*.  In future, you'll be able to request terms directly via the *bio.tools* registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and *bio.tools*.
 
 .. note::
-   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in bio.tools. They are defined in `EDAM.owl <https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl>`_ via ``<usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>`.  Such tips are visible in the OLS and BioPortal browsers.
+   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in *bio.tools*. They are defined in `EDAM.owl <https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl>`_ via ``<usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>`.  Such tips are visible in the OLS and BioPortal browsers.
       
    
 
@@ -268,7 +268,7 @@ Other IDs
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#other-ids>`_.
 
 .. attention::
-   Alternative IDs of type ``biotoolsCURIE`` are set (and can only be changed) by bio.tools admin. They allow bio.tools to support multiple `biotoolsIDs <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_ (hence resolvable Tool Card URLs) for a single tool; this done in exceptional circumstances only, *e.g.* the name of a tool is changed.
+   Alternative IDs of type ``biotoolsCURIE`` are set (and can only be changed) by *bio.tools* admin. They allow *bio.tools* to support multiple `biotoolsIDs <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_ (hence resolvable Tool Card URLs) for a single tool; this done in exceptional circumstances only, *e.g.* the name of a tool is changed.
 
      
 Value
@@ -402,7 +402,7 @@ Tool type
    - in cases where a given software is described by more than one entry (*e.g.* a web application and its API are described separately) then assign only the types that are applicable to that entry.
   
 .. note::
-   - bio.tools includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
+   - *bio.tools* includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#tool-type>`_.     
 
 
@@ -529,7 +529,7 @@ License
 
 
 .. note::
-   Most permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") may be attached to the bio.tools entry (see table below)
+   Most permisible values are identifiers from the SPDX license list (https://spdx.org/licenses/). In future, based on the specified license a label (e.g. "Open-source") may be attached to the *bio.tools* entry (see table below)
 
    .. csv-table::  Labelling based on license (future work)
       :header: "License", "Description"
@@ -673,7 +673,7 @@ Links group
 *Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
 
 .. note::
-  - the bio.tools registration interace & API allows a curator to record when a link of a certain type is known to *not* be available
+  - the *bio.tools* registration interace & API allows a curator to record when a link of a certain type is known to *not* be available
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#link>`_.
    
 
@@ -722,7 +722,7 @@ Download group
 *Links to downloads for the software, e.g. source code, virtual machine image or container.*
 
 .. note::
-  - the bio.tools registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
+  - the *bio.tools* registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#download>`_.
 
 URL (download)
@@ -783,7 +783,7 @@ Documentation group
 *Links to documentation about the software e.g. manual, API specification or training material.*
 
 .. note::
-  - the bio.tools registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
+  - the *bio.tools* registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#documentation>`_.
 
 
@@ -988,7 +988,7 @@ Database portal
 **A Web application, suite or workbench providing a portal to a biological database.**
 
 - pick one or more `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the database content. See also the specialised `Data management <http://edamontology.org/topic_3071>`_ concepts.
-- consider carefully whether the database portal will be described by a single, or more than one bio.tools entry (see `Before you start <http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start>`_).  In case the portal contains one or more discrete tools (web applications), it is recommended to register these as separate entries.
+- consider carefully whether the database portal will be described by a single, or more than one *bio.tools* entry (see `Before you start <http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start>`_).  In case the portal contains one or more discrete tools (web applications), it is recommended to register these as separate entries.
 - consider an operation of `Database search <http://edamontology.org/operation_2421>`_ (or its children)
 
 Desktop application
@@ -1075,10 +1075,10 @@ Web API
 - annotate the location of machine-readable API specification (*e.g.* openAPI file) using the `download <http://biotools.readthedocs.io/en/latest/curators_guide.html#download>`_ attribute with `download type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
   - annotate the location of any human-readable documentation using the `documentation <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation>`_ attribute with `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
 - when assigning the `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, use the pattern ``name API`` *e.g.* ``Open PHACTS API``
-- in case the web service provides an interface to an existing tool registered in bio.tools, try to ensure the relevant annotations are consistent
+- in case the web service provides an interface to an existing tool registered in *bio.tools*, try to ensure the relevant annotations are consistent
 
 .. note::
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in bio.tools
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in *bio.tools*
 
 .. _webservice:     
      
@@ -1095,10 +1095,10 @@ Web service
 - annotate the location of the WSDL file using the `download <http://biotools.readthedocs.io/en/latest/curators_guide.html#download>`_ attribute with `download type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
 - annotate the location of any human-readable documentation using the `documentation <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation>`_ attribute with `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_ of ``API specification``
 - when assigning the `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, use the pattern ``name WS`` *e.g.* ``EMMA WS``
-- in case the web service provides an interface to an existing tool registered in bio.tools, try to ensure the relevant annotations are consistent
+- in case the web service provides an interface to an existing tool registered in *bio.tools*, try to ensure the relevant annotations are consistent
 
 .. note::
-   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in bio.tools
+   - `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_ includes a basic model of an API specification including endpoints however this is not yet supported in *bio.tools*
 
 
 Workbench
@@ -1112,7 +1112,7 @@ Workbench
 - individual functions provided by the workbench, especially where these are not independently available, should each be described in their own `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_
 - entries for the workbench itself and it's component tools can be associated by annotatong them as part of a common `collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
 
-.. tip:: If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
+.. tip:: If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the `*bio.tools* admin <mailto:registry-support@elixir-dk.org>`_.
 	 
 
 Workflow
@@ -1133,7 +1133,7 @@ Workflow
 Further guidelines (bio.tools admin only)
 -----------------------------------------
 .. attention::
-   The guidelines that follow are for attributes and other aspects under the control of bio.tools admin.  If you're not a bio.tools admin you can ignore this section.
+   The guidelines that follow are for attributes and other aspects under the control of *bio.tools* admin.  If you're not a *bio.tools* admin you can ignore this section.
 
 .. _biotoolsid:
 
@@ -1143,7 +1143,7 @@ biotoolsID
 *Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name, e.g. "needle".*
 
 .. attention::
-   - the ID by default is a URL-safe version of the tool name, and is set (and can only be changed) by bio.tools admin.  
+   - the ID by default is a URL-safe version of the tool name, and is set (and can only be changed) by *bio.tools* admin.  
 
 - **MUST** use the default value where possible
 - **MUST** be clean and intuitive (in case use of default is not possible) 

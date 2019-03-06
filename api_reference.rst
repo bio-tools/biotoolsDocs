@@ -15,25 +15,6 @@ The bio.tools Web API provides an easy way to access the bio.tools database.
 
 
 
-.. caution::
-
-   bio.tools supports upload/download of data in XML format compliant to `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_.  If you want to download in XML format you should use these endpoints (see `Tool detail <https://biotools.readthedocs.io/en/latest/api_reference.html#tool-detail>`_ below):
-
-   .. code-block:: text
-
-    https://bio.tools/api/tool/:id/
-    https://bio.tools/api/t/:id/
-    https://bio.tools/api/:id/
-
-    *e.g.* https://bio.tools/api/tool/signalp
-
-    Were you to try to get XML format returned from a *search* over bio.tools
-
-    *e.g.* https://bio.tools/api/tool?toolid=signalp&format=xml
-
-    currently you'd get garbled / invalid XML (don't use it!) - we're looking at a fix.
-
-    
 
 List tools
 ----------
@@ -351,6 +332,27 @@ Example
 
    curl -X GET "https://bio.tools/api/tool/signalp/?format=json"
 
+
+.. caution::
+
+   bio.tools supports upload/download of data in XML format compliant to `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_.  If you want to download in XML format you should use these endpoints (see `Tool detail <https://biotools.readthedocs.io/en/latest/api_reference.html#tool-detail>`_ below):
+
+   .. code-block:: text
+
+    https://bio.tools/api/tool/:id/
+    https://bio.tools/api/t/:id/
+    https://bio.tools/api/:id/
+
+   *e.g.* https://bio.tools/api/tool/signalp
+
+   Were you to try to get XML format returned from a *search* over bio.tools
+
+   *e.g.* https://bio.tools/api/tool?toolid=signalp&format=xml
+
+   currently you'd get garbled / invalid XML (don't use it!) - we're looking at a fix.
+
+    
+   
 
 Register a tool
 ---------------
