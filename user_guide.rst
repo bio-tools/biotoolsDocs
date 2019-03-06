@@ -8,7 +8,7 @@ This user guide aims to help you through the different steps to add entries to `
 
 Create an account
 -----------------
-Creating an account on *bio.tools* is very quick and simple. Just click on the `Register`_ button
+Creating an account on *bio.tools* is very quick and simple. Just click on the `Sign-up`_ button
 at the top-right corner of the page.
 Then you just need to give a username, your email address and a password to get your account done. 
 
@@ -49,20 +49,20 @@ For this first part, you give the main descriptors of your entry. This includess
 of your resource with a **description**, its **version** and a **homepage URL**. A unique **ID**
 is automatically generated from the name.
 
-.. Note::
-   A `unique identifier<https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ (*bio.tools* toolID) is a URL-safe version of the supplied resource name.  It's used in persitent URLs to *bio.tools* "Tool Cards"
+   .. Note::
+   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ (*bio.tools* toolID) is a URL-safe version of the supplied resource name.  It's used in persitent URLs to *bio.tools* "Tool Cards", *e.g.* for the tool ID of "signalp":
     
-    - http://bio.tools/tool/ID/
-    - http://bio.tools/t/ID/
-    - http://bio.tools/ID/
+     - http://bio.tools/tool/signalp
+     - http://bio.tools/t/signalp
+     - http://bio.tools/signalp
 
    Currently, if you want to change the ID you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.  In future, the ID will be editable at registration time. 
 
       
 Function
 """"""""
-This is where you describe the functionnality of your entry based on the `EDAM ontology`_ [1]_.
-The description is built on the following diagram:
+This is where you describe the functionality of the tool based on the `EDAM ontology`_ [1]_.
+The functionality is captured in a diagram on the Tool Cards that look like this:
 
 |biotool_function| 
 
