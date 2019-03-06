@@ -1,6 +1,6 @@
 Events
 ======
-We organise many events as well as attend events organised by others.  If you want to attend an event or have an idea for an event, please mail `registry@elixir-dk.org <mailto:registry@elixir-dk.org>`_.  As a rule we try to avoid events in July & August.  All attendees should please read our `code of conduct <http://biotools.readthedocs.org/en/latest/events.html#codeofconduct>`_.
+We have organised many events and regularly attend events organised by others.  If you want to attend an event or have an idea for an event, please mail `registry@elixir-dk.org <mailto:registry@elixir-dk.org>`_.  As a rule we try to avoid events in July & August.  All attendees should please read our `code of conduct <http://biotools.readthedocs.org/en/latest/events.html#codeofconduct>`_.
 
 - **Curation Hackathons** ("curatathons") gather providers from across the board to curate their resources, critique the Registry interfaces, and provide a forum for knowledge exchange and collaboration. 
 - **Thematic Hackathons** engage experts in a specific scientific area to help improve the relevant branches of EDAM, consolidate the existing registry annotations, as well as register new resources within the theme.
@@ -9,6 +9,44 @@ We organise many events as well as attend events organised by others.  If you wa
 
 Forthcoming events
 ------------------
+
+
+
+**Technical Hackathon : Towards a comprehensive catalogue of data formats (Autumn 2017 tbd, Amsterdam, NL)**
+*tentative*
+
+A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  More details will be added soon.
+
+
+
+
+Past events
+-----------
+
+**Meeting: ELIXIR Tools Platform (Jan 28 - 30, Ghent, BE)**
+
+A more sustainable content management architecture, based on GitHub, was outlined in more detail.  You can track developments on `GitHub <https://github.com/bio-tools/content/>`_.
+
+
+**Hackathon: Paris BioHackathon (Nov 12-16, Campus des berges de Seine, FR)**
+
+The *bio.tools* and EDAM developers ran drop-in sessions each day of this 5-day hackathon, ranging from *bio.tools* testing and feature prioritisation, curation methods and tooling, through to prototyping a more sustainable content management architecture based on GitHub.
+
+https://bh2018paris.info/
+
+
+
+**Meeting: ELIXIR Tools and ELIXIR Compute Platforms : coordination (Sep 19, Schipol, UK)**
+
+*bio.tools* was presented in context of a coordinated effort to establish ELIXIR-wide standards, protocols and processes for the orchestration of containerised applications and workloads provided by ELIXIR Communities.
+
+
+**Conference: ECCB 2018 - 17TH European Conference on Computational Biology (Sep 8-12 2018, Athens, GR)**
+
+http://eccb18.org/
+
+Work on exploring the application of *bio.tools* data to automated workflow composition in mass spectrometry-based proteomics was presented.  The work was recently published in Bioinformatics (`10.1093/bioinformatics/bty646  <https://doi.org/10.1093/bioinformatics/bty646>`_).
+
 
 **Conference: ELIXIR-DK @ 4th Annual Danish Bioinformatics Conference (Aug 29-30 2018, Odense, DK)**
 
@@ -25,17 +63,6 @@ https://gccbosc2018.sched.com/list/descriptions/
 The 2018 Galaxy Community Conference (GCC2018) and Bioinformatics Open Source Conference 2018 (BOSC2018) are meeting together in Portland, Oregon, United States, June 25-30, 2018.  There will be two days of training, a two+ day meeting, and four days of intense collaboration.  The meeting features joint & parallel sessions, shared keynotes, poster & demo sessions, birds-of-a-feather, and social events. EDAM, and the tooling around bio.tools for integration with Galaxy, will be presented.
 
 ------
-
-**Technical Hackathon : Towards a comprehensive catalogue of data formats (Autumn 2017 tbd, Amsterdam, NL)**
-*tentative*
-
-A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  More details will be added soon.
-
-
-
-
-Past events
------------
 
 **Conference: ELIXIR All-hands (Jun 4-7 2018, Berlin, DE)**
 
