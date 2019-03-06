@@ -1,14 +1,11 @@
 Contributors
 ============
 
-Registry Core
+registry-dev
 -------------
 - Jon Ison (DTU, DK) - **technical coordination**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
-- Emil Rydza (KU, DK) - **software development (lead)**, lead developer for bio.tools
 - Hans-Ioan Ienasescu (DTU, DK) - **curation (lead)**, Web development
-- Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
 - Piotr Chmura (KU, DK) - **technical coordination**, **software development (lead)**, bio.tools development (back-end)
-- Lukasz Berger (DTU, DK) - **software development** bio.tools development (front-end)
 - Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, ontology & schema development
 - Kenzo Hillion (Institut Pasteur, FR) - **workbench integration**, 
 - Matúš Kalaš (University of Bergen, NO) - **schema & ontology developer**, user engagement, ontology & schema development
@@ -33,7 +30,7 @@ Registry Core
 - Tunca Dogan (EMBL-EBI, EU) - text mining
 - Wojtek Dabrowski (RKI, DE) - benchmarking
 
-Registry Core (Registry Editors)
+registry-dev (Thematic Editors)
 ----------------
 - José Maria Carazo (CNB/CSIC, ES) - **electron microscopy**
 - Josep Gelpí (INB / BSC-CSN, ES) - **structural bioinformatics**, benchmarking & tools interoperability
@@ -44,7 +41,7 @@ Registry Core (Registry Editors)
 - Carlos Oscar Sorzano (CNB/CSIC, ES) - **electron microscopy**
 
 
-Registry Core (tentative)
+registry-dev (tentative)
 -------------------------
 - Anthony Bretaudeau (INRA - GenOuest/BIPAA)
 - Christian Anthon (University of Copenhagen)
@@ -70,6 +67,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Dan Bolser (EMBL-EBI, UK)
 - Daniel Faria (FCG)
 - Daniel Kahn (INRA, Lyon 1 University & PRABI)
+- Emil Rydza (KU, DK)
 - Federico Zambelli (CNR-IBBE)
 - Frederik Coppens (VIB, BE)
 - Gert Vriend (CMBI, NL)
@@ -81,6 +79,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Hedi Peterson (University of Tartu)
 - Heinz Stockinger (SIB Swiss Institute of Bioinformatics)
 - Helen Parkinson (EMBL-EBI, UK)
+- Henriette Husum Bak-Jensen (UCPH, DK)
 - Hervé Ménager (Institut Pasteur)
 - Inge Jonassen (ELIXIR NO)
 - Ivan Mičetić (University of Padova)
@@ -94,6 +93,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Laura Emery (EMBL-EBI)
 - Luana Licata (University of Rome "Tor Vergata")
 - Ludek Matyska (Masaryk University)
+- Lukasz Berger (DTU, DK)
 - Manuela Helmer-Citterich (University Tor Vergata, Rome)
 - Maria Maddalena Sperotto (DTU, ELIXIR-DK)
 - Marie Grosjean (IFB, FR)
