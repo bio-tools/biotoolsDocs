@@ -44,6 +44,7 @@ Hangouts
 Task management
 ---------------
 High-level project management tasks concering *bio.tools* are managed in **sifterapp** (moderated by Jon Ison):
+
 - https://biotools.sifterapp.com
 
 If you'd like a sifterapp account, please `email Jon <mailto:jison@bioinformatics.dtu.dk>`_.
