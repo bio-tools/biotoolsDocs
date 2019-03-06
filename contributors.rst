@@ -7,7 +7,7 @@ Registry Core
 - Emil Rydza (KU, DK) - **software development (lead)**, lead developer for bio.tools
 - Hans-Ioan Ienasescu (DTU, DK) - **curation (lead)**, Web development
 - Henriette Husum Bak-Jensen (UCPH - Dept of Biology) - **project management**, studentships
-- Piotr Chmura (KU, DK) - **software development**, bio.tools development (back-end)
+- Piotr Chmura (KU, DK) - **technical coordination**, **software development (lead)**, bio.tools development (back-end)
 - Lukasz Berger (DTU, DK) - **software development** bio.tools development (front-end)
 - Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, ontology & schema development
 - Kenzo Hillion (Institut Pasteur, FR) - **workbench integration**, 
