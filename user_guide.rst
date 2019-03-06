@@ -4,11 +4,11 @@ User Guide
 This user guide aims to help you through the different steps to register your own entry to `bio.tools`_.
 
 .. Note::
-    If you find a bug, have any questions or suggestions, please `get in touch with us <mailto:registry-support@elixir-dk.org>`_.
+    If you find a bug, have any questions or suggestions, please `get in touch <mailto:registry-support@elixir-dk.org>`_.
 
 Create an account
 -----------------
-Creating an account on bio.tools is very quick and simple. Just click on the `sign up`_ button
+Creating an account on *bio.tools* is very quick and simple. Just click on the `Register`_ button
 at the top-right corner of the page.
 Then you just need to give a username, your email address and a password to get your account done. 
 
@@ -16,13 +16,10 @@ Then you just need to give a username, your email address and a password to get 
 
 Add content
 -----------
-Every user is welcome to register its own resource to `bio.tools`_. Once your account is
+Every user is welcome to register their own and other resources in *bio.tools*. Once your account is
 created, you can start adding your content by clicking on `add content`_.
 
-The registration of an new entry is splitted in different parts that are described below.
-
-.. Note::
-    The minimum information required is marked with a red asterix |asterix|.
+The registration of an new entry is split in different parts that are described below.
 
 At every moment, you can check the validity of your information by clicking on Validate and
 save it by clicking on Save |validate_save|.
@@ -42,16 +39,26 @@ save it by clicking on Save |validate_save|.
    :width: 100px
    :height: 30px
 
+.. Note::
+    The minimum information required is marked with a red asterix |asterix|.
+
+	    
 Summary
 """""""
 For this first part, you give the main descriptors of your entry. This includess the **name** 
 of your resource with a **description**, its **version** and a **homepage URL**. A unique **ID**
-is automatically generated from the name but it is still possible to change it.
+is automatically generated from the name.
 
 .. Note::
-    A unique URL on `bio.tools`_ will be generated for the entry with the following format:
-    http://bio.tools/tool/ID/version/version_number.
+   A `unique identifier<https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ (*bio.tools* toolID) is a URL-safe version of the supplied resource name.  It's used in persitent URLs to *bio.tools* "Tool Cards"
+    
+    - http://bio.tools/tool/ID/
+    - http://bio.tools/t/ID/
+    - http://bio.tools/ID/
 
+    Currently, if you want to change the ID you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.  In future, the ID will be editable at registration time. 
+
+      
 Function
 """"""""
 This is where you describe the functionnality of your entry based on the `EDAM ontology`_ [1]_.
