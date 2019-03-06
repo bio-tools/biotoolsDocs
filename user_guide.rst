@@ -40,7 +40,7 @@ save it by clicking on Save |validate_save|.
    :height: 30px
 
 .. Important::
-    The minimum information required is marked with a red asterix |asterix|.
+    The minimum information required (name, desription and homepage URL) is marked with a red asterix |asterix| in the registration interface.
 
     It's recommended - especially if you have many tools to add - to read the `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ first.
 	    
@@ -70,13 +70,11 @@ The functionality is captured in a diagram on the Tool Cards that look like this
 In each box, you can add as many fields as you want. You can also add a general comment about the function (*this is particularly useful when your entry has several functions*).  It's highly recommended to read up about `tool functions <https://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ before filling this section.
 
 .. Note::
-    It can be difficult to find the right ontology to describe your function(s), input(s) or output(s).
-    Please visit `OLS EDAM`_ and `BioPortal EDAM`_ websites to find more information about the
-    different ontologies and help you finding the best description.
-
+   It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  You can use `OLS EDAM`_, `BioPortal`_ and `EDAM Browser`_ to browse EDAM and find the terms you need, or request new terms via `GitHub <https://github.com/edamontology/edamontology/issues>`_.  Improvements (including term requests) to the term picker in *bio.tools* are planned.
+    
 .. _`EDAM ontology`: http://github.com/edamontology/edamontology/
 .. _`OLS EDAM`: https://www.ebi.ac.uk/ols/ontologies/edam
-.. _`BioPortal EDAM`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
+.. _`BioPortal`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
 .. _`EDAM Browser`: https://ifb-elixirfr.github.io/edam-browser/
 
 .. |biotool_function| image:: _static/biotool_function.png
@@ -85,46 +83,36 @@ Labels
 """"""
 In this part, you can tell more about your tool:
 
-* What **type** of tool it is (command line tool, library...).
-* In which **topic(s)** the tool belongs to (based on `EDAM ontology`_ [1]_).
+* What **type** of resource it is (Command-line tool, Web application *etc.*)
+* Relevant **topic(s)** the tool fits with (from the `EDAM ontology`_ [1]_).
 * In which **operating system** it is possible to use it.
 * The **language** used to develop the tool, its **license** and **maturity**.
 * The **accessibility** of your tool and its **cost**.
 
-Contact
-"""""""
-At least one contact is required to register a tool but you can add as many contact as you want.
-
-.. Note::
-    If you wish to mention people that participated in the development of the tool, you can
-    use the :ref:`credits` part.
+You can also assign your tool to an arbitrary **collection** which can be useful for grouping together related tools.
 
 Links
 """""
-It is the place where your share links that do not belong to the other parts. For instance, it
-can be link to a mailing list, mirror or repository.
+It is the place where your add links that do not belong to Download or Documentation.  For instance, a link to a mailing list, mirror or repository (full list available on the drop-down menu of **Link type**).
 
 Download
 """"""""
-You can here share all the different download links you want. It can be many different kind
-such as binaries, source code, biological data, test data (full list available on the drop
-down menu of **Download type**).
+You can here share all the different download links you want. It can be many different kind such as binaries, source code, biological data, test data *etc.* (see the **Download type** drop-down menu).
 
 Documentation
 """""""""""""
-Make your different documentations for your tool available here.
+Make your different documentations for your tool available here. Again, you can assign type of documentation using **Documentation type**.
 
 Publications
 """"""""""""
-Share the different publications of the tool which can be the primary publication but also
-review or secondary references that are relevant to this tool. You can use either the **PubMed Central ID** (PMCID), the **PubMed ID** (PMID) or the **Digital Object ID** (DOI).
+Share the different publications of the tool, which can be the primary publication (the one to cite when the tool is used), but also
+reviews or secondary references (see **Publication type**). You can use either the **PubMed Central ID** (PMCID), the **PubMed ID** (PMID) or the **Digital Object ID** (DOI) - DOI is preferred.
 
 .. _credits:
 
-Credits
-"""""""
-Credits represent all type of entities that participated in the tool. It can be a people, but
-also an institution or a consortium.
+Credits & Support
+"""""""""""""""""
+Credits include all type of entities that contributed to the development, maintenance or provision of the resource. Credits can have an **Entity type** (Person, Institute *etc.*) and an **Entity role** (Developer, Documentor *etc.*).  Use the role of *Primary contact* to indicate preferred contact details.
 
 .. _json:
 
@@ -138,11 +126,16 @@ You can decide to make the entry either editable only by yourself, a list of use
 
 Update a resource
 -----------------
-There is two way to update a resource from its tool card: |update|
+You'll see up to three different buttons at the bottom right of the Tool Card: |update|
 
-* Click on update this record if it concerns minor changes
-* Click on create a new version to register a new version. This allows to keep all the information concerning the previous version
+* Click on *Update this record* to edit it
+* Click on *Request editing rights* if you want to get edit rights to the entry 
+* Click on *Request ownership* if you want to claim ownership of the entry
 
+..Note::
+  *bio.tools* entries are owned by the individuals who created them. Ownerships may grant edit rights, or transder ownership of their entries to others. 
+  
+  
 .. |update| image:: _static/update.png
    :width: 255px
    :height: 45px
@@ -156,7 +149,7 @@ From the tool card, click on update this record. Then you can remove the entry b
    :height: 30px
 
 .. warning::
-    Removing an entry is definitive.
+    Removing an entry is definitive.  There's no way back (other than emailing `Registry Support <mailto:registry-support@elixir-dk.org>`_).
 
 Search for a tool
 -----------------
