@@ -19,7 +19,7 @@ Add content
 Everyone is welcome to add their own and other resources to *bio.tools*. Once your account is
 created, you can start adding your content by clicking on `Menu ... Add content`.
 
-The registration of an new entry is split in different parts that are described below.
+The description of an new entry is handled by different tabs within the registration interface that are described below.
 
 At any moment, you can check the validity of your information by clicking on Validate and
 save it by clicking on Save |validate_save|.
@@ -27,7 +27,7 @@ save it by clicking on Save |validate_save|.
 .. Note::
     Saving the entry makes it directly available online.
     If you want to save what you have done without publishing it, the only
-    way currently is to go to the :ref:`json` part and save the .json file locally.
+    way currently is to go to the :ref:`json` tab and save the .json file locally.
 
 .. _`add content`: https://bio.tools/register
 
@@ -46,11 +46,11 @@ save it by clicking on Save |validate_save|.
 	    
 Summary
 """""""
-For this first part, you give the main descriptors of your entry. This includess the **name** 
+For this first part, you give the basic descriptors. This includess the **name** 
 of your resource with a **description**, its **version** and a **homepage URL**. A unique **ID**
 is automatically generated from the name.
 
-   .. Note::
+  .. Note::
    A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ (*bio.tools* toolID) is a URL-safe version of the supplied resource name.  It's used in persitent URLs to *bio.tools* "Tool Cards", *e.g.* for the tool ID of "signalp":
     
      - http://bio.tools/tool/signalp
