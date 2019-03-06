@@ -1,6 +1,5 @@
 Support
 ============
 
-For help, support and feedback, please use the following email:
-- registry-support@elixir-dk.org
+For help, support and feedback, please mail `registry-support <registry-support@elixir-dk.org>`_.
   
