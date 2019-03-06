@@ -339,9 +339,9 @@ Example
 
    .. code-block:: text
 
-    https://bio.tools/api/tool/:id/
-    https://bio.tools/api/t/:id/
-    https://bio.tools/api/:id/
+    https://bio.tools/api/tool/id/
+    https://bio.tools/api/t/id/
+    https://bio.tools/api/id/
 
    *e.g.* https://bio.tools/api/tool/signalp
 
