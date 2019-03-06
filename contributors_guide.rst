@@ -52,4 +52,5 @@ If you'd like a sifterapp account, please `email Jon <mailto:jison@bioinformatic
 
 
 
+bio.tools benefits from the support of ELIXIR Nodes: collections of research institutes from a member country that provide the resources and services that are part of ELIXIR.
 
