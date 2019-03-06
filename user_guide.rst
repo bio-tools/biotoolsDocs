@@ -39,9 +39,10 @@ save it by clicking on Save |validate_save|.
    :width: 100px
    :height: 30px
 
-.. Note::
+.. Important::
     The minimum information required is marked with a red asterix |asterix|.
 
+    It's recommended - especially if you have many tools to add - to read the `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ first.
 	    
 Summary
 """""""
@@ -66,16 +67,17 @@ The functionality is captured in a diagram on the Tool Cards that look like this
 
 |biotool_function| 
 
-In each box, you can add as many fields as you want. You can also add a general comment about the function (*this is particularly useful when your entry has several functions*).
+In each box, you can add as many fields as you want. You can also add a general comment about the function (*this is particularly useful when your entry has several functions*).  It's highly recommended to read up about `tool functions <https://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ before filling this section.
 
 .. Note::
     It can be difficult to find the right ontology to describe your function(s), input(s) or output(s).
     Please visit `OLS EDAM`_ and `BioPortal EDAM`_ websites to find more information about the
     different ontologies and help you finding the best description.
 
-.. _`EDAM ontology`: http://edamontology.org
+.. _`EDAM ontology`: http://github.com/edamontology/edamontology/
 .. _`OLS EDAM`: https://www.ebi.ac.uk/ols/ontologies/edam
 .. _`BioPortal EDAM`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
+.. _`EDAM Browser`: https://ifb-elixirfr.github.io/edam-browser/
 
 .. |biotool_function| image:: _static/biotool_function.png
 
