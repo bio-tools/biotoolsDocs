@@ -1,5 +1,5 @@
-Quick start guide
-=================
+Quickstart guide
+================
 
 This guide aims to help you through the different steps to add entries to `bio.tools`_.
 
