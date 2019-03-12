@@ -32,9 +32,9 @@ Technical components
 
 * **Tool Cards** *e.g.* https://bio.tools/signalp provide key information at a glance for registered tools.  Tool cards have human-friendly, persistent URLs which include the unique tool identifier ("signalp" in this case).  The identifier is assigned upon registration is a URL-safe derivative of (normally identical to) the supplied tool name.
 
-* **Query interfaces** available at https://bio.tools help *bio.tools* end-users with tool discovery and include the search bar, a compact "mini-card" view and a detailed "grid" view.  See the `Users Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_.
+* **Query interfaces** available at https://bio.tools help *bio.tools* end-users with tool discovery and include the search bar, a compact "mini-card" view and a detailed "grid" view.  See the `Quick Start Guide <http://biotools.readthedocs.io/en/latest/quick_start_guide.html>`_.
 
-* **Registration interface** enables manual creation of valid registry content and editing, including graphical editing via tabbed panes and an interactive JSON editor with inline error reporting.  It is available to logged-on users via "Menu ... Add content".  See the `Users Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_.
+* **Registration interface** enables manual creation of valid registry content and editing, including graphical editing via tabbed panes and an interactive JSON editor with inline error reporting.  It is available to logged-on users via "Menu ... Add content".  See the `Quick Start Guide <http://biotools.readthedocs.io/en/latest/quick_start_guide.html>`_.
 
 * `bio.tools API <http://biotools.readthedocs.io/en/latest/api_reference.html>`_ provides programmatic means to query, add and edit registry content.
   
@@ -60,7 +60,7 @@ Registered software which, for one reason or another, is no longer operational, 
 Docs overview
 -------------
 * `Contributors Guide <http://biotools.readthedocs.io/en/latest/contributors_guide.html>`_ - how to get involved (please do!)
-* `Quick Start Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_ - quick guide on how to use the *bio.tools* user interfaces.
+* `Quick Start Guide <http://biotools.readthedocs.io/en/latest/quick_start_guide.html>`_ - quick guide on how to use the *bio.tools* user interfaces.
 * `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html>`_ - how to create a high quality *bio.tools* entry.
 * `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_ - thematic editorships to improve *bio.tools* in scientific areas.
 * `Documentors Guide <http://biotools.readthedocs.io/en/latest/documentors_guide.html>`_ - how to edit the *bio.tools* docs.
