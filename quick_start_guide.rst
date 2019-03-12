@@ -1,7 +1,7 @@
 Quick start guide
 =================
 
-This user guide aims to help you through the different steps to add entries to `bio.tools`_.
+This guide aims to help you through the different steps to add entries to `bio.tools`_.
 
 .. Note::
     If you find a bug, have any questions or suggestions, please `get in touch <mailto:registry-support@elixir-dk.org>`_.
