@@ -60,7 +60,7 @@ Registered software which, for one reason or another, is no longer operational, 
 Docs overview
 -------------
 * `Contributors Guide <http://biotools.readthedocs.io/en/latest/contributors_guide.html>`_ - how to get involved (please do!)
-* `User Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_ - how to use the *bio.tools* user interfaces.
+* `Quick Start Guide <http://biotools.readthedocs.io/en/latest/user_guide.html>`_ - quick guide on how to use the *bio.tools* user interfaces.
 * `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html>`_ - how to create a high quality *bio.tools* entry.
 * `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_ - thematic editorships to improve *bio.tools* in scientific areas.
 * `Documentors Guide <http://biotools.readthedocs.io/en/latest/documentors_guide.html>`_ - how to edit the *bio.tools* docs.
