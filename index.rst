@@ -16,7 +16,7 @@ Contents:
 
    What is bio.tools? <what_is_biotools>
    Contributors Guide <contributors_guide>
-   User Guide <user_guide>
+   Quick Start Guide <quick_start_guide>
    Curators Guide <curators_guide>
    Editors Guide <editors_guide>
    API reference <api_reference>
