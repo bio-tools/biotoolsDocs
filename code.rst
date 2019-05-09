@@ -81,7 +81,7 @@ Running steps
 
 11. Frontend 
 
-    In the elixir/frontend folder run:
+    In the ``elixir/frontend`` folder run:
 
     - ``npm install``
     - ``bower install``
