@@ -28,6 +28,7 @@ Contents:
    Events <events>
    Governance <governance>
    Contributors <contributors>
+   Code <code>
    License <license>
    Publications <publications>
    Support <support>
