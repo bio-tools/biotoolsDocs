@@ -20,9 +20,9 @@ Back-end
 ^^^^^^^^
 - Python 2.7
 - the following `Python dependencies <https://github.com/bio-tools/biotoolsRegistry/blob/master/requirements.txt>`_
-- Java 8 Runtime Environment or compatible (e..g OpenJDK)
+- Java 8 Runtime Environment or compatible (*e.g.* OpenJDK)
 - Elasticsearch 5.x
-- Database System compatible with Django (e.g. MySQL, PostgreSQL, SQLite etc.)
+- Database System compatible with Django (*e.g.* MySQL, PostgreSQL, SQLite *etc.*)
 - Copy of the EDAM Ontology `EDAM.owl <http://edamontology.org/page>`_ file
 
 Front-end
@@ -39,7 +39,7 @@ Front-end
   - https://github.com/bio-tools/biotoolsRegistry/blob/master/frontend/package.json
 
 
-.. note:: Any developers who wish to run a local deployment of *bio.tools* should be familiar with technologies including Django REST Framework, AngularJS, npm and HTTP Server environments (e.g. Apache).  If you need help getting a local deployment working, contact `registry-support <mailto:registry-support@elixir-dk.org>`_.
+.. note:: Any developers who wish to run a local deployment of *bio.tools* should be familiar with technologies including Django REST Framework, AngularJS, npm and HTTP Server environments (*e.g.* Apache).  If you need help getting a local deployment working, contact `registry-support <mailto:registry-support@elixir-dk.org>`_.
 
 Running steps
 -------------
@@ -67,7 +67,7 @@ Running steps
    - Download the latest version of EDAM in owl format from http://edamontology.org
 
    - Put the owl file in ``elixir/application/backend/data/edam/owl``
-   - Change the value in ``elixir/application/backend/data/edam/current_version.txt`` to the current version (e.g. 1.16)
+   - Change the value in ``elixir/application/backend/data/edam/current_version.txt`` to the current version (*e.g.* 1.16)
    - Run: ``python elixir/application/backend/manage.py parse_edam``. This will populate the table ``elixir_ontology`` in the DB.
 
 9. Create admin user
