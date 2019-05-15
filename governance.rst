@@ -20,7 +20,7 @@ registry-dev includes the technical and scientific experts at the heart of the d
 
 Danish Node staff are responsible for reporting software development and curation priorities, and progress, to the ELIXIR-DK Management.
 
-registry-dev will assemble virtually or in person as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations.  registry-dev members are signed up to the the `registry-dev mailing list <http://biotools.readthedocs.io/en/latest/contributors_guide.html#mailing-list>`_. 
+registry-dev will assemble virtually or in person as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations.  registry-dev members are signed up to the the `registry-core mailing list <http://biotools.readthedocs.io/en/latest/contributors_guide.html#mailing-list>`_. 
 
 Thematic editors
 ^^^^^^^^^^^^^^^^

@@ -1,6 +1,10 @@
 Contributors
 ============
 
+.. note:: You can contact the registry-dev group by mailing registry-core@elixir-dk.org 
+
+   
+
 registry-dev
 -------------
 - Jon Ison (DTU, DK) - **technical coordination**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
