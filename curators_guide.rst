@@ -143,7 +143,7 @@ Name (tool)
 - **2.** **MUST** use short form if available *e.g.* ``ExPASy`` **not** ``ExPASy Bioinformatics Resource Portal``.
 - **3.** **MUST NOT** include general or technical terms ("software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.*) *unless* these are part of the common name
 - **4.** **MUST NOT** misappropriate the names of other tools, *e.g.* there are many online BLAST services besides the original NCBI BLAST tool; calling any of them "BLAST" would be wrong
-- **5.** **MUST NOT** include version information *unless* this is part of common name
+- **5.** **MUST NOT** include version or status information including terms like "alpha", "beta" *etc.* - *unless* this is part of common name
 - **6.** **SHOULD** preserve capitalisation *e.g.* ``ExPASy`` **not** ``expasy``.
 - **7.** **SHOULD** follow the naming patterns (see below)
 
