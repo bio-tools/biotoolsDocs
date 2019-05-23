@@ -1542,6 +1542,7 @@ Link object definition
         * Required: Yes
 	* Cardinality: 1 only
         * Type: URL
+        * Pattern: ``http(s?)://[^\s/$.?#].[^\s]*``
     * type
         * Required: Yes
 	* Cardinality: 1 only
@@ -1611,7 +1612,8 @@ Download object definition
     * url
         * Required: Yes
 	* Cardinality: 1 only
-        * Type: URL
+        * Type: URL 
+        * Pattern: ``http(s?)://[^\s/$.?#].[^\s]*`` 
     * type
         * Required: Yes
 	* Cardinality: 1 only
@@ -1698,6 +1700,7 @@ Documentation object definition
         * Required: Yes
 	* Cardinality: 1 only
         * Type: URL
+        * Pattern: ``http(s?)://[^\s/$.?#].[^\s]*``	  
     * type
         * Required: Yes
 	* Cardinality: 1 only
