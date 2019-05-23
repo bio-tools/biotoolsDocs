@@ -188,13 +188,13 @@ Description
 
 - **1.** **MUST** provide a concise summary of purpose / function of the tool
 - **2.** **MUST** begin with a capital letter and end with a period ('.') 
-- **4.** **SHOULD NOT** include any of the following, *unless* essential to distinguish the tool from other bio.tool entries:
+- **3.** **SHOULD NOT** include any of the following, *unless* essential to distinguish the tool from other bio.tool entries:
 
-  - general or technical terms ("software", "application", "server", "service", "SOAP", "REST", "RESTful" *etc.*) 
   - provenance information *e.g.* software provider, institute or person name
 
-- **5.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
-- **6.** **SHOULD NOT** include URLs
+- **4.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
+- **5.** **SHOULD NOT** include URLs
+- **6.** **SHOULD NOT** include DOIs  
 
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#description>`_.
@@ -1135,8 +1135,8 @@ Further guidelines (bio.tools admin only)
 
 .. _biotoolsid:
 
-biotoolsID
-^^^^^^^^^^
+summary->biotoolsID
+^^^^^^^^^^^^^^^^^^^
 
 *Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name, e.g. "needle".*
 
@@ -1158,8 +1158,8 @@ biotoolsID
    - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
 
      
-biotoolsCURIE
-^^^^^^^^^^^^^
+summary->biotoolsCURIE
+^^^^^^^^^^^^^^^^^^^^^^
 *bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool, e.g. "biotools:needle"*
      
 .. note::
@@ -1167,6 +1167,17 @@ biotoolsCURIE
    - identical to biotoolsID but with the prefix ``biotools:``
 
 
-   
+credit->elixirNode
+^^^^^^^^^^^^^^^^^^
+*ELIXIR Node that is credited, e.g. "Denmark"*
+
+- **1.** **MUST** acurately specify an ELIXIR Node that is credited, in terms from a `controlled vocabulary <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-node>`_
+- **2.** **MUST** only be credited on tools that are in a Node's Service Delivery Plan.
+
+credit->elixirPlatform
+^^^^^^^^^^^^^^^^^^^^^^
+*ELIXIR Plaform that is credited, e.g. "Tools"*
+
+- **1.** **MUST** acurately specify an ELIXIR Platform that is credited, in terms from a `controlled vocabulary <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-platform>`_
      
 
