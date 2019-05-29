@@ -148,7 +148,7 @@ Name (tool)
 - **7.** **SHOULD** follow the naming patterns (see below)
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#name>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#name>`_.
   
 .. note::  **Naming patterns**
 
@@ -197,7 +197,7 @@ Description
 - **6.** **SHOULD NOT** include DOIs  
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#description>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#description>`_.
   
 
 Homepage
@@ -207,7 +207,7 @@ Homepage
 - **1.** **MUST** resolve to a web page from the developer / provider that most specifically describes the tool
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#homepage>`_.  
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#homepage>`_.  
   
 .. tip:: In case a tool lacks it's own website, a URL of it's code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.
 
@@ -224,7 +224,7 @@ Version (tool)
 - **5.** **MAY** specify a version for database portals and web applications, but only if this is used in the common `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#version>`_.  
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#version>`_.  
 
 .. important::
    Care is needed to ensure annotations correspond to the indicated tool version.
@@ -263,7 +263,7 @@ Other IDs
    "biotoolsCURIE", "bio.tools CURIE (secondary identifier)."
    
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#other-ids>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#other-ids>`_.
 
 .. attention::
    Alternative IDs of type ``biotoolsCURIE`` are set (and can only be changed) by *bio.tools* admin. They allow *bio.tools* to support multiple `biotoolsIDs <http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid>`_ (hence resolvable Tool Card URLs) for a single tool; this done in exceptional circumstances only, *e.g.* the name of a tool is changed.
@@ -305,7 +305,7 @@ Operation
    - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#operation>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#operation>`_.
      
   
      
@@ -324,7 +324,7 @@ Data type (input and output data)
    - many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.
 
 .. note::
-   - see the syntax guidelines for `input <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#input>`_ and `output <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#output>`_
+   - see the syntax guidelines for `input <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#input>`_ and `output <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#output>`_
   
 
      
@@ -340,7 +340,7 @@ Data format (input and output data)
 .. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#format>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#format>`_.
        
     
 Note (function)
@@ -352,7 +352,7 @@ Note (function)
 - **3.** **SHOULD NOT** duplicate online documentation; give a link if necessary
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#operation>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#operation>`_.
 
 
 Command
@@ -363,7 +363,7 @@ Command
 - **2.** **MUST** be correctly associated with a function (the command must be used to invoke that specific tool function)
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#operation>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#operation>`_.
      
      
 Labels group
@@ -401,7 +401,7 @@ Tool type
   
 .. note::
    - *bio.tools* includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#tool-type>`_.     
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#tool-type>`_.     
 
 
 Topic
@@ -416,7 +416,7 @@ Topic
    - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
   
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#topic>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#topic>`_.
 
 
 Operating system
@@ -434,7 +434,7 @@ Operating system
    "Mac", "All flavours of Apple Macintosh operating systems (primarily Mac OS X)."
      
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#operating-system>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#operating-system>`_.
 
 
 Programming language
@@ -505,7 +505,7 @@ Programming language
    "Other"
 
 .. note::
-  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#programming-language>`_.
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#programming-language>`_.
 
     
   
@@ -520,7 +520,7 @@ License
   
   .. note::
   - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/stable>`_.
-  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#license>`_.
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#license>`_.
 
 .. tip::
    - Use the "Other" license for custom institutional licenses that are out of scope of `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/stable>`_.  If you've found a license that you think should be included in biotoolsSchema please report it *via* `GitHub <https://github.com/bio-tools/biotoolsSchema/issues/new>`_.
@@ -549,7 +549,7 @@ Collection
    - collections may be created for for any arbitrary purpose
      
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#collection>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#collection>`_.
   
 
   
@@ -571,7 +571,7 @@ Maturity
    - normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.
 		 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#maturity>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#maturity>`_.
 
 	    
 
@@ -592,7 +592,7 @@ Cost
    "Commercial", "Software which you have to pay to access."
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#license>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#license>`_.
 
 
 Accessibility
@@ -611,7 +611,7 @@ Accessibility
    "Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#accessibility>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#accessibility>`_.
 
 
 ELIXIR Platform
@@ -666,13 +666,13 @@ ELIXIR Node
 
      
 
-Links group
+Link group
 ^^^^^^^^^^^
 *Miscellaneous links for the software e.g. repository, issue tracker or mailing list.*
 
 .. note::
   - the *bio.tools* registration interace & API allows a curator to record when a link of a certain type is known to *not* be available
-  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#link>`_.
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#link>`_.
    
 
 URL (link)
@@ -721,7 +721,7 @@ Download group
 
 .. note::
   - the *bio.tools* registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
-  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#download>`_.
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#download>`_.
 
 URL (download)
 ..............
@@ -782,7 +782,7 @@ Documentation group
 
 .. note::
   - the *bio.tools* registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
-  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#documentation>`_.
+  - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#documentation>`_.
 
 
 URL (documentation)
@@ -824,9 +824,30 @@ Note (documentation)
 - **1.** **SHOULD** be concise and summarise only practical information about the link
 
 
+Relation group
+^^^^^^^^^^^^^^
+*Details of a relationship this software shares with other software registered in bio.tools.*
+
+- **1.** **MUST** correctly identify a relationship between two *bio.tools* entries
+- **2.** **MUST NOT** not contradict a relationship that is already specified in *bio.tools*
+- **3.** **MUST** specify a valid biotoolsID (of a tool that's registerd in *bio.tools*)
   
-Publications group
-^^^^^^^^^^^^^^^^^^
+.. note::
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#relation>`_.
+
+
+biotoolsID (relation)
+.....................
+*bio.tools ID of an existing bio.tools entry which this software is related to, e.g. "needle"*
+
+type (relation)
+.....................
+*Type of relation between this and another registered software, e.g. "isNewVersionOf"*
+
+  
+  
+Publication group
+^^^^^^^^^^^^^^^^^
 *Publications about the software*
 
 - **1.** **MUST** correctly identify a relevant publication
@@ -834,7 +855,7 @@ Publications group
 - **3.** **SHOULD** specify a DOI (if available) (in preference to PMID and PMCID)
 
 .. note::
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#publication>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#publication>`_.
 
 
 PubMed Central ID
@@ -876,8 +897,8 @@ Version (publication)
 - **2.** **MUST** follow the general guidelines for `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool>`_
   
 		
-Credits group
-^^^^^^^^^^^^^
+Credit group
+^^^^^^^^^^^^
 *Individuals or organisations that should be credited, or may be contacted about the software.*
 
 - **1.** **SHOULD** provide contact details for the first port-of-call when seeking help with the software, and **SHOULD** annotate the role of this entity as "Primary contact"
@@ -886,7 +907,7 @@ Credits group
 
 .. note::
    - a credit consists of the name, email and/or URL of some entity that is credited, with other associated metadata
-   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide_dev.html#credit>`_.
+   - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#credit>`_.
 
 
      

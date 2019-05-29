@@ -215,7 +215,17 @@ A sample JSON document may look like this:
           "note": "A comment goes here"
         }
       ],
-   
+      "relation":
+      [
+        {
+          "biotoolsID": "needle",
+          "type": "isNewVersionOf",
+        },
+       {
+          "biotoolsID": "emboss",
+          "type": "includedIn"
+        }
+      ],
       "publication":
       [
         {
@@ -1589,7 +1599,7 @@ Link object definition
   
 .. note::
    - the note is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
-   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#links-group>`_.
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group>`_.
   
 Download
 --------
@@ -1749,6 +1759,74 @@ Documentation object definition
 .. note::
    - the note is minimum 10 and maximum 1000 characters.  Line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group>`_.
+
+
+.. _relation:
+
+Relation
+--------
+*Details of a relationship this software shares with other software registered in bio.tools.*
+
+Attribute name
+  relation
+
+Required
+  No
+
+Cardinality
+  0 to many
+  
+Type
+  List of relation objects
+
+Relation object definition
+  Content
+    * biotoolsID
+        * Required: Yes
+	* Cardinality: 1 only
+        * Type: String
+        * Pattern: ``[_\-.0-9a-zA-Z]*``
+    * type
+        * Required: Yes
+	* Cardinality: 1 only
+        * Type: ENUM
+        * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-type>`_)
+
+          - ``isNewVersionOf``
+          - ``hasNewVersion``
+          - ``uses``
+          - ``usedBy``
+          - ``includes``
+          - ``includedIn``
+
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <relation>
+   <biotoolsID>needle</biotoolsID>
+   <type>isNewVersionOf</type>
+  </documentation>
+  
+  # JSON		
+  "relation":
+  [
+    {
+      "biotoolsID": "needle",
+      "type": "isNewVersionOf",
+    },
+    {
+      "biotoolsID": "emboss",
+      "type": "includedIn",
+    },
+  ]
+
+
+.. note::
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group>`_.
+
+
      
 .. _publication:
 
@@ -1830,7 +1908,7 @@ Publication object definition
 
 
 .. note::
-   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#publications-group>`_.  
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group>`_.  
   
 .. _credit:
 
@@ -1958,7 +2036,7 @@ Credit object definition
    - one of ``<name>``, ``<email>`` or ``<url>`` must be specified.
    - the credit name may only contain space, uppercase and lowercase letters, decimal digits, plus symbol, period, comma, dash, underscore, colon, semicolon and parentheses.
    - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.     
-   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#credits-group>`_.    
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group>`_.    
 
 
 
