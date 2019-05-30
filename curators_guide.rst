@@ -696,7 +696,6 @@ Link type
    :header: "Link type", "Description"
    :widths: 25, 100
 
-   "Browser", "A website for browsing data."
    "Discussion forum", "Online forum for user discussions about the software."
    "Helpdesk", "Helpdesk providing support in using the software."
    "Issue tracker", "Tracker for software issues, bug reports, feature requests etc."

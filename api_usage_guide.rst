@@ -1559,7 +1559,6 @@ Link object definition
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#linktype>`_)
 	  
-	  - ``Browser``
 	  - ``Discussion forum``
 	  - ``Helpdesk``
 	  - ``Issue tracker``
