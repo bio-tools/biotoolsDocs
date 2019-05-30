@@ -690,12 +690,14 @@ Link type
 *The type of data, information or system that is obtained when the link is resolved, e.g. "Mailing list"*
 
 - **1.** **MUST** acurately specify the type of information available at the link, in terms from a controlled vocabulary (see below)
+- **2.** **MUST** use type "Other" if another, more specific type is not available  
   
 .. csv-table::
    :header: "Link type", "Description"
    :widths: 25, 100
 
    "Browser", "A website for browsing data."
+   "Discussion forum", "Online forum for user discussions about the software."
    "Helpdesk", "Helpdesk providing support in using the software."
    "Issue tracker", "Tracker for software issues, bug reports, feature requests etc."
    "Mailing list", "Mailing list for the software announcements, discussions, support etc."
@@ -704,7 +706,10 @@ Link type
    "Repository", "Repository where source code, data and other files may be downloaded."
    "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
    "Scientific benchmark", "Information about the scientific performance of a tool."
-   "Technical monitoring", "Information about the technical status of a tool."													
+   "Service", "An online service that provides access (an interface) to the software."
+   "Technical monitoring", "Information about the technical status of a tool."
+   "Other", "Other type of link for software - the default if a more specific type is not available."
+    
 Note (link)
 ...........
 
@@ -736,7 +741,9 @@ Download type
 *Type of download that is linked to, e.g. "Binaries"*
 
 - **1.** **MUST** acurately specify the type of download available at the link, in terms from a controlled vocabulary (see below)
-
+- **2.** **MUST** use type "Other" if another, more specific type is not available
+- **3.** **SHOULD** use type "Downloads page" for links to general downloads pages (*i.e.* one which includes details about multiple types of download)
+  
 .. csv-table::
    :header: "Download type", "Description"
    :widths: 25, 100
@@ -759,7 +766,10 @@ Download type
    "Tool wrapper (taverna)", "Taverna configuration file for the software."
    "Tool wrapper (other)", "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software."
    "VM image", "Virtual machine (VM) image for the software."
+   "Downloads page", "Web page summarising general downloads available for the software."
+   "Other", "Other type of download for software - the default if a more specific type is not available."
 
+   
 Note (download)
 ...............
 *Comment about the download, e.g. "Complete distibution"*
@@ -800,6 +810,7 @@ Documentation type
 *Type of documentation that is linked to, e.g. "Citation instructions"*
 
 - **1.** **MUST** acurately specify the type of documentation available at the link, in terms from a controlled vocabulary (see below)
+- **2.** **MUST** use type "Other" if another, more specific type is not available
 
 .. csv-table::
    :header: "Documentation type", "Description"
@@ -807,11 +818,14 @@ Documentation type
 		
    "API documentation", "Human-readable API documentation."
    "Citation instructions", "Information on how to correctly cite use of the software."
+   "Command-line options", "Information about the command-line interface to a tool."
    "Contributions policy", "Information about policy for making contributions to the software project."
+   "FAQ", "Frequently Asked Questions (and answers) about the software."
    "General", "General documentation."
    "Governance", "Information about the software governance model."
    "Installation instructions", "Instructions how to install the software."
    "Manual ", "Information on how to use the software."
+   "Release notes", "Notes about a software release or changes to the software; a change log."
    "Terms of use", "Rules that one must agree to abide by in order to use a service."
    "Training material", "Online training material such as text on a Web page, a presentation, video, tutorial etc."
    "Tutorial", "A tutorial about using the software."
