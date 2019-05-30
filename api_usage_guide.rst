@@ -1560,15 +1560,19 @@ Link object definition
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#linktype>`_)
 	  
 	  - ``Browser``
+	  - ``Discussion forum``
 	  - ``Helpdesk``
 	  - ``Issue tracker``
 	  - ``Mailing list``
 	  - ``Mirror``
 	  - ``Registry``
 	  - ``Repository``
+	  - ``Service``
 	  - ``Social media``
     	  - ``Scientific benchmark``
     	  - ``Technical monitoring``
+	  - ``Other``
+	    
     * note
         * Required: No
 	* Cardinality: 0 or 1
@@ -1648,6 +1652,9 @@ Download object definition
 	  - ``Tool wrapper (taverna)``
 	  - ``Tool wrapper (other)``
 	  - ``VM image``
+	  - ``Downloads page``
+	  - ``Other``
+
     * note
         * Required: No
 	* Cardinality: 0 or 1
@@ -1719,12 +1726,15 @@ Documentation object definition
 
 	  - ``API documentation``
 	  - ``Citation instructions``
+	  - ``Command-line options``
     	  - ``Contributions policy``
-	  - ``General``
+	  - ``FAQ``
+          - ``General``
 	  - ``Governance``
 	  - ``Installation instructions``	    	    
 	  - ``Manual``
 	  - ``Terms of use``
+	  - ``Release notes``
 	  - ``Training material``
 	  - ``Tutorial``	    
 	  - ``Other``
