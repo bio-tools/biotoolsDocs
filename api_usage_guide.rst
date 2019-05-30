@@ -1470,7 +1470,7 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 
 ELIXIR node
 -----------
-*ELIXIR Node associated with the software.*
+*ELIXIR node credited for developing or providing the software - the software is in Node Service Delivery Plan.*
 
 Attribute name
   elixirNode

@@ -1203,15 +1203,17 @@ summary->biotoolsCURIE
 
 credit->elixirNode
 ^^^^^^^^^^^^^^^^^^
-*ELIXIR Node that is credited, e.g. "Denmark"*
+*ELIXIR node credited for developing or providing the software - the software is in Node Service Delivery Plan, e.g. "Denmark"*
 
 - **1.** **MUST** acurately specify an ELIXIR Node that is credited, in terms from a `controlled vocabulary <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-node>`_
 - **2.** **MUST** only be credited on tools that are in a Node's Service Delivery Plan.
+- **3.** **MUST** only be set by a an ELIXIR Node manager or ELIXIR Hub.
 
 credit->elixirPlatform
 ^^^^^^^^^^^^^^^^^^^^^^
-*ELIXIR Plaform that is credited, e.g. "Tools"*
+*ELIXIR platform credited for developing or providing the software, e.g. "Tools"*
 
 - **1.** **MUST** acurately specify an ELIXIR Platform that is credited, in terms from a `controlled vocabulary <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-platform>`_
+- **2.** **MUST** only be set by a an ELIXIR Node manager or ELIXIR Hub.  
      
 
