@@ -621,7 +621,7 @@ Function object definition
         * Required: No
 	* Cardinality: 0 or 1
         * Type: String
-        * Restrictions: min length: 1, max length: 100	  
+        * Restrictions: min length: 1, max length: 1000
 
 .. note::
    - **note** and **cmd**: line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
