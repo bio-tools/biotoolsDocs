@@ -7,7 +7,7 @@ What is bio.tools?
 * use and connect them in workflows == **(inter)operability**
 
 Our **vision** is to be the sustainable primary archive for basic tool metadata, providing a persistent reference to high-quality (curated and verified) "canonical" descriptions of unique tools, with information about their provision via online services and various downloadable artefacts, and including entries for different versions of a tool, where these have major functional differences.
-  
+
 Objectives
 ----------
 Our main objectives are:

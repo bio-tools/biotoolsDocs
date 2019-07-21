@@ -1,7 +1,11 @@
 Editors Guide
 =============
 
-Thematic editors are `registry-dev <http://biotools.readthedocs.io/en/latest/governance.html#registry-dev>`_ members responsible for overseeing coverage and quality in specific thematic areas. The editorships will enable expanding accurate high-standard software annotations in *bio.tools* to most scientific topics in the life sciences.  
+
+**Thematic editors** are `registry-dev <http://biotools.readthedocs.io/en/latest/governance.html#registry-dev>`_ members responsible for overseeing coverage and quality in specific thematic areas. The editorships will enable expanding accurate high-standard software annotations in *bio.tools* to most scientific topics in the life sciences.  
+
+..note:: The concept of "thematic editors" is a work in progress which we will develop as funding and capacity permits.
+
 
 Background
 ----------
@@ -17,8 +21,10 @@ The sheer number of software and continuous advancements in tool development dem
 
 *Benefits*: A thematic editorships provides the opportunity to become a curation expert and contribute to a project for the benefit of the whole bioinformatics community. Editors will acquire extensive knowledge and experience about available software in their fields *e.g.* with opportunity to publish high-quality reviews. The editors will train additional experts during training and curation events (*e.g.* hackathons) as well as *via* student supervision. Moreover, the ELIXIR infrastructure will support them to amplify their activities within a broader context.
 
-Current thematic editors
-------------------------
+Candidate thematic editors
+--------------------------
+
+We have expressions of interest from the following people:
 
 ================= ==================================================================
 Editor            Topics
@@ -36,10 +42,7 @@ Vivi R. Gregersen Agricultural science (association analysis, genomics)
 ================= ==================================================================
 
 
-Tentative thematic editors
---------------------------
-
-.. note:: People listed here in the past served as EDAM Editors; we are aiming for a single, consolidated group of Thematic Edditors serving both EDAM and *bio.tools*.
+People listed below, in the past served as EDAM Editors; we are aiming for a single, consolidated group of Thematic Edditors serving both EDAM and *bio.tools*.
 
 ================= ==================================================================
 Editor            Topics

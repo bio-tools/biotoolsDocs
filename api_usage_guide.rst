@@ -330,7 +330,7 @@ Type
 Restrictions
   Min length: 10
   
-  Max length: 500
+  Max length: 1000
 
 **Example**
 
@@ -343,7 +343,7 @@ Restrictions
   "description": "needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best."
 
 .. note::
-  - minimum 10 and maximum 500 characters.
+  - minimum 10 and maximum 1000 characters.
   - line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.
   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_.
 
@@ -1427,7 +1427,7 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 
 ELIXIR platform
 ---------------
-*ELIXIR Platform associated with the software.*
+*ELIXIR platform credited for developing or providing the software.*
 
 Attribute name
   elixirPlatform
