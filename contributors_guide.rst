@@ -49,7 +49,14 @@ High-level project management tasks concering *bio.tools* are managed in **sifte
 
 If you'd like a sifterapp account, please `email Jon <mailto:jison@bioinformatics.dtu.dk>`_.
  
+Editing tool descriptions
+-------------------------
+You can contribute to *bio.tools* directly:
 
+- register your own (or other people's) tools
+- request edit rights (via a button on the *bio.tools* Tool Cards) on entries where tools are already registered 
+- request ownership (again via a button) of entries, if you are the developer of the tool described but it has been registerd by someone else
+- ask for help via the mailing lists, especially in case you have many tools to add or edits to make
 
 
 bio.tools benefits from the support of ELIXIR Nodes: collections of research institutes from a member country that provide the resources and services that are part of ELIXIR.
