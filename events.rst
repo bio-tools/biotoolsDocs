@@ -32,7 +32,7 @@ A more sustainable content management architecture, based on GitHub, was outline
 
 The *bio.tools* and EDAM developers ran drop-in sessions each day of this 5-day hackathon, ranging from *bio.tools* testing and feature prioritisation, curation methods and tooling, through to prototyping a more sustainable content management architecture based on GitHub.
 
-https://bh2018paris.info/
+https://2018.biohackathon-europe.org/
 
 
 
