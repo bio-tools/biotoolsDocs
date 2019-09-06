@@ -18,7 +18,7 @@ You only need Docker to run *bio.tools* locally.
 
 
 Installing bio.tools on your system
------------------------------------
+===================================
 The local (development) installation is done via `Docker <https://www.docker.com/>`_. Other than Git (and a text editor), nothing else is required to run and write code for bio.tools. 
 
 1. Download and Install Docker
