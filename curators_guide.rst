@@ -859,7 +859,20 @@ type (relation)
 .....................
 *Type of relation between this and another registered software, e.g. "isNewVersionOf"*
 
-  
+Relation type
+-------------
+*Type of relation between this and another registered software, e.g. "isNewVersionOf"*
+
+.. csv-table::
+   :header: "Relation type", "Description"
+   :widths: 25, 100
+
+   "isNewVersionOf", "The software is a new version of an existing software, typically providing new or improved functionality."
+   "hasNewVersion", "(inverse of above)"
+   "uses", "The software provides an interface to or in some other way uses the functions of other software under the hood, e.g. invoking a command-line tool or calling a Web API, Web service or SPARQL endpoint to perform its function."
+   "usedBy", "(inverse of above)"
+   "includes", "A workbench, toolkit or workflow includes some other, independently available, software."
+   "includedIn", "(inverse of above)"  
   
 Publication group
 ^^^^^^^^^^^^^^^^^
