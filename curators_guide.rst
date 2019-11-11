@@ -205,8 +205,8 @@ Homepage
 *Homepage of the software, or some URL that best serves this purpose, e.g. "http://emboss.open-bio.org/rel/rel6/apps/needle.html"*
 
 - **1.** **MUST** resolve to a web page from the developer / provider that most specifically describes the tool
-- **2.** "SHOULD NOT** specify an FTP site unless nothing else is available.
-- **3.** "MAY** specify a repository if no better alternative is available.
+- **2.** **SHOULD NOT** specify an FTP site unless nothing else is available.
+- **3.** **MAY** specify a repository if no better alternative is available.
   
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#homepage>`_.  

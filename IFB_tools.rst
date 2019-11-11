@@ -1,21 +1,16 @@
 IFB tools
 =========
 
-This guide helps you through the steps to register your tools in `bio.tools`_ and describe them to the standard required for the IFB Catalogue - the French national catalogue of bioinformatics resources.
+These instructions will guide you through the steps to register your tools in `bio.tools`_ and describe them to the standard required for inclusion in the IFB Catalogue - the French national catalogue of bioinformatics resources.
 
-.. Note::
+.. note::
     These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions, please `mail Jon Ison <mailto:jon.c.ison@gmail.com>`_.  For general queries about bio.tools please `mail registry-support <mailto:registry-support@elixir-dk.org>`_.
 
 
-    It's recommended - especially if you have many tools to add - to read the `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ first.
+    
+Getting started
+---------------
 
-    
-    
-Setting up 
------------
-
-All tools submitted for consideration for the IFB Service Delivery Plan have been registered, but the tool descriptions are very basic and needs to improved)
-    
 Create an account
 """""""""""""""""
 You'll need a *bio.tools* account to create `bio.tools`_ entries or edit existing ones.  Creating an account is simple: just click on the `Sign-up` at the top-right corner of the page [sign_up|.
@@ -26,8 +21,8 @@ You'll need a *bio.tools* account to create `bio.tools`_ entries or edit existin
 
 You'll be asked for a username, email address and password, then your account will be setup immediately.
 
-..Note::
-  *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed/provides the tool described, or some other responsible person, *e.g. a dedicated curator.
+.. note::
+   *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed/provides the tool described, or some other responsible person, *e.g. a dedicated curator.
 
 Find your tools
 """""""""""""""""
@@ -37,9 +32,11 @@ Create an entry
 """""""""""""""
 To create a new entry, you'll need to log onto *bio.tools*. Then click on *Menu ... Add content*, and follow the `instructions <https://>`_ below.
 
-Update a resource
------------------
-To edit an existing entry, you need to bring up the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see up to three different buttons at the bottom right of the Tool Card: |update|
+Update an entry
+"""""""""""""""
+To edit an existing entry, you need to bring up the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see up to three different buttons at the bottom right of the Tool Card:
+
+|update|
 
 * Click on *Update this record* to edit it, following the `instructions <https://>`_ below.
 * Click on *Request editing rights* if you want to get edit rights to the entry 
@@ -81,29 +78,24 @@ At any moment, you can click on Save |validate_save| to save your edits, and imm
 	    
 Summary
 """""""
-For this first part, you give the basic descriptors, including the tool **name**, a short **description** and its **homepage URL**.
+For this first part, you specify the tool **name**, a short **description** and its **homepage URL**.
 
 .. csv-table::
    :header: "Attribute", "Requirement", "Guidelines"
    :widths: 25, 100
       
    "Name", "Mandatory", <link https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>_
-   "Description", "Mandatory"
-   "Homepage URL", "Mandatory"
-   "Software version(s)", "Ignore"
+   "Description", "Mandatory", <link https://biotools.readthedocs.io/en/latest/curators_guide.html#description>_
+   "Homepage URL", "Mandatory", <link, https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>_
+   "Software version(s)", "Ignore", <link, https://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool>_
 
-Name 
-^^^^
+  .. Important::
+   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ for a tool (the *bio.tools* toolID) is set when a new entry is created.  The ID provides a persistent reference to the tool, used by bio.tools and other systems. It's important therefore that the ID is sensible and intuitive.
 
+   The ID is a URL-safe version of the supplied tool name. It is **not** currently editable, so if you want the ID to differ from the name (*e.g.* a name "Protein databank (PDB)" and an ID simply of "PDB), you have to apply a workaround: 1) create the entry giving a value for "Name" which is the desired ID value.  2) Save the entry.  3) Edit the entry, resetting the name.
 
-  .. Note::
-   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ (*bio.tools* toolID) is a URL-safe version of the supplied resource name.  It's used in persitent URLs to *bio.tools* "Tool Cards", *e.g.* for the tool ID of "signalp":
-    
-     - http://bio.tools/tool/signalp
-     - http://bio.tools/t/signalp
-     - http://bio.tools/signalp
+   To request an ID change post-registration you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_. 
 
-   Currently, if you want to change the ID you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.  In future, the ID will be editable at registration time. 
 
       
 Function
