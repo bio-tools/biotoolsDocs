@@ -77,7 +77,7 @@ At any moment, you can click on Save |validate_save| to save your edits, and imm
 
 	    
 .. Important::
-    *bio.tools* requires at least the name, desription and homepage URL of a tool are specified.  These are marked with a red asterix |asterix| in the registration interface, and must be given before a new entry can be created.  The IFB catalogue mandates more information (see sections below).
+    *bio.tools* mandates at least the tool name, description and homepage URL.  These are marked with a red asterix |asterix| in the registration interface, and must be given before a new entry can be created.  More information is required for the IFB catalogue (see sections below).
 
 	    
 Summary
@@ -93,7 +93,7 @@ For this first part, you specify the tool **name**, a short **description** and 
    "Homepage URL", "Mandatory", <link, https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>_
    "Software version(s)", "Ignore", <link, https://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool>_
 
-  .. Important::
+.. Important::
    A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ for a tool (the *bio.tools* toolID) is set when a new entry is created.  The ID provides a persistent reference to the tool, used by bio.tools and other systems. It's important therefore that the ID is sensible and intuitive.
 
    The ID is a URL-safe version of the supplied tool name. It is **not** currently editable, so if you want the ID to differ from the name (*e.g.* a name "Protein databank (PDB)" and an ID simply of "PDB), you have to apply a workaround: 1) create the entry giving a value for "Name" which is the desired ID value.  2) Save the entry.  3) Edit the entry, resetting the name.
