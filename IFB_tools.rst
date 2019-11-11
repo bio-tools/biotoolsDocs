@@ -1,6 +1,10 @@
 IFB tools
 =========
 
+.. warning
+   WORK IN PROGRESS - THESE GUIDELINES ARE CURRENTLY BEING WORKED ON / ARE IN A MESS. PLEASE COME BACK LATER.
+
+
 These instructions will guide you through the steps to register your tools in `bio.tools`_ and describe them to the standard required for inclusion in the IFB Catalogue - the French national catalogue of bioinformatics resources.
 
 .. note::
