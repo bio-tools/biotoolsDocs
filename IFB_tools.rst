@@ -1,7 +1,7 @@
 IFB tools
 =========
 
-.. warning
+.. warning::
    WORK IN PROGRESS - THESE GUIDELINES ARE CURRENTLY BEING WORKED ON / ARE IN A MESS. PLEASE COME BACK LATER.
 
 
@@ -89,10 +89,14 @@ When describing your tools using *bio.tools*, there are various sources of infor
 * Mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ (for IFB-specific queries) or `registry-support <mailto:registry-support@elixir-dk.org>`_ (general *bio.tools* queries) to get help
   
 
+4. Describe your tools
+----------------------
 
-   
-Describe your tool
-------------------
+Using the bio.tools registration interface
+
+  
+The bio.tools registration interface
+""""""""""""""""""""""""""""""""""""
 
 Tool descriptions are created or edited using the *bio.tools* registration interface, which is organised into different tabs described below.
 
@@ -109,13 +113,14 @@ At any moment, you can click on Save |validate_save| to save your edits, and imm
    :width: 100px
    :height: 30px
 
-
-
-	    
+   
 .. Important::
-    *bio.tools* mandates at least the tool name, description and homepage URL.  These are marked with a red asterix |asterix| in the registration interface, and must be given before a new entry can be created.  More information is required for the IFB catalogue (see sections below).
+   The attributes (tool name, description and homepage URL) required by *bio.tools* are marked with a red asterix |asterix| in the registration interface, and must be given before a new entry can be created.  More information is required for the ` IFB catalogue <https://>`_ ! 
 
-	    
+.. note::
+   It's also possibe to create tool descriptions in JSON format directly in a text editor, and either paste these into the registration interface ("JSON" tab) or use the *bio.tools* API.  For guidance on using the API, see the `API Reference <https://biotools.readthedocs.io/en/latest/api_reference.html>`_ and the `API Usage Guide <https://biotools.readthedocs.io/en/latest/api_usage_guide.html>`_. 
+
+    
 Summary
 """""""
 For this first part, you specify the tool **name**, a short **description** and its **homepage URL**.
