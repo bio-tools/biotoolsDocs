@@ -191,10 +191,10 @@ Description
 - **3.** **SHOULD NOT** include any of the following, *unless* essential to distinguish the tool from other bio.tool entries:
 
   - provenance information *e.g.* software provider, institute or person name
-
-- **4.** **SHOULD NOT** describe how good the software is (mentions of applicability are OK)
-- **5.** **SHOULD NOT** include URLs
-- **6.** **SHOULD NOT** include DOIs  
+  - describe how good the software is (mentions of applicability are OK)
+    
+- **4.** **SHOULD NOT** include URLs
+- **5.** **SHOULD NOT** include DOIs  
 
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#description>`_.
