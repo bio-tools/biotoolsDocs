@@ -35,9 +35,9 @@ You'll need an account to create *bio.tools* entries or edit existing ones.  Cre
 You'll be asked for a username, email address and password.  Your account will be setup immediately.
 
 
-2. Claim your tools
--------------------
-As a software developer or service provider, you should own the *bio.tools* entries describing your tools, by claiming ownership of existing entries and creating new ones.    
+2. Claim your bio.tools entries
+-------------------------------
+As a software developer or service provider, you should own the *bio.tools* entries describing your tools, by claiming ownership of existing entries or creating new ones.    
 
 To see whether a tool is already registered, search for it by its name. You may need to click on the "Name" facet to narrow-down the search:
 
@@ -52,19 +52,19 @@ If you find an entry you can go ahead and update_ it.  If you can't find the ent
 .. important::
    All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
    
-Update an entry
-"""""""""""""""
+Existing entries
+""""""""""""""""
 .. _update:
 
 To edit an existing entry, you need to bring up the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see up to three different buttons at the bottom right of the Tool Card:
 
 .. image:: _static/update1.png
-   :width: 200px
-   :height: 60px
+   :width: 300px
+   :height: 50px
 
 .. image:: _static/update2.png
-   :width: 200px
-   :height: 60px	    
+   :width: 300px
+   :height: 50px	    
  
 
 * Click on *Request ownership* if you want to claim ownership of the entry
@@ -75,8 +75,8 @@ To edit an existing entry, you need to bring up the Tool Card for the tool in qu
    It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please `mail registry-support <mailto:registry-support@elixir-dk.org>`_.
 
   
-Creating a basic entry
-""""""""""""""""""""""
+New entries
+"""""""""""
 .. _create:	    
 
 To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*
@@ -84,6 +84,38 @@ To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu 
 
 .. image:: _static/add.png
 
+
+bio.tools registration interface
+""""""""""""""""""""""""""""""""
+
+Tool descriptions are edited using the *bio.tools* registration interface, which is organised into different tabs ("Summary", "Function", "Labels" *etc.*).
+
+At any moment, you can click on Save |validate_save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. You can, optionally, force a manual syntax check by clicking on Validate. 
+
+.. image:: _static/registration_interface.png
+
+    
+.. _`add content`: https://bio.tools/register
+
+.. |asterix| image:: _static/red_asterix.png
+   :width: 15px
+   :height: 20px
+
+.. |validate_save| image:: _static/validate_save.png
+   :width: 100px
+   :height: 30px
+
+   
+.. Important::
+   The attributes required by *bio.tools* (tool name, description and homepage URL) are marked with a red asterix |asterix| in the registration interface, and must be given before a new entry can be created.  Much more information is required for the IFB catalogue, but this is not enforced by *bio.tools* ! 
+
+.. note::
+   It's possibe to create tool descriptions in JSON format directly in a text editor, and either paste these into the registration interface ("JSON" tab) or use the *bio.tools* API.  For guidance on using the API, see the `API Reference <https://biotools.readthedocs.io/en/latest/api_reference.html>`_ and the `API Usage Guide <https://biotools.readthedocs.io/en/latest/api_usage_guide.html>`_. 
+
+    
+
+
+	   
 
 3. Understand the information requirement
 -----------------------------------------
@@ -112,35 +144,6 @@ The information requirement of the IFB catalogue is more stringent than *bio.too
 4. Describe your tools
 ----------------------
 
-Using the bio.tools registration interface
-
-  
-The bio.tools registration interface
-""""""""""""""""""""""""""""""""""""
-
-Tool descriptions are created or edited using the *bio.tools* registration interface, which is organised into different tabs described below.
-
-At any moment, you can click on Save |validate_save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in syntax required by bio.tools. You can, optionally, force a manual validity check by clicking on Validate. 
-
-    
-.. _`add content`: https://bio.tools/register
-
-.. |asterix| image:: _static/red_asterix.png
-   :width: 15px
-   :height: 20px
-
-.. |validate_save| image:: _static/validate_save.png
-   :width: 100px
-   :height: 30px
-
-   
-.. Important::
-   The attributes (tool name, description and homepage URL) required by *bio.tools* are marked with a red asterix |asterix| in the registration interface, and must be given before a new entry can be created.  More information is required for the ` IFB catalogue <https://>`_ ! 
-
-.. note::
-   It's also possibe to create tool descriptions in JSON format directly in a text editor, and either paste these into the registration interface ("JSON" tab) or use the *bio.tools* API.  For guidance on using the API, see the `API Reference <https://biotools.readthedocs.io/en/latest/api_reference.html>`_ and the `API Usage Guide <https://biotools.readthedocs.io/en/latest/api_usage_guide.html>`_. 
-
-    
 Summary
 """""""
 For this first part, you specify the tool **name**, a short **description** and its **homepage URL**.
