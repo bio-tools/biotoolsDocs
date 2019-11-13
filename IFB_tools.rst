@@ -52,9 +52,10 @@ If you find an entry you can go ahead and update_ it.  If you can't find the ent
 .. important::
    All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
    
-.. _update:
 Update an entry
 """""""""""""""
+.. _update:
+
 To edit an existing entry, you need to bring up the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see up to three different buttons at the bottom right of the Tool Card:
 
 .. image:: _static/update1.png
@@ -74,9 +75,10 @@ To edit an existing entry, you need to bring up the Tool Card for the tool in qu
    It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please `mail registry-support <mailto:registry-support@elixir-dk.org>`_.
 
   
-.. _create:	    
 Creating a basic entry
 """"""""""""""""""""""
+.. _create:	    
+
 To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*
 
 
