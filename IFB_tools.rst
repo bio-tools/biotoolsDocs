@@ -47,7 +47,7 @@ To see whether a tool is already registered, search for it by its name. You may 
 If you find an entry you can go ahead and update_ it.  If you can't find the entry, you'll need to create_ it. In any case, before editing your entries, please ensure you understand the  `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the instructions_ below.
 
 .. note::
-   *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g. a dedicated curator.
+   *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g.* a dedicated curator.
 
 .. important::
    All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
@@ -58,12 +58,12 @@ Update an entry
 To edit an existing entry, you need to bring up the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see up to three different buttons at the bottom right of the Tool Card:
 
 .. image:: _static/update1.png
-   :width: 100px
-   :height: 30px
+   :width: 200px
+   :height: 60px
 
 .. image:: _static/update2.png
-   :width: 100px
-   :height: 30px	    
+   :width: 200px
+   :height: 60px	    
  
 
 * Click on *Request ownership* if you want to claim ownership of the entry
