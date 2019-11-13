@@ -80,7 +80,7 @@ Creating a basic entry
 To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*
 
 
-.. |update| image:: _static/update.png
+.. image:: _static/add.png
 
 
 3. Understand the information requirement
@@ -100,9 +100,7 @@ The information requirement of the IFB catalogue is more stringent than *bio.too
 * **Optional** attributes **CAN** be specified, to produce a rich tool description.
 
 
-|ifb_info_standard|
 .. image:: _static/ifb_info_standard.png
-
 
 .. note::
    The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The instructions_ below cover everything in a step-by-step way.
