@@ -15,7 +15,7 @@ These instructions will guide you through the steps to register your tools and d
 1. Get a bio.tools account
 --------------------------
 
-You'll need a *bio.tools* account to create `bio.tools`_ entries or edit existing ones.  Creating an account is simple: just click on the `Sign-up` at the top-right corner of the page.
+You'll need a *bio.tools* account to create `bio.tools`_ entries or edit existing ones.  Creating an account is simple: just click on the |Sign-up| at the top-right corner of the page.
 
 
 .. |sign_up| image:: _static/sign_up.png
@@ -29,17 +29,20 @@ You'll be asked for a username, email address and password.  Your account will b
 -------------------
 As a software developer or service provider, you should own the *bio.tools* entries describing your tools, by claiming ownership of existing entries and creating new ones.    
 
-To see whether a tool is already registered, search for it by its name. If you find an entry you can go ahead and update it.  If you can't find the entry, you'll need to create it. In any case, before editing your entries, please ensure you understand the ` information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the `instructions <https://biotools.readthedocs.io/en/latest/IFB_tools.html#describe-your-tools>`_ below.
+To see whether a tool is already registered, search for it by its name.
+
+.. |sign_up| image:: _static/find_tool.png
+
+
+If you find an entry you can go ahead and update_ it.  If you can't find the entry, you'll need to create_ it. In any case, before editing your entries, please ensure you understand the  `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the instructions_ below.
 
 .. note::
    *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g. a dedicated curator. All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already have been registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
    
-
+.. _update:
 Update an entry
 """""""""""""""
 To edit an existing entry, you need to bring up the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see up to three different buttons at the bottom right of the Tool Card:
-
-|update|
 
 * Click on *Request ownership* if you want to claim ownership of the entry
 * Click on *Request editing rights* if you want to get edit rights to the entry, but not own it 
@@ -53,6 +56,7 @@ To edit an existing entry, you need to bring up the Tool Card for the tool in qu
    :width: 255px
    :height: 45px
 
+.. _create:	    
 Creating a basic entry
 """"""""""""""""""""""
 To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*
@@ -84,7 +88,7 @@ The information requirement of the IFB catalogue is more stringent than *bio.too
 
 
 .. note::
-   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `instructions <https://>`_ below cover everything in a step-by-step way.
+   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The instructions_ below cover everything in a step-by-step way.
 
 			       
 Sources of information
@@ -96,8 +100,9 @@ When describing your tools using *bio.tools*, there are various sources of infor
 * The biotoolsSchema documentation summarises the tool attributes, their structure, and the controlled vocabularies used
 * The *bio.tools* Curators Guide provides very detailed curation guidelines
 * Mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ (for IFB-specific queries) or `registry-support <mailto:registry-support@elixir-dk.org>`_ (general *bio.tools* queries) to get help
-  
 
+
+.. _instructions:
 4. Describe your tools
 ----------------------
 
