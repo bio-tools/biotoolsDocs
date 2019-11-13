@@ -8,14 +8,14 @@ IFB tools
 These instructions will guide you through the steps to register your tools in `bio.tools`_ and describe them to the standard required for inclusion in the IFB Catalogue - the French national catalogue of bioinformatics resources.
 
 .. note::
-    These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions, please `mail Jon Ison <mailto:jon.c.ison@gmail.com>`_.  For general queries about bio.tools please `mail registry-support <mailto:registry-support@elixir-dk.org>`_.
+    These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions, please mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_.  For general queries about bio.tools mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 
 
     
 1. Get a bio.tools account
 --------------------------
 
-You'll need a *bio.tools* account to create `bio.tools`_ entries or edit existing ones.  Creating an account is simple: just click on the `Sign-up` at the top-right corner of the page [sign_up|.
+You'll need a *bio.tools* account to create `bio.tools`_ entries or edit existing ones.  Creating an account is simple: just click on the `Sign-up` at the top-right corner of the page.
 
 .. |sign_up| image:: _static/sign_up.png
    :width: 100px
@@ -26,9 +26,9 @@ You'll be asked for a username, email address and password.  Your account will b
 
 2. Claim your tools
 -------------------
-As a software developer or service provider, you should own the *bio.tools* entries corresponding to  your tools, by claiming ownership of existing entries and creating new ones as needed.    
+As a software developer or service provider, you should own the *bio.tools* entries describing your tools, by claiming ownership of existing entries and creating new ones.    
 
-First, check to see whether your tool is already registered in `bio.tools`_ by searching for the tool by its name. If you find an entry you can go ahead and update it.  If you can't find the entry, you'll need to create it. In any case, before editing your entries, please ensure you understand the ` information requirement <https://...>`_ and follow the `instructions <https://>`_ below.
+To see whether a tool is already registered, search for it by its name. If you find an entry you can go ahead and update it.  If you can't find the entry, you'll need to create it. In any case, before editing your entries, please ensure you understand the ` information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the `instructions <https://biotools.readthedocs.io/en/latest/IFB_tools.html#describe-your-tools>`_ below.
 
 .. note::
    *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g. a dedicated curator. All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already have been registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
@@ -57,19 +57,22 @@ Creating a basic entry
 To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*
 
 
+.. |update| image:: _static/update.png
+
+
 3. Understand the information requirement
 -----------------------------------------
 
 bio.tools
 #########
-*bio.tools* requires only the tool name, description and homepage URL for a tool to be registered, whilst supporting 50 attributes for rich tool descriptions.  The attributes, and their structure and syntax (enforced by *bio.tools*) are defined in `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>'_.
+*bio.tools* requires only the tool name, description and homepage URL for a tool to be registered, whilst supporting 50 attributes for rich tool descriptions.  The attributes, and their structure and syntax (enforced by *bio.tools*) are defined in `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.
 
 The IFB catalogue
 #################
 
 The information requirement of the IFB catalogue is more stringent than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the guidelines below, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
 
-* **Mandatory** attributes - **MUST** be specified.
+* **Mandatory** attributes **MUST** be specified.
 * **Recommended** attributes **SHOULD** be specified, but are not strictly required.
 * **Optional** attributes **CAN** be specified, to produce a rich tool description.
 
@@ -82,6 +85,7 @@ The information requirement for the IFB catalogue is summarised in the diagram b
 Sources of information
 """"""""""""""""""""""
 When describing your tools using *bio.tools*, there are various sources of information:
+
 * The *bio.tools* registration interface provides some hints, including whether attributes value are valid or not
 * This document provides curation guidelines tailored to the IFB catalogue, highlighting key requirements and some pitfalls
 * The biotoolsSchema documentation summarises the tool attributes, their structure, and the controlled vocabularies used
