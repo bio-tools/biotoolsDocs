@@ -5,7 +5,7 @@ IFB tools
    WORK IN PROGRESS - THESE GUIDELINES ARE CURRENTLY BEING WORKED ON / ARE IN A MESS. PLEASE COME BACK LATER.
 
 
-These instructions will guide you through the steps to register your tools in `bio.tools`_ and describe them to the standard required for inclusion in the IFB Catalogue - the French national catalogue of bioinformatics resources.
+These instructions will guide you through the steps to register your tools and databases in `bio.tools`_ and describe them to the standard required for inclusion in the next iteration of the ` IFB Catalogue <https://www.france-bioinformatique.fr/en/ressources>`_ - the French national catalogue of bioinformatics resources.
 
 .. note::
     These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions, please mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_.  For general queries about bio.tools mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
@@ -16,6 +16,7 @@ These instructions will guide you through the steps to register your tools in `b
 --------------------------
 
 You'll need a *bio.tools* account to create `bio.tools`_ entries or edit existing ones.  Creating an account is simple: just click on the `Sign-up` at the top-right corner of the page.
+
 
 .. |sign_up| image:: _static/sign_up.png
    :width: 100px
@@ -76,12 +77,16 @@ The information requirement of the IFB catalogue is more stringent than *bio.too
 * **Recommended** attributes **SHOULD** be specified, but are not strictly required.
 * **Optional** attributes **CAN** be specified, to produce a rich tool description.
 
-The information requirement for the IFB catalogue is summarised in the diagram below. The `instructions <https://>`_ below cover everything in a step-by-step way.
 
 |ifb_info_standard|
 
 .. |ifb_info_standard| image:: _static/ifb_info_standard.png
 
+
+.. note::
+   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `instructions <https://>`_ below cover everything in a step-by-step way.
+
+			       
 Sources of information
 """"""""""""""""""""""
 When describing your tools using *bio.tools*, there are various sources of information:
