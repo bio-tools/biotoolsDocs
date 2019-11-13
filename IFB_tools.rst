@@ -28,7 +28,7 @@ There are various sources of information amd help:
 You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools`_ and click on |Sign-up| at the top-right corner of the page.
 
 
-.. |Sign_up| image:: _static/sign_up.png
+.. |Sign-up| image:: _static/sign_up.png
    :width: 100px
    :height: 30px
 
