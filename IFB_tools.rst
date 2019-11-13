@@ -9,12 +9,11 @@ These instructions will guide you through the steps to register your tools and d
 
 There are various sources of information amd help:
 
-* The *bio.tools* registration interface helps you to create and edit valid tool descriptions.  It provides some hints, and ensures that the information you set is in the right format.
-* This document provides tool curation guidelines tailored to the IFB catalogue, highlighting key information and common pitfalls.
-* The *bio.tools* `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ provides in-depth curation guidelines.
+* This document provides guidelines tailored to the IFB catalogue, highlighting key information and common pitfalls.
+* The *bio.tools* `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ provides in-depth curation guidelines. It's referred to a lot from here!
 * The `biotoolsSchema documentation <https://biotoolsschema.readthedocs.io/en/latest/>`_ summarises the tool attributes, their structure, and the controlled vocabularies used by *bio.tools*, including the `EDAM ontology <https://edamontologydocs.readthedocs.io/en/latest/>`_.
 
-* Mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ (for IFB-specific queries) or `registry-support <mailto:registry-support@elixir-dk.org>`_ (general *bio.tools* queries) to get help
+* Mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ (for IFB-specific queries) or `registry-support <mailto:registry-support@elixir-dk.org>`_ (general *bio.tools* queries) to get help.
 
 .. note::
     These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions, please mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_.  For general queries about *bio.tools* mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
@@ -87,6 +86,7 @@ To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu 
 
 bio.tools registration interface
 """"""""""""""""""""""""""""""""
+* The *bio.tools* registration interface helps you to create and edit valid tool descriptions.  It provides some hints, and ensures that the information you set is in the right format.
 
 Tool descriptions are edited using the *bio.tools* registration interface, which is organised into different tabs ("Summary", "Function", "Labels" *etc.*).
 
