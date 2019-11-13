@@ -25,7 +25,7 @@ There are various sources of information amd help:
 1. Get a bio.tools account
 --------------------------
 
-You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools`_ and click on the |Sign-up| at the top-right corner of the page.
+You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools`_ and click on |Sign-up| at the top-right corner of the page.
 
 
 .. |Sign_up| image:: _static/sign_up.png
@@ -57,13 +57,19 @@ Update an entry
 """""""""""""""
 To edit an existing entry, you need to bring up the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see up to three different buttons at the bottom right of the Tool Card:
 
+.. image:: _static/update1.png
+   :width: 100px
+   :height: 30px
+
+.. image:: _static/update2.png
+   :width: 100px
+   :height: 30px	    
+ 
+
 * Click on *Request ownership* if you want to claim ownership of the entry
 * Click on *Request editing rights* if you want to get edit rights to the entry, but not own it 
 * Click on *Update this record* (visible only if you own the entry or have editing rights) to edit the entry.
 
-.. image:: _static/update.png
-
- 
 .. note::
    It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please `mail registry-support <mailto:registry-support@elixir-dk.org>`_.
 
