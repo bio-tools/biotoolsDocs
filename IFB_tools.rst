@@ -46,7 +46,10 @@ To see whether a tool is already registered, search for it by its name.
 If you find an entry you can go ahead and update_ it.  If you can't find the entry, you'll need to create_ it. In any case, before editing your entries, please ensure you understand the  `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the instructions_ below.
 
 .. note::
-   *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g. a dedicated curator. All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already have been registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
+   *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g. a dedicated curator.
+
+.. note::
+   All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already have been registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
    
 .. _update:
 Update an entry
@@ -57,14 +60,13 @@ To edit an existing entry, you need to bring up the Tool Card for the tool in qu
 * Click on *Request editing rights* if you want to get edit rights to the entry, but not own it 
 * Click on *Update this record* (visible only if you own the entry or have editing rights) to edit the entry.
 
+.. image:: _static/update.png
+
+ 
 .. note::
    It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please `mail registry-support <mailto:registry-support@elixir-dk.org>`_.
 
   
-.. image:: _static/update.png
-   :width: 255px
-   :height: 45px
-
 .. _create:	    
 Creating a basic entry
 """"""""""""""""""""""
