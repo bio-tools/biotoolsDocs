@@ -25,7 +25,7 @@ There are various sources of information amd help:
 1. Get a bio.tools account
 --------------------------
 
-You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools`_ and click on the |Sign-up| at the top-right corner of the page.
+You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools`_ and click on |Sign-up| at the top-right corner of the page.
 
 
 .. |Sign_up| image:: _static/sign_up.png
@@ -239,6 +239,6 @@ Coming soon...
 
 References
 ----------
-.. [1] Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats. Bioinformatics, 29(10): 1325-1332.
+.. [1] Ison, J., KalaÅ¡, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats. Bioinformatics, 29(10): 1325-1332.
 
 .. _`bio.tools`: https://bio.tools
