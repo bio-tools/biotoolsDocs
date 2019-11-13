@@ -7,9 +7,9 @@ IFB tools
 
 These instructions will guide you through the steps to register your tools and databases in `bio.tools`_ and describe them to the standard required for inclusion in the next iteration of the `IFB Catalogue <https://www.france-bioinformatique.fr/en/ressources>`_ - the French national catalogue of bioinformatics resources.
 
-When describing your tools using *bio.tools*, there are various sources of information:
+When describing your tools using *bio.tools*, there are various sources of information amd help:
 
-* The *bio.tools* registration interface provides some hints, including whether attributes value are valid or not
+* The *bio.tools* registration interface provides some hints, and ensures valid values are set
 * This document provides curation guidelines tailored to the IFB catalogue, highlighting key requirements and some pitfalls
 * The biotoolsSchema documentation summarises the tool attributes, their structure, and the controlled vocabularies used
 * The *bio.tools* Curators Guide provides very detailed curation guidelines
@@ -38,7 +38,7 @@ You'll be asked for a username, email address and password.  Your account will b
 -------------------
 As a software developer or service provider, you should own the *bio.tools* entries describing your tools, by claiming ownership of existing entries and creating new ones.    
 
-To see whether a tool is already registered, search for it by its name.
+To see whether a tool is already registered, search for it by its name. You may need to click on the "Name" facet to narrow-down the search:
 
 .. image:: _static/find_tool.png
 
@@ -48,8 +48,8 @@ If you find an entry you can go ahead and update_ it.  If you can't find the ent
 .. note::
    *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users. The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g. a dedicated curator.
 
-.. note::
-   All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already have been registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
+.. important::
+   All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.
    
 .. _update:
 Update an entry
