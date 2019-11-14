@@ -190,7 +190,7 @@ Other common types incude:
 A single *bio.tools* entry is annotated with one or more types, reflecting different facets of the tool described by the entry. Be sure to understand the type(s) of tool you have, because it determines the information that's expected.
 
 
- bio.tools entries
+bio.tools entries
 """"""""""""""""""
 Before you do anything, you should carefully plan what new entries (if any) are required to adequately describe your tools.  A few general suggestions:
 
