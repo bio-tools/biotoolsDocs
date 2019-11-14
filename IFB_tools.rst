@@ -170,15 +170,16 @@ For this first part, you specify the tool **name**, a short **description** and 
    "Homepage URL", "Mandatory", "`link, <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>_`"
 
 
-* **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>_`}
-* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>_`}
-* **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>_`}
+* **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
+* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
+* **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}
    
 .. Important::
    A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ for a tool (the *bio.tools* toolID) is set when a new entry is created, with a value that is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by bio.tools and other systems. It's important therefore that the ID is sensible and intuitive.
 
 .. Tip::   
-   The *bio.tools* toolID is **not** currently editable, so if you want the ID to differ from the name (*e.g.* a name "Protein databank (PDB)" and an ID simply of "PDB"), you have to apply a workaround:
+   The *bio.tools* toolID is **not** currently editable, so if you want the ID to differ from the name (*e.g.* an ID of "PDB" for the tool name "Protein databank (PDB)", you have to apply a workaround:
+   
    1) create the entry giving a value for "Name" which is the desired ID value.
    2) Save the entry.
    3) Edit the entry, resetting the name.
