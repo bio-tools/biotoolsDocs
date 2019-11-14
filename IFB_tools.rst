@@ -81,7 +81,7 @@ To edit an existing entry, you need to click through to the Tool Card for the to
 * Click on *Update this record* (visible only if you own the entry or have editing rights) to edit the entry.
 
 .. note::
-   It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please `mail registry-support <mailto:registry-support@elixir-dk.org>`_.
+   It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 
 
 New entries
@@ -155,13 +155,49 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
    The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The guidelines_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
 
-Tool types and bio.tools entries
-"""""""""""""""
-The scope of *bio.tools* is very broad, and includes 15 different `tool types <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_, ranging from simple command-line tools to complex bioinformatics portals.
+Tool types and entries
+""""""""""""""""""""""
+The scope of *bio.tools* is very broad, ranging from simple scripts to comprehensive bioinformatics portals, defined by 15 different `tool types <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_.  The vast majority of entries are of the following types:
 
-Before you create any new *bio.tools* entries, you should carefully decide what new entries are required to adequately describe your tools.
+.. csv-table::
+   :header: "Type", "Description"
+   :widths: 25, 100
+
+   "**Bioinformatics portal**", "A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."
+   "**Database portal**", "A Web application, suite or workbench providing a portal to a biological database."
+   "**Web application**", "A tool with a graphical user interface that runs in your Web browser."
+   "**Desktop application**", "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
+   "**Command-line tool**", "A tool with a text-based (command-line) interface."
+
+Other common types incude:
+
+.. csv-table::
+   :header: "Type", "Description"
+   :widths: 25, 100
+	    
+   "**Web API**", "An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP.  Includes everything from simple data-access URLs to RESTful APIs."
+   "**Workflow**", "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
+    "**Suite**", "A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal."
+   "**Workbench**", "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
+   "**Library**", "A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries."
 
 
+A single *bio.tools* entry is annotated with one or more types, reflecting different facets of the tool described by the entry. Before you do anything, you should carefully decide what new entries are required to adequately describe your tools.  A few general suggestions:
+
+1. A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
+2. *bio.tools* aims to catalogue *unique* tool functionality.  For example, an R package for the Bioconductor suite is derived from a pre-existing command-line tool, but has essentially the same functionality: these can be described by a single entry.  
+3. In some cases, *e.g.* complex software packages, it's not obvious whether to have one or multiple entries. Pick the option which mostly clearly illustrates the tool's functionality to end-users.
+4. Tool collections should be described by multiple entries.  For example, one entry to describe a *suite*, and multple other entries to describe the individual tools included in that suite. 
+5. Software with multiple interfaces should be described by a single entry. For example, a *command-line tool* whose functionality is also available via a *web application* would be described by one entry with 2 tool type annotations. Similarly,  a *database portal* with a *web API* can be described by a single entry.
+6. Many *database portals* provide multiple interfaces for the typical database functions (browse, deposit, search, visualise, analyse and download).  Usually one entry will suffice, but sometimes multiple entries are better, *e.g.* where there are multiple analysis tools.
+7. Very complex entities such as *Bioinformatics portals* should not try to describe everything in a single entry.  Use a single entry for the portal, and then multiple other entries to describe the things aggregated by the portal.
+
+
+
+.. tip::
+   In all cases, keep the end-user in mind and try to describe your tools in a way that will make the functionality clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
+
+   
 4. Describe your tools
 ----------------------
 .. _guidelines:
@@ -241,25 +277,8 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 Tool type
 ^^^^^^^^^
 
-The main types of tool are:
-.. csv-table::
-   :header: "Type", "Description"
-   :widths: 25, 100
-
-   "**Bioinformatics portal**", "A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."
-   "**Database portal**", "A Web application, suite or workbench providing a portal to a biological database."
-   "**Web application**", "A tool with a graphical user interface that runs in your Web browser."
-   "**Desktop application**", "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
-   "**Command-line tool**", "A tool with a text-based (command-line) interface."
-
-The vast majority of entries have at least one of the above annotations.  
 	    
-   "Library", "A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries."
-   "Suite", "A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal."
-   "Web API", "An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP.  Includes everything from simple data-access URLs to RESTful APIs."
-   "Web service", "An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP."
-   "Workbench", "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
-   "Workflow", "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
+
 
 .. important::
    It's important that you get the tool type annotation right, as it determines what information is expected for the IFB catalogue.
