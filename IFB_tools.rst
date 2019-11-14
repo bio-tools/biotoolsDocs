@@ -64,16 +64,16 @@ Existing entries
 To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
 
 .. image:: _static/update.png
-   :width: 300px
-   :height: 50px
+   :width: 200px
+   :height: 35px
 
 .. image:: _static/request_edit_rights.png
-   :width: 300px
-   :height: 50px
+   :width: 200px
+   :height: 35px
 
 .. image:: _static/request_ownership.png
-   :width: 300px
-   :height: 50px	    	    
+   :width: 200px
+   :height: 35px	    	    
  
 
 * Click on *Request ownership* if you want to claim ownership of the entry
@@ -155,8 +155,12 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
    The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The guidelines_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
 
+Tool types and bio.tools entries
+"""""""""""""""
+The scope of *bio.tools* is very broad, and includes 15 different `tool types <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_, ranging from simple command-line tools to complex bioinformatics portals.
 
-   
+Before you create any new *bio.tools* entries, you should carefully decide what new entries are required to adequately describe your tools.
+
 
 4. Describe your tools
 ----------------------
