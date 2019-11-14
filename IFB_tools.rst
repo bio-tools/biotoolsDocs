@@ -162,11 +162,11 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
 The sections below match the tabs in the *bio.tools* registration interface.  
 
 .. tip::
-   The {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_} link to more detailed guidelines in the *bio.tools* Curators Guide. You should follow these links whenever you're not sure about what information you need to provide.
+   The {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_} links take you to more detailed guidelines in the *bio.tools* Curators Guide. Follow these links whenever you're not sure about what information is needed.
 
 Summary
 """""""
-Select the "Summary" and specify the tool **name**, a short **description** and its **homepage URL**.
+In the *Summary* tab you specify basic information about the software:
 
 .. csv-table::
    :header: "Attribute", "Requirement", "Guidelines"
@@ -178,8 +178,8 @@ Select the "Summary" and specify the tool **name**, a short **description** and 
    "Software version(s)", "Ignore this", ""
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
-* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`more guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
-* **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {`more guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}
+* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
+* **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}
    
 .. Important::
    A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ for a tool (the *bio.tools* toolID) is set when a new entry is created, with a value that is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by bio.tools and other systems. It's important therefore that the ID is sensible and intuitive.
@@ -192,6 +192,38 @@ Select the "Summary" and specify the tool **name**, a short **description** and 
    3) Edit the entry, resetting the name.
 
    To request an ID change post-registration (to be avoided!) you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.
+
+
+Labels
+""""""
+In the *Labels* tab you specify miscellaneous scientific, technical and administrative details of the tool, expressed in terms from controlled vocabularies:
+
+.. csv-table::
+   :header: "Element", "Description", "Type", "Cardinality"
+   :widths: 25, 50, 50, 100
+	    
+   "toolType", "A type of application software: a discrete software entity can have more than one type.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`__)", "0 or more"
+   "topic", "General scientific domain the software serves or other general category: one of EDAM Topic URL or term is specified.", "Ontology concept (restriction)", "0 or more"
+   "topic->url", "URL of an EDAM Topic concept.", "URL (restriction)", "0 or 1"
+   "topic->term", "An EDAM Topic term (preferred label or synonym).", "xs:token", "0 or 1"
+   "operatingSystem", "The operating system supported by a downloadable software package.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`__)", "0 or more"
+   "language", "Name of programming language the software source code was written in.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`__)", "0 or more"
+   "license", "Software or data usage license.", "enum (see `docs <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`__)", "0 or 1"
+   "collectionID", "Tag for a collection that the software has been assigned to within bio.tools.", "xs:token (restriction)", "0 or more"
+   "maturity", "How mature the software product is.", "enum (see `docs <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`__)", "0 or 1"
+   "cost", "Monetary cost of acquiring the software.", "enum (see `docs <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`__)", "0 or 1"
+   "accessibility", "Whether the software is freely available for use.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`__)", "0 or more"
+   "ELIXIRPlatform", "Name of the ELIXIR Platform that is credited.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`__)", "0 or more"
+   "ELIXIRNode", "Name of the ELIXIR Node that is credited.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`__)", "0 or more"
+
+
+* What **type** of resource it is (Command-line tool, Web application *etc.*)
+* Relevant **topic(s)** the tool fits with (from the `EDAM ontology`_ [1]_).
+* In which **operating system** it is possible to use it.
+* The **language** used to develop the tool, its **license** and **maturity**.
+* The **accessibility** of your tool and its **cost**.
+
+You can also assign your tool to an arbitrary **collection** which can be useful for grouping together related tools.
 
 
    
@@ -213,18 +245,6 @@ In each box, you can add as many fields as you want. You can also add a general 
 .. _`EDAM Browser`: https://ifb-elixirfr.github.io/edam-browser/
 
 .. |biotool_function| image:: _static/biotool_function.png
-
-Labels
-""""""
-In this part, you can tell more about your tool:
-
-* What **type** of resource it is (Command-line tool, Web application *etc.*)
-* Relevant **topic(s)** the tool fits with (from the `EDAM ontology`_ [1]_).
-* In which **operating system** it is possible to use it.
-* The **language** used to develop the tool, its **license** and **maturity**.
-* The **accessibility** of your tool and its **cost**.
-
-You can also assign your tool to an arbitrary **collection** which can be useful for grouping together related tools.
 
 Links
 """""
