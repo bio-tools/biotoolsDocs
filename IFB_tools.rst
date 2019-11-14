@@ -158,6 +158,8 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
 4. Plan your curation work 
 ---------------------------   
 
+Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform.
+
 Tool types
 """"""""""
 The scope of *bio.tools* is very broad, ranging from simple scripts to comprehensive bioinformatics portals, defined by 15 different `tool types <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_.  The vast majority of entries are of the following types:
