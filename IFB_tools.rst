@@ -175,7 +175,7 @@ In the *Summary* tab you specify basic information about the software:
    "Name", "Mandatory"
    "Description", "Mandatory"
    "Homepage URL", "Mandatory"
-   "Software version(s)", "Ignore this"
+   "Software version(s)", "Ignore"
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
 * **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
@@ -202,18 +202,18 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 	    
-   "toolType", "Mandatory"
-   "topic", "Mandatory"
-   "operatingSystem", "..."
-   "language", "..."
-   "license", "..."
-   "collectionID", "Ignore"
-   "maturity", "..."
-   "cost", "..."
-   "accessibility", "..."
-   "ELIXIRPlatform", "Ignore"
-   "ELIXIRNode", "Ignore"
-
+   "Tool type", "Mandatory"
+   "Topic", "Mandatory"
+   "Operating system", "Mandatory (Desktop application), Recommended (Command-line tool)"
+   "Language", "Recommended (Command-line tool)"
+   "Maturity", "Recommended"
+   "License", "Mandatory (Desktop application), Recommended (Command-line tool)"
+   "Cost", "Recommended (Desktop application, Command-line tool)"
+   "Collection", "*Ignore*"
+   "Accessibility", "Mandatory (Bioinformatics portal, Database portal, Web application)"
+   "ELIXIRPlatform", "*Ignore*"
+   "ELIXIRNode", "*Ignore*"
+   "Other ID", "*Ignore*"
 
 * **toolType** is "A type of application software: a discrete software entity can have more than one type." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}
    **topic** is "General scientific domain the software serves or other general category: one of EDAM Topic URL or term is specified."
