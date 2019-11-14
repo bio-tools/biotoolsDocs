@@ -200,11 +200,34 @@ Before you do anything, you should carefully plan what new entries (if any) are 
 6. Many *database portals* provide multiple interfaces for the typical database functions (browse, deposit, search, visualise, analyse and download).  Usually one entry will suffice, but sometimes multiple entries are better, *e.g.* where there are multiple analysis tools.
 7. For very complex entities such as *Bioinformatics portals*, do not try to describe everything in a single entry.  Use a single entry for the portal, and multiple other entries for the things aggregated by the portal.
 
+
+Tool functions
+##############
+In the *bio.tools* software model, a tool provides one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+
+ This is visualised in a diagram on the Tool Cards that look like this:
+
+|biotool_function|
+
+.. |biotool_function| image:: _static/biotool_function.png
+
+For example, the tool `signalp <https://bio.tools/signalp>`_ has a single function performing two operations, with a single input and two outputs:
+
+.. image:: _static/signalp_function.png
+
+Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (only 3 shown here):
+
+.. image:: _static/hmmer3_function.png
+
+
+Before describing your tools, you should carefully identify the distinct functions and the individual operations associated with each one. This is often straighforward, as different functions (modes) typically perform distinct operations:
+* if a tool has an option between doing one thing or another, then you should annotate the operations as distinct functions
+* if in contrast a tool always does one or more things, then you should annotate these as distinct operations within a single function
+* only specify the primary functions and operations, from a typical end-user perspective - tools often do many things to its central, advertised purpose - you don't need to describe everything!
+* this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
+
 .. tip::
-   In all cases, keep the end-user in mind and try to describe your tools in a way that will be clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
-
-
- 
+   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
    
 4. Describe your tools
 ----------------------
@@ -300,9 +323,7 @@ Topic
 Function
 """"""""
 This is where you describe the functionality of the tool based on the `EDAM ontology`_ [1]_.
-The functionality is captured in a diagram on the Tool Cards that look like this:
 
-|biotool_function| 
 
 In each box, you can add as many fields as you want. You can also add a general comment about the function (*this is particularly useful when your entry has several functions*).  It's highly recommended to read up about `tool functions <https://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ before filling this section.
 
@@ -314,7 +335,7 @@ In each box, you can add as many fields as you want. You can also add a general 
 .. _`BioPortal`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
 .. _`EDAM Browser`: https://ifb-elixirfr.github.io/edam-browser/
 
-.. |biotool_function| image:: _static/biotool_function.png
+
 
 Links
 """""

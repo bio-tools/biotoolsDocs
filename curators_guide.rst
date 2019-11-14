@@ -75,7 +75,7 @@ Consider the following *before* creating a *bio.tools* entry:
    
 Tool functions 
 ^^^^^^^^^^^^^^^
-*bio.tools* uses a model of software (see below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation (e.g."Sequence alignment"), each of which may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+*bio.tools* uses a model of software (see below) defined within `biotoolsSchema <https://github.com/bio-tools/biotoolsschema>`_.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation (e.g."Sequence alignment"), and may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
   
 .. image:: tool_function.PNG
