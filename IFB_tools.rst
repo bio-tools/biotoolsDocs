@@ -154,11 +154,13 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
 .. note::
    The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The guidelines_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
-			       
-.. _guidelines:
+
+
+   
+
 4. Describe your tools
 ----------------------
-
+.. _guidelines:
 The sections below match the tabs in the *bio.tools* registration interface.  
 
 .. tip::
