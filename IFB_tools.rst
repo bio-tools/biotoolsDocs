@@ -189,7 +189,7 @@ A single *bio.tools* entry is annotated with one or more types, reflecting diffe
 
 
  bio.tools entries
-""""""""""""""""""
+##################
 Before you do anything, you should carefully plan what new entries (if any) are required to adequately describe your tools.  A few general suggestions:
 
 1. A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
