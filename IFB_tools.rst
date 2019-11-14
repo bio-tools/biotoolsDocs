@@ -149,6 +149,8 @@ The information requirement of the IFB catalogue is more demanding than *bio.too
 
 .. image:: _static/ifb_info_standard.png
 
+All tools in the IFB catalogue must have at least a minimal description, *i.e.* all *mandatory* attributes are specified. Tool providers are encouraged to provide an enhanced description which also includes all of the *recommended* attributes.
+   
 .. note::
    The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The guidelines_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
@@ -156,6 +158,11 @@ The information requirement of the IFB catalogue is more demanding than *bio.too
 .. _guidelines:
 4. Describe your tools
 ----------------------
+
+The sections below match the tabs in the *bio.tools* registration interface.  
+
+.. tip::
+   The {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_} link to more detailed guidelines in the *bio.tools* Curators Guide. You should follow these links whenever you're not sure about what information you need to provide.
 
 Summary
 """""""
@@ -170,9 +177,9 @@ Select the "Summary" and specify the tool **name**, a short **description** and 
    "Homepage URL", "Mandatory", "`link, <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_"
    "Software version(s)", "Ignore this", ""
 
-* **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
-* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
-* **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}
+* **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
+* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`more guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
+* **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {`more guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}
    
 .. Important::
    A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ for a tool (the *bio.tools* toolID) is set when a new entry is created, with a value that is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by bio.tools and other systems. It's important therefore that the ID is sensible and intuitive.
