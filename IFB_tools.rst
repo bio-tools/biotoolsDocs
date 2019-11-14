@@ -63,15 +63,15 @@ Existing entries
 .. _update:
 To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
 
-.. |update| image:: _static/update.png
+.. image:: _static/update.png
    :width: 300px
    :height: 50px
 
-.. |request_edit_rights| image:: _static/request_edit_rights.png
+.. image:: _static/request_edit_rights.png
    :width: 300px
    :height: 50px
 
-.. |request_ownership| image:: _static/request_ownership.png
+.. image:: _static/request_ownership.png
    :width: 300px
    :height: 50px	    	    
  
@@ -100,7 +100,7 @@ bio.tools registration interface
 .. image:: _static/registration_interface.png
 
 
-It provides some hints, and ensures that the information you set is in the right format. At any moment, you can click on save_ to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on validate_.
+It provides some hints, and ensures that the information you set is in the right format. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
 	   
 
 .. |asterix| image:: _static/red_asterix.png
@@ -175,7 +175,7 @@ In the *Summary* tab you specify basic information about the software:
    "**Name**", "**Mandatory**"
    "**Description**", "**Mandatory**"
    "**Homepage URL**", "**Mandatory**"
-   "Software version(s)", "*Ignore*"
+   "Software version(s)", "*ignore*"
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Database names should follow a pattern *e.g.* "The Protein Databank (PDB)" {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}.
 * **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}.
@@ -209,42 +209,60 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    "**Maturity**", "**Recommended**"
    "**License**", "**Mandatory** (Desktop application), Recommended (Command-line tool)"
    "**Cost**", "**Recommended** (Desktop application, Command-line tool)"
-   "Collection", "*Ignore*"
+   "Collection", "*ignore*"
    "**Accessibility**", "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
-   "ELIXIRPlatform", "*Ignore*"
-   "ELIXIRNode", "*Ignore*"
-   "Other ID", "*Ignore*"
+   "ELIXIRPlatform", "*ignore*"
+   "ELIXIRNode", "*ignore*"
+   "Other ID", "*ignore*"
 
-* **toolType** describes the type of the software: a *bio.tools* entry can have more than one type {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
-* **topic** is the general scientific domain the tool serves, or other general category {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
-* **operatingSystem** is the operating system supported by a downloadable software package {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
-* **language** is the name of a programming language the tool source code was written in." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
-* **license** is a Software or data usage license {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
-* **maturity** is how mature the software product is {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
-* **cost** is the monetary cost of acquiring the software {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}.
-* **accessibility** is whether the software is freely available for use {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
+* **Tool type** describes the type of the software: a *bio.tools* entry can have more than one type {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
+* **Topic** is the general scientific domain the tool serves, or other general category {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
+* **Operating system** is the operating system supported by a downloadable software package {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
+* **Language** is the name of a programming language the tool source code was written in. {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
+* **License** is a software or data usage license {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
+* **Maturity** is how mature the software product is {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
+* **Cost** is the monetary cost of acquiring the software {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}.
+* **Accessibility** is whether the software is freely available for use {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
 
 .. tip:: 
-   You can use **Collection** to assign a tool to one or more groups, and can give any names you like for these collections. Other ways to group tools are by creating a *bio.tools* subdomain (from *Menu...Manage subdomains*) and by defining `relations <https://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group>`_ between tools.
+   You can use **Collection** to assign tools which are somehow related to one or more groups. These collections can have any names you like. Other ways to group tools are by creating a *bio.tools* subdomain (from *Menu...Manage subdomains*) and by defining `relations <https://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group>`_ between tools.
 
 .. note::
-  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. These are not normally be set by *bio.tools* users: see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_).  All tools in the IFB catalogue will have the ELIXIRNode credit set to "France" by *bio.tools* admin in due course. 
-   
-
-* What **type** of resource it is (Command-line tool, Web application *etc.*)
-* Relevant **topic(s)** the tool fits with (from the `EDAM ontology`_ [1]_).
-* In which **operating system** it is possible to use it.
-* The **language** used to develop the tool, its **license** and **maturity**.
-* The **accessibility** of your tool and its **cost**.
-
-You can also assign your tool to an arbitrary **collection** which can be useful for grouping together related tools.
+  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. These are not normally be set by *bio.tools* users (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_).
+  All tools in the IFB catalogue will have the ELIXIRNode credit set to "France" by *bio.tools* admin in due course. 
 
 
 Tool type
 ^^^^^^^^^
 
+The main types of tool are:
+.. csv-table::
+   :header: "Type", "Description"
+   :widths: 25, 100
+
+   "**Bioinformatics portal**", "A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."
+   "**Database portal**", "A Web application, suite or workbench providing a portal to a biological database."
+   "**Web application**", "A tool with a graphical user interface that runs in your Web browser."
+   "**Desktop application**", "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
+   "**Command-line tool**", "A tool with a text-based (command-line) interface."
+
+The vast majority of entries have at least one of the above annotations.  
+	    
+   "Library", "A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries."
+   "Suite", "A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal."
+   "Web API", "An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP.  Includes everything from simple data-access URLs to RESTful APIs."
+   "Web service", "An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP."
+   "Workbench", "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
+   "Workflow", "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
+
+.. important::
+   It's important that you get the tool type annotation right, as it determines what information is expected for the IFB catalogue.
+   
 License
 ^^^^^^^
+
+Topic
+^^^^^
 
    
 Function
@@ -291,6 +309,9 @@ Credits include all type of entities that contributed to the development, mainte
 
 .. _json:
 
+Relations
+"""""""""
+
 JSON
 """"
 This is all the information you gave about your tool, formatted in JSON format.
@@ -300,8 +321,11 @@ Permissions
 You can decide to make the entry either editable only by yourself, a list of users or anyone.
 
 
+5. Maintaining your entries
+---------------------------
+
 Remove a resource
------------------
+"""""""""""""""""
 From the tool card, click on update this record. Then you can remove the entry by clicking on the remove button |remove|.
 
 .. |remove| image:: _static/remove.png
@@ -311,12 +335,7 @@ From the tool card, click on update this record. Then you can remove the entry b
 .. warning::
     Removing an entry is definitive.  There's no way back (other than emailing `Registry Support <mailto:registry-support@elixir-dk.org>`_).
 
-Search for a tool
------------------
-Coming soon...
 
-References
-----------
-.. [1] Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats. Bioinformatics, 29(10): 1325-1332.
 
-.. _`bio.tools`: https://bio.tools
+
+
