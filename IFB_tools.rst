@@ -232,7 +232,7 @@ Before describing your tools, you should carefully identify the distinct functio
 .. tip::
    When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
    
-4. Describe your tools
+5. Describe your tools
 ----------------------
 .. _guidelines:
 The sections below match the tabs in the *bio.tools* registration interface.  
@@ -377,7 +377,7 @@ Permissions
 You can decide to make the entry either editable only by yourself, a list of users or anyone.
 
 
-5. Maintaining your entries
+6. Maintaining your entries
 ---------------------------
 
 Remove a resource
