@@ -169,13 +169,13 @@ Summary
 In the *Summary* tab you specify basic information about the software:
 
 .. csv-table::
-   :header: "Attribute", "Requirement", "Guidelines"
+   :header: "Attribute", "Requirement"
    :widths: 25, 100
       
-   "Name", "Mandatory", "`link <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_"
-   "Description", "Mandatory", "`link <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_"
-   "Homepage URL", "Mandatory", "`link, <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_"
-   "Software version(s)", "Ignore this", ""
+   "Name", "Mandatory"
+   "Description", "Mandatory"
+   "Homepage URL", "Mandatory"
+   "Software version(s)", "Ignore this"
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
 * **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
@@ -199,23 +199,40 @@ Labels
 In the *Labels* tab you specify miscellaneous scientific, technical and administrative details of the tool, expressed in terms from controlled vocabularies:
 
 .. csv-table::
-   :header: "Element", "Description", "Type", "Cardinality"
-   :widths: 25, 50, 50, 100
+   :header: "Attribute", "Requirement"
+   :widths: 25, 100
 	    
-   "toolType", "A type of application software: a discrete software entity can have more than one type.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`__)", "0 or more"
-   "topic", "General scientific domain the software serves or other general category: one of EDAM Topic URL or term is specified.", "Ontology concept (restriction)", "0 or more"
-   "topic->url", "URL of an EDAM Topic concept.", "URL (restriction)", "0 or 1"
-   "topic->term", "An EDAM Topic term (preferred label or synonym).", "xs:token", "0 or 1"
-   "operatingSystem", "The operating system supported by a downloadable software package.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`__)", "0 or more"
-   "language", "Name of programming language the software source code was written in.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`__)", "0 or more"
-   "license", "Software or data usage license.", "enum (see `docs <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`__)", "0 or 1"
-   "collectionID", "Tag for a collection that the software has been assigned to within bio.tools.", "xs:token (restriction)", "0 or more"
-   "maturity", "How mature the software product is.", "enum (see `docs <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`__)", "0 or 1"
-   "cost", "Monetary cost of acquiring the software.", "enum (see `docs <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`__)", "0 or 1"
-   "accessibility", "Whether the software is freely available for use.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`__)", "0 or more"
-   "ELIXIRPlatform", "Name of the ELIXIR Platform that is credited.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`__)", "0 or more"
-   "ELIXIRNode", "Name of the ELIXIR Node that is credited.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`__)", "0 or more"
+   "toolType", "Mandatory"
+   "topic", "Mandatory"
+   "operatingSystem", "..."
+   "language", "..."
+   "license", "..."
+   "collectionID", "Ignore"
+   "maturity", "..."
+   "cost", "..."
+   "accessibility", "..."
+   "ELIXIRPlatform", "Ignore"
+   "ELIXIRNode", "Ignore"
 
+
+* **toolType** is "A type of application software: a discrete software entity can have more than one type." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}
+   **topic** is "General scientific domain the software serves or other general category: one of EDAM Topic URL or term is specified."
+   **operatingSystem** is "The operating system supported by a downloadable software package." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}
+   **language** is "Name of programming language the software source code was written in.", {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}
+   **license** is "Software or data usage license." {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}
+
+   **maturity** is "How mature the software product is.", {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}
+   **cost** is "Monetary cost of acquiring the software." {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}
+   **accessibility** is "Whether the software is freely available for use." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}
+
+
+.. tip:: 
+   **collectionID** is "Tag for a collection that the software has been assigned to within bio.tools."
+
+.. note::
+  "ELIXIRPlatform" is "Name of the ELIXIR Platform that is credited." enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`_)
+   "ELIXIRNode" is "Name of the ELIXIR Node that is credited." enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_)
+   
 
 * What **type** of resource it is (Command-line tool, Web application *etc.*)
 * Relevant **topic(s)** the tool fits with (from the `EDAM ontology`_ [1]_).
