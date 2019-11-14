@@ -63,15 +63,15 @@ Existing entries
 .. _update:
 To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
 
-.. |update1| image:: _static/update.png
+.. |update| image:: _static/update.png
    :width: 300px
    :height: 50px
 
-.. |update2| image:: _static/request_edit_rights.png
+.. |request_edit_rights| image:: _static/request_edit_rights.png
    :width: 300px
    :height: 50px
 
-.. |update2| image:: _static/request_ownership.png
+.. |request_ownership| image:: _static/request_ownership.png
    :width: 300px
    :height: 50px	    	    
  
@@ -134,8 +134,8 @@ bio.tools
 """""""""
 *bio.tools* requires only the name, description and homepage URL for a tool registration, but supports over 50 attributes for rich tool descriptions.
 
-..note::
-  The attributes supported by *bio.tools*, their structure and their syntax are defined in formalised XML schema called `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.  If you'd like to learn more or contribute to this project, please head over to `GitHub <https://github.com/bio-tools/biotoolsSchema>`_.
+.. note::
+   The attributes supported by *bio.tools*, their structure and their syntax are defined in formalised XML schema called `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.  If you'd like to learn more or contribute to this project, please head over to `GitHub <https://github.com/bio-tools/biotoolsSchema>`_.
 
 The IFB catalogue
 """""""""""""""""
