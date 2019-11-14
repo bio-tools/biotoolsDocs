@@ -172,9 +172,9 @@ In the *Summary* tab you specify basic information about the software:
    :header: "Attribute", "Requirement"
    :widths: 25, 100
       
-   "**Name**", "Mandatory"
-   "**Description**", "Mandatory"
-   "**Homepage URL**", "Mandatory"
+   "**Name**", "**Mandatory**"
+   "**Description**", "**Mandatory**"
+   "**Homepage URL**", "**Mandatory**"
    "Software version(s)", "*Ignore*"
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Database names should follow a pattern *e.g.* "The Protein Databank (PDB)" {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}.
@@ -202,15 +202,15 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 	    
-   "**Tool type**", "Mandatory"
-   "**Topic**", "Mandatory"
-   "**Operating system**", "Mandatory (Desktop application), Recommended (Command-line tool)"
-   "**Language**", "Recommended (Command-line tool)"
-   "**Maturity**", "Recommended"
-   "**License**", "Mandatory (Desktop application), Recommended (Command-line tool)"
-   "**Cost**", "Recommended (Desktop application, Command-line tool)"
+   "**Tool type**", "**Mandatory**"
+   "**Topic**", "**Mandatory**"
+   "**Operating system**", "**Mandatory** (Desktop application), Recommended (Command-line tool)"
+   "**Language**", "**Recommended** (Command-line tool)"
+   "**Maturity**", "**Recommended**"
+   "**License**", "**Mandatory** (Desktop application), Recommended (Command-line tool)"
+   "**Cost**", "**Recommended** (Desktop application, Command-line tool)"
    "Collection", "*Ignore*"
-   "**Accessibility**", "Mandatory (Bioinformatics portal, Database portal, Web application)"
+   "**Accessibility**", "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
    "ELIXIRPlatform", "*Ignore*"
    "ELIXIRNode", "*Ignore*"
    "Other ID", "*Ignore*"
