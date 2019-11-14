@@ -175,7 +175,7 @@ In the *Summary* tab you specify basic information about the software:
    "Name", "Mandatory"
    "Description", "Mandatory"
    "Homepage URL", "Mandatory"
-   "Software version(s)", "Ignore"
+   "Software version(s)", "*Ignore*"
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
 * **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
