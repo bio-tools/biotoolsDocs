@@ -172,24 +172,24 @@ In the *Summary* tab you specify basic information about the software:
    :header: "Attribute", "Requirement"
    :widths: 25, 100
       
-   "Name", "Mandatory"
-   "Description", "Mandatory"
-   "Homepage URL", "Mandatory"
+   "**Name**", "Mandatory"
+   "**Description**", "Mandatory"
+   "**Homepage URL**", "Mandatory"
    "Software version(s)", "*Ignore*"
 
-* **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
-* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
-* **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}
+* **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Database names should follow a pattern *e.g.* "The Protein Databank (PDB)" {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}.
+* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}.
+* **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}.
    
 .. Important::
-   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ for a tool (the *bio.tools* toolID) is set when a new entry is created, with a value that is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by bio.tools and other systems. It's important therefore that the ID is sensible and intuitive.
+   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ - the *bio.tools* toolID - is created for a tool when a new entry is created. The ID value is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by bio.tools and other systems. The ID should therefore be sensible and intuitive.
 
 .. Tip::   
    The *bio.tools* toolID is **not** currently editable, so if you want the ID to differ from the name (*e.g.* an ID of "PDB" for the tool name "Protein databank (PDB)", you have to apply a workaround:
    
-   1) create the entry giving a value for "Name" which is the desired ID value.
+   1) create the entry giving a value for "Name" which is the desired ID value, *e.g.* "PDB"
    2) Save the entry.
-   3) Edit the entry, resetting the name.
+   3) Edit the entry, resetting the name, *e.g.* to "Protein Databank (PDB)"
 
    To request an ID change post-registration (to be avoided!) you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.
 
@@ -202,36 +202,33 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 	    
-   "Tool type", "Mandatory"
-   "Topic", "Mandatory"
-   "Operating system", "Mandatory (Desktop application), Recommended (Command-line tool)"
-   "Language", "Recommended (Command-line tool)"
-   "Maturity", "Recommended"
-   "License", "Mandatory (Desktop application), Recommended (Command-line tool)"
-   "Cost", "Recommended (Desktop application, Command-line tool)"
+   "**Tool type**", "Mandatory"
+   "**Topic**", "Mandatory"
+   "**Operating system**", "Mandatory (Desktop application), Recommended (Command-line tool)"
+   "**Language**", "Recommended (Command-line tool)"
+   "**Maturity**", "Recommended"
+   "**License**", "Mandatory (Desktop application), Recommended (Command-line tool)"
+   "**Cost**", "Recommended (Desktop application, Command-line tool)"
    "Collection", "*Ignore*"
-   "Accessibility", "Mandatory (Bioinformatics portal, Database portal, Web application)"
+   "**Accessibility**", "Mandatory (Bioinformatics portal, Database portal, Web application)"
    "ELIXIRPlatform", "*Ignore*"
    "ELIXIRNode", "*Ignore*"
    "Other ID", "*Ignore*"
 
-* **toolType** is "A type of application software: a discrete software entity can have more than one type." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}
-   **topic** is "General scientific domain the software serves or other general category: one of EDAM Topic URL or term is specified."
-   **operatingSystem** is "The operating system supported by a downloadable software package." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}
-   **language** is "Name of programming language the software source code was written in.", {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}
-   **license** is "Software or data usage license." {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}
-
-   **maturity** is "How mature the software product is.", {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}
-   **cost** is "Monetary cost of acquiring the software." {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}
-   **accessibility** is "Whether the software is freely available for use." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}
-
+* **toolType** describes the type of the software: a *bio.tools* entry can have more than one type {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
+* **topic** is the general scientific domain the tool serves, or other general category {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
+* **operatingSystem** is the operating system supported by a downloadable software package {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
+* **language** is the name of a programming language the tool source code was written in." {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
+* **license** is a Software or data usage license {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
+* **maturity** is how mature the software product is {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
+* **cost** is the monetary cost of acquiring the software {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}.
+* **accessibility** is whether the software is freely available for use {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
 
 .. tip:: 
-   **collectionID** is "Tag for a collection that the software has been assigned to within bio.tools."
+   You can use **Collection** to assign a tool to one or more groups, and can give any names you like for these collections. Other ways to group tools are by creating a *bio.tools* subdomain (from *Menu...Manage subdomains*) and by defining `relations <https://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group>`_ between tools.
 
 .. note::
-  "ELIXIRPlatform" is "Name of the ELIXIR Platform that is credited." enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform>`_)
-   "ELIXIRNode" is "Name of the ELIXIR Node that is credited." enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_)
+  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. These are not normally be set by *bio.tools* users: see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_).  All tools in the IFB catalogue will have the ELIXIRNode credit set to "France" by *bio.tools* admin in due course. 
    
 
 * What **type** of resource it is (Command-line tool, Web application *etc.*)
@@ -242,6 +239,12 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 
 You can also assign your tool to an arbitrary **collection** which can be useful for grouping together related tools.
 
+
+Tool type
+^^^^^^^^^
+
+License
+^^^^^^^
 
    
 Function
