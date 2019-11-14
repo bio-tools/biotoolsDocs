@@ -159,16 +159,16 @@ The information requirement of the IFB catalogue is more demanding than *bio.too
 
 Summary
 """""""
-For this first part, you specify the tool **name**, a short **description** and its **homepage URL**.
+Select the "Summary" and specify the tool **name**, a short **description** and its **homepage URL**.
 
 .. csv-table::
    :header: "Attribute", "Requirement", "Guidelines"
    :widths: 25, 100
       
-   "Name", "Mandatory", "`link <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>_`"
-   "Description", "Mandatory", "`link <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>_`"
-   "Homepage URL", "Mandatory", "`link, <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>_`"
-
+   "Name", "Mandatory", "`link <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_"
+   "Description", "Mandatory", "`link <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_"
+   "Homepage URL", "Mandatory", "`link, <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_"
+   "Software version(s)", "Ignore this", ""
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Databases follow a pattern *e.g.* "The Protein Databank (PDB)". {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}
 * **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {read the `guidelines <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}
@@ -184,10 +184,10 @@ For this first part, you specify the tool **name**, a short **description** and 
    2) Save the entry.
    3) Edit the entry, resetting the name.
 
-   To request an ID change post-registration (to be avoided!) you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_. 
+   To request an ID change post-registration (to be avoided!) you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.
 
 
-      
+   
 Function
 """"""""
 This is where you describe the functionality of the tool based on the `EDAM ontology`_ [1]_.
