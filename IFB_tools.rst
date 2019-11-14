@@ -205,9 +205,9 @@ Before you do anything, you should carefully plan what new entries (if any) are 
 
 Tool functions
 """"""""""""""
-In the *bio.tools* software model, a tool provides one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+In the *bio.tools* software model, a tool has one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
- This is visualised in a diagram on the Tool Cards that look like this:
+This is visualised in a diagram on the Tool Cards that look like this:
 
 |biotool_function|
 
