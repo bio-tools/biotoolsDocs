@@ -155,8 +155,11 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
    The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The guidelines_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
 
-Tool types and entries
-""""""""""""""""""""""
+4. Plan your curation work 
+---------------------------   
+
+Tool types
+##########
 The scope of *bio.tools* is very broad, ranging from simple scripts to comprehensive bioinformatics portals, defined by 15 different `tool types <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_.  The vast majority of entries are of the following types:
 
 .. csv-table::
@@ -164,7 +167,7 @@ The scope of *bio.tools* is very broad, ranging from simple scripts to comprehen
    :widths: 25, 100
 
    "**Bioinformatics portal**", "A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."
-   "**Database portal**", "A Web application, suite or workbench providing a portal to a biological database."
+   "**Database portal**", "A Web site providing a portal to a biological database, typically allowing a user to browse, deposit, search, visualise, analyse or download data."
    "**Web application**", "A tool with a graphical user interface that runs in your Web browser."
    "**Desktop application**", "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
    "**Command-line tool**", "A tool with a text-based (command-line) interface."
@@ -182,21 +185,26 @@ Other common types incude:
    "**Library**", "A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries."
 
 
-A single *bio.tools* entry is annotated with one or more types, reflecting different facets of the tool described by the entry. Before you do anything, you should carefully decide what new entries are required to adequately describe your tools.  A few general suggestions:
+A single *bio.tools* entry is annotated with one or more types, reflecting different facets of the tool described by the entry. Be sure to understand the type(s) of tool you have, because it determines the information that's expected.
+
+
+ bio.tools entries
+""""""""""""""""""
+Before you do anything, you should carefully plan what new entries (if any) are required to adequately describe your tools.  A few general suggestions:
 
 1. A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
-2. *bio.tools* aims to catalogue *unique* tool functionality.  For example, an R package for the Bioconductor suite is derived from a pre-existing command-line tool, but has essentially the same functionality: these can be described by a single entry.  
+2. *bio.tools* aims to catalogue *unique* tool functionality. Different implementations but with esesentially the same functionality can be described by a sigle entity, *e.g.* a command-line tool that is later adapted into an R package for the Bioconductor suite, or which is served online via a Galaxy server.
 3. In some cases, *e.g.* complex software packages, it's not obvious whether to have one or multiple entries. Pick the option which mostly clearly illustrates the tool's functionality to end-users.
-4. Tool collections should be described by multiple entries.  For example, one entry to describe a *suite*, and multple other entries to describe the individual tools included in that suite. 
-5. Software with multiple interfaces should be described by a single entry. For example, a *command-line tool* whose functionality is also available via a *web application* would be described by one entry with 2 tool type annotations. Similarly,  a *database portal* with a *web API* can be described by a single entry.
+4. Tool collections should be described by multiple entries. For example, an entry to describe a *suite*, and multple other entries to describe the individual tools within that suite. 
+5. Software with multiple interfaces should be described by a single entry. For example, a *command-line tool* whose functionality is also available via a *web application*, or a *database portal* with a *web API*.
 6. Many *database portals* provide multiple interfaces for the typical database functions (browse, deposit, search, visualise, analyse and download).  Usually one entry will suffice, but sometimes multiple entries are better, *e.g.* where there are multiple analysis tools.
-7. Very complex entities such as *Bioinformatics portals* should not try to describe everything in a single entry.  Use a single entry for the portal, and then multiple other entries to describe the things aggregated by the portal.
-
-
+7. For very complex entities such as *Bioinformatics portals*, do not try to describe everything in a single entry.  Use a single entry for the portal, and multiple other entries for the things aggregated by the portal.
 
 .. tip::
-   In all cases, keep the end-user in mind and try to describe your tools in a way that will make the functionality clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
+   In all cases, keep the end-user in mind and try to describe your tools in a way that will be clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
 
+
+ 
    
 4. Describe your tools
 ----------------------
@@ -280,8 +288,7 @@ Tool type
 	    
 
 
-.. important::
-   It's important that you get the tool type annotation right, as it determines what information is expected for the IFB catalogue.
+
    
 License
 ^^^^^^^
