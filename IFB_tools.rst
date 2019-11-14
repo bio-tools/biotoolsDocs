@@ -43,7 +43,7 @@ As a software developer or service provider, you should own the *bio.tools* entr
 
 You'll need to login first, by clicking on |Login| at the top-right corner of the page.
 
-.. |Login| image:: _static/Login.png
+.. |Login| image:: _static/login.png
    :width: 100px
    :height: 30px
 
