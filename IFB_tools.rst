@@ -159,7 +159,7 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
 ---------------------------   
 
 Tool types
-##########
+""""""""""
 The scope of *bio.tools* is very broad, ranging from simple scripts to comprehensive bioinformatics portals, defined by 15 different `tool types <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_.  The vast majority of entries are of the following types:
 
 .. csv-table::
@@ -189,7 +189,7 @@ A single *bio.tools* entry is annotated with one or more types, reflecting diffe
 
 
  bio.tools entries
-##################
+""""""""""""""""""
 Before you do anything, you should carefully plan what new entries (if any) are required to adequately describe your tools.  A few general suggestions:
 
 1. A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
@@ -202,7 +202,7 @@ Before you do anything, you should carefully plan what new entries (if any) are 
 
 
 Tool functions
-##############
+""""""""""""""
 In the *bio.tools* software model, a tool provides one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
  This is visualised in a diagram on the Tool Cards that look like this:
