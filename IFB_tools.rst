@@ -184,6 +184,7 @@ Familiarise yourself with EDAM
 The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain it serves, specific operations it performs, types of input and output data, and supported data formats.
 
 Three EDAM browsers provide different functionality:
+
 .. _`OLS EDAM`: https://www.ebi.ac.uk/ols/ontologies/edam
 .. _`BioPortal`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
 .. _`EDAM Browser`: https://ifb-elixirfr.github.io/edam-browser/
@@ -255,8 +256,8 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    "**Maturity**", "**Recommended**"
    "**License**", "**Mandatory** (Desktop application), **Recommended** (Command-line tool)"
    "**Cost**", "**Recommended** (Desktop application, Command-line tool)"
-   "Collection", "*ignore*"
    "**Accessibility**", "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
+   "**Collection**", "**Optional**"
    "ELIXIRPlatform", "*ignore*"
    "ELIXIRNode", "*ignore*"
    "Other ID", "*ignore*"
@@ -376,8 +377,8 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
    "**Input->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
    "**Output->data**", "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
    "**Output->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
-   "**Command**", "*ignore*"
    "**Note**", "**Optional**"
+   "**Command**", "*ignore*"
 
 * **Operation** describes the basic operation(s) performed by this software function {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
 * **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
@@ -412,11 +413,90 @@ Format
 
 Links
 """""
-It is the place where your add links that do not belong to Download or Documentation.  For instance, a link to a mailing list, mirror or repository (full list available on the drop-down menu of **Link type**).
+In the *Links* tab you specify miscellaneous links for the tool.
+
+.. csv-table::
+   :header: "Attribute", "Requirement"
+   :widths: 25, 100
+	    
+   "**Repository**", "**Mandatory** (Desktop application, Command-line tool), **Optional** (Bioinformatics portal, Database portal, Web application)"
+   "**Issue tracker**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Recommended** (Database portal)"
+   "**Mailing list**", "**Recommended** (Database portal, Web application, Desktop application, Command-line tool), **Optional** (Bioinformatics portal)"
+   "**Helpdesk**", "**Recommended** (Database portal), **Optional** (Web application, Desktop application, Command-line tool)"
+   "**Discussion forum**", **Optional**"
+   "**Social media**", **Optional**"
+   "**Mirror**", "**Optional** (Bioinformatics portal, Database portal, Web application)"
+   "**Other**", **Optional**"
+   "**Registry**", "*ignore*"
+   "**Galaxy service**", "*ignore*"
+   "**Service**", "*ignore*"
+   "**Scientific benchmark**", "*ignore*"
+   "**Technical monitoring**", "*ignore*"
+
+   
+* **Repository** is where source code, data and other files may be downloaded.
+* **Issue tracker** is for software issues, bug reports, feature requests *etc.*
+* **Mailing list** is for software announcements, discussions, support *etc.*
+* **Helpdesk** is a formal system (*e.g.* ticket system) where users can get support in using the software.
+
+.. note::
+   It's strongly recommended to put your source code and other downloadable resources in a public repository such as `GitHub <https://github.com/>`_.  It takes little effort to do so. A repo can serve as a homepage for your tool, and provide an issue tracker and open forum for discussion. If you don't have a repo, you should at least provide a `downloads page <#downlad>`_.
+  
 
 Download
 """"""""
-You can here share all the different download links you want. It can be many different kind such as binaries, source code, biological data, test data *etc.* (see the **Download type** drop-down menu).
+In the *Dwnload* tab you specify Links to downloads for the software.
+
+.. csv-table::
+   :header: "Attribute", "Requirement"
+   :widths: 25, 100
+
+   "**API specification**", "**Recommended** (Database portal - with API)"
+   "**Binaries**", "**Recommended** (Desktop application, Command-line tool)"
+   "**Binary package**", "**Recommended** (Desktop application, Command-line tool)"
+   "**Command-line specification**", "**Optional** (Command-line tool)"
+   "**Container file**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
+   "**Source code**", "**Recommended** (Desktop application, Command-line tool), **Optional** (Web application)"
+   "**Source package**", "**Recommended** (Desktop application, Command-line tool), **Optional** (Web application)"
+   "**Downloads page**", "**Mandatory** (Database portal), "**Recommended** (Desktop application, Command-line tool), **Optional** (Bioinformatics portal, Web application)"
+   "**VM image**", "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
+   "**CWL file**", "**Optional** (Command-line tool)"
+   "**Test data**", "**Optional** (Command-line tool)"
+   "**Test script**", "**Optional** (Command-line tool)"
+   "**Tool wrapper (galaxy)**", "**Optional** (Command-line tool)"
+   "**Tool wrapper (taverna)**", "**Optional** (Command-line tool)"
+   "**Tool wrapper (other)**", "**Optional** (Command-line tool)"
+   "**Icon**", **Optional**"
+   "**Biological data**", **Optional**"
+   "**Screenshot**", **Optional**"
+   "**Other**", **Optional**"
+   "**Ontology**", "*ignore*"
+
+* **API specification** is a file providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.
+* **Binaries** for the software.
+* **Binary package** for the software.
+* **Command-line specification** is a file providing a command line specification for the software.
+* **Container file** including the software.
+* **Source code** for the software.
+* **Source package** (of various types) for the software."
+* **"Downloads page** is a Web page summarising general downloads available for the software.
+
+   
+  *    "Biological data", "Biological data, or a web page on a database portal where such data may be downloaded. "
+
+
+   "CWL file", "Common Workflow Language (CWL) file for the software."
+   "Icon", "Icon of the software."
+   "Ontology", "A file containing an ontology, controlled vocabulary, terminology etc."
+   "Screenshot", "Screenshot of the software."
+   "Test data", "Data for testing the software is working correctly."
+   "Test script", "Script used for testing testing whether the software is working correctly."
+   "Tool wrapper (galaxy)", "Galaxy tool configuration file (wrapper) for the software."
+   "Tool wrapper (taverna)", "Taverna configuration file for the software."
+   "Tool wrapper (other)", "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software."
+   "VM image", "Virtual machine (VM) image for the software."   
+   "Other", "Other type of download for software - the default if a more specific type is not available."
+
 
 Documentation
 """""""""""""
