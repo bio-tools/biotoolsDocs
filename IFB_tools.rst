@@ -222,6 +222,9 @@ Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (on
 .. image:: _static/hmmer3_function.png
 
 
+.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, and creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
+  
+	   
 Before describing your tools, you should carefully identify the distinct functions and the individual operations associated with each one. This is often straighforward, as different functions (modes) typically perform distinct operations:
 
 * if a tool has an option between doing one thing or another, then you should annotate the operations as distinct functions
