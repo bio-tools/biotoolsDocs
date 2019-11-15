@@ -184,10 +184,13 @@ Familiarise yourself with EDAM
 The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain it serves, specific operations it performs, types of input and output data, and supported data formats.
 
 Three EDAM browsers provide different functionality:
+.. _`OLS EDAM`: https://www.ebi.ac.uk/ols/ontologies/edam
+.. _`BioPortal`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
+.. _`EDAM Browser`: https://ifb-elixirfr.github.io/edam-browser/
 
-.. `IFB EDAM Browser <https://ifb-elixirfr.github.io/edam-browser/>`_
-.. `EBI Ontology Look-up Service <https://www.ebi.ac.uk/ols/ontologies/edam>`_
-.. `NBCO BioPortal<https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root>`_
+* `OLS EDAM`_
+* `BioPortal`_
+* `EDAM Browser`_
 
 .. tip::
    The EDAM term picker currently implemented in *bio.tools* is not very powerful, for example, although it synonyms of EDAM terns, these are not display to the user.  It's strongly recommended to use one or more of the browsers above.  If you can't find exactly the terms you need, multiple searches using synonyms, alternative spellings *etc.* can help.
@@ -250,7 +253,7 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    "**Operating system**", "**Mandatory** (Desktop application), Recommended (Command-line tool)"
    "**Language**", "**Recommended** (Command-line tool)"
    "**Maturity**", "**Recommended**"
-   "**License**", "**Mandatory** (Desktop application), Recommended (Command-line tool)"
+   "**License**", "**Mandatory** (Desktop application), **Recommended** (Command-line tool)"
    "**Cost**", "**Recommended** (Desktop application, Command-line tool)"
    "Collection", "*ignore*"
    "**Accessibility**", "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
@@ -333,18 +336,41 @@ All downloadable software should be licensed.  If you can't find your license in
 
 Topic
 ^^^^^
-**Topic** is the place to tag your tool with terms describing the scientific domain the tool serves, or other general category.  
+**Topic** is the place to tag your tool with EDAM terms describing the scientific domain the tool serves, or other general category.  
 
-* specify the most important and relevant scientific topic; up to 3 topics will suffice
+* specify the most important and relevant scientific topic; up to 3 topics will usually suffice
 * don't exhaustively specify all the topics of lower or secondary relevance
 
    
  
 Function
 """"""""
+In the *Function* tab you specify the functions of the tool, expressed in concepts from the EDAM ontology.
+
+.. csv-table::
+   :header: "Attribute", "Requirement"
+   :widths: 25, 100
+
+"**Operation**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Recommended** (Database portal)"
+"**Input->data**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Optional** (Database portal)"
+"**Input->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
+"**Output->data**", "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
+"**Output->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
+"**Note**", "**Optional**"
+"**Cmd**", "*irnoge*"
+
+* **Operation** describes the basic operation(s) performed by this software function {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
+* **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
+* **Format** is the Allowed format(s) of the input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_}.
+
+
+.. note::  
+   You can use **Note** to add a concise comment about this function, if this is not apparent from the software description and EDAM annotations.
+	
+	
 In the *bio.tools* software model, a tool has one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
 
-This is visualised in a diagram on the Tool Cards that look like this:
+This is shown in a diagram on the Tool Cards that look like this:
 
 |biotool_function|
 
@@ -373,18 +399,11 @@ Before describing your tools, you should carefully identify the distinct functio
    When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
    
 
-This is where you describe the functionality of the tool based on the `EDAM ontology`_ [1]_.
-
-
-In each box, you can add as many fields as you want. You can also add a general comment about the function (*this is particularly useful when your entry has several functions*).  It's highly recommended to read up about `tool functions <https://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ before filling this section.
+In each box, you can add as many fields as you want. You can also add a general comment about the function (*this is particularly useful when your entry has several functions*).
 
 .. Note::
-   It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  You can use `OLS EDAM`_, `BioPortal`_ and `EDAM Browser`_ to browse EDAM and find the terms you need, or request new terms via `GitHub <https://github.com/edamontology/edamontology/issues>`_.  Improvements (including term requests) to the term picker in *bio.tools* are planned.
+   It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `OLS EDAM`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools. 
     
-.. _`EDAM ontology`: http://github.com/edamontology/edamontology/
-
-
-
 
 Links
 """""
