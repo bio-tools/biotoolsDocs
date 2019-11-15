@@ -158,14 +158,16 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
 4. Plan your curation work 
 ---------------------------   
 
-Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform.
+bio.tools enries
+################
 
+.. important::
+   Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform. Be sure to understand:
+   1. The type of tool being described - this determines the information requirement - and is covered in the section below on `tool type <#tool_type>`_. 
+   2. The tool functionality and how it should be described  - covered in the section on `tool functions <#function>`_ below.
+   3. Whether one or more entries are needed (covered below).
 
-
-
-bio.tools entries
-""""""""""""""""""
-Before you do anything, you should carefully plan what new entries (if any) are required to adequately describe your tools.  A few general suggestions:
+Tips when planning what new entries (if any) are required to adequately describe your tools:
 
 * A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
 * *bio.tools* aims to catalogue *unique* tool functionality. Different implementations but with esesentially the same functionality can be described by a sigle entity, *e.g.* a command-line tool that is later adapted into an R package for the Bioconductor suite, or which is served online via a Galaxy server.
@@ -175,39 +177,17 @@ Before you do anything, you should carefully plan what new entries (if any) are 
 * Many *database portals* provide multiple interfaces for the typical database functions (browse, deposit, search, visualise, analyse and download).  Usually one entry will suffice, but sometimes multiple entries are better, *e.g.* where there are multiple analysis tools.
 * For very complex entities such as *Bioinformatics portals*, do not try to describe everything in a single entry.  Use a single entry for the portal, and multiple other entries for the things aggregated by the portal.
 
-
-Tool functions
-""""""""""""""
-In the *bio.tools* software model, a tool has one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
-
-This is visualised in a diagram on the Tool Cards that look like this:
-
-|biotool_function|
-
-.. |biotool_function| image:: _static/biotool_function.png
-
-For example, the tool `signalp <https://bio.tools/signalp>`_ has a single function performing two operations, with a single input and two outputs:
-
-.. image:: _static/signalp_function.png
-
-Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (only 3 shown here):
-
-.. image:: _static/hmmer3_function.png
-
-
-.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has very nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, but creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
   
-	   
-Before describing your tools, you should carefully identify the distinct functions and the individual operations associated with each one. This is often straighforward, as different functions (modes) typically perform distinct operations:
 
-* if a tool has an option between doing one thing or another, then you should annotate the operations as distinct functions
-* if in contrast a tool always does one or more things, then you should annotate these as distinct operations within a single function
-* only specify the primary functions and operations, from a typical end-user perspective - tools often do many things to its central, advertised purpose - you don't need to describe everything!
-* this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
+Familiarise yourself with EDAM
+##############################
 
+Terms are taken from and defined in the `EDAM ontology <https://github.com/edamontology/edamontology>`_:  
 .. tip::
-   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
-   
+   The EDAM term picker currently implemented in *bio.tools* is not very powerful, for example, while it will find common synonyms on selectable terms, it does not display these to the user.  It's strongly recommended, especially if you can't find exactly the terms you need, to use other EDAM browsers (described below).
+
+
+
 5. Describe your tools
 ----------------------
 .. _guidelines:
@@ -216,6 +196,9 @@ The sections below match the tabs in the *bio.tools* registration interface.
 .. tip::
    The {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_} links take you to more detailed guidelines in the *bio.tools* Curators Guide. Follow these links whenever you're not sure about what information is needed.
 
+
+
+   
 Summary
 """""""
 In the *Summary* tab you specify basic information about the software:
@@ -325,21 +308,64 @@ A single *bio.tools* entry is annotated with one or more types, reflecting diffe
 
 
 .. tip::
-   Software is complex and it can be tricky to assign a type.  Make sure you understand the `tool type definitions <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_ before you use them. For example, in *bio.tools* a *Web service* is specifically a SOAP+WSDL implementation, and most likely you need *Web API* (which covers most APIs nowadays) or just *Web application* (for a tool delivered via the Web but without an API).  
+   Software is complex and it can be tricky to assign a type.  Make sure you understand the `tool type definitions <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_ before you use them. For example, in *bio.tools* a *Web service* is specifically a SOAP+WSDL implementation. Mmost likely you need *Web API* (which covers most APIs nowadays) or just *Web application* (for a tool delivered via the Web but without an API).  
   
-
-
 
    
 License
 ^^^^^^^
+All downloadable software should be licensed.  If you can't find your license in the list:
+
+.  use "Proprietary" in cases where the software is under some license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license!
+4. use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary" - please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.
+3. use "Unlicensed" for software which is not licensed and is not "Proprietary" (this is bad - license your software!)
+
+.. note::
+   There are many good reasons why you should license your software, ideally picking a FOSS-license (Free and Open Source Software).  Read ` <A Quick Guide to Software Licensing for the Scientist-Programmer <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598>`_.  Some types of tools *e.g.* *Web application" are not licensed, but instead, should have a `Terms of use <>`_ document. 
+
 
 Topic
 ^^^^^
+**Topic** is the place to tag your tool with terms describing the scientific domain the tool serves, or other general category.  
+
+* specify the most important and relevant scientific topic; up to 3 topics will suffice
+* don't exhaustively specify all the topics of lower or secondary relevance
 
    
+ 
 Function
 """"""""
+In the *bio.tools* software model, a tool has one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+
+This is visualised in a diagram on the Tool Cards that look like this:
+
+|biotool_function|
+
+.. |biotool_function| image:: _static/biotool_function.png
+
+For example, the tool `signalp <https://bio.tools/signalp>`_ has a single function performing two operations, with a single input and two outputs:
+
+.. image:: _static/signalp_function.png
+
+Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (only 3 shown here):
+
+.. image:: _static/hmmer3_function.png
+
+
+.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has very nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, but creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
+  
+	   
+Before describing your tools, you should carefully identify the distinct functions and the individual operations associated with each one. This is often straighforward, as different functions (modes) typically perform distinct operations:
+
+* if a tool has an option between doing one thing or another, then you should annotate the operations as distinct functions
+* if in contrast a tool always does one or more things, then you should annotate these as distinct operations within a single function
+* only specify the primary functions and operations, from a typical end-user perspective - tools often do many things to its central, advertised purpose - you don't need to describe everything!
+* this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
+
+.. tip::
+   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
+   
+
 This is where you describe the functionality of the tool based on the `EDAM ontology`_ [1]_.
 
 
