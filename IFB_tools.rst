@@ -351,13 +351,13 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 
-"**Operation**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Recommended** (Database portal)"
-"**Input->data**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Optional** (Database portal)"
-"**Input->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
-"**Output->data**", "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
-"**Output->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
-"**Note**", "**Optional**"
-"**Cmd**", "*irnoge*"
+   "**Operation**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Recommended** (Database portal)"
+   "**Input->data**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Optional** (Database portal)"
+   "**Input->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
+   "**Output->data**", "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
+   "**Output->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
+   "**Note**", "**Optional**"
+   "**Cmd**", "*irnoge*"
 
 * **Operation** describes the basic operation(s) performed by this software function {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
 * **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
