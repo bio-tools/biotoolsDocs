@@ -162,6 +162,7 @@ Before you use *bio.tools* to create and edit tool descriptions, it's important 
 
 Tool types
 """"""""""
+.. _tool_types:
 The scope of *bio.tools* is very broad, ranging from simple scripts to comprehensive bioinformatics portals, defined by 15 different `tool types <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_.  The vast majority of entries are of the following types:
 
 .. csv-table::
@@ -222,7 +223,7 @@ Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (on
 .. image:: _static/hmmer3_function.png
 
 
-.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, and creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
+.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has very nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, but creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
   
 	   
 Before describing your tools, you should carefully identify the distinct functions and the individual operations associated with each one. This is often straighforward, as different functions (modes) typically perform distinct operations:
@@ -294,7 +295,7 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    "ELIXIRNode", "*ignore*"
    "Other ID", "*ignore*"
 
-* **Tool type** describes the type of the software: a *bio.tools* entry can have more than one type {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
+* **Tool type** describes the type of the tool: a *bio.tools* entry can have more than one type.  {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
 * **Topic** is the general scientific domain the tool serves, or other general category {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
 * **Operating system** is the operating system supported by a downloadable software package {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
 * **Language** is the name of a programming language the tool source code was written in. {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
@@ -313,7 +314,8 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 
 Tool type
 ^^^^^^^^^
-
+Beyond what was said about tool types `above <#Tool_types>`_, a few suggestions:
+* 
 	    
 
 
