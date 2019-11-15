@@ -396,13 +396,7 @@ Before describing your tools, you should carefully identify the distinct functio
 * this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
 
 .. tip::
-   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.
-   
-
-In each box, you can add as many fields as you want. You can also add a general comment about the function (*this is particularly useful when your entry has several functions*).
-
-.. Note::
-   It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `OLS EDAM`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools. 
+   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `OLS EDAM`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools.  If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.  
     
 
 Links
