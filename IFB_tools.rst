@@ -375,8 +375,8 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
    "**Input->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
    "**Output->data**", "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
    "**Output->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
+   "**Command**", "*ignore*"
    "**Note**", "**Optional**"
-   "**Cmd**", "*irnoge*"
 
 * **Operation** describes the basic operation(s) performed by this software function {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
 * **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
@@ -385,19 +385,33 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
 
 .. note::  
    You can use **Note** to add a concise comment about this function, if this is not apparent from the software description and EDAM annotations.
-	
-	  
-	   
+
+.. tip::
+   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `OLS EDAM`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools.  If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.  
+
+   
+Operation
+^^^^^^^^^
 Before describing your tools, you should carefully identify the distinct functions and the individual operations associated with each one. This is often straighforward, as different functions (modes) typically perform distinct operations:
 
 * if a tool has an option between doing one thing or another, then you should annotate the operations as distinct functions
 * if in contrast a tool always does one or more things, then you should annotate these as distinct operations within a single function
 * only specify the primary functions and operations, from a typical end-user perspective - tools often do many things to its central, advertised purpose - you don't need to describe everything!
-* this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
 
-.. tip::
-   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `OLS EDAM`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools.  If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.  
-    
+Data
+^^^^
+Tips:
+
+* data terms must be correctly associated with the operation(s) (for each function, in case the tool has multiple modes of operation)
+* only specify the primary inputs and outputs, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
+
+Format
+^^^^^^
+Tips:
+
+* format terms must be correctly associated with the data type of an input or output
+* specify the most widely used of the supported data formats (it can be onersous to be exhaustive!)
+
 
 Links
 """""
