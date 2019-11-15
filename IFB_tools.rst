@@ -345,6 +345,25 @@ Topic
  
 Function
 """"""""
+In the *bio.tools* software model, a tool has one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
+
+This is shown in a diagram on the Tool Cards that look like this:
+
+|biotool_function|
+
+.. |biotool_function| image:: _static/biotool_function.png
+
+For example, the tool `signalp <https://bio.tools/signalp>`_ has a single function performing two operations, with a single input and two outputs:
+
+.. image:: _static/signalp_function.png
+
+Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (only 3 shown here):
+
+.. image:: _static/hmmer3_function.png
+
+
+.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has very nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, but creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
+
 In the *Function* tab you specify the functions of the tool, expressed in concepts from the EDAM ontology.
 
 .. csv-table::
@@ -367,26 +386,7 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
 .. note::  
    You can use **Note** to add a concise comment about this function, if this is not apparent from the software description and EDAM annotations.
 	
-	
-In the *bio.tools* software model, a tool has one or more basic functions, or modes of operation.  Each function performs at least one specific operation, and has one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).
-
-This is shown in a diagram on the Tool Cards that look like this:
-
-|biotool_function|
-
-.. |biotool_function| image:: _static/biotool_function.png
-
-For example, the tool `signalp <https://bio.tools/signalp>`_ has a single function performing two operations, with a single input and two outputs:
-
-.. image:: _static/signalp_function.png
-
-Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (only 3 shown here):
-
-.. image:: _static/hmmer3_function.png
-
-
-.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has very nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, but creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
-  
+	  
 	   
 Before describing your tools, you should carefully identify the distinct functions and the individual operations associated with each one. This is often straighforward, as different functions (modes) typically perform distinct operations:
 
