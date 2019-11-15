@@ -364,6 +364,7 @@ Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (on
 
 .. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has very nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, but creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
 
+
 In the *Function* tab you specify the functions of the tool, expressed in concepts from the EDAM ontology.
 
 .. csv-table::
@@ -400,15 +401,11 @@ Before describing your tools, you should carefully identify the distinct functio
 
 Data
 ^^^^
-Tips:
-
 * data terms must be correctly associated with the operation(s) (for each function, in case the tool has multiple modes of operation)
 * only specify the primary inputs and outputs, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
 
 Format
 ^^^^^^
-Tips:
-
 * format terms must be correctly associated with the data type of an input or output
 * specify the most widely used of the supported data formats (it can be onersous to be exhaustive!)
 
