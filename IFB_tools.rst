@@ -164,10 +164,10 @@ bio.tools enries
 .. important::
    Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform. Be sure to understand:
    1. The type of tool being described - this determines the information requirement - and is covered in the section below on `tool type <#tool_type>`_. 
-   2. The tool functionality and how it should be described  - covered in the section on `tool functions <#function>`_ below.
-   3. Whether one or more entries are needed (covered below).
+   2. The tool functionality and how it should be described  - covered in the section on `tool functions <#function>`_.
+   3. Whether one or more entries are needed (see below).
 
-Tips when planning what new entries (if any) are required to adequately describe your tools:
+Plan whether new entries (if any) are required to adequately describe your tools:
 
 * A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
 * *bio.tools* aims to catalogue *unique* tool functionality. Different implementations but with esesentially the same functionality can be described by a sigle entity, *e.g.* a command-line tool that is later adapted into an R package for the Bioconductor suite, or which is served online via a Galaxy server.
@@ -176,16 +176,23 @@ Tips when planning what new entries (if any) are required to adequately describe
 * Software with multiple interfaces should be described by a single entry. For example, a *command-line tool* whose functionality is also available via a *web application*, or a *database portal* with a *web API*.
 * Many *database portals* provide multiple interfaces for the typical database functions (browse, deposit, search, visualise, analyse and download).  Usually one entry will suffice, but sometimes multiple entries are better, *e.g.* where there are multiple analysis tools.
 * For very complex entities such as *Bioinformatics portals*, do not try to describe everything in a single entry.  Use a single entry for the portal, and multiple other entries for the things aggregated by the portal.
-
-  
+ 
 
 Familiarise yourself with EDAM
 ##############################
 
-Terms are taken from and defined in the `EDAM ontology <https://github.com/edamontology/edamontology>`_:  
-.. tip::
-   The EDAM term picker currently implemented in *bio.tools* is not very powerful, for example, while it will find common synonyms on selectable terms, it does not display these to the user.  It's strongly recommended, especially if you can't find exactly the terms you need, to use other EDAM browsers (described below).
+The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain it serves, specific operations it performs, types of input and output data, and supported data formats.
 
+Three EDAM browsers provide different functionality:
+
+.. `IFB EDAM Browser <https://ifb-elixirfr.github.io/edam-browser/>`_
+.. `EBI Ontology Look-up Service <https://www.ebi.ac.uk/ols/ontologies/edam>`_
+.. `NBCO BioPortal<https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root>`_
+
+.. tip::
+   The EDAM term picker currently implemented in *bio.tools* is not very powerful, for example, although it synonyms of EDAM terns, these are not display to the user.  It's strongly recommended to use one or more of the browsers above.  If you can't find exactly the terms you need, multiple searches using synonyms, alternative spellings *etc.* can help.
+
+   If you cannot find the right term, please request it¡¯s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.  It takes some time from requesting new EDAM terms for these to be supported in *bio.tools*, so if you need many new terms please plan ahead. 
 
 
 5. Describe your tools
@@ -375,9 +382,7 @@ In each box, you can add as many fields as you want. You can also add a general 
    It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  You can use `OLS EDAM`_, `BioPortal`_ and `EDAM Browser`_ to browse EDAM and find the terms you need, or request new terms via `GitHub <https://github.com/edamontology/edamontology/issues>`_.  Improvements (including term requests) to the term picker in *bio.tools* are planned.
     
 .. _`EDAM ontology`: http://github.com/edamontology/edamontology/
-.. _`OLS EDAM`: https://www.ebi.ac.uk/ols/ontologies/edam
-.. _`BioPortal`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
-.. _`EDAM Browser`: https://ifb-elixirfr.github.io/edam-browser/
+
 
 
 
