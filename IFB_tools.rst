@@ -2,18 +2,21 @@ IFB tools
 =========
 
 .. warning::
-   WORK IN PROGRESS - THESE GUIDELINES ARE CURRENTLY BEING WORKED ON / ARE IN A MESS. PLEASE COME BACK LATER.
+   **WORK IN PROGRESS** - THESE GUIDELINES ARE BEING WORKED ON
+
+   PLEASE COME BACK LATER.
 
 
 These instructions will guide you through the steps to register your tools and databases in `bio.tools`_ and describe them to the standard required for inclusion in the next iteration of the `IFB Catalogue <https://www.france-bioinformatique.fr/en/ressources>`_ - the French national catalogue of bioinformatics resources.
 
 There are various sources of information amd help:
 
-* This document provides guidelines tailored to the IFB catalogue, highlighting key information and common pitfalls.
+* *This document* provides guidelines tailored to the IFB catalogue, highlighting key information and common pitfalls.
 * The *bio.tools* `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ provides in-depth curation guidelines. It's referred to a lot from here!
-* The `biotoolsSchema documentation <https://biotoolsschema.readthedocs.io/en/latest/>`_ summarises the attributes, information model and controlled vocabularies, including the `EDAM ontology <https://edamontologydocs.readthedocs.io/en/latest/>`_, used to describe tools in *bio.tools*.
+* The `biotoolsSchema documentation <https://biotoolsschema.readthedocs.io/en/latest/>`_ summarises the attributes, information model and controlled vocabularies - including the `EDAM ontology <https://edamontologydocs.readthedocs.io/en/latest/>`_ - used in *bio.tools* tool descriptions.
 
-* To get help using *bio.tools*, or for general curation advice, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.  If you have questions specifically about the IFB catalogue curation process, you can mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ directly.
+* To get help using *bio.tools*, or for general curation advice, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
+* If you have questions specifically about the IFB catalogue curation process, you can mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ directly.
   
   
 .. note::
@@ -52,41 +55,39 @@ To see whether a tool is already registered, search for it by its name. Simply t
 .. image:: _static/find_tool.png
 
 
-If you find yuur entry you can go ahead and update_ it.  If you can't find the entry, you'll need to create_ it. 
+Once you find your entry you can go ahead and update it.  If you can't find the entry, you'll need to create it. 
 
 .. important::
-   All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.  Before starting work, please ensure you understand the `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the guidelines_ below.
+   All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.  Before starting work, please ensure you understand the `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the `guidelines <#guidelines>`_ below.
 
 
-Existing entries
+Updating entries
 """"""""""""""""
-.. _update:
 To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
 
 .. image:: _static/update.png
-   :width: 200px
-   :height: 35px
+   :width: 250px
+   :height: 45px
 
 .. image:: _static/request_edit_rights.png
-   :width: 200px
-   :height: 35px
+   :width: 250px
+   :height: 45px
 
 .. image:: _static/request_ownership.png
-   :width: 200px
-   :height: 35px	    	    
+   :width: 250px
+   :height: 45px	    	    
  
 
 * Click on *Request ownership* if you want to claim ownership of the entry
-* Click on *Request editing rights* if you want to get edit rights to the entry, but not own it 
-* Click on *Update this record* (visible only if you own the entry or have editing rights) to edit the entry.
+* Click on *Request editing rights* if you want to edit rights on the entry, but not own it 
+* Click on *Update this record* to edit the entry (visible only if you own the entry or have editing rights) 
 
 .. note::
    It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 
 
-New entries
-"""""""""""
-.. _create:
+Creating entries
+""""""""""""""""
 To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*:
 
 
@@ -95,7 +96,7 @@ To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu 
 
 bio.tools registration interface
 """"""""""""""""""""""""""""""""
-* The *bio.tools* registration interface helps you to create valid tool descriptions. It's organised into different tabs ("Summary", "Function", "Labels" *etc.*):
+The *bio.tools* registration interface helps you to create valid tool descriptions. It's organised into different tabs (*Summary*, *Function*, *Labels* *etc.*):
 
 .. image:: _static/registration_interface.png
 
@@ -126,10 +127,10 @@ It provides some hints, and ensures that the information you set is in the right
 
 Removing entries
 """"""""""""""""
-To remove an entry, from the Tool Card, click on *Uppdate this record*. Then you can remove the entry by clicking on the remove button |remove|.
+To remove an entry, from the Tool Card, click on *Update this record*. Then you can remove the entry by clicking on the remove button |remove|.
 
 .. |remove| image:: _static/remove.png
-   :width: 55px
+   :width: 100px
    :height: 30px
 
 .. warning::
@@ -149,7 +150,99 @@ bio.tools
 The IFB catalogue
 """""""""""""""""
 
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the guidelines_ that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#guidelines>`_ below.
+
+
+Updating entries
+""""""""""""""""
+To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
+
+.. image:: _static/update.png
+   :width: 250px
+   :height: 45px
+
+.. image:: _static/request_edit_rights.png
+   :width: 250px
+   :height: 45px
+
+.. image:: _static/request_ownership.png
+   :width: 250px
+   :height: 45px	    	    
+ 
+
+* Click on *Request ownership* if you want to claim ownership of the entry
+* Click on *Request editing rights* if you want to edit rights on the entry, but not own it 
+* Click on *Update this record* to edit the entry (visible only if you own the entry or have editing rights) 
+
+.. note::
+   It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
+
+
+Creating entries
+""""""""""""""""
+To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*:
+
+
+.. image:: _static/add.png
+
+
+bio.tools registration interface
+""""""""""""""""""""""""""""""""
+The *bio.tools* registration interface helps you to create valid tool descriptions. It's organised into different tabs (*Summary*, *Function*, *Labels* *etc.*):
+
+.. image:: _static/registration_interface.png
+
+
+It provides some hints, and ensures that the information you set is in the right format. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
+	   
+
+.. |asterix| image:: _static/red_asterix.png
+   :width: 15px
+   :height: 20px
+
+.. |save| image:: _static/save.png
+   :width: 100px
+   :height: 30px
+
+.. |validate| image:: _static/validate.png
+   :width: 100px
+   :height: 30px	    
+
+   
+.. Important::
+   The attributes required by *bio.tools* (tool name, description and homepage URL) are marked with a red asterix |asterix| in the registration interface, and must be given before an entry can be saved.  Much more information is required for the IFB catalogue, but this is not enforced by *bio.tools* ! 
+
+.. note::
+   It's possibe to create tool descriptions in JSON format directly in a text editor, and either paste these into the registration interface ("JSON" tab) or use the *bio.tools* API.  For guidance on using the API, see the `API Reference <https://biotools.readthedocs.io/en/latest/api_reference.html>`_ and the `API Usage Guide <https://biotools.readthedocs.io/en/latest/api_usage_guide.html>`_. 
+
+
+
+Removing entries
+""""""""""""""""
+To remove an entry, from the Tool Card, click on *Update this record*. Then you can remove the entry by clicking on the remove button |remove|.
+
+.. |remove| image:: _static/remove.png
+   :width: 100px
+   :height: 30px
+
+.. warning::
+    It shouldn't normally be necessary to remove a *bio.tools* entry, and you should try to avoid needing to do so!  Although deleted entries are actually just hidden, not really deleted, removing an entry is definitive.  There's no way back (other than emailing `Registry Support <mailto:registry-support@elixir-dk.org>`_).
+
+
+3. Understand the information requirement
+-----------------------------------------
+
+bio.tools
+"""""""""
+*bio.tools* requires only the name, description and homepage URL for a tool registration, but supports a comprehensive set of attributes for rich tool descriptions.
+
+.. note::
+   The attributes supported by *bio.tools*, their structure and their syntax are defined in formalised XML schema called `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.  If you'd like to learn more or contribute to this project, please head over to `GitHub <https://github.com/bio-tools/biotoolsSchema>`_.
+
+The IFB catalogue
+"""""""""""""""""
+
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#guidelines>`_ that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
 
 * **Mandatory** attributes **MUST** be specified.
 * **Recommended** attributes **SHOULD** be specified, but are not strictly required.
@@ -161,7 +254,7 @@ The information requirement of the IFB catalogue is more demanding than *bio.too
 All tools in the IFB catalogue must have at least a minimal description, *i.e.* all *mandatory* attributes are specified. Tool providers are encouraged to provide an enhanced description which also includes all of the *recommended* attributes.
    
 .. note::
-   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The guidelines_ below cover everything in more detail, and go through the curation process in a step-by-step way.
+   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `guidelines <#guidelines>`_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
 
 4. Plan your curation work 
@@ -172,7 +265,8 @@ bio.tools enries
 
 .. important::
    Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform. Be sure to understand:
-   1. The type of tool being described - this determines the information requirement - and is covered in the section below on `tool type <#tool_type>`_. 
+   
+   1. The type of tool being described - this determines the information requirement - and is covered in the section below on `tool type <#Tool_type>`_. 
    2. The tool functionality and how it should be described  - covered in the section on `tool functions <#function>`_.
    3. Whether one or more entries are needed (see below).
 
@@ -215,7 +309,6 @@ Three EDAM browsers provide different functionality:
 
 5. Describe your tools
 ----------------------
-.. _guidelines:
 The sections below match the tabs in the *bio.tools* registration interface.  
 
 .. tip::
