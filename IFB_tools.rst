@@ -7,20 +7,20 @@ IFB tools
    PLEASE COME BACK LATER
 
 
-These instructions will guide you through the steps to register your tools and databases in `bio.tools <https://bio.tools/>`_ and describe them to the standard required for inclusion in the next iteration of the `IFB Catalogue <https://www.france-bioinformatique.fr/en/ressources>`_ - the French national catalogue of bioinformatics resources.
+These instructions will guide you through the steps to register your tools and databases in `bio.tools`_ and describe them to the standard required for inclusion in the next iteration of the `IFB Catalogue <https://www.france-bioinformatique.fr/en/ressources>`_ - the French national catalogue of bioinformatics resources.
 
-There are various sources of information amd help:
+There are various sources of information and help:
 
 * *This document* provides guidelines tailored to the IFB catalogue, highlighting key information and common pitfalls.
-* The *bio.tools* `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ provides in-depth curation guidelines. It's referred to a lot from here!
-* The `biotoolsSchema documentation <https://biotoolsschema.readthedocs.io/en/latest/>`_ summarises the attributes, information model and controlled vocabularies - including the `EDAM ontology <https://edamontologydocs.readthedocs.io/en/latest/>`_ - used in *bio.tools* tool descriptions.
+* The *bio.tools* `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ provides in-depth curation guidelines. You might need to refer to it, wherever you see the {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_} links.
+* The `biotoolsSchema documentation <https://biotoolsschema.readthedocs.io/en/latest/>`_ summarises the attributes, information model and controlled vocabularies - including the `EDAM ontology <https://edamontologydocs.readthedocs.io/en/latest/>`_ - used for *bio.tools* tool descriptions. Most of the details you need are included here.
 
 * To get help using *bio.tools*, or for general curation advice, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 * If you have questions specifically about the IFB catalogue curation process, you can mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ directly.
   
   
 .. note::
-    These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions about them, or any of the *bio.tools* documentation, please post them on `GitHub <https://github.com/bio-tools/biotoolsDocs/issues>`_.  
+    These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions, please post them on `GitHub <https://github.com/bio-tools/biotoolsDocs/issues>`_.  
 
     
 1. Get a bio.tools account
@@ -55,7 +55,7 @@ To see whether a tool is already registered, search for it by its name. Simply t
 .. image:: _static/find_tool.png
 
 
-Once you find your entry you can go ahead and update it.  If you can't find the entry, you'll need to create it. 
+Once you find your entry you can go ahead and `update <updating-entries>`_ it.  If you can't find the entry, you'll need to `create <creating_entries>`_ it. 
 
 .. important::
    All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.  Before starting work, please ensure you understand the `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the `guidelines <#describe_your_tools>`_  below.
