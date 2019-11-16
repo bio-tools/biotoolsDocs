@@ -100,7 +100,7 @@ The *bio.tools* registration interface helps you to create valid tool descriptio
 .. image:: _static/registration_interface.png
 
 
-It provides some hints and links to the `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
+The registration interface provides some hints, and ensures that the information you set is in the right format. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
 	   
 
 .. |asterix| image:: _static/red_asterix.png
@@ -151,97 +151,7 @@ The IFB catalogue
 
 The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  Exactly what's needed is covered in the `guidelines <#describe-your-tools>`_  below.
 
-
-Updating entries
-""""""""""""""""
-To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
-
-.. image:: _static/update.png
-   :width: 200px
-   :height: 45px
-
-.. image:: _static/request_edit_rights.png
-   :width: 200px
-   :height: 45px
-
-.. image:: _static/request_ownership.png
-   :width: 200px
-   :height: 45px	    	    
- 
-
-* Click on *Request ownership* if you want to claim ownership of the entry
-* Click on *Request editing rights* if you want to edit rights on the entry, but not own it 
-* Click on *Update this record* to edit the entry (visible only if you own the entry or have editing rights) 
-
-.. note::
-   It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
-
-
-Creating entries
-""""""""""""""""
-To create new entries you'll need to be logged onto *bio.tools*. Then click on *Menu ... Add content*:
-
-
-.. image:: _static/add.png
-
-
-bio.tools registration interface
-""""""""""""""""""""""""""""""""
-The *bio.tools* registration interface helps you to create valid tool descriptions. It's organised into different tabs (*Summary*, *Function*, *Labels* *etc.*):
-
-.. image:: _static/registration_interface.png
-
-
-The registration interface provides some hints, and ensures that the information you set is in the right format. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
-	   
-
-.. |asterix| image:: _static/red_asterix.png
-   :width: 15px
-   :height: 20px
-
-.. |save| image:: _static/save.png
-   :width: 100px
-   :height: 30px
-
-.. |validate| image:: _static/validate.png
-   :width: 100px
-   :height: 30px	    
-
-   
-.. Important::
-   The attributes required by *bio.tools* (tool name, description and homepage URL) are marked with a red asterix |asterix| in the registration interface, and must be given before an entry can be saved.  Much more information is required for the IFB catalogue, but this is not enforced by *bio.tools* ! 
-
-.. note::
-   It's possibe to create tool descriptions in JSON format directly in a text editor, and either paste these into the registration interface ("JSON" tab) or use the *bio.tools* API.  For guidance on using the API, see the `API Reference <https://biotools.readthedocs.io/en/latest/api_reference.html>`_ and the `API Usage Guide <https://biotools.readthedocs.io/en/latest/api_usage_guide.html>`_. 
-
-
-
-Removing entries
-""""""""""""""""
-To remove an entry, from the Tool Card, click on *Update this record*. Then you can remove the entry by clicking on the remove button |remove|.
-
-.. |remove| image:: _static/remove.png
-   :width: 100px
-   :height: 30px
-
-.. warning::
-    It shouldn't normally be necessary to remove a *bio.tools* entry, and you should try to avoid needing to do so!  Although deleted entries are actually just hidden, not really deleted, removing an entry is definitive.  There's no way back (other than emailing `Registry Support <mailto:registry-support@elixir-dk.org>`_).
-
-
-3. Understand the information requirement
------------------------------------------
-
-bio.tools
-"""""""""
-*bio.tools* requires only the name, description and homepage URL for a tool registration, but supports a comprehensive set of attributes for rich tool descriptions.
-
-.. note::
-   The attributes supported by *bio.tools*, their structure and their syntax are defined in formalised XML schema called `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.  If you'd like to learn more or contribute to this project, please head over to `GitHub <https://github.com/bio-tools/biotoolsSchema>`_.
-
-The IFB catalogue
-"""""""""""""""""
-
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#describe-your-tools>`_ that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
+In the `guidelines <#describe-your-tools>`_ that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
 
 * **Mandatory** attributes **MUST** be specified.
 * **Recommended** attributes **SHOULD** be specified, but are not strictly required.
