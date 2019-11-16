@@ -421,7 +421,7 @@ In the *Links* tab you specify miscellaneous links for the tool.
 	    
    **Repository**, "**Mandatory** (Desktop application, Command-line tool)"
                  , "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Issue tracker**", "**Mandatory** (Web application, Desktop application, Command-line tool)
+   **Issue tracker**, "**Mandatory** (Web application, Desktop application, Command-line tool)"
                      , "**Recommended** (Database portal)"
    **Mailing list**, "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
                    , "**Optional** (Bioinformatics portal)"
@@ -493,9 +493,9 @@ Documentation
 Make your different documentations for your tool available here. Again, you can assign type of documentation using **Documentation type**.
 
 
-   "API documentation", "Human-readable API documentation."
-   "Citation instructions", "Information on how to correctly cite use of the software."
-   "Command-line options", "Information about the command-line interface to a tool."
+   API documentation", "Human-readable API documentation."
+   "Citation instructions", **Mandatory**
+   "Command-line options", **Mandatory** (Command-line tool)
    "Contributions policy", "Information about policy for making contributions to the software project."
    "FAQ", "Frequently Asked Questions (and answers) about the software."
    "General", "General documentation."
@@ -507,7 +507,11 @@ Make your different documentations for your tool available here. Again, you can 
    "Training material", "Online training material such as text on a Web page, a presentation, video, tutorial etc."
    "Tutorial", "A tutorial about using the software."
    "Other", "Some other type of documentation not listed in biotoolsSchema."
-   
+
+
+* **Citation instructions** give information on how to correctly cite use of the software.
+* **Command-line options** is documentation about the command-line interface to a tool.  <mention command-line specification>
+  
 
 Publications
 """"""""""""
