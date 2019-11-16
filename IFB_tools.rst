@@ -7,7 +7,7 @@ IFB tools
    PLEASE COME BACK LATER
 
 
-These instructions will guide you through the steps to register your tools and databases in `bio.tools`_ and describe them to the standard required for inclusion in the next iteration of the `IFB Catalogue <https://www.france-bioinformatique.fr/en/ressources>`_ - the French national catalogue of bioinformatics resources.
+These instructions will guide you through the steps to register your tools and databases in `bio.tools <https://bio.tools>`_ and describe them to the standard required for inclusion in the next iteration of the `IFB Catalogue <https://www.france-bioinformatique.fr/en/ressources>`_ - the French national catalogue of bioinformatics resources.
 
 There are various sources of information and help:
 
@@ -26,7 +26,7 @@ There are various sources of information and help:
 1. Get a bio.tools account
 --------------------------
 .. _Get_a_bio.tools_account
-You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools`_ and click on |Sign-up| at the top-right corner of the page.
+You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools <https://bio.tools>`_ and click on |Sign-up| at the top-right corner of the page.
 
 
 .. |Sign-up| image:: _static/sign_up.png
