@@ -66,15 +66,15 @@ Updating entries
 To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
 
 .. image:: _static/update.png
-   :width: 225px
+   :width: 200px
    :height: 45px
 
 .. image:: _static/request_edit_rights.png
-   :width: 225px
+   :width: 200px
    :height: 45px
 
 .. image:: _static/request_ownership.png
-   :width: 225px
+   :width: 200px
    :height: 45px	    	    
  
 
