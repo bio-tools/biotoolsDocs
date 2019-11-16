@@ -55,7 +55,7 @@ To see whether a tool is already registered, search for it by its name. Simply t
 .. image:: _static/find_tool.png
 
 
-Once you find your entry you can go ahead and `update <updating-entries>`_ it.  If you can't find the entry, you'll need to `create <creating_entries>`_ it. 
+Once you find your entry you can go ahead and `update <#updating-entries>`_ it.  If you can't find the entry, you'll need to `create <#creating_entries>`_ it. 
 
 .. important::
    All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.  Before starting work, please ensure you understand the `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the `guidelines <#describe_your_tools>`_  below.
