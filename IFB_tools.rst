@@ -539,7 +539,7 @@ Before describing your tools, you should carefully identify the distinct functio
    * **Analyse** - *Analysis* (http://edamontology.org/operation_2945)
    * **Download** - *Data retrieval* (http://edamontology.org/operation_2422)
   
-   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better described as discrete tools in it's own entry (see `bio.tools_entries`_.
+   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better described as discrete tools in it's own entry (see `bio.tools entries <#bio-tools-entries>`_.
 
 
   
@@ -602,22 +602,22 @@ Download
 In the *Download* tab you specify Links to downloads for the software.
 
 .. csv-table::
-   :header: "ATTRIBUTE", "REQUIREMENT"
+   :header: "TYPE", "REQUIREMENT"
    :widths: 25, 100
 
+   **Downloads page**,             "**Mandatory** (Database portal)"
+                     ,             "**Recommended** (Desktop application, Command-line tool)"
+                     ,             "**Optional** (Bioinformatics portal, Web application)"
    **API specification**,          "**Recommended** (Database portal - with API)"
    **Binaries**,                   "**Recommended** (Desktop application, Command-line tool)"
    **Binary package**,             "**Recommended** (Desktop application, Command-line tool)"
-   **Command-line specification**, "**Optional** (Command-line tool)"
    **Container file**,             "**Recommended** (Command-line tool)"
                      ,             "**Optional** (Database portal, Web application, Desktop application)"
    **Source code**,                "**Recommended** (Desktop application, Command-line tool)"
                   ,                "**Optional** (Web application)"
    **Source package**,             "**Recommended** (Desktop application, Command-line tool)"
                      ,             "**Optional** (Web application)"
-   **Downloads page**,             "**Mandatory** (Database portal)"
-                     ,             "**Recommended** (Desktop application, Command-line tool)"
-                     ,             "**Optional** (Bioinformatics portal, Web application)"
+   **Command-line specification**, "**Optional** (Command-line tool)"
    **VM image**,                   "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
    **CWL file**,                   **Optional** (Command-line tool)
    **Test data**,                  **Optional** (Command-line tool)
@@ -647,6 +647,10 @@ Documentation
 """""""""""""
 In the *Documentation* tab you link to documentation about the software.
 
+.. csv-table::
+   :header: "TYPE", "REQUIREMENT"
+   :widths: 25, 100
+	    
    **General**,                   **Mandatory**
    **Citation instructions**,     **Mandatory**
    **API documentation**,         **Mandatory** (Database portal or Web application - with API)
@@ -675,14 +679,13 @@ In the *Documentation* tab you link to documentation about the software.
 	    
 
 .. tip::
-   It's very worthwhile to create **contribution guidelines** to communicate how people should contribute to your open source project.  In GitHub this is done by createing a `*CONTRIBUTING.MD* file <https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors>`_ file.  Lots of good advice, templates and examples are available (*e.g.* `<Atom editor <https://github.com/atom/atom/blob/master/CONTRIBUTING.md>`_, `Ruby on Rails <https://github.com/rails/rails/blob/master/CONTRIBUTING.md>`_ and `Open Government <https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md>`_).
+   It's very worthwhile to create **contribution guidelines** to communicate how people should contribute to your open source project.  In GitHub this is done by createing a `CONTRIBUTING.MD file <https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors>`_ file.  Lots of good advice, templates and examples are available (*e.g.* `Atom editor <https://github.com/atom/atom/blob/master/CONTRIBUTING.md>`_, `Ruby on Rails <https://github.com/rails/rails/blob/master/CONTRIBUTING.md>`_ and `Open Government <https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md>`_).
 
 .. tip::
    A well maintained **change log** wlll make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project.  Fr some great advice, see `keepachangelog.com <a href ="https://keepachangelog.com/en/1.0.0/">`_.
 
 .. note::
-   Command-line tools should always have human-readable description of their interface.  If a machine-readable command-line specification (a file) is also available, then you should link to that in the `Download <#Download>`_ section.
-
+   Command-line tools should always have human-readable description of their interface.  If a machine-readable command-line specification (a file) is also available, then you should link to that in the `Download`_ section.
 
 ..note::   
   You can use **Tutorial** or **Training material** to provide links to an online tutorial or some other training material such as a presentation or video.
@@ -785,6 +788,11 @@ You should therefore specify at least:
 * the primary publication for your tool, and ideally any others that are relevant.
 
 For any credit, you can specify:
+
+.. csv-table::
+   :header: "Attribute", "Description"
+   :widths: 25, 100
+
    **name**, "Name of the entity that is credited."
    **orcidid**, "Unique identifier (ORCID iD) of a person that is credited."
    **email**, "Email address."
@@ -819,16 +827,17 @@ The relationships currently available:
    **includedIn**, "(inverse of above)"
 
 You can ignore this for now, except:
+
 * when annotating a *Suite* (or other collection) specify other tools that the suite **incudes**
 * when annotating a *Wofklow* specify other tools that the workflow **uses**
 	    
 JSON
 """"
-In the *JSON* tab you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see Familiarise_yourself_with_EDAM_.)
+In the *JSON* tab you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see `Familiarise-yourself-with-EDAM`_.)
 
 Permissions
 """""""""""
-In the *Permissions* tab you can decide to make the entry either editable only by yourself, a list of users or anyone.  See Get_a_bio.tools_account_. 
+In the *Permissions* tab you can decide to make the entry either editable only by yourself, a list of users or anyone.  See `Get-a-bio-tools-account`_. 
 
 
 
