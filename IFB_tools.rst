@@ -486,41 +486,97 @@ In the *Dwnload* tab you specify Links to downloads for the software.
 * **"Downloads page** is a Web page summarising general downloads available for the software.
 
    
-  *    "Biological data", "Biological data, or a web page on a database portal where such data may be downloaded. "
-
-
-   "CWL file", "Common Workflow Language (CWL) file for the software."
-   "Icon", "Icon of the software."
-   "Ontology", "A file containing an ontology, controlled vocabulary, terminology etc."
-   "Screenshot", "Screenshot of the software."
-   "Test data", "Data for testing the software is working correctly."
-   "Test script", "Script used for testing testing whether the software is working correctly."
-   "Tool wrapper (galaxy)", "Galaxy tool configuration file (wrapper) for the software."
-   "Tool wrapper (taverna)", "Taverna configuration file for the software."
-   "Tool wrapper (other)", "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software."
-   "VM image", "Virtual machine (VM) image for the software."   
-   "Other", "Other type of download for software - the default if a more specific type is not available."
 
 
 Documentation
 """""""""""""
 Make your different documentations for your tool available here. Again, you can assign type of documentation using **Documentation type**.
 
+
+   "API documentation", "Human-readable API documentation."
+   "Citation instructions", "Information on how to correctly cite use of the software."
+   "Command-line options", "Information about the command-line interface to a tool."
+   "Contributions policy", "Information about policy for making contributions to the software project."
+   "FAQ", "Frequently Asked Questions (and answers) about the software."
+   "General", "General documentation."
+   "Governance", "Information about the software governance model."
+   "Installation instructions", "Instructions how to install the software."
+   "Manual ", "Information on how to use the software."
+   "Release notes", "Notes about a software release or changes to the software; a change log."
+   "Terms of use", "Rules that one must agree to abide by in order to use a service."
+   "Training material", "Online training material such as text on a Web page, a presentation, video, tutorial etc."
+   "Tutorial", "A tutorial about using the software."
+   "Other", "Some other type of documentation not listed in biotoolsSchema."
+   
+
 Publications
 """"""""""""
 Share the different publications of the tool, which can be the primary publication (the one to cite when the tool is used), but also
 reviews or secondary references (see **Publication type**). You can use either the **PubMed Central ID** (PMCID), the **PubMed ID** (PMID) or the **Digital Object ID** (DOI) - DOI is preferred.
 
-.. _credits:
+.. csv-table::
+   :header: "Element", "Description", "Type", "Cardinality"
+   :widths: 25, 50, 50, 100
+	    
+   "pmcid", "PubMed Central Identifier of a publication about the software.", "xs:token (restriction)", "0 or 1"
+   "pmid", "PubMed Identifier.", "xs:token (restriction)", "0 or 1"
+   "doi", "Digital Object Identifier.", "xs:token (restriction)", "0 or 1"
+   "type", "Type of publication.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-type>`__)", "0 or 1"
+   "version", "Version information (typically a version number) of the software applicable to this publication.", "xs:token (restriction)", "0 or 1"
+
+   
+   "Primary", "The principal publication about the tool itself; the article to cite when acknowledging use of the tool."
+   "Method", "A publication describing a scientific method or algorithm implemented by the tool."
+   "Usage", "A publication describing the application of the tool to scientific research, a particular task or dataset."
+   "Comparison", "A publication which assessed the performance of the tool."
+   "Review", "A publication where the tool was reviewed."
+   "Other", "A publication of relevance to the tool but not fitting the other categories."
+
 
 Credits & Support
 """""""""""""""""
+.. _credits:
 Credits include all type of entities that contributed to the development, maintenance or provision of the resource. Credits can have an **Entity type** (Person, Institute *etc.*) and an **Entity role** (Developer, Documentor *etc.*).  Use the role of *Primary contact* to indicate preferred contact details.
+
+
+
+.. csv-table::
+   :header: "Entity type", "Description"
+   :widths: 25, 100
+
+   "Person", "Credit of an individual."
+   "Project", "Credit of a community software project not formally associated with any single institute."
+   "Division", "Credit of or a formal part of an institutional organisation, e.g. a department, research group, team, etc"
+   "Institute", "Credit of an organisation such as a university, hospital, research institute, service center, unit etc."
+   "Consortium", "Credit of an association of two or more institutes or other legal entities which have joined forces for some common purpose.  Includes Research Infrastructures (RIs) such as ELIXIR, parts of an RI such as an ELIXIR node etc. "
+   "Funding agency", "Credit of a legal entity providing funding for development of the software or provision of an online service."
+
+
+   .. csv-table::
+   :header: "Role", "Description"
+   :widths: 25, 100
+	    
+   "Developer", "Author of the original software source code."
+   "Maintainer", "Maintainer of a mature software providing packaging, patching, distribution etc."
+   "Provider", "Institutional provider of an online service."
+   "Documentor", "Author of software documentation including making edits to a bio.tools entry."
+   "Contributor", "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
+   "Support", "Provider of support in using the software."
+   "Primary contact", "The primary point of contact for the software."
+
+   
 
 .. _json:
 
 Relations
 """""""""
+
+   "isNewVersionOf", "The software is a new version of an existing software, typically providing new or improved functionality."
+   "hasNewVersion", "(inverse of above)"
+   "uses", "The software provides an interface to or in some other way uses the functions of other software under the hood, e.g. invoking a command-line tool or calling a Web API, Web service or SPARQL endpoint to perform its function."
+   "usedBy", "(inverse of above)"
+   "includes", "A workbench, toolkit or workflow includes some other, independently available, software."
+   "includedIn", "(inverse of above)"
 
 JSON
 """"
