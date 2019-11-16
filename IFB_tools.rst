@@ -58,7 +58,7 @@ To see whether a tool is already registered, search for it by its name. Simply t
 Once you find your entry you can go ahead and update it.  If you can't find the entry, you'll need to create it. 
 
 .. important::
-   All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.  Before starting work, please ensure you understand the `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the guidelines_  EDIT below.
+   All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.  Before starting work, please ensure you understand the `information requirement <https://biotools.readthedocs.io/en/latest/IFB_tools.html#understand-the-information-requirement>`_ and follow the `guidelines <#describe_your_tools>`_  below.
 
 
 Updating entries
@@ -150,7 +150,7 @@ bio.tools
 The IFB catalogue
 """""""""""""""""
 
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the :ref:`guidelines` below.
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#describe_your_tools>`_ below.
 
 
 Updating entries
@@ -242,7 +242,7 @@ bio.tools
 The IFB catalogue
 """""""""""""""""
 
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the :ref:`guidelines` that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#describe_your_tools>`_ that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
 
 * **Mandatory** attributes **MUST** be specified.
 * **Recommended** attributes **SHOULD** be specified, but are not strictly required.
@@ -254,7 +254,7 @@ The information requirement of the IFB catalogue is more demanding than *bio.too
 All tools in the IFB catalogue must have at least a minimal description, *i.e.* all *mandatory* attributes are specified. Tool providers are encouraged to provide an enhanced description which also includes all of the *recommended* attributes.
    
 .. note::
-   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The :ref:`guidelines` below cover everything in more detail, and go through the curation process in a step-by-step way.
+   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `guidelines <#describe_your_tools>`_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
 
 4. Plan your curation work 
@@ -273,7 +273,7 @@ bio.tools enries
 Plan whether new entries (if any) are required to adequately describe your tools:
 
 * A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
-* *bio.tools* aims to catalogue *unique* tool functionality. Different implementations but with esesentially the same functionality can be described by a sigle entity, *e.g.* a command-line tool that is later adapted into an R package for the Bioconductor suite, or which is served online via a Galaxy server.
+* *bio.tools* aims to catalogue *unique* tool functionality. Different implementations but with esesentially the same functionality can be described by a single entry, *e.g.* a command-line tool that is later adapted into an R package for the Bioconductor suite, or which is served online via a Galaxy server.
 * In some cases, *e.g.* complex software packages, it's not obvious whether to have one or multiple entries. Pick the option which mostly clearly illustrates the tool's functionality to end-users.
 * Tool collections should be described by multiple entries. For example, an entry to describe a *suite*, and multple other entries to describe the individual tools within that suite. 
 * Software with multiple interfaces should be described by a single entry. For example, a *command-line tool* whose functionality is also available via a *web application*, or a *database portal* with a *web API*.
@@ -309,7 +309,7 @@ Three EDAM browsers provide different functionality:
 
 5. Describe your tools
 ----------------------
-.. _guidelines:
+
 The sections below match the tabs in the *bio.tools* registration interface.  
 
 .. tip::
