@@ -22,7 +22,7 @@ There are various sources of information amd help:
     
 1. Get a bio.tools account
 --------------------------
-
+.. _Get_a_bio.tools_account
 You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools`_ and click on |Sign-up| at the top-right corner of the page.
 
 
@@ -122,10 +122,19 @@ It provides some hints, and ensures that the information you set is in the right
 .. note::
    It's possibe to create tool descriptions in JSON format directly in a text editor, and either paste these into the registration interface ("JSON" tab) or use the *bio.tools* API.  For guidance on using the API, see the `API Reference <https://biotools.readthedocs.io/en/latest/api_reference.html>`_ and the `API Usage Guide <https://biotools.readthedocs.io/en/latest/api_usage_guide.html>`_. 
 
-    
 
 
-	   
+Removing entries
+""""""""""""""""
+To remove an entry, from the Tool Card, click on *Uppdate this record*. Then you can remove the entry by clicking on the remove button |remove|.
+
+.. |remove| image:: _static/remove.png
+   :width: 55px
+   :height: 30px
+
+.. warning::
+    It shouldn't normally be necessary to remove a *bio.tools* entry, and you should try to avoid needing to do so!  Although deleted entries are actually just hidden, not really deleted, removing an entry is definitive.  There's no way back (other than emailing `Registry Support <mailto:registry-support@elixir-dk.org>`_).
+
 
 3. Understand the information requirement
 -----------------------------------------
@@ -180,7 +189,7 @@ Plan whether new entries (if any) are required to adequately describe your tools
 
 Familiarise yourself with EDAM
 ##############################
-
+.. _Familiarise_yourself_with_EDAM:
 The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain it serves, specific operations it performs, types of input and output data, and supported data formats.
 
 Three EDAM browsers provide different functionality:
@@ -195,6 +204,11 @@ Three EDAM browsers provide different functionality:
 
 .. tip::
    The EDAM term picker currently implemented in *bio.tools* is not very powerful, for example, although it synonyms of EDAM terns, these are not display to the user.  It's strongly recommended to use one or more of the browsers above.  If you can't find exactly the terms you need, multiple searches using synonyms, alternative spellings *etc.* can help.
+
+   A much better term picker is on the way, and while not yet fully integrated into *bio.tools* is already very useful:
+   * `EDAM Tool Annotator <https://bio.tools/static/eta/>`_
+
+   You can use this to pick relevant topics and define the function of your tools.  The ouput (in the bottom pane of the window) is a JSON object that can be copy-pasted into the *JSON* tabe of the `*bio.tools* registration interface <#bio.tools_registration_interface>`_, when editing a tool description.
 
    If you cannot find the right term, please request it¡¯s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.  It takes some time from requesting new EDAM terms for these to be supported in *bio.tools*, so if you need many new terms please plan ahead. 
 
@@ -251,13 +265,14 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 	    
    **Tool type**,        **Mandatory**
    **Topic**,            **Mandatory**
-   **Operating system**, **Mandatory** (Desktop application), Recommended (Command-line tool)
-   **Language**,         **Recommended** (Command-line tool)
-   **Maturity**,         **Recommended**
    **License**,          **Mandatory** (Desktop application)
               ,          **Recommended** (Command-line tool)
-   **Cost**,             "**Recommended** (Desktop application, Command-line tool)"
    **Accessibility**,    "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
+   **Operating system**, **Mandatory** (Desktop application)
+                       , **Recommended** (Command-line tool)
+   **Maturity**,         **Recommended**
+   **Language**,         **Recommended** (Command-line tool)
+   **Cost**,             "**Recommended** (Desktop application, Command-line tool)"
    **Collection**,       **Optional**
    ELIXIRPlatform,       *ignore*
    ELIXIRNode,           *ignore*
@@ -382,8 +397,8 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
    **Output->data**,   "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
    **Output->format**, "**Recommended** (Command-line tool)"
                      , "**Optional** (Database portal, Web application, Desktop application)"
-   **Note**,           "**Optional**"
-   **Command**,        "*ignore*"
+   **Note**,           **Optional**
+   **Command**,        *ignore*
 
 * **Operation** describes the basic operation(s) performed by this software function {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
 * **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
@@ -444,21 +459,21 @@ In the *Links* tab you specify miscellaneous links for the tool.
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 	    
-   **Repository**,       "**Mandatory** (Desktop application, Command-line tool)"
-                 ,       "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Issue tracker**,    "**Mandatory** (Web application, Desktop application, Command-line tool)"
-                    ,    "**Recommended** (Database portal)"
-   **Mailing list**,     "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
-                   ,     "**Optional** (Bioinformatics portal)"
-   **Helpdesk**,         "**Recommended** (Database portal)"
-               ,         "**Optional** (Web application, Desktop application, Command-line tool)"
-   **Discussion forum**, **Optional**
-   **Social media**,     **Optional**
-   **Mirror**,           "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Other**,            **Optional**
-   **Registry**,         *ignore*
-   **Galaxy service**,   *ignore*
-   **Service**,          *ignore*
+   **Repository**,           "**Mandatory** (Desktop application, Command-line tool)"
+                 ,           "**Optional** (Bioinformatics portal, Database portal, Web application)"
+   **Issue tracker**,        "**Mandatory** (Web application, Desktop application, Command-line tool)"
+                    ,        "**Recommended** (Database portal)"
+   **Mailing list**,         "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
+                   ,         "**Optional** (Bioinformatics portal)"
+   **Helpdesk**,             "**Recommended** (Database portal)"
+               ,             "**Optional** (Web application, Desktop application, Command-line tool)"
+   **Discussion forum**,     **Optional**
+   **Social media**,         **Optional**
+   **Other**,                **Optional**
+   **Mirror**,               "**Optional** (Bioinformatics portal, Database portal, Web application)"
+   **Registry**,             *ignore*
+   **Galaxy service**,       *ignore*
+   **Service**,              *ignore*
    **Scientific benchmark**, *ignore*
    **Technical monitoring**, *ignore*
 
@@ -480,30 +495,31 @@ In the *Download* tab you specify Links to downloads for the software.
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 
-   **API specification**,      "**Recommended** (Database portal - with API)"
-   **Binaries**,               "**Recommended** (Desktop application, Command-line tool)"
-   **Binary package**,         "**Recommended** (Desktop application, Command-line tool)"
+   **API specification**,          "**Recommended** (Database portal - with API)"
+   **Binaries**,                   "**Recommended** (Desktop application, Command-line tool)"
+   **Binary package**,             "**Recommended** (Desktop application, Command-line tool)"
    **Command-line specification**, "**Optional** (Command-line tool)"
-   **Container file**,         "**Recommended** (Command-line tool)"
-                     ,         "**Optional** (Database portal, Web application, Desktop application)"
-   **Source code**,            "**Recommended** (Desktop application, Command-line tool)""
-                  ,            **Optional** (Web application)"
-   **Source package**,         "**Recommended** (Desktop application, Command-line tool), **Optional** (Web application)"
-   **Downloads page**,         "**Mandatory** (Database portal)"
-                     ,         "**Recommended** (Desktop application, Command-line tool)"
-                     ,         **Optional** (Bioinformatics portal, Web application)"
-   **VM image**,               "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
-   **CWL file**,               **Optional** (Command-line tool)
-   **Test data**,              **Optional** (Command-line tool)
-   **Test script**,            **Optional** (Command-line tool)
-   **Tool wrapper (galaxy)**,  **Optional** (Command-line tool)
-   **Tool wrapper (taverna)**, **Optional** (Command-line tool)
-   **Tool wrapper (other)**,   **Optional** (Command-line tool)
-   **Icon**,                   **Optional**
-   **Biological data**,        **Optional**
-   **Screenshot**,             **Optional**
-   **Other**,                  **Optional**
-   **Ontology**,               *ignore*
+   **Container file**,             "**Recommended** (Command-line tool)"
+                     ,             "**Optional** (Database portal, Web application, Desktop application)"
+   **Source code**,                "**Recommended** (Desktop application, Command-line tool)"
+                  ,                "**Optional** (Web application)"
+   **Source package**,             "**Recommended** (Desktop application, Command-line tool)"
+                     ,             "**Optional** (Web application)"
+   **Downloads page**,             "**Mandatory** (Database portal)"
+                     ,             "**Recommended** (Desktop application, Command-line tool)"
+                     ,             "**Optional** (Bioinformatics portal, Web application)"
+   **VM image**,                   "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
+   **CWL file**,                   **Optional** (Command-line tool)
+   **Test data**,                  **Optional** (Command-line tool)
+   **Test script**,                **Optional** (Command-line tool)
+   **Tool wrapper (galaxy)**,      **Optional** (Command-line tool)
+   **Tool wrapper (taverna)**,     **Optional** (Command-line tool)
+   **Tool wrapper (other)**,       **Optional** (Command-line tool)
+   **Icon**,                       **Optional**
+   **Biological data**,            **Optional**
+   **Screenshot**,                 **Optional**
+   **Other**,                      **Optional**
+   **Ontology**,                   *ignore*
 
 * **API specification** is a file providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.
 * **Binaries** for the software.
@@ -511,8 +527,8 @@ In the *Download* tab you specify Links to downloads for the software.
 * **Command-line specification** is a file providing a command line specification for the software.
 * **Container file** including the software.
 * **Source code** for the software.
-* **Source package** (of various types) for the software."
-* **"Downloads page** is a Web page summarising general downloads available for the software.
+* **Source package** (of various types) for the software.
+* **Downloads page** is a Web page summarising general downloads available for the software.
 
    
 
@@ -525,7 +541,7 @@ In the *Documentation* tab you link to documentation about the software.
    **Citation instructions**,     **Mandatory**
    **API documentation**,         **Mandatory** (Database portal or Web application - with API)
    **Terms of use**,              "**Mandatory** (Database portal)"
-   **Command-line options**,      **Mandatory** (Command-line tool)
+   **Command-line options**,      "**Mandatory** (Command-line tool)"
    **Contributions policy**,      "**Recommended** (Web application, Desktop application, Command-line tool)"
    **Governance**,                "**Recommended** (Bioinformatics portal, Database portal)"
    **Installation instructions**, "**Recommended** (Desktop application, Command-line tool)"
@@ -570,15 +586,11 @@ Publications
 """"""""""""
 In the *Publications* tab you specify publications about the software.
 
-
-Share the different publications of the tool, which can be the primary publication (the one to cite when the tool is used), but also
-reviews or secondary references (see **Publication type**). You can use either the **PubMed Central ID** (PMCID), the **PubMed ID** (PMID) or the **Digital Object ID** (DOI) - DOI is preferred.
-
 .. csv-table::
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 
-   **Primary publication**,      "**Mandatory** 
+   **Primary publication**,  **Mandatory** 
 
    
 Publications are defined as one of the following types:
@@ -587,12 +599,12 @@ Publications are defined as one of the following types:
    :header: "Type", "Description"
    :widths: 25, 50
 
-   "Primary", "The principal publication about the tool itself; the article to cite when acknowledging use of the tool."
-   "Method", "A publication describing a scientific method or algorithm implemented by the tool."
-   "Usage", "A publication describing the application of the tool to scientific research, a particular task or dataset."
-   "Comparison", "A publication which assessed the performance of the tool."
-   "Review", "A publication where the tool was reviewed."
-   "Other", "A publication of relevance to the tool but not fitting the other categories."
+   **Primary**, "The principal publication about the tool itself; the article to cite when acknowledging use of the tool."
+   **Method**, "A publication describing a scientific method or algorithm implemented by the tool."
+   **Usage**, "A publication describing the application of the tool to scientific research, a particular task or dataset."
+   **Comparison**, "A publication which assessed the performance of the tool."
+   **Review**, "A publication where the tool was reviewed."
+   **Other**, "A publication of relevance to the tool but not fitting the other categories."
 
 
 and can have the following attributes defined:   
@@ -601,10 +613,10 @@ and can have the following attributes defined:
    :header: "Attribute", "Description"
    :widths: 25, 50
 
-   "pmcid", "PubMed Central Identifier of a publication about the software."
-   "pmid", "PubMed Identifier."
-   "doi", "Digital Object Identifier."
-   "version", "Version information (typically a version number) of the software applicable to this publication."
+   **pmcid**, "PubMed Central Identifier of a publication about the software."
+   **pmid**, "PubMed Identifier."
+   **doi**, "Digital Object Identifier."
+   **version**, "Version information (typically a version number) of the software applicable to this publication." 
 
 
 You should specify at least the primary publication for your tool, and ideally any others that are relevant.
@@ -617,71 +629,100 @@ You should specify at least the primary publication for your tool, and ideally a
 
 Credits & Support
 """""""""""""""""
-.. _credits:
+In the *Credits & Support* tab you specify individuals or organisations that should be credited, or may be contacted about the software.
+
+.. csv-table::
+   :header: "Attribute", "Requirement"
+   :widths: 25, 100
+
+   **Primary contact**,  **Mandatory**
+   **Credited institute**,  **Mandatory**
+
 Credits include all type of entities that contributed to the development, maintenance or provision of the resource. Credits can have an **Entity type** (Person, Institute *etc.*) and an **Entity role** (Developer, Documentor *etc.*).  Use the role of *Primary contact* to indicate preferred contact details.
 
-
+Creditable entities have one of the following types:
 
 .. csv-table::
    :header: "Entity type", "Description"
    :widths: 25, 100
 
-   "Person", "Credit of an individual."
-   "Project", "Credit of a community software project not formally associated with any single institute."
-   "Division", "Credit of or a formal part of an institutional organisation, e.g. a department, research group, team, etc"
-   "Institute", "Credit of an organisation such as a university, hospital, research institute, service center, unit etc."
-   "Consortium", "Credit of an association of two or more institutes or other legal entities which have joined forces for some common purpose.  Includes Research Infrastructures (RIs) such as ELIXIR, parts of an RI such as an ELIXIR node etc. "
-   "Funding agency", "Credit of a legal entity providing funding for development of the software or provision of an online service."
+   **Person**, "Credit of an individual."
+   **Project**, "Credit of a community software project not formally associated with any single institute."
+   **Division**, "Credit of or a formal part of an institutional organisation, e.g. a department, research group, team, etc"
+   **Institute**, "Credit of an organisation such as a university, hospital, research institute, service center, unit etc."
+   **Consortium**, "Credit of an association of two or more institutes or other legal entities which have joined forces for some common purpose.  Includes Research Infrastructures (RIs) such as ELIXIR, parts of an RI such as an ELIXIR node etc. "
+   **Funding agency**, "Credit of a legal entity providing funding for development of the software or provision of an online service."
 
 
-   .. csv-table::
+and also have a "role":
+
+.. csv-table::
    :header: "Role", "Description"
    :widths: 25, 100
 	    
-   "Developer", "Author of the original software source code."
-   "Maintainer", "Maintainer of a mature software providing packaging, patching, distribution etc."
-   "Provider", "Institutional provider of an online service."
-   "Documentor", "Author of software documentation including making edits to a bio.tools entry."
-   "Contributor", "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
-   "Support", "Provider of support in using the software."
-   "Primary contact", "The primary point of contact for the software."
+   **Developer**, "Author of the original software source code."
+   **Maintainer**, "Maintainer of a mature software providing packaging, patching, distribution etc."
+   **Provider**, "Institutional provider of an online service."
+   **Documentor**, "Author of software documentation including making edits to a bio.tools entry."
+   **Contributor**, "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc."
+   **Support**, "Provider of support in using the software."
+   **Primary contact**, "The primary point of contact for the software."
 
    
+You should therefore specify at least:
+* A credit of type **Institute** with one ore more applicable roles.
+* A credit of role **Primary contact** with an applicable type.  You can opt to give more than one primary contact, for example specifing one for a project and another for a person.
+* the primary publication for your tool, and ideally any others that are relevant.
 
-.. _json:
+For any credit, you can specify:
+   **name**, "Name of the entity that is credited."
+   **orcidid**, "Unique identifier (ORCID iD) of a person that is credited."
+   **email**, "Email address."
+   **url**, "URL, e.g. homepage of an institute."
+   **tel**, "Telephone number."
+   **typeEntity**, "Type of entity that is credited (see above)"
+   **typeRole**, "Role performed by entity that is credited (see above)."
+   **note**, "A comment about the credit."
+   
+.. important::
+   A credit can have multipe **role**.  When creating a credit, pick all of the **role** that apply; don't create duplicate credit groupings!
+
+.. note::
+   It's strongly recommended that if you (or other people to be credited) don't have an `ORCID iD <https://orcid.org/>`_, that you get one now.  ORCID provides a persistent digital identifier that distinguishes you from every other researcher and, through integration in key research workflows such as manuscript and grant submission, supports automated linkages between you and your professional activities ensuring that your work is recognized.
+  
 
 Relations
 """""""""
+In the *Relations* tab you can specify details of a relationship this software shares with other software registered in *bio.tools*.
 
-   "isNewVersionOf", "The software is a new version of an existing software, typically providing new or improved functionality."
-   "hasNewVersion", "(inverse of above)"
-   "uses", "The software provides an interface to or in some other way uses the functions of other software under the hood, e.g. invoking a command-line tool or calling a Web API, Web service or SPARQL endpoint to perform its function."
-   "usedBy", "(inverse of above)"
-   "includes", "A workbench, toolkit or workflow includes some other, independently available, software."
-   "includedIn", "(inverse of above)"
+The relationships currently available:
 
+.. csv-table::
+   :header: "Relation", "Description"
+   :widths: 25, 50
+
+   **isNewVersionOf**, "The software is a new version of an existing software, typically providing new or improved functionality."
+   **hasNewVersion**, "(inverse of above)"
+   **uses**, "The software provides an interface to or in some other way uses the functions of other software under the hood, e.g. invoking a command-line tool or calling a Web API, Web service or SPARQL endpoint to perform its function."
+   **usedBy**, "(inverse of above)"
+   **includes**, "A workbench, toolkit or workflow includes some other, independently available, software."
+   **includedIn**, "(inverse of above)"
+
+You can ignore this for now, except:
+* when annotating a *Suite* (or other collection) specify other tools that the suite **incudes**
+* when annotating a *Wofklow* specify other tools that the workflow **uses**
+	    
 JSON
 """"
-This is all the information you gave about your tool, formatted in JSON format.
+In the *JSON* tab you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see Familiarise_yourself_with_EDAM_.)
 
 Permissions
 """""""""""
-You can decide to make the entry either editable only by yourself, a list of users or anyone.
+In the *Permissions* tab you can decide to make the entry either editable only by yourself, a list of users or anyone.  See Get_a_bio.tools_account_. 
 
 
-6. Maintaining your entries
----------------------------
 
-Remove a resource
-"""""""""""""""""
-From the tool card, click on update this record. Then you can remove the entry by clicking on the remove button |remove|.
 
-.. |remove| image:: _static/remove.png
-   :width: 55px
-   :height: 30px
-
-.. warning::
-    Removing an entry is definitive.  There's no way back (other than emailing `Registry Support <mailto:registry-support@elixir-dk.org>`_).
 
 
 
