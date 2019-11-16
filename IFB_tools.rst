@@ -149,9 +149,7 @@ bio.tools
 The IFB catalogue
 """""""""""""""""
 
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  Exactly what's needed is covered in the `guidelines <#describe-your-tools>`_  below.
-
-In the `guidelines <#describe-your-tools>`_ that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the guidelines, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
 
 * **Mandatory** attributes **MUST** be specified.
 * **Recommended** attributes **SHOULD** be specified, but are not strictly required.
@@ -160,10 +158,12 @@ In the `guidelines <#describe-your-tools>`_ that follow, tool attribute are desc
 
 .. image:: _static/ifb_info_standard.png
 
-All tools in the IFB catalogue must have at least a minimal description, *i.e.* all *mandatory* attributes are specified. Tool providers are encouraged to provide an enhanced description which also includes all of the *recommended* attributes.
+The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `guidelines <#describe-your-tools>`_ below cover exactly what's needed for each type of tool, and go through the curation process in a step-by-step way.
+  
+.. important::	   
+   All tools in the IFB catalogue **must** have at least a minimal description, *i.e.* all *mandatory* attributes are specified. Tool providers are encouraged to provide an enhanced description which also includes all of the *recommended* attributes.
    
-.. note::
-   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `guidelines <#describe-your-tools>`_ below cover everything in more detail, and go through the curation process in a step-by-step way.
+
 
 
 4. Plan your curation work
@@ -179,9 +179,9 @@ bio.tools enries
    2. The tool functionality and how it should be described  - covered in the section on `tool functions <#function>`_.
    3. Whether one or more entries are needed (see below).
 
-Plan whether new entries (if any) are required to adequately describe your tools:
+Plan what new entries (if any) are required to describe your tools:
 
-* A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
+* A discrete tool - one which is clearly an individual, distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
 * *bio.tools* aims to catalogue *unique* tool functionality. Different implementations but with esesentially the same functionality can be described by a single entry, *e.g.* a command-line tool that is later adapted into an R package for the Bioconductor suite, or which is served online via a Galaxy server.
 * In some cases, *e.g.* complex software packages, it's not obvious whether to have one or multiple entries. Pick the option which mostly clearly illustrates the tool's functionality to end-users.
 * Tool collections should be described by multiple entries. For example, one entry to describe a *suite*, and multple other entries to describe the individual tools within that suite. 
@@ -193,7 +193,7 @@ Plan whether new entries (if any) are required to adequately describe your tools
 Familiarise yourself with EDAM
 """"""""""""""""""""""""""""""
 .. _Familiarise_yourself_with_EDAM:
-The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain it serves, specific operations it performs, types of input and output data, and supported data formats.
+The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain, specific operations it performs, types of input and output data, and supported data formats.
 
 .. image:: _static/EDAMconcepts.png
    :width:  500px
@@ -205,9 +205,9 @@ The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bi
    :height: 500px
    :align: center
 	   
-The EDAM ontology includes four main types of concept (or subontologies), shown in boxes above. The concepts are *Topic*, *Operation*, *Data* and *Format*, with *Identifier* being a specialisation of *Data*. Relationships between EDAM concepts are defined internally within the ontology.
+The EDAM ontology includes four main types of concept (or subontologies), shown in boxes above. The concepts are *Topic*, *Operation*, *Data* and *Format*, with *Identifier* being a specialisation of *Data*. Relationships between EDAM concepts are defined internally within the ontology. You don't need to worry about these details, as it's all handled by *bio.tools*.
 
-Three EDAM browsers provide different functionality:
+Three EDAM browsers, each with different functionality, can be used to find EDAM terms:
 
 .. _`OLS`: https://www.ebi.ac.uk/ols/ontologies/edam
 .. _`BioPortal`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
@@ -218,15 +218,15 @@ Three EDAM browsers provide different functionality:
 * `EDAM Browser`_
 
 .. tip::
-   The EDAM term picker currently implemented in *bio.tools* is not very powerful, for example, although it synonyms of EDAM terns, these are not display to the user.  It's strongly recommended to use one or more of the browsers above.  If you can't find exactly the terms you need, multiple searches using synonyms, alternative spellings *etc.* can help.
+   The EDAM term picker currently implemented in *bio.tools* is not very powerful.  It's strongly recommended to use the browsers above.  If you can't find exactly the terms you need, multiple searches using synonyms, alternative spellings *etc.* can help.
 
    A much better term picker is on the way, and while not yet fully integrated into *bio.tools* is already very useful:
 
    * `EDAM Tool Annotator <https://bio.tools/static/eta/>`_
 
-   You can use this to pick relevant topics and define the function of your tools.  The ouput (in the bottom pane of the window) is a JSON object that can be copy-pasted into the *JSON* tabe of the *bio.tools* `registration interface <#bio-tools-registration-interface>`_, when editing a tool description.
+   You can use this to pick relevant topics and define the function of your tools.  The ouput (in the bottom pane of the window) is a JSON object that can be copy-pasted into the *JSON* tab of the *bio.tools* `registration interface <#bio-tools-registration-interface>`_, when editing a tool description.
 
-   If you cannot find the right term, please request it¡¯s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.  It takes some time from requesting new EDAM terms for these to be supported in *bio.tools*, so if you need many new terms please plan ahead. 
+   If you can't find the right term, please request it to be added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html#suggestions-requests>`_.  It takes some time for new terms to be supported in *bio.tools*, so if you need many new terms, please plan ahead and contact the `EDAM developers <mailto:edam@elixir-dk.org>`_ if you need help.
 
 
 5. Describe your tools
@@ -296,11 +296,11 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    ELIXIRNode,           *ignore*
    Other ID,             *ignore*
 
-* **Tool type** describes the type of the tool: a *bio.tools* entry can have more than one type. Tool types are decsribed below.  {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
-* **Topic** is the general scientific domain the tool serves, or other general category - an EDAM term {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
-* **Operating system** is the operating system supported by a downloadable software package {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
+* **Tool type** describes the type of the tool: a *bio.tools* entry can have more than one type. See `below <tool-type>`_  {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
+* **Topic** is the general scientific domain the tool serves, or other general category (an EDAM term). See `below <topic>`_ {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
+* **Operating system** is the operating system supported by a downloadable software package - pick all that apply {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
 * **Language** is the name of a programming language the tool source code was written in {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
-* **License** is a software or data usage license {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
+* **License** is a software or data usage license. See `below <license>`_ {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
 * **Maturity** is how mature the software product is; *Emerging*, *Mature* or *Legacy*. Don't pick *Mature* for tools which aren't really mature yet! {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
 * **Cost** is the monetary cost of acquiring the software {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}.
 * **Accessibility** is whether the software is freely available for use; *Open access*, *Restricted access*, *Proprietary* or *Freeware*. Check the definitions carefully before picking these terms! {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
@@ -310,7 +310,7 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    You can use **Collection** to assign tools which are somehow related to one or more groups. These collections can have any names you like. Other ways to group tools are by creating a *bio.tools* subdomain (from *Menu...Manage subdomains*) and by defining `relations <https://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group>`_ between tools.
 
 .. note::
-  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. All tools in the IFB catalogue will have the ELIXIRNode credit set to "France" by *bio.tools* admin in due course.  These are not normally be set by *bio.tools* users {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_}.
+  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. All tools in the IFB catalogue will have the ELIXIRNode credit set to "France".  These are not normally be set by *bio.tools* users {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_}.
   
 
 
@@ -362,12 +362,12 @@ License
 ^^^^^^^
 All downloadable software should be licensed.  If you can't find your license in the list:
 
-* use "Proprietary" in cases where the software is under some license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license!
-* use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary" - please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.
-* use "Unlicensed" for software which is not licensed and is not "Proprietary" (this is bad - license your software!)
+* use *Proprietary* in cases where the software is under some license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license!
+* use *Other* if the software is available under a license not listed by biotoolsSchema and which is not *Proprietary* - please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.
+* use *Unlicensed* for software which is not licensed and is not *Proprietary* (this is bad - license your software!)
 
 .. note::
-   There are many good reasons why you should license your software, ideally picking a FOSS-license (Free and Open Source Software).  Read ` <A Quick Guide to Software Licensing for the Scientist-Programmer <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598>`_.  Some types of tools *e.g.* *Web application" are not licensed, but instead, should have a `Terms of use <>`_ document. 
+   There are many good reasons why you should license your software, ideally picking a FOSS (Free and Open Source Software) license.  Read `A Quick Guide to Software Licensing for the Scientist-Programmer <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598>`_.  Some types of tools *e.g.* *Web application" are not licensed, but instead, should have a `Terms of use <#terms-of-use>`_ document. 
 
 
 Topic
@@ -376,6 +376,7 @@ Topic
 
 * specify the most important and relevant scientific topic; up to 3 topics will usually suffice
 * don't exhaustively specify all the topics of lower or secondary relevance
+* don't rely on the *bio.tools* term picker - use the `EDAM browsers <#Familiarise-yourself-with-EDAM>`_ as needed!
 
    
  
@@ -398,7 +399,7 @@ Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (on
 .. image:: _static/hmmer3_function.png
 
 
-.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has very nicely annotated functionality, but is a good example of where the entry would be easier for users to understand if the functionality was described in separate entries - retaining the existing entry for the suite, but creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
+.. note:: The `HMMER3 <https://bio.tools/hmmer3>`_ entry has very nicely annotated functionality, but is a good example of where the entry would be easier to understand if the functionality was described in separate entries - retaining the existing entry for the suite, but creating a new entry for each of the HMMER programs (alimask, hmmalign, hmmbuid *etc.*).
 
 
 In the *Function* tab you specify the functions of the tool, expressed in concepts from the EDAM ontology.
@@ -448,7 +449,7 @@ Before describing your tools, you should carefully identify the distinct functio
    * **Analyse** - *Analysis* (http://edamontology.org/operation_2945)
    * **Download** - *Data retrieval* (http://edamontology.org/operation_2422)
   
-   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better described as discrete tools in it's own entry (see `bio.tools entries <#bio-tools-entries>`_.
+   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better listed as functions of discrete tools described in their own own entries (see `bio.tools entries <#bio-tools-entries>`_.
 
 
   
@@ -460,14 +461,14 @@ Data
 .. tip::
    For *Database portal* the data annotations correspond to the common operations:
    
-   * For *Deposition* and *Data retrieval* operations, you can associate the types of `data <#data>`_ available for uplooad (input) or download (output).
-   * For *Search* opration, you can specify *Database search results* (http://edamontology.org/data_2080) as an output, or some other more specific term in the `Data subontology <http://edamontology.org/data_0006>`_.
+   * For *Deposition* and *Data retrieval* operations, you can associate the types of `data <#data>`_ available for upload (input) or download (output).
+   * For *Search* operation, you can specify *Database search results* (http://edamontology.org/data_2080) as an output, or some other more specific term in the `EDAM Data <http://edamontology.org/data_0006>`_ subontology.
 
 
 Format
 ^^^^^^
 * format terms must be correctly associated with the data type of an input or output
-* specify the most widely used of the supported data formats (it can be onersous to be exhaustive!)
+* specify the most widely used of the supported data formats (it can be impractical / onerous to be exhaustive!)
 
 
 Links
@@ -508,7 +509,7 @@ In the *Links* tab you specify miscellaneous links for the tool.
 
 Download
 """"""""
-In the *Download* tab you specify Links to downloads for the software.
+In the *Download* tab you specify links to downloads for your software.
 
 .. csv-table::
    :header: "TYPE", "REQUIREMENT"
@@ -540,16 +541,15 @@ In the *Download* tab you specify Links to downloads for the software.
    **Other**,                      **Optional**
    **Ontology**,                   *ignore*
 
-* **API specification** is a file providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.
-* **Binaries** for the software.
-* **Binary package** for the software.
-* **Command-line specification** is a file providing a command line specification for the software.
+* **API specification** is a file providing a machine-readable API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.  It's *not* for human-readable API documentation (see `documentation <#documentation>`_ for that).
+* **Binaries** and **Binary package** should trigger a download of the *latest* version available (typically the latest stable version).
+* **Command-line specification** is a file providing a machine-readable command line specification for the software. It's *not* for human-readable documentation (see `documentation <#documentation>`_ for that).
 * **Container file** including the software.
-* **Source code** for the software.
-* **Source package** (of various types) for the software.
+* **Source code** and **Source package** should trigger a download of the *latest* source code.
 * **Downloads page** is a Web page summarising general downloads available for the software.
 
-   
+.. tip::
+   With the exception of **Downloads page**, the expectation is that a link annotated in the *Download* section will trigger a download of a file.  If you're adding a link which doesn't have this behaviour, you should see whether an attribute in the `Link <#Links>`_ section is more appropriate.
 
 
 Documentation
@@ -575,32 +575,30 @@ In the *Documentation* tab you link to documentation about the software.
    **Tutorial**,                  **Optional**
    **Other**,                     **Optional**
 
-* **General** is for general documentation. If your tool doesn't have a dedicated docs page, but is documented elsewhere (*e.g.* on the homepage or a GitHub README.md) then specify that URL instead.
-* **Citation instructions** give information on how to correctly cite use of the software.  This is especially important where there are multiple relevant `publications <#pubications>`_.
-* **API documentation** is human-readable API documentation.
+* **General** is for general documentation. If your tool doesn't have a dedicated documentation page, but is documented elsewhere (*e.g.* on the homepage or a GitHub README.md) then specify that URL instead.
+* **Citation instructions** give information on how to correctly cite use of the software.  This is especially important where there are multiple relevant `publications <#publications>`_.
+* **API documentation** is human-readable API documentation, and should be specified for many *Database portals* and some *Web applications*.
 * **Terms of use** are rules that one must agree to abide by in order to use a service.
-* **Command-line options** are human-readable documentation about the command-line interface to a tool.  
+* **Command-line options** are human-readable documentation about the command-line interface of a tool.  
 * **Contributions policy** is information about policy for making contributions to the software project.
 * **Governance** is information about the software governance model.
 * **Installation instructions** are instructions how to install the software.
 * **Manual** is information on how to use the software, structured into a comprehensive user manual (don't just link here to general documentation).
-* **Release notes** are notes about a software release or changes to the software; a change log.  For example a *CHANGELOG.md* file on GitHub.
+* **Release notes** are notes about a software release or changes to the software (a change log).  For example a CHANGELOG.md file on GitHub.
 	    
 
 .. tip::
-   It's very worthwhile to create **contribution guidelines** to communicate how people should contribute to your open source project.  In GitHub this is done by createing a `CONTRIBUTING.MD file <https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors>`_ file.  Lots of good advice, templates and examples are available (*e.g.* `Atom editor <https://github.com/atom/atom/blob/master/CONTRIBUTING.md>`_, `Ruby on Rails <https://github.com/rails/rails/blob/master/CONTRIBUTING.md>`_ and `Open Government <https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md>`_).
+   It's very worthwhile to create **contribution guidelines** to communicate how people should contribute to your open source project.  In GitHub this is done by createing a `CONTRIBUTING.MD <https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors>`_ file.  Lots of good advice, templates and examples are available (*e.g.* `Atom editor <https://github.com/atom/atom/blob/master/CONTRIBUTING.md>`_, `Ruby on Rails <https://github.com/rails/rails/blob/master/CONTRIBUTING.md>`_ and `Open Government <https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md>`_).
 
 .. tip::
-   A well maintained **change log** wlll make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project.  Fr some great advice, see `keepachangelog.com <a href ="https://keepachangelog.com/en/1.0.0/">`_.
+   A well maintained **change log** wlll make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project.  For some great advice, see `keepachangelog.com <a href ="https://keepachangelog.com/en/1.0.0/">`_.
 
 .. note::
    Command-line tools should always have human-readable description of their interface.  If a machine-readable command-line specification (a file) is also available, then you should link to that in the `Download`_ section.
 
-..note::   
-  You can use **Tutorial** or **Training material** to provide links to an online tutorial or some other training material such as a presentation or video.
 
-..note::
-  You must not specify a link to a general page where a more specific one is available.  For example, don't link to the homepage in the **General** field if, in fact, there's a dedicated page for documentation. If you want to link to some documentation not of a type listed above then use the **Other** value.
+.. important::
+   You must not specify a link to a general page where a more specific one is available.  For example, don't link to the homepage in the **General** field if, in fact, there's a dedicated page for documentation. If you want to link to some documentation not of a type listed above then use the **Other** value.
 
 
        
@@ -651,7 +649,7 @@ You should specify at least the primary publication for your tool, and ideally a
 
 Credits & Support
 """""""""""""""""
-In the *Credits & Support* tab you specify individuals or organisations that should be credited, or may be contacted about the software.
+In the *Credits & Support* tab you specify individuals or organisations that should be credited, or may be contacted about the software.  Credits include all type of entities that contributed to the development, maintenance or provision of the resource.   
 
 .. csv-table::
    :header: "ATTRIBUTE", "REQUIREMENT"
@@ -660,7 +658,7 @@ In the *Credits & Support* tab you specify individuals or organisations that sho
    **Primary contact**,  **Mandatory**
    **Credited institute**,  **Mandatory**
 
-Credits include all type of entities that contributed to the development, maintenance or provision of the resource. Credits can have an **Entity type** (Person, Institute *etc.*) and an **Entity role** (Developer, Documentor *etc.*).  Use the role of *Primary contact* to indicate preferred contact details.
+
 
 Creditable entities have one of the following types:
 
@@ -691,12 +689,13 @@ and also have a "role":
    **Primary contact**, "The primary point of contact for the software."
 
    
-You should therefore specify at least:
+You should specify at least:
+
 * A credit of type **Institute** with one ore more applicable roles.
 * A credit of role **Primary contact** with an applicable type.  You can opt to give more than one primary contact, for example specifing one for a project and another for a person.
-* the primary publication for your tool, and ideally any others that are relevant.
 
-For any credit, you can specify:
+
+For any credit, you can specify and of the following:
 
 .. csv-table::
    :header: "Attribute", "Description"
@@ -708,7 +707,7 @@ For any credit, you can specify:
    **url**, "URL, e.g. homepage of an institute."
    **tel**, "Telephone number."
    **typeEntity**, "Type of entity that is credited (see above)"
-   **typeRole**, "Role performed by entity that is credited (see above)."
+   **typeRole**, "Role performed by entity that is credited (see above)"
    **note**, "A comment about the credit."
    
 .. important::
@@ -737,16 +736,16 @@ The relationships currently available:
 
 You can ignore this for now, except:
 
-* when annotating a *Suite* (or other collection) specify other tools that the suite **incudes**
-* when annotating a *Wofklow* specify other tools that the workflow **uses**
+* when annotating a *Suite* (or other collection) specify other tools that the suite **includes**
+* when annotating a *Workflow* specify other tools that the workflow **uses**
 	    
 JSON
 """"
-In the *JSON* tab you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see `Familiarise-yourself-with-EDAM`_.)
+In the *JSON* tab you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see the section on `EDAM <Familiarise-yourself-with-EDAM>`_.)
 
 Permissions
 """""""""""
-In the *Permissions* tab you can decide to make the entry either editable only by yourself, a list of users or anyone.  See `Get-a-bio-tools-account`_. 
+In the *Permissions* tab you can decide to make the entry either editable only by yourself, a list of users or anyone.  See the section on *bio.tools* `accounts <Get-a-bio-tools-account>`_.
 
 
 
