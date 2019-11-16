@@ -419,19 +419,19 @@ In the *Links* tab you specify miscellaneous links for the tool.
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 	    
-   "**Repository**", "**Mandatory** (Desktop application, Command-line tool), **Optional** (Bioinformatics portal, Database portal, Web application)"
-   "**Issue tracker**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Recommended** (Database portal)"
-   "**Mailing list**", "**Recommended** (Database portal, Web application, Desktop application, Command-line tool), **Optional** (Bioinformatics portal)"
-   "**Helpdesk**", "**Recommended** (Database portal), **Optional** (Web application, Desktop application, Command-line tool)"
-   "**Discussion forum**", **Optional**"
-   "**Social media**", **Optional**"
-   "**Mirror**", "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   "**Other**", **Optional**"
-   "**Registry**", "*ignore*"
-   "**Galaxy service**", "*ignore*"
-   "**Service**", "*ignore*"
-   "**Scientific benchmark**", "*ignore*"
-   "**Technical monitoring**", "*ignore*"
+   **Repository**, "**Mandatory** (Desktop application, Command-line tool), **Optional** (Bioinformatics portal, Database portal, Web application)"
+   **Issue tracker**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Recommended** (Database portal)"
+   **Mailing list**, "**Recommended** (Database portal, Web application, Desktop application, Command-line tool), **Optional** (Bioinformatics portal)"
+   **Helpdesk**, "**Recommended** (Database portal), **Optional** (Web application, Desktop application, Command-line tool)"
+   **Discussion forum**, **Optional**
+   **Social media**, **Optional**
+   **Mirror**, "**Optional** (Bioinformatics portal, Database portal, Web application)"
+   **Other**, **Optional**
+   **Registry**, *ignore*
+   **Galaxy service**, *ignore*
+   **Service**, *ignore*
+   **Scientific benchmark**, *ignore*
+   **Technical monitoring**, *ignore*
 
    
 * **Repository** is where source code, data and other files may be downloaded.
