@@ -683,7 +683,7 @@ URL (link)
 
 - **1.** **MUST** resolve to a page of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#link-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available  
-- **3.** **MUST NOT** specify a link of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
+
 
 .. _linktype:
      
@@ -735,7 +735,7 @@ URL (download)
 
 - **1.** **MUST** resolve to a page providing either an immediately download, or links for a download of the indicated `link type <http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
-- **3.** **MUST NOT** specify a download of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
+
   
 Download type
 .............
@@ -802,7 +802,6 @@ URL (documentation)
 
 - **1.** **MUST** resolve to a page of the indicated `documentation type <http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type>`_
 - **2.** **MUST NOT** give a general link (*e.g.* homepage URL) if a more specific link is available
-- **3.** **MUST NOT** specify documentation of a certain type is "Not available" *unless* certain (*i.e.* following a reasonably thorough search) that this is indeed the case
   
 .. _documentationtype:
 

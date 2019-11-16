@@ -218,10 +218,10 @@ In the *Summary* tab you specify basic information about the software:
    :header: "Attribute", "Requirement"
    :widths: 25, 100
       
-   "**Name**", "**Mandatory**"
-   "**Description**", "**Mandatory**"
-   "**Homepage URL**", "**Mandatory**"
-   "Software version(s)", "*ignore*"
+   **Name**,            **Mandatory**
+   **Description**,     **Mandatory**
+   **Homepage URL**,    **Mandatory**
+   Software version(s), *ignore*
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Database names should follow a pattern where the name and abbreviation are given *e.g.* "The Protein Databank (PDB)" {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}.
 * **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}.
@@ -249,18 +249,19 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 	    
-   "**Tool type**", "**Mandatory**"
-   "**Topic**", "**Mandatory**"
-   "**Operating system**", "**Mandatory** (Desktop application), Recommended (Command-line tool)"
-   "**Language**", "**Recommended** (Command-line tool)"
-   "**Maturity**", "**Recommended**"
-   "**License**", "**Mandatory** (Desktop application), **Recommended** (Command-line tool)"
-   "**Cost**", "**Recommended** (Desktop application, Command-line tool)"
-   "**Accessibility**", "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
-   "**Collection**", "**Optional**"
-   "ELIXIRPlatform", "*ignore*"
-   "ELIXIRNode", "*ignore*"
-   "Other ID", "*ignore*"
+   **Tool type**,        **Mandatory**
+   **Topic**,            **Mandatory**
+   **Operating system**, **Mandatory** (Desktop application), Recommended (Command-line tool)
+   **Language**,         **Recommended** (Command-line tool)
+   **Maturity**,         **Recommended**
+   **License**,          **Mandatory** (Desktop application)
+              ,          **Recommended** (Command-line tool)
+   **Cost**,             "**Recommended** (Desktop application, Command-line tool)"
+   **Accessibility**,    "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
+   **Collection**,       **Optional**
+   ELIXIRPlatform,       *ignore*
+   ELIXIRNode,           *ignore*
+   Other ID,             *ignore*
 
 * **Tool type** describes the type of the tool: a *bio.tools* entry can have more than one type.  {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
 * **Topic** is the general scientific domain the tool serves, or other general category {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
@@ -287,11 +288,11 @@ The scope of *bio.tools* is very broad, ranging from simple scripts to comprehen
    :header: "Type", "Description"
    :widths: 25, 100
 
-   "**Bioinformatics portal**", "A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."
-   "**Database portal**", "A Web site providing a portal to a biological database, typically allowing a user to browse, deposit, search, visualise, analyse or download data."
-   "**Web application**", "A tool with a graphical user interface that runs in your Web browser."
-   "**Desktop application**", "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
-   "**Command-line tool**", "A tool with a text-based (command-line) interface."
+   **Bioinformatics portal**, "A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."
+   **Database portal**,       "A Web site providing a portal to a biological database, typically allowing a user to browse, deposit, search, visualise, analyse or download data."
+   **Web application**,       "A tool with a graphical user interface that runs in your Web browser."
+   **Desktop application**,   "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
+   **Command-line tool**,     "A tool with a text-based (command-line) interface."
 
 Other common types incude:
 
@@ -299,12 +300,12 @@ Other common types incude:
    :header: "Type", "Description"
    :widths: 25, 100
 	    
-   "**Web API**", "An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP.  Includes everything from simple data-access URLs to RESTful APIs."
-   "**Workflow**", "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
-    "**Suite**", "A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal."
-   "**Workbench**", "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
-    "**Workflow**", "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
-   "**Library**", "A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries."
+   **Web API**,   "An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP.  Includes everything from simple data-access URLs to RESTful APIs."
+   **Workflow**,  "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
+   "**Suite**,    "A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal."
+   **Workbench**, "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
+   "**Workflow**, "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
+   **Library**,   "A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries."
 
 A single *bio.tools* entry is annotated with one or more types, reflecting different facets of the tool described by the entry. Be sure to understand the type(s) of tool you have, because it determines the information that's expected.  A few suggestions:
 
@@ -372,13 +373,17 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 
-   "**Operation**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Recommended** (Database portal)"
-   "**Input->data**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Optional** (Database portal)"
-   "**Input->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
-   "**Output->data**", "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
-   "**Output->format**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
-   "**Note**", "**Optional**"
-   "**Command**", "*ignore*"
+   **Operation**,      "**Mandatory** (Web application, Desktop application, Command-line tool)"
+                 ,     "**Recommended** (Database portal)"
+   **Input->data**,    "**Mandatory** (Web application, Desktop application, Command-line tool)"
+                  ,    "**Optional** (Database portal)"
+   **Input->format**,  "**Recommended** (Command-line tool)"
+                    ,  "**Optional** (Database portal, Web application, Desktop application)"
+   **Output->data**,   "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
+   **Output->format**, "**Recommended** (Command-line tool)"
+                     , "**Optional** (Database portal, Web application, Desktop application)"
+   **Note**,           "**Optional**"
+   **Command**,        "*ignore*"
 
 * **Operation** describes the basic operation(s) performed by this software function {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
 * **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
@@ -419,21 +424,21 @@ In the *Links* tab you specify miscellaneous links for the tool.
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 	    
-   **Repository**, "**Mandatory** (Desktop application, Command-line tool)"
-                 , "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Issue tracker**, "**Mandatory** (Web application, Desktop application, Command-line tool)"
-                     , "**Recommended** (Database portal)"
-   **Mailing list**, "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
-                   , "**Optional** (Bioinformatics portal)"
-   **Helpdesk**, "**Recommended** (Database portal)"
-               , "**Optional** (Web application, Desktop application, Command-line tool)"
+   **Repository**,       "**Mandatory** (Desktop application, Command-line tool)"
+                 ,       "**Optional** (Bioinformatics portal, Database portal, Web application)"
+   **Issue tracker**,    "**Mandatory** (Web application, Desktop application, Command-line tool)"
+                    ,    "**Recommended** (Database portal)"
+   **Mailing list**,     "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
+                   ,     "**Optional** (Bioinformatics portal)"
+   **Helpdesk**,         "**Recommended** (Database portal)"
+               ,         "**Optional** (Web application, Desktop application, Command-line tool)"
    **Discussion forum**, **Optional**
-   **Social media**, **Optional**
-   **Mirror**, "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Other**, **Optional**
-   **Registry**, *ignore*
-   **Galaxy service**, *ignore*
-   **Service**, *ignore*
+   **Social media**,     **Optional**
+   **Mirror**,           "**Optional** (Bioinformatics portal, Database portal, Web application)"
+   **Other**,            **Optional**
+   **Registry**,         *ignore*
+   **Galaxy service**,   *ignore*
+   **Service**,          *ignore*
    **Scientific benchmark**, *ignore*
    **Technical monitoring**, *ignore*
 
@@ -455,26 +460,30 @@ In the *Dwnload* tab you specify Links to downloads for the software.
    :header: "Attribute", "Requirement"
    :widths: 25, 100
 
-   "**API specification**", "**Recommended** (Database portal - with API)"
-   "**Binaries**", "**Recommended** (Desktop application, Command-line tool)"
-   "**Binary package**", "**Recommended** (Desktop application, Command-line tool)"
-   "**Command-line specification**", "**Optional** (Command-line tool)"
-   "**Container file**", "**Recommended** (Command-line tool), **Optional** (Database portal, Web application, Desktop application)"
-   "**Source code**", "**Recommended** (Desktop application, Command-line tool), **Optional** (Web application)"
-   "**Source package**", "**Recommended** (Desktop application, Command-line tool), **Optional** (Web application)"
-   "**Downloads page**", "**Mandatory** (Database portal), "**Recommended** (Desktop application, Command-line tool), **Optional** (Bioinformatics portal, Web application)"
-   "**VM image**", "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
-   "**CWL file**", "**Optional** (Command-line tool)"
-   "**Test data**", "**Optional** (Command-line tool)"
-   "**Test script**", "**Optional** (Command-line tool)"
-   "**Tool wrapper (galaxy)**", "**Optional** (Command-line tool)"
-   "**Tool wrapper (taverna)**", "**Optional** (Command-line tool)"
-   "**Tool wrapper (other)**", "**Optional** (Command-line tool)"
-   "**Icon**", **Optional**"
-   "**Biological data**", **Optional**"
-   "**Screenshot**", **Optional**"
-   "**Other**", **Optional**"
-   "**Ontology**", "*ignore*"
+   **API specification**,      "**Recommended** (Database portal - with API)"
+   **Binaries**,               "**Recommended** (Desktop application, Command-line tool)"
+   **Binary package**,         "**Recommended** (Desktop application, Command-line tool)"
+   **Command-line specification**, "**Optional** (Command-line tool)"
+   **Container file**,         "**Recommended** (Command-line tool)"
+                     ,         "**Optional** (Database portal, Web application, Desktop application)"
+   **Source code**,            "**Recommended** (Desktop application, Command-line tool)""
+                  ,            **Optional** (Web application)"
+   **Source package**,         "**Recommended** (Desktop application, Command-line tool), **Optional** (Web application)"
+   **Downloads page**,         "**Mandatory** (Database portal)"
+                     ,         "**Recommended** (Desktop application, Command-line tool)"
+                     ,         **Optional** (Bioinformatics portal, Web application)"
+   **VM image**,               "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
+   **CWL file**,               **Optional** (Command-line tool)
+   **Test data**,              **Optional** (Command-line tool)
+   **Test script**,            **Optional** (Command-line tool)
+   **Tool wrapper (galaxy)**,  **Optional** (Command-line tool)
+   **Tool wrapper (taverna)**, **Optional** (Command-line tool)
+   **Tool wrapper (other)**,   **Optional** (Command-line tool)
+   **Icon**,                   **Optional**
+   **Biological data**,        **Optional**
+   **Screenshot**,             **Optional**
+   **Other**,                  **Optional**
+   **Ontology**,               *ignore*
 
 * **API specification** is a file providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.
 * **Binaries** for the software.
@@ -493,26 +502,40 @@ Documentation
 Make your different documentations for your tool available here. Again, you can assign type of documentation using **Documentation type**.
 
 
-   API documentation", "Human-readable API documentation."
-   "Citation instructions", **Mandatory**
-   "Command-line options", **Mandatory** (Command-line tool)
-   "Contributions policy", "Information about policy for making contributions to the software project."
-   "FAQ", "Frequently Asked Questions (and answers) about the software."
-   "General", "General documentation."
-   "Governance", "Information about the software governance model."
-   "Installation instructions", "Instructions how to install the software."
-   "Manual ", "Information on how to use the software."
-   "Release notes", "Notes about a software release or changes to the software; a change log."
-   "Terms of use", "Rules that one must agree to abide by in order to use a service."
-   "Training material", "Online training material such as text on a Web page, a presentation, video, tutorial etc."
-   "Tutorial", "A tutorial about using the software."
-   "Other", "Some other type of documentation not listed in biotoolsSchema."
+   **API documentation**,         **Mandatory** (Database portal or Web application - with API)
+   **Citation instructions**,     **Mandatory**
+   **Command-line options**,      **Mandatory** (Command-line tool)
+   **Contributions policy**,      "**Recommended** (Web application, Desktop application, Command-line tool)"
+   **FAQ**,                       **Optional**
+   **General**,                   **Mandatory**
+   **Governance**,                "**Recommended** (Bioinformatics portal, Database portal)"
+   **Installation instructions**, "**Recommended** (Desktop application, Command-line tool)"
+   **Manual**,                    "**Recommended** (Desktop application)"
+   **Release notes**,             "**Recommended** (Desktop application, Command-line tool)"
+   **Terms of use**,              "**Mandatory** (Database portal)"
+   **Training material**,         **Optional**
+   **Tutorial**,                  **Optional**
+   **Other**,                     **Optional**
 
 
 * **Citation instructions** give information on how to correctly cite use of the software.
 * **Command-line options** is documentation about the command-line interface to a tool.  <mention command-line specification>
-  
+   "Contributions policy", "Information about policy for making contributions to the software project."
+   "General", "General documentation."
+    "Information about the software governance model."
+**Installation instructions**,    "Instructions how to install the software."
+   **Manual**,                    "Information on how to use the software."
+      **Release notes**, "Notes about a software release or changes to the software; a change log."
+            "Terms of use", "Rules that one must agree to abide by in order to use a service."
+	    
+   API documentation, "Human-readable API documentation."  
 
+   "Training material",        "Online training material such as text on a Web page, a presentation, video, tutorial etc."   
+      "Tutorial", "A tutorial about using the software."
+       "Some other type of documentation not listed in biotoolsSchema."
+
+
+       
 Publications
 """"""""""""
 Share the different publications of the tool, which can be the primary publication (the one to cite when the tool is used), but also
