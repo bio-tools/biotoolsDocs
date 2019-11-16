@@ -286,6 +286,14 @@ Familiarise yourself with EDAM
 .. _Familiarise_yourself_with_EDAM:
 The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain it serves, specific operations it performs, types of input and output data, and supported data formats.
 
+.. image:: _static/EDAMconcepts.png
+
+   The EDAM ontology includes four main types of concept (or subontologies), shown in boxes above. The concepts are *Topic*, *Operation*, *Data* and *Format*, with *Identifier* being a specialisation of *Data*.
+	   
+.. image:: _static/EDAMrelations.png
+
+   Relationships between EDAM concepts are defined internally within the ontology.  This model is reflected in the *bio.tools* tool registration interface.
+
 Three EDAM browsers provide different functionality:
 
 .. _`OLS EDAM`: https://www.ebi.ac.uk/ols/ontologies/edam
