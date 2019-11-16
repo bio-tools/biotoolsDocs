@@ -266,7 +266,7 @@ bio.tools enries
 .. important::
    Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform. Be sure to understand:
    
-   1. The type of tool being described - this determines the information requirement - and is covered in the section below on `tool type <#Tool_type>`_. 
+   1. The type of tool being described - this determines the information requirement - and is covered in the section below on `tool type`_. 
    2. The tool functionality and how it should be described  - covered in the section on `tool functions <#function>`_.
    3. Whether one or more entries are needed (see below).
 
