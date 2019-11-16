@@ -421,9 +421,12 @@ In the *Links* tab you specify miscellaneous links for the tool.
 	    
    **Repository**, "**Mandatory** (Desktop application, Command-line tool)"
                  , "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Issue tracker**", "**Mandatory** (Web application, Desktop application, Command-line tool), **Recommended** (Database portal)"
-   **Mailing list**, "**Recommended** (Database portal, Web application, Desktop application, Command-line tool), **Optional** (Bioinformatics portal)"
-   **Helpdesk**, "**Recommended** (Database portal), **Optional** (Web application, Desktop application, Command-line tool)"
+   **Issue tracker**", "**Mandatory** (Web application, Desktop application, Command-line tool)
+                     , "**Recommended** (Database portal)"
+   **Mailing list**, "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
+                   , "**Optional** (Bioinformatics portal)"
+   **Helpdesk**, "**Recommended** (Database portal)"
+               , "**Optional** (Web application, Desktop application, Command-line tool)"
    **Discussion forum**, **Optional**
    **Social media**, **Optional**
    **Mirror**, "**Optional** (Bioinformatics portal, Database portal, Web application)"
