@@ -65,18 +65,17 @@ Updating entries
 """"""""""""""""
 To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
 
-.. image:: _static/update.png
-   :width: 200px
-   :height: 45px
-
-.. image:: _static/request_edit_rights.png
-   :width: 200px
-   :height: 45px
-
 .. image:: _static/request_ownership.png
    :width: 200px
    :height: 45px	    	    
  
+.. image:: _static/request_edit_rights.png
+   :width: 200px
+   :height: 45px
+
+.. image:: _static/update.png
+   :width: 200px
+   :height: 45px
 
 * Click on *Request ownership* if you want to claim ownership of the entry
 * Click on *Request editing rights* if you want to edit rights on the entry, but not own it 
@@ -101,7 +100,7 @@ The *bio.tools* registration interface helps you to create valid tool descriptio
 .. image:: _static/registration_interface.png
 
 
-It provides some hints, and ensures that the information you set is in the right format. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
+It provides some hints and links to the `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
 	   
 
 .. |asterix| image:: _static/red_asterix.png
@@ -118,7 +117,7 @@ It provides some hints, and ensures that the information you set is in the right
 
    
 .. Important::
-   The attributes required by *bio.tools* (tool name, description and homepage URL) are marked with a red asterix |asterix| in the registration interface, and must be given before an entry can be saved.  Much more information is required for the IFB catalogue, but this is not enforced by *bio.tools* ! 
+   The attributes required by *bio.tools* (tool name, description and homepage URL) are marked with a red asterix |asterix| in the registration interface, and must be given before an entry can be saved.  Much more information is required for the IFB catalogue, but this is not enforced by *bio.tools* !  
 
 .. note::
    It's possibe to create tool descriptions in JSON format directly in a text editor, and either paste these into the registration interface ("JSON" tab) or use the *bio.tools* API.  For guidance on using the API, see the `API Reference <https://biotools.readthedocs.io/en/latest/api_reference.html>`_ and the `API Usage Guide <https://biotools.readthedocs.io/en/latest/api_usage_guide.html>`_. 
@@ -127,7 +126,7 @@ It provides some hints, and ensures that the information you set is in the right
 
 Removing entries
 """"""""""""""""
-To remove an entry, from the Tool Card, click on *Update this record*. Then you can remove the entry by clicking on the remove button |remove|.
+To remove an entry, from the Tool Card, click on *Update this record*. Then you can remove the entry by clicking on |remove|.
 
 .. |remove| image:: _static/remove.png
    :width: 100px
@@ -145,12 +144,12 @@ bio.tools
 *bio.tools* requires only the name, description and homepage URL for a tool registration, but supports a comprehensive set of attributes for rich tool descriptions.
 
 .. note::
-   The attributes supported by *bio.tools*, their structure and their syntax are defined in formalised XML schema called `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.  If you'd like to learn more or contribute to this project, please head over to `GitHub <https://github.com/bio-tools/biotoolsSchema>`_.
+   The attributes supported by *bio.tools*, their structure and their syntax are defined in formalised XML schema called `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.  You don't need to look at the schema, because everything is handled through *bio.tools*. If you'd like to learn more or contribute to this project, please head over to `GitHub <https://github.com/bio-tools/biotoolsSchema>`_.
 
 The IFB catalogue
 """""""""""""""""
 
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#describe-your-tools>`_ below.
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  Exactly what's needed is covered in the `guidelines <#describe-your-tools>`_  below.
 
 
 Updating entries
@@ -158,15 +157,15 @@ Updating entries
 To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
 
 .. image:: _static/update.png
-   :width: 230px
+   :width: 200px
    :height: 45px
 
 .. image:: _static/request_edit_rights.png
-   :width: 230px
+   :width: 200px
    :height: 45px
 
 .. image:: _static/request_ownership.png
-   :width: 230px
+   :width: 200px
    :height: 45px	    	    
  
 
@@ -180,7 +179,7 @@ To edit an existing entry, you need to click through to the Tool Card for the to
 
 Creating entries
 """"""""""""""""
-To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*:
+To create new entries you'll need to be logged onto *bio.tools*. Then click on *Menu ... Add content*:
 
 
 .. image:: _static/add.png
@@ -193,7 +192,7 @@ The *bio.tools* registration interface helps you to create valid tool descriptio
 .. image:: _static/registration_interface.png
 
 
-It provides some hints, and ensures that the information you set is in the right format. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
+The registration interface provides some hints, and ensures that the information you set is in the right format. At any moment, you can click on |save| to save your edits, and immediately publish the changes online.  All the information you specified will be checked to ensure it's in the right syntax. To (optionally) force a manual syntax check, click on |validate|.
 	   
 
 .. |asterix| image:: _static/red_asterix.png
