@@ -309,6 +309,7 @@ Three EDAM browsers provide different functionality:
 
 5. Describe your tools
 ----------------------
+.. _guidelines:
 The sections below match the tabs in the *bio.tools* registration interface.  
 
 .. tip::

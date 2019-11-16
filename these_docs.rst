@@ -13,6 +13,7 @@ Documentation files are written in **reStructuredText** and have the file extens
 reStructuredText links 
 ----------------------
 
+* `rST and Sphinx CheatSheet <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_
 * `Quick Reference <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
 * `Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
 * `Full documentation <http://docutils.sourceforge.net/rst.html>`_
