@@ -257,8 +257,8 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
    The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `guidelines <#describe_your_tools>`_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
 
-4. Plan your curation work 
----------------------------   
+4. Plan your curation work
+--------------------------   
 
 bio.tools enries
 """"""""""""""""
@@ -287,21 +287,24 @@ Familiarise yourself with EDAM
 The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain it serves, specific operations it performs, types of input and output data, and supported data formats.
 
 .. image:: _static/EDAMconcepts.png
-
+   :width:  750px
+   :height: 750px
+   :align: center
 	   
 .. image:: _static/EDAMrelations.png
-
-The EDAM ontology includes four main types of concept (or subontologies), shown in boxes above. The concepts are *Topic*, *Operation*, *Data* and *Format*, with *Identifier* being a specialisation of *Data*.
-
-Relationships between EDAM concepts are defined internally within the ontology.  This model is reflected in the *bio.tools* tool registration interface.
+   :width:  750px
+   :height: 750px
+   :align: center
+	   
+The EDAM ontology includes four main types of concept (or subontologies), shown in boxes above. The concepts are *Topic*, *Operation*, *Data* and *Format*, with *Identifier* being a specialisation of *Data*. Relationships between EDAM concepts are defined internally within the ontology.
 
 Three EDAM browsers provide different functionality:
 
-.. _`OLS EDAM`: https://www.ebi.ac.uk/ols/ontologies/edam
+.. _`OLS`: https://www.ebi.ac.uk/ols/ontologies/edam
 .. _`BioPortal`: https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=root
 .. _`EDAM Browser`: https://ifb-elixirfr.github.io/edam-browser/
 
-* `OLS EDAM`_
+* `OLS`_
 * `BioPortal`_
 * `EDAM Browser`_
 
@@ -309,9 +312,10 @@ Three EDAM browsers provide different functionality:
    The EDAM term picker currently implemented in *bio.tools* is not very powerful, for example, although it synonyms of EDAM terns, these are not display to the user.  It's strongly recommended to use one or more of the browsers above.  If you can't find exactly the terms you need, multiple searches using synonyms, alternative spellings *etc.* can help.
 
    A much better term picker is on the way, and while not yet fully integrated into *bio.tools* is already very useful:
+
    * `EDAM Tool Annotator <https://bio.tools/static/eta/>`_
 
-   You can use this to pick relevant topics and define the function of your tools.  The ouput (in the bottom pane of the window) is a JSON object that can be copy-pasted into the *JSON* tabe of the `*bio.tools* registration interface <#bio.tools_registration_interface>`_, when editing a tool description.
+   You can use this to pick relevant topics and define the function of your tools.  The ouput (in the bottom pane of the window) is a JSON object that can be copy-pasted into the *JSON* tabe of the *bio.tools* `registration interface <#bio-tools-registration-interface>`_, when editing a tool description.
 
    If you cannot find the right term, please request it¡¯s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.  It takes some time from requesting new EDAM terms for these to be supported in *bio.tools*, so if you need many new terms please plan ahead. 
 
@@ -341,18 +345,20 @@ In the *Summary* tab you specify basic information about the software:
    Software version(s), *ignore*
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Database names should follow a pattern where the name and abbreviation are given *e.g.* "The Protein Databank (PDB)" {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}.
-* **Description** is a *concise* summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}.
+* **Description** is a *concise* textual summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}.
 * **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}.
    
 .. Important::
-   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ - the *bio.tools* toolID - is created for a tool when a new entry is created. The ID value is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by bio.tools and other systems. The ID should therefore be sensible and intuitive.  In the case of databases, or tools with long names, the abbreviation should be used. For example, the `GnpIS tool <https://bio.tools/gnpis>`_ tool has the ID "gnpis" and *not* "Genetic and Genomic Information System". 
+   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ - the *bio.tools* **toolID** - is created for a tool when a new entry is created. The ID value is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by bio.tools and other systems.
+
+   The ID should be sensible and intuitive.  For databases, or tools with long names, the abbreviation should be used. For example, the `GnpIS tool <https://bio.tools/gnpis>`_ tool has the ID "gnpis" and *not* "Genetic and Genomic Information System". 
 
 
 .. Tip::   
-   The *bio.tools* toolID is **not** currently editable, so if you want the ID to differ from the name (*e.g.* an ID of "PDB" for the tool name "Protein databank (PDB)", you have to apply a workaround:
+   The toolID is **not** currently editable, so if you want the ID to differ from the name (*e.g.* an ID of "PDB" for the tool name "Protein databank (PDB)", you have to apply a workaround:
    
    1) create the entry giving a value for "Name" which is the desired ID value, *e.g.* "PDB"
-   2) Save the entry.
+   2) Save the entry
    3) Edit the entry, resetting the name, *e.g.* to "Protein Databank (PDB)"
 
    To request an ID change post-registration (to be avoided!) you have to mail `Registry Support <mailto:registry-support@elixir-dk.org>`_.
@@ -360,10 +366,10 @@ In the *Summary* tab you specify basic information about the software:
 
 Labels
 """"""
-In the *Labels* tab you specify miscellaneous scientific, technical and administrative details of the tool, expressed in terms from controlled vocabularies:
+In the *Labels* tab you specify miscellaneous scientific, technical and administrative details, expressed in terms from controlled vocabularies:
 
 .. csv-table::
-   :header: "Attribute", "Requirement"
+   :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 	    
    **Tool type**,        **Mandatory**
@@ -373,29 +379,30 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    **Accessibility**,    "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
    **Operating system**, **Mandatory** (Desktop application)
                        , **Recommended** (Command-line tool)
-   **Maturity**,         **Recommended**
-   **Language**,         **Recommended** (Command-line tool)
    **Cost**,             "**Recommended** (Desktop application, Command-line tool)"
+   **Language**,         **Recommended** (Command-line tool)
+   **Maturity**,         **Recommended**
    **Collection**,       **Optional**
    ELIXIRPlatform,       *ignore*
    ELIXIRNode,           *ignore*
    Other ID,             *ignore*
 
-* **Tool type** describes the type of the tool: a *bio.tools* entry can have more than one type.  {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
-* **Topic** is the general scientific domain the tool serves, or other general category {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
+* **Tool type** describes the type of the tool: a *bio.tools* entry can have more than one type. Tool types are decsribed below.  {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
+* **Topic** is the general scientific domain the tool serves, or other general category - an EDAM term {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
 * **Operating system** is the operating system supported by a downloadable software package {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
-* **Language** is the name of a programming language the tool source code was written in. {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
+* **Language** is the name of a programming language the tool source code was written in {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
 * **License** is a software or data usage license {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
-* **Maturity** is how mature the software product is {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
+* **Maturity** is how mature the software product is; *Emerging*, *Mature* or *Legacy*. Don't pick *Mature* for tools which aren't really mature yet! {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
 * **Cost** is the monetary cost of acquiring the software {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}.
-* **Accessibility** is whether the software is freely available for use {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
+* **Accessibility** is whether the software is freely available for use; *Open access*, *Restricted access*, *Proprietary* or *Freeware*. Check the definitions carefully before picking these terms! {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
 
+   
 .. tip:: 
    You can use **Collection** to assign tools which are somehow related to one or more groups. These collections can have any names you like. Other ways to group tools are by creating a *bio.tools* subdomain (from *Menu...Manage subdomains*) and by defining `relations <https://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group>`_ between tools.
 
 .. note::
-  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. These are not normally be set by *bio.tools* users (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_).
-  All tools in the IFB catalogue will have the ELIXIRNode credit set to "France" by *bio.tools* admin in due course. 
+  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. All tools in the IFB catalogue will have the ELIXIRNode credit set to "France" by *bio.tools* admin in due course.  These are not normally be set by *bio.tools* users {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_}.
+  
 
 
 Tool type
@@ -403,7 +410,7 @@ Tool type
 The scope of *bio.tools* is very broad, ranging from simple scripts to comprehensive bioinformatics portals, defined by 15 different `tool types <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_.  The vast majority of entries are of the following types:
 
 .. csv-table::
-   :header: "Type", "Description"
+   :header: "TYPE", "DESCRIPTION"
    :widths: 25, 100
 
    **Bioinformatics portal**, "A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."
@@ -415,19 +422,19 @@ The scope of *bio.tools* is very broad, ranging from simple scripts to comprehen
 Other common types incude:
 
 .. csv-table::
-   :header: "Type", "Description"
+   :header: "TYPE", "DESCRIPTION"
    :widths: 25, 100
 	    
    **Web API**,   "An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP.  Includes everything from simple data-access URLs to RESTful APIs."
    **Workflow**,  "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
-   "**Suite**,    "A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal."
+   **Suite**,    "A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal."
    **Workbench**, "An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc."
-   "**Workflow**, "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
+   **Workflow**, "A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script."
    **Library**,   "A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries."
 
 A single *bio.tools* entry is annotated with one or more types, reflecting different facets of the tool described by the entry. Be sure to understand the type(s) of tool you have, because it determines the information that's expected.  A few suggestions:
 
-* Only use *Bioinformatics portal* for sites that cover multiple other resources, each which have their own distinct entity (and should have their own *bio.tools* entries).  Good examples include `IMGT <http://www.imgt.org/>`_ and `wheatIS <http://www.wheatis.org/index.php>`_.  *Bioinformatics portals* provide an unmbrella to other tools and databases, but don't (typically) directly serve them.
+* *Bioinformatics portals* provide an unmbrella to other tools and databases, but don't (typically) directly serve them. Only use *Bioinformatics portal* for sites that cover multiple other resources, each which have their own distinct entity (and should have their own *bio.tools* entries).  Good examples include `IMGT <http://www.imgt.org/>`_ and `wheatIS <http://www.wheatis.org/index.php>`_.  
 * *Suite* might be more applicable than *Bioinformatics portal*.  Example include Web application suites such as `CRISRP-Cas++ <https://crisprcas.i2bc.paris-saclay.fr/>`_ and `EvryRNA <https://evryrna.ibisc.univ-evry.fr/evryrna/evryrna/evryrna_home>`_, and suites of command-line tools such as `BioConductor <http://www.bioconductor.org/>`_.
 *  *Workbench* might be also be more applicable than *Bioinformatics portal*.  This includes online and desktop integrated environements. Example include the general-purpose `Galaxy <https://usegalaxy.org/>`_ workbench and domain-specific ones such as `MetExplore <http://www.metexplore.fr/>`_ and `MicroScope <https://www.genoscope.cns.fr/agc/microscope/home/index.php>`_.
 * Typically use only one of *Bioinformatics portal*, *Database portal* or *Web application* in a single entry.  If the resource is providing a database, then just go with *Database portal*, a good example being `Norine <https://bioinfo.lifl.fr/norine/>`_.
@@ -438,7 +445,7 @@ A single *bio.tools* entry is annotated with one or more types, reflecting diffe
 
 
 .. tip::
-   Software is complex and it can be tricky to assign a type.  Make sure you understand the `tool type definitions <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_ before you use them. For example, in *bio.tools* a *Web service* is specifically a SOAP+WSDL implementation. Mmost likely you need *Web API* (which covers most APIs nowadays) or just *Web application* (for a tool delivered via the Web but without an API).  
+   Software is complex and it can be tricky to assign a type.  Make sure you understand the `tool type definitions <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_ before you use them. For example, in *bio.tools* a *Web service* is specifically a SOAP+WSDL implementation. Most likely you need *Web API* (which covers most APIs nowadays) or just *Web application* (for a tool delivered via the Web but without an API).  
   
 
    
@@ -446,9 +453,9 @@ License
 ^^^^^^^
 All downloadable software should be licensed.  If you can't find your license in the list:
 
-.  use "Proprietary" in cases where the software is under some license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license!
-4. use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary" - please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.
-3. use "Unlicensed" for software which is not licensed and is not "Proprietary" (this is bad - license your software!)
+* use "Proprietary" in cases where the software is under some license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license!
+* use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary" - please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.
+* use "Unlicensed" for software which is not licensed and is not "Proprietary" (this is bad - license your software!)
 
 .. note::
    There are many good reasons why you should license your software, ideally picking a FOSS-license (Free and Open Source Software).  Read ` <A Quick Guide to Software Licensing for the Scientist-Programmer <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598>`_.  Some types of tools *e.g.* *Web application" are not licensed, but instead, should have a `Terms of use <>`_ document. 
@@ -488,7 +495,7 @@ Whereas the tool `HMMER3 <https://bio.tools/hmmer3>`_ has multiple functions (on
 In the *Function* tab you specify the functions of the tool, expressed in concepts from the EDAM ontology.
 
 .. csv-table::
-   :header: "Attribute", "Requirement"
+   :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 
    **Operation**,      "**Mandatory** (Web application, Desktop application, Command-line tool)"
@@ -505,13 +512,13 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
 
 * **Operation** describes the basic operation(s) performed by this software function {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
 * **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
-* **Format** is the Allowed format(s) of the input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_}.
+* **Format** is the allowed format(s) of the input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_}.
 
 .. note::  
    You can use **Note** to add a concise comment about this function, if this is not apparent from the software description and EDAM annotations.
 
 .. tip::
-   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `OLS EDAM`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools.  If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.  
+   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `OLS`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools.  If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.  
 
    
 Operation
@@ -532,7 +539,7 @@ Before describing your tools, you should carefully identify the distinct functio
    * **Analyse** - *Analysis* (http://edamontology.org/operation_2945)
    * **Download** - *Data retrieval* (http://edamontology.org/operation_2422)
   
-   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better described as discrete tools in it's own entry (see `<#bio.tools_entries>`_.
+   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better described as discrete tools in it's own entry (see `bio.tools_entries`_.
 
 
   
@@ -559,7 +566,7 @@ Links
 In the *Links* tab you specify miscellaneous links for the tool.
 
 .. csv-table::
-   :header: "Attribute", "Requirement"
+   :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 	    
    **Repository**,           "**Mandatory** (Desktop application, Command-line tool)"
@@ -595,7 +602,7 @@ Download
 In the *Download* tab you specify Links to downloads for the software.
 
 .. csv-table::
-   :header: "Attribute", "Requirement"
+   :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 
    **API specification**,          "**Recommended** (Database portal - with API)"
@@ -690,7 +697,7 @@ Publications
 In the *Publications* tab you specify publications about the software.
 
 .. csv-table::
-   :header: "Attribute", "Requirement"
+   :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 
    **Primary publication**,  **Mandatory** 
@@ -699,7 +706,7 @@ In the *Publications* tab you specify publications about the software.
 Publications are defined as one of the following types:
 
 .. csv-table::
-   :header: "Type", "Description"
+   :header: "TYPE", "DESCRIPTION"
    :widths: 25, 50
 
    **Primary**, "The principal publication about the tool itself; the article to cite when acknowledging use of the tool."
@@ -735,7 +742,7 @@ Credits & Support
 In the *Credits & Support* tab you specify individuals or organisations that should be credited, or may be contacted about the software.
 
 .. csv-table::
-   :header: "Attribute", "Requirement"
+   :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 
    **Primary contact**,  **Mandatory**
@@ -746,7 +753,7 @@ Credits include all type of entities that contributed to the development, mainte
 Creditable entities have one of the following types:
 
 .. csv-table::
-   :header: "Entity type", "Description"
+   :header: "TYPE", "DESCRIPTION"
    :widths: 25, 100
 
    **Person**, "Credit of an individual."
@@ -760,7 +767,7 @@ Creditable entities have one of the following types:
 and also have a "role":
 
 .. csv-table::
-   :header: "Role", "Description"
+   :header: "ROLE", "DESCRIPTION"
    :widths: 25, 100
 	    
    **Developer**, "Author of the original software source code."
