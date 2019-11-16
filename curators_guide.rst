@@ -854,12 +854,9 @@ biotoolsID (relation)
 .....................
 *bio.tools ID of an existing bio.tools entry which this software is related to, e.g. "needle"*
 
-type (relation)
-.....................
-*Type of relation between this and another registered software, e.g. "isNewVersionOf"*
 
 Relation type
--------------
+.............
 *Type of relation between this and another registered software, e.g. "isNewVersionOf"*
 
 .. csv-table::

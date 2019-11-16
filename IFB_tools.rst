@@ -499,40 +499,50 @@ In the *Dwnload* tab you specify Links to downloads for the software.
 
 Documentation
 """""""""""""
-Make your different documentations for your tool available here. Again, you can assign type of documentation using **Documentation type**.
+In the *Documentation* tab you link to documentation about the software.
 
-
-   **API documentation**,         **Mandatory** (Database portal or Web application - with API)
+   **General**,                   **Mandatory**
    **Citation instructions**,     **Mandatory**
+   **API documentation**,         **Mandatory** (Database portal or Web application - with API)
+   **Terms of use**,              "**Mandatory** (Database portal)"
    **Command-line options**,      **Mandatory** (Command-line tool)
    **Contributions policy**,      "**Recommended** (Web application, Desktop application, Command-line tool)"
-   **FAQ**,                       **Optional**
-   **General**,                   **Mandatory**
    **Governance**,                "**Recommended** (Bioinformatics portal, Database portal)"
    **Installation instructions**, "**Recommended** (Desktop application, Command-line tool)"
    **Manual**,                    "**Recommended** (Desktop application)"
    **Release notes**,             "**Recommended** (Desktop application, Command-line tool)"
-   **Terms of use**,              "**Mandatory** (Database portal)"
+   **FAQ**,                       **Optional**
    **Training material**,         **Optional**
    **Tutorial**,                  **Optional**
    **Other**,                     **Optional**
 
-
-* **Citation instructions** give information on how to correctly cite use of the software.
-* **Command-line options** is documentation about the command-line interface to a tool.  <mention command-line specification>
-   "Contributions policy", "Information about policy for making contributions to the software project."
-   "General", "General documentation."
-    "Information about the software governance model."
-**Installation instructions**,    "Instructions how to install the software."
-   **Manual**,                    "Information on how to use the software."
-      **Release notes**, "Notes about a software release or changes to the software; a change log."
-            "Terms of use", "Rules that one must agree to abide by in order to use a service."
+* **General** is for general documentation. If your tool doesn't have a dedicated docs page, but is documented elsewhere (*e.g.* on the homepage or a GitHub README.md) then specify that URL instead.
+* **Citation instructions** give information on how to correctly cite use of the software.  This is especially important where there are multiple relevant `publications <#pubications>`_.
+* **API documentation** is human-readable API documentation.
+* **Terms of use** are rules that one must agree to abide by in order to use a service.
+* **Command-line options** are human-readable documentation about the command-line interface to a tool.  
+* **Contributions policy** is information about policy for making contributions to the software project.
+* **Governance** is information about the software governance model.
+* **Installation instructions** are instructions how to install the software.
+* **Manual** is information on how to use the software, structured into a comprehensive user manual (don't just link here to general documentation).
+* **Release notes** are notes about a software release or changes to the software; a change log.  For example a *CHANGELOG.md* file on GitHub.
 	    
-   API documentation, "Human-readable API documentation."  
 
-   "Training material",        "Online training material such as text on a Web page, a presentation, video, tutorial etc."   
-      "Tutorial", "A tutorial about using the software."
-       "Some other type of documentation not listed in biotoolsSchema."
+.. tip::
+   It's very worthwhile to create **contribution guidelines** to communicate how people should contribute to your open source project.  In GitHub this is done by createing a `*CONTRIBUTING.MD* file <https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors>`_ file.  Lots of good advice, templates and examples are available (*e.g.* `<Atom editor <https://github.com/atom/atom/blob/master/CONTRIBUTING.md>`_, `Ruby on Rails <https://github.com/rails/rails/blob/master/CONTRIBUTING.md>`_ and `Open Government <https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md>`_).
+
+.. tip::
+   A well maintained **change log** wlll make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project.  Fr some great advice, see `keepachangelog.com <a href ="https://keepachangelog.com/en/1.0.0/">`_.
+
+.. note::
+   Command-line tools should always have human-readable description of their interface.  If a machine-readable command-line specification (a file) is also available, then you should link to that in the `Download <#Download>`_ section.
+
+
+..note::   
+  You can use **Tutorial** or **Training material** to provide links to an online tutorial or some other training material such as a presentation or video.
+
+..note::
+  You must not specify a link to a general page where a more specific one is available.  For example, don't link to the homepage in the **General** field if, in fact, there's a dedicated page for documentation. If you want to link to some documentation not of a type listed above then use the **Other** value.
 
 
        
