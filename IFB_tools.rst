@@ -389,7 +389,6 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
 * **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
 * **Format** is the Allowed format(s) of the input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_}.
 
-
 .. note::  
    You can use **Note** to add a concise comment about this function, if this is not apparent from the software description and EDAM annotations.
 
@@ -405,10 +404,31 @@ Before describing your tools, you should carefully identify the distinct functio
 * if in contrast a tool always does one or more things, then you should annotate these as distinct operations within a single function
 * only specify the primary functions and operations, from a typical end-user perspective - tools often do many things to its central, advertised purpose - you don't need to describe everything!
 
+.. tip::
+   *Database portal* usually provide one ore more of a common set of operations:
+
+   * **Browse**  - *no term in EDAM yet*
+   * **Deposit** - *Deposition* (http://edamontology.org/operation_3431)
+   * **Search** - *Database search* (http://edamontology.org/operation_2421)
+   * **Visualise** - *Visualisation* (http://edamontology.org/operation_0337)
+   * **Analyse** - *Analysis* (http://edamontology.org/operation_2945)
+   * **Download** - *Data retrieval* (http://edamontology.org/operation_2422)
+  
+   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better described as discrete tools in it's own entry (see `<#bio.tools_entries>`_.
+
+
+  
 Data
 ^^^^
 * data terms must be correctly associated with the operation(s) (for each function, in case the tool has multiple modes of operation)
 * only specify the primary inputs and outputs, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
+
+.. tip::
+   For *Database portal* the data annotations correspond to the common operations:
+   
+   * For *Deposition* and *Data retrieval* operations, you can associate the types of `data <#data>`_ available for uplooad (input) or download (output).
+   * For *Search* opration, you can specify *Database search results* (http://edamontology.org/data_2080) as an output, or some other more specific term in the `Data subontology <http://edamontology.org/data_0006>`_.
+
 
 Format
 ^^^^^^
@@ -454,7 +474,7 @@ In the *Links* tab you specify miscellaneous links for the tool.
 
 Download
 """"""""
-In the *Dwnload* tab you specify Links to downloads for the software.
+In the *Download* tab you specify Links to downloads for the software.
 
 .. csv-table::
    :header: "Attribute", "Requirement"
@@ -548,20 +568,25 @@ In the *Documentation* tab you link to documentation about the software.
        
 Publications
 """"""""""""
+In the *Publications* tab you specify publications about the software.
+
+
 Share the different publications of the tool, which can be the primary publication (the one to cite when the tool is used), but also
 reviews or secondary references (see **Publication type**). You can use either the **PubMed Central ID** (PMCID), the **PubMed ID** (PMID) or the **Digital Object ID** (DOI) - DOI is preferred.
 
 .. csv-table::
-   :header: "Element", "Description", "Type", "Cardinality"
-   :widths: 25, 50, 50, 100
-	    
-   "pmcid", "PubMed Central Identifier of a publication about the software.", "xs:token (restriction)", "0 or 1"
-   "pmid", "PubMed Identifier.", "xs:token (restriction)", "0 or 1"
-   "doi", "Digital Object Identifier.", "xs:token (restriction)", "0 or 1"
-   "type", "Type of publication.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-type>`__)", "0 or 1"
-   "version", "Version information (typically a version number) of the software applicable to this publication.", "xs:token (restriction)", "0 or 1"
+   :header: "Attribute", "Requirement"
+   :widths: 25, 100
+
+   **Primary publication**,      "**Mandatory** 
 
    
+Publications are defined as one of the following types:
+
+.. csv-table::
+   :header: "Element", "Description", "Type", "Cardinality"
+   :widths: 25, 50, 50, 100
+
    "Primary", "The principal publication about the tool itself; the article to cite when acknowledging use of the tool."
    "Method", "A publication describing a scientific method or algorithm implemented by the tool."
    "Usage", "A publication describing the application of the tool to scientific research, a particular task or dataset."
@@ -569,6 +594,19 @@ reviews or secondary references (see **Publication type**). You can use either t
    "Review", "A publication where the tool was reviewed."
    "Other", "A publication of relevance to the tool but not fitting the other categories."
 
+
+
+   "pmcid", "PubMed Central Identifier of a publication about the software.", "xs:token (restriction)", "0 or 1"
+   "pmid", "PubMed Identifier.", "xs:token (restriction)", "0 or 1"
+   "doi", "Digital Object Identifier.", "xs:token (restriction)", "0 or 1"
+   "type", "Type of publication.", "enum (see `docs <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-type>`__)", "0 or 1"
+   "version", "Version information (typically a version number) of the software applicable to this publication.", "xs:token (restriction)", "0 or 1"
+
+.. note::
+   You should specify a **DOI** for the publication (if available) and do not have to also specify **pmid** and **pmcid**.  If you do so, then be sure to specify multiple IDs for a single publication within a single publication group.
+  
+.. tip::
+   It's very important that your tool has some form of publication, if for no other reason than to make it citable.  If you don't have a publication in the scientific press, then you can use `Zenodo <https://zenodo.org/>`_ to create a DOI for this purpose.  Such a DOI should resolve to a page describing the tool. For example http://doi.org/10.5281/zenodo.3519603. 
 
 Credits & Support
 """""""""""""""""
