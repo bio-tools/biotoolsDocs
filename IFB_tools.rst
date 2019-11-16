@@ -261,7 +261,7 @@ All tools in the IFB catalogue must have at least a minimal description, *i.e.* 
 ---------------------------   
 
 bio.tools enries
-################
+""""""""""""""""
 
 .. important::
    Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform. Be sure to understand:
@@ -275,14 +275,14 @@ Plan whether new entries (if any) are required to adequately describe your tools
 * A discrete tool - one which is clearly an individual distinct entity - should have it's own entry. This is the case for most *command-line tools* and *desktop applications*.
 * *bio.tools* aims to catalogue *unique* tool functionality. Different implementations but with esesentially the same functionality can be described by a single entry, *e.g.* a command-line tool that is later adapted into an R package for the Bioconductor suite, or which is served online via a Galaxy server.
 * In some cases, *e.g.* complex software packages, it's not obvious whether to have one or multiple entries. Pick the option which mostly clearly illustrates the tool's functionality to end-users.
-* Tool collections should be described by multiple entries. For example, an entry to describe a *suite*, and multple other entries to describe the individual tools within that suite. 
-* Software with multiple interfaces should be described by a single entry. For example, a *command-line tool* whose functionality is also available via a *web application*, or a *database portal* with a *web API*.
-* Many *database portals* provide multiple interfaces for the typical database functions (browse, deposit, search, visualise, analyse and download).  Usually one entry will suffice, but sometimes multiple entries are better, *e.g.* where there are multiple analysis tools.
+* Tool collections should be described by multiple entries. For example, one entry to describe a *suite*, and multple other entries to describe the individual tools within that suite. 
+* Software with multiple interfaces should be described by a single entry, assuming these interfaces have essentially the same functionality. For example, a *command-line tool* whose functionality is also available via a *web application*, or a *database portal* with a *web API*.
+* Many *database portals* provide the typical database functions (browse, deposit, search, visualise, analyse and download), often in different interface components.  Usually one entry will suffice, but sometimes multiple entries are better, especially where the portal provides multiple analytical functions under different interfaces.
 * For very complex entities such as *Bioinformatics portals*, do not try to describe everything in a single entry.  Use a single entry for the portal, and multiple other entries for the things aggregated by the portal.
  
 
 Familiarise yourself with EDAM
-##############################
+""""""""""""""""""""""""""""""
 .. _Familiarise_yourself_with_EDAM:
 The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain it serves, specific operations it performs, types of input and output data, and supported data formats.
 
