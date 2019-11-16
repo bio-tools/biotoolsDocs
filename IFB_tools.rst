@@ -55,7 +55,7 @@ To see whether a tool is already registered, search for it by its name. Simply t
 .. image:: _static/find_tool.png
 
 
-Once you find your entry you can go ahead and `update <#updating-entries>`_ it.  If you can't find the entry, you'll need to `create <#creating_entries>`_ it. 
+Once you find your entry you can go ahead and `update <#updating-entries>`_ it.  If you can't find the entry, you'll need to `create <#creating-entries>`_ it. 
 
 .. important::
    All tools that were submitted for consideration in the ELIXIR FR Service Delivery Plan should already be registered, but may have only very basic details. You will need to take ownerhsip and improve the entries.  Before starting work, please ensure you understand the `information requirement <#understand-the-information-requirement>`_ and follow the `guidelines <#describe-your-tools>`_  below.
@@ -150,7 +150,7 @@ bio.tools
 The IFB catalogue
 """""""""""""""""
 
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#describe_your_tools>`_ below.
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#describe-your-tools>`_ below.
 
 
 Updating entries
@@ -242,7 +242,7 @@ bio.tools
 The IFB catalogue
 """""""""""""""""
 
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#describe_your_tools>`_ that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the `guidelines <#describe-your-tools>`_ that follow, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
 
 * **Mandatory** attributes **MUST** be specified.
 * **Recommended** attributes **SHOULD** be specified, but are not strictly required.
@@ -254,7 +254,7 @@ The information requirement of the IFB catalogue is more demanding than *bio.too
 All tools in the IFB catalogue must have at least a minimal description, *i.e.* all *mandatory* attributes are specified. Tool providers are encouraged to provide an enhanced description which also includes all of the *recommended* attributes.
    
 .. note::
-   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `guidelines <#describe_your_tools>`_ below cover everything in more detail, and go through the curation process in a step-by-step way.
+   The above diagram is intended to give a quick overview of the information requirement.  Only the main types of tool and most important attributes are shown.  The `guidelines <#describe-your-tools>`_ below cover everything in more detail, and go through the curation process in a step-by-step way.
 
 
 4. Plan your curation work
@@ -594,7 +594,7 @@ In the *Links* tab you specify miscellaneous links for the tool.
 * **Helpdesk** is a formal system (*e.g.* ticket system) where users can get support in using the software.
 
 .. note::
-   It's strongly recommended to put your source code and other downloadable resources in a public repository such as `GitHub <https://github.com/>`_.  It takes little effort to do so. A repo can serve as a homepage for your tool, and provide an issue tracker and open forum for discussion. If you don't have a repo, you should at least provide a `downloads page <#downlad>`_.
+   It's strongly recommended to put your source code and other downloadable resources in a public repository such as `GitHub <https://github.com/>`_.  It takes little effort to do so. A repo can serve as a homepage for your tool, and provide an issue tracker and open forum for discussion. If you don't have a repo, you should at least provide a `downloads page <#download>`_.
   
 
 Download
