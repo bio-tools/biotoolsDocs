@@ -233,6 +233,7 @@ A sample JSON document may look like this:
            "pmid": "21959131",
            "pmcid": "21959131",
            "type": "Primary",
+           "note": "A comment goes here",
            "version": "1.4"
         },
         {
@@ -240,6 +241,7 @@ A sample JSON document may look like this:
            "pmid": "21959131",
            "pmcid": "21959131",
            "type": "Other",
+           "note": "A comment goes here",
            "version": "1.4"
         }
       ],
@@ -1883,6 +1885,11 @@ Publication object definition
 	  - ``Comparison``
 	  - ``Review``	    
 	  - ``Other``
+    * note
+        * Required: No
+	* Cardinality: 0 or 1
+        * Type: String
+        * Restrictions: min length: 10, max length: 1000
     * version
         * Required: No
 	* Cardinality: 0 or 1
@@ -1900,6 +1907,7 @@ Publication object definition
    <pmid>21959131</pmid>
    <doi>10.1038/nmeth.1701</doi>
    <type>Primary</type>
+   <note>A comment goes here</type>
    <version>4.0</version>
   </publication>
 		
@@ -1911,6 +1919,7 @@ Publication object definition
       "pmid": "21959131",
       "doi": "10.1038/nmeth.1701",
       "type": "Primary",
+      "note": "A comment goes here",
       "version": "4.0"
     }
   ]

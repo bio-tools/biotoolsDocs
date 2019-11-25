@@ -913,6 +913,13 @@ Publication type
    "Review", "A publication where the tool was reviewed."
    "Other", "A publication of relevance to the tool but not fitting the other categories."
 
+Note (publication)
+.............
+*A comment about the publication, e.g. "A comparison of the software to others performing a similar function."*
+
+- **1.** **SHOULD** be concise and acurate, elaborating on the motivation, purpose *etc.* of the publication
+- **2.** **SHOULD NOT** duplicate information that is, or can, be provided via the ``type`` or other attributes, *i.e.* do not specify "Review article", "Cite this where the software is used" *etc.*
+   
 Version (publication)
 .....................
 *Version information (typically a version number) of the software applicable to this publication.*

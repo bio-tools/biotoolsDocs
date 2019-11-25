@@ -636,6 +636,7 @@ and can have the following attributes defined:
    **pmcid**, "PubMed Central Identifier of a publication about the software."
    **pmid**, "PubMed Identifier."
    **doi**, "Digital Object Identifier."
+   **note**, "Comment about the publication."
    **version**, "Version information (typically a version number) of the software applicable to this publication." 
 
 
