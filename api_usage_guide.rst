@@ -1563,6 +1563,7 @@ Link object definition
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#linktype>`_)
 	  
 	  - ``Discussion forum``
+	  - ``Galaxy service``
 	  - ``Helpdesk``
 	  - ``Issue tracker``
 	  - ``Mailing list``

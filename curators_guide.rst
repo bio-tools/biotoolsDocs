@@ -699,6 +699,7 @@ Link type
    :widths: 25, 100
 
    "Discussion forum", "Online forum for user discussions about the software."
+   "Galaxy service", "An online service providing the tool through the Galaxy platform."
    "Helpdesk", "Helpdesk providing support in using the software."
    "Issue tracker", "Tracker for software issues, bug reports, feature requests etc."
    "Mailing list", "Mailing list for the software announcements, discussions, support etc."
