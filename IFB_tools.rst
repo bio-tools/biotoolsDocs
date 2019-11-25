@@ -570,6 +570,7 @@ In the *Documentation* tab you link to documentation about the software.
    **Installation instructions**, "**Recommended** (Desktop application, Command-line tool)"
    **Manual**,                    "**Recommended** (Desktop application)"
    **Release notes**,             "**Recommended** (Desktop application, Command-line tool)"
+   **Code of conduct**,           **Optional**
    **FAQ**,                       **Optional**
    **Training material**,         **Optional**
    **Tutorial**,                  **Optional**

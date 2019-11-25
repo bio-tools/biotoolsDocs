@@ -818,6 +818,7 @@ Documentation type
 		
    "API documentation", "Human-readable API documentation."
    "Citation instructions", "Information on how to correctly cite use of the software."
+   "Code of conduct", "A set of guidelines or rules outlining the norms, expectations, responsibilities and proper practice for individuals working within the software project."
    "Command-line options", "Information about the command-line interface to a tool."
    "Contributions policy", "Information about policy for making contributions to the software project."
    "FAQ", "Frequently Asked Questions (and answers) about the software."

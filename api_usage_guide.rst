@@ -1728,6 +1728,7 @@ Documentation object definition
 
 	  - ``API documentation``
 	  - ``Citation instructions``
+	  - ``Code of conduct``	    
 	  - ``Command-line options``
     	  - ``Contributions policy``
 	  - ``FAQ``
@@ -1819,7 +1820,7 @@ Relation object definition
   <relation>
    <biotoolsID>needle</biotoolsID>
    <type>isNewVersionOf</type>
-  </documentation>
+  </relation>
   
   # JSON		
   "relation":
