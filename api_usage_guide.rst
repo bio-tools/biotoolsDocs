@@ -252,6 +252,7 @@ A sample JSON document may look like this:
             "email": "test@email.com",
             "url": "http://someurl.org",
             "orcidid": "test",
+            "gridid": "test",
             "typeEntity": "Person",
             "typeRole": "Developer",
             "note": "A comment goes here"
@@ -1953,11 +1954,16 @@ Credit object definition
 	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: min length: 1, max length: 100
-    * orcidId
+    * orcidid
         * Required: No
 	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: pattern: http://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}
+    * gridid
+        * Required: No
+	* Cardinality: 0 or 1
+        * Type: String
+        * Restrictions: pattern: grid.[0-9]{4,}.[a-f0-9]{1,2} 
     * email
         * Required: No
 	* Cardinality: 0 or 1
@@ -2006,7 +2012,8 @@ Credit object definition
   # XML
   <credit>
    <name>TN Petersen</name>
-   <orcidId>http://orcid.org/0000-0002-1825-0097</orcidId>
+   <orcidid>http://orcid.org/0000-0002-1825-0097</orcidid>
+   <gridid>grid.5170.3</orcidid>
    <email>test@cbs.dtu.dk</email>
    <url>http://cbs.dtu.dk</url>
    <typeEntity>Person</typeEntity>
@@ -2020,7 +2027,8 @@ Credit object definition
   [
     {
       "name": "TN Petersen",
-      "orcidId":"http://orcid.org/0000-0002-1825-0097",
+      "orcidid":"http://orcid.org/0000-0002-1825-0097",
+      "gridid":"grid.5170.3",
       "url": "http://cbs.dtu.dk",
       "email": "test@cbs.dtu.dk",
       "typeEntity": "Person",

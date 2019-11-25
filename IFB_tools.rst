@@ -704,6 +704,7 @@ For any credit, you can specify and of the following:
 
    **name**, "Name of the entity that is credited."
    **orcidid**, "Unique identifier (ORCID iD) of a person that is credited."
+   **gridid**, "Unique identifier (GRID ID) of an organisation that is credited."
    **email**, "Email address."
    **url**, "URL, e.g. homepage of an institute."
    **tel**, "Telephone number."
@@ -716,6 +717,9 @@ For any credit, you can specify and of the following:
 
 .. note::
    It's strongly recommended that if you (or other people to be credited) don't have an `ORCID iD <https://orcid.org/>`_, that you get one now.  ORCID provides a persistent digital identifier that distinguishes you from every other researcher and, through integration in key research workflows such as manuscript and grant submission, supports automated linkages between you and your professional activities ensuring that your work is recognized.
+
+.. note::
+   Nearly all organisations credited in *bio.tools* will have a `GRID ID <https://www.grid.ac/>`_.  The Global Research Identifier Database (GRID) provides unambiguous institutional information at persistent IDs, to ensure data consistency.
   
 
 Relations

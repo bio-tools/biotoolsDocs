@@ -957,7 +957,17 @@ ORCID ID
 - **1.** **MUST** correctly identify a credited person
 
 .. note::
-   Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/. 
+   Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see http://orcid.org/.
+
+  
+GRID ID
+........
+*Unique identifier (GRID ID) of an organisation that is credited, e.g. "grid.5170.3"*
+
+- **1.** **MUST** correctly identify a credited organisation
+
+.. note::
+   Global Research Identifier Database IDs (GRID IDs) provide a persistent reference to information on an organisation, see https://www.grid.ac/.    
 
 
 Email
