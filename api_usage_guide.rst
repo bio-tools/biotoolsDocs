@@ -1071,6 +1071,7 @@ Type
   ENUM (list)
 
 Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_)
+  - ``Bioinformatics portal``
   - ``Command-line tool``
   - ``Database portal``
   - ``Desktop application``

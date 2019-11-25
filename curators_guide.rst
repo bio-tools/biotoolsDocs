@@ -381,7 +381,8 @@ Tool type
 .. csv-table::
    :header: "Type", "Description"
    :widths: 25, 100
-      
+
+   "Bioinformatics portal", " web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."	    
    "Command-line tool", "A tool with a text-based (command-line) interface."
    "Database portal", "A Web application, suite or workbench providing a portal to a biological database."
    "Desktop application", "A tool with a graphical user interface that runs on your desktop environment, *e.g.* on a PC or mobile device."
@@ -1035,6 +1036,13 @@ Note (credit)
   
 Tool type guidelines
 --------------------
+
+Bioinformatics portal
+^^^^^^^^^^^^^^^^^^^^^
+**A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on.**
+
+- pick one or more `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the portal content. 
+- consider carefully whether the portal will be described by a single, or more than one *bio.tools* entry (see `Before you start <http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start>`_).  Where the portal aggregates one or more discrete tools (web applications), databases *etc.*, it is recommended to register these as separate entries.  
 
 .. _commandlinetool:
 
