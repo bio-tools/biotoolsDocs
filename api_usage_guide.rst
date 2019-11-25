@@ -1962,6 +1962,7 @@ Credit object definition
 	* Cardinality: 0 or 1
         * Type: String
         * Restrictions: pattern: http://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}
+        * Restrictions: pattern: https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}	  
     * gridid
         * Required: No
 	* Cardinality: 0 or 1
