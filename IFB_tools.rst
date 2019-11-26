@@ -169,8 +169,8 @@ The above diagram is intended to give a quick overview of the information requir
 4. Plan your curation work
 --------------------------   
 
-bio.tools enries
-""""""""""""""""
+bio.tools entries
+"""""""""""""""""
 
 .. important::
    Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform. Be sure to understand:
@@ -426,15 +426,17 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
                    ,   "**Recommended** (Web application, Desktop application)"
    **Output->format**, "**Recommended** (Command-line tool)"
 
-* **Operation** describes the basic operation(s) performed by this software function. See `below <#tool-type>`_   {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
-* **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
-* **Format** is the allowed format(s) of the input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_}.
+* **Operation** describes the basic operation(s) performed by this software function. See `below <#operation>`_   {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
+* **Data** is a type of primary input or output data. See `below <#data>`_  {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
+* **Format** is the allowed format(s) of the input or output data. See `below <#format>`_  {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data>`_}.
 
 .. note::  
    You can use **Note** to add a concise comment about this function, if this is not apparent from the software description and EDAM annotations.
 
 .. tip::
-   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them. It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `OLS`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools.  If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.  
+   When deciding how to describe your tools, in terms of *bio.tools* entries, their functions and operations, always keep the end-user in mind and try to describe your tools in a way that will be clear to them.
+
+   It can be difficult to find the right terms to describe a tools operation(s), input(s) or output(s).  It's highly recommended to use `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to describe the function, and carefully copy-paste the JSON ouput (in the bottom pane of the window) into the *JSON* tab of the *bio.tools* `editing interface <#bio-tools-editing-interface>`_.  Or use the `OLS`_, `BioPortal`_ or `EDAM Browser`_ alongside *bio.tools* when describing your tools.  If you're not sure, mail `registry-support <mailto:registry-support@elixir-dk.org>`_ for help.  
 
    
 Operation
@@ -443,7 +445,7 @@ Before describing your tools, you should carefully identify the distinct functio
 
 * if a tool has an option between doing one thing or another, then you should annotate the operations as distinct functions
 * if in contrast a tool always does one or more things, then you should annotate these as distinct operations within a single function
-* only specify the primary functions and operations, from a typical end-user perspective - tools often do many things to its central, advertised purpose - you don't need to describe everything!
+* only specify the primary functions and operations, from a typical end-user perspective - tools often do many other things than its central, advertised purpose - you don't need to describe everything!
 
 .. tip::
    *Database portal* usually provide one ore more of a common set of operations:
@@ -455,31 +457,31 @@ Before describing your tools, you should carefully identify the distinct functio
    * **Analyse** - *Analysis* (http://edamontology.org/operation_2945)
    * **Download** - *Data retrieval* (http://edamontology.org/operation_2422)
   
-   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better listed as functions of discrete tools described in their own own entries (see `bio.tools entries <#bio-tools-entries>`_.
+   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better listed as functions of discrete tools described in their own own entries (see `bio.tools entries <#bio-tools-entries>`_).
 
 
   
 Data
 ^^^^
-* data terms must be correctly associated with the operation(s) (for each function, in case the tool has multiple modes of operation)
+* data terms must be correctly associated with the operation(s) 
 * only specify the primary inputs and outputs, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
 
 .. tip::
-   For *Database portal* the data annotations correspond to the common operations:
+   For *Database portal*:
    
-   * For *Deposition* and *Data retrieval* operations, you can associate the types of `data <#data>`_ available for upload (input) or download (output).
-   * For *Search* operation, you can specify *Database search results* (http://edamontology.org/data_2080) as an output, or some other more specific term in the `EDAM Data <http://edamontology.org/data_0006>`_ subontology.
+   * for *Deposition* and *Data retrieval* operations, you can associate the types of `data <#data>`_ available for upload (input) or download (output).
+   * for *Search* operation, you can specify *Database search results* (http://edamontology.org/data_2080) as an output, or some other more specific term in the `EDAM Data <http://edamontology.org/data_0006>`_ subontology.
 
 
 Format
 ^^^^^^
-* format terms must be correctly associated with the data type of an input or output
-* specify the most widely used of the supported data formats (it can be impractical / onerous to be exhaustive!)
+* format terms must be correctly associated with an input or output data type
+* specify the most widely used of the supported data formats - it can be impractical / onerous to be exhaustive!
 
 
 Links
 """""
-In the *Links* tab you specify miscellaneous links for the tool.
+In the *Links* tab you specify miscellaneous links for the tool.  The type of information obtained when resolving the link is specified by *Link type*:
 
 .. csv-table::
    :header: "ATTRIBUTE", "REQUIREMENT"
@@ -490,7 +492,7 @@ In the *Links* tab you specify miscellaneous links for the tool.
    **Issue tracker**,        "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
    **Helpdesk**,             "**Recommended** (Database portal)"
    
-* **Repository** is where source code, data and other files may be downloaded.
+* **Repository** is where source code, data and other files may be downloaded, *e.g.* a GitHub repo, or an FTP site.
 * **Mailing list** is for software announcements, discussions, support *etc.*
 * **Issue tracker** is for software issues, bug reports, feature requests *etc.*
 * **Helpdesk** is a phone line, web site or email-based system providing help to the end-user of the software.
@@ -520,24 +522,24 @@ In the *Download* tab you specify links to downloads for your software.
    **Test data**,                  "**Recommended** (Desktop application, Command-line tool)"
    **Test script**,                "**Recommended** (Command-line tool)"   
 
-* **Source code** should trigger a download of the *latest* source code.
-* **Binaries** should trigger a download of the *latest* version available (typically the latest stable version).
+* **Source code** should trigger a download of the *latest* source code available (typically the latest stable version)
+* **Binaries** should trigger a download of the *latest* binaries available 
 * **Software package** should trigger a download of the *latest* software package.  
 * **Downloads page** is a Web page summarising general downloads available for the software.
-* **API specification** is a file providing a machine-readable API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.  It's *not* for human-readable API documentation (see `documentation <#documentation>`_ for that).
+* **API specification** is a file providing a machine-readable API specification for the software, *e.g.* Swagger/OpenAPI, WSDL or RAML file.  It's *not* for human-readable API documentation (see `documentation <#documentation>`_ for that).
 * **Test data** is data for testing the software is working correctly.
 * **Test script** is a script used for testing testing whether the software is working correctly.
 
   
 .. tip::
-   With the exception of **Downloads page**, the expectation is that a link annotated in the *Download* section will trigger a download of a file.  If you're adding a link which doesn't have this behaviour, you should see whether an attribute in the `Link <#Links>`_ section is more appropriate.
+   With the exception of **Downloads page**, the expectation is that a link annotated in the *Download* section will trigger a download of a file.  If you're adding a link which doesn't have this behaviour, you should see whether an attribute in the `Links <#links>`_ section is more appropriate.
 
-.. note:: **Command-line specification** and **API specification** are files providing a machine-readable specification of the command line or API, for the software. These are *not* used for the typical human-readable documentation (see `documentation <#documentation>`_ for that).
+.. note:: **Command-line specification** and **API specification** are files providing a machine-readable specification of the command line or API, for the software. These are *not* used for the typical human-readable documentation (see `Documentation <#documentation>`_ for that).
    
 
 Documentation
 """""""""""""
-In the *Documentation* tab you link to documentation about the software.
+In the *Documentation* tab you link to documentation about the software:
 
 .. csv-table::
    :header: "TYPE", "REQUIREMENT"
@@ -555,10 +557,10 @@ In the *Documentation* tab you link to documentation about the software.
    **Release notes**,             "**Recommended** (Desktop application, Command-line tool)"
 
 * **General** is for general documentation. If your tool doesn't have a dedicated documentation page, but is documented elsewhere (*e.g.* on the homepage or a GitHub README.md) then specify that URL instead.
-* **API documentation** is human-readable API documentation, and should be specified for many *Database portals* and some *Web applications*.
-* **Terms of use** are rules that one must agree to abide by in order to use a service.
+* **API documentation** is human-readable API documentation, and should be specified for any *Database portal* or *Web application* with an API. 
+* **Terms of use** are rules that one must agree to abide by in order to use a service.  Note, this is different to `License <#license>`_!
 * **Command-line options** are human-readable documentation about the command-line interface of a tool.  
-* **Citation instructions** give information on how to correctly cite use of the software; typically which publication(s) to cite, or something more general, e.g. a form of words to use.  This is especially important where there are multiple relevant `publications <#publications>`_.
+* **Citation instructions** give information on how to correctly cite use of the software; typically which publication(s) to cite, or something more general, e.g. a form of words to use.  This is especially important where there are multiple relevant `publications <#id39>`_.
 * **Contributions policy** is information about policy for making contributions to the software project.
 * **Training material** is an online training material such as a tutorial, a presentation, video *etc*.
 * **Installation instructions** are instructions how to install the software.
@@ -573,17 +575,17 @@ In the *Documentation* tab you link to documentation about the software.
    A well maintained **change log** wlll make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project.  For some great advice, see `keepachangelog.com <a href ="https://keepachangelog.com/en/1.0.0/">`_.
 
 .. note::
-   Command-line tools should always have a human-readable description of their **command-line options**.  Similarly, an API on a *Database portal* or *Web application* should have a human-readable description of their API.  If machine-readable command-line or API specifications (files) are also available, then you should link to that in the `Download`_ section.
+   Command-line tools should always have a human-readable description of their **command-line options**.  Similarly, an API on a *Database portal* or *Web application* should have a human-readable description of their API.  If machine-readable command-line or API specifications (files) are also available, then you should link to those in the `Download`_ section.
 
 .. important::
-   You must not specify a link to a general page where a more specific one is available.  For example, don't link to the homepage in the **General** field if, in fact, there's a dedicated page for documentation. If you want to link to some documentation not of a type listed above then use the **Other** value.
+   You must not specify a link to a general page where a more specific one is available.  For example, don't link to the homepage in the **General** field if, in fact, there's a dedicated page for documentation. If you want to link to some documentation not of a type supported by biotoolsSchema, then use the **Other** value.
 
 
 
        
 Publications
 """"""""""""
-In the *Publications* tab you specify publications about the software.
+In the *Publications* tab you specify publications about the software:
 
 .. csv-table::
    :header: "ATTRIBUTE", "REQUIREMENT"
@@ -622,15 +624,17 @@ and can have the following attributes defined:
 * Specify at least the primary publication for your tool, and ideally any others that are relevant.
 * Pick one or more types for each publication, as applicable.
    
-.. note::
-   You should specify **DOI** for publications (if available) and do not have to also specify **pmid** and **pmcid**.  If you do so, then be sure to specify multiple IDs for a single publication within a single publication group.  You can ignore **version**.
-  
 .. tip::
+   You should specify **DOI** for publications (if available) and do not have to also specify **pmid** and **pmcid**.  If you do so, then be sure to specify multiple IDs for a single publication within a single publication group.
+
+   You can ignore **note** and **version**.
+  
+.. note::
    It's very important that your tool has some form of publication, if for no other reason than to make it citable.  If you don't have a publication in the scientific press, then you can use `Zenodo <https://zenodo.org/>`_ to create a DOI for this purpose.  Such a DOI should resolve to a page describing the tool. For example http://doi.org/10.5281/zenodo.3519603. 
 
 Credits & Support
 """""""""""""""""
-In the *Credits & Support* tab you specify individuals or organisations that should be credited, or may be contacted about the software.  Credits include all type of entities that contributed to the development, maintenance or provision of the resource.   
+In the *Credits & Support* tab you specify individuals or organisations that should be credited, or may be contacted about the software.  Credits include all type of entities that contributed to the development, maintenance or provision of the resource:
 
 .. csv-table::
    :header: "ATTRIBUTE", "REQUIREMENT"
@@ -658,7 +662,7 @@ Creditable entities have one of the following types:
    **Funding agency**, "Credit of a legal entity providing funding for development of the software or provision of an online service."
 
 
-and also have a "role":
+and also have a role:
 
 .. csv-table::
    :header: "ROLE", "DESCRIPTION"
@@ -685,7 +689,7 @@ It's recommended to specify:
 * A credit of role **Maintainer** with one ore more applicable types
 
 
-For any credit, you can specify and of the following:
+For any credit, you can specify any of the following:
 
 .. csv-table::
    :header: "Attribute", "Description"
@@ -702,7 +706,7 @@ For any credit, you can specify and of the following:
    **note**, "A comment about the credit."
    
 .. important::
-   A credit can have multipe **role**.  When creating a credit, pick all of the **role** that apply; don't create duplicate credit groupings!
+   A credit can have multipe **role**.  When creating a credit, pick all of the roles that apply; don't create duplicate credit groupings!
 
 .. note::
    It's strongly recommended that if you (or other people to be credited) don't have an `ORCID iD <https://orcid.org/>`_, that you get one now.  ORCID provides a persistent digital identifier that distinguishes you from every other researcher and, through integration in key research workflows such as manuscript and grant submission, supports automated linkages between you and your professional activities ensuring that your work is recognized.
@@ -735,11 +739,11 @@ You can ignore this for now, except:
 	    
 JSON
 """"
-In the *JSON* tab you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see the section on `EDAM <Familiarise-yourself-with-EDAM>`_.)
+In the *JSON* tab you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see the section on `EDAM <#familiarise-yourself-with-edam>`_.)
 
 Permissions
 """""""""""
-In the *Permissions* tab you can decide to make the entry either editable only by yourself, a list of users or anyone.  See the section on *bio.tools* `accounts <Get-a-bio-tools-account>`_.
+In the *Permissions* tab you can decide to make the entry either editable only by yourself, a list of users or anyone.  See the section on *bio.tools* `accounts <#Get-a-bio-tools-account>`_.
 
 
 
