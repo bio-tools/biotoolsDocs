@@ -362,7 +362,7 @@ License
 All downloadable software should be licensed.  If you can't find your license in the list:
 
 * use *Proprietary* in cases where the software is under some license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license!
-- use *Freeware* for software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission.  
+* use *Freeware* for software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission.  
 * use *Other* if the software is available under a license not listed by biotoolsSchema and which is not *Proprietary* - please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.
 * use *Not licensed* for software which is not licensed and is not *Proprietary* (this is bad - license your software!)
 
@@ -485,7 +485,9 @@ In the *Links* tab you specify miscellaneous links for the tool.
 * **Issue tracker** is for software issues, bug reports, feature requests *etc.*
 * **Helpdesk** is a phone line, web site or email-based system providing help to the end-user of the software.
 
-* pick all of the types that apply to a given link
+
+.. tip::
+   A single link might resolve to a page containing information of more than one type; in these cases pick all of the types that apply!
   
 .. note::
    It's strongly recommended to put your source code and other downloadable resources in a public repository such as `GitHub <https://github.com/>`_.  It takes little effort to do so. A repo can serve as a homepage for your tool, and provide an issue tracker and open forum for discussion. If you don't have a repo, you should at least provide a `downloads page <#download>`_.
@@ -552,21 +554,20 @@ In the *Documentation* tab you link to documentation about the software.
 * **Installation instructions** are instructions how to install the software.
 * **User manual** is information on how to use the software, structured into a comprehensive user manual (don't just link here to general documentation).
 * **Release notes** are notes about a software release or changes to the software (a change log).  For example a CHANGELOG.md file on GitHub.
-	    
-* pick all of the types that apply to a given page of documentation
-  
-.. tip::
-   It's very worthwhile to create **contribution guidelines** to communicate how people should contribute to your open source project.  In GitHub this is done by createing a `CONTRIBUTING.MD <https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors>`_ file.  Lots of good advice, templates and examples are available (*e.g.* `Atom editor <https://github.com/atom/atom/blob/master/CONTRIBUTING.md>`_, `Ruby on Rails <https://github.com/rails/rails/blob/master/CONTRIBUTING.md>`_ and `Open Government <https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md>`_).
 
-.. tip::
+
+
+.. note::
+   You should create **contribution guidelines** to communicate how people should contribute to your open source project.  In GitHub this is done by createing a `CONTRIBUTING.MD <https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors>`_ file.  Lots of good advice, templates and examples are available (*e.g.* `Atom editor <https://github.com/atom/atom/blob/master/CONTRIBUTING.md>`_, `Ruby on Rails <https://github.com/rails/rails/blob/master/CONTRIBUTING.md>`_ and `Open Government <https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md>`_).
+
    A well maintained **change log** wlll make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project.  For some great advice, see `keepachangelog.com <a href ="https://keepachangelog.com/en/1.0.0/">`_.
 
 .. note::
    Command-line tools should always have a human-readable description of their **command-line options**.  Similarly, an API on a *Database portal* or *Web application* should have a human-readable description of their API.  If machine-readable command-line or API specifications (files) are also available, then you should link to that in the `Download`_ section.
 
-
 .. important::
    You must not specify a link to a general page where a more specific one is available.  For example, don't link to the homepage in the **General** field if, in fact, there's a dedicated page for documentation. If you want to link to some documentation not of a type listed above then use the **Other** value.
+
 
 
        
@@ -667,6 +668,7 @@ You must specify at least:
 * A credit of role **Primary contact** with an applicable type.  You can opt to give more than one primary contact, for example specifing one for a project and another for a person.
 
 It's recommended to specify:
+
 * A credit of type **Institute** with one ore more applicable roles
 * A credit of type **Funding agency**
 * A credit of role **Developer** with one ore more applicable types
