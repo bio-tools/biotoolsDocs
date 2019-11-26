@@ -503,6 +503,8 @@ In the *Links* tab you specify miscellaneous links for the tool.
 * **Mailing list** is for software announcements, discussions, support *etc.*
 * **Helpdesk** is a formal system (*e.g.* ticket system) where users can get support in using the software.
 
+* pick all of the types that apply to a given link
+  
 .. note::
    It's strongly recommended to put your source code and other downloadable resources in a public repository such as `GitHub <https://github.com/>`_.  It takes little effort to do so. A repo can serve as a homepage for your tool, and provide an issue tracker and open forum for discussion. If you don't have a repo, you should at least provide a `downloads page <#download>`_.
   
@@ -548,6 +550,8 @@ In the *Download* tab you specify links to downloads for your software.
 * **Source code** and **Source package** should trigger a download of the *latest* source code.
 * **Downloads page** is a Web page summarising general downloads available for the software.
 
+
+  
 .. tip::
    With the exception of **Downloads page**, the expectation is that a link annotated in the *Download* section will trigger a download of a file.  If you're adding a link which doesn't have this behaviour, you should see whether an attribute in the `Link <#Links>`_ section is more appropriate.
 
@@ -587,7 +591,8 @@ In the *Documentation* tab you link to documentation about the software.
 * **Manual** is information on how to use the software, structured into a comprehensive user manual (don't just link here to general documentation).
 * **Release notes** are notes about a software release or changes to the software (a change log).  For example a CHANGELOG.md file on GitHub.
 	    
-
+* pick all of the types that apply to a given page of documentation
+  
 .. tip::
    It's very worthwhile to create **contribution guidelines** to communicate how people should contribute to your open source project.  In GitHub this is done by createing a `CONTRIBUTING.MD <https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors>`_ file.  Lots of good advice, templates and examples are available (*e.g.* `Atom editor <https://github.com/atom/atom/blob/master/CONTRIBUTING.md>`_, `Ruby on Rails <https://github.com/rails/rails/blob/master/CONTRIBUTING.md>`_ and `Open Government <https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md>`_).
 
@@ -595,7 +600,7 @@ In the *Documentation* tab you link to documentation about the software.
    A well maintained **change log** wlll make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project.  For some great advice, see `keepachangelog.com <a href ="https://keepachangelog.com/en/1.0.0/">`_.
 
 .. note::
-   Command-line tools should always have human-readable description of their interface.  If a machine-readable command-line specification (a file) is also available, then you should link to that in the `Download`_ section.
+   Command-line tools should always have a human-readable description of their **command-line options**.  If a machine-readable command-line specification (a file) is also available, then you should link to that in the `Download`_ section.
 
 
 .. important::

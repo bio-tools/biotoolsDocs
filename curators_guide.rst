@@ -694,7 +694,8 @@ Link type
 
 - **1.** **MUST** acurately specify the type of information available at the link, in terms from a controlled vocabulary (see below)
 - **2.** **MUST** use type "Other" if another, more specific type is not available  
-  
+- **3.** **SHOULD** specify all the types that are applicable
+
 .. csv-table::
    :header: "Link type", "Description"
    :widths: 25, 100
@@ -813,6 +814,7 @@ Documentation type
 
 - **1.** **MUST** acurately specify the type of documentation available at the link, in terms from a controlled vocabulary (see below)
 - **2.** **MUST** use type "Other" if another, more specific type is not available
+- **3.** **SHOULD** specify all the types that are applicable
 
 .. csv-table::
    :header: "Documentation type", "Description"
@@ -880,7 +882,7 @@ Publication group
 - **1.** **MUST** correctly identify a relevant publication
 - **2.** **MUST** specify multiple IDs for a single publication within a single publication group
 - **3.** **SHOULD** specify a DOI (if available) (in preference to PMID and PMCID)
-- **4.** **MAY** specify a one or more types that match the publication
+- **4.** **MAY** specify one or more types that match the publication
 
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#publication>`_.
@@ -905,6 +907,7 @@ Publication type
 *Type of publication, e.g. "Primary"*
 
 - **1.** **MUST** acurately specify the type of publication, in terms from a controlled vocabulary (see below)
+- **2.** **SHOULD** specify all the types that are applicable
 
 .. csv-table::
    :header: "Publication type", "Description"
