@@ -1740,7 +1740,6 @@ Documentation object definition
 	  - ``Terms of use``
 	  - ``Release notes``
 	  - ``Training material``
-	  - ``Tutorial``	    
 	  - ``Other``
     * note
         * Required: No

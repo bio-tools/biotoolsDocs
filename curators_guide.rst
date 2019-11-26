@@ -829,8 +829,7 @@ Documentation type
    "User manual ", "Information on how to use the software, tailored to the end-user."
    "Release notes", "Notes about a software release or changes to the software; a change log."
    "Terms of use", "Rules that one must agree to abide by in order to use a service."
-   "Training material", "Online training material such as text on a Web page, a presentation, video, tutorial etc."
-   "Tutorial", "A tutorial about using the software."
+   "Training material", "Online training material such as a tutorial, a presentation, video etc."
    "Other", "Some other type of documentation not listed in biotoolsSchema."
 
 Note (documentation)

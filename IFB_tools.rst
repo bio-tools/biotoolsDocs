@@ -577,7 +577,6 @@ In the *Documentation* tab you link to documentation about the software.
    **Code of conduct**,           **Optional**
    **FAQ**,                       **Optional**
    **Training material**,         **Optional**
-   **Tutorial**,                  **Optional**
    **Other**,                     **Optional**
 
 * **General** is for general documentation. If your tool doesn't have a dedicated documentation page, but is documented elsewhere (*e.g.* on the homepage or a GitHub README.md) then specify that URL instead.
