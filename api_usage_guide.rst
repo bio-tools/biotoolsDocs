@@ -1572,7 +1572,6 @@ Link object definition
 	  - ``Repository``
 	  - ``Service``
 	  - ``Social media``
-    	  - ``Scientific benchmark``
     	  - ``Technical monitoring``
 	  - ``Other``
 	    

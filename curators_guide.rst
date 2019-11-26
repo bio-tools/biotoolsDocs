@@ -708,7 +708,6 @@ Link type
    "Software catalogue", "Some registry, catalogue etc. other than bio.tools where the tool is also described."
    "Repository", "Repository where source code, data and other files may be downloaded."
    "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
-   "Scientific benchmark", "Information about the scientific performance of a tool."
    "Service", "An online service that provides access (an interface) to the software."
    "Technical monitoring", "Information about the technical status of a tool."
    "Other", "Other type of link for software - the default if a more specific type is not available."

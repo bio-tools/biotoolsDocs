@@ -495,7 +495,6 @@ In the *Links* tab you specify miscellaneous links for the tool.
    **Software catalogue**,   *ignore*
    **Galaxy service**,       *ignore*
    **Service**,              *ignore*
-   **Scientific benchmark**, *ignore*
    **Technical monitoring**, *ignore*
 
    
