@@ -1880,7 +1880,7 @@ Publication object definition
 	* Pattern: ``10.[0-9]{4,9}[A-Za-z0-9:;\)\(_/.-]+``
     * type
         * Required: No
-	* Cardinality: 0 or 1
+	* Cardinality: 0 to many
         * Type: ENUM
         * Allowed values: (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-type>`_)
 	  - ``Primary``
@@ -1911,6 +1911,7 @@ Publication object definition
    <pmid>21959131</pmid>
    <doi>10.1038/nmeth.1701</doi>
    <type>Primary</type>
+   <type>Method</type>
    <note>A comment goes here</type>
    <version>4.0</version>
   </publication>
@@ -1923,6 +1924,7 @@ Publication object definition
       "pmid": "21959131",
       "doi": "10.1038/nmeth.1701",
       "type": "Primary",
+      "type": "Method",
       "note": "A comment goes here",
       "version": "4.0"
     }

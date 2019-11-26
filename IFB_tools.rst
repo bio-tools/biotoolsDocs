@@ -641,7 +641,8 @@ and can have the following attributes defined:
    **version**, "Version information (typically a version number) of the software applicable to this publication." 
 
 
-You should specify at least the primary publication for your tool, and ideally any others that are relevant.
+* Specify at least the primary publication for your tool, and ideally any others that are relevant.
+* Pick one or more types for each publication, as applicable.
    
 .. note::
    You should specify **DOI** for publications (if available) and do not have to also specify **pmid** and **pmcid**.  If you do so, then be sure to specify multiple IDs for a single publication within a single publication group.  You can ignore **version**.
