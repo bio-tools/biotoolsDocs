@@ -518,8 +518,9 @@ License
 
 - **1.** **MUST** acurately describe the license used.
 - **2.** **SHOULD** use "Proprietary" in cases where the software is under license (not defined in biotoolsSchema) whereby it can be obtained from the provider (*e.g.* for money), and then owned, *i.e.* definitely not an open-source or free software license.
-- **3.** **SHOULD** use "Not licensed" for software which is not licensed and is not "Proprietary".
-- **4.** **SHOULD** use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary".
+- **3.** **SHOULD** use "Freeware" for software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission.
+- **4.** **SHOULD** use "Not licensed" for software which is not licensed and is not "Proprietary".
+- **5.** **SHOULD** use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary".
   
   .. note::
   - a controlled vocabulary of valid terms is defined in `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema/tree/master/stable>`_.
@@ -610,8 +611,6 @@ Accessibility
 
    "Open access", "An online service which is available for use to all, but possibly requiring user accounts / authentication."
    "Restricted access", "An online service which is available for use to a restricted audience, e.g. members of a specific institute."
-   "Proprietary", "Software for which the software's publisher or another person retains intellectual property rights \ usually copyright of the source code, but sometimes patent rights."
-   "Freeware", "Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."
 
 .. note::
    - see the `syntax guidelines <http://biotools.readthedocs.io/en/latest/api_usage_guide.html#accessibility>`_.

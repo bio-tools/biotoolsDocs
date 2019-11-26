@@ -303,7 +303,7 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 * **License** is a software or data usage license. See `below <license>`_ {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
 * **Maturity** is how mature the software product is; *Emerging*, *Mature* or *Legacy*. Don't pick *Mature* for tools which aren't really mature yet! {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
 * **Cost** is the monetary cost of acquiring the software {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}.
-* **Accessibility** is whether the software is freely available for use; *Open access*, *Restricted access*, *Proprietary* or *Freeware*. Check the definitions carefully before picking these terms! {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
+* **Accessibility** is whether the software is freely available for use; *Open access* or *Restricted access*. Check the definitions carefully before picking these terms! {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
 
    
 .. tip:: 
@@ -363,6 +363,7 @@ License
 All downloadable software should be licensed.  If you can't find your license in the list:
 
 * use *Proprietary* in cases where the software is under some license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license!
+- use *Freeware* for software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission.  
 * use *Other* if the software is available under a license not listed by biotoolsSchema and which is not *Proprietary* - please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.
 * use *Not licensed* for software which is not licensed and is not *Proprietary* (this is bad - license your software!)
 
