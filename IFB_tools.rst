@@ -531,9 +531,9 @@ In the *Download* tab you specify links to downloads for your software.
                      ,             "**Optional** (Web application)"
    **Command-line specification**, "**Optional** (Command-line tool)"
    **VM image**,                   "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
-   **CWL file**,                   **Optional** (Command-line tool)
    **Test data**,                  **Optional** (Command-line tool)
    **Test script**,                **Optional** (Command-line tool)
+   **Tool wrapper (CWL)**,         **Optional** (Command-line tool)
    **Tool wrapper (galaxy)**,      **Optional** (Command-line tool)
    **Tool wrapper (taverna)**,     **Optional** (Command-line tool)
    **Tool wrapper (other)**,       **Optional** (Command-line tool)

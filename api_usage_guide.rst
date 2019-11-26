@@ -1648,7 +1648,6 @@ Download object definition
 	  - ``Binary package``
 	  - ``Command-line specification``
 	  - ``Container file``
-	  - ``CWL file``
 	  - ``Icon``
 	  - ``Ontology``
 	  - ``Screenshot``
@@ -1656,6 +1655,7 @@ Download object definition
 	  - ``Source package``
 	  - ``Test data``
 	  - ``Test script``
+	  - ``Tool wrapper (CWL)``
 	  - ``Tool wrapper (galaxy)``
 	  - ``Tool wrapper (taverna)``
 	  - ``Tool wrapper (other)``
