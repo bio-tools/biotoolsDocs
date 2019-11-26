@@ -1738,7 +1738,7 @@ Documentation object definition
           - ``General``
 	  - ``Governance``
 	  - ``Installation instructions``	    	    
-	  - ``Manual``
+	  - ``User manual``
 	  - ``Terms of use``
 	  - ``Release notes``
 	  - ``Training material``

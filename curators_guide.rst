@@ -828,7 +828,7 @@ Documentation type
    "General", "General documentation."
    "Governance", "Information about the software governance model."
    "Installation instructions", "Instructions how to install the software."
-   "Manual ", "Information on how to use the software."
+   "User manual ", "Information on how to use the software, tailored to the end-user."
    "Release notes", "Notes about a software release or changes to the software; a change log."
    "Terms of use", "Rules that one must agree to abide by in order to use a service."
    "Training material", "Online training material such as text on a Web page, a presentation, video, tutorial etc."

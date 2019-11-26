@@ -573,7 +573,7 @@ In the *Documentation* tab you link to documentation about the software.
    **Contributions policy**,      "**Recommended** (Web application, Desktop application, Command-line tool)"
    **Governance**,                "**Recommended** (Bioinformatics portal, Database portal)"
    **Installation instructions**, "**Recommended** (Desktop application, Command-line tool)"
-   **Manual**,                    "**Recommended** (Desktop application)"
+   **User manual**,               "**Recommended** (Desktop application)"
    **Release notes**,             "**Recommended** (Desktop application, Command-line tool)"
    **Code of conduct**,           **Optional**
    **FAQ**,                       **Optional**
@@ -589,7 +589,7 @@ In the *Documentation* tab you link to documentation about the software.
 * **Contributions policy** is information about policy for making contributions to the software project.
 * **Governance** is information about the software governance model.
 * **Installation instructions** are instructions how to install the software.
-* **Manual** is information on how to use the software, structured into a comprehensive user manual (don't just link here to general documentation).
+* **User manual** is information on how to use the software, structured into a comprehensive user manual (don't just link here to general documentation).
 * **Release notes** are notes about a software release or changes to the software (a change log).  For example a CHANGELOG.md file on GitHub.
 	    
 * pick all of the types that apply to a given page of documentation
