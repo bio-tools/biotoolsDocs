@@ -149,7 +149,7 @@ bio.tools
 The IFB catalogue
 """""""""""""""""
 
-The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  In the guidelines, tool attribute are described as *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
+The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  A given tool attribute is *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
 
 * **Mandatory** attributes **MUST** be specified.
 * **Recommended** attributes **SHOULD** be specified, but are not strictly required.
@@ -251,17 +251,20 @@ In the *Summary* tab you specify basic information about the software:
    **Name**,            **Mandatory**
    **Description**,     **Mandatory**
    **Homepage URL**,    **Mandatory**
-   Software version(s), *ignore*
+
 
 * **Name** is the short-form name by which the tool is commonly known, *e.g.* "BLAST" **not** "Basic Local Alignment Search Tool".  Database names should follow a pattern where the name and abbreviation are given *e.g.* "The Protein Databank (PDB)" {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_}.
 * **Description** is a *concise* textual summary of the *tool function or purpose*.  It can usually be copy-pasted from the tool homepage.  Do not include statements about performance, provenance, governance *etc.* {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#description>`_}.
 * **Homepage URL** is the tool's homepage, or some URL that best serves this purpose {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#homepage>`_}.
    
 .. Important::
-   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ - the *bio.tools* **toolID** - is created for a tool when a new entry is created. The ID value is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by bio.tools and other systems.
-
-   The ID should be sensible and intuitive.  For databases, or tools with long names, the abbreviation should be used. For example, the `GnpIS tool <https://bio.tools/gnpis>`_ tool has the ID "gnpis" and *not* "Genetic and Genomic Information System". 
-
+   A `unique identifier <https://biotools.readthedocs.io/en/latest/curators_guide.html#id105>`_ - the *bio.tools* **toolID** - is created for a tool when a new entry is created. The ID value is a URL-safe version of the supplied tool name. The ID provides a persistent reference to the tool, used by *bio.tools* and other systems. toolIDs are used in the Tool Card URLs, which can be represented in a short form as a "compact URI" or "CURIE":
+   
+   * **toolID:** : *signalp*
+   * **CURIE:** : *biotools:signalp*
+   * **Tool Card URL:** : *https://biotools/signalp*
+     
+   The ID should be sensible and intuitive.  For databases, or tools with long names, the abbreviation should be used. For example, the `GnpIS tool <https://bio.tools/gnpis>`_ tool has the ID "gnpis" and *not* "Genetic and Genomic Information System".
 
 .. Tip::   
    The toolID is **not** currently editable, so if you want the ID to differ from the name (*e.g.* an ID of "PDB" for the tool name "Protein databank (PDB)", you have to apply a workaround:
@@ -283,27 +286,23 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 	    
    **Tool type**,        **Mandatory**
    **Topic**,            **Mandatory**
-   **License**,          **Mandatory** (Desktop application)
-              ,          **Recommended** (Command-line tool)
-   **Accessibility**,    "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
+   **Cost**,             **Mandatory**
+   **License**,          "**Mandatory** (Desktop application, Command-line tool)"
    **Operating system**, **Mandatory** (Desktop application)
                        , **Recommended** (Command-line tool)
-   **Cost**,             "**Recommended** (Desktop application, Command-line tool)"
-   **Language**,         **Recommended** (Command-line tool)
    **Maturity**,         **Recommended**
-   **Collection**,       **Optional**
-   ELIXIRPlatform,       *ignore*
-   ELIXIRNode,           *ignore*
-   Other ID,             *ignore*
+   **Accessibility**,    "**Recommended** (Bioinformatics portal, Database portal, Web application)"
+   **Language**,         **Recommended** (Command-line tool)
+
 
 * **Tool type** describes the type of the tool: a *bio.tools* entry can have more than one type. See `below <tool-type>`_  {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_}.
 * **Topic** is the general scientific domain the tool serves, or other general category (an EDAM term). See `below <topic>`_ {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_}.
-* **Operating system** is the operating system supported by a downloadable software package - pick all that apply {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
-* **Language** is the name of a programming language the tool source code was written in {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
-* **License** is a software or data usage license. See `below <license>`_ {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
-* **Maturity** is how mature the software product is; *Emerging*, *Mature* or *Legacy*. Don't pick *Mature* for tools which aren't really mature yet! {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
 * **Cost** is the monetary cost of acquiring the software {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost>`_}.
+* **License** is a software or data usage license. See `below <license>`_ {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
+* **Operating system** is the operating system supported by a downloadable software package - pick all that apply {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
+* **Maturity** is how mature the software product is; *Emerging*, *Mature* or *Legacy*. Don't pick *Mature* for tools which aren't really mature yet! {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
 * **Accessibility** is whether the software is freely available for use; *Open access* or *Restricted access*. Check the definitions carefully before picking these terms! {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
+* **Language** is the name of a programming language the tool source code was written in {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
 
    
 .. tip:: 
@@ -409,17 +408,13 @@ In the *Function* tab you specify the functions of the tool, expressed in concep
    :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 
-   **Operation**,      "**Mandatory** (Web application, Desktop application, Command-line tool)"
-                 ,     "**Recommended** (Database portal)"
-   **Input->data**,    "**Mandatory** (Web application, Desktop application, Command-line tool)"
-                  ,    "**Optional** (Database portal)"
+   **Operation**,      "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
+   **Input->data**,    "**Mandatory** (Command-line tool)"
+                  ,    "**Recommended** (Web application, Desktop application)"
    **Input->format**,  "**Recommended** (Command-line tool)"
-                    ,  "**Optional** (Database portal, Web application, Desktop application)"
-   **Output->data**,   "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
+   **Output->data**,   "**Mandatory** (Database portal, Command-line tool)"
+                   ,   "**Recommended** (Web application, Desktop application)"
    **Output->format**, "**Recommended** (Command-line tool)"
-                     , "**Optional** (Database portal, Web application, Desktop application)"
-   **Note**,           **Optional**
-   **Command**,        *ignore*
 
 * **Operation** describes the basic operation(s) performed by this software function {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_}.
 * **Data** is a type of primary input or output data {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_}.
@@ -480,27 +475,14 @@ In the *Links* tab you specify miscellaneous links for the tool.
    :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 	    
-   **Repository**,           "**Mandatory** (Desktop application, Command-line tool)"
-                 ,           "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Issue tracker**,        "**Mandatory** (Web application, Desktop application, Command-line tool)"
-                    ,        "**Recommended** (Database portal)"
-   **Mailing list**,         "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
-                   ,         "**Optional** (Bioinformatics portal)"
+   **Repository**,           "**Recommended** (Desktop application, Command-line tool)"
+   **Mailing list**,         **Recommended**
+   **Issue tracker**,        "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
    **Helpdesk**,             "**Recommended** (Database portal)"
-               ,             "**Optional** (Web application, Desktop application, Command-line tool)"
-   **Discussion forum**,     **Optional**
-   **Social media**,         **Optional**
-   **Other**,                **Optional**
-   **Mirror**,               "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Software catalogue**,   *ignore*
-   **Galaxy service**,       *ignore*
-   **Service**,              *ignore*
-   **Technical monitoring**, *ignore*
-
    
 * **Repository** is where source code, data and other files may be downloaded.
-* **Issue tracker** is for software issues, bug reports, feature requests *etc.*
 * **Mailing list** is for software announcements, discussions, support *etc.*
+* **Issue tracker** is for software issues, bug reports, feature requests *etc.*
 * **Helpdesk** is a phone line, web site or email-based system providing help to the end-user of the software.
 
 * pick all of the types that apply to a given link
@@ -517,43 +499,29 @@ In the *Download* tab you specify links to downloads for your software.
    :header: "TYPE", "REQUIREMENT"
    :widths: 25, 100
 
-   **Downloads page**,             "**Mandatory** (Database portal)"
-                     ,             "**Recommended** (Desktop application, Command-line tool)"
-                     ,             "**Optional** (Bioinformatics portal, Web application)"
-   **API specification**,          "**Recommended** (Database portal - with API)"
+   **Source code**,                "**Recommended** (Database portal, Web application, Desktop application, Command-line tool)"
    **Binaries**,                   "**Recommended** (Desktop application, Command-line tool)"
-   **Container file**,             "**Recommended** (Command-line tool)"
-                     ,             "**Optional** (Database portal, Web application, Desktop application)"
-   **Source code**,                "**Recommended** (Desktop application, Command-line tool)"
-                  ,                "**Optional** (Web application)"
    **Software package**,           "**Recommended** (Desktop application, Command-line tool)"
-                     ,             "**Optional** (Web application)"
-   **Command-line specification**, "**Optional** (Command-line tool)"
-   **VM image**,                   "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
-   **Test data**,                  **Optional** (Command-line tool)
-   **Test script**,                **Optional** (Command-line tool)
-   **Tool wrapper (CWL)**,         **Optional** (Command-line tool)
-   **Tool wrapper (galaxy)**,      **Optional** (Command-line tool)
-   **Tool wrapper (taverna)**,     **Optional** (Command-line tool)
-   **Tool wrapper (other)**,       **Optional** (Command-line tool)
-   **Icon**,                       **Optional**
-   **Biological data**,            **Optional**
-   **Screenshot**,                 **Optional**
-   **Other**,                      **Optional**
+   **Downloads page**,             "**Recommended** (Database portal, Desktop application)"
+   **API specification**,          "**Recommended** (Database portal - with API)"
 
-* **API specification** is a file providing a machine-readable API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.  It's *not* for human-readable API documentation (see `documentation <#documentation>`_ for that).
-* **Binaries** should trigger a download of the *latest* version available (typically the latest stable version).
-* **Command-line specification** is a file providing a machine-readable command line specification for the software. It's *not* for human-readable documentation (see `documentation <#documentation>`_ for that).
-* **Container file** including the software.
+   **Test data**,                  "**Recommended** (Desktop application, Command-line tool)"
+   **Test script**,                "**Recommended** (Command-line tool)"   
+
 * **Source code** should trigger a download of the *latest* source code.
+* **Binaries** should trigger a download of the *latest* version available (typically the latest stable version).
 * **Software package** should trigger a download of the *latest* software package.  
 * **Downloads page** is a Web page summarising general downloads available for the software.
-
+* **API specification** is a file providing a machine-readable API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.  It's *not* for human-readable API documentation (see `documentation <#documentation>`_ for that).
+* **Test data** is data for testing the software is working correctly.
+* **Test script** is a script used for testing testing whether the software is working correctly.
 
   
 .. tip::
    With the exception of **Downloads page**, the expectation is that a link annotated in the *Download* section will trigger a download of a file.  If you're adding a link which doesn't have this behaviour, you should see whether an attribute in the `Link <#Links>`_ section is more appropriate.
 
+.. note:: **Command-line specification** and **API specification** are files providing a machine-readable specification of the command line or API, for the software. These are *not* used for the typical human-readable documentation (see `documentation <#documentation>`_ for that).
+   
 
 Documentation
 """""""""""""
@@ -563,28 +531,24 @@ In the *Documentation* tab you link to documentation about the software.
    :header: "TYPE", "REQUIREMENT"
    :widths: 25, 100
 	    
-   **General**,                   **Mandatory**
-   **Citation instructions**,     **Mandatory**
-   **API documentation**,         **Mandatory** (Database portal or Web application - with API)
-   **Terms of use**,              "**Mandatory** (Database portal)"
+   **General**,                   "**Mandatory** (Database portal, Web application, Desktop application, Command-line tool)"
+   **API documentation**,         "**Mandatory** (Database portal or Web application - with API)"
+   **Terms of use**,              "**Mandatory** (Bioinformatics portal, Database portal, Web application)"
    **Command-line options**,      "**Mandatory** (Command-line tool)"
-   **Contributions policy**,      "**Recommended** (Web application, Desktop application, Command-line tool)"
-   **Governance**,                "**Recommended** (Bioinformatics portal, Database portal)"
+   **Citation instructions**,     **Recommended**
+   **Contributions policy**,      **Recommended**
+   **Training material**,         **Recommended**
    **Installation instructions**, "**Recommended** (Desktop application, Command-line tool)"
    **User manual**,               "**Recommended** (Desktop application)"
    **Release notes**,             "**Recommended** (Desktop application, Command-line tool)"
-   **Code of conduct**,           **Optional**
-   **FAQ**,                       **Optional**
-   **Training material**,         **Optional**
-   **Other**,                     **Optional**
 
 * **General** is for general documentation. If your tool doesn't have a dedicated documentation page, but is documented elsewhere (*e.g.* on the homepage or a GitHub README.md) then specify that URL instead.
-* **Citation instructions** give information on how to correctly cite use of the software; typically which publication(s) to cite, or something more general, e.g. a form of words to use.  This is especially important where there are multiple relevant `publications <#publications>`_.
 * **API documentation** is human-readable API documentation, and should be specified for many *Database portals* and some *Web applications*.
 * **Terms of use** are rules that one must agree to abide by in order to use a service.
 * **Command-line options** are human-readable documentation about the command-line interface of a tool.  
+* **Citation instructions** give information on how to correctly cite use of the software; typically which publication(s) to cite, or something more general, e.g. a form of words to use.  This is especially important where there are multiple relevant `publications <#publications>`_.
 * **Contributions policy** is information about policy for making contributions to the software project.
-* **Governance** is information about the software governance model.
+* **Training material** is an online training material such as a tutorial, a presentation, video *etc*.
 * **Installation instructions** are instructions how to install the software.
 * **User manual** is information on how to use the software, structured into a comprehensive user manual (don't just link here to general documentation).
 * **Release notes** are notes about a software release or changes to the software (a change log).  For example a CHANGELOG.md file on GitHub.
@@ -598,7 +562,7 @@ In the *Documentation* tab you link to documentation about the software.
    A well maintained **change log** wlll make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project.  For some great advice, see `keepachangelog.com <a href ="https://keepachangelog.com/en/1.0.0/">`_.
 
 .. note::
-   Command-line tools should always have a human-readable description of their **command-line options**.  If a machine-readable command-line specification (a file) is also available, then you should link to that in the `Download`_ section.
+   Command-line tools should always have a human-readable description of their **command-line options**.  Similarly, an API on a *Database portal* or *Web application* should have a human-readable description of their API.  If machine-readable command-line or API specifications (files) are also available, then you should link to that in the `Download`_ section.
 
 
 .. important::
@@ -661,8 +625,11 @@ In the *Credits & Support* tab you specify individuals or organisations that sho
    :header: "ATTRIBUTE", "REQUIREMENT"
    :widths: 25, 100
 
-   **Primary contact**,  **Mandatory**
-   **Credited institute**,  **Mandatory**
+   **Primary contact**,          **Mandatory**
+   **Credited institute**,       **Recommended**
+   **Credited funding agency**,  **Recommended**
+   **Credited developer**,       **Recommended**
+   **Credited maintainer**,      **Recommended**
 
 
 
@@ -695,10 +662,15 @@ and also have a "role":
    **Primary contact**, "The primary point of contact for the software."
 
    
-You should specify at least:
+You must specify at least:
 
-* A credit of type **Institute** with one ore more applicable roles.
 * A credit of role **Primary contact** with an applicable type.  You can opt to give more than one primary contact, for example specifing one for a project and another for a person.
+
+It's recommended to specify:
+* A credit of type **Institute** with one ore more applicable roles
+* A credit of type **Funding agency**
+* A credit of role **Developer** with one ore more applicable types
+* A credit of role **Maintainer** with one ore more applicable types
 
 
 For any credit, you can specify and of the following:
@@ -746,8 +718,8 @@ The relationships currently available:
 
 You can ignore this for now, except:
 
-* when annotating a *Suite* (or other collection) specify other tools that the suite **includes**
-* when annotating a *Workflow* specify other tools that the workflow **uses**
+* when annotating a *Suite* (or other collection) it's recommended to specify other tools that the suite **includes**
+* when annotating a *Workflow* it's recommended to specify other tools that the workflow **uses**
 	    
 JSON
 """"
