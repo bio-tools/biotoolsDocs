@@ -1571,7 +1571,7 @@ Link object definition
 	  - ``Issue tracker``
 	  - ``Mailing list``
 	  - ``Mirror``
-	  - ``Registry``
+	  - ``Software catalogue``
 	  - ``Repository``
 	  - ``Service``
 	  - ``Social media``

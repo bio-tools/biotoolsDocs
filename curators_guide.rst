@@ -706,7 +706,7 @@ Link type
    "Issue tracker", "Tracker for software issues, bug reports, feature requests etc."
    "Mailing list", "Mailing list for the software announcements, discussions, support etc."
    "Mirror", "Mirror of an (identical) online service."
-   "Registry", "Some registry, catalogue etc. other than bio.tools."
+   "Software catalogue", "Some registry, catalogue etc. other than bio.tools where the tool is also described."
    "Repository", "Repository where source code, data and other files may be downloaded."
    "Social media", "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc."
    "Scientific benchmark", "Information about the scientific performance of a tool."

@@ -491,7 +491,7 @@ In the *Links* tab you specify miscellaneous links for the tool.
    **Social media**,         **Optional**
    **Other**,                **Optional**
    **Mirror**,               "**Optional** (Bioinformatics portal, Database portal, Web application)"
-   **Registry**,             *ignore*
+   **Software catalogue**,   *ignore*
    **Galaxy service**,       *ignore*
    **Service**,              *ignore*
    **Scientific benchmark**, *ignore*
