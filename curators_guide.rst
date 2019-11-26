@@ -756,7 +756,6 @@ Download type
    "Command-line specification", "File providing a command line specification for the software."
    "Container file", "Container file including the software."
    "Icon", "Icon of the software."
-   "Ontology", "A file containing an ontology, controlled vocabulary, terminology etc."
    "Screenshot", "Screenshot of the software."
    "Source code", "Software source code."
    "Software package", "A software package; a bundle of files and information about those files, typically including source code and / or binaries."

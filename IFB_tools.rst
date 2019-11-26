@@ -540,7 +540,6 @@ In the *Download* tab you specify links to downloads for your software.
    **Biological data**,            **Optional**
    **Screenshot**,                 **Optional**
    **Other**,                      **Optional**
-   **Ontology**,                   *ignore*
 
 * **API specification** is a file providing a machine-readable API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.  It's *not* for human-readable API documentation (see `documentation <#documentation>`_ for that).
 * **Binaries** should trigger a download of the *latest* version available (typically the latest stable version).

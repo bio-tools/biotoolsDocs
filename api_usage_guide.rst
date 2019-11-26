@@ -1644,7 +1644,6 @@ Download object definition
 	  - ``Command-line specification``
 	  - ``Container file``
 	  - ``Icon``
-	  - ``Ontology``
 	  - ``Screenshot``
 	  - ``Source code``
 	  - ``Software package``
