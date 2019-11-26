@@ -364,7 +364,7 @@ All downloadable software should be licensed.  If you can't find your license in
 
 * use *Proprietary* in cases where the software is under some license whereby it can be obtained from the provider (e.g. for money), and then owned, i.e. definitely not an open-source or free software license!
 * use *Other* if the software is available under a license not listed by biotoolsSchema and which is not *Proprietary* - please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.
-* use *Unlicensed* for software which is not licensed and is not *Proprietary* (this is bad - license your software!)
+* use *Not licensed* for software which is not licensed and is not *Proprietary* (this is bad - license your software!)
 
 .. note::
    There are many good reasons why you should license your software, ideally picking a FOSS (Free and Open Source Software) license.  Read `A Quick Guide to Software Licensing for the Scientist-Programmer <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598>`_.  Some types of tools *e.g.* *Web application" are not licensed, but instead, should have a `Terms of use <#terms-of-use>`_ document. 

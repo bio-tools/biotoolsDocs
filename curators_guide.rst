@@ -518,7 +518,7 @@ License
 
 - **1.** **MUST** acurately describe the license used.
 - **2.** **SHOULD** use "Proprietary" in cases where the software is under license (not defined in biotoolsSchema) whereby it can be obtained from the provider (*e.g.* for money), and then owned, *i.e.* definitely not an open-source or free software license.
-- **3.** **SHOULD** use "Unlicensed" for software which is not licensed and is not "Proprietary".
+- **3.** **SHOULD** use "Not licensed" for software which is not licensed and is not "Proprietary".
 - **4.** **SHOULD** use "Other" if the software is available under a license not listed by biotoolsSchema and which is not "Proprietary".
   
   .. note::
