@@ -1892,7 +1892,7 @@ Publication object definition
 	  - ``Primary``
 	  - ``Method``	    
 	  - ``Usage``
-	  - ``Comparison``
+	  - ``Benchmarking study``
 	  - ``Review``	    
 	  - ``Other``
     * note

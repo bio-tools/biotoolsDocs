@@ -628,7 +628,7 @@ Publications are defined as one of the following types:
    **Primary**, "The principal publication about the tool itself; the article to cite when acknowledging use of the tool."
    **Method**, "A publication describing a scientific method or algorithm implemented by the tool."
    **Usage**, "A publication describing the application of the tool to scientific research, a particular task or dataset."
-   **Comparison**, "A publication which assessed the performance of the tool."
+   **Benchmarking study**, "A publication which assessed the performance of the tool."
    **Review**, "A publication where the tool was reviewed."
    **Other**, "A publication of relevance to the tool but not fitting the other categories."
 
