@@ -522,12 +522,11 @@ In the *Download* tab you specify links to downloads for your software.
                      ,             "**Optional** (Bioinformatics portal, Web application)"
    **API specification**,          "**Recommended** (Database portal - with API)"
    **Binaries**,                   "**Recommended** (Desktop application, Command-line tool)"
-   **Binary package**,             "**Recommended** (Desktop application, Command-line tool)"
    **Container file**,             "**Recommended** (Command-line tool)"
                      ,             "**Optional** (Database portal, Web application, Desktop application)"
    **Source code**,                "**Recommended** (Desktop application, Command-line tool)"
                   ,                "**Optional** (Web application)"
-   **Source package**,             "**Recommended** (Desktop application, Command-line tool)"
+   **Software package**,           "**Recommended** (Desktop application, Command-line tool)"
                      ,             "**Optional** (Web application)"
    **Command-line specification**, "**Optional** (Command-line tool)"
    **VM image**,                   "**Optional** (Database portal, Web application, Desktop application, Command-line tool)"
@@ -544,10 +543,11 @@ In the *Download* tab you specify links to downloads for your software.
    **Ontology**,                   *ignore*
 
 * **API specification** is a file providing a machine-readable API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.  It's *not* for human-readable API documentation (see `documentation <#documentation>`_ for that).
-* **Binaries** and **Binary package** should trigger a download of the *latest* version available (typically the latest stable version).
+* **Binaries** should trigger a download of the *latest* version available (typically the latest stable version).
 * **Command-line specification** is a file providing a machine-readable command line specification for the software. It's *not* for human-readable documentation (see `documentation <#documentation>`_ for that).
 * **Container file** including the software.
-* **Source code** and **Source package** should trigger a download of the *latest* source code.
+* **Source code** should trigger a download of the *latest* source code.
+* **Software package** should trigger a download of the *latest* software package.  
 * **Downloads page** is a Web page summarising general downloads available for the software.
 
 

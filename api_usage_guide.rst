@@ -1641,14 +1641,13 @@ Download object definition
 	  - ``API specification``
 	  - ``Biological data``
 	  - ``Binaries``
-	  - ``Binary package``
 	  - ``Command-line specification``
 	  - ``Container file``
 	  - ``Icon``
 	  - ``Ontology``
 	  - ``Screenshot``
 	  - ``Source code``
-	  - ``Source package``
+	  - ``Software package``
 	  - ``Test data``
 	  - ``Test script``
 	  - ``Tool wrapper (CWL)``
