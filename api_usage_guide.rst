@@ -172,7 +172,6 @@ A sample JSON document may look like this:
       "accessibility":
       [
          "Open access",
-         "Freeware"
       ],
       "link":
       [
@@ -1225,7 +1224,7 @@ Type
   ENUM (list)
 
 Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language>`_)
-  ``ActionScript``, ``Ada``, ``AppleScript``, ``Assembly language``, ``AWK``, ``Bash``, ``C``, ``C#``, ``C++``, ``COBOL``, ``ColdFusion``, ``CWL``, ``D``, ``Delphi``, ``Dylan``, ``Eiffel``, ``Forth``, ``Fortran``, ``Groovy``, ``Haskell``, ``Icarus``, ``Java``, ``JavaScript``, ``JSP``, ``LabVIEW``, ``Lisp``, ``Lua``, ``Maple``, ``Mathematica``, ``MATLAB``, ``MLXTRAN``, ``NMTRAN``, ``OCaml``, ``Pascal``, ``Perl``, ``PHP``, ``Prolog``, ``PyMOL``, ``Python``, ``R``, ``Racket``, ``REXX``, ``Ruby``, ``SAS``, ``Scala``, ``Scheme``, ``Shell``, ``Smalltalk``, ``SQL``, ``Turing``, ``Verilog``, ``VHDL``, ``Visual Basic``, ``XAML``, ``Other``
+  ``ActionScript``, ``Ada``, ``AppleScript``, ``Assembly language``, ``AWK``, ``Bash``, ``C``, ``C#``, ``C++``, ``COBOL``, ``ColdFusion``, ``CWL``, ``D``, ``Delphi``, ``Dylan``, ``Eiffel``, ``Forth``, ``Fortran``, ``Groovy``, ``Haskell``, ``Icarus``, ``Java``, ``JavaScript``, ``Julia``, ``JSP``, ``LabVIEW``, ``Lisp``, ``Lua``, ``Maple``, ``Mathematica``, ``MATLAB``, ``MLXTRAN``, ``NMTRAN``, ``OCaml``, ``Pascal``, ``Perl``, ``PHP``, ``Prolog``, ``PyMOL``, ``Python``, ``R``, ``Racket``, ``REXX``, ``Ruby``, ``SAS``, ``Scala``, ``Scheme``, ``Shell``, ``Smalltalk``, ``SQL``, ``Turing``, ``Verilog``, ``VHDL``, ``Visual Basic``, ``XAML``, ``Other``
 
 **Example**
 
@@ -1401,7 +1400,7 @@ Required
   No
 
 Cardinality
-  0 to many
+  0 or 1
   
 Type
   ENUM (list)
@@ -1518,14 +1517,14 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 .. code-block:: js
 
   # XML
-  <elixirNode>Open access</elixirNode>
-  <elixirNode>Freeware</elixirNode>
+  <elixirNode>Denmark</elixirNode>
+  <elixirNode>France</elixirNode>
   
   # JSON		
   "elixirNode":
   [
-    "DK",
-    "FR"
+    "Denmark",
+    "France"
   ]
 
 .. note::
@@ -1590,7 +1589,7 @@ Link object definition
    <url>http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp</url>
    <type>Helpdesk</type>
    <type>Issue tracker</type>
-   <note>Source code for current and old versions.</note>
+   <note>A comment goes here.</note>
   </link> 
       
   # JSON		
@@ -1600,7 +1599,7 @@ Link object definition
       "url": "http://www.cbs.dtu.dk/cgi-bin/sw_request?signalp",
       "type": "Helpdesk",
       "type": "Issue tracker",
-      "note": "Source code for current and old versions."
+      "note": "A comment goes here."
     }
   ]
 

@@ -501,7 +501,7 @@ In the *Links* tab you specify miscellaneous links for the tool.
 * **Repository** is where source code, data and other files may be downloaded.
 * **Issue tracker** is for software issues, bug reports, feature requests *etc.*
 * **Mailing list** is for software announcements, discussions, support *etc.*
-* **Helpdesk** is a formal system (*e.g.* ticket system) where users can get support in using the software.
+* **Helpdesk** is a phone line, web site or email-based system providing help to the end-user of the software.
 
 * pick all of the types that apply to a given link
   
@@ -579,7 +579,7 @@ In the *Documentation* tab you link to documentation about the software.
    **Other**,                     **Optional**
 
 * **General** is for general documentation. If your tool doesn't have a dedicated documentation page, but is documented elsewhere (*e.g.* on the homepage or a GitHub README.md) then specify that URL instead.
-* **Citation instructions** give information on how to correctly cite use of the software.  This is especially important where there are multiple relevant `publications <#publications>`_.
+* **Citation instructions** give information on how to correctly cite use of the software; typically which publication(s) to cite, or something more general, e.g. a form of words to use.  This is especially important where there are multiple relevant `publications <#publications>`_.
 * **API documentation** is human-readable API documentation, and should be specified for many *Database portals* and some *Web applications*.
 * **Terms of use** are rules that one must agree to abide by in order to use a service.
 * **Command-line options** are human-readable documentation about the command-line interface of a tool.  
