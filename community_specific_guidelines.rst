@@ -46,7 +46,7 @@ You'll be asked for a username, email address and password.  Your account will b
 
 
 2. Claim your bio.tools entries
-##############################-
+###############################
 As a software developer or service provider, you should own the *bio.tools* entries describing your tools, by claiming ownership of existing entries or creating new ones.    
 
 You'll need to login first, by clicking on |Login| at the top-right corner of the page.
@@ -142,7 +142,7 @@ To remove an entry, click on *Update this record* button (bottom right of the To
 
 
 3. Understand the information requirement
-########################################-
+#########################################
 
 bio.tools
 ^^^^^^^^^
