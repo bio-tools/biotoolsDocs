@@ -1,4 +1,4 @@
-Community-specific Guidelines
+Community-specific guidelines
 =============================
 
 **Tool information profiles and tutorials tailored to specific communities**
