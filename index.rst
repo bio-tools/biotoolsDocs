@@ -18,7 +18,7 @@ Contents:
    Contributors Guide <contributors_guide>
    Quick Start Guide <quickstart_guide>
    Curators Guide <curators_guide>
-   IFB Tools <IFB_tools>
+   Community-specific Guidelines <community_specific_guidelines>
    Editors Guide <editors_guide>
    API reference <api_reference>
    API Usage Guide <api_usage_guide>
