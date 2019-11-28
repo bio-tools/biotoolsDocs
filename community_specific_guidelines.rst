@@ -99,7 +99,7 @@ To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu 
 
 
 bio.tools editing interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The *bio.tools* editing interface helps you to create valid tool descriptions. It's organised into different tabs (*Summary*, *Function*, *Labels* *etc.*):
 
 .. image:: _static/registration_interface.png
@@ -248,7 +248,7 @@ The sections below match the tabs in the *bio.tools* editing interface.
 
    
 Summary
-^^^^^^"
+^^^^^^^
 In the *Summary* tab you specify basic information about the software:
 
 .. csv-table::
@@ -485,7 +485,7 @@ Format
 
 
 Links
-^^^^"
+^^^^^
 In the *Links* tab you specify miscellaneous links for the tool.  The type of information obtained when resolving the link is specified by *Link type*:
 
 .. csv-table::
@@ -543,7 +543,7 @@ In the *Download* tab you specify links to downloads for your software.
    
 
 Documentation
-^^^^^^^^^^^^"
+^^^^^^^^^^^^^
 In the *Documentation* tab you link to documentation about the software:
 
 .. csv-table::
