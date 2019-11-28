@@ -1,11 +1,11 @@
-Community-specific Tutorials
-============================
+Community-specific Guidelines
+=============================
 
-*Tool information profiles and tutorials tailored to specific communities*
+**Tool information profiles and tutorials tailored to specific communities**
 
 Different communities - whether national, scientific or ones focused on a specific project - have different perspectives on the information they wish to disseminate about the tools and services within their portfolios.
 
-`Tool information profiles <https://github.com/bio-tools/Tool-Information-Standard/tree/master/toolInformationProfiles>`_ are a formal way to define which tool attributes - supported by the bio.tools registry - should be specified within a set of tool descriptions registered in the `bio.tools <https://bio.tools>`_ registry.
+`Tool information profiles <https://github.com/bio-tools/Tool-Information-Standard/tree/master/toolInformationProfiles>`_ are a formal way to define which tool attributes - supported by the `bio.tools <https://bio.tools>`_ registry - should be specified within a set of tool descriptions registered in *bio.tools*.
 
 Accompanying the profiles are tutorials which tool developers and service providers can follow to improve the description of their resources in bio.tools. The aim is to improve the quality of the community tools portfolio, by improving the *bio.tools* entries, and by highlighting areas where the service around those tools can be improved.
 
