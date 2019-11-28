@@ -1,5 +1,10 @@
+Community-specific Guidelines
+=============================
+
+
+
 IFB tools
-=========
+---------
 
 .. warning::
    **WORK IN PROGRESS** - THESE GUIDELINES ARE BEING WORKED ON
@@ -24,7 +29,7 @@ There are various sources of information and help:
 
     
 1. Get a bio.tools account
---------------------------
+##########################
 .. _Get_a_bio.tools_account
 You'll need an account to create *bio.tools* entries or edit existing ones.  Creating an account is simple: just go to `bio.tools <https://bio.tools>`_ and click on |Sign-up| at the top-right corner of the page.
 
@@ -41,7 +46,7 @@ You'll be asked for a username, email address and password.  Your account will b
 
 
 2. Claim your bio.tools entries
--------------------------------
+##############################-
 As a software developer or service provider, you should own the *bio.tools* entries describing your tools, by claiming ownership of existing entries or creating new ones.    
 
 You'll need to login first, by clicking on |Login| at the top-right corner of the page.
@@ -62,7 +67,7 @@ Once you find your entry you can go ahead and `update <#updating-entries>`_ it. 
 
 
 Updating entries
-""""""""""""""""
+^^^^^^^^^^^^^^^^
 To edit an existing entry, you need to click through to the Tool Card for the tool in question, *e.g.* https://bio.tools/signalp.  You'll see a one or two buttons at the bottom right of the Tool Card, depending on whether you're logged in, and own the entry or not. 
 
 .. image:: _static/request_ownership.png
@@ -86,7 +91,7 @@ To edit an existing entry, you need to click through to the Tool Card for the to
 
 
 Creating entries
-""""""""""""""""
+^^^^^^^^^^^^^^^^
 To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu ... Add content*:
 
 
@@ -94,7 +99,7 @@ To create new entries you'll need to be logged onto *bio.tools*. Click on *Menu 
 
 
 bio.tools editing interface
-"""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^"
 The *bio.tools* editing interface helps you to create valid tool descriptions. It's organised into different tabs (*Summary*, *Function*, *Labels* *etc.*):
 
 .. image:: _static/registration_interface.png
@@ -125,7 +130,7 @@ The editing interface provides some hints, and ensures that the information you 
 
 
 Removing entries
-""""""""""""""""
+^^^^^^^^^^^^^^^^
 To remove an entry, click on *Update this record* button (bottom right of the Tool Card). Then you can remove the entry by clicking on |remove|.
 
 .. |remove| image:: _static/remove.png
@@ -137,17 +142,17 @@ To remove an entry, click on *Update this record* button (bottom right of the To
 
 
 3. Understand the information requirement
------------------------------------------
+########################################-
 
 bio.tools
-"""""""""
+^^^^^^^^^
 *bio.tools* requires only the name, description and homepage URL for a tool registration, but supports a comprehensive set of attributes for rich tool descriptions.
 
 .. note::
    The attributes supported by *bio.tools*, their structure and their syntax are defined in formalised XML schema called `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.  You don't need to look at the schema, because everything is handled through *bio.tools*. If you'd like to learn more or contribute to this project, please head over to `GitHub <https://github.com/bio-tools/biotoolsSchema>`_.
 
 The IFB catalogue
-"""""""""""""""""
+^^^^^^^^^^^^^^^^^
 
 The information requirement of the IFB catalogue is more demanding than *bio.tools*, and depends upon the type of tool (command-line tool, database *etc.*) that is being registered.  A given tool attribute is *Mandatory*, *Recommended* or *Optional* for a given type of tool: 
 
@@ -167,10 +172,10 @@ The above diagram is intended to give a quick overview of the information requir
 
 
 4. Plan your curation work
---------------------------   
+##########################   
 
 bio.tools entries
-"""""""""""""""""
+^^^^^^^^^^^^^^^^^
 
 .. important::
    Before you use *bio.tools* to create and edit tool descriptions, it's important to plan carefully the entries with respect to the types of tool and the functions they perform. Be sure to understand:
@@ -191,7 +196,7 @@ Plan what new entries (if any) are required to describe your tools:
  
 
 Familiarise yourself with EDAM
-""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. _Familiarise_yourself_with_EDAM:
 The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bio.tools* with a controlled vocabulary to describe the scientific function of a tool, including the general scientific domain, specific operations it performs, types of input and output data, and supported data formats.
 
@@ -230,7 +235,7 @@ Three EDAM browsers, each with different functionality, can be used to find EDAM
 
 
 5. Describe your tools
-----------------------
+######################                      
 
 The sections below match the tabs in the *bio.tools* editing interface.  
 
@@ -243,7 +248,7 @@ The sections below match the tabs in the *bio.tools* editing interface.
 
    
 Summary
-"""""""
+^^^^^^"
 In the *Summary* tab you specify basic information about the software:
 
 .. csv-table::
@@ -279,7 +284,7 @@ In the *Summary* tab you specify basic information about the software:
 
 
 Labels
-""""""
+^^^^^^
 In the *Labels* tab you specify miscellaneous scientific, technical and administrative details, expressed in terms from controlled vocabularies:
 
 .. csv-table::
@@ -391,7 +396,7 @@ Topic
    
  
 Function
-""""""""
+^^^^^^^^
 In the *bio.tools* software model, a tool has one or more basic functions, or modes of operation.  Each **function** performs at least one **operation**, and has one or more primary **inputs** and **outputs**.  Each input and output are of single defined **type of data** and list one or more supported **format(s)**.
 
 This is shown in a diagram on the Tool Cards that look like this:
@@ -480,7 +485,7 @@ Format
 
 
 Links
-"""""
+^^^^"
 In the *Links* tab you specify miscellaneous links for the tool.  The type of information obtained when resolving the link is specified by *Link type*:
 
 .. csv-table::
@@ -506,7 +511,7 @@ In the *Links* tab you specify miscellaneous links for the tool.  The type of in
   
 
 Download
-""""""""
+^^^^^^^^
 In the *Download* tab you specify links to downloads for your software.
 
 .. csv-table::
@@ -538,7 +543,7 @@ In the *Download* tab you specify links to downloads for your software.
    
 
 Documentation
-"""""""""""""
+^^^^^^^^^^^^"
 In the *Documentation* tab you link to documentation about the software:
 
 .. csv-table::
@@ -584,7 +589,7 @@ In the *Documentation* tab you link to documentation about the software:
 
        
 Publications
-""""""""""""
+^^^^^^^^^^^^
 In the *Publications* tab you specify publications about the software:
 
 .. csv-table::
@@ -633,7 +638,7 @@ and can have the following attributes defined:
    It's very important that your tool has some form of publication, if for no other reason than to make it citable.  If you don't have a publication in the scientific press, then you can use `Zenodo <https://zenodo.org/>`_ to create a DOI for this purpose.  Such a DOI should resolve to a page describing the tool. For example http://doi.org/10.5281/zenodo.3519603. 
 
 Credits & Support
-"""""""""""""""""
+^^^^^^^^^^^^^^^^^
 In the *Credits & Support* tab you specify individuals or organisations that should be credited, or may be contacted about the software.  Credits include all type of entities that contributed to the development, maintenance or provision of the resource:
 
 .. csv-table::
@@ -716,7 +721,7 @@ For any credit, you can specify any of the following:
   
 
 Relations
-"""""""""
+^^^^^^^^^
 In the *Relations* tab you can specify details of a relationship this software shares with other software registered in *bio.tools*.
 
 The relationships currently available:
@@ -738,11 +743,11 @@ You can ignore this for now, except:
 * when annotating a *Workflow* it's recommended to specify other tools that the workflow **uses**
 	    
 JSON
-""""
+^^^^
 In the *JSON* tab you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see the section on `EDAM <#familiarise-yourself-with-edam>`_.)
 
 Permissions
-"""""""""""
+^^^^^^^^^^^        
 In the *Permissions* tab you can decide to make the entry either editable only by yourself, a list of users or anyone.  See the section on *bio.tools* `accounts <#Get-a-bio-tools-account>`_.
 
 
