@@ -18,7 +18,7 @@ Contents:
    Contributors Guide <contributors_guide>
    Quick Start Guide <quickstart_guide>
    Curators Guide <curators_guide>
-   Community-specific Guidelines <community_specific_guidelines>
+   Community-specific guidelines <community_specific_guidelines>
    Editors Guide <editors_guide>
    API reference <api_reference>
    API Usage Guide <api_usage_guide>
