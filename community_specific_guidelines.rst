@@ -218,6 +218,8 @@ The `EDAM ontology <https://github.com/edamontology/edamontology>`_ provides *bi
 	   
 The EDAM ontology includes four main types of concept (or subontologies), shown in boxes above. The concepts are *Topic*, *Operation*, *Data* and *Format*, with *Identifier* being a specialisation of *Data*. Relationships between EDAM concepts are defined internally within the ontology. You don't need to worry about these details, as it's all handled by *bio.tools*.
 
+Picking EDAM terms
+^^^^^^^^^^^^^^^^^^
 Three EDAM browsers, each with different functionality, can be used to find EDAM terms:
 
 .. _`OLS`: https://www.ebi.ac.uk/ols/ontologies/edam
