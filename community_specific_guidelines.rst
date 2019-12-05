@@ -18,6 +18,10 @@ Accompanying the profiles are tutorials which tool developers and service provid
 IFB tools
 ---------
 
+.. important::
+   This tutorial describes some features of *bio.tools* which have not yet been released in the public version available at https://bio.tools.  These features - and what to do - are indicated in an "Important" box (like this one).
+
+
 These instructions will guide you through the steps to register your tools and databases in `bio.tools <https://bio.tools>`_ and describe them to the standard required for inclusion in the next iteration of the `IFB Catalogue <https://www.france-bioinformatique.fr/en/ressources>`_ - the French national catalogue of bioinformatics resources.
 
 There are various sources of information and help:
