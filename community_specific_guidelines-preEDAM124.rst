@@ -330,6 +330,9 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 .. note::
   **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. All tools in the IFB catalogue will have the ELIXIRNode credit set to "France".  These are not normally be set by *bio.tools* users {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_}.
   
+.. caution::
+   You may notice **Accessibilty** currently supports four different options and allows 0 to many of these to be selected.  This will soon change to a choice between two options.  For now, pick either *Open access* or *Restricted access* only. 
+  
 
 Tool type
 ^^^^^^^^^
@@ -373,6 +376,8 @@ A single *bio.tools* entry is annotated with one or more types, reflecting diffe
 .. tip::
    Software is complex and it can be tricky to assign a type.  Make sure you understand the `tool type definitions <https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type>`_ before you use them. For example, in *bio.tools* a *Web service* is specifically a SOAP+WSDL implementation. Most likely you need *Web API* (which covers most APIs nowadays) or just *Web application* (for a tool delivered via the Web but without an API).  
   
+.. caution::
+   Support for tool type of **Bioinformatics portal** is coming soon.  For now, leave the annotation blank.
    
 License
 ^^^^^^^
@@ -391,6 +396,11 @@ All downloadable software should be licensed.  If you can't find your license in
    There are many good reasons why you should license your software, ideally picking a FOSS (Free and Open Source Software) license.  Read `A Quick Guide to Software Licensing for the Scientist-Programmer <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598>`_.  Some types of tools *e.g.* *Web application" are not licensed, but instead, should have a `Terms of use <#terms-of-use>`_ document. Proprietary licenses are definitely not open-source or, and should be avoided!
 
    If your sofware is available under a license not supported by *bio.tools*, then please `request <https://github.com/bio-tools/biotoolsschema/issues>`_ the license is added.  If you find yourself picking **Not licensed** - this is bad - license your software!
+
+.. caution::
+   The license term **Not licensed** is not yet supported.  Use **Unlicensed** instead.
+
+   The license term **Freeware** is not yet supported.  If your software is freeware, then for now leave the annotation blank.
 
 Topic
 ^^^^^
@@ -521,6 +531,8 @@ In the *Links* tab you specify miscellaneous links for the tool.  The type of in
 .. caution::
    Currently, to assign a link to more than one type you have to enter the URL more than once, picking a different type each type.  In future, you'll be able to enter the URL once and pick multiple types.
 
+   The `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ and other docs may refer to a link type of **Software catalogue** but this is not yet supported.  Use **Registry** instead. 
+
    
 Download
 ^^^^^^^^
@@ -554,6 +566,8 @@ In the *Download* tab you specify links to downloads for your software.
 .. note::
    **Command-line specification** and **API specification** are files providing a machine-readable specification of the command line or API, for the software. These are *not* used for the typical human-readable documentation (see `Documentation <#documentation>`_ for that).
 
+.. caution::
+   The `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ and other docs may refer to a download type of **Tool wrapper (CWL)** but this is not yet supported.  Use **CWL file** instead. 
 	  
 
 Documentation
@@ -602,6 +616,7 @@ In the *Documentation* tab you link to documentation about the software:
 .. caution::
    Currently, to assign a documentation to more than one type you have to enter the URL more than once, picking a different type each type.  In future, you'll be able to enter the URL once and pick multiple types.
 
+   Documentation type **User manual** is not yet supported.  For now use **Manual** instead. 
        
 Publications
 ^^^^^^^^^^^^
@@ -653,8 +668,11 @@ and can have the following attributes defined:
    It's very important that your tool has some form of publication, if for no other reason than to make it citable.  If you don't have a publication in the scientific press, then you can use `Zenodo <https://zenodo.org/>`_ to create a DOI for this purpose.  Such a DOI should resolve to a page describing the tool. For example http://doi.org/10.5281/zenodo.3519603.
 
 .. caution::
+   Support for publication **note** is coming soon.
+
    Currently, to assign a publicaton to more than one type you have to enter the DOI more than once, picking a different type each type.  In future, you'll be able to enter the DOI once and pick multiple types.
 
+   Publication type **Benchmarking study** is not yet supported; use **Comparison** instead. 
 
 Credits & Support
 ^^^^^^^^^^^^^^^^^
@@ -738,6 +756,8 @@ For any credit, you can specify any of the following:
 .. note::
    Nearly all organisations credited in *bio.tools* will have a `GRID ID <https://www.grid.ac/>`_.  The Global Research Identifier Database (GRID) provides unambiguous institutional information at persistent IDs, to ensure data consistency.
 
+.. caution::
+   Support for credit **gridid** is coming soon.   
 
 Relations
 ^^^^^^^^^

@@ -1,5 +1,10 @@
 Publications
 ============
+Ison, J. et al. (2019). `The bio.tools registry of software tools and data resources for the life sciences <https://doi.org/10.1186/s13059-019-1772-6>`_. Genome Biology, doi:`10.1186/s13059-019-1772-6 <https://doi.org/10.1186/s13059-019-1772-6 >`_
+
+Ison, J. et al. (2019). `Community curation of bioinformatics software and data resources <https://doi.org/10.1093/bib/bbz075>`_. Briefings in Bioinformatics. doi:`10.1093/bib/bbz075 <https://doi.org/10.1093/bib/bbz075>`_
+
+Tsiamis, V. et al. (2019) `A Thousand and One Software for Proteomics: Tales of the Toolmakers of Science <https://doi.org/10.1021/acs.jproteome.9b00219>`_. Journal of Proteome Research. doi:`10.1021/acs.jproteome.9b00219 <https://doi.org/10.1021/acs.jproteome.9b00219>`_
 
 Palmblad, M., Lamprecht, A-L, Ison, J. and Schwammle, V. (2018) `Automated workflow composition in mass spectrometry based proteomics <https://doi.org/10.1093/bioinformatics/bty646>`_  *Bioinformatics* doi:`10.1093/bioinformatics/bty646 <https://doi.org/10.1093/bioinformatics/bty646>`_
 
