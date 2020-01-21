@@ -200,10 +200,10 @@ linkType            Exact search for type of information found at a link
                     `linkType="Issue tracker" <https://bio.tools/api/t/?linkType="Issue tracker">`_
 documentation       Fuzzy search over documentation link (URL, type and note) (quote as needed)                          
 
-                    `documentation=Manual <https://bio.tools/api/t/?documentation=Manual>`_ 
+                    `documentation=Manual <https://bio.tools/api/t/?documentation="User manual">`_ 
 documentationType   Exact search for type of documentation
 
-                    `documentationType=Manual <https://bio.tools/api/t/?documentationType=Manual>`_ 
+                    `documentationType=Manual <https://bio.tools/api/t/?documentationType="User manual">`_ 
 download            Fuzzy search over download link (URL, type, version and note) (quote as needed)
 
                     `download=Binaries <https://bio.tools/api/t/?download=Binaries>`_ 
