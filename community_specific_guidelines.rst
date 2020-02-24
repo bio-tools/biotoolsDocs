@@ -865,9 +865,10 @@ In the *Permissions* tab you can decide to make the entry either editable only b
 
 Workflow composition (Lorentz workshop)
 ---------------------------------------
-These instructions provide a quick guide to the steps to register your tools in `bio.tools <https://bio.tools>`_ and describe them using the `EDAM ontology <https://github.com/edamontology/edamontology>`_ to a standard suitable for applications in workflow composition.  They were written to support the workshop `Automated Workflow Composition in the Life Sciences <https://www.lorentzcenter.nl/automated-workflow-composition-in-the-life-sciences.html>`_ hosted by the `https://www.lorentzcenter.nl/ <Lorentz Center>`_.
+These instructions provide a quick guide to the steps to register your tools in `bio.tools <https://bio.tools>`_ and describe them using the `EDAM ontology <https://github.com/edamontology/edamontology>`_ to a standard suitable for applications in workflow composition.  They were written to support the workshop `Automated Workflow Composition in the Life Sciences <https://www.lorentzcenter.nl/automated-workflow-composition-in-the-life-sciences.html>`_ hosted by the `Lorentz Center <https://www.lorentzcenter.nl/>`_.
 
 Help is available:
+
 * To get help using *bio.tools*, or for general curation advice, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
 * To get help using the EDAM ontology, please head over to <GitHub `https://github.com/edamontology/edamontology>`_ and post an issue.
 * If you have questions specifically about curation of tools for the Lorent workshop, you can mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ directly.
@@ -897,7 +898,9 @@ You'll need an account to create *bio.tools* entries or edit existing ones.  Cre
 You'll be asked for a username, email address and password.  Your account will be setup immediately.
 
 .. note::
-   *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users - these rights are set in the *Permissions* tab of the *bio.tools* editing interface. The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g.* a dedicated curator.
+   *bio.tools* entries are owned by the individuals who created them. Owners may grant edit rights, or transfer ownership of their entries to other registered users - these rights are set in the *Permissions* tab of the *bio.tools* editing interface.
+
+   The rightful owner of a *bio.tools* entry is usually the person who developed the tool, or provides an online service, but it can be some other responsible person, *e.g.* a dedicated curator.
 
    
 
@@ -916,10 +919,10 @@ To see whether a tool is already registered, search for it by its name. Simply t
 .. image:: _static/find_tool.png
 
 
-Once you find your entry you can go ahead and `update <#updating-entries>`_ it.  If you can't find the entry, you'll need to `create <#creating-entries>`_ it. 
+Once you find your entry you can go ahead and `update <#id66>`_ it.  If you can't find the entry, you'll need to `create <#id68>`_ it. 
 
 .. important::
-   Many of the tools you need already have been registered, but possibly with only very basic details. You will need to take ownerhsip or request edit rights on these entries to improve them.  Before starting work, please ensure you understand the `information requirement <#understand-the-information-requirement>`_ and follow the `guidelines <#describe-your-tools>`_  below.
+   Many of the tools you need already have been registered, but possibly with only very basic details. You will need to take ownerhsip or request edit rights on these entries to improve them.  Before starting work, please ensure you understand the `information requirement <#id75>`_ and follow the `guidelines <#id92>`_  below.
 
 
 
@@ -979,10 +982,10 @@ The editing interface provides some hints, and ensures that the information you 
 
    
 .. Important::
-   The attributes required by *bio.tools* (tool name, description and homepage URL) are marked with a red asterix |asterix| in the editing interface, and must be given before an entry can be saved.  You will need to provide more information - especially about the tool *function* - but this is enforced by *bio.tools* !  
+   The attributes required by *bio.tools* (tool name, description and homepage URL) are marked with a red asterix |asterix| in the editing interface, and must be given before an entry can be saved.  You will need to provide more information to support workflow composition - especially about the tool *function* - but this is not enforced by *bio.tools* !  
 
 .. note::
-   It's possibe to create tool descriptions in JSON format directly in a text editor and paste these into the editing interface ("JSON" tab), where you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see the section on `EDAM <#familiarise-yourself-with-edam>`_.)
+   It's possibe to create tool descriptions in JSON format directly in a text editor and paste these into the editing interface ("JSON" tab), where you see all the information that you've specified for a tool so far.  You can work directly in this pane if you wish.  This can be very useful when using the `EDAM Tool Annotator <https://bio.tools/static/eta/>`_ to define the tool's function (see the section on `EDAM <#id80>`_.)
 
 
 
@@ -1009,7 +1012,7 @@ Information requirement
 ^^^^^^^^^^^^^^^^^^^^^^^
 *bio.tools* requires only the name, description and homepage URL for a tool registration, but supports a comprehensive set of attributes for rich tool descriptions.
 
-To support workflow composition, very careful curation of tool functionality - it's input(s), operation(s) and output(s) - is required. The `guidelines <#describe-your-tools>`_ below cover exactly what's needed, and go through the curation process in a step-by-step way.
+To support workflow composition, very careful curation of tool functionality - it's input(s), operation(s) and output(s) - is required. The `guidelines <#id92>`_ below cover exactly what's needed, and go through the curation process in a step-by-step way.
 
 .. note::
    The attributes supported by *bio.tools*, their structure and their syntax are defined in formalised XML schema called `biotoolsSchema <https://biotoolsschema.readthedocs.io/en/latest/>`_.  You don't need to look at the schema, because everything is handled through *bio.tools*. If you'd like to learn more or contribute to this project, please head over to `GitHub <https://github.com/bio-tools/biotoolsSchema>`_.
@@ -1020,8 +1023,8 @@ Before you start
 .. important::
    Before you use *bio.tools* to create and edit tool descriptions, be sure to understand:
    
-   1. The type of tool being described - this determines the information requirement - and is covered in the section below on `tool type`_. 
-   2. The tool functionality and how it should be described  - covered in the section on `tool functions <#function>`_.
+   1. The type of tool being described - covered below in the section below on `Basic information`_. 
+   2. The tool functionality and how it should be described  - covered in the section on `tool functions <#id104>`_.
    3. Whether one or more entries are needed (see below).
 
 Plan what new entries (if any) are required to describe your tools:
@@ -1031,8 +1034,8 @@ Plan what new entries (if any) are required to describe your tools:
 * In some cases, *e.g.* complex software packages, it's not obvious whether to have one or multiple entries. Pick the option which mostly clearly illustrates the tool's functionality to end-users.
 * Tool collections should be described by multiple entries. For example, one entry to describe a *suite*, and multple other entries to describe the individual tools within that suite. 
 * Software with multiple interfaces should be described by a single entry, assuming these interfaces have essentially the same functionality. For example, a *command-line tool* whose functionality is also available via a *web application*, or a *database portal* with a *web API*.
-* Many *database portals* provide the typical database functions (browse, deposit, search, visualise, analyse and download), often in different interface components.  Usually one entry will suffice, but sometimes multiple entries are better, especially where the portal provides multiple analytical functions under different interfaces.
-* For very complex entities such as *Bioinformatics portals*, do not try to describe everything in a single entry.  Use a single entry for the portal, and multiple other entries for the things aggregated by the portal.
+
+For more information, see the `IFB tools tutorial <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#bio-tools-entries>`_.
  
 
 Familiarise yourself with EDAM
@@ -1076,7 +1079,7 @@ Three EDAM browsers, each with different functionality, can be used to find EDAM
    If you can't find the right term, please request that it's added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html#suggestions-requests>`_.  It takes some time for new terms to be supported in *bio.tools*, so if you need many new terms, please plan ahead and contact the `EDAM developers <mailto:edam@elixir-dk.org>`_ if you need help.
 
 
-5. Describe your tools
+4. Describe your tools
 ######################                      
 
 .. note::
@@ -1116,6 +1119,7 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 
 * **Tool type** is where you specify the type(s) of software that is described by the entry. A single *bio.tools* entry may be annotated with one or more types, reflecting different facets of the tool described by the entry. `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#tool-type>`_.
 * **Topic** is the place to tag your tool with EDAM terms describing the scientific domain the tool serves, or other general category.  
+
   * specify the most important and relevant scientific topic; up to 3 topics will usually suffice
   * don't exhaustively specify all the topics of lower or secondary relevance
 
@@ -1184,30 +1188,11 @@ Before describing your tools, you should carefully identify the distinct functio
 * if in contrast a tool always does one or more things, then you should annotate these as distinct operations within a single function
 * only specify the primary functions and operations, from a typical end-user perspective - tools often do many other things than its central, advertised purpose - you don't need to describe everything!
 
-.. tip::
-   *Database portal* usually provide one ore more of a common set of operations:
-
-   * **Browse**  - *no term in EDAM yet*
-   * **Deposit** - *Deposition* (http://edamontology.org/operation_3431)
-   * **Search** - *Database search* (http://edamontology.org/operation_2421)
-   * **Visualise** - *Visualisation* (http://edamontology.org/operation_0337)
-   * **Analyse** - *Analysis* (http://edamontology.org/operation_2945)
-   * **Download** - *Data retrieval* (http://edamontology.org/operation_2422)
-  
-   When annotating the operations, you should specify all of these that apply.  Consider carefully whether the *Analyis* operation(s) would be better listed as functions of discrete tools described in their own own entries (see `bio.tools entries <#bio-tools-entries>`_).
-
-
   
 Data
 ^^^^
 * data terms must be correctly associated with the operation(s) 
 * only specify the primary inputs and outputs, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
-
-.. tip::
-   For *Database portal*:
-   
-   * for *Deposition* and *Data retrieval* operations, you can associate the types of `data <#data>`_ available for upload (input) or download (output).
-   * for *Search* operation, you can specify *Database search results* (http://edamontology.org/data_2080) as an output, or some other more specific term in the `EDAM Data <http://edamontology.org/data_0006>`_ subontology.
 
 
 Format
@@ -1223,10 +1208,10 @@ Other sections in the *bio.tools* editing interface include:
 - *Labels* - specify miscellaneous scientific, technical and administrative details, expressed in terms from controlled vocabularies.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#labels>`_
 - *Links* - specify miscellaneous links for the tool.  The type of information obtained when resolving the link is specified by *Link type*.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#links>`_
 - *Download* - specify links to downloads for your software.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#download>`_
-* *Documentation* - link to documentation about the software.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#id45>`_
-* *Publications* - specify publications about the software. `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#id47>`_
-* *Credits & Support* - specify individuals or organisations that should be credited, or may be contacted about the software.  Credits include all type of entities that contributed to the development, maintenance or provision of the resource.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#credits-support>`_
-* *Relations* - specify details of a relationship this software shares with other software registered in *bio.tools*.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#id48>`_
+- *Documentation* - link to documentation about the software.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#id45>`_
+- *Publications* - specify publications about the software. `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#id47>`_
+- *Credits & Support* - specify individuals or organisations that should be credited, or may be contacted about the software.  Credits include all type of entities that contributed to the development, maintenance or provision of the resource.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#credits-support>`_
+- *Relations* - specify details of a relationship this software shares with other software registered in *bio.tools*.  `{learn more} <https://biotools.readthedocs.io/en/latest/community_specific_guidelines.html#id48>`_
 
 	    
 
