@@ -1145,7 +1145,7 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
  
 Function
 ^^^^^^^^
-In the *bio.tools* software model, a tool has one or more basic functions, or modes of operation.  Each **function** performs at least one **operation**, and has one or more primary **inputs** and **outputs**.  Each input and output are of single defined **type of data** and list one or more supported **format(s)**.
+In the *bio.tools* software model (`biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_), a tool has one or more basic functions, or modes of operation.  Each **function** performs at least one **operation**, and has one or more primary **inputs** and **outputs**.  Each input and output are of single defined **type of data** and list one or more supported **format(s)**.
 
 This is shown in a diagram on the Tool Cards that look like this:
 
