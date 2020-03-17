@@ -1212,7 +1212,7 @@ summary->biotoolsID
 *Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name, e.g. "needle".*
 
 .. attention::
-   - the ID by default is a URL-safe version of the tool name, and is set (and can only be changed) by *bio.tools* admin.  
+   - the ID by default is a URL-safe version of the tool name and can only be changed by *bio.tools* admin.  
 
 - **MUST** use the default value where possible
 - **MUST** be clean and intuitive (in case use of default is not possible) 
@@ -1226,6 +1226,8 @@ summary->biotoolsID
    - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
    - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
    - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_
+   - can only start with letters or numbers
+   - cannot end with a . (dot) character
    - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
 
      
