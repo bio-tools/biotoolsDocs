@@ -1052,15 +1052,15 @@ See more details at `https://biolib.com <https://biolib.com>`_.
 
 App name (BioLib)
 .............
-*BioLib Application Name of an existing app, e.g. "MyBioTool".*
+*Application Name of an existing BioLib app, e.g. "MyBioTool".*
 
 Author username (BioLib)
 .............
-*BioLib Username of the user that created the application, e.g. "example-university"*
+*BioLib Username of the user that created the BioLib app, e.g. "example-university"*
 
 Author name (BioLib)
 .............
-*The actual name of the author, e.g. "The Example University".*
+*The display name of the author that created the BioLib app, e.g. "The Example University".*
 
 
   
