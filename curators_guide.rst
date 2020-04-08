@@ -1032,6 +1032,37 @@ Note (credit)
 - **2.** **MUST NOT** duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
 	       
 
+Community group
+^^^^^^^^^^^^
+*Community and external partner resources linked from bio.tools.*
+
+The community and external partner resources have their own custom properties in bio.tools to facilitate integration between bio.tools and other resource providers. 
+
+If you're a resource provider and would like to integrate with bio.tools please email `registry-support@elixir-dk.org <registry-support@elixir-dk.org>`_ or `create an issue <https://github.com/bio-tools/biotoolsRegistry/issues/new>`_ on our `GitHub page <https://github.com/bio-tools/biotoolsRegistry/>`_.
+
+BioLib Annotations (Community)
+^^^^^^^^^^^^
+*BioLib is a platform for biological data science applications. With BioLib apps, you can run bioinformatics tools directly in your web browser.* 
+
+See more details at `https://biolib.com <https://biolib.com>`_.
+
+- **1.** **MUST** specify a valid BioLib *App name*
+- **2.** **MUST** specify a valid BioLib *Author username*
+- **3.** **MUST** specify the *Author name*
+
+App name (BioLib)
+.............
+*BioLib Application Name of an existing app, e.g. "MyBioTool".*
+
+Author username (BioLib)
+.............
+*BioLib Username of the user that created the application, e.g. "example-university"*
+
+Author name (BioLib)
+.............
+*The actual name of the author, e.g. "The Example University".*
+
+
   
 Tool type guidelines
 --------------------
