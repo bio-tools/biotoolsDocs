@@ -666,7 +666,28 @@ ELIXIR Node
    "UK"
      
 
-     
+ELIXIR Community
+................
+*Name of relevant ELIXIR (or other) community, e.g. "Galaxy"*
+
+- **1.** **MAY** cite any ELIXIR Community to which the software is directly relevant.
+
+.. csv-table::
+   :header: "ELIXIR Node"
+   :widths: 25
+
+   "3D-BioInfo"
+   "Federated Human Data"
+   "Galaxy"
+   "Human Copy Number Variation"
+   "Intrinsically Disordered Proteins"
+   "Marine Metagenomics"
+   "Metabolomics"
+   "Microbial Biotechnology"
+   "Plant Sciences"
+   "Proteomics"
+   "Rare Diseases"
+   
 
 Link group
 ^^^^^^^^^^^

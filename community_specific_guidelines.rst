@@ -328,7 +328,7 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
    You can use **Collection** to assign tools which are somehow related to one or more groups. These collections can have any names you like. Other ways to group tools are by creating a *bio.tools* subdomain (from *Menu...Manage subdomains*) and by defining `relations <https://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group>`_ between tools.
 
 .. note::
-  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. All tools in the IFB catalogue will have the ELIXIRNode credit set to "France".  These are not normally be set by *bio.tools* users {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_}.
+  **ELIXIRNode** and **ELIXIRPlatform** define the name of an ELIXIR node or ELIXIR platform, respectively, that is credited for the tool. All tools in the IFB catalogue will have the ELIXIRNode credit set to "France".  These are not normally be set by *bio.tools* users {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_}.  **ELXIRCommunity** defines a community (ELIXIR or otherwise) to which the resource is directly relevant - you can select as many as you wish.
   
 
 Tool type

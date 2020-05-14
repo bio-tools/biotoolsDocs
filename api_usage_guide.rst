@@ -1530,6 +1530,57 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 .. note::
    - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node>`_.
 
+
+
+
+ELIXIR community
+----------------
+*ELIXIR (or other) community to which the software is relevant.*
+
+Attribute name
+  elixirCommunity
+
+Required
+  No
+
+Cardinality
+  0 to many
+  
+Type
+  ENUM (list)
+
+Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-community>`_)
+
+  - ``3D-BioInfo``
+  - ``Federated Human Data``
+  - ``Galaxy``
+  - ``Human Copy Number Variation``
+  - ``Intrinsically Disordered Proteins``
+  - ``Marine Metagenomics``
+  - ``Metabolomics``
+  - ``Microbial Biotechnology``
+  - ``Plant Sciences``
+  - ``Proteomics``
+  - ``Rare Diseases``
+
+**Example**
+
+.. code-block:: js
+
+  # XML
+  <elixirCommunity>Galaxy</elixirCommunity>
+  <elixirCommunity>Metabolomics</elixirCommunity>
+  
+  # JSON		
+  "elixirCommunity":
+  [
+    "Galaxy",
+    "Metabolomics"
+  ]
+
+.. note::
+   - see the `curation guidelines <http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-community>`_.
+     
      
      
 Link
