@@ -780,7 +780,7 @@ Download type
    "Screenshot", "Screenshot of the software."
    "Source code", "The source code for the software, that can be compiled or assembled into an executable computer program."
    "Software package", "A software package; a bundle of files and information about those files, typically including source code and / or binaries."
-   "Test data", "Data for testing the software is working correctly."
+   "Test data", "Data for testing the scientific performance of the software or whether it is working correctly."
    "Test script", "Script used for testing testing whether the software is working correctly."
    "Tool wrapper (CWL)", "Tool wrapper in Common Workflow Language (CWL) format for the software."
    "Tool wrapper (galaxy)", "Galaxy tool configuration file (wrapper) for the software."
@@ -846,10 +846,11 @@ Documentation type
    "General", "General documentation."
    "Governance", "Information about the software governance model."
    "Installation instructions", "Instructions how to install the software."
-   "User manual ", "Information on how to use the software, tailored to the end-user."
+   "Quick start guide", "A short guide helping the end-user to use the software as soon as possible."
    "Release notes", "Notes about a software release or changes to the software; a change log."
    "Terms of use", "Rules that one must agree to abide by in order to use a service."
    "Training material", "Online training material such as a tutorial, a presentation, video etc."
+   "User manual ", "Information on how to use the software, tailored to the end-user."
    "Other", "Some other type of documentation not listed in biotoolsSchema."
 
 Note (documentation)
@@ -1053,6 +1054,37 @@ Note (credit)
 - **2.** **MUST NOT** duplicate information that is, or can, be provided via the ``role`` attribute, *i.e.* do not specify only "Developer", "Support" *etc.*
 	       
 
+Community group
+^^^^^^^^^^^^
+*Community and external partner resources linked from bio.tools.*
+
+The community and external partner resources have their own custom properties in bio.tools to facilitate integration between bio.tools and other resource providers. 
+
+If you're a resource provider and would like to integrate with bio.tools please email `registry-support@elixir-dk.org <registry-support@elixir-dk.org>`_ or `create an issue <https://github.com/bio-tools/biotoolsRegistry/issues/new>`_ on our `GitHub page <https://github.com/bio-tools/biotoolsRegistry/>`_.
+
+BioLib Annotations (Community)
+^^^^^^^^^^^^
+*BioLib is a platform for biological data science applications. With BioLib apps, you can run bioinformatics tools directly in your web browser.* 
+
+See more details at `https://biolib.com <https://biolib.com>`_.
+
+- **1.** **MUST** specify a valid BioLib *App name*
+- **2.** **MUST** specify a valid BioLib *Author username*
+- **3.** **MUST** specify the *Author name*
+
+App name (BioLib)
+.............
+*Application Name of an existing BioLib app, e.g. "MyBioTool".*
+
+Author username (BioLib)
+.............
+*BioLib Username of the user that created the BioLib app, e.g. "example-university"*
+
+Author name (BioLib)
+.............
+*The display name of the author that created the BioLib app, e.g. "The Example University".*
+
+
   
 Tool type guidelines
 --------------------
@@ -1233,7 +1265,7 @@ summary->biotoolsID
 *Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name, e.g. "needle".*
 
 .. attention::
-   - the ID by default is a URL-safe version of the tool name, and is set (and can only be changed) by *bio.tools* admin.  
+   - the ID by default is a URL-safe version of the tool name and can only be changed by *bio.tools* admin.  
 
 - **MUST** use the default value where possible
 - **MUST** be clean and intuitive (in case use of default is not possible) 
@@ -1247,6 +1279,8 @@ summary->biotoolsID
    - replace ' ' (spaces) in the name with underscores (a single underscore in case of multiple spaces)
    - preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters
    - use '_' to delimit parts of names but only *if* these are not already truncated in the original `name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool>`_
+   - can only start with letters or numbers
+   - cannot end with a . (dot) character
    - adhere to the same patterns for `tool name <http://biotools.readthedocs.io/en/latest/curators_guide.html#name>`_, *e.g.* ``EMBOSS_water_API_ebi``
 
      
