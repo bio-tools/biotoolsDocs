@@ -759,7 +759,7 @@ Download type
    "Screenshot", "Screenshot of the software."
    "Source code", "The source code for the software, that can be compiled or assembled into an executable computer program."
    "Software package", "A software package; a bundle of files and information about those files, typically including source code and / or binaries."
-   "Test data", "Data for testing the software is working correctly."
+   "Test data", "Data for testing the scientific performance of the software or whether it is working correctly."
    "Test script", "Script used for testing testing whether the software is working correctly."
    "Tool wrapper (CWL)", "Tool wrapper in Common Workflow Language (CWL) format for the software."
    "Tool wrapper (galaxy)", "Galaxy tool configuration file (wrapper) for the software."
@@ -825,10 +825,11 @@ Documentation type
    "General", "General documentation."
    "Governance", "Information about the software governance model."
    "Installation instructions", "Instructions how to install the software."
-   "User manual ", "Information on how to use the software, tailored to the end-user."
+   "Quick start guide", "A short guide helping the end-user to use the software as soon as possible."
    "Release notes", "Notes about a software release or changes to the software; a change log."
    "Terms of use", "Rules that one must agree to abide by in order to use a service."
    "Training material", "Online training material such as a tutorial, a presentation, video etc."
+   "User manual ", "Information on how to use the software, tailored to the end-user."
    "Other", "Some other type of documentation not listed in biotoolsSchema."
 
 Note (documentation)
