@@ -673,7 +673,7 @@ ELIXIR Community
 - **1.** **MAY** cite any ELIXIR Community to which the software is directly relevant.
 
 .. csv-table::
-   :header: "ELIXIR Node"
+   :header: "ELIXIR Community"
    :widths: 25
 
    "3D-BioInfo"
