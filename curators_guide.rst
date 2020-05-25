@@ -994,6 +994,26 @@ GRID ID
    Global Research Identifier Database IDs (GRID IDs) provide a persistent reference to information on an organisation, see https://www.grid.ac/.    
 
 
+ROR ID
+........
+*Unique identifier (ROR ID) of an organisation that is credited, e.g. "03yrm5c26"*
+
+- **1.** **MUST** correctly identify a credited organisation
+
+.. note::
+   Research Organization Registry (ROR) IDs provide a persistent reference to information on research organisations, see https://ror.org/.
+
+
+FundRef ID
+........
+*Unique identifier (FundRef ID or Funder ID) of a funding organisation that is credited, e.g. "10.13039/100009273"*
+
+- **1.** **MUST** correctly identify a credited organisation
+
+.. note::
+   The Funder Registry (formerly FundRef) IDs provide a persistent reference to information on funding organisations registered in the Crossref registry, see https://www.crossref.org/services/funder-registry/.
+
+
 Email
 .....
 *Email address of the entity that is credited e.g. "hnielsen@cbs.dtu.dk"*

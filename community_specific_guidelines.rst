@@ -722,6 +722,8 @@ For any credit, you can specify any of the following:
    **name**, "Name of the entity that is credited."
    **orcidid**, "Unique identifier (ORCID iD) of a person that is credited."
    **gridid**, "Unique identifier (GRID ID) of an organisation that is credited."
+   **rorid**, "Unique identifier (ROR ID) of an organisation that is credited."
+   **fundrefid**, "Unique identifier (FundRef ID or Funder ID) of a funding organisation that is credited."
    **email**, "Email address."
    **url**, "URL, e.g. homepage of an institute."
    **tel**, "Telephone number."

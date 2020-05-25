@@ -254,6 +254,8 @@ A sample JSON document may look like this:
             "url": "http://someurl.org",
             "orcidid": "test",
             "gridid": "test",
+            "rorid": "test",
+            "fundrefid": "test",	 
             "typeEntity": "Person",
             "typeRole": "Developer",
             "note": "A comment goes here"
@@ -2018,7 +2020,15 @@ Credit object definition
         * Required: No
 	* Cardinality: 0 or 1
         * Type: String
-        * Restrictions: pattern: grid.[0-9]{4,}.[a-f0-9]{1,2} 
+        * Restrictions: pattern: grid.[0-9]{4,}.[a-f0-9]{1,2}
+    * rorid
+        * Required: No
+	* Cardinality: 0 or 1
+        * Type: String
+    * fundrefid
+        * Required: No
+	* Cardinality: 0 or 1
+        * Type: String
     * email
         * Required: No
 	* Cardinality: 0 or 1
@@ -2069,6 +2079,8 @@ Credit object definition
    <name>TN Petersen</name>
    <orcidid>http://orcid.org/0000-0002-1825-0097</orcidid>
    <gridid>grid.5170.3</orcidid>
+   <rorid>03yrm5c26</rorid>
+   <fundrefid>10.13039/100009273</fundrefid>  
    <email>test@cbs.dtu.dk</email>
    <url>http://cbs.dtu.dk</url>
    <typeEntity>Person</typeEntity>
@@ -2084,6 +2096,8 @@ Credit object definition
       "name": "TN Petersen",
       "orcidid":"http://orcid.org/0000-0002-1825-0097",
       "gridid":"grid.5170.3",
+      "rorid":"03yrm5c26",
+      "fundrefid":"10.13039/100009273",    
       "url": "http://cbs.dtu.dk",
       "email": "test@cbs.dtu.dk",
       "typeEntity": "Person",
