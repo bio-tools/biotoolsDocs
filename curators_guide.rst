@@ -668,7 +668,7 @@ ELIXIR Node
 
 ELIXIR Community
 ................
-*Name of relevant ELIXIR (or other) community, e.g. "Galaxy"*
+*Name of relevant ELIXIR (or associated) community, e.g. "Galaxy"*
 
 - **1.** **MAY** cite any ELIXIR Community to which the software is directly relevant.
 
@@ -809,7 +809,7 @@ Version (download)
 											
 Documentation group
 ^^^^^^^^^^^^^^^^^^^
-*Links to documentation about the software e.g. manual, API specification or training material.*
+*Links to documentation about the software e.g. user manual, API documentation or training material.*
 
 .. note::
   - the *bio.tools* registration interace & API allows a curator to record when a documentation link of a certain type is known to *not* be available
@@ -874,7 +874,7 @@ Relation group
 
 biotoolsID (relation)
 .....................
-*bio.tools ID of an existing bio.tools entry which this software is related to, e.g. "needle"*
+*bio.tools ID of an existing bio.tools entry to which this software is related, e.g. "needle"*
 
 
 Relation type

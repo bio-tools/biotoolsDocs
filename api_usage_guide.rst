@@ -1537,7 +1537,7 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 
 ELIXIR community
 ----------------
-*ELIXIR (or other) community to which the software is relevant.*
+*ELIXIR (or associated) community to which the software is relevant.*
 
 Attribute name
   elixirCommunity
@@ -1751,7 +1751,7 @@ Download object definition
   
 Documentation
 --------------
-*Links to documentation about the software e.g. manual, API specification or training material.*
+*Links to documentation about the software e.g. user manual, API documentation or training material.*
 
 Attribute name
   documentation
