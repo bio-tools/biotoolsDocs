@@ -429,7 +429,7 @@ Operating system
 - **1.** **MUST** specify all operating systems that are applicable, in terms from a controlled vocabulary (see below)
 
 .. csv-table::
-   :header: "Maturity", "Description"
+   :header: "Operating system", "Description"
    :widths: 25, 100
 
    "Linux", "All flavours of Linux/UNIX operating systems."
