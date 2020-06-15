@@ -1393,7 +1393,7 @@ Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/cu
 
 Accessibility
 -------------
-*Whether the software is freely available for use, e.g. "Open access"*
+*Whether there are non-monetary restrictions on accessing an online service, e.g. "Open access"*
 
 Attribute name
   accessibility
@@ -1409,6 +1409,7 @@ Type
 
 Allowed values (see `Curators Guide <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_)
   - ``Open access``
+  - ``Open access (with restrictions)``    
   - ``Restricted access``
 
     

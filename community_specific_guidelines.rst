@@ -320,7 +320,7 @@ In the *Labels* tab you specify miscellaneous scientific, technical and administ
 * **License** is a software or data usage license. See `below <#license>`_ {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license>`_}.
 * **Operating system** is the operating system supported by a downloadable software package - pick all that apply {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system>`_}.
 * **Maturity** is how mature the software product is; *Emerging*, *Mature* or *Legacy*. Don't pick *Mature* for tools which aren't really mature yet! {`learn more <http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity>`_}.
-* **Accessibility** is whether an online service is freely available for use; either *Open access* or *Restricted access*. Read the definitions before picking these terms! {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
+* **Accessibility** is whether there are non-monetary restrictions on accessing an online service; *Open access*, *Open access (with restrictions)* or *Restricted access*. Read the definitions before picking these terms! {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility>`_}.
 * **Language** is the name of a programming language the tool source code was written in {`learn more <http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language/>`_}.
 
    

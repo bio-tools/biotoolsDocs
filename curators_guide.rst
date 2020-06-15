@@ -601,7 +601,7 @@ Cost
 
 Accessibility
 .............
-*Whether the software is freely available for use, e.g. "Open access"*
+*Whether there are non-monetary restrictions on accessing an online service., e.g. "Open access"*
 
 - **1.** **MUST** acurately describe the accessibility conditions that apply, in terms from a controlled vocabulary (see below)
 
@@ -610,6 +610,7 @@ Accessibility
    :widths: 25, 100
 
    "Open access", "An online service which is available for use to all, but possibly requiring user accounts / authentication."
+   "Open access (with restrictions)", "An online service which is available for use to all, but possibly with some usage limitations and other restrictions."
    "Restricted access", "An online service which is available for use to a restricted audience, e.g. members of a specific institute."
 
 .. note::
