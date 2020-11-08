@@ -10,14 +10,11 @@ We have organised many events and regularly attend events organised by others.  
 Forthcoming events
 ------------------
 
+**ELIXIR BioHackathon-Europe 2020 (Nov 9-13, 2020, Virtual)**
+Following the success of the ELIXIR BioHackathon 2018 and BioHackathon 2019, this virtual edition will include multiple tracks related to bio.tools and EDAM:
 
-
-**Technical Hackathon : Towards a comprehensive catalogue of data formats (Autumn 2017 tbd, Amsterdam, NL)**
-*tentative*
-
-A hackathon aimed at providing comprehensive coverage of data formats in EDAM.  More details will be added soon.
-
-
+- `Project 10: EDAM and Tool Information Profiles <https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/10>`_
+- `Project 11: bio.tools integration and sustainable development <https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/11>`_
 
 
 Past events
