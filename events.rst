@@ -20,10 +20,57 @@ Following the success of the ELIXIR BioHackathon 2018 and BioHackathon 2019, thi
 Past events
 -----------
 
-**Meeting: ELIXIR Tools Platform (Jan 28 - 30 2019, Ghent, BE)**
+**Hackathon: ELIXIR BioHackathon-Europe 2019 (Nov 18-22 2019, Campus des berges de Seine, FR)**
+
+https://2019.biohackathon-europe.org/
+
+------
+
+**Scientific Software Registry Collaboration Workshop (Nov 13-14, 2019, Washington, USA)**
+
+https://asclnet.github.io/SWRegistryWorkshop/
+
+------
+
+**Conference: ISMB/BOSC/CodeFest 2019 (Jul 21-27 2019, Basel, CH)**
+
+https://www.iscb.org/ismbeccb2019
+
+https://www.open-bio.org/events/bosc-2019/
+
+https://www.open-bio.org/events/bosc-2019/bosc-2019-collaborationfest/
+
+------
+
+**Conference: GCC 2019 (Jul 1-6, Freiburg, DE)**
+
+https://galaxyproject.org/events/gcc2019/
+
+GCC2019 was held in Freiburg, Germany, 1-6 July of 2019.
+
+------
+
+**Conference: ELIXIR All-hands (Jun 17-20 2019, Lisbon, PT)**
+
+https://elixir-europe.org/events/elixir-excelerate-all-hands-meeting-2019
+
+The fifth ELIXIR All Hands meeting took place 17-20 June 2019 in Lisbon. The meeting brings together members of the ELIXIR community from across the ELIXIR Nodes, and collaborators from partner organisations, in order to review ELIXIR’s achievements and activities so far and discuss plans for the future. The All Hands meeting is also the venue for the ELIXIR-EXCELERATE Annual General Assembly Meeting.
+
+------
+
+**Workshop: Debian Med 2019 Sprint (Mar 9-11 2019, Vilnius, ES)**
+
+https://wiki.debian.org/Sprints/2019/DebianMed2019
+
+This is an informal co-working and co-learning event, participants are welcome to attend on the days that work for their schedule.  EDAM and the integration of bio.tools with Debian Med and CWL was worked on.
+
+------
+
+**Meeting: ELIXIR Tools Platform Face to Face Meeting (Jan 28 - 30 2019, Ghent, BE)**
 
 A more sustainable content management architecture, based on GitHub, was outlined in more detail.  You can track developments on `GitHub <https://github.com/bio-tools/content/>`_.
 
+------
 
 **Hackathon: ELIXIR BioHackathon-Europe 2018 (Nov 12-16 2018, Campus des berges de Seine, FR)**
 
@@ -31,11 +78,13 @@ The *bio.tools* and EDAM developers ran drop-in sessions each day of this 5-day 
 
 https://2018.biohackathon-europe.org/
 
+------
 
 **Meeting: ELIXIR Tools and ELIXIR Compute Platforms : coordination (Sep 19 2018, Schipol, UK)**
 
 *bio.tools* was presented in context of a coordinated effort to establish ELIXIR-wide standards, protocols and processes for the orchestration of containerised applications and workloads provided by ELIXIR Communities.
 
+------
 
 **Conference: ECCB 2018 - 17TH European Conference on Computational Biology (Sep 8-12 2018, Athens, GR)**
 
@@ -43,6 +92,7 @@ http://eccb18.org/
 
 Work on exploring the application of *bio.tools* data to automated workflow composition in mass spectrometry-based proteomics was presented.  The work was recently published in Bioinformatics (`10.1093/bioinformatics/bty646  <https://doi.org/10.1093/bioinformatics/bty646>`_).
 
+------
 
 **Conference: ELIXIR-DK @ 4th Annual Danish Bioinformatics Conference (Aug 29-30 2018, Odense, DK)**
 
@@ -52,7 +102,7 @@ This will showcase the work of the Danish ELIXIR node in context of the Danish a
 
 ------
 
-**Conference: BOSC 2018 (Jun 25-30 2018, Portland, USA)**
+**Conference: GCC-BOSC 2018 (Jun 25-30 2018, Portland, USA)**
 
 https://gccbosc2018.sched.com/list/descriptions/
 
@@ -84,7 +134,7 @@ This is an informal co-working and co-learning event, participants are welcome t
 
 ------
 
-**Meeting: ELIXIR Tools Platform Meeting (Feb 8-9 2018, Barcelona, ES)**
+**Meeting: ELIXIR Tools Platform Face to Face Meeting (Feb 8-9 2018, Barcelona, ES)**
 
 https://tinyurl.com/etp-feb2018
 
@@ -170,7 +220,7 @@ https://www.elixir-europe.org/events/elixir-innovation-and-sme-forum%3A-genomics
 
 ------
 
-**Meeting: ELIXIR Tools Platform Meeting (Feb 22-23 2017, Barcelona, ES**
+**Meeting: ELIXIR Tools Platform Face to Face Meeting (Feb 22-23 2017, Barcelona, ES)**
 
 https://www.elixir-europe.org/events/elixir-tools-platform-all-hands-meeting
 
