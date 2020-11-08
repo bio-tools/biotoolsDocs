@@ -11,7 +11,7 @@ Forthcoming events
 ------------------
 
 **ELIXIR BioHackathon-Europe 2020 (Nov 9-13, 2020, Virtual)**
-Following the success of the ELIXIR BioHackathon 2018 and BioHackathon 2019, this virtual edition will include multiple tracks related to bio.tools and EDAM:
+Following the success of the ELIXIR BioHackathon 2018 and BioHackathon 2019, this `virtual edition <https://www.biohackathon-europe.org/>`_ will include multiple tracks related to bio.tools and EDAM:
 
 - `Project 10: EDAM and Tool Information Profiles <https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/10>`_
 - `Project 11: bio.tools integration and sustainable development <https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/11>`_
@@ -20,20 +20,19 @@ Following the success of the ELIXIR BioHackathon 2018 and BioHackathon 2019, thi
 Past events
 -----------
 
-**Meeting: ELIXIR Tools Platform (Jan 28 - 30, Ghent, BE)**
+**Meeting: ELIXIR Tools Platform (Jan 28 - 30 2019, Ghent, BE)**
 
 A more sustainable content management architecture, based on GitHub, was outlined in more detail.  You can track developments on `GitHub <https://github.com/bio-tools/content/>`_.
 
 
-**Hackathon: Paris BioHackathon (Nov 12-16, Campus des berges de Seine, FR)**
+**Hackathon: ELIXIR BioHackathon-Europe 2018 (Nov 12-16 2018, Campus des berges de Seine, FR)**
 
 The *bio.tools* and EDAM developers ran drop-in sessions each day of this 5-day hackathon, ranging from *bio.tools* testing and feature prioritisation, curation methods and tooling, through to prototyping a more sustainable content management architecture based on GitHub.
 
 https://2018.biohackathon-europe.org/
 
 
-
-**Meeting: ELIXIR Tools and ELIXIR Compute Platforms : coordination (Sep 19, Schipol, UK)**
+**Meeting: ELIXIR Tools and ELIXIR Compute Platforms : coordination (Sep 19 2018, Schipol, UK)**
 
 *bio.tools* was presented in context of a coordinated effort to establish ELIXIR-wide standards, protocols and processes for the orchestration of containerised applications and workloads provided by ELIXIR Communities.
 
