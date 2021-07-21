@@ -127,5 +127,6 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Vegard Nygaard (ELIXIR NO)
 - Victor de la Torre (INB)
 - Wiktor Jurkowski (Earlham, UK)
+- Jeremy Leipzig (Truwl)
 
 
