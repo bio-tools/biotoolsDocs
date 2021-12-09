@@ -18,6 +18,7 @@ Contents:
    Contributors Guide <contributors_guide>
    Quick Start Guide <quickstart_guide>
    Curators Guide <curators_guide>
+   bio.tools domains <biotools_domains>
    Community-specific guidelines <community_specific_guidelines>
    Editors Guide <editors_guide>
    API reference <api_reference>
