@@ -62,7 +62,7 @@ Longform description of the domain.
 
 **SHOULD** contain any descriptive text about the domain that does not fit in any of the above fields.
 
-Domain descriptions offer support for simple HTML tags such as **bold**, *italics* or [anchor tags]().
+Domain descriptions offer support for simple HTML tags such as **bold**, *italics* or `anchor tags <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a>`_.
 
 
 Domain resources
