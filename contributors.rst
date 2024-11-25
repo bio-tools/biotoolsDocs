@@ -4,6 +4,8 @@ Contributors
 .. note:: You can contact the registry-dev group by mailing registry-core@elixir-dk.org 
 
    
+..
+    TODO: update everything - needs checking
 
 registry-dev
 -------------

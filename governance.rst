@@ -1,9 +1,9 @@
 Governance
 ==========
 *bio.tools* follows a simple governance model of three tiers under the leadership of the 
-`Danish ELIXIR node <http://elixir-denmark.org>`_ (Professor Søren Brunak, Head of Node) which is providing long-term funding and support for *bio.tools*.  Development on the ground is led by Danish Node staff, currently `Jon Ison <mailto:jison@bioinformatics.dtu.dk>`_, `Piotr Chmura <mailto:piotr.chmura@cpr.ku.dk>`_ and `Hans Ienasescu <mailto:hans@bio.tools>`_, in close collaboration with the registry-dev group (see below) and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
+`Danish ELIXIR node <http://elixir-denmark.org>`_ which is providing long-term funding and support for *bio.tools*.  Development on the ground is led by Danish Node staff in close collaboration with the registry-dev group and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
 
-If you’d like to get involved with the project please mail registry@elixir-dk.org.
+If you’d like to get involved with the project please mail support-bio-tools@sdu.dk.
 
 registry-dev
 -------------
@@ -20,7 +20,7 @@ registry-dev includes the technical and scientific experts at the heart of the d
 
 Danish Node staff are responsible for reporting software development and curation priorities, and progress, to the ELIXIR-DK Management.
 
-registry-dev will assemble virtually or in person as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations.  registry-dev members are signed up to the the `registry-core mailing list <http://biotools.readthedocs.io/en/latest/contributors_guide.html#mailing-list>`_. 
+registry-dev will assemble virtually or in person as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations.
 
 Thematic editors
 ^^^^^^^^^^^^^^^^
@@ -41,7 +41,7 @@ An important (but voluntary) role of contributors is to function in an **advisor
 - oversee the curation and development of *bio.tools* and actively offer constructive advice based on their practical experience, requirements and expertise
 - advocate *bio.tools* to colleagues 
 
-The registry-dev group will respect this feedback and advice and reflect it in subsequent rounds of development and curation.  We very much welcome new contributors: for further information please mail registry@elixir-dk.org.
+The registry-dev group will respect this feedback and advice and reflect it in subsequent rounds of development and curation.
 
 Registry end-users
 ------------------
@@ -50,7 +50,7 @@ We particularly welcome input from end-users from the life science community inc
 - to provide feedback and constructive advice based on their practical experience, requirements and expertise
 
 registry-dev will respect this feedback and advice and reflect it in subsequent rounds of registry development and curation.
-Anyone who is considering using the registry - but especially typical scientist / bioinformatician end-users - are welcome to mail registry@elixir-dk.org.
+Anyone who is considering using the registry - but especially typical scientist / bioinformatician end-users - are welcome to mail support-bio-tools@sdu.dk
 
 
 
