@@ -3,7 +3,7 @@ Domains in bio.tools
 
 *bio.tools* domains provide a way to "slice" the bio.tools content into subsets of tools. 
 
-The name **"domain"** (or sometimes also referred as **"subdomain"**) comes from the fact that after creation the domains can be accessed via regular URL subdomains in bio.tools such as `proteomics.bio.tools <https://protemics.bio.tools>`_ or `rare-diseases.bio.tools <https://rare-diseases.bio.tools>`_.
+The name **"domain"** (or sometimes also referred as **"subdomain"**) comes from the fact that after creation the domains can be accessed via regular URL subdomains in bio.tools such as `proteomics <https://bio.tools/t?domain=proteomics>`_ or `rare-diseases <https://bio.tools/t?domain=rare-diseases>`_.
 
 The advantage of creating and using bio.tools domains is that you can describe, link to, and search within a smaller subset (or "slice") of the bio.tools content which can help with the description and findability of tools relevant to a specific task.
 
@@ -30,11 +30,13 @@ Note: the domain name can only be provided at the time of the domain creation. A
 - **MUST** be URL-safe, clean and intuitive
 - **MUST** be related to the tools in the domain
 
+
 Domain title
 ------------
 The title of the domain.
 
 - **MUST** be concise and descriptive. The domain title will appear at the top part of the domain page
+
 
 Domain subtitle
 ---------------
@@ -48,6 +50,7 @@ Domain tags
 Tags associated with a domain.
 
 - **MUST** be keywords that help with the search and discovery of the domain
+
 
 Domain collections
 ------------------
@@ -120,6 +123,3 @@ In the "*Search for tools*" section of the page use the searchbox to find the to
 The tools added to the domain will show up below in the *Tools included the domain* section. In this section any included tools can also be removed. 
 
 **Click the "Update" button at the bottom to save your changes.**
-
-
-

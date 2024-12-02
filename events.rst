@@ -10,15 +10,52 @@ We have organised many events and regularly attend events organised by others.  
 Forthcoming events
 ------------------
 
-**ELIXIR BioHackathon-Europe 2020 (Nov 9-13, 2020, Virtual)**
-Following the success of the ELIXIR BioHackathon 2018 and BioHackathon 2019, this `virtual edition <https://www.biohackathon-europe.org/>`_ will include multiple tracks related to bio.tools and EDAM:
+**ELIXIR All Hands**
 
-- `Project 10: EDAM and Tool Information Profiles <https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/10>`_
-- `Project 11: bio.tools integration and sustainable development <https://github.com/elixir-europe/BioHackathon-projects-2020/tree/master/projects/11>`_
+https://elixir-europe.org/events/all-hands
+
+------------------
+
+**ELIXIR BioHackathon-Europe**
+
+https://elixir-europe.org/events/biohackathon-europe
+
 
 
 Past events
 -----------
+
+**Hackathon: ELIXIR BioHackathon-Europe 2024 (Nov 4-8 2024, Campus Belloch, ES)**
+
+Project 16. Enhancing bio.tools by Semantic Literature Mining.
+
+https://2024.biohackathon-europe.org/ and https://github.com/bio-tools/biohackathon2024
+
+-----------
+..
+    **Hackathon: ELIXIR BioHackathon-Europe 2023 (Oct 30 - Nov 3 2023, Campus Belloch, ES)**
+
+    https://2023.biohackathon-europe.org/
+
+    -----------
+
+    **Hackathon: ELIXIR BioHackathon-Europe 2022 (Nov 7-11 2022, Campus des berges de Seine, FR)**
+
+    https://2022.biohackathon-europe.org/
+
+    -----------
+
+    **Hackathon: ELIXIR BioHackathon-Europe 2021 (Nov 8-12 2021, Campus La Mola, ES)**
+
+    https://2021.biohackathon-europe.org/
+
+    -----------
+
+    **Hackathon: ELIXIR BioHackathon-Europe 2020 (Nov 9-13 2020, Virtual)**
+
+    https://2020.biohackathon-europe.org/
+
+    -----------
 
 **Hackathon: ELIXIR BioHackathon-Europe 2019 (Nov 18-22 2019, Campus des berges de Seine, FR)**
 

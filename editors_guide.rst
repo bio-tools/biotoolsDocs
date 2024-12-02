@@ -24,6 +24,9 @@ The sheer number of software and continuous advancements in tool development dem
 Candidate thematic editors
 --------------------------
 
+..
+    TODO: Magnus
+
 We have expressions of interest from the following people:
 
 ================= ==================================================================
