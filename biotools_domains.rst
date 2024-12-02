@@ -100,9 +100,11 @@ A public domain is a domain in which other users can populate that domain by tag
 
 Even if users can modify the tool content of a specific domain they cannot change the metadata of the domain (e.g. domain title, domain description etc)
 
+
 Explore domains
 ^^^^^^^^^^^^^^^
 All domains in bio.tools can be viewed and searched at `https://bio.tools/domains <https://bio.tools/domains>`_ or going to Explore -> Domains in the bio.tools page header.
+
 
 Create a domain
 ^^^^^^^^^^^^^^^
@@ -110,6 +112,7 @@ In order to create a domain a user needs a bio.tools account and to be logged in
 In the bio.tools page header go to Menu -> Manage domains or directly to `https://bio.tools/domain-manager <https://bio.tools/domain-manager>`_. 
 
 This page will show all the domains (if any) a user has created. To create a new domain click on the *Add* button. This will take you to the domain create page. Fill in the fields described above (*only domain name required*) and click Save at the bottom right. This will validate and create your domain and redirect to the domain update page where tools can also be added to the domain.
+
 
 Update a domain
 ^^^^^^^^^^^^^^^
@@ -123,3 +126,8 @@ In the "*Search for tools*" section of the page use the searchbox to find the to
 The tools added to the domain will show up below in the *Tools included the domain* section. In this section any included tools can also be removed. 
 
 **Click the "Update" button at the bottom to save your changes.**
+
+
+Subdomains
+^^^^^^^^^^^^^^^
+From the `domain manager page <https://bio.tools/domain-manager>`_ create subdomains, to organize tools within a specific domain, e.g. `3D-BioInfo <https://bio.tools/t?domain=3d-bioinfo>`_.
