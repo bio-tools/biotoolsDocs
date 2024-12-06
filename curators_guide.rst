@@ -927,6 +927,10 @@ Publication type
 - **1.** **MUST** acurately specify the type of publication, in terms from a controlled vocabulary (see below)
 - **2.** **SHOULD** specify all the types that are applicable
 
+.. note::
+   - there can be multiple publications with the same publication type, including "Primary".
+
+
 .. csv-table::
    :header: "Publication type", "Description"
    :widths: 25, 100
