@@ -4,7 +4,6 @@ Curators Guide
 .. attention::
    - guidelines for `bio.tools <https://bio.tools>`_  curators, including EDAM annotation guidelines. 
    - to make suggestions about these guidelines please add comments via `GitHub <https://github.com/bio-tools/biotoolsDocs/issues/6>`_
-   - for curation advice mail `registry-support <mailto:registry-support@elixir-dk.org>`_
 
   
 *bio.tools* includes all types of bioinformatics *tools* - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which you can download, install, configure and run yourself.
@@ -46,8 +45,7 @@ Consider the following *before* creating a *bio.tools* entry:
 
    - `workbenches <http://biotools.readthedocs.io/en/latest/curators_guide.html#workbench>`_ and other `suites <http://biotools.readthedocs.io/en/latest/curators_guide.html#suite>`_ often require multiple entries.
    - tools with multiple interfaces (*e.g.* `Command-line tool <http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool>`_ , `Web API <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api>`_, `Web service <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service>`_ and `Web application <http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application>`_) **SHOULD** be described by a single entry **unless** these interfaces provide fundamental functional differences (see `Tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_ below).
-   - if in doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
-
+ 
 2. **What tool types apply?**
 
    - one or more tool `types <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type>`_ may be assigned in a single entry reflecting different facets of the software described by the entry.
@@ -61,7 +59,7 @@ Consider the following *before* creating a *bio.tools* entry:
 
    Make these requests using the buttons at the bottom of the Tool Card (see *e.g.* https://bio.tools/signalp).
 
-   If you plan to register multiple entries *en masse*, please discuss this first with `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.  
+   If you plan to register multiple entries *en masse*, please discuss this first with `bio.tools admin <mailto:support-bio-tools@sdu.dkf>`_.  
      
 4. **Are there version-specific considerations?**
 
@@ -82,9 +80,9 @@ Tool functions
 
 Plan how how to describe the software:
 
-- identify the distinct functions (modes of operation) and the individual operations associated with each one.  Typically different functions (modes) perform different operations and for well documented tools, this is usually obvious.  If in any doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
+- identify the distinct functions (modes of operation) and the individual operations associated with each one.  Typically different functions (modes) perform different operations and for well documented tools, this is usually obvious.  
 - as a general rule, if the tool allows an option between doing one thing or another, then you **MUST** annotate the operations as distinct functions.  If in contrast a tool always does one or more things, then you **MUST** annotate these as distinct operations within a single function.
-- *bio.tools* aims for fairly coarse-grained description, *i.e.* you **SHOULD** only specify the primary functions and operations, from a typical end-user perspective.  If a tool happens to perform some operation internally, but this is secondary to its advertised purpose, then you **SHOULD NOT** annotate it.  If in doubt mail `registry-support <mailto:registry-support@elixir-dk.org>`_
+- *bio.tools* aims for fairly coarse-grained description, *i.e.* you **SHOULD** only specify the primary functions and operations, from a typical end-user perspective.  If a tool happens to perform some operation internally, but this is secondary to its advertised purpose, then you **SHOULD NOT** annotate it. 
 - this holds for input and output too, *e.g.* a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.
 - many tools allow a primary input or output to be specified in a number of alternative ways, *e.g.* a sequence input that may be specified *via* a sequence identifier, or as a literal sequence.  In such cases, you **MAY** annotate the alternatives as distinct functions (see above).  If specifying just one alternative, you **SHOULD** use the EDAM Data concept for the type of data, rather than identifier.  
 
@@ -111,9 +109,7 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
 
    - `EBI OLS browser <http://www.ebi.ac.uk/ols/ontologies/edam>`_
    - `NCBO BioPortal browser <https://bioportal.bioontology.org/ontologies/EDAM>`_
-   - `EDAM ontology browser from IFB <https://ifb-elixirfr.github.io/edam-browser/>`_
-   - `EDAM Tool Annotator Demo <http://people.binf.ku.dk/vzn529/eta/>`_
-   
+   - `EDAM ontology browser <https://edamontology.github.io/edam-browser/>`_
 
    If you cannot find the right term, request it’s added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests>`_.
      
@@ -121,7 +117,7 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
    It currently takes some time from requesting new EDAM terms for these to be supported in *bio.tools*.  In future, you'll be able to request terms directly via the *bio.tools* registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and *bio.tools*.
 
 .. note::
-   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in *bio.tools*. They are defined in `EDAM.owl <https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl>`_ via ``<usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>`.  Such tips are visible in the OLS and BioPortal browsers.
+   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in *bio.tools*. They are defined in `EDAM.owl <https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl>`_ via `<usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>`.  Such tips are visible in the OLS and BioPortal browsers.
       
    
 
@@ -301,7 +297,7 @@ Operation
 
 - **1.** **MUST** correctly specify operations performed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), those specific version(s) of the tool
 - **2.** **MUST** be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_).
-- **3.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
+- **3.** **SHOULD** describe all the primary operations performed by that tool and **SHOULD NOT** describe secondary / minor operations. 
 
 .. attention::
    - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
@@ -317,7 +313,7 @@ Data type (input and output data)
 
 - **1.** **MUST** correctly specify types of input or output data processed by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_ is indicated), those specific version(s) of the tool
 - **2.** **MUST** be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_).
-- **3.** **SHOULD** describe all the primary inputs and outputs of the tool and **SHOULD NOT** describe secondary / minor inputs and outputs: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
+- **3.** **SHOULD** describe all the primary inputs and outputs of the tool and **SHOULD NOT** describe secondary / minor inputs and outputs. 
 
 .. attention::
    - see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
@@ -337,7 +333,7 @@ Data format (input and output data)
 
 - **1.** **MUST** correctly specify data formats supported on input or output by the tool, or (if `version <http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions>`_) is indicated, those specific version(s) of the tool
 - **2.** **MUST** be correctly associated with the data type of an input or output (see guidelines for `tool functions <http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions>`_).
-- **3.** **SHOULD** describe the primary data formats and **MAY** exhaustively describe *all* formats: if in any doubt, mail `registry-support <mailto:registry-support@elixir-dk.org>`_. 
+- **3.** **SHOULD** describe the primary data formats and **MAY** exhaustively describe *all* formats. 
 
 .. attention:: see the `general guidelines for EDAM annotations <http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations>`_.
 
@@ -1085,7 +1081,7 @@ Community group
 
 The community and external partner resources have their own custom properties in bio.tools to facilitate integration between bio.tools and other resource providers. 
 
-If you're a resource provider and would like to integrate with bio.tools please email `registry-support@elixir-dk.org <registry-support@elixir-dk.org>`_ or `create an issue <https://github.com/bio-tools/biotoolsRegistry/issues/new>`_ on our `GitHub page <https://github.com/bio-tools/biotoolsRegistry/>`_.
+If you're a resource provider and would like to integrate with bio.tools please email `support-bio-tools@sdu.dk <support-bio-tools@sdu.dk>`_ or `create an issue <https://github.com/bio-tools/biotoolsRegistry/issues/new>`_ on our `GitHub page <https://github.com/bio-tools/biotoolsRegistry/>`_.
 
 BioLib Annotations (Community)
 ^^^^^^^^^^^^
@@ -1193,7 +1189,7 @@ Suite
 - when annotating the `operation <http://biotools.readthedocs.io/en/latest/curators_guide.html#operation>`_ of the suite, select operations that are core function of the suite itself / common to all tools in the suite.  Alternatively pick one or two of the primary operation(s) of the included tools
 - entries for the suite itself and it's component tools can be associated by annotatong them as part of a common `collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
 
-.. tip:: If you are considering to register a suite with many tools, it is a good idea to discuss this first with the `bio.tools admin <mailto:registry-support@elixir-dk.org>`_.
+.. tip:: If you are considering to register a suite with many tools, it is a good idea to discuss this first with the `bio.tools admin <mailto:support-bio-tools@sdu.dk>`_.
 	 
 .. attention:: **do not** annotate the `type <http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data>`_ and `format <>`_ of input and output data, *unless* all tools in the suite happen to have these in common
 
@@ -1259,21 +1255,21 @@ Workbench
 - individual functions provided by the workbench, especially where these are not independently available, should each be described in their own `function <http://biotools.readthedocs.io/en/latest/curators_guide.html#function>`_
 - entries for the workbench itself and it's component tools can be associated by annotatong them as part of a common `collection <http://biotools.readthedocs.io/en/latest/curators_guide.html#collection>`_
 
-.. tip:: If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the `*bio.tools* admin <mailto:registry-support@elixir-dk.org>`_.
+.. tip:: If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the `*bio.tools* admin <mailto:support-bio-tools@sdu.dk>`_.
 	 
 
 Workflow
 ^^^^^^^^
 **A set of tools which have been composed together into a pipeline of some sort. Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script.**
 
-- pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the workflow as a whole (don't try to be exhaustive)
-  
-- when deciding how to annotate a workflow inputs, operations and outputs, consider the worfklow as a "black box" , *i.e.* annotate the input(s) to, output(s) from and primary operation(s) of the workflow as a whole
-  
-.. note::
-   - `bio.tools <https://bio.tools>`_ does not currently contain many examples of workflows.  We welcome input on how to describe worfklows and ensure good coverage:  please `get in touch with us <mailto:registry@elixir-dk.org>`_.
+- workflows consisting of multiple tools, please register them in the `Workflow Hub <https://workflowhub.eu/>`_
 
+- for tools that provide workflows:
 
+   - pick one or more most relevant `topics <http://biotools.readthedocs.io/en/latest/curators_guide.html#topic>`_ that best describe the workflow as a    whole (don't try to be exhaustive)
+  
+   - when deciding how to annotate a workflow inputs, operations and outputs, consider the worfklow as a "black box" , *i.e.* annotate the input(s) to, output(s) from and primary operation(s) of the workflow as a whole
+  
 .. important:: workflows can contain many tools; **do not** list all the operations performed by these tools, just the main operation(s) of the workflow as a whole.
 
 
