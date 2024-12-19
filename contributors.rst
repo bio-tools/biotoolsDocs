@@ -8,9 +8,9 @@ registry-dev
 - Ana Isabel da Silva Mendes (University of Southern Denmark, DK) - **software development**, curation
 - Veit Schwämmle (University of Southern Denmark, DK) - **coordination**, server management, curation, bio.tools applications
 - Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, ontology & schema development
-- Magnus Palmblad (LUMC, NL) - **curation**
+- Magnus Palmblad (LUMC, NL) - **curation**, bio.tools applications, ontology development
 - Matúš Kalaš (University of Bergen, NO) - **schema & ontology developer**, user engagement, ontology & schema development
-- Tomáš Raček (Masaryk University, CZ) - **curation**
+- Tomáš Raček (Masaryk University, CZ) - **curation**, software development
 - Alban Gaignard (CNRS, France) **Semantic Web applications**
 - Erik Jaaniso (UT, EE) - **software development**, lead engineer for `edammap <https://github.com/edamontology/edammap>`_
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
