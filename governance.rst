@@ -1,7 +1,7 @@
 Governance
 ==========
 *bio.tools* follows a simple governance model of three tiers under the leadership of the 
-`Danish ELIXIR node <http://elixir-denmark.org>`_ and the `ELIXIR Tools platform <https://elixir-europe.org/platforms/tools>`_ which is seeking long-term funding and support for *bio.tools*.  Development on the ground is led by Danish Node staff in close collaboration with the registry-dev group and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
+`Danish ELIXIR Node <http://elixir-denmark.org>`_ and the `ELIXIR Tools Platform <https://elixir-europe.org/platforms/tools>`_ which is seeking long-term funding and support for *bio.tools*.  Development on the ground is led by Danish Node staff in close collaboration with the registry-dev group and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
 
 If you’d like to get involved with the project please mail support-bio-tools@sdu.dk.
 
