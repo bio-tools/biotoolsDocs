@@ -1,7 +1,7 @@
 Code
 ====
 
-.. note:: We are in the process of packaging the system in a docker container to achieve a more reproducible, environment-independent local deployment solution. In the meantime please see our guidelines below which summarie necessary components and steps to run *bio.tools*.
+The system is packaged in multiple docker containers to achieve a more reproducible, environment-independent local deployment solution. 
 
 Source code
 -----------
