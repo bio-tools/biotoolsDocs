@@ -117,7 +117,7 @@ The `EDAM ontology <http://edamontologydocs.readthedocs.io/en/latest/>`_ is used
    It currently takes some time from requesting new EDAM terms for these to be supported in *bio.tools*.  In future, you'll be able to request terms directly via the *bio.tools* registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and *bio.tools*.
 
 .. note::
-   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in *bio.tools*. They are defined in `EDAM.owl <https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl>`_ via `<usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>`.  Such tips are visible in the OLS and BioPortal browsers.
+   Some high-level "organisational" concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in *bio.tools*. They are defined in `EDAM.owl <https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl>`_ via `<notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>`.  Such tips are visible in the OLS and BioPortal browsers.
       
    
 
