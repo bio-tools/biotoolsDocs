@@ -59,7 +59,7 @@ Consider the following *before* creating a *bio.tools* entry:
 
    Make these requests using the buttons at the bottom of the Tool Card (see *e.g.* https://bio.tools/signalp).
 
-   If you plan to register multiple entries *en masse*, please discuss this first with `bio.tools admin <mailto:support-bio-tools@sdu.dkf>`_.  
+   If you plan to register multiple entries *en masse*, please discuss this first with `bio.tools admin <mailto:support-bio-tools@sdu.dk>`_.  
      
 4. **Are there version-specific considerations?**
 
