@@ -29,7 +29,7 @@ Thank you for your contributions!
 - Jon Ison (DTU, DK) - **technical coordination**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
 - Hans-Ioan Ienasescu (DTU, DK) - **curation (lead)**, Web development
 - Piotr Chmura (KU, DK) - **technical coordination**, **software development (lead)**, bio.tools development (back-end)
-- Kenzo Hillion (Institut Pasteur, FR) - **workbench integration**, 
+- Kenzo-Hugo Hillion (Institut Pasteur, FR) - **workbench integration**, 
 - Ahto Salumets (UT, EE) - **curation**
 - Anne Wenzel (RTH, DK) - **curation** (RNA tools)
 - Dan Bolser (EMBL-EBI, EU) - WIKI integration
