@@ -51,7 +51,12 @@ Thank you for your contributions!
 - Marta Villegas (BSC, ES) - **NLP** and **text mining** 
 - Vivi Raundahl Gregersen (Aarhus University, DK) - **agricultural science**
 - Carlos Oscar Sorzano (CNB/CSIC, ES) - **electron microscopy**
-
+- David Sehnal (Masaryk University, CZ) - **General bioinformatics**
+- Ivan Mičetić (Universiy of Padua, IT) - **Protein structure**
+- Lukáš Pravda (EMBL-EBI, EU) - **Structural bioinformatics**
+- Stanislav Geidl (Masaryk University, CZ) - **Chemoinformatics**
+- Martin Krallinger (CNB/CSIC, ES) - **Text Mining, natural language processing, named entity recognition**
+- Reza Salek (EMBL-EBI, EU) - **Metabolomics**
 
 Registry Contributors
 ---------------------
