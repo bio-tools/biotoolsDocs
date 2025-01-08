@@ -1,4 +1,6 @@
 project = 'bio.tools documentation'
+extensions = ['sphinx_rtd_theme']
+
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
 
@@ -9,7 +11,7 @@ hoverxref_roles = [
 ]
 
 # Include all your settings here
-#html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme'
 
 js_source_path = '../src/'
 html_extra_path = ['_static']
