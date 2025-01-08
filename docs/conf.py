@@ -1,6 +1,5 @@
 project = 'bio.tools documentation'
 extensions = [
-    'sphinx_autorun',
     'notfound.extension',
     'hoverxref.extension',
     'sphinx_js',
