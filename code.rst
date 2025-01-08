@@ -1,8 +1,6 @@
 Code
 ====
 
-.. note:: We are in the process of packaging the system in a docker container to achieve a more reproducible, environment-independent local deployment solution. In the meantime please see our guidelines below which summarie necessary components and steps to run *bio.tools*.
-
 Source code
 -----------
 The source code of the registry is under standard GPL 3.0 `license <https://github.com/bio-tools/biotoolsRegistry/blob/master/LICENSE>`_ and is available from https://github.com/bio-tools/biotoolsRegistry/.

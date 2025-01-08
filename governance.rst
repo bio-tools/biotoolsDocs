@@ -1,7 +1,7 @@
 Governance
 ==========
 *bio.tools* follows a simple governance model of three tiers under the leadership of the 
-`Danish ELIXIR node <http://elixir-denmark.org>`_ and the `ELIXIR Tools platform <https://elixir-europe.org/platforms/tools>`_ which is seeking long-term funding and support for *bio.tools*.  Development on the ground is led by Danish Node staff in close collaboration with the registry-dev group and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
+`Danish ELIXIR Node <http://elixir-denmark.org>`_ and the `ELIXIR Tools Platform <https://elixir-europe.org/platforms/tools>`_ which is seeking long-term funding and support for *bio.tools*.  Development on the ground is led by Danish Node staff in close collaboration with the registry-dev group and `EDAM developers <https://github.com/edamontology/edamontology#governance-of-edam>`_.  
 
 If you’d like to get involved with the project please mail support-bio-tools@sdu.dk.
 
@@ -18,26 +18,17 @@ registry-dev includes the technical and scientific experts at the heart of the d
 - develop software for the registry and related technical projects
 - evaluate the registry and provide feedback, to ensure the registry software is fit for purpose
 
-Danish Node staff are responsible for reporting software development and curation priorities, and progress, to the ELIXIR-DK Management.
+Danish Node staff are responsible for reporting software development and curation priorities, and progress, to the ELIXIR Tools Platform and ELIXIR-DK.
 
 registry-dev will assemble virtually or in person as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations.
 
-Thematic editors
-^^^^^^^^^^^^^^^^
-Named **thematic editors** are registry-dev members responsible for overseeing coverage and quality in specific thematic areas, *e.g.*
-
-- evaluating existing coverage (EDAM, tools)
-- driving coverage (EDAM, tools)
-- liasing with community & leading workshops in their specialist area
-
-See the `Editors Guide <http://biotools.readthedocs.io/en/latest/editors_guide.html>`_.
   
 Registry contributors
 ---------------------
 Registry contributors include anyone who makes significant contributions to the registry content or registry-related software, by whatever means, but have none of the responsibilities or expectations of registry-dev.
 
 An important (but voluntary) role of contributors is to function in an **advisory capacity**, *i.e.* review the progress and priorities of registry-dev and advise them on their priorities and how best to achieve the current aims.  To these ends, the following actions are welcome:
-- read the *bio.tools* milestones and `changelog <https://github.com/bio-tools/biotoolsRegistry/blob/master/CHANGELOG.md>`_ and provide feedback on the reported progress and priorities.
+- read the *bio.tools* milestones within ELIXIR project where *bio.tools* is involved and provide feedback on the reported progress and priorities.
 - oversee the curation and development of *bio.tools* and actively offer constructive advice based on their practical experience, requirements and expertise
 - advocate *bio.tools* to colleagues 
 

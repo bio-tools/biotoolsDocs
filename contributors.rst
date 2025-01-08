@@ -1,61 +1,62 @@
 Contributors
 ============
 
-.. note:: You can contact the registry-dev group by mailing registry-core@elixir-dk.org 
-
+.. note:: You can contact the registry-dev group by mailing support-bio-tools@sdu.dk or contacting staff of the `ELIXIR Tools platform <https://elixir-europe.org/platforms/tools>`_
    
-..
-    TODO: update everything - needs checking
-
 registry-dev
 -------------
-- Jon Ison (DTU, DK) - **technical coordination**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
-- Hans-Ioan Ienasescu (DTU, DK) - **curation (lead)**, Web development
-- Piotr Chmura (KU, DK) - **technical coordination**, **software development (lead)**, bio.tools development (back-end)
+- Ana Isabel da Silva Mendes (University of Southern Denmark, DK) - **software development**, curation
+- Veit Schwämmle (University of Southern Denmark, DK) - **coordination**, server management, curation, bio.tools applications
 - Hervé Ménager (Institut Pasteur, FR) - **workbench integration**, user engagement, ontology & schema development
-- Kenzo Hillion (Institut Pasteur, FR) - **workbench integration**, 
+- Magnus Palmblad (LUMC, NL) - **curation**, bio.tools applications, ontology development
 - Matúš Kalaš (University of Bergen, NO) - **schema & ontology developer**, user engagement, ontology & schema development
-- Ahto Salumets (UT, EE) - **curation**
-- Tomáš Raček (Masaryk University, CZ) - **curation**
+- Tomáš Raček (Masaryk University, CZ) - **curation**, software development
 - Alban Gaignard (CNRS, France) **Semantic Web applications**
-- Anne Wenzel (RTH, DK) - **curation** (RNA tools)
 - Erik Jaaniso (UT, EE) - **software development**, lead engineer for `edammap <https://github.com/edamontology/edammap>`_
 - Bjoern Gruening (University of Freiburg, DE) - de.NBI & Galaxy integration
 - Dmitry Repchevsky (BSC, ES) - Web services & monitoring
 - Jacques van Helden (Aix-Marseille University, FR) - advisor
-- Dan Bolser (EMBL-EBI, EU) - WIKI integration
-- Magnus Palmblad (LUMC, NL) - msutil.org integration
 - José María Fernández (CNIO, ES) - benchmarking
-- Karel Berka (Palacky University, CZ) - advisor 
 - Michael Crusoe (Common Workflow Language project) - advisor, CWL integration
 - Peter Juvan (University of Ljubljana, SI) - curation
 - Rabie SAIDI (EMBL-EBI, EU) - text mining
 - Salvador Capella (INB, ES) - benchmarking
+
+registry-dev (former)
+-------------------------
+Thank you for your contributions!
+
+- Jon Ison (DTU, DK) - **technical coordination**, lead engineer for `biotoolsSchema <https://github.com/bio-tools/biotoolsSchema>`_ & `EDAM ontology <https://github.com/edamontology/edamontology>`_ development
+- Hans-Ioan Ienasescu (DTU, DK) - **curation (lead)**, Web development
+- Piotr Chmura (KU, DK) - **technical coordination**, **software development (lead)**, bio.tools development (back-end)
+- Kenzo-Hugo Hillion (Institut Pasteur, FR) - **workbench integration**, 
+- Ahto Salumets (UT, EE) - **curation**
+- Anne Wenzel (RTH, DK) - **curation** (RNA tools)
+- Dan Bolser (EMBL-EBI, EU) - WIKI integration
+- Karel Berka (Palacky University, CZ) - advisor 
+- Anthony Bretaudeau (INRA - GenOuest/BIPAA)
+- Christian Anthon (University of Copenhagen)
+- Laura Emery (EMBL-EBI)
 - Sebastien Moretti (SIB, CH) - curation
 - Severine Duvaud (SIB, CH) - SIB / ExPASy integration
 - Tunca Dogan (EMBL-EBI, EU) - text mining
 - Wojtek Dabrowski (RKI, DE) - benchmarking
-
-registry-dev (Thematic Editors)
-----------------
-- José Maria Carazo (CNB/CSIC, ES) - **electron microscopy**
-- Josep Gelpí (INB / BSC-CSN, ES) - **structural bioinformatics**, benchmarking & tools interoperability
-- Juergen Haas (University of Basel, CH) - **protein structural biology**, benchmarking
-- Marta Villegas (BSC, ES) - **NLP** and **text mining** 
-- Veit Schwämmle (SDU-BMB, DK) - **proteomics**, ontology development, bio.tools applications
-- Vivi Raundahl Gregersen (Aarhus University, DK) - **agricultural science**
-- Carlos Oscar Sorzano (CNB/CSIC, ES) - **electron microscopy**
-
-
-registry-dev (tentative)
--------------------------
-- Anthony Bretaudeau (INRA - GenOuest/BIPAA)
-- Christian Anthon (University of Copenhagen)
-- Laura Emery (EMBL-EBI)
 - Olivier Collin (CNRS - GenOuest)
 - Peter Rice (Imperial College London)
 - Priit Adler (University of Tartu)
 - Steffen Möller (University of Rostock, DE)
+- José Maria Carazo (CNB/CSIC, ES) - **electron microscopy**
+- Josep Gelpí (INB / BSC-CSN, ES) - **structural bioinformatics**, benchmarking & tools interoperability
+- Juergen Haas (University of Basel, CH) - **protein structural biology**, benchmarking
+- Marta Villegas (BSC, ES) - **NLP** and **text mining** 
+- Vivi Raundahl Gregersen (Aarhus University, DK) - **agricultural science**
+- Carlos Oscar Sorzano (CNB/CSIC, ES) - **electron microscopy**
+- David Sehnal (Masaryk University, CZ) - **General bioinformatics**
+- Ivan Mičetić (Universiy of Padua, IT) - **Protein structure**
+- Lukáš Pravda (EMBL-EBI, EU) - **Structural bioinformatics**
+- Stanislav Geidl (Masaryk University, CZ) - **Chemoinformatics**
+- Martin Krallinger (CNB/CSIC, ES) - **Text Mining, natural language processing, named entity recognition**
+- Reza Salek (EMBL-EBI, EU) - **Metabolomics**
 
 Registry Contributors
 ---------------------
