@@ -9,7 +9,7 @@ hoverxref_roles = [
 ]
 
 # Include all your settings here
-html_theme = 'sphinx_rtd_theme'
+#html_theme = 'sphinx_rtd_theme'
 
 js_source_path = '../src/'
 html_extra_path = ['_static']
