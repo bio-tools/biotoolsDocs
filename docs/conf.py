@@ -1,12 +1,4 @@
 project = 'bio.tools documentation'
-extensions = [
-    'notfound.extension',
-    'hoverxref.extension',
-    'sphinx_js',
-    'sphinx_tabs.tabs',
-    'sphinx_jinja2',
-    'sphinx.ext.mathjax',
-]
 
 latex_engine = 'xelatex'  # allow us to build Unicode chars
 
@@ -25,6 +17,3 @@ html_context = {
     "comment": "This comment is injected manually as a test.",
 }
 
-jinja2_env_kwargs = {
-    "extensions": ["jinja2.ext.loopcontrols"],
-}
