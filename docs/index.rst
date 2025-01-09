@@ -23,7 +23,7 @@ Contents:
    Editors Guide <editors_guide>
    API reference <api_reference>
    API Usage Guide <api_usage_guide>
-   Hangouts <hangouts>
+   Meetings <hangouts>
    Roadmap <roadmap>
    Studentships <studentships>
    GitHub projects <github_projects>
