@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code &mdash; Basic Sphinx Example Project  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="Contributors" href="contributors.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Basic Sphinx Example Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="what_is_biotools.html">What is bio.tools?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors_guide.html">Contributors Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart_guide.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="curators_guide.html">Curators Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biotools_domains.html">bio.tools domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community_specific_guidelines.html">Community-specific guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors_guide.html">Editors Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_usage_guide.html">API Usage Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hangouts.html">Hangouts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="studentships.html">Studentships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github_projects.html">GitHub projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#source-code">Source code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#components">Components</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#installing-bio-tools-on-your-system">Installing bio.tools on your system</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-and-install-docker">1. Download and Install Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#docker-main-installation-page">Docker main installation page</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#clone-the-repo">2. Clone the repo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-https">Using HTTPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-ssh">Using SSH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inside-the-bio-tools-repo">3.0 Inside the bio.tools repo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-the-necessary-docker-images">3.0.1 Build the necessary Docker images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-and-run-the-docker-containers">3.0.2 Create and run the Docker containers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-short-er-setup">3.1 The short(er) setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#make-migrations">3.1.1 Make migrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#migrate-to-the-db">3.1.2 Migrate to the DB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-initial-seed-db">3.1.3 Copy initial (seed) DB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-initial-db-load-script-file">3.1.4 Copy initial DB load script file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execute-initial-db-load-script-file">3.1.5 Execute initial DB load script file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#purge-elasticsearch">3.1.6 Purge Elasticsearch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#regenerate-elasticsearch">3.1.7 Regenerate Elasticsearch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#done">3.1.8 Done</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-longer-setup">3.2 The longer setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">3.2.1 Make migrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">3.2.2 Migrate to the DB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-superuser">3.2.3 Create a superuser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup-edam-ontology">3.2.4 Setup EDAM ontology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-helper-tables-sql">3.2.5 Copy helper tables SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-script-file-to-run-helper-tables">3.2.6 Copy script file to run helper tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execute-script-file">3.2.7 Execute script file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">3.2.8 Purge Elasticsearch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">3.2.9 Regenerate Elasticsearch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">3.1.10 Done</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#useful-information">4. Useful information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-usage">4.0 Basic usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#local-dev">4.1 Local dev</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#backend-dev">4.1.1 Backend dev</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frontend-dev">4.1.2 Frontend dev</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#update-edam">4.2 Update EDAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#local-email-setup">4.3 Local email setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#docker-notes">4.4 Docker notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#build-bio-tools-docker-images">Build bio.tools Docker images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-bio-tools-containers">Run bio.tools containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stop-bio-tools-containers">Stop bio.tools containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stop-bio-tools-containers-and-remove-data">Stop bio.tools containers and remove data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-running-containers">View running containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-all-containers">View all containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-stopped-containers">Remove stopped containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#force-remove-containers">Force remove containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prune-containers-remove-all-stopped-containers">Prune containers (Remove all stopped containers)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-images">View images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-image">Remove image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enter-a-container-and-run-commands">Enter a container and run commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bio-tools-docker-settings-files">bio.tools Docker settings files:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#docker-documentation">Docker documentation:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api-guidelines">API Guidelines</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="these_docs.html">These docs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Basic Sphinx Example Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Code</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/code.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="code">
+<h1>Code<a class="headerlink" href="#code" title="Permalink to this heading"></a></h1>
+<section id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this heading"></a></h2>
+<p>The source code of the registry is under standard GPL 3.0 <a class="reference external" href="https://github.com/bio-tools/biotoolsRegistry/blob/master/LICENSE">license</a> and is available from <a class="reference external" href="https://github.com/bio-tools/biotoolsRegistry/">https://github.com/bio-tools/biotoolsRegistry/</a>.</p>
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this heading"></a></h2>
+<p>The architecture of the registry is designed around the principle of decoupling frontend from the backend in order to eliminate performance bottlenecks at scale. The backend serves the data through the RESTful APIs which are in turn consumed by the the frontend SPA (Single-Page Application). The main advantage of this paradigm is that the frontend uses the exact same API calls that any user can invoke in order to create their own customized interface. The overall goal of scalability can be achieved by hosting the components independently (master database, replicated cache layer and static frontend code in a CDN - Content Delivery Network - such as Cloudflare or Akamai).</p>
+</section>
+<section id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this heading"></a></h2>
+<p>You only need Docker to run <em>bio.tools</em> locally.</p>
+</section>
+</section>
+<section id="installing-bio-tools-on-your-system">
+<h1>Installing bio.tools on your system<a class="headerlink" href="#installing-bio-tools-on-your-system" title="Permalink to this heading"></a></h1>
+<p>The local (development) installation is done via <a class="reference external" href="https://www.docker.com/">Docker</a>. Other than Git (and a text editor), nothing else is required to run and write code for bio.tools.</p>
+<section id="download-and-install-docker">
+<h2>1. Download and Install Docker<a class="headerlink" href="#download-and-install-docker" title="Permalink to this heading"></a></h2>
+<section id="docker-main-installation-page">
+<h3>Docker main installation page<a class="headerlink" href="#docker-main-installation-page" title="Permalink to this heading"></a></h3>
+<p><a class="reference external" href="https://docs.docker.com/install/">https://docs.docker.com/install/</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will need to create a <a class="reference external" href="https://hub.docker.com">Docker Hub</a> account.</p>
+</div>
+<p><strong>Windows</strong></p>
+<p><a class="reference external" href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Read the “What to know before you install” information to see if Docker Destktop for Windows can be installed on your system.  If your system does not meet the requirements to run Docker Desktop for Windows, you can install the legacy <a class="reference external" href="https://docs.docker.com/toolbox/overview/">Docker Toolbox</a>.</p>
+</div>
+<p><strong>MacOS</strong></p>
+<p><a class="reference external" href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a></p>
+<p><strong>CentOS</strong></p>
+<p><a class="reference external" href="https://docs.docker.com/install/linux/docker-ce/centos/">https://docs.docker.com/install/linux/docker-ce/centos/</a></p>
+<p><strong>Debian</strong></p>
+<p><a class="reference external" href="https://docs.docker.com/install/linux/docker-ce/debian/">https://docs.docker.com/install/linux/docker-ce/debian/</a></p>
+<p><strong>Fedora</strong></p>
+<p><a class="reference external" href="https://docs.docker.com/install/linux/docker-ce/fedora/)">https://docs.docker.com/install/linux/docker-ce/fedora/</a></p>
+<p><strong>Ubuntu</strong></p>
+<p><a class="reference external" href="https://docs.docker.com/install/linux/docker-ce/ubuntu/)">https://docs.docker.com/install/linux/docker-ce/ubuntu/</a></p>
+</section>
+</section>
+<section id="clone-the-repo">
+<h2>2. Clone the repo<a class="headerlink" href="#clone-the-repo" title="Permalink to this heading"></a></h2>
+<section id="using-https">
+<h3>Using HTTPS<a class="headerlink" href="#using-https" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/bio-tools/biotoolsRegistry.git
+</pre></div>
+</div>
+</section>
+<section id="using-ssh">
+<h3>Using SSH<a class="headerlink" href="#using-ssh" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:bio-tools/biotoolsRegistry.git
+</pre></div>
+</div>
+<p>Go into the folder in which you cloned the bio.tools repo. By default it will be called <code class="docutils literal notranslate"><span class="pre">biotoolsRegistry</span></code>: (e.g. <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">biotoolsRegistry</span></code> or <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/home/user/coding/biotoolsRegistry</span></code> )</p>
+</section>
+<section id="inside-the-bio-tools-repo">
+<h3>3.0 Inside the bio.tools repo<a class="headerlink" href="#inside-the-bio-tools-repo" title="Permalink to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Docker setup will require up to 5 GB of disk space. The bio.tools data will also add to this.</p>
+</div>
+</section>
+<section id="build-the-necessary-docker-images">
+<h3>3.0.1 Build the necessary Docker images<a class="headerlink" href="#build-the-necessary-docker-images" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose build
+</pre></div>
+</div>
+<p>The above command will download / build all the Docker images required for bio.tools to run on your local machine.</p>
+<p>The images built can be seen by running: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">image</span> <span class="pre">ls</span></code> and are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">biotools/frontend</span></code> <code class="docutils literal notranslate"><span class="pre">(~</span> <span class="pre">827MB)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">biotools/backend</span></code> <code class="docutils literal notranslate"><span class="pre">(~</span> <span class="pre">1.12GB)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mysql</span></code> <code class="docutils literal notranslate"><span class="pre">(~</span> <span class="pre">205MB)</span></code> (will show up after running <strong>3.0.2</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">elasticsearch</span></code> <code class="docutils literal notranslate"><span class="pre">(~</span> <span class="pre">486MB)</span></code> (will show up after running <strong>3.0.2</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span></code> <code class="docutils literal notranslate"><span class="pre">(~</span> <span class="pre">925MB)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">node</span></code> <code class="docutils literal notranslate"><span class="pre">(~</span> <span class="pre">650MB)</span></code></p></li>
+</ul>
+</section>
+<section id="create-and-run-the-docker-containers">
+<h3>3.0.2 Create and run the Docker containers<a class="headerlink" href="#create-and-run-the-docker-containers" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose up
+</pre></div>
+</div>
+<p>The above command will create and run the required containers:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">biotools-mysql</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">biotools-elasticsearch</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> (depends on <code class="docutils literal notranslate"><span class="pre">biotools-mysql</span></code> and <code class="docutils literal notranslate"><span class="pre">biotools-elasticsearch</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">biotools-frontend</span></code> (depends on <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code>)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After running the <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">up</span></code> command, the containers will start and will output log messages which you can see in your terminal window. In order for the containers to keep running this window needs to stay open. You will need to open new terminal windows/tabs for other operations.</p>
+<p><code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">up</span></code> will also build the images if they do not exist, but in order to be sure your latest source code and image changes are running make sure you run <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">build</span></code> beforehand</p>
+</div>
+<p>Too see the running containers run: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">container</span> <span class="pre">ls</span></code></p>
+</section>
+</section>
+<section id="the-short-er-setup">
+<h2>3.1 The short(er) setup<a class="headerlink" href="#the-short-er-setup" title="Permalink to this heading"></a></h2>
+<p><strong>Run the steps below in the root folder of the Git project (e.g.</strong> <code class="docutils literal notranslate"><span class="pre">biotoolsRegistry</span></code> <strong>)</strong></p>
+<section id="make-migrations">
+<h3>3.1.1 Make migrations<a class="headerlink" href="#make-migrations" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend python manage.py makemigrations
+</pre></div>
+</div>
+<p>Make Django migrations from the exiting models. Executed on the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container. If you get the <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">changes</span> <span class="pre">detected</span></code> message it means that you are up to date.</p>
+</section>
+<section id="migrate-to-the-db">
+<h3>3.1.2 Migrate to the DB<a class="headerlink" href="#migrate-to-the-db" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend python manage.py migrate
+</pre></div>
+</div>
+<p>Create necessary tables and other DB objects from the migrations. Executed on the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container. If you get the <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">migrations</span> <span class="pre">to</span> <span class="pre">apply.</span></code> message it means that you are up to date.</p>
+</section>
+<section id="copy-initial-seed-db">
+<h3>3.1.3 Copy initial (seed) DB<a class="headerlink" href="#copy-initial-seed-db" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker cp initial_db.sql biotools-mysql:/root
+</pre></div>
+</div>
+<p>Copies the <code class="docutils literal notranslate"><span class="pre">initial_db.sql</span></code> SQL file into the <code class="docutils literal notranslate"><span class="pre">biotools-mysql</span></code> container (where the MySQL database server runs) into the <code class="docutils literal notranslate"><span class="pre">/root</span></code> folder.</p>
+</section>
+<section id="copy-initial-db-load-script-file">
+<h3>3.1.4 Copy initial DB load script file<a class="headerlink" href="#copy-initial-db-load-script-file" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker cp load_initial_db.sh biotools-mysql:/root
+</pre></div>
+</div>
+<p>Copies the <code class="docutils literal notranslate"><span class="pre">load_initial_db.sh</span></code> into the <code class="docutils literal notranslate"><span class="pre">biotools-mysql</span></code> container. This file will run the MySQL commands used to load the database described in <code class="docutils literal notranslate"><span class="pre">initial_db.sql</span></code></p>
+</section>
+<section id="execute-initial-db-load-script-file">
+<h3>3.1.5 Execute initial DB load script file<a class="headerlink" href="#execute-initial-db-load-script-file" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-mysql bash /root/load_initial_db.sh
+</pre></div>
+</div>
+<p>Executes the <code class="docutils literal notranslate"><span class="pre">load_initial_db.sh</span></code> file in the <code class="docutils literal notranslate"><span class="pre">biotools-mysql</span></code> container which loads the initial (seed) DB data.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The initial DB contains 11 tool annotations, a superuser (username: <code class="docutils literal notranslate"><span class="pre">biotools</span></code>, password: <code class="docutils literal notranslate"><span class="pre">biotools</span></code>), an initial <code class="docutils literal notranslate"><span class="pre">test</span></code> subdomain and the necessary EDAM files. See 3.1.8 for more.</p>
+</div>
+</section>
+<section id="purge-elasticsearch">
+<h3>3.1.6 Purge Elasticsearch<a class="headerlink" href="#purge-elasticsearch" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend python manage.py es_purge
+</pre></div>
+</div>
+<p>Purges (clears) any data in the Elasticsearch index. Executed in the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container which communicates with the <code class="docutils literal notranslate"><span class="pre">biotools-elasticsearch</span></code> container.</p>
+</section>
+<section id="regenerate-elasticsearch">
+<h3>3.1.7 Regenerate Elasticsearch<a class="headerlink" href="#regenerate-elasticsearch" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend python manage.py es_regenerate
+</pre></div>
+</div>
+<p>Takes all the tools, subdomains annotations etc. in the DB  and creates the equivalent entries in the Elasticsearch index. Executed in the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container.</p>
+</section>
+<section id="done">
+<h3>3.1.8 Done<a class="headerlink" href="#done" title="Permalink to this heading"></a></h3>
+<p>At this point you can go to <a class="reference external" href="http://localhost:8000">http://localhost:8000</a> to see the local bio.tools homepage.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">test</span></code> subdomain can be viewed at <a class="reference external" href="http://test.localhost:8000">http://test.localhost:8000</a></p>
+<p>You can login with the existing superuser (user: <code class="docutils literal notranslate"><span class="pre">biotools</span></code>, password: <code class="docutils literal notranslate"><span class="pre">biotools</span></code>).</p>
+<p>All running Docker containers can be stopped by running: <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">down</span></code> from the root Git folder. This will preserve the data in the MySQL database and Elasticsearch. To reinstantiate everything again run: <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">up</span></code>.</p>
+<p>Only need to run <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">build</span></code> once at the beginning or if changes are made to the bio.tools Docker settings files.</p>
+<p>If you wish to remove the data along with the containers run: <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">down</span> <span class="pre">-v</span></code> which will also remove the Docker volumes which preserve the MySQL and Elasticsearch data.</p>
+</section>
+</section>
+<section id="the-longer-setup">
+<h2>3.2 The longer setup<a class="headerlink" href="#the-longer-setup" title="Permalink to this heading"></a></h2>
+<p>This is an alternative to <strong>3.1</strong> in which some of the steps were contained in the initial DB files. This will start with no data.</p>
+<p><strong>Run the steps below in the root folder of the Git project (e.g.</strong> <code class="docutils literal notranslate"><span class="pre">biotoolsRegistry</span></code> <strong>)</strong></p>
+<section id="id1">
+<h3>3.2.1 Make migrations<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend python manage.py makemigrations
+</pre></div>
+</div>
+<p>Make Django migrations from the exiting models. Executed on the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container.</p>
+</section>
+<section id="id2">
+<h3>3.2.2 Migrate to the DB<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend python manage.py migrate
+</pre></div>
+</div>
+<p>Create necessary tables and other DB objects from the migrations. Executed on the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container.</p>
+</section>
+<section id="create-a-superuser">
+<h3>3.2.3 Create a superuser<a class="headerlink" href="#create-a-superuser" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec -it biotools-backend python manage.py createsuperuser
+</pre></div>
+</div>
+<p>Prompts the creation of a superuser, need to input superuser name, email (optional) and password. Executed on the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container.</p>
+</section>
+<section id="setup-edam-ontology">
+<h3>3.2.4 Setup EDAM ontology<a class="headerlink" href="#setup-edam-ontology" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend bash /elixir/application/backend/data/edam/update_edam.sh
+</pre></div>
+</div>
+<p>Download EDAM ontology and push it to the DB. Can also be used to update to new EDAM version. The file which indicates the EDAM version is <code class="docutils literal notranslate"><span class="pre">&lt;git_project_root&gt;/backend/data/edam/current_version.txt</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">biotoolsRegistry/backend/data/edam/current_version.txt</span></code></p>
+</section>
+<section id="copy-helper-tables-sql">
+<h3>3.2.5 Copy helper tables SQL<a class="headerlink" href="#copy-helper-tables-sql" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker cp update_site_settings.sql biotools-mysql:/root
+</pre></div>
+</div>
+<p>Copies the <code class="docutils literal notranslate"><span class="pre">update_site_settings.sql</span></code> SQL file into the <code class="docutils literal notranslate"><span class="pre">biotools-mysql</span></code> container (where the MySQL database server runs) into the <code class="docutils literal notranslate"><span class="pre">/root</span></code> folder. This file contains SQL instructions used to create helper tables and settings for the project.</p>
+</section>
+<section id="copy-script-file-to-run-helper-tables">
+<h3>3.2.6 Copy script file to run helper tables<a class="headerlink" href="#copy-script-file-to-run-helper-tables" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker cp update_site_settings.sh biotools-mysql:/root
+</pre></div>
+</div>
+<p>Copies the <code class="docutils literal notranslate"><span class="pre">update_site_settings.sh</span></code> into the <code class="docutils literal notranslate"><span class="pre">biotools-mysql</span></code> container. This file will run the MySQL commands described in <code class="docutils literal notranslate"><span class="pre">update_site_settings.sql</span></code></p>
+</section>
+<section id="execute-script-file">
+<h3>3.2.7 Execute script file<a class="headerlink" href="#execute-script-file" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-mysql bash /root/update_site_settings.sh
+</pre></div>
+</div>
+<p>Executes the <code class="docutils literal notranslate"><span class="pre">update_site_settings.sh</span></code> file in the <code class="docutils literal notranslate"><span class="pre">biotools-mysql</span></code> container which loads the helper tables and settings in the DB.</p>
+</section>
+<section id="id3">
+<h3>3.2.8 Purge Elasticsearch<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend python manage.py es_purge
+</pre></div>
+</div>
+<p>Purges (clears) any data in the Elasticsearch index. Executed in the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container which communicates with the <code class="docutils literal notranslate"><span class="pre">biotools-elasticsearch</span></code> container.</p>
+</section>
+<section id="id4">
+<h3>3.2.9 Regenerate Elasticsearch<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend python manage.py es_regenerate
+</pre></div>
+</div>
+<p>Takes all the tools, subdomains annotations etc. in the DB  and creates the equivalent entries in the Elasticsearch index. Executed in the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container.</p>
+</section>
+<section id="id5">
+<h3>3.1.10 Done<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
+<p>At this point you can go to <a class="reference external" href="http://localhost:8000">http://localhost:8000</a> to see the local bio.tools homepage.</p>
+<p>Login with the user created in <strong>3.2.3</strong></p>
+<p>No tools or subdomains are available, add tools at <a class="reference external" href="http://localhost:8000/register">http://localhost:8000/register</a> and subdomains at <a class="reference external" href="http://localhost:8000/subdomain">http://localhost:8000/subdomain</a></p>
+<p>All running Docker containers can be stopped by running: <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">down</span></code> from the root Git folder. This will preserve the data in the MySQL database and Elasticsearch. To reinstantiate everything again run: <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">up</span></code>.</p>
+<p>Only need to run <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">build</span></code> once at the beginning or if changes are made to the bio.tools Docker settings files.</p>
+<p>If you wish to remove the data along with the containers run: <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">down</span> <span class="pre">-v</span></code> which will also remove the Docker volumes which preserve the MySQL and Elasticsearch data.</p>
+</section>
+</section>
+<section id="useful-information">
+<h2>4. Useful information<a class="headerlink" href="#useful-information" title="Permalink to this heading"></a></h2>
+</section>
+<section id="basic-usage">
+<h2>4.0 Basic usage<a class="headerlink" href="#basic-usage" title="Permalink to this heading"></a></h2>
+<p>After completing steps 1-3 above, the only required commands for basic use are</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose up
+</pre></div>
+</div>
+<p>and</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose down
+</pre></div>
+</div>
+<p>and perhaps</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose down -v
+</pre></div>
+</div>
+</section>
+<section id="local-dev">
+<h2>4.1 Local dev<a class="headerlink" href="#local-dev" title="Permalink to this heading"></a></h2>
+<p>After running <code class="docutils literal notranslate"><span class="pre">docker-compose</span> <span class="pre">up</span></code> you will see a number of log messages. These messages come from the running containers:</p>
+<ul class="simple">
+<li><p><cite>biotools-mysql</cite> (MySQL logs)</p></li>
+<li><p><cite>biotools-elasticsearch</cite> (Elasticsearch logs)</p></li>
+<li><p><cite>biotools-backend</cite> (Mostly Apache logs, sometimes Python logs)</p></li>
+<li><p><cite>biotools-frontend</cite> (Gulp logs)</p></li>
+</ul>
+<section id="backend-dev">
+<h3>4.1.1 Backend dev<a class="headerlink" href="#backend-dev" title="Permalink to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container is based on an image which uses an Apache server. The logs from <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> come from Apache or sometimes from Python.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Changes in Python/Django/backend files will be reflected in the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container, <strong>BUT</strong> because of how Apache works, the changes won’t be reflected in your browser <code class="docutils literal notranslate"><span class="pre">http://localhost:8000</span></code> until Apache is reloaded. In order to see the changes in the reflected in the browser you need to run:</p>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">exec</span> <span class="pre">biotools-backend</span> <span class="pre">/etc/init.d/apache2</span> <span class="pre">reload</span></code></p>
+<p><strong>Remember</strong> to run the above command whenever you want to see your code changes reflected in your local bio.tools.</p>
+<p>Bringing the containers down and up agail will also work, but this takes significantly longer. The above command is almost instant.</p>
+</div>
+<p>Most issues with the backend code will be reflected in the browser at <code class="docutils literal notranslate"><span class="pre">http://localhost:8000/api/{some_path}</span></code>, e.g. <a class="reference external" href="http://localhost:8000/api/tool">http://localhost:8000/api/tool</a> or <a class="reference external" href="http://localhost:8000/api/jaspar">http://localhost:8000/api/jaspar</a> etc.</p>
+<p>See <a class="reference external" href="https://biotools.readthedocs.io/en/latest/api_reference.html">https://biotools.readthedocs.io/en/latest/api_reference.html</a> or Django route files (<code class="docutils literal notranslate"><span class="pre">urls.py</span></code>) for more API endpoints.</p>
+</section>
+<section id="frontend-dev">
+<h3>4.1.2 Frontend dev<a class="headerlink" href="#frontend-dev" title="Permalink to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">biotools-frontend</span></code> container outputs logs from <code class="docutils literal notranslate"><span class="pre">gulp</span></code> ( <a class="reference external" href="https://gulpjs.com/">https://gulpjs.com/</a> )  which bundles all frontend JavaScript and CSS code.</p>
+<p>Every time you change and save a <code class="docutils literal notranslate"><span class="pre">.js</span></code> or <code class="docutils literal notranslate"><span class="pre">.css</span></code> file in the frontend, gulp will re-bundle everything automatically. This implies that all changes in the frontend are reflected automatically in thr browser, unlike for the backend.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have a syntax error in your JavaScript or CSS files, gulp will fail and you won’t see any changes reflected in the browser. So, if your changes are not reflected, look at the <code class="docutils literal notranslate"><span class="pre">biotools-frontend</span></code> logs of gulp which will indicate if you made a syntax error in your code.</p>
+</div>
+</section>
+</section>
+<section id="update-edam">
+<h2>4.2 Update EDAM<a class="headerlink" href="#update-edam" title="Permalink to this heading"></a></h2>
+<p>Similarly to section <strong>3.2.4</strong>, in order to update to the latest EDAM version (or just use a different EDAM version) the <code class="docutils literal notranslate"><span class="pre">update_edam.sh</span></code> needs to be executed on the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container.</p>
+<p>The version number used for updating EDAM is specified in the file:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;git_project_root&gt;/backend/data/edam/current_version.txt
+</pre></div>
+</div>
+<p>In order to update to the latest EDAM version (e.g. <code class="docutils literal notranslate"><span class="pre">1.23</span></code>) edit the <code class="docutils literal notranslate"><span class="pre">current_version.txt</span></code> file to store the value <code class="docutils literal notranslate"><span class="pre">1.23</span></code>, save the file and run:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker exec biotools-backend bash /elixir/application/backend/data/edam/update_edam.sh
+</pre></div>
+</div>
+<p>The script file will download the specific EDAM version .owl file from <a class="reference external" href="https://github.com/edamontology/edamontology">https://github.com/edamontology/edamontology</a> and execute the:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>python /elixi/application/manage.py parse_edam
+</pre></div>
+</div>
+<p>command in the <code class="docutils literal notranslate"><span class="pre">biotools-backend</span></code> container.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">current_version.txt</span></code> file is tracked by Git and any changes involving EDAM versions other than latest should not be pushed to the main branches of the repo.</p>
+</div>
+</section>
+<section id="local-email-setup">
+<h2>4.3 Local email setup<a class="headerlink" href="#local-email-setup" title="Permalink to this heading"></a></h2>
+<p>Important to note that the email system used to send emails regarding account creation and password reset will not work as intended out of the box .</p>
+<p>In order for the emails to work you need to provide credetials (email, password, smtp settings) in the <code class="docutils literal notranslate"><span class="pre">backend/elixirapp/settings.py</span></code> file. bio.tools production uses Zoho mail (<a class="reference external" href="http://zoho.com">http://zoho.com</a>) which currently works well with our setup.</p>
+<p>The easy way would be to make a Zoho email account and use that email information to make the email functionality run. Gmail and Yahoo were tried and the connections are blocked by Gmail and Yahoo because of security reasons. This is because Gmail and Yahoo don’t accept a simple username-password login and require more strict settings. Feel free to implement this in your bio.tools instance.</p>
+</section>
+<section id="docker-notes">
+<h2>4.4 Docker notes<a class="headerlink" href="#docker-notes" title="Permalink to this heading"></a></h2>
+<section id="build-bio-tools-docker-images">
+<h3>Build bio.tools Docker images<a class="headerlink" href="#build-bio-tools-docker-images" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose build
+</pre></div>
+</div>
+</section>
+<section id="run-bio-tools-containers">
+<h3>Run bio.tools containers<a class="headerlink" href="#run-bio-tools-containers" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose up
+</pre></div>
+</div>
+</section>
+<section id="stop-bio-tools-containers">
+<h3>Stop bio.tools containers<a class="headerlink" href="#stop-bio-tools-containers" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose down
+</pre></div>
+</div>
+</section>
+<section id="stop-bio-tools-containers-and-remove-data">
+<h3>Stop bio.tools containers and remove data<a class="headerlink" href="#stop-bio-tools-containers-and-remove-data" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose down -v
+</pre></div>
+</div>
+</section>
+<section id="view-running-containers">
+<h3>View running containers<a class="headerlink" href="#view-running-containers" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker container ls
+</pre></div>
+</div>
+</section>
+<section id="view-all-containers">
+<h3>View all containers<a class="headerlink" href="#view-all-containers" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker container ls -a
+</pre></div>
+</div>
+</section>
+<section id="remove-stopped-containers">
+<h3>Remove stopped containers<a class="headerlink" href="#remove-stopped-containers" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker container rm &lt;CONTAINER_ID&gt;
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker container rm &lt;CONTAINER_ID1&gt; &lt;CONTAINER_ID2&gt; &lt;CONTAINER_ID3&gt;
+</pre></div>
+</div>
+</section>
+<section id="force-remove-containers">
+<h3>Force remove containers<a class="headerlink" href="#force-remove-containers" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker container rm -f &lt;CONTAINER_ID&gt;
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker container rm -f &lt;CONTAINER_ID1&gt; &lt;CONTAINER_ID2&gt; &lt;CONTAINER_ID3&gt;
+</pre></div>
+</div>
+</section>
+<section id="prune-containers-remove-all-stopped-containers">
+<h3>Prune containers (Remove all stopped containers)<a class="headerlink" href="#prune-containers-remove-all-stopped-containers" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker container prune
+</pre></div>
+</div>
+</section>
+<section id="view-images">
+<h3>View images<a class="headerlink" href="#view-images" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker image ls
+</pre></div>
+</div>
+</section>
+<section id="remove-image">
+<h3>Remove image<a class="headerlink" href="#remove-image" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker image rm &lt;IMAGE_ID&gt;
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker image rm &lt;IMAGE_ID1&gt; &lt;IMAGE_ID2&gt; &lt;IMAGE_ID2&gt;
+</pre></div>
+</div>
+<p>(will not work if containers are running this image)</p>
+</section>
+<section id="enter-a-container-and-run-commands">
+<h3>Enter a container and run commands<a class="headerlink" href="#enter-a-container-and-run-commands" title="Permalink to this heading"></a></h3>
+<p>Any of the bio.tools runnning containers can provide a bash terminal to run commands inside the containers (similar to <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">exec</span></code>). Examples of the commands are:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>- docker exec -it biotools-mysql bash
+- docker exec -it biotools-elasticsearch bash
+- docker exec -it biotools-backend bash
+- docker exec -it biotools-frontend bash
+</pre></div>
+</div>
+<p>As an example, to view the info in a MySQL database table run:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">exec</span> <span class="pre">-it</span> <span class="pre">biotools-mysql</span> <span class="pre">bash</span></code></p></li>
+<li><p>In container: <code class="docutils literal notranslate"><span class="pre">mysql</span> <span class="pre">-u</span> <span class="pre">elixir</span> <span class="pre">-p</span></code> (password is by default <code class="docutils literal notranslate"><span class="pre">123</span></code>)</p></li>
+<li><p>In MySQL:</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>use elixir;
+
+SELECT * FROM elixir_resource WHERE visibility = 1;
+</pre></div>
+</div>
+</section>
+<section id="bio-tools-docker-settings-files">
+<h3>bio.tools Docker settings files:<a class="headerlink" href="#bio-tools-docker-settings-files" title="Permalink to this heading"></a></h3>
+<p>Backend build config file</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;git_project_root&gt;/backend/Dockerfile
+</pre></div>
+</div>
+<p>Backend dockerignore file</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;git_project_root&gt;/backend/.dockerignore
+</pre></div>
+</div>
+<p>Frontend build config file</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;git_project_root&gt;/frontend/Dockerfile
+</pre></div>
+</div>
+<p>docker-compose YAML config file</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;git_project_root&gt;/docker-compose.yml
+</pre></div>
+</div>
+</section>
+<section id="docker-documentation">
+<h3>Docker documentation:<a class="headerlink" href="#docker-documentation" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.docker.com/">https://docs.docker.com/</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/reference/">https://docs.docker.com/reference/</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/engine/reference/commandline/container/">https://docs.docker.com/engine/reference/commandline/container/</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/engine/reference/commandline/image/">https://docs.docker.com/engine/reference/commandline/image/</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/config/pruning/">https://docs.docker.com/config/pruning/</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/compose/">https://docs.docker.com/compose/</a></p></li>
+<li><p><a class="reference external" href="https://hub.docker.com/">https://hub.docker.com/</a></p></li>
+</ul>
+</section>
+</section>
+<section id="api-guidelines">
+<h2>API Guidelines<a class="headerlink" href="#api-guidelines" title="Permalink to this heading"></a></h2>
+<p>You can also check out our API instructions at the links below:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://biotools.readthedocs.io/en/latest/api_reference.html">API reference</a></p></li>
+<li><p><a class="reference external" href="https://biotools.readthedocs.io/en/latest/api_usage_guide.html">API Usage Guide</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="contributors.html" class="btn btn-neutral float-left" title="Contributors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="license.html" class="btn btn-neutral float-right" title="License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Read the Docs core team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

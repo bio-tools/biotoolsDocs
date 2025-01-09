@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curators Guide &mdash; Basic Sphinx Example Project  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Domains in bio.tools" href="biotools_domains.html" />
+    <link rel="prev" title="Quickstart guide" href="quickstart_guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Basic Sphinx Example Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="what_is_biotools.html">What is bio.tools?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors_guide.html">Contributors Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart_guide.html">Quick Start Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Curators Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#generalguidelines">General guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#before-you-start">Before you start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toolfunctions">Tool functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edamannotations">EDAM annotations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#attribute-guidelines">Attribute guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#summary-group">Summary group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#name-tool">Name (tool)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#homepage">Homepage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#version-tool">Version (tool)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-ids">Other IDs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#function-group">Function group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#operation">Operation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-type-input-and-output-data">Data type (input and output data)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-format-input-and-output-data">Data format (input and output data)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#note-function">Note (function)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#command">Command</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#labels-group">Labels group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tool-type">Tool type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#topic">Topic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operating-system">Operating system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#programming-language">Programming language</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#license">License</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#collection">Collection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#maturity">Maturity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cost">Cost</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#accessibility">Accessibility</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#elixir-platform">ELIXIR Platform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#elixir-node">ELIXIR Node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#elixir-community">ELIXIR Community</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#link-group">Link group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#url-link">URL (link)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#linktype">Link type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#note-link">Note (link)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#download-group">Download group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#url-download">URL (download)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#download-type">Download type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#note-download">Note (download)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#version-download">Version (download)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-group">Documentation group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#url-documentation">URL (documentation)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#documentationtype">Documentation type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#note-documentation">Note (documentation)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#relation-group">Relation group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#biotoolsid-relation">biotoolsID (relation)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#relation-type">Relation type</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#publication-group">Publication group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pubmed-central-id">PubMed Central ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pubmed-id">PubMed ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#digital-object-id">Digital Object ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#publication-type">Publication type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#note-publication">Note (publication)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#version-publication">Version (publication)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#credit-group">Credit group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#name-credit">Name (credit)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#orcid-id">ORCID ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grid-id">GRID ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ror-id">ROR ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fundref-id">FundRef ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#email">Email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#url-credit">URL (credit)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#entity-type">Entity type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#entity-role">Entity role</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#note-credit">Note (credit)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#community-group">Community group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#biolib-annotations-community">BioLib Annotations (Community)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#app-name-biolib">App name (BioLib)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#author-username-biolib">Author username (BioLib)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#author-name-biolib">Author name (BioLib)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tool-type-guidelines">Tool type guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bioinformatics-portal">Bioinformatics portal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#commandlinetool">Command-line tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#database-portal">Database portal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#desktop-application">Desktop application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#library">Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ontology">Ontology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plug-in">Plug-in</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#script">Script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sparql-endpoint">SPARQL endpoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#suite">Suite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#webapplication">Web application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#webapi">Web API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#webservice">Web service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workbench">Workbench</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workflow">Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#further-guidelines-bio-tools-admin-only">Further guidelines (bio.tools admin only)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#summary-biotoolsid">summary-&gt;biotoolsID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#summary-biotoolscurie">summary-&gt;biotoolsCURIE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#credit-elixirnode">credit-&gt;elixirNode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#credit-elixirplatform">credit-&gt;elixirPlatform</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biotools_domains.html">bio.tools domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community_specific_guidelines.html">Community-specific guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors_guide.html">Editors Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_usage_guide.html">API Usage Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hangouts.html">Hangouts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="studentships.html">Studentships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github_projects.html">GitHub projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html#installing-bio-tools-on-your-system">Installing bio.tools on your system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="these_docs.html">These docs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Basic Sphinx Example Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Curators Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/curators_guide.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="curators-guide">
+<h1>Curators Guide<a class="headerlink" href="#curators-guide" title="Permalink to this heading"></a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>guidelines for <a class="reference external" href="https://bio.tools">bio.tools</a>  curators, including EDAM annotation guidelines.</p></li>
+<li><p>to make suggestions about these guidelines please add comments via <a class="reference external" href="https://github.com/bio-tools/biotoolsDocs/issues/6">GitHub</a></p></li>
+</ul>
+</div>
+<p><em>bio.tools</em> includes all types of bioinformatics <em>tools</em> - application software with well-defined data processing functions (inputs, outputs and operations).  This ranges from simple tools with a single primary function, to complex, multimodal tools with many disinct functions.  Tools may be available for immediate use as online services, or in a form which you can download, install, configure and run yourself.</p>
+<p>Usually, a <em>bio.tools</em> entry describes a discrete tool.  Some entries describe <em>collections</em> of tools, such as software suites.  The scope, <em>i.e.</em> the types of tools that may be included, and the attributes for their description, are defined in <a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> which uses the <a class="reference external" href="https://github.com/edamontology/edamontology/">EDAM ontology</a> as a source of terms for the tool scientific description.  These curation guidelines describe how to create a high quality tool description, above and beyond the syntactic and semantic constraints that are defined in biotoolsSchema and EDAM.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#general-guidelines">general guidelines</a> include basic considerations, annotation of <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">tool functions</a> and the use of <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations">EDAM</a>.  You should read these first of all.</p></li>
+<li><p>guidelines on <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#summary">specific attributes</a> defined in the <a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a></p></li>
+<li><p>guidelines specific to individual <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type">types of tools</a></p></li>
+</ul>
+<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”,  “MAY”, and “OPTIONAL” in this document are to be interpreted as described in <a class="reference external" href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>:</p>
+<ul class="simple">
+<li><p><strong>“MUST”</strong>, <strong>“REQUIRED”</strong> or <strong>“SHALL”</strong> mean that the guideline is an absolute requirement of the specification.</p></li>
+<li><p><strong>“MUST NOT”</strong> or <strong>“SHALL NOT”</strong> mean that the guideline is an absolute prohibition of the specification.</p></li>
+<li><p><strong>“SHOULD”</strong> or <strong>“RECOMMENDED”</strong> mean that there may exist valid reasons in particular circumstances to ignore a particular guideline, but the full implications must be understood and carefully weighed before doing so.</p></li>
+<li><p><strong>“SHOULD NOT”</strong> or the phrase <strong>“NOT RECOMMENDED”</strong> mean that there may exist valid reasons in particular circumstances when acting contrary to the geuideline is acceptable or even useful, but the full implications should be understood and the case carefully weighed before doing so.</p></li>
+<li><p><strong>“MAY</strong> or <strong>“OPTIONAL”</strong> mean that the guideline is truly optional; you can choose to follow it or not.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The guidelines are a key component of an emerging <a class="reference external" href="http://biotoolsschema.readthedocs.io/en/latest/information_requirement.html">information standard</a> for tools being adopted by <em>bio.tools</em>, as a basis to monitor content and label <em>bio.tools</em> entries.</p>
+<ul class="simple">
+<li><p><strong>automatically verified</strong> guidelines are (or will be) checked <em>via</em> automated periodic QC of the <em>bio.tools</em> system</p></li>
+<li><p><strong>manually verified</strong> guidelines are checked <em>via</em> manual QC performed by trusted curators (<em>bio.tools</em> admin, entry owners <em>etc.</em>)</p></li>
+<li><p>advice given in boxes (notes, tips, caution <em>etc.</em> are not verified</p></li>
+</ul>
+</div>
+<section id="generalguidelines">
+<span id="id2"></span><h2>General guidelines<a class="headerlink" href="#generalguidelines" title="Permalink to this heading"></a></h2>
+<section id="before-you-start">
+<h3>Before you start<a class="headerlink" href="#before-you-start" title="Permalink to this heading"></a></h3>
+<p>Consider the following <em>before</em> creating a <em>bio.tools</em> entry:</p>
+<ol class="arabic">
+<li><p><strong>Are one or more entries required to describe the software?</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#workbench">workbenches</a> and other <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#suite">suites</a> often require multiple entries.</p></li>
+<li><p>tools with multiple interfaces (<em>e.g.</em> <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#command-line-tool">Command-line tool</a> , <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#web-api">Web API</a>, <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#web-service">Web service</a> and <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#web-application">Web application</a>) <strong>SHOULD</strong> be described by a single entry <strong>unless</strong> these interfaces provide fundamental functional differences (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">Tool functions</a> below).</p></li>
+</ul>
+</li>
+<li><p><strong>What tool types apply?</strong></p>
+<ul class="simple">
+<li><p>one or more tool <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type">types</a> may be assigned in a single entry reflecting different facets of the software described by the entry.</p></li>
+<li><p>read the tool type-specific <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#guidelines-per-tool-type">guidelines</a> before you create the tool.</p></li>
+</ul>
+</li>
+<li><p><strong>What if the software is already registered?</strong></p>
+<ul class="simple">
+<li><p>if you’re the rightful owner of the entry (<em>i.e.</em> the tool developer or provider of an online service) then request ownership of it</p></li>
+<li><p>otherwise, request edit rights</p></li>
+</ul>
+<p>Make these requests using the buttons at the bottom of the Tool Card (see <em>e.g.</em> <a class="reference external" href="https://bio.tools/signalp">https://bio.tools/signalp</a>).</p>
+<p>If you plan to register multiple entries <em>en masse</em>, please discuss this first with <a class="reference external" href="mailto:support-bio-tools&#37;&#52;&#48;sdu&#46;dk">bio<span>&#46;</span>tools admin</a>.</p>
+</li>
+<li><p><strong>Are there version-specific considerations?</strong></p>
+<ul class="simple">
+<li><p>as a rule, a <em>bio.tools</em> entry <strong>SHOULD</strong> describe the <em>latest version</em> available at the time of registration and <strong>SHOULD</strong> be updated, as required, for subsequent releases.</p></li>
+<li><p>if a new version has fundamental functional differences (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">Tool functions</a> below) it <strong>MAY</strong> be registered as an entirely new entry.  In such cases, follow carefully the guidelines for tool <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#name">name</a> and <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#version">version</a> annotations.</p></li>
+</ul>
+</li>
+<li><p><strong>Plan</strong> how to describe the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-functions">tool functions</a>.</p></li>
+<li><p><strong>Read</strong> the general <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotation-guidelines">EDAM annotations guidelines</a>.</p></li>
+</ol>
+</section>
+<section id="toolfunctions">
+<span id="id6"></span><h3>Tool functions<a class="headerlink" href="#toolfunctions" title="Permalink to this heading"></a></h3>
+<p><em>bio.tools</em> uses a model of software (see below) defined within <a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a>.  A tool can have one or more basic functions (modes of operation), each function performing one or more specific operation (e.g.”Sequence alignment”), and may have one or more primary inputs and outputs, each of a defined type of data and listing supported format(s).</p>
+<img alt="_images/tool_function.PNG" src="_images/tool_function.PNG" />
+<p>Plan how how to describe the software:</p>
+<ul class="simple">
+<li><p>identify the distinct functions (modes of operation) and the individual operations associated with each one.  Typically different functions (modes) perform different operations and for well documented tools, this is usually obvious.</p></li>
+<li><p>as a general rule, if the tool allows an option between doing one thing or another, then you <strong>MUST</strong> annotate the operations as distinct functions.  If in contrast a tool always does one or more things, then you <strong>MUST</strong> annotate these as distinct operations within a single function.</p></li>
+<li><p><em>bio.tools</em> aims for fairly coarse-grained description, <em>i.e.</em> you <strong>SHOULD</strong> only specify the primary functions and operations, from a typical end-user perspective.  If a tool happens to perform some operation internally, but this is secondary to its advertised purpose, then you <strong>SHOULD NOT</strong> annotate it.</p></li>
+<li><p>this holds for input and output too, <em>e.g.</em> a sequence alignment tool would be annotated as reading sequences (input), and writing a sequence alignment (output), but not with gap insertion and extension penalties, or other parameters.</p></li>
+<li><p>many tools allow a primary input or output to be specified in a number of alternative ways, <em>e.g.</em> a sequence input that may be specified <em>via</em> a sequence identifier, or as a literal sequence.  In such cases, you <strong>MAY</strong> annotate the alternatives as distinct functions (see above).  If specifying just one alternative, you <strong>SHOULD</strong> use the EDAM Data concept for the type of data, rather than identifier.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A future refactoring may improve the modelling for alternative specification of inputs and outputs, by allowing multiple data+format couplets for a given input or output.  If this is done, the proposed guideline would be:</p>
+<ul class="simple">
+<li><p>you <strong>MAY</strong> annotate all the commonly used alternatives and, if specifying alternatives, <strong>MUST</strong> annotate these as distinct data + format couplets within a single input or output.</p></li>
+<li><p>many inputs and outputs are complex, with individual data files containining multiple types of data.  You <strong>MUST</strong> select the single EDAM Data term that best describes an input or output (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#edam-annotations">EDAM annotations</a> below) and <strong>MUST NOT</strong> specify multiple EDAM Data terms describing differents facets of the data.</p></li>
+</ul>
+<p>Input on this issue is welcomed via <a class="reference external" href="https://github.com/bio-tools/biotoolsSchema/issues/83">GitHub</a>.</p>
+</div>
+</section>
+<section id="edamannotations">
+<span id="id9"></span><h3>EDAM annotations<a class="headerlink" href="#edamannotations" title="Permalink to this heading"></a></h3>
+<p>The <a class="reference external" href="http://edamontologydocs.readthedocs.io/en/latest/">EDAM ontology</a> is used to annotate applicable <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a>, <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operations</a>, and the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data">type</a> and <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data">format</a> of inputs and outputs. The general guidelines below apply for all EDAM annotations.</p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST NOT</strong> use “organisational” EDAM concepts <em>e.g.</em> Topic of “Topic” or Operation of “Operation” (see note below)</p></li>
+<li><p><strong>2.</strong> <strong>SHOULD</strong> use the most specific term(s) available, bearing in mind some concepts are necessarily overlapping or general.  If multiple sibling terms are applicable (<em>i.e.</em> terms under a common parent), the parent term may be applicable.</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD NOT</strong> use both a term and it’s parent or other ancestor, when annotating a single attribute.  An exception would be a tool which <em>e.g.</em> performs some general <a class="reference external" href="http://edamontology.org/operation_2403">Sequence analysis</a> operations but specialises on <a class="reference external" href="http://edamontology.org/operation_3092">Protein feature detection</a>.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you’re struggling to find the terms you need, or the meaning of a term is not obvious, search EDAM using the browsers below (they have different functionalities).  Multiple searches using synonyms, alternative spellings <em>etc.</em> can help.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.ebi.ac.uk/ols/ontologies/edam">EBI OLS browser</a></p></li>
+<li><p><a class="reference external" href="https://bioportal.bioontology.org/ontologies/EDAM">NCBO BioPortal browser</a></p></li>
+<li><p><a class="reference external" href="https://edamontology.github.io/edam-browser/">EDAM ontology browser</a></p></li>
+</ul>
+<p>If you cannot find the right term, request it’s added to EDAM via <a class="reference external" href="https://github.com/edamontology/edamontology/issues/new">GitHub</a> but first read the guidelines on <a class="reference external" href="http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html#requests">how to request a term</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It currently takes some time from requesting new EDAM terms for these to be supported in <em>bio.tools</em>.  In future, you’ll be able to request terms directly via the <em>bio.tools</em> registration interface and these terms will become immediately available for use, albeit subject to approval and possible change before inclusion in EDAM and <em>bio.tools</em>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some high-level “organisational” concepts defined in EDAM are intended primarily to structure the hierarchy, and are not intended for annotation in <em>bio.tools</em>. They are defined in <a class="reference external" href="https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl">EDAM.owl</a> via <cite>&lt;notRecommendedForAnnotation rdf:datatype=”http://www.w3.org/2001/XMLSchema#boolean”&gt;true&lt;/notRecommendedForAnnotation&gt;</cite>.  Such tips are visible in the OLS and BioPortal browsers.</p>
+</div>
+</section>
+</section>
+<section id="attribute-guidelines">
+<h2>Attribute guidelines<a class="headerlink" href="#attribute-guidelines" title="Permalink to this heading"></a></h2>
+<p>Guidelines below are organised into sections as they appear in the <a class="reference external" href="https://bio.tools">bio.tools</a> registration user interface</p>
+<section id="summary-group">
+<h3>Summary group<a class="headerlink" href="#summary-group" title="Permalink to this heading"></a></h3>
+<p><em>Basic information about the software.</em></p>
+<section id="name-tool">
+<h4>Name (tool)<a class="headerlink" href="#name-tool" title="Permalink to this heading"></a></h4>
+<p><em>Canonical software name assigned by the software developer or service provider, e.g. “needle”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> use name in common use, <em>e.g.</em> in the tool homepage and publication.</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> use short form if available <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">ExPASy</span></code> <strong>not</strong> <code class="docutils literal notranslate"><span class="pre">ExPASy</span> <span class="pre">Bioinformatics</span> <span class="pre">Resource</span> <span class="pre">Portal</span></code>.</p></li>
+<li><p><strong>3.</strong> <strong>MUST NOT</strong> include general or technical terms (“software”, “application”, “server”, “service”, “SOAP”, “REST”, “RESTful” <em>etc.</em>) <em>unless</em> these are part of the common name</p></li>
+<li><p><strong>4.</strong> <strong>MUST NOT</strong> misappropriate the names of other tools, <em>e.g.</em> there are many online BLAST services besides the original NCBI BLAST tool; calling any of them “BLAST” would be wrong</p></li>
+<li><p><strong>5.</strong> <strong>MUST NOT</strong> include version or status information including terms like “alpha”, “beta” <em>etc.</em> - <em>unless</em> this is part of common name</p></li>
+<li><p><strong>6.</strong> <strong>SHOULD</strong> preserve capitalisation <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">ExPASy</span></code> <strong>not</strong> <code class="docutils literal notranslate"><span class="pre">expasy</span></code>.</p></li>
+<li><p><strong>7.</strong> <strong>SHOULD</strong> follow the naming patterns (see below)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#name">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Naming patterns</strong></p>
+<p>For <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#database-portal">database portals</a> use the pattern:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">(acronym)</span></code> <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">Protein</span> <span class="pre">Databank</span> <span class="pre">(PDB)</span></code></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>a common abbreviation can be given instead of an acronym</p></li>
+<li><p>if no common acronym or abbreviation exists, omit this part: do not invent one!</p></li>
+</ul>
+<p>For tools that simply wrap or provide an interface to some other tool, including <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#webapi">Web APIs</a> (REST), <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#webservice">Web services</a> (SOAP+WSDL), and <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#webapplication">web applications</a> over command-line tools, use the pattern:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">{collectionName}</span> <span class="pre">toolName</span> <span class="pre">{API|WS}{(</span> <span class="pre">providerName)}</span></code> <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">EMBOSS</span> <span class="pre">water</span> <span class="pre">API</span> <span class="pre">(ebi)</span></code></p>
+</div></blockquote>
+<p>where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">collectionName</span></code> is the name of suite, workbench or other collection the underlying tool is from (if applicable)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">toolName</span></code> is the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool">canonical name</a> of the underlying tool</p></li>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">API</span></code> for Web APIs or <code class="docutils literal notranslate"><span class="pre">WS</span></code> for Web services</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">providerName</span></code> is the name of the institute providing the online service (if applicable)</p></li>
+</ul>
+<p>If in exceptional cases (<em>i.e.</em> when registering, as separate entries, <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions">versions</a> of a tool with <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start">fundamental differences</a>), substitute for <code class="docutils literal notranslate"><span class="pre">toolName</span></code> in the pattern above:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">toolname</span> <span class="pre">versionID</span></code> <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">FindPeaks</span> <span class="pre">3.1</span></code></p>
+</div></blockquote>
+<p>where <code class="docutils literal notranslate"><span class="pre">versionID</span></code> is the version number.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>in case of mulitple related entries be consistent, <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">PHACTS</span></code> and <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">PHACTS</span> <span class="pre">API</span></code></p></li>
+<li><p>be wary of names that are very long (&gt;25 characters). If shortening the name is necessary, don’t truncate it in a way (<em>e.g.</em> within the middle of a word) that would render it meaningless or unintuitive</p></li>
+</ul>
+</div>
+</section>
+<section id="description">
+<h4>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h4>
+<p><em>Textual description of the software, e.g. “needle reads two input sequences and writes their optimal global sequence alignment to file. It uses the Needleman-Wunsch alignment algorithm to find the optimum alignment (including gaps) of two sequences along their entire length. The algorithm uses a dynamic programming method to ensure the alignment is optimum, by exploring all possible alignments and choosing the best.”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> provide a concise summary of purpose / function of the tool</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> begin with a capital letter and end with a period (‘.’)</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD NOT</strong> include any of the following, <em>unless</em> essential to distinguish the tool from other bio.tool entries:</p>
+<ul>
+<li><p>provenance information <em>e.g.</em> software provider, institute or person name</p></li>
+<li><p>describe how good the software is (mentions of applicability are OK)</p></li>
+</ul>
+</li>
+<li><p><strong>4.</strong> <strong>SHOULD NOT</strong> include URLs</p></li>
+<li><p><strong>5.</strong> <strong>SHOULD NOT</strong> include DOIs</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#description">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="homepage">
+<h4>Homepage<a class="headerlink" href="#homepage" title="Permalink to this heading"></a></h4>
+<p><em>Homepage of the software, or some URL that best serves this purpose, e.g. “http://emboss.open-bio.org/rel/rel6/apps/needle.html”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> resolve to a web page from the developer / provider that most specifically describes the tool</p></li>
+<li><p><strong>2.</strong> <strong>SHOULD NOT</strong> specify an FTP site unless nothing else is available.</p></li>
+<li><p><strong>3.</strong> <strong>MAY</strong> specify a repository if no better alternative is available.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#homepage">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In case a tool lacks it’s own website, a URL of it’s code repository is OK. Do not use a general URL such as an institutional homepage, unless nothing better is available.</p>
+</div>
+</section>
+<section id="version-tool">
+<h4>Version (tool)<a class="headerlink" href="#version-tool" title="Permalink to this heading"></a></h4>
+<p><em>Version information (typically a version number) of the software applicable to this bio.tools entry, e.g. “6.4.0.0”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify the tool version as described by the other attributes (see note below)</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> specify exactly the public version label in common use</p></li>
+<li><p><strong>3.</strong> <strong>MUST NOT</strong> include tokens such as “v”, “ver”, “version”, “rel”, “release” <em>etc.</em>, <em>unless</em> these are part of the public version label</p></li>
+<li><p><strong>4.</strong> <strong>MAY</strong> identify all tool versions which are applicable to the entry</p></li>
+<li><p><strong>5.</strong> <strong>MAY</strong> specify a version for database portals and web applications, but only if this is used in the common <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#name">name</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#version">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<dl class="simple">
+<dt>Care is needed to ensure annotations correspond to the indicated tool version.</dt><dd><ul class="simple">
+<li><p><strong>only</strong> change the version if you’re sure there’s no fundamental change to the specified tool <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#function">functions</a> (operations, inputs and outputs)</p></li>
+<li><p>if there are fundamental changes, update the tool <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#function">function</a> annotation</p></li>
+<li><p><strong>do not</strong> assume version “1” in case the version number is not readily findable</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>One or more version fields may be specified, and each - in princple - allows flexible specification of version information including single versions, ranges, lists and lists including ranges, <em>e.g.</em>:</p>
+<ul class="simple">
+<li><p>1.1</p></li>
+<li><p>beta01</p></li>
+<li><p>2.0 - 2.7</p></li>
+<li><p>1.1, 1.2.1, 1.4, v5</p></li>
+<li><p>1.1 - 1.4, 2.0-alpha, 2.0-beta-01 - 2.0-beta-04, 2.0.0</p></li>
+<li><p><em>etc.</em></p></li>
+</ul>
+<p>We recommend to keep things simple (one version label per field by default) and pragmatic (using version ranges where desirable).</p>
+</div>
+</section>
+<section id="other-ids">
+<h4>Other IDs<a class="headerlink" href="#other-ids" title="Permalink to this heading"></a></h4>
+<p><em>A unique identifier of the software, typically assigned by an ID-assignment authority other than bio.tools, e.g. “RRID:SCR_015644”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify the same tool as indicated by the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid">biotoolsID</a></p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> include version information if IDs for multiple different versions are specified</p></li>
+<li><p><strong>3.</strong> <strong>MAY</strong> specify the type of identifier (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>doi</p></td>
+<td><p>Digital Object Identifier of the software assigned (typically) by the software developer or service provider.</p></td>
+</tr>
+<tr class="row-odd"><td><p>rrid</p></td>
+<td><p>Research Resource Identifier as used by the NIH-supported Resource Identification Portal (<a class="reference external" href="https://scicrunch.org/resources">https://scicrunch.org/resources</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p>cpe</p></td>
+<td><p>Common Platform Enumeration (CPE) identifier as listed in the CPE dictionary (<a class="reference external" href="https://cpe.mitre.org/dictionary/">https://cpe.mitre.org/dictionary/</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p>biotoolsCURIE</p></td>
+<td><p>bio.tools CURIE (secondary identifier).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#other-ids">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Alternative IDs of type <code class="docutils literal notranslate"><span class="pre">biotoolsCURIE</span></code> are set (and can only be changed) by <em>bio.tools</em> admin. They allow <em>bio.tools</em> to support multiple <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid">biotoolsIDs</a> (hence resolvable Tool Card URLs) for a single tool; this done in exceptional circumstances only, <em>e.g.</em> the name of a tool is changed.</p>
+</div>
+<section id="value">
+<h5>Value<a class="headerlink" href="#value" title="Permalink to this heading"></a></h5>
+<p><em>Value of tool identifier, e.g. “RRID:SCR_001156”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify a valid identifier for the tool.</p></li>
+</ul>
+</section>
+<section id="type-otherid">
+<h5>Type (otherID)<a class="headerlink" href="#type-otherid" title="Permalink to this heading"></a></h5>
+<p><em>Type of tool identifier, e.g. “rrid”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MAY</strong> specify the applicable type, in terms from a controlled vocabulary (see below) - although this should not normally be necessary</p></li>
+</ul>
+</section>
+<section id="version-otherid">
+<h5>Version (otherID)<a class="headerlink" href="#version-otherid" title="Permalink to this heading"></a></h5>
+<p><em>Version information (typically a version number) of the software applicable to this identifier, e.g. “1.4”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify the applicable tool version</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> follow the general guidelines for <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool">version</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="function-group">
+<h3>Function group<a class="headerlink" href="#function-group" title="Permalink to this heading"></a></h3>
+<p><em>Details of a function (i.e. mode of operation) the software provides, expressed in concepts from the EDAM ontology.</em></p>
+<section id="operation">
+<h4>Operation<a class="headerlink" href="#operation" title="Permalink to this heading"></a></h4>
+<p><em>The basic operation(s) performed by this software function (EDAM Operation), e.g. “‘Protein signal peptide detection’ (http://edamontology.org/operation_0418)”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly specify operations performed by the tool, or (if <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions">version</a> is indicated), those specific version(s) of the tool</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> be correctly organised into multiple functions, in case the tool has multiple modes of operation (see guidelines for <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">tool functions</a>).</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD</strong> describe all the primary operations performed by that tool and <strong>SHOULD NOT</strong> describe secondary / minor operations.</p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations">general guidelines for EDAM annotations</a>.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#operation">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="data-type-input-and-output-data">
+<h4>Data type (input and output data)<a class="headerlink" href="#data-type-input-and-output-data" title="Permalink to this heading"></a></h4>
+<p><em>Type of primary input / output data (if any) e.g. “‘Sequence’ (http://edamontology.org/data_2044)”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly specify types of input or output data processed by the tool, or (if <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions">version</a> is indicated), those specific version(s) of the tool</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> be correctly associated with the operation(s); for each function in case the tool has multiple modes of operation (see guidelines for <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">tool functions</a>).</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD</strong> describe all the primary inputs and outputs of the tool and <strong>SHOULD NOT</strong> describe secondary / minor inputs and outputs.</p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations">general guidelines for EDAM annotations</a>.</p></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>many tools allow a primary input to be specified in a number of alternative ways, the common case being a sequence input that may be specified via a sequence identifier, or by typing in a literal sequence.  In such cases, annotate the input using the EDAM Data concept for the type of data, not the identifier.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the syntax guidelines for <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#input">input</a> and <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#output">output</a></p></li>
+</ul>
+</div>
+</section>
+<section id="data-format-input-and-output-data">
+<h4>Data format (input and output data)<a class="headerlink" href="#data-format-input-and-output-data" title="Permalink to this heading"></a></h4>
+<p><em>Allowed format(s) of primary inputs/outputs e.g. “‘FASTA’ (http://edamontology.org/format_1929)”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly specify data formats supported on input or output by the tool, or (if <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-versions">version</a>) is indicated, those specific version(s) of the tool</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> be correctly associated with the data type of an input or output (see guidelines for <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">tool functions</a>).</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD</strong> describe the primary data formats and <strong>MAY</strong> exhaustively describe <em>all</em> formats.</p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations">general guidelines for EDAM annotations</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#format">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="note-function">
+<h4>Note (function)<a class="headerlink" href="#note-function" title="Permalink to this heading"></a></h4>
+<p><em>Concise comment about this function, if not apparent from the software description and EDAM annotations, e.g. “This option is slower, but more precise.</em>”</p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> not duplicate what is already apparent from the EDAM annotations</p></li>
+<li><p><strong>2.</strong> <strong>SHOULD</strong> be concise and summarise only critical usage information</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD NOT</strong> duplicate online documentation; give a link if necessary</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#operation">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="command">
+<h4>Command<a class="headerlink" href="#command" title="Permalink to this heading"></a></h4>
+<p><em>Relevant command, command-line fragment or option for executing this function / running the tool in this mode, e.g “-s best”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify precisely a command, command-line fragment or option specified in the tool documentation</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> be correctly associated with a function (the command must be used to invoke that specific tool function)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#operation">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="labels-group">
+<h3>Labels group<a class="headerlink" href="#labels-group" title="Permalink to this heading"></a></h3>
+<p><em>Miscellaneous scientific, technical and administrative details of the software, expressed in terms from controlled vocabularies.</em></p>
+<section id="tool-type">
+<h4>Tool type<a class="headerlink" href="#tool-type" title="Permalink to this heading"></a></h4>
+<p><em>The type of application software: a discrete software entity can have more than one type, e.g. “Command-line tool, Web application”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify all types that are applicable, in terms from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Bioinformatics portal</p></td>
+<td><blockquote>
+<div><p>web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Command-line tool</p></td>
+<td><p>A tool with a text-based (command-line) interface.</p></td>
+</tr>
+<tr class="row-even"><td><p>Database portal</p></td>
+<td><p>A Web application, suite or workbench providing a portal to a biological database.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Desktop application</p></td>
+<td><p>A tool with a graphical user interface that runs on your desktop environment, <em>e.g.</em> on a PC or mobile device.</p></td>
+</tr>
+<tr class="row-even"><td><p>Library</p></td>
+<td><p>A collection of components that are used to construct other tools.  bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ontology</p></td>
+<td><p>A collection of information about concepts, including terms, synonyms, descriptions etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>Plug-in</p></td>
+<td><p>A software component encapsulating a set of related functions, which are not standalone, <em>i.e.</em> depend upon other software for its use, <em>e.g.</em> a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Script</p></td>
+<td><p>A tool written for some run-time environment (<em>e.g.</em> other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (<em>e.g.</em> Perl, Python) or some domain-specific languages (<em>e.g.</em> sed).</p></td>
+</tr>
+<tr class="row-even"><td><p>SPARQL endpoint</p></td>
+<td><p>A service that provides queries over an RDF knowledge base via the SPARQL query language and protocol, and returns results via HTTP.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Suite</p></td>
+<td><p>A collection of tools which are bundled together into a convenient toolkit.  Such tools typically share related functionality, a common user interface and can exchange data conveniently.  This includes collections of stand-alone command-line tools, or Web applications within a common portal.</p></td>
+</tr>
+<tr class="row-even"><td><p>Web application</p></td>
+<td><p>A tool with a graphical user interface that runs in your Web browser.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Web API</p></td>
+<td><p>An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP.  Includes everything from simple data-access URLs to RESTful APIs.</p></td>
+</tr>
+<tr class="row-even"><td><p>Web service</p></td>
+<td><p>An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Workbench</p></td>
+<td><p>An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools.  Includes workflow systems, platforms, frameworks etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>Workflow</p></td>
+<td><p>A set of tools which have been composed together into a pipeline of some sort.  Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>in cases where a given software is described by more than one entry (<em>e.g.</em> a web application and its API are described separately) then assign only the types that are applicable to that entry.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><em>bio.tools</em> includes all types of bioinformatics tools: application software with well-defined data processing functions (inputs, outputs and operations). When registering a tool, one or more tool types may be assigned, reflecting the different facets of the software being described.</p></li>
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#tool-type">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="topic">
+<h4>Topic<a class="headerlink" href="#topic" title="Permalink to this heading"></a></h4>
+<p><em>General scientific domain the software serves or other general category (EDAM Topic), e.g. “‘Protein sites, features and motifs’ (http://edamontology.org/topic_3510)”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify the single most important and relevant scientific topic</p></li>
+<li><p><strong>2.</strong> <strong>MAY</strong> specify all highly relevant scientific topics</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD NOT</strong> exhaustively specify all the topics of lower or secondary relevance</p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#edamannotations">general guidelines for EDAM annotations</a>.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#topic">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="operating-system">
+<h4>Operating system<a class="headerlink" href="#operating-system" title="Permalink to this heading"></a></h4>
+<p><em>The operating system supported by a downloadable software package, e.g. “Linux”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify all operating systems that are applicable, in terms from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operating system</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Linux</p></td>
+<td><p>All flavours of Linux/UNIX operating systems.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Windows</p></td>
+<td><p>All flavours of Microsoft Windows operating system.</p></td>
+</tr>
+<tr class="row-even"><td><p>Mac</p></td>
+<td><p>All flavours of Apple Macintosh operating systems (primarily Mac OS X).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#operating-system">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="programming-language">
+<h4>Programming language<a class="headerlink" href="#programming-language" title="Permalink to this heading"></a></h4>
+<p><em>Name of programming language the software source code was written in, e.g. “C”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify the primary language used, in terms from a controlled vocabulary (see below)</p></li>
+<li><p><strong>2.</strong> <strong>MAY</strong> exhaustively specify other languages used</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Programming language</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ActionScript</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ada</p></td>
+</tr>
+<tr class="row-even"><td><p>AppleScript</p></td>
+</tr>
+<tr class="row-odd"><td><p>Assembly language</p></td>
+</tr>
+<tr class="row-even"><td><p>AWK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bash</p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+</tr>
+<tr class="row-odd"><td><p>C#</p></td>
+</tr>
+<tr class="row-even"><td><p>C++</p></td>
+</tr>
+<tr class="row-odd"><td><p>COBOL</p></td>
+</tr>
+<tr class="row-even"><td><p>ColdFusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>CWL</p></td>
+</tr>
+<tr class="row-even"><td><p>D</p></td>
+</tr>
+<tr class="row-odd"><td><p>Delphi</p></td>
+</tr>
+<tr class="row-even"><td><p>Dylan</p></td>
+</tr>
+<tr class="row-odd"><td><p>Eiffel</p></td>
+</tr>
+<tr class="row-even"><td><p>Forth</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fortran</p></td>
+</tr>
+<tr class="row-even"><td><p>Groovy</p></td>
+</tr>
+<tr class="row-odd"><td><p>Haskell</p></td>
+</tr>
+<tr class="row-even"><td><p>Icarus</p></td>
+</tr>
+<tr class="row-odd"><td><p>Java</p></td>
+</tr>
+<tr class="row-even"><td><p>JavaScript</p></td>
+</tr>
+<tr class="row-odd"><td><p>JSP</p></td>
+</tr>
+<tr class="row-even"><td><p>LabVIEW</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lisp</p></td>
+</tr>
+<tr class="row-even"><td><p>Lua</p></td>
+</tr>
+<tr class="row-odd"><td><p>Maple</p></td>
+</tr>
+<tr class="row-even"><td><p>Mathematica</p></td>
+</tr>
+<tr class="row-odd"><td><p>MATLAB</p></td>
+</tr>
+<tr class="row-even"><td><p>MLXTRAN</p></td>
+</tr>
+<tr class="row-odd"><td><p>NMTRAN</p></td>
+</tr>
+<tr class="row-even"><td><p>OCaml</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pascal</p></td>
+</tr>
+<tr class="row-even"><td><p>Perl</p></td>
+</tr>
+<tr class="row-odd"><td><p>PHP</p></td>
+</tr>
+<tr class="row-even"><td><p>Prolog</p></td>
+</tr>
+<tr class="row-odd"><td><p>PyMOL</p></td>
+</tr>
+<tr class="row-even"><td><p>Python</p></td>
+</tr>
+<tr class="row-odd"><td><p>R</p></td>
+</tr>
+<tr class="row-even"><td><p>Racket</p></td>
+</tr>
+<tr class="row-odd"><td><p>REXX</p></td>
+</tr>
+<tr class="row-even"><td><p>Ruby</p></td>
+</tr>
+<tr class="row-odd"><td><p>SAS</p></td>
+</tr>
+<tr class="row-even"><td><p>Scala</p></td>
+</tr>
+<tr class="row-odd"><td><p>Scheme</p></td>
+</tr>
+<tr class="row-even"><td><p>Shell</p></td>
+</tr>
+<tr class="row-odd"><td><p>Smalltalk</p></td>
+</tr>
+<tr class="row-even"><td><p>SQL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Turing</p></td>
+</tr>
+<tr class="row-even"><td><p>Verilog</p></td>
+</tr>
+<tr class="row-odd"><td><p>VHDL</p></td>
+</tr>
+<tr class="row-even"><td><p>Visual Basic</p></td>
+</tr>
+<tr class="row-odd"><td><p>XAML</p></td>
+</tr>
+<tr class="row-even"><td><p>Other</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#programming-language">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="license">
+<h4>License<a class="headerlink" href="#license" title="Permalink to this heading"></a></h4>
+<p><em>Software or data usage license, e.g. “GPL-3.0”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately describe the license used.</p></li>
+<li><p><strong>2.</strong> <strong>SHOULD</strong> use “Proprietary” in cases where the software is under license (not defined in biotoolsSchema) whereby it can be obtained from the provider (<em>e.g.</em> for money), and then owned, <em>i.e.</em> definitely not an open-source or free software license.</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD</strong> use “Freeware” for software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author’s permission.</p></li>
+<li><p><strong>4.</strong> <strong>SHOULD</strong> use “Not licensed” for software which is not licensed and is not “Proprietary”.</p></li>
+<li><p><strong>5.</strong> <strong>SHOULD</strong> use “Other” if the software is available under a license not listed by biotoolsSchema and which is not “Proprietary”.</p>
+<ul>
+<li><p>a controlled vocabulary of valid terms is defined in <a class="reference external" href="https://github.com/bio-tools/biotoolsSchema/tree/master/stable">biotoolsSchema</a>.</p></li>
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#license">syntax guidelines</a>.</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>Use the “Other” license for custom institutional licenses that are out of scope of <a class="reference external" href="https://github.com/bio-tools/biotoolsSchema/tree/master/stable">biotoolsSchema</a>.  If you’ve found a license that you think should be included in biotoolsSchema please report it <em>via</em> <a class="reference external" href="https://github.com/bio-tools/biotoolsSchema/issues/new">GitHub</a>.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most permisible values are identifiers from the SPDX license list (<a class="reference external" href="https://spdx.org/licenses/">https://spdx.org/licenses/</a>). In future, based on the specified license a label (e.g. “Open-source”) may be attached to the <em>bio.tools</em> entry (see table below)</p>
+<table class="docutils align-default" id="id102">
+<caption><span class="caption-text">Labelling based on license (future work)</span><a class="headerlink" href="#id102" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>License</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Open-source</p></td>
+<td><p>Software is made available under a license approved by the Open Source Initiative (OSI). The software is distributed in a way that satisfies the 10 criteria of the Open Source Definition maintained by OSI (see <a class="reference external" href="https://opensource.org/docs/osd">https://opensource.org/docs/osd</a>). The source code is available to others.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Free software</p></td>
+<td><p>Free as in ‘freedom’ not necessarily free of charge.  Software is made available under a license approved by the Free Software Foundation (FSF). The software satisfies the criteria of the Free Software Definition maintained by FSF (see <a class="reference external" href="http://www.gnu.org/philosophy/free-sw.html">http://www.gnu.org/philosophy/free-sw.html</a>). The source code is available to others.</p></td>
+</tr>
+<tr class="row-even"><td><p>Free and open source</p></td>
+<td><p>Software is made available under a license approved by both the Open Source Initiative (OSI) and the Free Software Foundation (FSF), and satisfies the criteria of the OSI Open Source Definition maintained (<a class="reference external" href="https://opensource.org/docs/osd">https://opensource.org/docs/osd</a>) and the FSF Free Software Definition (<a class="reference external" href="http://www.gnu.org/philosophy/free-sw.html">http://www.gnu.org/philosophy/free-sw.html</a>).  Such software ensures users have the freedom to run, copy, distribute, study, change and improve the software.  The source code is available to others.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Copyleft</p></td>
+<td><p>Software is made available under a license designated as ‘copyleft’ by the Free Software Foundation (FSF).  The license ensures such software is free and that all modified and extended versions of the program are free as well. Free as in ‘freedom’ not necessarily free of charge, as per the Free Software Definition maintained by FSF (see <a class="reference external" href="http://www.gnu.org/philosophy/free-sw.html">http://www.gnu.org/philosophy/free-sw.html</a>).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="collection">
+<h4>Collection<a class="headerlink" href="#collection" title="Permalink to this heading"></a></h4>
+<p><em>Unique ID of a collection that the software has been assigned to within bio.tools, e.g. “CBS</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>SHOUD</strong> be short and intuitive</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>collections may be created for for any arbitrary purpose</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#collection">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="maturity">
+<h4>Maturity<a class="headerlink" href="#maturity" title="Permalink to this heading"></a></h4>
+<p><em>How mature the software product is, e.g. “Mature”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately reflect the software maturity, in terms from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Maturity</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Emerging</p></td>
+<td><p>Nascent or early release software that may not yet be fully featured or stable.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mature</p></td>
+<td><p>Software that is generally considered to fulfill several of the following: secure, reliable, actively maintained, fully featured, proven in production environments, has an active community, and is described or cited in the scientific literature.</p></td>
+</tr>
+<tr class="row-even"><td><p>Legacy</p></td>
+<td><p>Software which is no longer in common use, deprecated by the provider, superseded by other software, replaced by a newer version, is obsolete etc.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>normally only the developer or provider of a tool is sure of its maturity. If you are not sure, then do not complete this field.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#maturity">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="cost">
+<h4>Cost<a class="headerlink" href="#cost" title="Permalink to this heading"></a></h4>
+<p><em>Monetary cost of acquiring the software, e.g. “Free of charge (with retritions)”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately describe the monetary cost of acquiring the software, in terms from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Cost</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Free of charge</p></td>
+<td><p>Software which available for use by all, with full functionality, at no monetary cost to the user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Free of charge (with restrictions)</p></td>
+<td><p>Software which is available for use at no monetary cost to the user, but possibly with limited functionality, usage restrictions, or other limitations.</p></td>
+</tr>
+<tr class="row-even"><td><p>Commercial</p></td>
+<td><p>Software which you have to pay to access.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#license">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="accessibility">
+<h4>Accessibility<a class="headerlink" href="#accessibility" title="Permalink to this heading"></a></h4>
+<p><em>Whether there are non-monetary restrictions on accessing an online service., e.g. “Open access”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately describe the accessibility conditions that apply, in terms from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Accessibility</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Open access</p></td>
+<td><p>An online service which is available for use to all, but possibly requiring user accounts / authentication.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Open access (with restrictions)</p></td>
+<td><p>An online service which is available for use to all, but possibly with some usage limitations and other restrictions.</p></td>
+</tr>
+<tr class="row-even"><td><p>Restricted access</p></td>
+<td><p>An online service which is available for use to a restricted audience, e.g. members of a specific institute.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#accessibility">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="elixir-platform">
+<h4>ELIXIR Platform<a class="headerlink" href="#elixir-platform" title="Permalink to this heading"></a></h4>
+<p><em>Name of the ELIXIR Platform that is credited, e.g. “Tools”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> only credit the ELIXIR Platform if directly contributing to the work, using a term from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ELIXIR Platform</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data</p></td>
+<td><p>ELIXIR Data Platform</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tools</p></td>
+<td><p>ELIXIR Tools Platform</p></td>
+</tr>
+<tr class="row-even"><td><p>Compute</p></td>
+<td><p>ELIXIR Compute Platform</p></td>
+</tr>
+<tr class="row-odd"><td><p>Interoperability</p></td>
+<td><p>ELIXIR Interoperability Platform</p></td>
+</tr>
+<tr class="row-even"><td><p>Training</p></td>
+<td><p>ELIXIR Training Platform</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="elixir-node">
+<h4>ELIXIR Node<a class="headerlink" href="#elixir-node" title="Permalink to this heading"></a></h4>
+<p><em>Name of the ELIXIR Node that is credited, e.g. “Norway”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> only credit the ELIXIR Node if directly contributing to the work, using a term from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ELIXIR Node</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Belgium</p></td>
+</tr>
+<tr class="row-odd"><td><p>Czech Republic</p></td>
+</tr>
+<tr class="row-even"><td><p>Denmark</p></td>
+</tr>
+<tr class="row-odd"><td><p>EMBL</p></td>
+</tr>
+<tr class="row-even"><td><p>Estonia</p></td>
+</tr>
+<tr class="row-odd"><td><p>Finland</p></td>
+</tr>
+<tr class="row-even"><td><p>France</p></td>
+</tr>
+<tr class="row-odd"><td><p>Germany</p></td>
+</tr>
+<tr class="row-even"><td><p>Greece</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hungary</p></td>
+</tr>
+<tr class="row-even"><td><p>Ireland</p></td>
+</tr>
+<tr class="row-odd"><td><p>Israel</p></td>
+</tr>
+<tr class="row-even"><td><p>Italy</p></td>
+</tr>
+<tr class="row-odd"><td><p>Luxembourg</p></td>
+</tr>
+<tr class="row-even"><td><p>Netherlands</p></td>
+</tr>
+<tr class="row-odd"><td><p>Norway</p></td>
+</tr>
+<tr class="row-even"><td><p>Portugal</p></td>
+</tr>
+<tr class="row-odd"><td><p>Slovenia</p></td>
+</tr>
+<tr class="row-even"><td><p>Spain</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sweden</p></td>
+</tr>
+<tr class="row-even"><td><p>Switzerland</p></td>
+</tr>
+<tr class="row-odd"><td><p>UK</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="elixir-community">
+<h4>ELIXIR Community<a class="headerlink" href="#elixir-community" title="Permalink to this heading"></a></h4>
+<p><em>Name of relevant ELIXIR (or associated) community, e.g. “Galaxy”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MAY</strong> cite any ELIXIR Community to which the software is directly relevant.</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ELIXIR Community</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3D-BioInfo</p></td>
+</tr>
+<tr class="row-odd"><td><p>Federated Human Data</p></td>
+</tr>
+<tr class="row-even"><td><p>Galaxy</p></td>
+</tr>
+<tr class="row-odd"><td><p>Human Copy Number Variation</p></td>
+</tr>
+<tr class="row-even"><td><p>Intrinsically Disordered Proteins</p></td>
+</tr>
+<tr class="row-odd"><td><p>Marine Metagenomics</p></td>
+</tr>
+<tr class="row-even"><td><p>Metabolomics</p></td>
+</tr>
+<tr class="row-odd"><td><p>Microbial Biotechnology</p></td>
+</tr>
+<tr class="row-even"><td><p>Plant Sciences</p></td>
+</tr>
+<tr class="row-odd"><td><p>Proteomics</p></td>
+</tr>
+<tr class="row-even"><td><p>Rare Diseases</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="link-group">
+<h3>Link group<a class="headerlink" href="#link-group" title="Permalink to this heading"></a></h3>
+<p><em>Miscellaneous links for the software e.g. repository, issue tracker or mailing list.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>the <em>bio.tools</em> registration interace &amp; API allows a curator to record when a link of a certain type is known to <em>not</em> be available</p></li>
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#link">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<section id="url-link">
+<h4>URL (link)<a class="headerlink" href="#url-link" title="Permalink to this heading"></a></h4>
+<p><em>A link of some relevance to the software (URL), e.g. “https://github.com/pharmbio/sciluigi/issues”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> resolve to a page of the indicated <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#link-type">link type</a></p></li>
+<li><p><strong>2.</strong> <strong>MUST NOT</strong> give a general link (<em>e.g.</em> homepage URL) if a more specific link is available</p></li>
+</ul>
+</section>
+<section id="linktype">
+<span id="id45"></span><h4>Link type<a class="headerlink" href="#linktype" title="Permalink to this heading"></a></h4>
+<p><em>The type of data, information or system that is obtained when the link is resolved, e.g. “Mailing list”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify the type of information available at the link, in terms from a controlled vocabulary (see below)</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> use type “Other” if another, more specific type is not available</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD</strong> specify all the types that are applicable</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Link type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Discussion forum</p></td>
+<td><p>Online forum for user discussions about the software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Galaxy service</p></td>
+<td><p>An online service providing the tool through the Galaxy platform.</p></td>
+</tr>
+<tr class="row-even"><td><p>Helpdesk</p></td>
+<td><p>A phone line, web site or email-based system providing help to the end-user of the software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Issue tracker</p></td>
+<td><p>Tracker for software issues, bug reports, feature requests etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>Mailing list</p></td>
+<td><p>Mailing list for the software announcements, discussions, support etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mirror</p></td>
+<td><p>Mirror of an (identical) online service.</p></td>
+</tr>
+<tr class="row-even"><td><p>Software catalogue</p></td>
+<td><p>Some registry, catalogue etc. other than bio.tools where the tool is also described.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Repository</p></td>
+<td><p>A place where source code, data and other files can be retrieved from, typically via platforms like GitHub which provide version control and other features, or something simpler, e.g. an FTP site.</p></td>
+</tr>
+<tr class="row-even"><td><p>Social media</p></td>
+<td><p>A website used by the software community including social networking sites, discussion and support fora, WIKIs etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Service</p></td>
+<td><p>An online service (other than Galaxy) that provides access (an interface) to the software.</p></td>
+</tr>
+<tr class="row-even"><td><p>Technical monitoring</p></td>
+<td><p>Information about the technical status of a tool.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other</p></td>
+<td><p>Other type of link for software - the default if a more specific type is not available.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="note-link">
+<h4>Note (link)<a class="headerlink" href="#note-link" title="Permalink to this heading"></a></h4>
+<p><em>Comment about the link, e.g. “Please use the issue tracker for reporting bugs and making features requests.”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>SHOULD</strong> be a concise summary of practical information</p></li>
+</ul>
+</section>
+</section>
+<section id="download-group">
+<h3>Download group<a class="headerlink" href="#download-group" title="Permalink to this heading"></a></h3>
+<p><em>Links to downloads for the software, e.g. source code, virtual machine image or container.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>the <em>bio.tools</em> registration interace &amp; API allows a curator to record when a documentation link of a certain type is known to <em>not</em> be available</p></li>
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#download">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<section id="url-download">
+<h4>URL (download)<a class="headerlink" href="#url-download" title="Permalink to this heading"></a></h4>
+<p><em>Link to download (or repo providing a download) for the software, e.g. “http://bioconductor/packages/release/bioc/src/contrib/VanillaICE_1.36.0.tar.gz”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> resolve to a page providing either an immediately download, or links for a download of the indicated <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type">link type</a></p></li>
+<li><p><strong>2.</strong> <strong>MUST NOT</strong> give a general link (<em>e.g.</em> homepage URL) if a more specific link is available</p></li>
+</ul>
+</section>
+<section id="download-type">
+<h4>Download type<a class="headerlink" href="#download-type" title="Permalink to this heading"></a></h4>
+<p><em>Type of download that is linked to, e.g. “Binaries”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify the type of download available at the link, in terms from a controlled vocabulary (see below)</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> use type “Other” if another, more specific type is not available</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD</strong> use type “Downloads page” for links to general downloads pages (<em>i.e.</em> one which includes details about multiple types of download)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Download type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>API specification</p></td>
+<td><p>File providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Biological data</p></td>
+<td><p>Biological data, or a web page on a database portal where such data may be downloaded.</p></td>
+</tr>
+<tr class="row-even"><td><p>Binaries</p></td>
+<td><p>Binaries for the software; compiled code that allow a program to be installed without having to compile the source code.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Command-line specification</p></td>
+<td><p>File providing a command line specification for the software.</p></td>
+</tr>
+<tr class="row-even"><td><p>Container file</p></td>
+<td><p>Container file including the software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Icon</p></td>
+<td><p>Icon of the software.</p></td>
+</tr>
+<tr class="row-even"><td><p>Screenshot</p></td>
+<td><p>Screenshot of the software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Source code</p></td>
+<td><p>The source code for the software, that can be compiled or assembled into an executable computer program.</p></td>
+</tr>
+<tr class="row-even"><td><p>Software package</p></td>
+<td><p>A software package; a bundle of files and information about those files, typically including source code and / or binaries.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Test data</p></td>
+<td><p>Data for testing the scientific performance of the software or whether it is working correctly.</p></td>
+</tr>
+<tr class="row-even"><td><p>Test script</p></td>
+<td><p>Script used for testing testing whether the software is working correctly.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tool wrapper (CWL)</p></td>
+<td><p>Tool wrapper in Common Workflow Language (CWL) format for the software.</p></td>
+</tr>
+<tr class="row-even"><td><p>Tool wrapper (galaxy)</p></td>
+<td><p>Galaxy tool configuration file (wrapper) for the software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tool wrapper (taverna)</p></td>
+<td><p>Taverna configuration file for the software.</p></td>
+</tr>
+<tr class="row-even"><td><p>Tool wrapper (other)</p></td>
+<td><p>Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>VM image</p></td>
+<td><p>Virtual machine (VM) image for the software.</p></td>
+</tr>
+<tr class="row-even"><td><p>Downloads page</p></td>
+<td><p>Web page summarising general downloads available for the software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other</p></td>
+<td><p>Other type of download for software - the default if a more specific type is not available.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="note-download">
+<h4>Note (download)<a class="headerlink" href="#note-download" title="Permalink to this heading"></a></h4>
+<p><em>Comment about the download, e.g. “Complete distibution”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>SHOULD</strong> be concise and summarise only practical information about the link</p></li>
+</ul>
+</section>
+<section id="version-download">
+<h4>Version (download)<a class="headerlink" href="#version-download" title="Permalink to this heading"></a></h4>
+<p><em>Version information (typically a version number) of the software applicable to this download.</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify the applicable tool version</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> follow the general guidelines for <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool">version</a></p></li>
+</ul>
+</section>
+</section>
+<section id="documentation-group">
+<h3>Documentation group<a class="headerlink" href="#documentation-group" title="Permalink to this heading"></a></h3>
+<p><em>Links to documentation about the software e.g. user manual, API documentation or training material.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>the <em>bio.tools</em> registration interace &amp; API allows a curator to record when a documentation link of a certain type is known to <em>not</em> be available</p></li>
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#documentation">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<section id="url-documentation">
+<h4>URL (documentation)<a class="headerlink" href="#url-documentation" title="Permalink to this heading"></a></h4>
+<p><em>Link to documentation on the web for the tool, e.g. “http://bioconductor.org/packages/release/bioc/html/VanillaICE.html”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> resolve to a page of the indicated <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-type">documentation type</a></p></li>
+<li><p><strong>2.</strong> <strong>MUST NOT</strong> give a general link (<em>e.g.</em> homepage URL) if a more specific link is available</p></li>
+</ul>
+</section>
+<section id="documentationtype">
+<span id="id50"></span><h4>Documentation type<a class="headerlink" href="#documentationtype" title="Permalink to this heading"></a></h4>
+<p><em>Type of documentation that is linked to, e.g. “Citation instructions”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify the type of documentation available at the link, in terms from a controlled vocabulary (see below)</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> use type “Other” if another, more specific type is not available</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD</strong> specify all the types that are applicable</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Documentation type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>API documentation</p></td>
+<td><p>Human-readable API documentation.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Citation instructions</p></td>
+<td><p>Information on how to correctly cite use of the software; typically which publication(s) to cite, or something more general, e.g. a form of words to use.</p></td>
+</tr>
+<tr class="row-even"><td><p>Code of conduct</p></td>
+<td><p>A set of guidelines or rules outlining the norms, expectations, responsibilities and proper practice for individuals working within the software project.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Command-line options</p></td>
+<td><p>Information about the command-line interface to a tool.</p></td>
+</tr>
+<tr class="row-even"><td><p>Contributions policy</p></td>
+<td><p>Information about policy for making contributions to the software project.</p></td>
+</tr>
+<tr class="row-odd"><td><p>FAQ</p></td>
+<td><p>Frequently Asked Questions (and answers) about the software.</p></td>
+</tr>
+<tr class="row-even"><td><p>General</p></td>
+<td><p>General documentation.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Governance</p></td>
+<td><p>Information about the software governance model.</p></td>
+</tr>
+<tr class="row-even"><td><p>Installation instructions</p></td>
+<td><p>Instructions how to install the software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Quick start guide</p></td>
+<td><p>A short guide helping the end-user to use the software as soon as possible.</p></td>
+</tr>
+<tr class="row-even"><td><p>Release notes</p></td>
+<td><p>Notes about a software release or changes to the software; a change log.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Terms of use</p></td>
+<td><p>Rules that one must agree to abide by in order to use a service.</p></td>
+</tr>
+<tr class="row-even"><td><p>Training material</p></td>
+<td><p>Online training material such as a tutorial, a presentation, video etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p>User manual</p></td>
+<td><p>Information on how to use the software, tailored to the end-user.</p></td>
+</tr>
+<tr class="row-even"><td><p>Other</p></td>
+<td><p>Some other type of documentation not listed in biotoolsSchema.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="note-documentation">
+<h4>Note (documentation)<a class="headerlink" href="#note-documentation" title="Permalink to this heading"></a></h4>
+<p><em>Comment about the documentation, e.g. “Comprehensive usage information suitable for biologist end-users.”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>SHOULD</strong> be concise and summarise only practical information about the link</p></li>
+</ul>
+</section>
+</section>
+<section id="relation-group">
+<h3>Relation group<a class="headerlink" href="#relation-group" title="Permalink to this heading"></a></h3>
+<p><em>Details of a relationship this software shares with other software registered in bio.tools.</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify a relationship between two <em>bio.tools</em> entries</p></li>
+<li><p><strong>2.</strong> <strong>MUST NOT</strong> not contradict a relationship that is already specified in <em>bio.tools</em></p></li>
+<li><p><strong>3.</strong> <strong>MUST</strong> specify a valid biotoolsID (of a tool that’s registerd in <em>bio.tools</em>)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#relation">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<section id="biotoolsid-relation">
+<h4>biotoolsID (relation)<a class="headerlink" href="#biotoolsid-relation" title="Permalink to this heading"></a></h4>
+<p><em>bio.tools ID of an existing bio.tools entry to which this software is related, e.g. “needle”</em></p>
+</section>
+<section id="relation-type">
+<h4>Relation type<a class="headerlink" href="#relation-type" title="Permalink to this heading"></a></h4>
+<p><em>Type of relation between this and another registered software, e.g. “isNewVersionOf”</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Relation type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>isNewVersionOf</p></td>
+<td><p>The software is a new version of an existing software, typically providing new or improved functionality.</p></td>
+</tr>
+<tr class="row-odd"><td><p>hasNewVersion</p></td>
+<td><p>(inverse of above)</p></td>
+</tr>
+<tr class="row-even"><td><p>uses</p></td>
+<td><p>The software provides an interface to or in some other way uses the functions of other software under the hood, e.g. invoking a command-line tool or calling a Web API, Web service or SPARQL endpoint to perform its function.</p></td>
+</tr>
+<tr class="row-odd"><td><p>usedBy</p></td>
+<td><p>(inverse of above)</p></td>
+</tr>
+<tr class="row-even"><td><p>includes</p></td>
+<td><p>A workbench, toolkit or workflow includes some other, independently available, software.</p></td>
+</tr>
+<tr class="row-odd"><td><p>includedIn</p></td>
+<td><p>(inverse of above)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="publication-group">
+<h3>Publication group<a class="headerlink" href="#publication-group" title="Permalink to this heading"></a></h3>
+<p><em>Publications about the software</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify a relevant publication</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> specify multiple IDs for a single publication within a single publication group</p></li>
+<li><p><strong>3.</strong> <strong>SHOULD</strong> specify a DOI (if available) (in preference to PMID and PMCID)</p></li>
+<li><p><strong>4.</strong> <strong>MAY</strong> specify one or more types that match the publication</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#publication">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<section id="pubmed-central-id">
+<h4>PubMed Central ID<a class="headerlink" href="#pubmed-central-id" title="Permalink to this heading"></a></h4>
+<p><em>PubMed Central Identifier (PMCID) of a publication about the software, e.g. “PMC4343077”</em></p>
+</section>
+<section id="pubmed-id">
+<h4>PubMed ID<a class="headerlink" href="#pubmed-id" title="Permalink to this heading"></a></h4>
+<p><em>PubMed Identifier (PMID) of a publication about the software, e.g. “21959131”</em></p>
+</section>
+<section id="digital-object-id">
+<h4>Digital Object ID<a class="headerlink" href="#digital-object-id" title="Permalink to this heading"></a></h4>
+<p><em>Digital Object Identifier (DOI) of a publication about the software, e.g. “10.1038/nmeth.1701”</em></p>
+</section>
+<section id="publication-type">
+<h4>Publication type<a class="headerlink" href="#publication-type" title="Permalink to this heading"></a></h4>
+<p><em>Type of publication, e.g. “Primary”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify the type of publication, in terms from a controlled vocabulary (see below)</p></li>
+<li><p><strong>2.</strong> <strong>SHOULD</strong> specify all the types that are applicable</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>there can be multiple publications with the same publication type, including “Primary”.</p></li>
+</ul>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Publication type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Primary</p></td>
+<td><p>The principal publication about the tool itself; the article to cite when acknowledging use of the tool.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Method</p></td>
+<td><p>A publication describing a scientific method or algorithm implemented by the tool.</p></td>
+</tr>
+<tr class="row-even"><td><p>Usage</p></td>
+<td><p>A publication describing the application of the tool to scientific research, a particular task or dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Benchmarking study</p></td>
+<td><p>A publication which assessed the performance of the tool.</p></td>
+</tr>
+<tr class="row-even"><td><p>Review</p></td>
+<td><p>A publication where the tool was reviewed.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other</p></td>
+<td><p>A publication of relevance to the tool but not fitting the other categories.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="note-publication">
+<h4>Note (publication)<a class="headerlink" href="#note-publication" title="Permalink to this heading"></a></h4>
+<p><em>A comment about the publication, e.g. “A comparison of the software to others performing a similar function.”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>SHOULD</strong> be concise and acurate, elaborating on the motivation, purpose <em>etc.</em> of the publication</p></li>
+<li><p><strong>2.</strong> <strong>SHOULD NOT</strong> duplicate information that is, or can, be provided via the <code class="docutils literal notranslate"><span class="pre">type</span></code> or other attributes, <em>i.e.</em> do not specify “Review article”, “Cite this where the software is used” <em>etc.</em></p></li>
+</ul>
+</section>
+<section id="version-publication">
+<h4>Version (publication)<a class="headerlink" href="#version-publication" title="Permalink to this heading"></a></h4>
+<p><em>Version information (typically a version number) of the software applicable to this publication.</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify the applicable tool version</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> follow the general guidelines for <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool">version</a></p></li>
+</ul>
+</section>
+</section>
+<section id="credit-group">
+<h3>Credit group<a class="headerlink" href="#credit-group" title="Permalink to this heading"></a></h3>
+<p><em>Individuals or organisations that should be credited, or may be contacted about the software.</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>SHOULD</strong> provide contact details for the first port-of-call when seeking help with the software, and <strong>SHOULD</strong> annotate the role of this entity as “Primary contact”</p></li>
+<li><p><strong>2.</strong> <strong>MAY</strong> specify one or more other credits</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>a credit consists of the name, email and/or URL of some entity that is credited, with other associated metadata</p></li>
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_usage_guide.html#credit">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+<section id="name-credit">
+<h4>Name (credit)<a class="headerlink" href="#name-credit" title="Permalink to this heading"></a></h4>
+<p><em>Name of the entity that is credited, e.g. “EMBL EBI”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> give the first and last names of a person, or the correct name of some other entity.</p></li>
+<li><p><strong>2.</strong> <strong>MUST NOT</strong> give a redirect, <em>e.g.</em> “See publication”, a URL, or any information other than the name of the entity that is credited.</p></li>
+</ul>
+</section>
+<section id="orcid-id">
+<h4>ORCID ID<a class="headerlink" href="#orcid-id" title="Permalink to this heading"></a></h4>
+<p><em>Unique identifier (ORCID iD) of a person that is credited, e.g. “http://orcid.org/0000-0002-1825-0097”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify a credited person</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Open Researcher and Contributor IDs (ORCID IDs) provide a persistent reference to information on a researcher, see <a class="reference external" href="http://orcid.org/">http://orcid.org/</a>.</p>
+</div>
+</section>
+<section id="grid-id">
+<h4>GRID ID<a class="headerlink" href="#grid-id" title="Permalink to this heading"></a></h4>
+<p><em>Unique identifier (GRID ID) of an organisation that is credited, e.g. “grid.5170.3”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify a credited organisation</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Global Research Identifier Database IDs (GRID IDs) provide a persistent reference to information on an organisation, see <a class="reference external" href="https://www.grid.ac/">https://www.grid.ac/</a>.</p>
+</div>
+</section>
+<section id="ror-id">
+<h4>ROR ID<a class="headerlink" href="#ror-id" title="Permalink to this heading"></a></h4>
+<p><em>Unique identifier (ROR ID) of an organisation that is credited, e.g. “03yrm5c26”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify a credited organisation</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Research Organization Registry (ROR) IDs provide a persistent reference to information on research organisations, see <a class="reference external" href="https://ror.org/">https://ror.org/</a>.</p>
+</div>
+</section>
+<section id="fundref-id">
+<h4>FundRef ID<a class="headerlink" href="#fundref-id" title="Permalink to this heading"></a></h4>
+<p><em>Unique identifier (FundRef ID or Funder ID) of a funding organisation that is credited, e.g. “10.13039/100009273”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify a credited organisation</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Funder Registry (formerly FundRef) IDs provide a persistent reference to information on funding organisations registered in the Crossref registry, see <a class="reference external" href="https://www.crossref.org/services/funder-registry/">https://www.crossref.org/services/funder-registry/</a>.</p>
+</div>
+</section>
+<section id="email">
+<h4>Email<a class="headerlink" href="#email" title="Permalink to this heading"></a></h4>
+<p><em>Email address of the entity that is credited e.g. “hnielsen&#64;cbs.dtu.dk”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify a syntactically valid email address</p></li>
+<li><p><strong>2.</strong> <strong>MUST NOT</strong> specify an email address that is not publicly acknowledged as credit for the software, <em>e.g.</em> on a webpage or in a publication</p></li>
+<li><p><strong>3.</strong> <strong>MUST NOT</strong> specify a stale (obsolete) email address</p></li>
+</ul>
+</section>
+<section id="url-credit">
+<h4>URL (credit)<a class="headerlink" href="#url-credit" title="Permalink to this heading"></a></h4>
+<p><em>URL for the entity that is credited, e.g. homepage of an institute, e.g. “http://www.ebi.ac.uk/”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> resolve to a page of information directly relevant to the credited entity</p></li>
+</ul>
+</section>
+<section id="entity-type">
+<h4>Entity type<a class="headerlink" href="#entity-type" title="Permalink to this heading"></a></h4>
+<p><em>Type of entity that is credited, e.g. “Person”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify the type of entity that is credited, in terms from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Entity type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Person</p></td>
+<td><p>Credit of an individual.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project</p></td>
+<td><p>Credit of a community software project not formally associated with any single institute.</p></td>
+</tr>
+<tr class="row-even"><td><p>Division</p></td>
+<td><p>Credit of or a formal part of an institutional organisation, e.g. a department, research group, team, etc</p></td>
+</tr>
+<tr class="row-odd"><td><p>Institute</p></td>
+<td><p>Credit of an organisation such as a university, hospital, research institute, service center, unit etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>Consortium</p></td>
+<td><p>Credit of an association of two or more institutes or other legal entities which have joined forces for some common purpose.  Includes Research Infrastructures (RIs) such as ELIXIR.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Funding agency</p></td>
+<td><p>Credit of a legal entity providing funding for development of the software or provision of an online service.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="entity-role">
+<h4>Entity role<a class="headerlink" href="#entity-role" title="Permalink to this heading"></a></h4>
+<p><em>Role performed by entity that is credited, e.g. “Developer”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify the primary role of credited entity, in terms from a controlled vocabulary (see below)</p></li>
+<li><p><strong>2.</strong> <strong>MAY</strong> exhaustively specify all the roles of the credited entity</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Role</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Developer</p></td>
+<td><p>Author of the original software source code.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Maintainer</p></td>
+<td><p>Maintainer of a mature software providing packaging, patching, distribution etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>Provider</p></td>
+<td><p>Institutional provider of an online service.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Documentor</p></td>
+<td><p>Author of software documentation including making edits to a bio.tools entry.</p></td>
+</tr>
+<tr class="row-even"><td><p>Contributor</p></td>
+<td><p>Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Support</p></td>
+<td><p>Provider of support in using the software.</p></td>
+</tr>
+<tr class="row-even"><td><p>Primary contact</p></td>
+<td><p>The primary point of contact for the software.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="note-credit">
+<h4>Note (credit)<a class="headerlink" href="#note-credit" title="Permalink to this heading"></a></h4>
+<p><em>A comment about the credit, e.g. “Wrote the user manual.”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>SHOULD</strong> be concise and acurate, elaborating on the contribution of the credited entity</p></li>
+<li><p><strong>2.</strong> <strong>MUST NOT</strong> duplicate information that is, or can, be provided via the <code class="docutils literal notranslate"><span class="pre">role</span></code> attribute, <em>i.e.</em> do not specify only “Developer”, “Support” <em>etc.</em></p></li>
+</ul>
+</section>
+</section>
+<section id="community-group">
+<h3>Community group<a class="headerlink" href="#community-group" title="Permalink to this heading"></a></h3>
+<p><em>Community and external partner resources linked from bio.tools.</em></p>
+<p>The community and external partner resources have their own custom properties in bio.tools to facilitate integration between bio.tools and other resource providers.</p>
+<p>If you’re a resource provider and would like to integrate with bio.tools please email <a class="reference external" href="mailto:support-bio-tools&#37;&#52;&#48;sdu&#46;dk">support-bio-tools<span>&#64;</span>sdu<span>&#46;</span>dk</a> or <a class="reference external" href="https://github.com/bio-tools/biotoolsRegistry/issues/new">create an issue</a> on our <a class="reference external" href="https://github.com/bio-tools/biotoolsRegistry/">GitHub page</a>.</p>
+</section>
+<section id="biolib-annotations-community">
+<h3>BioLib Annotations (Community)<a class="headerlink" href="#biolib-annotations-community" title="Permalink to this heading"></a></h3>
+<p><em>BioLib is a platform for biological data science applications. With BioLib apps, you can run bioinformatics tools directly in your web browser.</em></p>
+<p>See more details at <a class="reference external" href="https://biolib.com">https://biolib.com</a>.</p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify a valid BioLib <em>App name</em></p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> specify a valid BioLib <em>Author username</em></p></li>
+<li><p><strong>3.</strong> <strong>MUST</strong> specify the <em>Author name</em></p></li>
+</ul>
+<section id="app-name-biolib">
+<h4>App name (BioLib)<a class="headerlink" href="#app-name-biolib" title="Permalink to this heading"></a></h4>
+<p><em>Application Name of an existing BioLib app, e.g. “MyBioTool”.</em></p>
+</section>
+<section id="author-username-biolib">
+<h4>Author username (BioLib)<a class="headerlink" href="#author-username-biolib" title="Permalink to this heading"></a></h4>
+<p><em>BioLib Username of the user that created the BioLib app, e.g. “example-university”</em></p>
+</section>
+<section id="author-name-biolib">
+<h4>Author name (BioLib)<a class="headerlink" href="#author-name-biolib" title="Permalink to this heading"></a></h4>
+<p><em>The display name of the author that created the BioLib app, e.g. “The Example University”.</em></p>
+</section>
+</section>
+</section>
+<section id="tool-type-guidelines">
+<h2>Tool type guidelines<a class="headerlink" href="#tool-type-guidelines" title="Permalink to this heading"></a></h2>
+<section id="bioinformatics-portal">
+<h3>Bioinformatics portal<a class="headerlink" href="#bioinformatics-portal" title="Permalink to this heading"></a></h3>
+<p><strong>A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on.</strong></p>
+<ul class="simple">
+<li><p>pick one or more <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a> that best describe the portal content.</p></li>
+<li><p>consider carefully whether the portal will be described by a single, or more than one <em>bio.tools</em> entry (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start">Before you start</a>).  Where the portal aggregates one or more discrete tools (web applications), databases <em>etc.</em>, it is recommended to register these as separate entries.</p></li>
+</ul>
+</section>
+<section id="commandlinetool">
+<span id="id57"></span><h3>Command-line tool<a class="headerlink" href="#commandlinetool" title="Permalink to this heading"></a></h3>
+<p><strong>A tool with a text-based (command-line) interface.</strong></p>
+<ul class="simple">
+<li><p>carefully identify the major functions (modes of operation) performed by the tool (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">Tool functions</a>) and annotate the major <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operation(s)</a> associated with each function, in turn.</p></li>
+</ul>
+</section>
+<section id="database-portal">
+<h3>Database portal<a class="headerlink" href="#database-portal" title="Permalink to this heading"></a></h3>
+<p><strong>A Web application, suite or workbench providing a portal to a biological database.</strong></p>
+<ul class="simple">
+<li><p>pick one or more <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a> that best describe the database content. See also the specialised <a class="reference external" href="http://edamontology.org/topic_3071">Data management</a> concepts.</p></li>
+<li><p>consider carefully whether the database portal will be described by a single, or more than one <em>bio.tools</em> entry (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#before-you-start">Before you start</a>).  In case the portal contains one or more discrete tools (web applications), it is recommended to register these as separate entries.</p></li>
+<li><p>consider an operation of <a class="reference external" href="http://edamontology.org/operation_2421">Database search</a> (or its children)</p></li>
+</ul>
+</section>
+<section id="desktop-application">
+<h3>Desktop application<a class="headerlink" href="#desktop-application" title="Permalink to this heading"></a></h3>
+<p><strong>A tool with a graphical user interface that runs on your desktop environment, e.g. on a PC or mobile device.</strong></p>
+<ul class="simple">
+<li><p>desktop applications often have complex functionality: carefully identify the major functions (modes of operation) performed by the application (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">Tool functions</a>) and annotate the major <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operation(s)</a> associated with each function, in turn.</p></li>
+<li><p>consider an operation of <a class="reference external" href="http://edamontology.org/operation_0337">Visualisation</a> (or its children) - typical of desktop apps.</p></li>
+</ul>
+</section>
+<section id="library">
+<h3>Library<a class="headerlink" href="#library" title="Permalink to this heading"></a></h3>
+<p><strong>A collection of components that are used to construct other tools. bio.tools scope includes component libraries performing high-level bioinformatics functions but excludes lower-level programming libraries.</strong></p>
+<ul class="simple">
+<li><p>in case the library includes just a few components, each should (typically) be modelled as a distinct function (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">Tool functions</a>); annotate the major <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operation(s)</a> associated with each component (function) in turn.</p></li>
+<li><p>in case the library includes very many components, model the whole library as having a single function (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">Tool functions</a>); and annotate only the major <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operation(s)</a> (do not try to be exhaustive).</p></li>
+</ul>
+</section>
+<section id="ontology">
+<h3>Ontology<a class="headerlink" href="#ontology" title="Permalink to this heading"></a></h3>
+<p><strong>A collection of information about concepts, including terms, synonyms, descriptions etc.</strong></p>
+<ul class="simple">
+<li><p>pick <a class="reference external" href="http://edamontology.org/topic_0089">Ontology and terminology</a> and one or more most relevant <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a> describing the scope of the ontology.</p></li>
+<li><p>do not annotate the function (operations, or type / format of the input and output data)</p></li>
+</ul>
+</section>
+<section id="plug-in">
+<h3>Plug-in<a class="headerlink" href="#plug-in" title="Permalink to this heading"></a></h3>
+<p><strong>A software component encapsulating a set of related functions, which are not standalone, *i.e.* depend upon other software for its use, e.g. a Javascript widget, or a plug-in, extension add-on etc. that extends the function of some existing tool.</strong></p>
+<ul class="simple">
+<li><p>when annotating the plug-in <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">function(s)</a>, be careful to not duplicate the description of the tool which plug-in plugs into</p></li>
+<li><p>carefully identify the major new functions (modes of operation) which the plug-in provides, and annotate the major <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operation(s)</a> associated with each function, in turn.</p></li>
+</ul>
+</section>
+<section id="script">
+<h3>Script<a class="headerlink" href="#script" title="Permalink to this heading"></a></h3>
+<p><strong>A tool written for some run-time environment (e.g. other applications or an OS shell) that automates the execution of tasks. Often a small program written in a general-purpose languages (e.g. Perl, Python) or some domain-specific languages (e.g. sed).</strong></p>
+<ul class="simple">
+<li><p>scripts typically have a single function (mode of operation) (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#toolfunctions">Tool functions</a>), however, in case of complex scripts, carefully identify the major functions (modes of operation) performed by the script, and annotate the major <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operation(s)</a> associated with each function, in turn.</p></li>
+<li><p>pick one or more most relevant <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a></p></li>
+</ul>
+</section>
+<section id="sparql-endpoint">
+<h3>SPARQL endpoint<a class="headerlink" href="#sparql-endpoint" title="Permalink to this heading"></a></h3>
+<p><strong>A service that provides queries over an RDF knowledge base via the SPARQL query language and protocol, and returns results via HTTP.</strong></p>
+<ul class="simple">
+<li><p>pick the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operation</a> of “Query and retrieval” (<a class="reference external" href="http://edamontology.org/operation_0224">http://edamontology.org/operation_0224</a>)</p></li>
+<li><p>do not annotate the type or format of the input and output data</p></li>
+</ul>
+</section>
+<section id="suite">
+<h3>Suite<a class="headerlink" href="#suite" title="Permalink to this heading"></a></h3>
+<p><strong>A collection of tools which are bundled together into a convenient toolkit. Such tools typically share related functionality, a common user interface and can exchange data conveniently. This includes collections of stand-alone command-line tools, or Web applications within a common portal.</strong></p>
+<ul class="simple">
+<li><p>pick one or more most relevant <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a> that describe the workbench as a whole (don’t try to be exhaustive)</p></li>
+<li><p>describe the attributes that are commmon to the suite as a whole, not (typically) attributes of individual tools</p></li>
+<li><p>individual tools included in the suite should be registered as separate entries</p></li>
+<li><p>when annotating the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#operation">operation</a> of the suite, select operations that are core function of the suite itself / common to all tools in the suite.  Alternatively pick one or two of the primary operation(s) of the included tools</p></li>
+<li><p>entries for the suite itself and it’s component tools can be associated by annotatong them as part of a common <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#collection">collection</a></p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are considering to register a suite with many tools, it is a good idea to discuss this first with the <a class="reference external" href="mailto:support-bio-tools&#37;&#52;&#48;sdu&#46;dk">bio<span>&#46;</span>tools admin</a>.</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>do not</strong> annotate the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data">type</a> and <a href="#id103"><span class="problematic" id="id104">`format &lt;&gt;`_</span></a> of input and output data, <em>unless</em> all tools in the suite happen to have these in common</p>
+</div>
+</section>
+<section id="webapplication">
+<span id="id78"></span><h3>Web application<a class="headerlink" href="#webapplication" title="Permalink to this heading"></a></h3>
+<p><strong>A tool with a graphical user interface that runs in your Web browser.</strong></p>
+<ul class="simple">
+<li><p>pick one or more most relevant <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>for software that essentially just wraps or provides an interface to some other tool, <em>e.g.</em> a web application or web service over an existing tool, use the pattern <code class="docutils literal notranslate"><span class="pre">toolName</span> <span class="pre">providerName</span></code> where <code class="docutils literal notranslate"><span class="pre">providerName</span></code> is a name (without spaces) of some institute, workbench, collection <em>etc.</em>, <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">cufflinks</span> <span class="pre">cloudIFB</span></code>.  <strong>Do not</strong> misappropriate the original name!</p></li>
+</ul>
+</div>
+</section>
+<section id="webapi">
+<span id="id80"></span><h3>Web API<a class="headerlink" href="#webapi" title="Permalink to this heading"></a></h3>
+<p><strong>An application programming interface (API) consisting of endpoints to a request-response message system accessible via HTTP. Includes everything from simple data-access URLs to RESTful APIs.</strong></p>
+<ul class="simple">
+<li><p>pick one or more most relevant <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a></p></li>
+<li><p>in general, describe the attributes of the API as a whole, not individual endpoint of the API (see note below)</p></li>
+<li><p>in case the API has a single endpoint only, the input(s), operation(s) and output(s) may be annotated</p></li>
+<li><p>in case the API has many endpoints, annotate the primary operation(s), but <strong>not</strong> the inputs and outputs</p></li>
+<li><p>annotate the location of machine-readable API specification (<em>e.g.</em> openAPI file) using the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#download">download</a> attribute with <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type">download type</a> of <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">specification</span></code>
+- annotate the location of any human-readable documentation using the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation">documentation</a> attribute with <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type">documentation type</a> of <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">specification</span></code></p></li>
+<li><p>when assigning the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#name">name</a>, use the pattern <code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">API</span></code> <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">PHACTS</span> <span class="pre">API</span></code></p></li>
+<li><p>in case the web service provides an interface to an existing tool registered in <em>bio.tools</em>, try to ensure the relevant annotations are consistent</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> includes a basic model of an API specification including endpoints however this is not yet supported in <em>bio.tools</em></p></li>
+</ul>
+</div>
+</section>
+<section id="webservice">
+<span id="id86"></span><h3>Web service<a class="headerlink" href="#webservice" title="Permalink to this heading"></a></h3>
+<p><strong>An API described in a machine readable form (typically WSDL) providing programmatic access via SOAP over HTTP.</strong></p>
+<ul class="simple">
+<li><p>pick one or more most relevant <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a></p></li>
+<li><p>in general, describe the attributes of the web service as a whole, not individual endpoint of the service (see note below)</p></li>
+<li><p>in case the web service has a single endpoint only, the input(s), operation(s) and output(s) may be annotated</p></li>
+<li><p>in case the web service has many endpoints, annotate the primary operation(s), but <strong>not</strong> the inputs and outputs</p></li>
+<li><p>annotate the location of the WSDL file using the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#download">download</a> attribute with <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type">download type</a> of <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">specification</span></code></p></li>
+<li><p>annotate the location of any human-readable documentation using the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation">documentation</a> attribute with <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#download-type">documentation type</a> of <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">specification</span></code></p></li>
+<li><p>when assigning the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#name">name</a>, use the pattern <code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">WS</span></code> <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">EMMA</span> <span class="pre">WS</span></code></p></li>
+<li><p>in case the web service provides an interface to an existing tool registered in <em>bio.tools</em>, try to ensure the relevant annotations are consistent</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> includes a basic model of an API specification including endpoints however this is not yet supported in <em>bio.tools</em></p></li>
+</ul>
+</div>
+</section>
+<section id="workbench">
+<h3>Workbench<a class="headerlink" href="#workbench" title="Permalink to this heading"></a></h3>
+<p><strong>An application or suite with a graphical user interface, providing an integrated environment for data analysis which includes or may be extended with any number of functions or tools. Includes workflow systems, platforms, frameworks etc.</strong></p>
+<ul class="simple">
+<li><p>pick one or more most relevant <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a> that best describe the workbench as a whole (don’t try to be exhaustive)</p></li>
+<li><p>describe the attributes of the workbench as a whole, not (typically) individual tools or functions provided by it</p></li>
+<li><p>individual tools included in the workbench, especially where these tools are indepepdently available, should be registered as separate entries</p></li>
+<li><p>individual functions provided by the workbench, especially where these are not independently available, should each be described in their own <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#function">function</a></p></li>
+<li><p>entries for the workbench itself and it’s component tools can be associated by annotatong them as part of a common <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#collection">collection</a></p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are considering to register a complicated workbench with many tools or functions, it is a good idea to discuss this first with the <a class="reference external" href="mailto:support-bio-tools&#37;&#52;&#48;sdu&#46;dk">*bio<span>&#46;</span>tools* admin</a>.</p>
+</div>
+</section>
+<section id="workflow">
+<h3>Workflow<a class="headerlink" href="#workflow" title="Permalink to this heading"></a></h3>
+<p><strong>A set of tools which have been composed together into a pipeline of some sort. Such tools are (typically) standalone, but are composed for convenience, for instance for batch execution via some workflow engine or script.</strong></p>
+<ul>
+<li><p>workflows consisting of multiple tools, please register them in the <a class="reference external" href="https://workflowhub.eu/">Workflow Hub</a></p></li>
+<li><p>for tools that provide workflows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>pick one or more most relevant <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#topic">topics</a> that best describe the workflow as a    whole (don’t try to be exhaustive)</p></li>
+<li><p>when deciding how to annotate a workflow inputs, operations and outputs, consider the worfklow as a “black box” , <em>i.e.</em> annotate the input(s) to, output(s) from and primary operation(s) of the workflow as a whole</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>workflows can contain many tools; <strong>do not</strong> list all the operations performed by these tools, just the main operation(s) of the workflow as a whole.</p>
+</div>
+</section>
+</section>
+<section id="further-guidelines-bio-tools-admin-only">
+<h2>Further guidelines (bio.tools admin only)<a class="headerlink" href="#further-guidelines-bio-tools-admin-only" title="Permalink to this heading"></a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The guidelines that follow are for attributes and other aspects under the control of <em>bio.tools</em> admin.  If you’re not a <em>bio.tools</em> admin you can ignore this section.</p>
+</div>
+<section id="summary-biotoolsid">
+<span id="id99"></span><h3>summary-&gt;biotoolsID<a class="headerlink" href="#summary-biotoolsid" title="Permalink to this heading"></a></h3>
+<p><em>Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name, e.g. “needle”.</em></p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>the ID by default is a URL-safe version of the tool name and can only be changed by <em>bio.tools</em> admin.</p></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p><strong>MUST</strong> use the default value where possible</p></li>
+<li><p><strong>MUST</strong> be clean and intuitive (in case use of default is not possible)</p></li>
+<li><p><strong>MUST NOT</strong> truncate the name (in the middle of a word, or at all) if this renders the ID ugly or meaningless</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Transformation rules</strong></p>
+<p>The following rules apply when transforming the supplied tool name:</p>
+<ul class="simple">
+<li><p>replace ‘ ‘ (spaces) in the name with underscores (a single underscore in case of multiple spaces)</p></li>
+<li><p>preserve all reserved characters (uppercase and lowercase letters, decimal digits, hyphen, period, underscore, and tilde), but remove other characters</p></li>
+<li><p>use ‘_’ to delimit parts of names but only <em>if</em> these are not already truncated in the original <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool">name</a></p></li>
+<li><p>can only start with letters or numbers</p></li>
+<li><p>cannot end with a . (dot) character</p></li>
+<li><p>adhere to the same patterns for <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#name">tool name</a>, <em>e.g.</em> <code class="docutils literal notranslate"><span class="pre">EMBOSS_water_API_ebi</span></code></p></li>
+</ul>
+</div>
+</section>
+<section id="summary-biotoolscurie">
+<h3>summary-&gt;biotoolsCURIE<a class="headerlink" href="#summary-biotoolscurie" title="Permalink to this heading"></a></h3>
+<p><em>bio.tools CURIE (compact URI) based on the unique bio.tools ID of the tool, e.g. “biotools:needle”</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>identical to biotoolsID but with the prefix <code class="docutils literal notranslate"><span class="pre">biotools:</span></code></p></li>
+</ul>
+</div>
+</section>
+<section id="credit-elixirnode">
+<h3>credit-&gt;elixirNode<a class="headerlink" href="#credit-elixirnode" title="Permalink to this heading"></a></h3>
+<p><em>ELIXIR node credited for developing or providing the software - the software is in Node Service Delivery Plan, e.g. “Denmark”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify an ELIXIR Node that is credited, in terms from a <a class="reference external" href="https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-node">controlled vocabulary</a></p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> only be credited on tools that are in a Node’s Service Delivery Plan.</p></li>
+<li><p><strong>3.</strong> <strong>MUST</strong> only be set by a an ELIXIR Node manager or ELIXIR Hub.</p></li>
+</ul>
+</section>
+<section id="credit-elixirplatform">
+<h3>credit-&gt;elixirPlatform<a class="headerlink" href="#credit-elixirplatform" title="Permalink to this heading"></a></h3>
+<p><em>ELIXIR platform credited for developing or providing the software, e.g. “Tools”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify an ELIXIR Platform that is credited, in terms from a <a class="reference external" href="https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-platform">controlled vocabulary</a></p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> only be set by a an ELIXIR Node manager or ELIXIR Hub.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="quickstart_guide.html" class="btn btn-neutral float-left" title="Quickstart guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="biotools_domains.html" class="btn btn-neutral float-right" title="Domains in bio.tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Read the Docs core team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

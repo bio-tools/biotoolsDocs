@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Container format &mdash; Basic Sphinx Example Project  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Basic Sphinx Example Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="what_is_biotools.html">What is bio.tools?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors_guide.html">Contributors Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart_guide.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="curators_guide.html">Curators Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biotools_domains.html">bio.tools domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community_specific_guidelines.html">Community-specific guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors_guide.html">Editors Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_usage_guide.html">API Usage Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hangouts.html">Hangouts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="studentships.html">Studentships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github_projects.html">GitHub projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html#installing-bio-tools-on-your-system">Installing bio.tools on your system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="these_docs.html">These docs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Basic Sphinx Example Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Container format</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/olddocs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>## From curators_guide.rst
+Disk image format
+……………..
+<em>Virtual machine disk image format</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify the format of download of type “VM image”, in terms from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Disk format</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>aki</p></td>
+<td><p>An Amazon kernel image</p></td>
+</tr>
+<tr class="row-odd"><td><p>ami</p></td>
+<td><p>An Amazon machine image</p></td>
+</tr>
+<tr class="row-even"><td><p>ari</p></td>
+<td><p>An Amazon ramdisk image</p></td>
+</tr>
+<tr class="row-odd"><td><p>iso</p></td>
+<td><p>An archive format for the data contents of an optical disc, such as CD-ROM</p></td>
+</tr>
+<tr class="row-even"><td><p>qcow2</p></td>
+<td><p>Supported by the QEMU emulator that can expand dynamically and supports Copy on Write</p></td>
+</tr>
+<tr class="row-odd"><td><p>raw</p></td>
+<td><p>An unstructured disk image format; if you have a file without an extension it is possibly a raw format</p></td>
+</tr>
+<tr class="row-even"><td><p>vdi</p></td>
+<td><p>Supported by VirtualBox virtual machine monitor and the QEMU emulator</p></td>
+</tr>
+<tr class="row-odd"><td><p>vhd</p></td>
+<td><p>The VHD disk format, a common disk format used by virtual machine monitors from VMware, Xen, Microsoft, VirtualBox, and others</p></td>
+</tr>
+<tr class="row-even"><td><p>vmdk</p></td>
+<td><p>Common disk format supported by many common virtual machine monitors</p></td>
+</tr>
+</tbody>
+</table>
+<section id="container-format">
+<h1>Container format<a class="headerlink" href="#container-format" title="Permalink to this heading"></a></h1>
+<p><em>Container format</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> acurately specify the format of download of type “Container file”, in terms from a controlled vocabulary (see below)</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Container format</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>aki</p></td>
+<td><p>An Amazon kernel image</p></td>
+</tr>
+<tr class="row-odd"><td><p>ami</p></td>
+<td><p>An Amazon machine image</p></td>
+</tr>
+<tr class="row-even"><td><p>ari</p></td>
+<td><p>An Amazon ramdisk image</p></td>
+</tr>
+<tr class="row-odd"><td><p>bare</p></td>
+<td><p>The image does not have a container or metadata envelope</p></td>
+</tr>
+<tr class="row-even"><td><p>docker</p></td>
+<td><p>A docker container format</p></td>
+</tr>
+<tr class="row-odd"><td><p>ovf</p></td>
+<td><p>The OVF container format</p></td>
+</tr>
+<tr class="row-even"><td><p>rkt</p></td>
+<td><p>Rocket container image</p></td>
+</tr>
+<tr class="row-odd"><td><p>singularity</p></td>
+<td><p>Singularity container format</p></td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt>## From api_attribute_model_dev.rst</dt><dd><blockquote>
+<div><blockquote>
+<div><p>“diskFormat”: “raw”,
+“diskFormat”: “raw”,</p>
+</div></blockquote>
+<ul class="simple">
+<li><dl class="simple">
+<dt>diskFormat</dt><dd><ul>
+<li><p>Required: No</p></li>
+<li><p>Cardinality: 1 only</p></li>
+<li><p>Type: ENUM</p></li>
+<li><p>Allowed values: (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#diskformat">Curators Guide</a>)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">aki</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ami</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ari</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">iso</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">qcow2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">raw</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vdi</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vhd</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vmdk</span></code></p></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>containerFormat</dt><dd><ul>
+<li><p>Required: No</p></li>
+<li><p>Cardinality: 1 only</p></li>
+<li><p>Type: ENUM</p></li>
+<li><p>Allowed values: (see <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#containerformat">Curators Guide</a>)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">aki</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ami</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ari</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bare</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ovf</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rkt</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">singularity</span></code></p></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<dl>
+<dt>&lt;diskFormat&gt;raw&lt;/diskFormat&gt;</dt><dd><p>“diskFormat”: “raw”,</p>
+<dl class="simple">
+<dt>“containerFormat”: “docker”,</dt><dd><p>“containerFormat”: “docker”,</p>
+</dd>
+</dl>
+</dd>
+<dt>&lt;containerFormat&gt;docker&lt;/containerFormat&gt;</dt><dd><p>“containerFormat”: “docker”,</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>## From curators_guide.rst</p>
+</section>
+<section id="short-description">
+<h1>Short description<a class="headerlink" href="#short-description" title="Permalink to this heading"></a></h1>
+<p><em>Short and concise textual description of the software function, e.g. “Needleman-Wunsch global alignment of two sequences.”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> provide a terse statement of the primary purpose / function of the tool: what is done not how</p></li>
+<li><p><strong>2.</strong> <strong>MUST</strong> begin with a capital letter and end with a period (‘.’)</p></li>
+<li><p><strong>3.</strong> <strong>MUST NOT</strong> include tool name</p></li>
+<li><p><strong>4.</strong> <strong>MUST NOT</strong> include any of the following, <em>unless</em> essential to distinguish the tool from other bio.tool entries:</p>
+<ul>
+<li><p>general or technical terms (“software”, “application”, “server”, “service”, “SOAP”, “REST”, “RESTful” <em>etc.</em>)</p></li>
+<li><p>provenance information <em>e.g.</em> software provider, institute or person name</p></li>
+</ul>
+</li>
+<li><p><strong>5.</strong> <strong>MUST NOT</strong> describe how good the software is (mentions of applicability are OK)</p></li>
+<li><p><strong>6.</strong> <strong>MUST NOT</strong> include URLs</p></li>
+<li><p><strong>7.</strong> <strong>SHOULD</strong> use declarative sentences (ideally a single sentence!) in the present tense</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/api_attribute_model_dev.html#shortDescription">syntax guidelines</a>.</p></li>
+</ul>
+</div>
+</section>
+<section id="cmd">
+<h1>Cmd<a class="headerlink" href="#cmd" title="Permalink to this heading"></a></h1>
+<p><em>A useful command pertinent to the download, e.g. for getting or installing a tool, e.g. “-s best”.</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> be a functional commmand of practical value</p></li>
+</ul>
+</section>
+<section id="grid-id">
+<h1>GRID ID<a class="headerlink" href="#grid-id" title="Permalink to this heading"></a></h1>
+<p><em>Unique identifier (GRID ID) of an organisation that is credited, e.g. “grid.5170.3”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> correctly identify a credited organisation</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Global Research Identifier Database (GRID) IDs provide a persistent reference to information on research organisations, see <a class="reference external" href="https://www.grid.ac/">https://www.grid.ac/</a>.  If ORCID institutional identifiers become available, these will also be supported.</p>
+</div>
+</section>
+<section id="telephone-number">
+<h1>Telephone number<a class="headerlink" href="#telephone-number" title="Permalink to this heading"></a></h1>
+<p><em>Telephone number of the entity that is credited, e.g. “+49-89-636-48018”</em></p>
+<ul class="simple">
+<li><p><strong>1.</strong> <strong>MUST</strong> specify a valid telephone number</p></li>
+<li><p><strong>2.</strong> <strong>MUST NOT</strong> specify a telephone number that is not publicly advertised as a contact point for the software, <em>e.g.</em> on a webpage or in a publication</p></li>
+<li><p><strong>3.</strong> <strong>MUST NOT</strong> specify a stale (obsolete) telephone number</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the <code class="docutils literal notranslate"><span class="pre">isPluginFor</span></code> relationship will allow specification of the tool to which the plug-in is applicable.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the <code class="docutils literal notranslate"><span class="pre">isInterfaceTo</span></code> relationship will allow specification of the data resource (database portal) that a SPARQL endpoint provides an interface to.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the <code class="docutils literal notranslate"><span class="pre">includes</span></code> relationship will allow specification of the tools that are included in a suite.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the <code class="docutils literal notranslate"><span class="pre">isInterfaceTo</span></code> and <code class="docutils literal notranslate"><span class="pre">uses</span></code> relationships will allow specification of the tools that a web application provides an interface to or uses.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the <code class="docutils literal notranslate"><span class="pre">isInterfaceTo</span></code> relationship will allow specification of the tool or data resource (database portal) that the web service provides an interface to.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the <code class="docutils literal notranslate"><span class="pre">isInterfaceTo</span></code> relationship will allow specification of the tool that the web service provides an interface to</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the <code class="docutils literal notranslate"><span class="pre">includes</span></code> relationship will allow specification of the tools that are included in a workbench.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In future, the <code class="docutils literal notranslate"><span class="pre">includes</span></code> relationship will allow specification of the tools that are included in a workflow.</p></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bio-tools/biotoolsschema">biotoolsSchema</a> allows tool relationships to be defined, but these are not yet supported in bio.tools.  In the meantime, collections may be used to group together related entries.</p></li>
+</ul>
+</div>
+<p>## From api_attribute_model_dev.rst
+.. _short-description:</p>
+<section id="id10">
+<h2>Short description<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
+<p><em>Short and concise textual description of the software function, e.g. “Needleman-Wunsch global alignment of two sequences.”</em></p>
+<dl>
+<dt>Attribute name</dt><dd><p>shortDescription</p>
+</dd>
+<dt>Required</dt><dd><p>No</p>
+</dd>
+<dt>Type</dt><dd><p>String</p>
+</dd>
+<dt>Restrictions</dt><dd><p>Min length: 10</p>
+<p>Max length: 100</p>
+</dd>
+</dl>
+<p><strong>Example</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span># XML
+&lt;shortDescription&gt;Needleman-Wunsch global alignment of two sequences.&lt;/shortDescription&gt;
+
+# JSON
+&quot;shortDescription&quot;: &quot;Needleman-Wunsch global alignment of two sequences.&quot;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>minimum 10 and maximum 100 characters.</p></li>
+<li><p>line feeds, carriage returns, tabs, leading and trailing spaces, and multiple spaces are not allowed / will be removed.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>see the <a class="reference external" href="http://biotools.readthedocs.io/en/latest/curators_guide.html#shortdescription">curation guidelines</a>.</p>
+<ul>
+<li><dl class="simple">
+<dt>cmd</dt><dd><ul>
+<li><p>Required: No</p></li>
+<li><p>Type: String</p></li>
+<li><p>Restrictions: min length: 1, max length: 100</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><dl>
+<dt>&lt;cmd&gt;n/a&lt;/cmd&gt;</dt><dd><blockquote>
+<div><p>“cmd”: “n/a”,</p>
+</div></blockquote>
+<ul class="simple">
+<li><dl class="simple">
+<dt>gridId</dt><dd><ul>
+<li><p>Required: No</p></li>
+<li><p>Type: String</p></li>
+<li><p>Restrictions: pattern: grid.[0-9]{4,}.[a-f0-9]{1,2}</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt>&lt;gridId&gt;grid.5170.3&lt;/gridId&gt;</dt><dd><p>“gridId”: “grid.5170.3”,</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p>tel</p></li>
+</ul>
+</div></blockquote>
+<ul>
+<li><p>Required: No</p></li>
+<li><p>Type: String</p></li>
+<li><p>Restrictions: min length: 5, max length: 50</p>
+<blockquote>
+<div><p>&lt;tel&gt;12345678&lt;/tel&gt;</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<dl>
+<dt>“tel”: “12345678”</dt><dd><p>“tel”: “123456798”,</p>
+<p>“gridid”: “test”,</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+<p><strong>Example</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span># XML
+&lt;link&gt;
+ &lt;isAvailable&gt;Not available&lt;/isAvailable&gt;
+ &lt;type&gt;Repository&lt;/type&gt;
+&lt;/download&gt;
+
+# JSON
+&quot;link&quot;:
+[
+  {
+    &quot;isAvailable&quot;: &quot;Not available&quot;
+    &quot;type&quot;: &quot;Repository&quot;
+  }
+]
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>if a link of a certain type is known to <em>not</em> be available, this can be specified using the <code class="docutils literal notranslate"><span class="pre">isAvailable</span></code> attribute (see Example)</p></li>
+</ul>
+</div>
+<p><strong>Example</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span># XML
+&lt;download&gt;
+ &lt;isAvailable&gt;Not available&lt;/isAvailable&gt;
+ &lt;type&gt;Source code&lt;/type&gt;
+&lt;/download&gt;
+
+# JSON
+&quot;download&quot;:
+[
+  {
+    &quot;isAvailable&quot;: &quot;Not available&quot;
+    &quot;type&quot;: &quot;Source code&quot;
+  }
+]
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>if a download link of a certain type is known to <em>not</em> be available, this can be specified using the <code class="docutils literal notranslate"><span class="pre">isAvailable</span></code> attribute (see Example)</p></li>
+</ul>
+</div>
+<p><strong>Example</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span># XML
+&lt;documentation&gt;
+ &lt;isAvailable&gt;Not available&lt;/isAvailable&gt;
+ &lt;type&gt;General&lt;/type&gt;
+&lt;/documentation&gt;
+
+# JSON
+&quot;documentation&quot;:
+[
+  {
+    &quot;isAvailable&quot;: &quot;Not available&quot;
+    &quot;type&quot;: &quot;General&quot;
+  }
+]
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>if a documentation link of a certain type is known to <em>not</em> be available, this can be specified using the <code class="docutils literal notranslate"><span class="pre">isAvailable</span></code> attribute (see Example)</p></li>
+</ul>
+</div>
+<p><strong>Example</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span># XML
+&lt;publication&gt;
+ &lt;isAvailable&gt;Not available&lt;/isAvailable&gt;
+&lt;/publication&gt;
+
+# JSON
+&quot;publication&quot;:
+[
+  {
+    &quot;isAvailable&quot;: &quot;Not available&quot;
+  }
+]
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>if a publication is known to <em>not</em> be available, this can be specified using the <code class="docutils literal notranslate"><span class="pre">isAvailable</span></code> attribute (see Example)</p></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Read the Docs core team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
