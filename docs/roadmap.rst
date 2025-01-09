@@ -15,9 +15,7 @@ Tasks are assigned to quarterly milestones in `GitHub <https://github.com/bio-to
 
 Please join the discussion in `GitHub <https://github.com/bio-tools/biotoolsregistry/issues>`_.  The *bio.tools* core team is very small, so bug fixes, new features *etc.* take a while - you're patience is appreciated!
 
-..
-    TODO Remove?
-For higher-level project management tasks, see https://biotools.sifterapp.com/ (for a sifter account mail `Jon Ison <mailto:jison@bioinformatics.dtu.dk>`_).
+For higher-level project management tasks, email the `support <mailto:support-bio-tools@sdu.dk>`_.
 
 
 

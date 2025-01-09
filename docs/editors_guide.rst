@@ -13,7 +13,7 @@ The sheer number of software and continuous advancements in tool development dem
 **Thematic editors** are well connected with their respective scientific community, experts in their field, have a broad knowledge about commonly used software and are motivated to promote *bio.tools*. Editors normally oversee the work of one or more student curators, on a range of tasks to improve EDAM and *bio.tools* content:
 
 * Review of *bio.tools* and EDAM to survey coverage of concepts, terms and tools.
-* Help develop strategy to achieve and sustain a minimum information level in *bio.tools*, as per the emerging `information standard <https://bio-tools.github.io/Tool-Information-Standard/>`_. 
+* Help develop strategy to achieve and sustain a minimum information level in *bio.tools*, as per the emerging `information standard <https://bio-tools.github.io/Tool-Information-Standards/>`_. 
 * Engage with their community, supervise hackathons and promote *bio.tools* in general.
 * Mentor a student for practical curation work
 * Implement sustainable procedures for systematic tool reviews and curation standards.
