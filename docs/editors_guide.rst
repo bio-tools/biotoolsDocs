@@ -1,7 +1,7 @@
 Editors Guide
 =============
 
-..note:: The concept of "thematic editors" is a work in progress which we will develop as funding and capacity permits.
+.. note:: The concept of "thematic editors" is a work in progress which we will develop as funding and capacity permits.
 
 **Thematic editors** will become `registry-dev <http://biotools.readthedocs.io/en/latest/governance.html#registry-dev>`_ members responsible for overseeing coverage and quality in specific thematic areas. The editorships will enable expanding accurate high-standard software annotations in *bio.tools* to most scientific topics in the life sciences. The editors are also connected to their respective `ELIXIR community <https://elixir-europe.org/communities>`_.
 
