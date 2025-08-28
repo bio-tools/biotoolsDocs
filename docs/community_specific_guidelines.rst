@@ -30,12 +30,11 @@ There are various sources of information and help:
 * The *bio.tools* `Curators Guide <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_ provides in-depth curation guidelines. You might need to refer to it, wherever you see the {`learn more <https://biotools.readthedocs.io/en/latest/curators_guide.html>`_} links.
 * The `biotoolsSchema documentation <https://biotoolsschema.readthedocs.io/en/latest/>`_ summarises the attributes, information model and controlled vocabularies - including the `EDAM ontology <https://edamontologydocs.readthedocs.io/en/latest/>`_ - used by *bio.tools*.  Links to these docs are provided where needed.
 
-* To get help using *bio.tools*, or for general curation advice, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
-* If you have questions specifically about the IFB catalogue curation process, you can mail `Jon Ison <mailto:jon.c.ison@gmail.com>`_ directly.
+* To get help using *bio.tools*, or for general curation advice, please mail `registry-support <mailto:support-bio-tools@sdu.dk>`_.
   
   
 .. note::
-    These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions, please post them on `GitHub <https://github.com/bio-tools/biotoolsDocs/issues>`_.  
+    These instructions are tailored to the needs of IFB tool providers.  If you find a bug, or have any questions or suggestions, please post them on `GitHub <https://github.com/bio-tools/biotoolsDocs/issues>`_.
 
     
 1. Get a bio.tools account
@@ -97,7 +96,8 @@ To edit an existing entry, you need to click through to the Tool Card for the to
 * Click on *Update this record* to edit the entry (visible only if you own the entry or have editing rights) 
 
 .. note::
-   It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please mail `registry-support <mailto:registry-support@elixir-dk.org>`_.
+   It can take a little while for other users to respond to requests for edit rights or ownership.  If these are not granted within a day or two, please mail `registry-support <mailto:support-bio-tools@sdu.dk>`_.
+
 
 
 Creating entries
@@ -148,7 +148,7 @@ To remove an entry, click on *Update this record* button (bottom right of the To
    :height: 30px
 
 .. warning::
-    It shouldn't normally be necessary to remove a *bio.tools* entry, and you should try to avoid needing to do so!  Although deleted entries are actually just hidden, not really deleted, removing an entry is definitive.  There's no way back (other than emailing `Registry Support <mailto:registry-support@elixir-dk.org>`_).
+    It shouldn't normally be necessary to remove a *bio.tools* entry, and you should try to avoid needing to do so!  Although deleted entries are actually just hidden, not really deleted, removing an entry is definitive.  There's no way back (other than emailing `Registry Support <mailto:support-bio-tools@sdu.dk>`_).
 
 
 3. Understand the information requirement
@@ -243,7 +243,7 @@ Three EDAM browsers, each with different functionality, can be used to find EDAM
 
    You can use this to pick relevant topics and define the function of your tools.  The ouput (in the bottom pane of the window) is a JSON object that can be copy-pasted into the *JSON* tab of the *bio.tools* `editing interface <#bio-tools-editing-interface>`_, when editing a tool description.
 
-   If you can't find the right term, please request that it's added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html#suggestions-requests>`_.  It takes some time for new terms to be supported in *bio.tools*, so if you need many new terms, please plan ahead and contact the `EDAM developers <mailto:edam@elixir-dk.org>`_ if you need help.
+   If you can't find the right term, please request that it's added to EDAM via `GitHub <https://github.com/edamontology/edamontology/issues/new>`_ but first read the guidelines on `how to request a term <https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html#suggestions-requests>`_.
 
 
 5. Describe your tools
@@ -625,6 +625,7 @@ Publications are defined as one of the following types:
    **Usage**, "A publication describing the application of the tool to scientific research, a particular task or dataset."
    **Benchmarking study**, "A publication which assessed the performance of the tool."
    **Review**, "A publication where the tool was reviewed."
+   **Preprint**, "A publication of relevance to the tool that has not yet been peer-reviewed."
    **Other**, "A publication of relevance to the tool but not fitting the other categories."
 
 
