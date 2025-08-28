@@ -78,7 +78,7 @@ Go into the folder in which you cloned the bio.tools repo. By default it will be
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: text
 
-    docker-compose build
+    docker compose build
 
 The above command will download / build all the Docker images required for bio.tools to run on your local machine. 
 
@@ -95,7 +95,7 @@ The images built can be seen by running: ``docker image ls`` and are:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: text
 
- docker-compose up
+ docker compose up
 
 The above command will create and run the required containers:
 
@@ -106,11 +106,11 @@ The above command will create and run the required containers:
 
 .. note:: 
 
-    After running the ``docker-compose up`` command, the containers will start and will output log messages which you can see in your terminal window. In order for the containers to keep running this window needs to stay open. You will need to open new terminal windows/tabs for other operations.
+    After running the ``docker compose up`` command, the containers will start and will output log messages which you can see in your terminal window. In order for the containers to keep running this window needs to stay open. You will need to open new terminal windows/tabs for other operations.
     
-    ``docker-compose up`` will also build the images if they do not exist, but in order to be sure your latest source code and image changes are running make sure you run ``docker-compose build`` beforehand
+    ``docker compose up`` will also build the images if they do not exist, but in order to be sure your latest source code and image changes are running make sure you run ``docker compose build`` beforehand
 
-Too see the running containers run: ``docker container ls``
+Too see the running containers run: ``docker container ls`` or ``docker ps``
 
 3.1 The short(er) setup
 -----------------------
@@ -178,18 +178,18 @@ Takes all the tools, subdomains annotations etc. in the DB  and creates the equi
 
 3.1.8 Done
 ^^^^^^^^^^
-At this point you can go to `http://localhost:8000 <http://localhost:8000>`_ to see the local bio.tools homepage.
+At this point you can go to `http://localhost <http://localhost>`_ to see the local bio.tools homepage.
 
-The ``test`` subdomain can be viewed at `http://test.localhost:8000 <http://test.localhost:8000>`_
+The ``test`` subdomain can be viewed at `http://localhost/t?domain=test <http://localhost/t?domain=test>`_
 
 
 You can login with the existing superuser (user: ``biotools``, password: ``biotools``).
 
-All running Docker containers can be stopped by running: ``docker-compose down`` from the root Git folder. This will preserve the data in the MySQL database and Elasticsearch. To reinstantiate everything again run: ``docker-compose up``. 
+All running Docker containers can be stopped by running: ``docker compose down`` from the root Git folder. This will preserve the data in the MySQL database and Elasticsearch. To reinstantiate everything again run: ``docker compose up``. 
 
-Only need to run ``docker-compose build`` once at the beginning or if changes are made to the bio.tools Docker settings files.
+Only need to run ``docker compose build`` once at the beginning or if changes are made to the bio.tools Docker settings files.
 
-If you wish to remove the data along with the containers run: ``docker-compose down -v`` which will also remove the Docker volumes which preserve the MySQL and Elasticsearch data.
+If you wish to remove the data along with the containers run: ``docker compose down -v`` which will also remove the Docker volumes which preserve the MySQL and Elasticsearch data.
 
 
 
@@ -275,18 +275,17 @@ Takes all the tools, subdomains annotations etc. in the DB  and creates the equi
 
 3.1.10 Done
 ^^^^^^^^^^^
-At this point you can go to `http://localhost:8000 <http://localhost:8000>`_ to see the local bio.tools homepage.
+At this point you can go to `http://localhost <http://localhost>`_ to see the local bio.tools homepage.
 
 Login with the user created in **3.2.3**
 
-No tools or subdomains are available, add tools at `http://localhost:8000/register <http://localhost:8000/register>`_ and subdomains at `http://localhost:8000/subdomain <http://localhost:8000/subdomain>`_
+No tools or subdomains are available, add tools at `http://localhost/register <http://localhost/register>`_ and subdomains at `http://localhost/subdomain <http://localhost/subdomain>`_
 
-All running Docker containers can be stopped by running: ``docker-compose down`` from the root Git folder. This will preserve the data in the MySQL database and Elasticsearch. To reinstantiate everything again run: ``docker-compose up``.
+All running Docker containers can be stopped by running: ``docker compose down`` from the root Git folder. This will preserve the data in the MySQL database and Elasticsearch. To reinstantiate everything again run: ``docker compose up``.
 
-Only need to run ``docker-compose build`` once at the beginning or if changes are made to the bio.tools Docker settings files.
+Only need to run ``docker compose build`` once at the beginning or if changes are made to the bio.tools Docker settings files.
 
-If you wish to remove the data along with the containers run: ``docker-compose down -v`` which will also remove the Docker volumes which preserve the MySQL and Elasticsearch data.
-
+If you wish to remove the data along with the containers run: ``docker compose down -v`` which will also remove the Docker volumes which preserve the MySQL and Elasticsearch data.
 
 4. Useful information
 ---------------------
@@ -296,23 +295,23 @@ After completing steps 1-3 above, the only required commands for basic use are
 
 .. code-block:: text
 
- docker-compose up
+ docker compose up
 
 and
 
 .. code-block:: text
 
- docker-compose down
+ docker compose down
 
 and perhaps
 
 .. code-block:: text
 
- docker-compose down -v
+ docker compose down -v
 
 4.1 Local dev
 -------------
-After running ``docker-compose up`` you will see a number of log messages. These messages come from the running containers:
+After running ``docker compose up`` you will see a number of log messages. These messages come from the running containers:
 
 * `biotools-mysql` (MySQL logs)
 * `biotools-elasticsearch` (Elasticsearch logs)
@@ -324,7 +323,7 @@ After running ``docker-compose up`` you will see a number of log messages. These
 The ``biotools-backend`` container is based on an image which uses an Apache server. The logs from ``biotools-backend`` come from Apache or sometimes from Python. 
 
 .. note:: 
-    Changes in Python/Django/backend files will be reflected in the ``biotools-backend`` container, **BUT** because of how Apache works, the changes won't be reflected in your browser ``http://localhost:8000`` until Apache is reloaded. In order to see the changes in the reflected in the browser you need to run: 
+    Changes in Python/Django/backend files will be reflected in the ``biotools-backend`` container, **BUT** because of how Apache works, the changes won't be reflected in your browser ``http://localhost`` until Apache is reloaded. In order to see the changes in the reflected in the browser you need to run: 
     
     ``docker exec biotools-backend /etc/init.d/apache2 reload``
 
@@ -332,7 +331,7 @@ The ``biotools-backend`` container is based on an image which uses an Apache ser
 
     Bringing the containers down and up agail will also work, but this takes significantly longer. The above command is almost instant.
 
-Most issues with the backend code will be reflected in the browser at ``http://localhost:8000/api/{some_path}``, e.g. `http://localhost:8000/api/tool <http://localhost:8000/api/tool>`_ or `http://localhost:8000/api/jaspar <http://localhost:8000/api/jaspar>`_ etc. 
+Most issues with the backend code will be reflected in the browser at ``http://localhost/api/{some_path}``, e.g. `http://localhost/api/tool <http://localhost/api/tool>`_ or `http://localhost/api/jaspar <http://localhost/api/jaspar>`_ etc. 
 
 See `https://biotools.readthedocs.io/en/latest/api_reference.html <https://biotools.readthedocs.io/en/latest/api_reference.html>`_ or Django route files (``urls.py``) for more API endpoints.
 
@@ -387,25 +386,25 @@ Build bio.tools Docker images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: text
 
- docker-compose build
+ docker compose build
 
 Run bio.tools containers
 ^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: text
 
- docker-compose up
+ docker compose up
 
 Stop bio.tools containers
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: text
 
- docker-compose down
+ docker compose down
 
 Stop bio.tools containers and remove data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: text
 
- docker-compose down -v
+ docker compose down -v
 
 
 View running containers
