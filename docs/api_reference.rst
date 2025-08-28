@@ -37,7 +37,7 @@ format         No        String(json, api)                        json        Re
 q              No        String                                               Query term, used for searching, 
                                                                               matches all attributes
 sort           No        String(lastUpdate,                       lastUpdate  Sorts the results by choosen value
-                         additionDate, name, affiliation, score)              (score only available when there is a query)
+                         additionDate, name, score)              (score only available when there is a query)
 ord            No        String(desc, asc)                        desc        Orders the results by either 
                                                                               Ascending or Descending order
 <attribute>    No        String                                               Filter by <attribute>. 
