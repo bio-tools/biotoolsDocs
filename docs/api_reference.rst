@@ -33,6 +33,7 @@ Endpoint parameters
 Parameter      Required  Type                                     Default     Description        
 ===========    ========  =======================================  ==========  ============================================
 page           No        Integer                                  1           Result page number 
+per_page       No        Integer                                  50          Result page size 
 format         No        String(json, api)                        json        Response media type
 q              No        String                                               Query term, used for searching, 
                                                                               matches all attributes
@@ -267,6 +268,21 @@ otherIDVersion      Exact search for tool version associated with an alternate I
 
 
 .. important=  The API parameters will be made case-insensitive in future.
+
+
+.. _Domains:
+
+Domains
+~~~~~~~~~~
+To filter the results for a specific domain...
+
+==================  ============================================================================================
+Parameter           Search behaviour                                                                            
+==================  ============================================================================================
+domain              Search for tools in a specific domain
+
+                    `domain=proteomics <https://bio.tools/api/t/?domain=proteomics>`_ 
+==================  ============================================================================================
 
 
 Example
