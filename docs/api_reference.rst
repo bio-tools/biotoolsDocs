@@ -991,3 +991,85 @@ Example
 .. code-block:: bash
 
    curl -X GET "https://bio.tools/api/stats"
+
+
+Domains
+-----
+*List domains*
+
+*HTTP GET*
+
+.. code-block:: text
+
+    https://bio.tools/api/d/
+    https://bio.tools/api/domain/
+
+*Response*
+
+.. code-block:: json
+
+	{
+		{
+        	"name": "proteomics",
+        	"resourcesCount": 12
+    	},
+    	{
+        	"name": "metabolomics",
+        	"resourcesCount": 8
+    	}
+	}
+
+
+*Obtain information about a domain.*
+
+*HTTP GET*
+
+.. code-block:: text
+
+    https://bio.tools/api/d/:name/
+    https://bio.tools/api/domain/:name/
+    https://bio.tools/api/domain/all/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======================  =======  ===================
+Parameter  Required  Type                    Default  Description        
+=========  ========  ======================  =======  ===================
+name       Yes       String                           Domain name/ID
+format     No        String(json, xml, api)  json     Response media type
+=========  ========  ======================  =======  ===================
+
+
+Example
+"""""""
+
+.. code-block:: bash
+
+   curl -X GET "https://bio.tools/api/d/proteomics/?format=json"
+
+*Response*
+
+.. code-block:: json
+
+	{
+    	"count": 1,
+    	"data": {
+        	"domain": "proteomics",
+        	"title": "Proteomics",
+        	"sub_title": "Proteomics software tools and databases",
+        	"description": "Bioinformatics resources for proteomics research",
+        	"is_private": true,
+        	"tag": [],
+        	"collection": [],
+        	"resources": [
+            	{
+                	"name": "2D-PAGE",
+                	"biotoolsID": "2d-page"
+            	},
+            	{
+                	"name": "3dLOGO",
+                	"biotoolsID": "3dlogo"
+            	}
+			]
+ 		}
+	}
