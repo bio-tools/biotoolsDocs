@@ -34,12 +34,12 @@ Parameter      Required  Type                                     Default     De
 ===========    ========  =======================================  ==========  ============================================
 page           No        Integer                                  1           Result page number 
 per_page       No        Integer                                  50          Result page size 
-format         No        String(json, api)                        json        Response media type
+format         No        String (json, api)                        json        Response media type
 q              No        String                                               Query term, used for searching, 
                                                                               matches all attributes
-sort           No        String(lastUpdate,                       lastUpdate  Sorts the results by choosen value
+sort           No        String (lastUpdate,                       lastUpdate  Sorts the results by choosen value
                          additionDate, name, score)              (score only available when there is a query)
-ord            No        String(desc, asc)                        desc        Orders the results by either 
+ord            No        String (desc, asc)                        desc        Orders the results by either 
                                                                               Ascending or Descending order
 <attribute>    No        String                                               Filter by <attribute>. 
                                                                               List of supported attributes below.
