@@ -22,7 +22,7 @@ GitHub is used to track **fine-grained issues** and is the preferred way to make
 
 Hangouts
 --------
-`Coordination meetings <http://biotools.readthedocs.org/en/latest/hangouts.html>`_ are organised as required. The hangouts usually have an open agenda and respond to current critical needs.  Technical representatives of ELIXIR-DK institutes routinely attend and everyone is very welcome: if you'd like to join  `email us <mailto:help@bio.tools>`_.  
+`Coordination meetings <http://biotools.readthedocs.org/en/latest/hangouts.html>`_ are organised as required. The hangouts usually have an open agenda and respond to current critical needs.  Technical representatives of ELIXIR-DK institutes routinely attend and everyone is very welcome: if you'd like to join  `email us <mailto:support-bio-tools@sdu.dk>`_.  
 
  
 Editing tool descriptions

@@ -21,7 +21,8 @@ Contents:
    bio.tools domains <biotools_domains>
    Community-specific guidelines <community_specific_guidelines>
    Editors Guide <editors_guide>
-   API reference <api_reference>
+   API Quickstart <api_quickstart>
+   API Reference <api_reference>
    API Usage Guide <api_usage_guide>
    Meetings <hangouts>
    Roadmap <roadmap>

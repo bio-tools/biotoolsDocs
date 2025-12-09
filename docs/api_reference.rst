@@ -33,12 +33,13 @@ Endpoint parameters
 Parameter      Required  Type                                     Default     Description        
 ===========    ========  =======================================  ==========  ============================================
 page           No        Integer                                  1           Result page number 
-format         No        String(json, api)                        json        Response media type
+per_page       No        Integer                                  50          Result page size 
+format         No        String (json, api)                        json        Response media type
 q              No        String                                               Query term, used for searching, 
                                                                               matches all attributes
-sort           No        String(lastUpdate,                       lastUpdate  Sorts the results by choosen value
-                         additionDate, name, affiliation, score)              (score only available when there is a query)
-ord            No        String(desc, asc)                        desc        Orders the results by either 
+sort           No        String (lastUpdate,                       lastUpdate  Sorts the results by choosen value
+                         additionDate, name, score)              (score only available when there is a query)
+ord            No        String (desc, asc)                        desc        Orders the results by either 
                                                                               Ascending or Descending order
 <attribute>    No        String                                               Filter by <attribute>. 
                                                                               List of supported attributes below.
@@ -269,6 +270,21 @@ otherIDVersion      Exact search for tool version associated with an alternate I
 .. important=  The API parameters will be made case-insensitive in future.
 
 
+.. _Domains:
+
+Domains
+~~~~~~~~~~
+To filter the results for a specific domain...
+
+==================  ============================================================================================
+Parameter           Search behaviour                                                                            
+==================  ============================================================================================
+domain              Search for tools in a specific domain
+
+                    `domain=proteomics <https://bio.tools/api/t/?domain=proteomics>`_ 
+==================  ============================================================================================
+
+
 Example
 """""""
 
@@ -335,7 +351,7 @@ Example
 
 .. caution::
 
-   bio.tools supports upload/download of data in XML format compliant to `biotoolsScheme v3.0.0 <https://github.com/bio-tools/biotoolsSchema>`_.  If you want to download in XML format you should use these endpoints (see `Tool detail <https://biotools.readthedocs.io/en/latest/api_reference.html#tool-detail>`_ below):
+   bio.tools supports upload/download of data in XML format compliant to `biotoolsSchema v3.3.0 <https://github.com/bio-tools/biotoolsSchema>`_.  If you want to download in XML format you should use these endpoints (see `Tool detail <https://biotools.readthedocs.io/en/latest/api_reference.html#tool-detail>`_ below):
 
    .. code-block:: text
 
@@ -975,3 +991,85 @@ Example
 .. code-block:: bash
 
    curl -X GET "https://bio.tools/api/stats"
+
+
+Domains
+-----
+*List domains*
+
+*HTTP GET*
+
+.. code-block:: text
+
+    https://bio.tools/api/d/
+    https://bio.tools/api/domain/
+
+*Response*
+
+.. code-block:: json
+
+	{
+		{
+        	"name": "proteomics",
+        	"resourcesCount": 12
+    	},
+    	{
+        	"name": "metabolomics",
+        	"resourcesCount": 8
+    	}
+	}
+
+
+*Obtain information about a domain.*
+
+*HTTP GET*
+
+.. code-block:: text
+
+    https://bio.tools/api/d/:name/
+    https://bio.tools/api/domain/:name/
+    https://bio.tools/api/domain/all/
+
+Endpoint Parameters
+"""""""""""""""""""
+=========  ========  ======================  =======  ===================
+Parameter  Required  Type                    Default  Description        
+=========  ========  ======================  =======  ===================
+name       Yes       String                           Domain name/ID
+format     No        String(json, xml, api)  json     Response media type
+=========  ========  ======================  =======  ===================
+
+
+Example
+"""""""
+
+.. code-block:: bash
+
+   curl -X GET "https://bio.tools/api/d/proteomics/?format=json"
+
+*Response*
+
+.. code-block:: json
+
+	{
+    	"count": 1,
+    	"data": {
+        	"domain": "proteomics",
+        	"title": "Proteomics",
+        	"sub_title": "Proteomics software tools and databases",
+        	"description": "Bioinformatics resources for proteomics research",
+        	"is_private": true,
+        	"tag": [],
+        	"collection": [],
+        	"resources": [
+            	{
+                	"name": "2D-PAGE",
+                	"biotoolsID": "2d-page"
+            	},
+            	{
+                	"name": "3dLOGO",
+                	"biotoolsID": "3dlogo"
+            	}
+			]
+ 		}
+	}

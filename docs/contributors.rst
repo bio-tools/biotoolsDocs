@@ -63,6 +63,7 @@ Registry Contributors
 Thanks to the many people who have contributed - if you're not listed below, please let us know!
 
 - Aleksandra Nenadic (University of Manchester)
+- Aleksandra Weronika Szmigiel (University of Southern Denmark, DK)
 - Anders Dannesboe (BIRC, DK) - virtualization / container services 
 - Anthony Bretaudeau (INRA - GenOuest/BIPAA)
 - Bjoern Gruening (Uni-Freiburg)
@@ -91,6 +92,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Inge Jonassen (ELIXIR NO)
 - Ivan Mičetić (University of Padova)
 - Jan Brezovsky (International Clinical Research Center and Masaryk university)
+- Jeremy Leipzig (Truwl)
 - Jiří Vondrášek (ELIXIR-CZ)
 - José María Fernández (CNIO)
 - Karel Berka (UPOL, CZ)
@@ -130,6 +132,4 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 - Vegard Nygaard (ELIXIR NO)
 - Victor de la Torre (INB)
 - Wiktor Jurkowski (Earlham, UK)
-- Jeremy Leipzig (Truwl)
-
 
